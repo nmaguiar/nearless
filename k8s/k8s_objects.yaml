@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: test
+  name: test
+spec:
+  selector:
+    matchLabels:
+      app: test
+  template:
+    metadata:
+      labels:
+        app: test
+    spec:
+      containers:
+      - image: nmaguiar/nearless:latest
+        imagePullPolicy: IfNotPresent
+        name: nearless
+        env:
+        - name : sites
+          value: "[(name: nginx, source: test.default.svc, target: 'nginx.default.svc:80')]"
+        resources: {}
+        volumeMounts:
+        - name: triggers-volume
+          mountPath: /ojob/triggers.yaml
+          subPath: triggers.yaml
+      volumes:
+      - name: triggers-volume
+        configMap:
+          name: triggers-configmap
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: test
+  name: test
+spec:
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: test
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}

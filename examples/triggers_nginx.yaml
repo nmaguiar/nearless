@@ -1,0 +1,73 @@
+init:
+  tmpl: &TMPL |
+    ## Restarting service
+
+    Wait a couple of seconds, the service is being restarted...
+    <script>
+    setTimeout(function() {
+      location.reload();
+    }, 5000);
+    </script>
+
+jobs:
+# -----------------------
+- name: Get existing pods
+  exec: |
+    loadLib("kube.js")
+    args.ns = "default"
+
+    // Get all pods running on a namespace
+    log("Get all pods running on namespace '" + args.ns + "'")
+    args._items = $from( $kube().getFPO(args.ns).items ).starts("metadata.name", "nginx-").select()
+    print("# " + args._items.length)
+
+# ==============================
+- name: Prepare schedule trigger
+  from: Get existing pods
+  type: periodic
+  typeArgs:
+    timeInterval: 5000
+  exec: |
+    // For all running pods
+    var leaveRunning = 0, foundRunning = 0
+    $from(args.items).equals("status.phase", "Running").select(pod => {
+      foundRunning++
+
+      // Check the corresponding log for nginx access log entries
+      var lines = $kube().getLog(args.ns, pod.metadata.name).split("\n").filter(r => /\[\d{2}\/\w{3}\/\d{4}:\d{2}:\d{2}:\d{2} .\d{4}\]/.test(r))
+
+      // Get the date for the last line
+      var _date = lines[lines.length - 1].match(/\[(\d{2}\/\w{3}\/\d{4}:\d{2}:\d{2}:\d{2} .\d{4})\]/)[1]
+      _date = ow.format.toDate(_date, "dd/MMM/yyyy:HH:mm:dd Z")
+
+      // If more than 5 minutes ago take action
+      if (ow.format.dateDiff.inMinutes(_date) < 5) {
+        leaveRunning++
+      }
+    })
+
+    if (foundRunning != leaveRunning) {
+      // Scale down to the number of replicas pre-determined with activity in the last 5 minutes
+      var k = new Kube()
+      log(`Scaling down to ${leaveRunning} of ${foundRunning}...`)
+      k.client.inNamespace(args.ns).apps().deployments().withName("nginx").scale(leaveRunning)
+    }
+
+# -------------------------------
+- name: Trigger nginx.default.svc
+  from: Get existing pods
+  args:
+    tmpl: *TMPL
+  exec: |
+    ow.loadTemplate()
+
+    // Checking pods
+    if (args.items.length == 0) {
+      log("Scaling up...")
+      k.client.inNamespace(args.ns).apps().deployments().withName("nginx").scale(1)
+    } else {
+      log("Currently: " + af.toSLON( $from(args.items).countBy("status.phase") ))
+    }
+
+    args._output = ow.server.httpd.reply(ow.template.html.genStaticVersion4MD(args.tmpl), 200, "text/html")
+    return args

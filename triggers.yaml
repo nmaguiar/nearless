@@ -1,0 +1,13 @@
+jobs:
+# ------------------------------
+- name: Prepare schedule trigger
+  # type: periodic
+  # typeArgs:
+  #   timeInterval: 2500
+  # exec: |
+  #   print("!!!")
+
+# ------------------------
+- name: Trigger chat.ncasa
+  exec: |
+    args._output = ow.server.httpd.reply("OK!")

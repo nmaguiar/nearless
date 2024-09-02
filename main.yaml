@@ -1,0 +1,82 @@
+# Author: Nuno Aguiar
+help:
+  text   : Reverse proxy service to scales up and down containers or pods as needed
+  expects: 
+  - name     : sites
+    desc     : A SLON/JSON array composed of 'name', 'source' (host), 'target' (service:port)
+    example  : "[(name: wiki, source: wiki.com, target: 'wiki:80')|(name: chat, source: chat.com, target: 'chat:80')]"
+    mandatory: true
+
+todo:
+- Prepare schedule trigger
+- (httpdStart  ): 7777
+- (httpdService): 7777
+  ((uri       )): /
+  ((execURI   )): | 
+    try {
+      log("Calling job 'Trigger " + String(request.header.host).toLowerCase() + "'...")
+      var res = $job("Trigger " + request.header.host.toLowerCase(), request)
+      if (isDef(res)) {
+        if (isMap(res) && isMap(res._output)) 
+          return res._output
+        else
+          return ow.server.httpd.reply(res)
+      } else {
+        return ow.server.httpd.reply(request)
+      }
+    } catch(e) {
+      logErr("Problem with 'Trigger " + String(request.header.host).toLowerCase() + "': " + e)
+      return ow.server.httpd.reply(request)
+    }
+    
+- Prepare nginx config
+- Start nginx
+
+ojob:
+  opacks      :
+  - openaf: 20240812
+  - oJob-common
+  - Kube
+  catch       : printErrnl("[" + job.name + "] "); if (isDef(exception.javaException)) exception.javaException.printStackTrace(); else printErr(exception)
+  logToConsole: true   # to change when finished
+  argsFromEnvs: true
+
+include: 
+- oJobHTTPd.yaml
+
+jobsInclude:
+- triggers.yaml
+
+jobs:
+# ---------------------------
+- name : Prepare nginx config
+  check:
+    in:
+      sites: isString
+  exec : |
+    // Read template
+    var tmpl = io.readFileString("nginx.conf.hbs")
+
+    // Sites data can be described in SLON or JSON
+    var data = { sites: af.fromJSSLON(args.sites) }
+
+    // Verify data
+    if (isArray(data.sites)) {
+      data.sites.forEach(s => {
+        _$(s.name, "name in " + af.toSLON(s)).isString().$_()
+        _$(s.source, "source in " + af.toSLON(s)).isString().$_()
+        _$(s.target, "target in " + af.toSLON(s)).isString().$_()
+      })
+    } else {
+      throw "sites needs to be an array"
+    }
+
+    // Write nginx configuration
+    io.writeFileString("/etc/nginx/http.d/default.conf", $t(tmpl, data))
+
+# ------------------
+- name : Start nginx 
+  deps : Prepare nginx config
+  exec : |
+    $sh(["nginx", "-g", "daemon off;"])
+    .exec()
