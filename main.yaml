@@ -8,7 +8,7 @@ help:
     mandatory: true
 
 todo:
-- Prepare schedule trigger
+- Prepare scheduled trigger
 - (httpdStart  ): 7777
 - (httpdService): 7777
   ((uri       )): /

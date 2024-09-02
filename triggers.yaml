@@ -1,9 +1,10 @@
 jobs:
-# ------------------------------
-- name: Prepare schedule trigger
+# -------------------------------
+- name: Prepare scheduled trigger
   # type: periodic
   # typeArgs:
   #   timeInterval: 2500
+  ##   cron: '*/5 * * * * *'  
   # exec: |
   #   print("!!!")
 
