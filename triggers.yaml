@@ -8,7 +8,12 @@ jobs:
   # exec: |
   #   print("!!!")
 
-# ------------------------
-- name: Trigger chat.ncasa
+# -----------------------
+- name: Trigger openaf.io
   exec: |
-    args._output = ow.server.httpd.reply("OK!")
+    args._output = ow.server.httpd.reply("OK!\n")
+
+# ---------------------
+- name: Trigger anysite
+  exec: |
+    args._output = ow.server.httpd.reply("OK (this is for " + args._host + ")")

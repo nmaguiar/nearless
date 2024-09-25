@@ -3,8 +3,8 @@ help:
   text   : Reverse proxy service to scales up and down containers or pods as needed
   expects: 
   - name     : sites
-    desc     : A SLON/JSON array composed of 'name', 'source' (host), 'target' (service:port)
-    example  : "[(name: wiki, source: wiki.com, target: 'wiki:80')|(name: chat, source: chat.com, target: 'chat:80')]"
+    desc     : A SLON/JSON array composed of 'name', 'source' (host), 'target' (service:port), 'type'
+    example  : "[(name: wiki, source: wiki.com, target: 'wiki:80', type: wikipedia)|(name: chat, source: chat.com, target: 'chat:80')]"
     mandatory: true
 
 todo:
@@ -13,21 +13,38 @@ todo:
 - (httpdService): 7777
   ((uri       )): /
   ((execURI   )): | 
+    var res, _res
     try {
-      log("Calling job 'Trigger " + String(request.header.host).toLowerCase() + "'...")
-      var res = $job("Trigger " + request.header.host.toLowerCase(), request)
-      if (isDef(res)) {
-        if (isMap(res) && isMap(res._output)) 
-          return res._output
-        else
-          return ow.server.httpd.reply(res)
+      // Determine source host
+      var _host = String(request.header.host).toLowerCase()
+      var _data = $ch("sites").get({ source: _host })
+      request._host = _host
+
+      // Determine if source has type
+      if (isDef(_data) && isDef(_data.type)) {
+        log("Calling job 'Trigger " + _data.type + "' (for " + _host + ")...")
+        res = $job("Trigger " + _data.type, request)
       } else {
-        return ow.server.httpd.reply(request)
+        log("Calling job 'Trigger " + _host + "'...")
+        res = $job("Trigger " + _host, request)
+      }
+
+      // Process trigger result
+      if (isDef(res)) {
+        if (isMap(res) && isDef(res._output)) {
+          _res = server.reply(res._output.data, res._output.code, res._output.mimetype, res._output.headers)
+        } else {
+          _res = ow.server.httpd.reply(res)
+        }
+      } else {
+        _res = ow.server.httpd.reply(request)
       }
     } catch(e) {
       logErr("Problem with 'Trigger " + String(request.header.host).toLowerCase() + "': " + e)
-      return ow.server.httpd.reply(request)
+      _res = ow.server.httpd.reply(request)
     }
+
+    return _res
     
 - Prepare nginx config
 - Start nginx
@@ -40,6 +57,9 @@ ojob:
   catch       : printErrnl("[" + job.name + "] "); if (isDef(exception.javaException)) exception.javaException.printStackTrace(); else printErr(exception)
   logToConsole: true   # to change when finished
   argsFromEnvs: true
+  channels    :
+    create:
+    - name: sites
 
 include: 
 - oJobHTTPd.yaml
@@ -70,6 +90,9 @@ jobs:
     } else {
       throw "sites needs to be an array"
     }
+
+    // Store data globally
+    $ch("sites").setAll(["source"], data.sites)
 
     // Write nginx configuration
     io.writeFileString("/etc/nginx/http.d/default.conf", $t(tmpl, data))
