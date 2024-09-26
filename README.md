@@ -55,6 +55,7 @@ On the triggers.yaml there should be:
 |-----|-------------|
 | Prepare scheduled trigger | Should be defined as a 'periodic' oJob running on a crontab expression or time interval. |
 | Trigger [source host] | One or more job definitions triggered everytime the included nginx reverse proxy finds the primary target service down. |
+| Trigger [type] | One or more generic, per host type, job definitions triggered everytime the included nginx reverse proxy finds the primary targets down (the specific source host will be provided to the job as _args.\_host_)
 
 > Your triggers.yaml implementation should be provided as a config map on /ojob/triggers.yaml
 
@@ -82,6 +83,13 @@ On the triggers.yaml there should be:
     // Wait for service to be up
     // Make the same request to the chat service and return the answer
 
+# --------------------
+- name: Trigger type-a
+  exec: |
+    // Any target whose type is 'type-a' that is down (scale = 0) but a service made a request to it; code to scale up
+    // Wait for service to be up
+    // Make the same request to the chat service and return the answer
+
 ```
 
 ### Defining sources & targets
@@ -93,11 +101,42 @@ As an environment variable 'sites' should be defined as a [SLON](https://github.
 | name | String | A reference name of a site |
 | source | String | The incoming 'host' address excluding ports (e.g. a.site.com) |
 | target | String | The internal kubernetes or docker target service/container (e.g. site-portal.my-namespace.com:8080) |
+| type | String | The type of site to use generic triggers |
 
 Example:
 
 ```yaml
 env:
 - name : sites
-  value: "[(name: wiki, source: wiki.com, target: 'wiki:80')|(name: chat, source: chat.com, target: 'chat:80')]"
+  value: "[(name: wiki, source: wiki.com, target: 'wiki:80', type: wikipedia)|(name: chat, source: chat.com, target: 'chat:80')]"
+```
+
+## Testing
+
+### Basic
+
+Success reverse proxy test:
+
+```
+docker run --rm -ti -p 8080:8080 -e sites="[(name: oaf, source: openaf.io, target: 'openaf.io')]" nmaguiar/nearless:build
+```
+
+Fallback reverse proxy test:
+
+```
+docker run --rm -ti -p 8080:8080 -e sites="[(name: oaf, source: openaf.io, target: 'openaf.io:444')]" nmaguiar/nearless:build
+```
+
+### By type
+
+Success reverse proxy test:
+
+```
+docker run --rm -ti -p 8080:8080 -e sites="[(name: oaf, source: openaf.io, target: 'openaf.io', type: anysite)]" nmaguiar/nearless:build
+```
+
+Fallback reverse proxy test:
+
+```
+docker run --rm -ti -p 8080:8080 -e sites="[(name: oaf, source: openaf.io, target: 'openaf.io:444', type: anysite)]" nmaguiar/nearless:build
 ```
