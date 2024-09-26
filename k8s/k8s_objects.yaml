@@ -1,3 +1,44 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: nearless-scale-and-list-resources
+rules:
+- apiGroups: ["", "apps"]
+  resources:
+  - pods
+  - deployments
+  - statefulsets
+  - daemonsets
+  verbs:
+  - list
+  - get
+  - watch
+- apiGroups: ["apps"]
+  resources:
+  - deployments/scale
+  - statefulsets/scale
+  - daemonsets/scale
+  verbs:
+  - patch
+  - update
+
+---
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: nearless-scale-and-list-binding
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: nearless-scale-and-list-resources
+subjects:
+- kind: ServiceAccount
+  name: nearless
+  namespace: default  # Change to correct namespace
+
+---
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -21,6 +62,7 @@ spec:
         - name : sites
           value: "[(name: nginx, source: test.default.svc, target: 'nginx.default.svc:80')]"
         resources: {}
+        serviceAccountName: default  
         volumeMounts:
         - name: triggers-volume
           mountPath: /ojob/triggers.yaml
