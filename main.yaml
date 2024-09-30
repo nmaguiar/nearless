@@ -4,7 +4,7 @@ help:
   expects: 
   - name     : sites
     desc     : A SLON/JSON array composed of 'name', 'source' (host), 'target' (service:port), 'type'
-    example  : "[(name: wiki, source: wiki.com, target: 'wiki:80', type: wikipedia)|(name: chat, source: chat.com, target: 'chat:80')]"
+    example  : "[(name: wiki, source: wiki.com, target: 'wiki:80', type: wikipedia)|(name: chat, source: chat.com, target: [(path: /, to: 'chat:80')|(path: /keycloak, to: 'sso:80', rewrite: true)])]"
     mandatory: true
 
 todo:
@@ -85,7 +85,18 @@ jobs:
       data.sites.forEach(s => {
         _$(s.name, "name in " + af.toSLON(s)).isString().$_()
         _$(s.source, "source in " + af.toSLON(s)).isString().$_()
-        _$(s.target, "target in " + af.toSLON(s)).isString().$_()
+        _$(s.target, "target in " + af.toSLON(s)).$_()
+        if (isArray(s.target)) {
+          s.target.forEach(st => {
+            _$(st.path, "path element of target in " + af.toSLON(st)).isString().$_()
+            _$(st.to  , "to element of target in " + af.toSLON(st)).isString().$_()
+          })
+        } else if (!isString(s.target)) {
+          throw "target should be either a string or an array of maps (with 'path' and 'to')"
+        } else {
+          s.target = [ { path: '/', to: s.target, rewrite: false } ]
+        }
+        s.target.forEach((t, i) => t.i = i)
       })
     } else {
       throw "sites needs to be an array"

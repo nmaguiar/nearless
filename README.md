@@ -100,7 +100,7 @@ As an environment variable 'sites' should be defined as a [SLON](https://github.
 |---------|------|-------------|
 | name | String | A reference name of a site |
 | source | String | The incoming 'host' address excluding ports (e.g. a.site.com) |
-| target | String | The internal kubernetes or docker target service/container (e.g. site-portal.my-namespace.com:8080) |
+| target | String/Array | The internal kubernetes or docker target service/container (e.g. site-portal.my-namespace.com:8080) or an array of maps with 'path' (original string URI), 'to' (target service/container) and 'rewrite' (boolean that if true will remove the 'path' from the URI) |
 | type | String | The type of site to use generic triggers |
 
 Example:
@@ -108,7 +108,7 @@ Example:
 ```yaml
 env:
 - name : sites
-  value: "[(name: wiki, source: wiki.com, target: 'wiki:80', type: wikipedia)|(name: chat, source: chat.com, target: 'chat:80')]"
+  value: "[(name: wiki, source: wiki.com, target: 'wiki:80', type: wikipedia)|(name: chat, source: chat.com, target: [(path: /, to: 'chat:80')|(path: /keycloak, to: 'sso:80', rewrite: true)] )]"
 ```
 
 ## Testing

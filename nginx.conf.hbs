@@ -20,25 +20,30 @@ error_log /dev/stderr warn;
 {{#each sites}}
 # Name: {{name}}
 # Source: {{source}}
-# Target: {{target}}
+# Target: {{{$toSLON target}}}
 #
-upstream backend_{{name}} {
-    server {{target}};
+{{#each target}}
+upstream backend_{{../name}}_{{i}} {
+    server {{to}};
     server 127.0.0.1:7777 backup;
 }
+{{/each}}
 
 server {
     listen 8080;
 
     server_name {{source}};
 
-    location / {
-        proxy_pass http://backend_{{name}};
+    {{#each target}}
+    location {{path}} {
+        {{#if rewrite}}rewrite ^{{path}}/?(.*)$ /$1 break;{{/if}}
+        proxy_pass http://backend_{{../name}}_{{i}};
         proxy_set_header Host $host;
         #proxy_set_header X-Real-IP $remote_addr;
         #proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         #proxy_set_header X-Forwarded-Proto $scheme;
     }
+    {{/each}}
 }
 
 {{/each}}
