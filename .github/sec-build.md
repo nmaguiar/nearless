@@ -1,91 +1,139 @@
 ````yaml
-╭ [0] ╭ Target         : nmaguiar/nearless:build (alpine 3.20.3) 
-│     ├ Class          : os-pkgs 
-│     ├ Type           : alpine 
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2024-8096 
-│                       │     ├ PkgID           : curl@8.9.1-r2 
-│                       │     ├ PkgName         : curl 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.9.1-r2?arch=x86_64&distro=3.20.3 
-│                       │     │                  ╰ UID : 323ea8d16cf7d519 
-│                       │     ├ InstalledVersion: 8.9.1-r2 
-│                       │     ├ FixedVersion    : 8.10.0-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:16642dc950ad3c3b8955e53818c1dfbca8998cd3c4bd0
-│                       │     │                  │         41ccab014badaf3dc07 
-│                       │     │                  ╰ DiffID: sha256:b6fff1dc3486bccc5f808b51f1a3f8941abbbc30ef0c5
-│                       │     │                            4676c9753d7b3dd5d42 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-8096 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : curl: OCSP stapling bypass with GnuTLS 
-│                       │     ├ Description     : When curl is told to use the Certificate Status Request TLS
-│                       │     │                   extension, often referred to as OCSP stapling, to verify that
-│                       │     │                    the server certificate is valid, it might fail to detect
-│                       │     │                   some OCSP problems and instead wrongly consider the response
-│                       │     │                   as fine.  If the returned status reports another error than
-│                       │     │                   'revoked' (like for example 'unauthorized') it is not treated
-│                       │     │                    as a bad certficate. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ CweIDs           ─ [0]: CWE-295 
-│                       │     ├ VendorSeverity   ╭ cbl-mariner: 2 
-│                       │     │                  ├ redhat     : 2 
-│                       │     │                  ╰ ubuntu     : 2 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/
-│                       │     │                           │           A:N 
-│                       │     │                           ╰ V3Score : 6.5 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-8096 
-│                       │     │                  ├ [1]: https://curl.se/docs/CVE-2024-8096.html 
-│                       │     │                  ├ [2]: https://curl.se/docs/CVE-2024-8096.json 
-│                       │     │                  ├ [3]: https://hackerone.com/reports/2669852 
-│                       │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-8096 
-│                       │     │                  ├ [5]: https://ubuntu.com/security/notices/USN-7012-1 
-│                       │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-8096 
-│                       │     ├ PublishedDate   : 2024-09-11T10:15:02.883Z 
-│                       │     ╰ LastModifiedDate: 2024-09-11T16:26:11.92Z 
-│                       ╰ [1] ╭ VulnerabilityID : CVE-2024-8096 
-│                             ├ PkgID           : libcurl@8.9.1-r2 
-│                             ├ PkgName         : libcurl 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.9.1-r2?arch=x86_64&distro=3.2
-│                             │                  │       0.3 
-│                             │                  ╰ UID : 579e3060318d15c2 
-│                             ├ InstalledVersion: 8.9.1-r2 
-│                             ├ FixedVersion    : 8.10.0-r0 
-│                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:16642dc950ad3c3b8955e53818c1dfbca8998cd3c4bd0
-│                             │                  │         41ccab014badaf3dc07 
-│                             │                  ╰ DiffID: sha256:b6fff1dc3486bccc5f808b51f1a3f8941abbbc30ef0c5
-│                             │                            4676c9753d7b3dd5d42 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-8096 
-│                             ├ DataSource       ╭ ID  : alpine 
-│                             │                  ├ Name: Alpine Secdb 
-│                             │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                             ├ Title           : curl: OCSP stapling bypass with GnuTLS 
-│                             ├ Description     : When curl is told to use the Certificate Status Request TLS
-│                             │                   extension, often referred to as OCSP stapling, to verify that
-│                             │                    the server certificate is valid, it might fail to detect
-│                             │                   some OCSP problems and instead wrongly consider the response
-│                             │                   as fine.  If the returned status reports another error than
-│                             │                   'revoked' (like for example 'unauthorized') it is not treated
-│                             │                    as a bad certficate. 
-│                             ├ Severity        : MEDIUM 
-│                             ├ CweIDs           ─ [0]: CWE-295 
-│                             ├ VendorSeverity   ╭ cbl-mariner: 2 
-│                             │                  ├ redhat     : 2 
-│                             │                  ╰ ubuntu     : 2 
-│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/
-│                             │                           │           A:N 
-│                             │                           ╰ V3Score : 6.5 
-│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-8096 
-│                             │                  ├ [1]: https://curl.se/docs/CVE-2024-8096.html 
-│                             │                  ├ [2]: https://curl.se/docs/CVE-2024-8096.json 
-│                             │                  ├ [3]: https://hackerone.com/reports/2669852 
-│                             │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-8096 
-│                             │                  ├ [5]: https://ubuntu.com/security/notices/USN-7012-1 
-│                             │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2024-8096 
-│                             ├ PublishedDate   : 2024-09-11T10:15:02.883Z 
-│                             ╰ LastModifiedDate: 2024-09-11T16:26:11.92Z 
-╰ [1] ╭ Target: Java 
-      ├ Class : lang-pkgs 
-      ╰ Type  : jar 
+╭ stdout   
+├ stderr  : latest: Pulling from aquasec/trivy
+│           43c4264eed91: Already exists
+│           a614f65bf3d4: Pulling fs layer
+│           b3805e8267bc: Pulling fs layer
+│           da758d7eb143: Pulling fs layer
+│           da758d7eb143: Verifying Checksum
+│           da758d7eb143: Download complete
+│           a614f65bf3d4: Verifying Checksum
+│           a614f65bf3d4: Download complete
+│           b3805e8267bc: Verifying Checksum
+│           b3805e8267bc: Download complete
+│           a614f65bf3d4: Pull complete
+│           b3805e8267bc: Pull complete
+│           da758d7eb143: Pull complete
+│           Digest: sha256:e682a9f8db9db6f09731fe2f63e4234d240ec67a811d90974b5af3d40497f843
+│           Status: Downloaded newer image for aquasec/trivy:latest
+│           2024-10-03T07:07:12Z	INFO	[vulndb] Need to update DB
+│           2024-10-03T07:07:12Z	INFO	[vulndb] Downloading vulnerability DB...
+│           2024-10-03T07:07:12Z	INFO	[vulndb] Downloading artifact...	repo="ghcr.io/aquasecurity/trivy-db:2"
+│           53.95 MiB / 53.95 MiB [----------------------------------------------------------->] 100.00% ? p/s
+│           ?53.95 MiB / 53.95 MiB [----------------------------------------------------------->] 100.00% ? p/s
+│            ?53.95 MiB / 53.95 MiB [----------------------------------------------------------->] 100.00% ?
+│           p/s ?53.95 MiB / 53.95 MiB [----------------------------------------------------------->] 100.00% ?
+│            p/s ?53.95 MiB / 53.95 MiB [----------------------------------------------------------->] 100.00%
+│           ? p/s ?53.95 MiB / 53.95 MiB [----------------------------------------------------------->] 100.00%
+│            ? p/s ?53.95 MiB / 53.95 MiB [----------------------------------------------------------->]
+│           100.00% ? p/s ?53.95 MiB / 53.95 MiB [----------------------------------------------------------->]
+│            100.00% ? p/s ?53.95 MiB / 53.95 MiB [-------------------------------------------------] 100.00%
+│           34.56 MiB p/s 1.8s2024-10-03T07:07:14Z	INFO	[vulndb] Artifact successfully
+│           downloaded	repo="ghcr.io/aquasecurity/trivy-db:2"
+│           2024-10-03T07:07:14Z	INFO	[vuln] Vulnerability scanning is enabled
+│           2024-10-03T07:07:14Z	INFO	[secret] Secret scanning is enabled
+│           2024-10-03T07:07:14Z	INFO	[secret] If your scanning is slow, please try '--scanners vuln' to
+│           disable secret scanning
+│           2024-10-03T07:07:14Z	INFO	[secret] Please see also
+│           https://aquasecurity.github.io/trivy/v0.56/docs/scanner/secret#recommendation for faster secret
+│           detection
+│           2024-10-03T07:07:15Z	INFO	[javadb] Downloading Java DB...
+│           2024-10-03T07:07:15Z	INFO	[javadb] Downloading
+│           artifact...	repo="ghcr.io/aquasecurity/trivy-java-db:1"
+│           52.65 MiB / 649.13 MiB [---->________________________________________________________] 8.11% ? p/s
+│           ?114.73 MiB / 649.13 MiB [---------->________________________________________________] 17.67% ? p/s
+│            ?180.32 MiB / 649.13 MiB [---------------->__________________________________________] 27.78% ?
+│           p/s ?239.10 MiB / 649.13 MiB [---------------->____________________________] 36.83% 310.73 MiB p/s
+│           ETA 1s286.38 MiB / 649.13 MiB [------------------->_________________________] 44.12% 310.73 MiB p/s
+│            ETA 1s320.08 MiB / 649.13 MiB [---------------------->______________________] 49.31% 310.73 MiB
+│           p/s ETA 1s334.26 MiB / 649.13 MiB [----------------------->_____________________] 51.49% 300.87 MiB
+│            p/s ETA 1s346.31 MiB / 649.13 MiB [------------------------>____________________] 53.35% 300.87
+│           MiB p/s ETA 1s353.76 MiB / 649.13 MiB [------------------------>____________________] 54.50% 300.87
+│            MiB p/s ETA 0s360.83 MiB / 649.13 MiB [------------------------->___________________] 55.59%
+│           284.33 MiB p/s ETA 1s369.59 MiB / 649.13 MiB [------------------------->___________________] 56.94%
+│            284.33 MiB p/s ETA 0s378.75 MiB / 649.13 MiB [-------------------------->__________________]
+│           58.35% 284.33 MiB p/s ETA 0s388.55 MiB / 649.13 MiB [-------------------------->__________________]
+│            59.86% 268.97 MiB p/s ETA 0s399.78 MiB / 649.13 MiB
+│           [--------------------------->_________________] 61.59% 268.97 MiB p/s ETA 0s411.33 MiB / 649.13 MiB
+│            [---------------------------->________________] 63.37% 268.97 MiB p/s ETA 0s424.41 MiB / 649.13
+│           MiB [----------------------------->_______________] 65.38% 255.47 MiB p/s ETA 0s438.15 MiB / 649.13
+│            MiB [------------------------------>______________] 67.50% 255.47 MiB p/s ETA 0s452.68 MiB /
+│           649.13 MiB [------------------------------->_____________] 69.74% 255.47 MiB p/s ETA 0s465.10 MiB /
+│            649.13 MiB [-------------------------------->____________] 71.65% 243.36 MiB p/s ETA 0s470.02 MiB
+│           / 649.13 MiB [-------------------------------->____________] 72.41% 243.36 MiB p/s ETA 0s474.58 MiB
+│            / 649.13 MiB [-------------------------------->____________] 73.11% 243.36 MiB p/s ETA 0s480.14
+│           MiB / 649.13 MiB [--------------------------------->___________] 73.97% 229.28 MiB p/s ETA 0s486.56
+│            MiB / 649.13 MiB [--------------------------------->___________] 74.95% 229.28 MiB p/s ETA
+│           0s493.53 MiB / 649.13 MiB [---------------------------------->__________] 76.03% 229.28 MiB p/s ETA
+│            0s501.14 MiB / 649.13 MiB [---------------------------------->__________] 77.20% 216.75 MiB p/s
+│           ETA 0s510.20 MiB / 649.13 MiB [----------------------------------->_________] 78.60% 216.75 MiB p/s
+│            ETA 0s519.37 MiB / 649.13 MiB [------------------------------------>________] 80.01% 216.75 MiB
+│           p/s ETA 0s529.76 MiB / 649.13 MiB [------------------------------------>________] 81.61% 205.84 MiB
+│            p/s ETA 0s541.20 MiB / 649.13 MiB [------------------------------------->_______] 83.37% 205.84
+│           MiB p/s ETA 0s553.00 MiB / 649.13 MiB [-------------------------------------->______] 85.19% 205.84
+│            MiB p/s ETA 0s566.56 MiB / 649.13 MiB [--------------------------------------->_____] 87.28%
+│           196.52 MiB p/s ETA 0s580.18 MiB / 649.13 MiB [---------------------------------------->____] 89.38%
+│            196.52 MiB p/s ETA 0s595.47 MiB / 649.13 MiB [----------------------------------------->___]
+│           91.73% 196.52 MiB p/s ETA 0s611.35 MiB / 649.13 MiB [------------------------------------------>__]
+│            94.18% 188.65 MiB p/s ETA 0s627.93 MiB / 649.13 MiB
+│           [------------------------------------------->_] 96.73% 188.65 MiB p/s ETA 0s645.89 MiB / 649.13 MiB
+│            [-------------------------------------------->] 99.50% 188.65 MiB p/s ETA 0s649.13 MiB / 649.13
+│           MiB [------------------------------------------->] 100.00% 180.54 MiB p/s ETA 0s649.13 MiB / 649.13
+│            MiB [------------------------------------------->] 100.00% 180.54 MiB p/s ETA 0s649.13 MiB /
+│           649.13 MiB [------------------------------------------->] 100.00% 180.54 MiB p/s ETA 0s649.13 MiB /
+│            649.13 MiB [------------------------------------------->] 100.00% 168.89 MiB p/s ETA 0s649.13 MiB
+│           / 649.13 MiB [------------------------------------------->] 100.00% 168.89 MiB p/s ETA 0s649.13 MiB
+│            / 649.13 MiB [------------------------------------------->] 100.00% 168.89 MiB p/s ETA 0s649.13
+│           MiB / 649.13 MiB [------------------------------------------->] 100.00% 158.00 MiB p/s ETA 0s649.13
+│            MiB / 649.13 MiB [------------------------------------------->] 100.00% 158.00 MiB p/s ETA
+│           0s649.13 MiB / 649.13 MiB [------------------------------------------->] 100.00% 158.00 MiB p/s ETA
+│            0s649.13 MiB / 649.13 MiB [------------------------------------------->] 100.00% 147.80 MiB p/s
+│           ETA 0s649.13 MiB / 649.13 MiB [------------------------------------------->] 100.00% 147.80 MiB p/s
+│            ETA 0s649.13 MiB / 649.13 MiB [------------------------------------------->] 100.00% 147.80 MiB
+│           p/s ETA 0s649.13 MiB / 649.13 MiB [------------------------------------------->] 100.00% 138.27 MiB
+│            p/s ETA 0s649.13 MiB / 649.13 MiB [------------------------------------------->] 100.00% 138.27
+│           MiB p/s ETA 0s649.13 MiB / 649.13 MiB [------------------------------------------->] 100.00% 138.27
+│            MiB p/s ETA 0s649.13 MiB / 649.13 MiB [------------------------------------------->] 100.00%
+│           129.35 MiB p/s ETA 0s649.13 MiB / 649.13 MiB [------------------------------------------->] 100.00%
+│            129.35 MiB p/s ETA 0s649.13 MiB / 649.13 MiB [------------------------------------------->]
+│           100.00% 129.35 MiB p/s ETA 0s649.13 MiB / 649.13 MiB [------------------------------------------->]
+│            100.00% 121.00 MiB p/s ETA 0s649.13 MiB / 649.13 MiB
+│           [------------------------------------------->] 100.00% 121.00 MiB p/s ETA 0s649.13 MiB / 649.13 MiB
+│            [------------------------------------------->] 100.00% 121.00 MiB p/s ETA 0s649.13 MiB / 649.13
+│           MiB [------------------------------------------->] 100.00% 113.20 MiB p/s ETA 0s649.13 MiB / 649.13
+│            MiB [------------------------------------------->] 100.00% 113.20 MiB p/s ETA 0s649.13 MiB /
+│           649.13 MiB [------------------------------------------->] 100.00% 113.20 MiB p/s ETA 0s649.13 MiB /
+│            649.13 MiB [------------------------------------------->] 100.00% 105.89 MiB p/s ETA 0s649.13 MiB
+│           / 649.13 MiB [------------------------------------------->] 100.00% 105.89 MiB p/s ETA 0s649.13 MiB
+│            / 649.13 MiB [------------------------------------------->] 100.00% 105.89 MiB p/s ETA 0s649.13
+│           MiB / 649.13 MiB [-------------------------------------------->] 100.00% 99.06 MiB p/s ETA 0s649.13
+│            MiB / 649.13 MiB [-------------------------------------------->] 100.00% 99.06 MiB p/s ETA
+│           0s649.13 MiB / 649.13 MiB [-------------------------------------------->] 100.00% 99.06 MiB p/s ETA
+│            0s649.13 MiB / 649.13 MiB [-------------------------------------------->] 100.00% 92.67 MiB p/s
+│           ETA 0s649.13 MiB / 649.13 MiB [-------------------------------------------->] 100.00% 92.67 MiB p/s
+│            ETA 0s649.13 MiB / 649.13 MiB [-------------------------------------------->] 100.00% 92.67 MiB
+│           p/s ETA 0s649.13 MiB / 649.13 MiB [-------------------------------------------->] 100.00% 86.69 MiB
+│            p/s ETA 0s649.13 MiB / 649.13 MiB [-------------------------------------------->] 100.00% 86.69
+│           MiB p/s ETA 0s649.13 MiB / 649.13 MiB [-------------------------------------------->] 100.00% 86.69
+│            MiB p/s ETA 0s649.13 MiB / 649.13 MiB [-------------------------------------------->] 100.00%
+│           81.10 MiB p/s ETA 0s649.13 MiB / 649.13 MiB [-------------------------------------------->] 100.00%
+│            81.10 MiB p/s ETA 0s649.13 MiB / 649.13 MiB [-------------------------------------------->]
+│           100.00% 81.10 MiB p/s ETA 0s649.13 MiB / 649.13 MiB [-------------------------------------------->]
+│            100.00% 75.87 MiB p/s ETA 0s649.13 MiB / 649.13 MiB
+│           [-------------------------------------------->] 100.00% 75.87 MiB p/s ETA 0s649.13 MiB / 649.13 MiB
+│            [-------------------------------------------->] 100.00% 75.87 MiB p/s ETA 0s649.13 MiB / 649.13
+│           MiB [-------------------------------------------->] 100.00% 70.97 MiB p/s ETA 0s649.13 MiB / 649.13
+│            MiB [-------------------------------------------->] 100.00% 70.97 MiB p/s ETA 0s649.13 MiB /
+│           649.13 MiB [-------------------------------------------->] 100.00% 70.97 MiB p/s ETA 0s649.13 MiB /
+│            649.13 MiB [-------------------------------------------->] 100.00% 66.39 MiB p/s ETA 0s649.13 MiB
+│           / 649.13 MiB [------------------------------------------------] 100.00% 39.79 MiB p/s
+│           17s2024-10-03T07:07:32Z	INFO	[javadb] Artifact successfully
+│           downloaded	repo="ghcr.io/aquasecurity/trivy-java-db:1"
+│           2024-10-03T07:07:32Z	FATAL	Fatal error	image scan error: scan error: scan failed: failed analysis:
+│           analyze error: pipeline error: failed to analyze layer
+│           (sha256:11d0dbe2be2b875be9aa256afd6783563cbf0a40fab6a37b77f5d3c6a405e2cb): post analysis error:
+│           post analysis error: Unable to initialize the Java DB: Java DB update failed: OCI artifact error:
+│           failed to download Java DB from any source 
+├ exitcode: 1 
+╰ cmd     : docker run --pull always --rm  aquasec/trivy -f json  image nmaguiar/nearless:build 
 ````
