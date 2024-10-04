@@ -19,6 +19,7 @@ rules:
   - statefulsets/scale
   - daemonsets/scale
   verbs:
+  - get
   - patch
   - update
 
