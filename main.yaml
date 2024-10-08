@@ -32,12 +32,12 @@ todo:
       // Process trigger result
       if (isDef(res)) {
         if (isMap(res) && isDef(res._output)) {
-          _res = server.reply(res._output.data, res._output.code, res._output.mimetype, res._output.headers)
+          _res = server.reply(res._output.data, res._output.status, res._output.mimetype, res._output.header)
         } else {
           _res = ow.server.httpd.reply(res)
         }
       } else {
-        _res = ow.server.httpd.reply(request)
+        _res = ow.server.httpd.reply(" ")
       }
     } catch(e) {
       logErr("Problem with 'Trigger " + String(request.header.host).toLowerCase() + "': " + e)
