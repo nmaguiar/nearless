@@ -60,6 +60,11 @@ On the triggers.yaml there should be:
 > Your triggers.yaml implementation should be provided as a config map on /ojob/triggers.yaml
 
 ```yaml
+# ------------------
+- name: Prepare init
+  exec: |
+    // prepare and initialize global structures
+
 # -------------------------------
 - name: Prepare scheduled trigger
   type: periodic
