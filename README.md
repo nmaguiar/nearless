@@ -53,6 +53,7 @@ On the triggers.yaml there should be:
 
 | Job | Description |
 |-----|-------------|
+| Prepare init | Executes at startup for global structures initializations. |
 | Prepare scheduled trigger | Should be defined as a 'periodic' oJob running on a crontab expression or time interval. |
 | Trigger [source host] | One or more job definitions triggered everytime the included nginx reverse proxy finds the primary target service down. |
 | Trigger [type] | One or more generic, per host type, job definitions triggered everytime the included nginx reverse proxy finds the primary targets down (the specific source host will be provided to the job as _args.\_host_)
