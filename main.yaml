@@ -8,8 +8,10 @@ help:
     mandatory: true
 
 todo:
+- Prepare init
 - Prepare scheduled trigger
 - (httpdStart  ): 7777
+  ((host      )): localhost
 - (httpdService): 7777
   ((uri       )): /
   ((execURI   )): | 

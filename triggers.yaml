@@ -1,4 +1,7 @@
 jobs:
+# ------------------
+- name: Prepare init
+
 # -------------------------------
 - name: Prepare scheduled trigger
   # type: periodic
