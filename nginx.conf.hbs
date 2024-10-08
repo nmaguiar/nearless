@@ -41,14 +41,10 @@ server {
         client_max_body_size 100M;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
-        #proxy_set_header X-Forwarded-For $http_x_forwarded_for,$remote_addr;
-        proxy_set_header X-Forwarded-For $http_x_forwarded_for;
-        #proxy_set_header X-Forwarded-Proto $http_x_forwarded_proto$scheme;
-        proxy_set_header X-Forwarded-Proto $http_x_forwarded_proto;
-        #proxy_set_header X-Forwarded-Host $http_x_forwarded_host$host;
-        proxy_set_header X-Forwarded-Host $http_x_forwarded_host;
-        #proxy_set_header X-Forwarded-Port $http_x_forwarded_port$server_port;
-        proxy_set_header X-Forwarded-Port $http_x_forwarded_port;
+        proxy_set_header X-Forwarded-For {{#if ../direct}}$remote_addr{{else}}$http_x_forwarded_for{{/if}};
+        proxy_set_header X-Forwarded-Proto {{#if ../direct}}$scheme{{else}}$http_x_forwarded_proto{{/if}};
+        proxy_set_header X-Forwarded-Host {{#if ../direct}}$host{{else}}$http_x_forwarded_host{{/if}};
+        proxy_set_header X-Forwarded-Port {{#if ../direct}}$server_port{{else}}$http_x_forwarded_port{{/if}};
     }
     {{/each}}
 }

@@ -102,6 +102,7 @@ As an environment variable 'sites' should be defined as a [SLON](https://github.
 | source | String | The incoming 'host' address excluding ports (e.g. a.site.com) |
 | target | String/Array | The internal kubernetes or docker target service/container (e.g. site-portal.my-namespace.com:8080) or an array of maps with 'path' (original string URI), 'to' (target service/container) and 'rewrite' (boolean that if true will remove the 'path' from the URI) |
 | type | String | The type of site to use generic triggers |
+| direct | Boolean | If true the proxied HTTP header fields won't be used (defaults to false) |
 
 Example:
 

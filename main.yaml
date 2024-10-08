@@ -86,6 +86,7 @@ jobs:
         _$(s.name, "name in " + af.toSLON(s)).isString().$_()
         _$(s.source, "source in " + af.toSLON(s)).isString().$_()
         _$(s.target, "target in " + af.toSLON(s)).$_()
+        s.direct = _$(toBoolean(s.direct), "direct in " + af.toSLON(s)).isBoolean().default(false)
         if (isArray(s.target)) {
           s.target.forEach(st => {
             _$(st.path, "path element of target in " + af.toSLON(st)).isString().$_()
