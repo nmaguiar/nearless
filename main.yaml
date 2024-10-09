@@ -8,6 +8,7 @@ help:
     mandatory: true
 
 todo:
+- Set DNS timeout
 - Prepare init
 - Prepare scheduled trigger
 - (httpdStart  ): 7777
@@ -70,6 +71,16 @@ jobsInclude:
 - triggers.yaml
 
 jobs:
+# ----------------------
+- name : Set DNS timeout
+  check:
+    in:
+      DNSTIMEOUT: toNumber().isNumber().default(10000)
+  exec : |
+    // Set DNS timeout
+    log("Set DNS cache TTL: " + args.DNSTIMEOUT)
+    java.security.Security.setProperty("networkaddress.cache.ttl", args.DNSTIMEOUT)
+
 # ---------------------------
 - name : Prepare nginx config
   check:
