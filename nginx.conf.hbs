@@ -36,7 +36,7 @@ server {
 
     {{#each target}}
     location {{path}} {
-        {{#if rewrite}}rewrite ^{{path}}/?(.*)$ /$1 break;{{/if}}
+        {{#if rewrite}}rewrite ^{{path}}/?(.*)$ /$1 break;{{else}}proxy_set_header X-Forwarded-Prefix {{path}};{{/if}}
         proxy_pass http://backend_{{../name}}_{{i}};
         client_max_body_size 100M;
         proxy_set_header Host $host;
