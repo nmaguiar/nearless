@@ -1,4 +1,61 @@
-stdout: {}
-stderr: "latest: Pulling from aquasec/trivy\n43c4264eed91: Already exists\n0dfd797035b5: Pulling fs layer\n845650bd88f7: Pulling fs layer\na317ace4ab4b: Pulling fs layer\na317ace4ab4b: Verifying Checksum\na317ace4ab4b: Download complete\n0dfd797035b5: Verifying Checksum\n0dfd797035b5: Download complete\n845650bd88f7: Verifying Checksum\n845650bd88f7: Download complete\n0dfd797035b5: Pull complete\n845650bd88f7: Pull complete\na317ace4ab4b: Pull complete\nDigest: sha256:cad5cc4c273b98de4e84d19b481399fae19cd2ba09914239e9d0597fa227a8e4\nStatus: Downloaded newer image for aquasec/trivy:latest\n2024-11-06T07:08:40Z\tINFO\t[vulndb] Need to update DB\n2024-11-06T07:08:40Z\tINFO\t[vulndb] Downloading vulnerability DB...\n2024-11-06T07:08:40Z\tINFO\t[vulndb] Downloading artifact...\trepo=\"ghcr.io/aquasecurity/trivy-db:2\"\n2024-11-06T07:08:40Z\tERROR\t[vulndb] Failed to download artifact\trepo=\"ghcr.io/aquasecurity/trivy-db:2\" err=\"oci download error: failed to fetch the layer: GET https://ghcr.io/v2/aquasecurity/trivy-db/blobs/sha256:5b19a61b224413cc3b1001154da5e4a275ce78c30cc692961bb3c8de4003c7c7: TOOMANYREQUESTS: retry-after: 34.898µs, allowed: 44000/minute\"\n2024-11-06T07:08:40Z\tFATAL\tFatal error\tinit error: DB error: failed to download vulnerability DB: OCI artifact error: failed to download vulnerability DB: failed to download artifact from any source: 1 error occurred:\n\t* oci download error: failed to fetch the layer: GET https://ghcr.io/v2/aquasecurity/trivy-db/blobs/sha256:5b19a61b224413cc3b1001154da5e4a275ce78c30cc692961bb3c8de4003c7c7: TOOMANYREQUESTS: retry-after: 34.898µs, allowed: 44000/minute\n\n\n"
-exitcode: 1
-cmd: docker run --pull always --rm -v trivy-db:/root/.cache/trivy aquasec/trivy -f json  image nmaguiar/nearless:build
+- Target: nmaguiar/nearless:build (alpine 3.20.3)
+  Class: os-pkgs
+  Type: alpine
+- Target: Java
+  Class: lang-pkgs
+  Type: jar
+  Vulnerabilities:
+  - VulnerabilityID: CVE-2023-3635
+    PkgName: com.squareup.okio:okio
+    PkgPath: openaf/Kube/okio-1.15.0.jar
+    PkgIdentifier:
+      PURL: pkg:maven/com.squareup.okio/okio@1.15.0
+      UID: 54d0708001bc0aec
+    InstalledVersion: 1.15.0
+    FixedVersion: 3.4.0, 1.17.6
+    Status: fixed
+    Layer:
+      Digest: sha256:80285450131f79074d25cc062cc4e3680e2f00dc8b2c6aa9c3cbaa286812231e
+      DiffID: sha256:d653d17bf958478d3ca1728e017f41ce5d4c9838b81a2b2ea36e8e2b56ad8ef7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-3635
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Maven
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
+    Title: 'okio: GzipSource class improper exception handling'
+    Description: |+
+      GzipSource does not handle an exception that might be raised when parsing a malformed gzip buffer. This may lead to denial of service of the Okio client when handling a crafted GZIP archive, by using the GzipSource class.
+
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-681
+    - CWE-195
+    VendorSeverity:
+      ghsa: 2
+      nvd: 3
+      redhat: 3
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+    References:
+    - https://access.redhat.com/security/cve/CVE-2023-3635
+    - https://github.com/square/okio
+    - https://github.com/square/okio/blob/master/CHANGELOG.md#version-1176
+    - https://github.com/square/okio/commit/81bce1a30af244550b0324597720e4799281da7b
+    - https://github.com/square/okio/commit/b4fa875dc24950680c386e4b1c593660ce4f7839
+    - https://github.com/square/okio/pull/1280
+    - https://github.com/square/okio/pull/1334
+    - https://nvd.nist.gov/vuln/detail/CVE-2023-3635
+    - https://research.jfrog.com/vulnerabilities/okio-gzip-source-unhandled-exception-dos-xray-523195
+    - https://research.jfrog.com/vulnerabilities/okio-gzip-source-unhandled-exception-dos-xray-523195/
+    - https://www.cve.org/CVERecord?id=CVE-2023-3635
+    PublishedDate: '2023-07-12T19:15:08.983Z'
+    LastModifiedDate: '2023-10-25T15:17:42.17Z'
