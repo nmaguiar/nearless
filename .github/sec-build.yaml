@@ -15,8 +15,8 @@
     FixedVersion: 3.4.0, 1.17.6
     Status: fixed
     Layer:
-      Digest: sha256:c2b43e4b0dc880ff9c7ede08697ef6f2f19a8b8280e190e83dea42ead28f4945
-      DiffID: sha256:0a66dd6173e3f283caac3a18ee0fa18eb3c9394110b2efec5cf8c6cf1df859f0
+      Digest: sha256:6afdc71dd4e513315e4388f5edae0730dad892c5bcaa4b2b93ff0f7b65c5a1ef
+      DiffID: sha256:4c52b54e477f1229e75c533e757bf686f233bf68a41a88cf2163a0894663db86
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-3635
     DataSource:
