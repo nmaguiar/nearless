@@ -163,7 +163,28 @@
 │                       │     ├ DataSource       ╭ ID  : alpine 
 │                       │     │                  ├ Name: Alpine Secdb 
 │                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ╰ Severity        : UNKNOWN 
+│                       │     ├ Title           : libtasn1: Inefficient DER Decoding in libtasn1 Leading to
+│                       │     │                   Potential Remote DoS 
+│                       │     ├ Description     : A flaw in libtasn1 causes inefficient handling of specific
+│                       │     │                   certificate data. When processing a large number of elements
+│                       │     │                   in a certificate, libtasn1 takes much longer than expected,
+│                       │     │                   which can slow down or even crash the system. This flaw
+│                       │     │                   allows an attacker to send a specially crafted certificate,
+│                       │     │                   causing a denial of service attack. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ CweIDs           ─ [0]: CWE-407 
+│                       │     ├ VendorSeverity   ─ redhat: 2 
+│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+│                       │     │                           │           A:L 
+│                       │     │                           ╰ V3Score : 5.3 
+│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/02/06/6 
+│                       │     │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-12133 
+│                       │     │                  ├ [2]: https://bugzilla.redhat.com/show_bug.cgi?id=2344611 
+│                       │     │                  ├ [3]: https://gitlab.com/gnutls/libtasn1/-/issues/52 
+│                       │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2024-12133 
+│                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2024-12133 
+│                       │     ├ PublishedDate   : 2025-02-10T16:15:37.26Z 
+│                       │     ╰ LastModifiedDate: 2025-02-10T16:15:37.26Z 
 │                       ├ [3] ╭ VulnerabilityID : CVE-2025-21502 
 │                       │     ├ PkgID           : openjdk21-jre@21.0.5_p11-r0 
 │                       │     ├ PkgName         : openjdk21-jre 
@@ -386,7 +407,92 @@
 │                             │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-13176 
 │                             ├ PublishedDate   : 2025-01-20T14:15:26.247Z 
 │                             ╰ LastModifiedDate: 2025-01-27T21:15:11.907Z 
-╰ [1] ╭ Target: Java 
-      ├ Class : lang-pkgs 
-      ╰ Type  : jar 
+╰ [1] ╭ Target         : Java 
+      ├ Class          : lang-pkgs 
+      ├ Type           : jar 
+      ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-25193 
+                        │     ├ PkgName         : io.netty:netty-common 
+                        │     ├ PkgPath         : openaf/Kube/netty-common-4.1.117.Final.jar 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-common@4.1.117.Final 
+                        │     │                  ╰ UID : 5d017f309cb752bc 
+                        │     ├ InstalledVersion: 4.1.117.Final 
+                        │     ├ Status          : affected 
+                        │     ├ Layer            ╭ Digest: sha256:0138c2ef51b7b02a0c3fefdb8a49fd4758439cdfcf63f
+                        │     │                  │         f8fa7bca6b2257b65e4 
+                        │     │                  ╰ DiffID: sha256:675ec2f157ae16774b2759009e72ce55ec42aa5515ced
+                        │     │                            7dce93ecfe720c8c498 
+                        │     ├ SeveritySource  : ghsa 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-25193 
+                        │     ├ DataSource       ╭ ID  : ghsa 
+                        │     │                  ├ Name: GitHub Security Advisory Maven 
+                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+                        │     │                          osystem%3Amaven 
+                        │     ├ Title           : Denial of Service attack on windows app using Netty 
+                        │     ├ Description     : Netty, an asynchronous, event-driven network application
+                        │     │                   framework, has a vulnerability in versions up to and
+                        │     │                   including 4.1.118.Final. An unsafe reading of environment
+                        │     │                   file could potentially cause a denial of service in Netty.
+                        │     │                   When loaded on an Windows application, Netty attempts to load
+                        │     │                    a file that does not exist. If an attacker creates such a
+                        │     │                   large file, the Netty application crash. A similar issue was
+                        │     │                   previously reported as CVE-2024-47535. This issue was fixed,
+                        │     │                   but the fix was incomplete in that null-bytes were not
+                        │     │                   counted against the input limit. Commit
+                        │     │                   d1fbda62d3a47835d3fb35db8bd42ecc205a5386 contains an updated
+                        │     │                   fix. 
+                        │     ├ Severity        : MEDIUM 
+                        │     ├ CweIDs           ─ [0]: CWE-400 
+                        │     ├ VendorSeverity   ─ ghsa: 2 
+                        │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H 
+                        │     │                         ╰ V3Score : 5.5 
+                        │     ├ References       ╭ [0]: https://github.com/netty/netty 
+                        │     │                  ├ [1]: https://github.com/netty/netty/commit/d1fbda62d3a47835d
+                        │     │                  │      3fb35db8bd42ecc205a5386 
+                        │     │                  ├ [2]: https://github.com/netty/netty/security/advisories/GHSA
+                        │     │                  │      -389x-839f-4rhx 
+                        │     │                  ╰ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-25193 
+                        │     ├ PublishedDate   : 2025-02-10T22:15:38.45Z 
+                        │     ╰ LastModifiedDate: 2025-02-10T22:15:38.45Z 
+                        ╰ [1] ╭ VulnerabilityID : CVE-2025-24970 
+                              ├ PkgName         : io.netty:netty-handler 
+                              ├ PkgPath         : openaf/Kube/netty-handler-4.1.117.Final.jar 
+                              ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-handler@4.1.117.Final 
+                              │                  ╰ UID : 7034d8e7fca7c42b 
+                              ├ InstalledVersion: 4.1.117.Final 
+                              ├ FixedVersion    : 4.1.118.Final 
+                              ├ Status          : fixed 
+                              ├ Layer            ╭ Digest: sha256:0138c2ef51b7b02a0c3fefdb8a49fd4758439cdfcf63f
+                              │                  │         f8fa7bca6b2257b65e4 
+                              │                  ╰ DiffID: sha256:675ec2f157ae16774b2759009e72ce55ec42aa5515ced
+                              │                            7dce93ecfe720c8c498 
+                              ├ SeveritySource  : ghsa 
+                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-24970 
+                              ├ DataSource       ╭ ID  : ghsa 
+                              │                  ├ Name: GitHub Security Advisory Maven 
+                              │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+                              │                          osystem%3Amaven 
+                              ├ Title           : SslHandler doesn't correctly validate packets which can lead
+                              │                   to native crash when using native SSLEngine 
+                              ├ Description     : Netty, an asynchronous, event-driven network application
+                              │                   framework, has a vulnerability starting in version
+                              │                   4.1.91.Final and prior to version 4.1.118.Final. When a
+                              │                   special crafted packet is received via SslHandler it doesn't
+                              │                   correctly handle validation of such a packet in all cases
+                              │                   which can lead to a native crash. Version 4.1.118.Final
+                              │                   contains a patch. As workaround its possible to either
+                              │                   disable the usage of the native SSLEngine or change the code
+                              │                   manually. 
+                              ├ Severity        : HIGH 
+                              ├ CweIDs           ─ [0]: CWE-20 
+                              ├ VendorSeverity   ─ ghsa: 3 
+                              ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
+                              │                         ╰ V3Score : 7.5 
+                              ├ References       ╭ [0]: https://github.com/netty/netty 
+                              │                  ├ [1]: https://github.com/netty/netty/commit/87f40725155b2f89a
+                              │                  │      dfde68c7732f97c153676c4 
+                              │                  ├ [2]: https://github.com/netty/netty/security/advisories/GHSA
+                              │                  │      -4g8c-wm8x-jfhw 
+                              │                  ╰ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-24970 
+                              ├ PublishedDate   : 2025-02-10T22:15:38.057Z 
+                              ╰ LastModifiedDate: 2025-02-10T22:15:38.057Z 
 ````
