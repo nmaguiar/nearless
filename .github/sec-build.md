@@ -427,7 +427,8 @@
                         │     │                  ├ Name: GitHub Security Advisory Maven 
                         │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
                         │     │                          osystem%3Amaven 
-                        │     ├ Title           : Denial of Service attack on windows app using Netty 
+                        │     ├ Title           : Netty, an asynchronous, event-driven network application
+                        │     │                   framework, ha ... 
                         │     ├ Description     : Netty, an asynchronous, event-driven network application
                         │     │                   framework, has a vulnerability in versions up to and
                         │     │                   including 4.1.118.Final. An unsafe reading of environment
@@ -452,7 +453,7 @@
                         │     │                  │      -389x-839f-4rhx 
                         │     │                  ╰ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-25193 
                         │     ├ PublishedDate   : 2025-02-10T22:15:38.45Z 
-                        │     ╰ LastModifiedDate: 2025-02-10T22:15:38.45Z 
+                        │     ╰ LastModifiedDate: 2025-02-11T16:15:52.523Z 
                         ╰ [1] ╭ VulnerabilityID : CVE-2025-24970 
                               ├ PkgName         : io.netty:netty-handler 
                               ├ PkgPath         : openaf/Kube/netty-handler-4.1.117.Final.jar 
@@ -471,8 +472,9 @@
                               │                  ├ Name: GitHub Security Advisory Maven 
                               │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
                               │                          osystem%3Amaven 
-                              ├ Title           : SslHandler doesn't correctly validate packets which can lead
-                              │                   to native crash when using native SSLEngine 
+                              ├ Title           : io.netty:netty-handler: SslHandler doesn't correctly validate
+                              │                    packets which can lead to native crash when using native
+                              │                   SSLEngine 
                               ├ Description     : Netty, an asynchronous, event-driven network application
                               │                   framework, has a vulnerability starting in version
                               │                   4.1.91.Final and prior to version 4.1.118.Final. When a
@@ -484,15 +486,22 @@
                               │                   manually. 
                               ├ Severity        : HIGH 
                               ├ CweIDs           ─ [0]: CWE-20 
-                              ├ VendorSeverity   ─ ghsa: 3 
-                              ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
-                              │                         ╰ V3Score : 7.5 
-                              ├ References       ╭ [0]: https://github.com/netty/netty 
-                              │                  ├ [1]: https://github.com/netty/netty/commit/87f40725155b2f89a
+                              ├ VendorSeverity   ╭ ghsa  : 3 
+                              │                  ╰ redhat: 3 
+                              ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+                              │                  │        │           A:H 
+                              │                  │        ╰ V3Score : 7.5 
+                              │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+                              │                           │           A:H 
+                              │                           ╰ V3Score : 7.5 
+                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-24970 
+                              │                  ├ [1]: https://github.com/netty/netty 
+                              │                  ├ [2]: https://github.com/netty/netty/commit/87f40725155b2f89a
                               │                  │      dfde68c7732f97c153676c4 
-                              │                  ├ [2]: https://github.com/netty/netty/security/advisories/GHSA
+                              │                  ├ [3]: https://github.com/netty/netty/security/advisories/GHSA
                               │                  │      -4g8c-wm8x-jfhw 
-                              │                  ╰ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-24970 
+                              │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-24970 
+                              │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-24970 
                               ├ PublishedDate   : 2025-02-10T22:15:38.057Z 
-                              ╰ LastModifiedDate: 2025-02-10T22:15:38.057Z 
+                              ╰ LastModifiedDate: 2025-02-11T16:15:51.92Z 
 ````
