@@ -23,7 +23,6 @@ ENV OJOB_CONFIG=/ojob/main.yaml
 ENV OJOB_JSONLOG=true
 ENV OJOB=/openaf/entrypoint.yaml
 
-USER openaf
 WORKDIR /ojob
 EXPOSE 8080
 ENTRYPOINT ["/bin/sh", "/openaf/.docker/entrypoint.sh"]
