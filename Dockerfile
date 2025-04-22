@@ -1,4 +1,4 @@
-FROM openaf/ojobrt:nightly
+FROM openaf/ojobrt:edge
 
 USER root
 RUN apk update\
