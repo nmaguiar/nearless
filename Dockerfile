@@ -1,4 +1,4 @@
-FROM openaf/ojobrt:edge
+FROM openaf/ojobrt:edge as main
 
 USER root
 RUN apk update\
@@ -14,6 +14,16 @@ COPY nginx.conf.hbs /ojob/nginx.conf.hbs
 COPY main.yaml /ojob/main.yaml
 COPY triggers.yaml /ojob/triggers.yaml
 
+# -------------------
+FROM scratch as final
+
+COPY --from=main / /
+
 ENV OJOB_CONFIG=/ojob/main.yaml
 ENV OJOB_JSONLOG=true
+ENV OJOB=/openaf/entrypoint.yaml
+
+USER openaf
+WORKDIR /ojob
 EXPOSE 8080
+ENTRYPOINT ["/bin/sh", "/openaf/.docker/entrypoint.sh"]

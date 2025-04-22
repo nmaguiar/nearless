@@ -11,11 +11,11 @@ todo:
 - Set DNS timeout
 - Prepare init
 - Prepare scheduled trigger
-- (httpdStart  ): 7777
+- (httpdStart  ): ${oport:-7777}
   ((host      )): localhost
-- (httpdService): 7777
+- (httpdService): ${oport:-7777}
   ((uri       )): /
-  ((execURI   )): | 
+  ((execURI   )): | #js
     var res, _res
     try {
       // Determine source host
@@ -54,10 +54,10 @@ todo:
 
 ojob:
   opacks      :
-  - openaf: 20240812
+  - openaf: 20250420
   - oJob-common
   - Kube
-  catch       : printErrnl("[" + job.name + "] "); if (isDef(exception.javaException)) exception.javaException.printStackTrace(); else printErr(exception)
+  catch       : printErrnl("[" + job.name + "] " + $err(exception, __, true, job.exec))
   logToConsole: true   # to change when finished
   argsFromEnvs: true
   channels    :
@@ -76,7 +76,7 @@ jobs:
   check:
     in:
       DNSTIMEOUT: toNumber().isNumber().default(10000)
-  exec : |
+  exec : | #js
     // Set DNS timeout
     log("Set DNS cache TTL: " + args.DNSTIMEOUT)
     java.security.Security.setProperty("networkaddress.cache.ttl", args.DNSTIMEOUT)
@@ -86,7 +86,7 @@ jobs:
   check:
     in:
       sites: isString
-  exec : |
+  exec : | #js
     // Read template
     var tmpl = io.readFileString("nginx.conf.hbs")
 
@@ -125,6 +125,6 @@ jobs:
 # ------------------
 - name : Start nginx 
   deps : Prepare nginx config
-  exec : |
+  exec : | #js
     $sh(["nginx", "-g", "daemon off;"])
     .exec()

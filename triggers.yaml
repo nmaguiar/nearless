@@ -13,10 +13,10 @@ jobs:
 
 # -----------------------
 - name: Trigger openaf.io
-  exec: |
+  exec: | #js
     args._output = ow.server.httpd.reply("OK!\n")
 
 # ---------------------
 - name: Trigger anysite
-  exec: |
+  exec: | #js
     args._output = ow.server.httpd.reply("OK (this is for " + args._host + ")")

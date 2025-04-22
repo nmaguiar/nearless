@@ -1,5 +1,5 @@
 init:
-  tmpl: &TMPL |
+  tmpl: &TMPL | #markdown
     ## Restarting service
 
     Wait a couple of seconds, the service is being restarted...
@@ -12,7 +12,7 @@ init:
 jobs:
 # -----------------------
 - name: Get existing pods
-  exec: |
+  exec: | #js
     loadLib("kube.js")
     args.ns = "default"
 
@@ -27,7 +27,7 @@ jobs:
   type: periodic
   typeArgs:
     timeInterval: 5000
-  exec: |
+  exec: | #js
     // For all running pods
     var leaveRunning = 0, foundRunning = 0
     $from(args.items).equals("status.phase", "Running").select(pod => {
@@ -48,9 +48,8 @@ jobs:
 
     if (foundRunning != leaveRunning) {
       // Scale down to the number of replicas pre-determined with activity in the last 5 minutes
-      var k = new Kube()
       log(`Scaling down to ${leaveRunning} of ${foundRunning}...`)
-      k.client.inNamespace(args.ns).apps().deployments().withName("nginx").scale(leaveRunning)
+      $kube().scale(args.ns, "deploy", "nginx", leaveRunning)
     }
 
 # -------------------------------
@@ -58,13 +57,13 @@ jobs:
   from: Get existing pods
   args:
     tmpl: *TMPL
-  exec: |
+  exec: | #js
     ow.loadTemplate()
 
     // Checking pods
     if (args.items.length == 0) {
       log("Scaling up...")
-      k.client.inNamespace(args.ns).apps().deployments().withName("nginx").scale(1)
+      $kube().scale(args.ns, "deploy", "nginx", 1)
     } else {
       log("Currently: " + af.toSLON( $from(args.items).countBy("status.phase") ))
     }
