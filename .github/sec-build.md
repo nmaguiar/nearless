@@ -2,135 +2,7 @@
 ╭ [0] ╭ Target         : nmaguiar/nearless:build (alpine 3.22.0_alpha20250108) 
 │     ├ Class          : os-pkgs 
 │     ├ Type           : alpine 
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-4947 
-│                       │     ├ PkgID           : curl@8.13.0-r1 
-│                       │     ├ PkgName         : curl 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.13.0-r1?arch=x86_64&distro=3.22.
-│                       │     │                  │       0_alpha20250108 
-│                       │     │                  ╰ UID : ff5cfbbe413d7a1b 
-│                       │     ├ InstalledVersion: 8.13.0-r1 
-│                       │     ├ FixedVersion    : 8.14.0-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:4d19ba8e79df128471fd86e465cc257a8511a6e144958
-│                       │     │                  │         ad90e2cf75c89d5ca17 
-│                       │     │                  ╰ DiffID: sha256:bb34b98b5cb7d2e0d6fb86ece51d72c06248e9c9a8582
-│                       │     │                            92cafdf0a95ffe94874 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-4947 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : libcurl accidentally skips the certificate verification for
-│                       │     │                   QUIC conne ... 
-│                       │     ├ Description     : libcurl accidentally skips the certificate verification for
-│                       │     │                   QUIC connections when connecting to a host specified as an IP
-│                       │     │                    address in the URL. Therefore, it does not detect impostors
-│                       │     │                   or man-in-the-middle attacks. 
-│                       │     ├ Severity        : UNKNOWN 
-│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/05/28/4 
-│                       │     │                  ├ [1]: https://curl.se/docs/CVE-2025-4947.html 
-│                       │     │                  ├ [2]: https://curl.se/docs/CVE-2025-4947.json 
-│                       │     │                  ╰ [3]: https://hackerone.com/reports/3150884 
-│                       │     ├ PublishedDate   : 2025-05-28T07:15:24.78Z 
-│                       │     ╰ LastModifiedDate: 2025-05-28T15:01:30.72Z 
-│                       ├ [1] ╭ VulnerabilityID : CVE-2025-5025 
-│                       │     ├ PkgID           : curl@8.13.0-r1 
-│                       │     ├ PkgName         : curl 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.13.0-r1?arch=x86_64&distro=3.22.
-│                       │     │                  │       0_alpha20250108 
-│                       │     │                  ╰ UID : ff5cfbbe413d7a1b 
-│                       │     ├ InstalledVersion: 8.13.0-r1 
-│                       │     ├ FixedVersion    : 8.14.0-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:4d19ba8e79df128471fd86e465cc257a8511a6e144958
-│                       │     │                  │         ad90e2cf75c89d5ca17 
-│                       │     │                  ╰ DiffID: sha256:bb34b98b5cb7d2e0d6fb86ece51d72c06248e9c9a8582
-│                       │     │                            92cafdf0a95ffe94874 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-5025 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : libcurl supports *pinning* of the server certificate public
-│                       │     │                   key for HT ... 
-│                       │     ├ Description     : libcurl supports *pinning* of the server certificate public
-│                       │     │                   key for HTTPS transfers. Due to an omission, this check is
-│                       │     │                   not performed when connecting with QUIC for HTTP/3, when the
-│                       │     │                   TLS backend is wolfSSL. Documentation says the option works
-│                       │     │                   with wolfSSL, failing to specify that it does not for QUIC
-│                       │     │                   and HTTP/3. Since pinning makes the transfer succeed if the
-│                       │     │                   pin is fine, users could unwittingly connect to an impostor
-│                       │     │                   server without noticing. 
-│                       │     ├ Severity        : UNKNOWN 
-│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/05/28/5 
-│                       │     │                  ├ [1]: https://curl.se/docs/CVE-2025-5025.html 
-│                       │     │                  ├ [2]: https://curl.se/docs/CVE-2025-5025.json 
-│                       │     │                  ╰ [3]: https://hackerone.com/reports/3153497 
-│                       │     ├ PublishedDate   : 2025-05-28T07:15:24.91Z 
-│                       │     ╰ LastModifiedDate: 2025-05-28T15:01:30.72Z 
-│                       ├ [2] ╭ VulnerabilityID : CVE-2025-4947 
-│                       │     ├ PkgID           : libcurl@8.13.0-r1 
-│                       │     ├ PkgName         : libcurl 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.13.0-r1?arch=x86_64&distro=3.
-│                       │     │                  │       22.0_alpha20250108 
-│                       │     │                  ╰ UID : 722d0a90cac77e7c 
-│                       │     ├ InstalledVersion: 8.13.0-r1 
-│                       │     ├ FixedVersion    : 8.14.0-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:4d19ba8e79df128471fd86e465cc257a8511a6e144958
-│                       │     │                  │         ad90e2cf75c89d5ca17 
-│                       │     │                  ╰ DiffID: sha256:bb34b98b5cb7d2e0d6fb86ece51d72c06248e9c9a8582
-│                       │     │                            92cafdf0a95ffe94874 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-4947 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : libcurl accidentally skips the certificate verification for
-│                       │     │                   QUIC conne ... 
-│                       │     ├ Description     : libcurl accidentally skips the certificate verification for
-│                       │     │                   QUIC connections when connecting to a host specified as an IP
-│                       │     │                    address in the URL. Therefore, it does not detect impostors
-│                       │     │                   or man-in-the-middle attacks. 
-│                       │     ├ Severity        : UNKNOWN 
-│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/05/28/4 
-│                       │     │                  ├ [1]: https://curl.se/docs/CVE-2025-4947.html 
-│                       │     │                  ├ [2]: https://curl.se/docs/CVE-2025-4947.json 
-│                       │     │                  ╰ [3]: https://hackerone.com/reports/3150884 
-│                       │     ├ PublishedDate   : 2025-05-28T07:15:24.78Z 
-│                       │     ╰ LastModifiedDate: 2025-05-28T15:01:30.72Z 
-│                       ├ [3] ╭ VulnerabilityID : CVE-2025-5025 
-│                       │     ├ PkgID           : libcurl@8.13.0-r1 
-│                       │     ├ PkgName         : libcurl 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.13.0-r1?arch=x86_64&distro=3.
-│                       │     │                  │       22.0_alpha20250108 
-│                       │     │                  ╰ UID : 722d0a90cac77e7c 
-│                       │     ├ InstalledVersion: 8.13.0-r1 
-│                       │     ├ FixedVersion    : 8.14.0-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:4d19ba8e79df128471fd86e465cc257a8511a6e144958
-│                       │     │                  │         ad90e2cf75c89d5ca17 
-│                       │     │                  ╰ DiffID: sha256:bb34b98b5cb7d2e0d6fb86ece51d72c06248e9c9a8582
-│                       │     │                            92cafdf0a95ffe94874 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-5025 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : libcurl supports *pinning* of the server certificate public
-│                       │     │                   key for HT ... 
-│                       │     ├ Description     : libcurl supports *pinning* of the server certificate public
-│                       │     │                   key for HTTPS transfers. Due to an omission, this check is
-│                       │     │                   not performed when connecting with QUIC for HTTP/3, when the
-│                       │     │                   TLS backend is wolfSSL. Documentation says the option works
-│                       │     │                   with wolfSSL, failing to specify that it does not for QUIC
-│                       │     │                   and HTTP/3. Since pinning makes the transfer succeed if the
-│                       │     │                   pin is fine, users could unwittingly connect to an impostor
-│                       │     │                   server without noticing. 
-│                       │     ├ Severity        : UNKNOWN 
-│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/05/28/5 
-│                       │     │                  ├ [1]: https://curl.se/docs/CVE-2025-5025.html 
-│                       │     │                  ├ [2]: https://curl.se/docs/CVE-2025-5025.json 
-│                       │     │                  ╰ [3]: https://hackerone.com/reports/3153497 
-│                       │     ├ PublishedDate   : 2025-05-28T07:15:24.91Z 
-│                       │     ╰ LastModifiedDate: 2025-05-28T15:01:30.72Z 
-│                       ├ [4] ╭ VulnerabilityID : CVE-2025-26519 
+│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-26519 
 │                       │     ├ PkgID           : musl@1.2.5-r9 
 │                       │     ├ PkgName         : musl 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl@1.2.5-r9?arch=x86_64&distro=3.22.0
@@ -139,10 +11,10 @@
 │                       │     ├ InstalledVersion: 1.2.5-r9 
 │                       │     ├ FixedVersion    : 1.2.5-r10 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:4d19ba8e79df128471fd86e465cc257a8511a6e144958
-│                       │     │                  │         ad90e2cf75c89d5ca17 
-│                       │     │                  ╰ DiffID: sha256:bb34b98b5cb7d2e0d6fb86ece51d72c06248e9c9a8582
-│                       │     │                            92cafdf0a95ffe94874 
+│                       │     ├ Layer            ╭ Digest: sha256:759819d8475b26c69373877462120f56df83936e14834
+│                       │     │                  │         b26be29ca6cb2084d9d 
+│                       │     │                  ╰ DiffID: sha256:6cc0fb19e87e90b50901de458053d2b2df25c0987c553
+│                       │     │                            8aff280dc154f9cbb39 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-26519 
 │                       │     ├ DataSource       ╭ ID  : alpine 
 │                       │     │                  ├ Name: Alpine Secdb 
@@ -167,7 +39,7 @@
 │                       │     │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/02/13/2 
 │                       │     ├ PublishedDate   : 2025-02-14T04:15:09.05Z 
 │                       │     ╰ LastModifiedDate: 2025-02-14T17:15:23.09Z 
-│                       ╰ [5] ╭ VulnerabilityID : CVE-2025-26519 
+│                       ╰ [1] ╭ VulnerabilityID : CVE-2025-26519 
 │                             ├ PkgID           : musl-utils@1.2.5-r9 
 │                             ├ PkgName         : musl-utils 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl-utils@1.2.5-r9?arch=x86_64&distro=
@@ -176,10 +48,10 @@
 │                             ├ InstalledVersion: 1.2.5-r9 
 │                             ├ FixedVersion    : 1.2.5-r10 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:4d19ba8e79df128471fd86e465cc257a8511a6e144958
-│                             │                  │         ad90e2cf75c89d5ca17 
-│                             │                  ╰ DiffID: sha256:bb34b98b5cb7d2e0d6fb86ece51d72c06248e9c9a8582
-│                             │                            92cafdf0a95ffe94874 
+│                             ├ Layer            ╭ Digest: sha256:759819d8475b26c69373877462120f56df83936e14834
+│                             │                  │         b26be29ca6cb2084d9d 
+│                             │                  ╰ DiffID: sha256:6cc0fb19e87e90b50901de458053d2b2df25c0987c553
+│                             │                            8aff280dc154f9cbb39 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-26519 
 │                             ├ DataSource       ╭ ID  : alpine 
 │                             │                  ├ Name: Alpine Secdb 
