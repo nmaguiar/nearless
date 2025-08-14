@@ -76,7 +76,44 @@
 │                             │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/02/13/2 
 │                             ├ PublishedDate   : 2025-02-14T04:15:09.05Z 
 │                             ╰ LastModifiedDate: 2025-02-14T17:15:23.09Z 
-╰ [1] ╭ Target: Java 
-      ├ Class : lang-pkgs 
-      ╰ Type  : jar 
+╰ [1] ╭ Target         : Java 
+      ├ Class          : lang-pkgs 
+      ├ Type           : jar 
+      ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2025-55163 
+                              ├ PkgName         : io.netty:netty-codec-http2 
+                              ├ PkgPath         : openaf/Kube/netty-codec-http2-4.1.118.Final.jar 
+                              ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-http2@4.1.118.Final 
+                              │                  ╰ UID : 47f6f5e248c0b5e1 
+                              ├ InstalledVersion: 4.1.118.Final 
+                              ├ FixedVersion    : 4.2.4.Final, 4.1.124.Final 
+                              ├ Status          : fixed 
+                              ├ Layer            ╭ Digest: sha256:81a62c6028e31c2e16f493e81d41731f48b4784ce42b0
+                              │                  │         b6e55edf319ea8a4975 
+                              │                  ╰ DiffID: sha256:8ec85ab071e367b501a71c389734f7764d44d9a036c92
+                              │                            35440bf90dd4fdc4bae 
+                              ├ SeveritySource  : ghsa 
+                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-55163 
+                              ├ DataSource       ╭ ID  : ghsa 
+                              │                  ├ Name: GitHub Security Advisory Maven 
+                              │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+                              │                          osystem%3Amaven 
+                              ├ Title           : Netty is an asynchronous, event-driven network application
+                              │                   framework.  ... 
+                              ├ Description     : Netty is an asynchronous, event-driven network application
+                              │                   framework. Prior to versions 4.1.124.Final and 4.2.4.Final,
+                              │                   Netty is vulnerable to MadeYouReset DDoS. This is a logical
+                              │                   vulnerability in the HTTP/2 protocol, that uses malformed
+                              │                   HTTP/2 control frames in order to break the max concurrent
+                              │                   streams limit - which results in resource exhaustion and
+                              │                   distributed denial of service. This issue has been patched in
+                              │                    versions 4.1.124.Final and 4.2.4.Final. 
+                              ├ Severity        : HIGH 
+                              ├ CweIDs           ─ [0]: CWE-770 
+                              ├ VendorSeverity   ─ ghsa: 3 
+                              ├ References       ╭ [0]: https://github.com/netty/netty 
+                              │                  ├ [1]: https://github.com/netty/netty/security/advisories/GHSA
+                              │                  │      -prj3-ccx8-p6x4 
+                              │                  ╰ [2]: https://nvd.nist.gov/vuln/detail/CVE-2025-55163 
+                              ├ PublishedDate   : 2025-08-13T15:15:39.39Z 
+                              ╰ LastModifiedDate: 2025-08-13T17:33:46.673Z 
 ````
