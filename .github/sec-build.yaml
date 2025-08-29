@@ -70,6 +70,35 @@
     - https://www.openwall.com/lists/oss-security/2025/02/13/2
     PublishedDate: '2025-02-14T04:15:09.05Z'
     LastModifiedDate: '2025-02-14T17:15:23.09Z'
+  - VulnerabilityID: CVE-2025-58050
+    PkgID: pcre2@10.45-r0
+    PkgName: pcre2
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/pcre2@10.45-r0?arch=x86_64&distro=3.22.0_alpha20250108
+      UID: 59358fab41ec1a81
+    InstalledVersion: 10.45-r0
+    FixedVersion: 10.46-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:e9f93a3e72a7a9fc09b994e2163ff1d7123123c803b4e682038a15ca052e2dc9
+      DiffID: sha256:9f99106023eec7c59ebb58146dfe1b6b205c93ca9421136e7dd101aca76eb16f
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58050
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Title: The PCRE2 library is a set of C functions that implement regular expre ...
+    Description: The PCRE2 library is a set of C functions that implement regular expression pattern matching. In version 10.45, a heap-buffer-overflow read vulnerability exists in the PCRE2 regular expression matching engine, specifically within the handling of the (*scs:...) (Scan SubString) verb when combined with (*ACCEPT) in src/pcre2_match.c. This vulnerability may potentially lead to information disclosure if the out-of-bounds data read during the memcmp affects the final match result in a way observable by the attacker. This issue has been resolved in version 10.46.
+    Severity: UNKNOWN
+    CweIDs:
+    - CWE-122
+    - CWE-125
+    References:
+    - https://github.com/PCRE2Project/pcre2/commit/a141712e5967d448c7ce13090ab530c8e3d82254
+    - https://github.com/PCRE2Project/pcre2/releases/tag/pcre2-10.46
+    - https://github.com/PCRE2Project/pcre2/security/advisories/GHSA-c2gv-xgf5-5cc2
+    PublishedDate: '2025-08-27T19:15:37.56Z'
+    LastModifiedDate: '2025-08-27T20:15:33.8Z'
 - Target: Java
   Class: lang-pkgs
   Type: jar
