@@ -12,8 +12,8 @@
     FixedVersion: 1.2.5-r10
     Status: fixed
     Layer:
-      Digest: sha256:2a6036ad25198729299220f3baab962c6dda666366c6e42f3f0e7c0a323271d2
-      DiffID: sha256:f95e14865961b988c4a88368fc76a0984d3161afeba72f942a6b9cbf242f8235
+      Digest: sha256:e7155c6172224e1a995d967ee8a2417fc8c4b5b676ede73c08d869f9efe79500
+      DiffID: sha256:21c7ec0ab5faefd37aa013437a116df56e95806fce8e77f928dc565a7624fede
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-26519
     DataSource:
       ID: alpine
@@ -46,8 +46,8 @@
     FixedVersion: 1.2.5-r10
     Status: fixed
     Layer:
-      Digest: sha256:2a6036ad25198729299220f3baab962c6dda666366c6e42f3f0e7c0a323271d2
-      DiffID: sha256:f95e14865961b988c4a88368fc76a0984d3161afeba72f942a6b9cbf242f8235
+      Digest: sha256:e7155c6172224e1a995d967ee8a2417fc8c4b5b676ede73c08d869f9efe79500
+      DiffID: sha256:21c7ec0ab5faefd37aa013437a116df56e95806fce8e77f928dc565a7624fede
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-26519
     DataSource:
       ID: alpine
@@ -84,8 +84,8 @@
     FixedVersion: 4.1.125.Final
     Status: fixed
     Layer:
-      Digest: sha256:2a6036ad25198729299220f3baab962c6dda666366c6e42f3f0e7c0a323271d2
-      DiffID: sha256:f95e14865961b988c4a88368fc76a0984d3161afeba72f942a6b9cbf242f8235
+      Digest: sha256:e7155c6172224e1a995d967ee8a2417fc8c4b5b676ede73c08d869f9efe79500
+      DiffID: sha256:21c7ec0ab5faefd37aa013437a116df56e95806fce8e77f928dc565a7624fede
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58057
     DataSource:
@@ -123,8 +123,8 @@
     FixedVersion: 4.1.125.Final, 4.2.5.Final
     Status: fixed
     Layer:
-      Digest: sha256:2a6036ad25198729299220f3baab962c6dda666366c6e42f3f0e7c0a323271d2
-      DiffID: sha256:f95e14865961b988c4a88368fc76a0984d3161afeba72f942a6b9cbf242f8235
+      Digest: sha256:e7155c6172224e1a995d967ee8a2417fc8c4b5b676ede73c08d869f9efe79500
+      DiffID: sha256:21c7ec0ab5faefd37aa013437a116df56e95806fce8e77f928dc565a7624fede
     SeveritySource: ghsa
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-58056
     DataSource:
@@ -133,14 +133,15 @@
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
     Title: Netty is an asynchronous event-driven network application framework fo ...
     Description: Netty is an asynchronous event-driven network application framework for development of maintainable high performance protocol servers and clients. In versions 4.1.124.Final, and 4.2.0.Alpha3 through 4.2.4.Final, Netty incorrectly accepts standalone newline characters (LF) as a chunk-size line terminator, regardless of a preceding carriage return (CR), instead of requiring CRLF per HTTP/1.1 standards. When combined with reverse proxies that parse LF differently (treating it as part of the chunk extension), attackers can craft requests that the proxy sees as one request but Netty processes as two, enabling request smuggling attacks. This is fixed in versions 4.1.125.Final and 4.2.5.Final.
-    Severity: HIGH
+    Severity: LOW
     CweIDs:
     - CWE-444
     VendorSeverity:
-      ghsa: 3
+      ghsa: 1
     References:
     - https://datatracker.ietf.org/doc/html/rfc9112#name-chunked-transfer-coding
     - https://github.com/JLLeitschuh/unCVEed/issues/1
+    - https://github.com/github/advisory-database/pull/6092
     - https://github.com/netty/netty
     - https://github.com/netty/netty/commit/edb55fd8e0a3bcbd85881e423464f585183d1284
     - https://github.com/netty/netty/issues/15522
