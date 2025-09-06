@@ -11,10 +11,10 @@
 │                       │     ├ InstalledVersion: 1.2.5-r9 
 │                       │     ├ FixedVersion    : 1.2.5-r10 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:2a6036ad25198729299220f3baab962c6dda666366c6e
-│                       │     │                  │         42f3f0e7c0a323271d2 
-│                       │     │                  ╰ DiffID: sha256:f95e14865961b988c4a88368fc76a0984d3161afeba72
-│                       │     │                            f942a6b9cbf242f8235 
+│                       │     ├ Layer            ╭ Digest: sha256:e7155c6172224e1a995d967ee8a2417fc8c4b5b676ede
+│                       │     │                  │         73c08d869f9efe79500 
+│                       │     │                  ╰ DiffID: sha256:21c7ec0ab5faefd37aa013437a116df56e95806fce8e7
+│                       │     │                            7f928dc565a7624fede 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-26519 
 │                       │     ├ DataSource       ╭ ID  : alpine 
 │                       │     │                  ├ Name: Alpine Secdb 
@@ -48,10 +48,10 @@
 │                             ├ InstalledVersion: 1.2.5-r9 
 │                             ├ FixedVersion    : 1.2.5-r10 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:2a6036ad25198729299220f3baab962c6dda666366c6e
-│                             │                  │         42f3f0e7c0a323271d2 
-│                             │                  ╰ DiffID: sha256:f95e14865961b988c4a88368fc76a0984d3161afeba72
-│                             │                            f942a6b9cbf242f8235 
+│                             ├ Layer            ╭ Digest: sha256:e7155c6172224e1a995d967ee8a2417fc8c4b5b676ede
+│                             │                  │         73c08d869f9efe79500 
+│                             │                  ╰ DiffID: sha256:21c7ec0ab5faefd37aa013437a116df56e95806fce8e7
+│                             │                            7f928dc565a7624fede 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-26519 
 │                             ├ DataSource       ╭ ID  : alpine 
 │                             │                  ├ Name: Alpine Secdb 
@@ -87,10 +87,10 @@
                         │     ├ InstalledVersion: 4.1.124.Final 
                         │     ├ FixedVersion    : 4.1.125.Final 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:2a6036ad25198729299220f3baab962c6dda666366c6e
-                        │     │                  │         42f3f0e7c0a323271d2 
-                        │     │                  ╰ DiffID: sha256:f95e14865961b988c4a88368fc76a0984d3161afeba72
-                        │     │                            f942a6b9cbf242f8235 
+                        │     ├ Layer            ╭ Digest: sha256:e7155c6172224e1a995d967ee8a2417fc8c4b5b676ede
+                        │     │                  │         73c08d869f9efe79500 
+                        │     │                  ╰ DiffID: sha256:21c7ec0ab5faefd37aa013437a116df56e95806fce8e7
+                        │     │                            7f928dc565a7624fede 
                         │     ├ SeveritySource  : ghsa 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58057 
                         │     ├ DataSource       ╭ ID  : ghsa 
@@ -137,10 +137,10 @@
                               ├ InstalledVersion: 4.1.124.Final 
                               ├ FixedVersion    : 4.1.125.Final, 4.2.5.Final 
                               ├ Status          : fixed 
-                              ├ Layer            ╭ Digest: sha256:2a6036ad25198729299220f3baab962c6dda666366c6e
-                              │                  │         42f3f0e7c0a323271d2 
-                              │                  ╰ DiffID: sha256:f95e14865961b988c4a88368fc76a0984d3161afeba72
-                              │                            f942a6b9cbf242f8235 
+                              ├ Layer            ╭ Digest: sha256:e7155c6172224e1a995d967ee8a2417fc8c4b5b676ede
+                              │                  │         73c08d869f9efe79500 
+                              │                  ╰ DiffID: sha256:21c7ec0ab5faefd37aa013437a116df56e95806fce8e7
+                              │                            7f928dc565a7624fede 
                               ├ SeveritySource  : ghsa 
                               ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58056 
                               ├ DataSource       ╭ ID  : ghsa 
@@ -161,20 +161,21 @@
                               │                   craft requests that the proxy sees as one request but Netty
                               │                   processes as two, enabling request smuggling attacks. This is
                               │                    fixed in versions 4.1.125.Final and 4.2.5.Final. 
-                              ├ Severity        : HIGH 
+                              ├ Severity        : LOW 
                               ├ CweIDs           ─ [0]: CWE-444 
-                              ├ VendorSeverity   ─ ghsa: 3 
+                              ├ VendorSeverity   ─ ghsa: 1 
                               ├ References       ╭ [0]: https://datatracker.ietf.org/doc/html/rfc9112#name-chun
                               │                  │      ked-transfer-coding 
                               │                  ├ [1]: https://github.com/JLLeitschuh/unCVEed/issues/1 
-                              │                  ├ [2]: https://github.com/netty/netty 
-                              │                  ├ [3]: https://github.com/netty/netty/commit/edb55fd8e0a3bcbd8
+                              │                  ├ [2]: https://github.com/github/advisory-database/pull/6092 
+                              │                  ├ [3]: https://github.com/netty/netty 
+                              │                  ├ [4]: https://github.com/netty/netty/commit/edb55fd8e0a3bcbd8
                               │                  │      5881e423464f585183d1284 
-                              │                  ├ [4]: https://github.com/netty/netty/issues/15522 
-                              │                  ├ [5]: https://github.com/netty/netty/pull/15611 
-                              │                  ├ [6]: https://github.com/netty/netty/security/advisories/GHSA
+                              │                  ├ [5]: https://github.com/netty/netty/issues/15522 
+                              │                  ├ [6]: https://github.com/netty/netty/pull/15611 
+                              │                  ├ [7]: https://github.com/netty/netty/security/advisories/GHSA
                               │                  │      -fghv-69vj-qj49 
-                              │                  ╰ [7]: https://w4ke.info/2025/06/18/funky-chunks.html 
+                              │                  ╰ [8]: https://w4ke.info/2025/06/18/funky-chunks.html 
                               ├ PublishedDate   : 2025-09-03T21:15:33.07Z 
                               ╰ LastModifiedDate: 2025-09-04T15:35:29.497Z 
 ````
