@@ -115,8 +115,12 @@
                         │     ├ Severity        : MEDIUM 
                         │     ├ CweIDs           ─ [0]: CWE-409 
                         │     ├ VendorSeverity   ╭ ghsa  : 2 
+                        │     │                  ├ nvd   : 3 
                         │     │                  ╰ redhat: 2 
-                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/
+                        │     ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+                        │     │                  │        │           A:H 
+                        │     │                  │        ╰ V3Score : 7.5 
+                        │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/
                         │     │                           │           A:N 
                         │     │                           ╰ V3Score : 5.3 
                         │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-58057 
@@ -128,7 +132,7 @@
                         │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-58057 
                         │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-58057 
                         │     ├ PublishedDate   : 2025-09-04T10:42:32.18Z 
-                        │     ╰ LastModifiedDate: 2025-09-04T15:35:29.497Z 
+                        │     ╰ LastModifiedDate: 2025-09-08T16:45:55.143Z 
                         ╰ [1] ╭ VulnerabilityID : CVE-2025-58056 
                               ├ PkgName         : io.netty:netty-codec-http 
                               ├ PkgPath         : openaf/Kube/netty-codec-http-4.1.124.Final.jar 
@@ -163,7 +167,10 @@
                               │                    fixed in versions 4.1.125.Final and 4.2.5.Final. 
                               ├ Severity        : LOW 
                               ├ CweIDs           ─ [0]: CWE-444 
-                              ├ VendorSeverity   ─ ghsa: 1 
+                              ├ VendorSeverity   ╭ ghsa: 1 
+                              │                  ╰ nvd : 3 
+                              ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N 
+                              │                        ╰ V3Score : 7.5 
                               ├ References       ╭ [0]: https://datatracker.ietf.org/doc/html/rfc9112#name-chun
                               │                  │      ked-transfer-coding 
                               │                  ├ [1]: https://github.com/JLLeitschuh/unCVEed/issues/1 
@@ -177,5 +184,5 @@
                               │                  │      -fghv-69vj-qj49 
                               │                  ╰ [8]: https://w4ke.info/2025/06/18/funky-chunks.html 
                               ├ PublishedDate   : 2025-09-03T21:15:33.07Z 
-                              ╰ LastModifiedDate: 2025-09-05T19:15:32.803Z 
+                              ╰ LastModifiedDate: 2025-09-08T16:46:36.847Z 
 ````
