@@ -99,8 +99,12 @@
     - CWE-409
     VendorSeverity:
       ghsa: 2
+      nvd: 3
       redhat: 2
     CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
         V3Score: 5.3
@@ -112,7 +116,7 @@
     - https://nvd.nist.gov/vuln/detail/CVE-2025-58057
     - https://www.cve.org/CVERecord?id=CVE-2025-58057
     PublishedDate: '2025-09-04T10:42:32.18Z'
-    LastModifiedDate: '2025-09-04T15:35:29.497Z'
+    LastModifiedDate: '2025-09-08T16:45:55.143Z'
   - VulnerabilityID: CVE-2025-58056
     PkgName: io.netty:netty-codec-http
     PkgPath: openaf/Kube/netty-codec-http-4.1.124.Final.jar
@@ -138,6 +142,11 @@
     - CWE-444
     VendorSeverity:
       ghsa: 1
+      nvd: 3
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N
+        V3Score: 7.5
     References:
     - https://datatracker.ietf.org/doc/html/rfc9112#name-chunked-transfer-coding
     - https://github.com/JLLeitschuh/unCVEed/issues/1
@@ -149,4 +158,4 @@
     - https://github.com/netty/netty/security/advisories/GHSA-fghv-69vj-qj49
     - https://w4ke.info/2025/06/18/funky-chunks.html
     PublishedDate: '2025-09-03T21:15:33.07Z'
-    LastModifiedDate: '2025-09-05T19:15:32.803Z'
+    LastModifiedDate: '2025-09-08T16:46:36.847Z'
