@@ -2,7 +2,91 @@
 ╭ [0] ╭ Target         : nmaguiar/nearless:build (alpine 3.22.0_alpha20250108) 
 │     ├ Class          : os-pkgs 
 │     ├ Type           : alpine 
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-26519 
+│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-9086 
+│                       │     ├ PkgID           : curl@8.15.0-r1 
+│                       │     ├ PkgName         : curl 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r1?arch=x86_64&distro=3.22.
+│                       │     │                  │       0_alpha20250108 
+│                       │     │                  ╰ UID : 4830aa49254a27a3 
+│                       │     ├ InstalledVersion: 8.15.0-r1 
+│                       │     ├ FixedVersion    : 8.16.0-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:e7155c6172224e1a995d967ee8a2417fc8c4b5b676ede
+│                       │     │                  │         73c08d869f9efe79500 
+│                       │     │                  ╰ DiffID: sha256:21c7ec0ab5faefd37aa013437a116df56e95806fce8e7
+│                       │     │                            7f928dc565a7624fede 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-9086 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Title           : [Out of bounds read for cookie path] 
+│                       │     ├ Description     : Out-of-bounds read when dealing with cookies 
+│                       │     ├ Severity        : LOW 
+│                       │     ├ VendorSeverity   ─ ubuntu: 1 
+│                       │     ╰ References       ╭ [0]: https://curl.se/docs/CVE-2025-9086.html 
+│                       │                        ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2025-9086 
+│                       ├ [1] ╭ VulnerabilityID : CVE-2025-10148 
+│                       │     ├ PkgID           : curl@8.15.0-r1 
+│                       │     ├ PkgName         : curl 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r1?arch=x86_64&distro=3.22.
+│                       │     │                  │       0_alpha20250108 
+│                       │     │                  ╰ UID : 4830aa49254a27a3 
+│                       │     ├ InstalledVersion: 8.15.0-r1 
+│                       │     ├ FixedVersion    : 8.16.0-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:e7155c6172224e1a995d967ee8a2417fc8c4b5b676ede
+│                       │     │                  │         73c08d869f9efe79500 
+│                       │     │                  ╰ DiffID: sha256:21c7ec0ab5faefd37aa013437a116df56e95806fce8e7
+│                       │     │                            7f928dc565a7624fede 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-10148 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Title           : [predictable WebSocket mask] 
+│                       │     ╰ Severity        : UNKNOWN 
+│                       ├ [2] ╭ VulnerabilityID : CVE-2025-9086 
+│                       │     ├ PkgID           : libcurl@8.15.0-r1 
+│                       │     ├ PkgName         : libcurl 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r1?arch=x86_64&distro=3.
+│                       │     │                  │       22.0_alpha20250108 
+│                       │     │                  ╰ UID : 1e871dc41cdd640 
+│                       │     ├ InstalledVersion: 8.15.0-r1 
+│                       │     ├ FixedVersion    : 8.16.0-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:e7155c6172224e1a995d967ee8a2417fc8c4b5b676ede
+│                       │     │                  │         73c08d869f9efe79500 
+│                       │     │                  ╰ DiffID: sha256:21c7ec0ab5faefd37aa013437a116df56e95806fce8e7
+│                       │     │                            7f928dc565a7624fede 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-9086 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Title           : [Out of bounds read for cookie path] 
+│                       │     ├ Description     : Out-of-bounds read when dealing with cookies 
+│                       │     ├ Severity        : LOW 
+│                       │     ├ VendorSeverity   ─ ubuntu: 1 
+│                       │     ╰ References       ╭ [0]: https://curl.se/docs/CVE-2025-9086.html 
+│                       │                        ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2025-9086 
+│                       ├ [3] ╭ VulnerabilityID : CVE-2025-10148 
+│                       │     ├ PkgID           : libcurl@8.15.0-r1 
+│                       │     ├ PkgName         : libcurl 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r1?arch=x86_64&distro=3.
+│                       │     │                  │       22.0_alpha20250108 
+│                       │     │                  ╰ UID : 1e871dc41cdd640 
+│                       │     ├ InstalledVersion: 8.15.0-r1 
+│                       │     ├ FixedVersion    : 8.16.0-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:e7155c6172224e1a995d967ee8a2417fc8c4b5b676ede
+│                       │     │                  │         73c08d869f9efe79500 
+│                       │     │                  ╰ DiffID: sha256:21c7ec0ab5faefd37aa013437a116df56e95806fce8e7
+│                       │     │                            7f928dc565a7624fede 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-10148 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Title           : [predictable WebSocket mask] 
+│                       │     ╰ Severity        : UNKNOWN 
+│                       ├ [4] ╭ VulnerabilityID : CVE-2025-26519 
 │                       │     ├ PkgID           : musl@1.2.5-r9 
 │                       │     ├ PkgName         : musl 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl@1.2.5-r9?arch=x86_64&distro=3.22.0
@@ -39,7 +123,7 @@
 │                       │     │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/02/13/2 
 │                       │     ├ PublishedDate   : 2025-02-14T04:15:09.05Z 
 │                       │     ╰ LastModifiedDate: 2025-02-14T17:15:23.09Z 
-│                       ╰ [1] ╭ VulnerabilityID : CVE-2025-26519 
+│                       ╰ [5] ╭ VulnerabilityID : CVE-2025-26519 
 │                             ├ PkgID           : musl-utils@1.2.5-r9 
 │                             ├ PkgName         : musl-utils 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl-utils@1.2.5-r9?arch=x86_64&distro=
@@ -151,8 +235,8 @@
                               │                  ├ Name: GitHub Security Advisory Maven 
                               │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
                               │                          osystem%3Amaven 
-                              ├ Title           : Netty is an asynchronous event-driven network application
-                              │                   framework fo ... 
+                              ├ Title           : netty-codec-http: Netty is vulnerable to request smuggling
+                              │                   due to incorrect parsing of chunk extensions 
                               ├ Description     : Netty is an asynchronous event-driven network application
                               │                   framework for development of maintainable high performance
                               │                   protocol servers and clients. In versions 4.1.124.Final, and
@@ -167,22 +251,30 @@
                               │                    fixed in versions 4.1.125.Final and 4.2.5.Final. 
                               ├ Severity        : LOW 
                               ├ CweIDs           ─ [0]: CWE-444 
-                              ├ VendorSeverity   ╭ ghsa: 1 
-                              │                  ╰ nvd : 3 
-                              ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N 
-                              │                        ╰ V3Score : 7.5 
-                              ├ References       ╭ [0]: https://datatracker.ietf.org/doc/html/rfc9112#name-chun
-                              │                  │      ked-transfer-coding 
-                              │                  ├ [1]: https://github.com/JLLeitschuh/unCVEed/issues/1 
-                              │                  ├ [2]: https://github.com/github/advisory-database/pull/6092 
-                              │                  ├ [3]: https://github.com/netty/netty 
-                              │                  ├ [4]: https://github.com/netty/netty/commit/edb55fd8e0a3bcbd8
-                              │                  │      5881e423464f585183d1284 
-                              │                  ├ [5]: https://github.com/netty/netty/issues/15522 
-                              │                  ├ [6]: https://github.com/netty/netty/pull/15611 
-                              │                  ├ [7]: https://github.com/netty/netty/security/advisories/GHSA
-                              │                  │      -fghv-69vj-qj49 
-                              │                  ╰ [8]: https://w4ke.info/2025/06/18/funky-chunks.html 
+                              ├ VendorSeverity   ╭ ghsa  : 1 
+                              │                  ├ nvd   : 3 
+                              │                  ╰ redhat: 2 
+                              ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/
+                              │                  │        │           A:N 
+                              │                  │        ╰ V3Score : 7.5 
+                              │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/
+                              │                           │           A:N 
+                              │                           ╰ V3Score : 7.5 
+                              ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-58056 
+                              │                  ├ [1] : https://datatracker.ietf.org/doc/html/rfc9112#name-chu
+                              │                  │       nked-transfer-coding 
+                              │                  ├ [2] : https://github.com/JLLeitschuh/unCVEed/issues/1 
+                              │                  ├ [3] : https://github.com/github/advisory-database/pull/6092 
+                              │                  ├ [4] : https://github.com/netty/netty 
+                              │                  ├ [5] : https://github.com/netty/netty/commit/edb55fd8e0a3bcbd
+                              │                  │       85881e423464f585183d1284 
+                              │                  ├ [6] : https://github.com/netty/netty/issues/15522 
+                              │                  ├ [7] : https://github.com/netty/netty/pull/15611 
+                              │                  ├ [8] : https://github.com/netty/netty/security/advisories/GHS
+                              │                  │       A-fghv-69vj-qj49 
+                              │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2025-58056 
+                              │                  ├ [10]: https://w4ke.info/2025/06/18/funky-chunks.html 
+                              │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-58056 
                               ├ PublishedDate   : 2025-09-03T21:15:33.07Z 
                               ╰ LastModifiedDate: 2025-09-08T16:46:36.847Z 
 ````
