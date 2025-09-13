@@ -2,91 +2,7 @@
 ╭ [0] ╭ Target         : nmaguiar/nearless:build (alpine 3.22.0_alpha20250108) 
 │     ├ Class          : os-pkgs 
 │     ├ Type           : alpine 
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-9086 
-│                       │     ├ PkgID           : curl@8.15.0-r1 
-│                       │     ├ PkgName         : curl 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r1?arch=x86_64&distro=3.22.
-│                       │     │                  │       0_alpha20250108 
-│                       │     │                  ╰ UID : 4830aa49254a27a3 
-│                       │     ├ InstalledVersion: 8.15.0-r1 
-│                       │     ├ FixedVersion    : 8.16.0-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:e7155c6172224e1a995d967ee8a2417fc8c4b5b676ede
-│                       │     │                  │         73c08d869f9efe79500 
-│                       │     │                  ╰ DiffID: sha256:21c7ec0ab5faefd37aa013437a116df56e95806fce8e7
-│                       │     │                            7f928dc565a7624fede 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-9086 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : [Out of bounds read for cookie path] 
-│                       │     ├ Description     : Out-of-bounds read when dealing with cookies 
-│                       │     ├ Severity        : LOW 
-│                       │     ├ VendorSeverity   ─ ubuntu: 1 
-│                       │     ╰ References       ╭ [0]: https://curl.se/docs/CVE-2025-9086.html 
-│                       │                        ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2025-9086 
-│                       ├ [1] ╭ VulnerabilityID : CVE-2025-10148 
-│                       │     ├ PkgID           : curl@8.15.0-r1 
-│                       │     ├ PkgName         : curl 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/curl@8.15.0-r1?arch=x86_64&distro=3.22.
-│                       │     │                  │       0_alpha20250108 
-│                       │     │                  ╰ UID : 4830aa49254a27a3 
-│                       │     ├ InstalledVersion: 8.15.0-r1 
-│                       │     ├ FixedVersion    : 8.16.0-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:e7155c6172224e1a995d967ee8a2417fc8c4b5b676ede
-│                       │     │                  │         73c08d869f9efe79500 
-│                       │     │                  ╰ DiffID: sha256:21c7ec0ab5faefd37aa013437a116df56e95806fce8e7
-│                       │     │                            7f928dc565a7624fede 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-10148 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : [predictable WebSocket mask] 
-│                       │     ╰ Severity        : UNKNOWN 
-│                       ├ [2] ╭ VulnerabilityID : CVE-2025-9086 
-│                       │     ├ PkgID           : libcurl@8.15.0-r1 
-│                       │     ├ PkgName         : libcurl 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r1?arch=x86_64&distro=3.
-│                       │     │                  │       22.0_alpha20250108 
-│                       │     │                  ╰ UID : 1e871dc41cdd640 
-│                       │     ├ InstalledVersion: 8.15.0-r1 
-│                       │     ├ FixedVersion    : 8.16.0-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:e7155c6172224e1a995d967ee8a2417fc8c4b5b676ede
-│                       │     │                  │         73c08d869f9efe79500 
-│                       │     │                  ╰ DiffID: sha256:21c7ec0ab5faefd37aa013437a116df56e95806fce8e7
-│                       │     │                            7f928dc565a7624fede 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-9086 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : [Out of bounds read for cookie path] 
-│                       │     ├ Description     : Out-of-bounds read when dealing with cookies 
-│                       │     ├ Severity        : LOW 
-│                       │     ├ VendorSeverity   ─ ubuntu: 1 
-│                       │     ╰ References       ╭ [0]: https://curl.se/docs/CVE-2025-9086.html 
-│                       │                        ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2025-9086 
-│                       ├ [3] ╭ VulnerabilityID : CVE-2025-10148 
-│                       │     ├ PkgID           : libcurl@8.15.0-r1 
-│                       │     ├ PkgName         : libcurl 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcurl@8.15.0-r1?arch=x86_64&distro=3.
-│                       │     │                  │       22.0_alpha20250108 
-│                       │     │                  ╰ UID : 1e871dc41cdd640 
-│                       │     ├ InstalledVersion: 8.15.0-r1 
-│                       │     ├ FixedVersion    : 8.16.0-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:e7155c6172224e1a995d967ee8a2417fc8c4b5b676ede
-│                       │     │                  │         73c08d869f9efe79500 
-│                       │     │                  ╰ DiffID: sha256:21c7ec0ab5faefd37aa013437a116df56e95806fce8e7
-│                       │     │                            7f928dc565a7624fede 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-10148 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : [predictable WebSocket mask] 
-│                       │     ╰ Severity        : UNKNOWN 
-│                       ├ [4] ╭ VulnerabilityID : CVE-2025-26519 
+│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2025-26519 
 │                       │     ├ PkgID           : musl@1.2.5-r9 
 │                       │     ├ PkgName         : musl 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl@1.2.5-r9?arch=x86_64&distro=3.22.0
@@ -95,10 +11,10 @@
 │                       │     ├ InstalledVersion: 1.2.5-r9 
 │                       │     ├ FixedVersion    : 1.2.5-r10 
 │                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:e7155c6172224e1a995d967ee8a2417fc8c4b5b676ede
-│                       │     │                  │         73c08d869f9efe79500 
-│                       │     │                  ╰ DiffID: sha256:21c7ec0ab5faefd37aa013437a116df56e95806fce8e7
-│                       │     │                            7f928dc565a7624fede 
+│                       │     ├ Layer            ╭ Digest: sha256:7d2c3727168dc7df8d5cb3144b76b890a9358a383c22a
+│                       │     │                  │         cc83567c90062b0a460 
+│                       │     │                  ╰ DiffID: sha256:265fd225c7ff76e0c9e89ce8ea2e9a53649793df58288
+│                       │     │                            6210f7bd915bb2a6c92 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-26519 
 │                       │     ├ DataSource       ╭ ID  : alpine 
 │                       │     │                  ├ Name: Alpine Secdb 
@@ -123,7 +39,7 @@
 │                       │     │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/02/13/2 
 │                       │     ├ PublishedDate   : 2025-02-14T04:15:09.05Z 
 │                       │     ╰ LastModifiedDate: 2025-02-14T17:15:23.09Z 
-│                       ╰ [5] ╭ VulnerabilityID : CVE-2025-26519 
+│                       ╰ [1] ╭ VulnerabilityID : CVE-2025-26519 
 │                             ├ PkgID           : musl-utils@1.2.5-r9 
 │                             ├ PkgName         : musl-utils 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl-utils@1.2.5-r9?arch=x86_64&distro=
@@ -132,10 +48,10 @@
 │                             ├ InstalledVersion: 1.2.5-r9 
 │                             ├ FixedVersion    : 1.2.5-r10 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:e7155c6172224e1a995d967ee8a2417fc8c4b5b676ede
-│                             │                  │         73c08d869f9efe79500 
-│                             │                  ╰ DiffID: sha256:21c7ec0ab5faefd37aa013437a116df56e95806fce8e7
-│                             │                            7f928dc565a7624fede 
+│                             ├ Layer            ╭ Digest: sha256:7d2c3727168dc7df8d5cb3144b76b890a9358a383c22a
+│                             │                  │         cc83567c90062b0a460 
+│                             │                  ╰ DiffID: sha256:265fd225c7ff76e0c9e89ce8ea2e9a53649793df58288
+│                             │                            6210f7bd915bb2a6c92 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-26519 
 │                             ├ DataSource       ╭ ID  : alpine 
 │                             │                  ├ Name: Alpine Secdb 
@@ -171,10 +87,10 @@
                         │     ├ InstalledVersion: 4.1.124.Final 
                         │     ├ FixedVersion    : 4.1.125.Final 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:e7155c6172224e1a995d967ee8a2417fc8c4b5b676ede
-                        │     │                  │         73c08d869f9efe79500 
-                        │     │                  ╰ DiffID: sha256:21c7ec0ab5faefd37aa013437a116df56e95806fce8e7
-                        │     │                            7f928dc565a7624fede 
+                        │     ├ Layer            ╭ Digest: sha256:7d2c3727168dc7df8d5cb3144b76b890a9358a383c22a
+                        │     │                  │         cc83567c90062b0a460 
+                        │     │                  ╰ DiffID: sha256:265fd225c7ff76e0c9e89ce8ea2e9a53649793df58288
+                        │     │                            6210f7bd915bb2a6c92 
                         │     ├ SeveritySource  : ghsa 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58057 
                         │     ├ DataSource       ╭ ID  : ghsa 
@@ -225,10 +141,10 @@
                               ├ InstalledVersion: 4.1.124.Final 
                               ├ FixedVersion    : 4.1.125.Final, 4.2.5.Final 
                               ├ Status          : fixed 
-                              ├ Layer            ╭ Digest: sha256:e7155c6172224e1a995d967ee8a2417fc8c4b5b676ede
-                              │                  │         73c08d869f9efe79500 
-                              │                  ╰ DiffID: sha256:21c7ec0ab5faefd37aa013437a116df56e95806fce8e7
-                              │                            7f928dc565a7624fede 
+                              ├ Layer            ╭ Digest: sha256:7d2c3727168dc7df8d5cb3144b76b890a9358a383c22a
+                              │                  │         cc83567c90062b0a460 
+                              │                  ╰ DiffID: sha256:265fd225c7ff76e0c9e89ce8ea2e9a53649793df58288
+                              │                            6210f7bd915bb2a6c92 
                               ├ SeveritySource  : ghsa 
                               ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-58056 
                               ├ DataSource       ╭ ID  : ghsa 
