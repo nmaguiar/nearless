@@ -1136,19 +1136,26 @@
 │                       │     ├ DataSource       ╭ ID  : alpine 
 │                       │     │                  ├ Name: Alpine Secdb 
 │                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : curl's code for managing SSH connections when SFTP was done
-│                       │     │                   using the  ... 
+│                       │     ├ Title           : curl: Curl missing SFTP host verification with wolfSSH backend 
 │                       │     ├ Description     : curl's code for managing SSH connections when SFTP was done
 │                       │     │                   using the wolfSSH
 │                       │     │                   powered backend was flawed and missed host verification
 │                       │     │                   mechanisms.
 │                       │     │                   
 │                       │     │                   This prevents curl from detecting MITM attackers and more. 
-│                       │     ├ Severity        : UNKNOWN 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ VendorSeverity   ─ redhat: 2 
+│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/
+│                       │     │                           │           A:N 
+│                       │     │                           ╰ V3Score : 5.9 
 │                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/11/05/2 
-│                       │     │                  ├ [1]: https://curl.se/docs/CVE-2025-10966.html 
-│                       │     │                  ├ [2]: https://curl.se/docs/CVE-2025-10966.json 
-│                       │     │                  ╰ [3]: https://hackerone.com/reports/3355218 
+│                       │     │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-10966 
+│                       │     │                  ├ [2]: https://curl.se/docs/CVE-2025-10966.html 
+│                       │     │                  ├ [3]: https://curl.se/docs/CVE-2025-10966.json 
+│                       │     │                  ├ [4]: https://github.com/curl/curl/commit/b011e3fcfb06d6c027859 
+│                       │     │                  ├ [5]: https://hackerone.com/reports/3355218 
+│                       │     │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-10966 
+│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-10966 
 │                       │     ├ PublishedDate   : 2025-11-07T08:15:39.617Z 
 │                       │     ╰ LastModifiedDate: 2025-11-07T08:15:39.617Z 
 │                       ├ [3] ╭ VulnerabilityID : CVE-2025-10966 
@@ -1168,19 +1175,26 @@
 │                       │     ├ DataSource       ╭ ID  : alpine 
 │                       │     │                  ├ Name: Alpine Secdb 
 │                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Title           : curl's code for managing SSH connections when SFTP was done
-│                       │     │                   using the  ... 
+│                       │     ├ Title           : curl: Curl missing SFTP host verification with wolfSSH backend 
 │                       │     ├ Description     : curl's code for managing SSH connections when SFTP was done
 │                       │     │                   using the wolfSSH
 │                       │     │                   powered backend was flawed and missed host verification
 │                       │     │                   mechanisms.
 │                       │     │                   
 │                       │     │                   This prevents curl from detecting MITM attackers and more. 
-│                       │     ├ Severity        : UNKNOWN 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ VendorSeverity   ─ redhat: 2 
+│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/
+│                       │     │                           │           A:N 
+│                       │     │                           ╰ V3Score : 5.9 
 │                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/11/05/2 
-│                       │     │                  ├ [1]: https://curl.se/docs/CVE-2025-10966.html 
-│                       │     │                  ├ [2]: https://curl.se/docs/CVE-2025-10966.json 
-│                       │     │                  ╰ [3]: https://hackerone.com/reports/3355218 
+│                       │     │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-10966 
+│                       │     │                  ├ [2]: https://curl.se/docs/CVE-2025-10966.html 
+│                       │     │                  ├ [3]: https://curl.se/docs/CVE-2025-10966.json 
+│                       │     │                  ├ [4]: https://github.com/curl/curl/commit/b011e3fcfb06d6c027859 
+│                       │     │                  ├ [5]: https://hackerone.com/reports/3355218 
+│                       │     │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-10966 
+│                       │     │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-10966 
 │                       │     ├ PublishedDate   : 2025-11-07T08:15:39.617Z 
 │                       │     ╰ LastModifiedDate: 2025-11-07T08:15:39.617Z 
 │                       ├ [4] ╭ VulnerabilityID : CVE-2025-26519 
