@@ -1228,6 +1228,7 @@
 │                       │     │                  │         f04f8f4bba1427467aa 
 │                       │     │                  ╰ DiffID: sha256:6c0f518dab136068fbc0187357291b8731c9271c68224
 │                       │     │                            5f5e7739f6033238d48 
+│                       │     ├ SeveritySource  : nvd 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-26519 
 │                       │     ├ DataSource       ╭ ID  : alpine 
 │                       │     │                  ├ Name: Alpine Secdb 
@@ -1239,8 +1240,11 @@
 │                       │     ├ Description     : musl libc 0.9.13 through 1.2.5 before 1.2.6 has an
 │                       │     │                   out-of-bounds write vulnerability when an attacker can
 │                       │     │                   trigger iconv conversion of untrusted EUC-KR text to UTF-8. 
-│                       │     ├ Severity        : UNKNOWN 
+│                       │     ├ Severity        : HIGH 
 │                       │     ├ CweIDs           ─ [0]: CWE-787 
+│                       │     ├ VendorSeverity   ─ nvd: 3 
+│                       │     ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H 
+│                       │     │                        ╰ V3Score : 7 
 │                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/02/13/2 
 │                       │     │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/02/13/3 
 │                       │     │                  ├ [2]: http://www.openwall.com/lists/oss-security/2025/02/13/4 
@@ -1253,7 +1257,7 @@
 │                       │     │                  │      b5196e29991b524237381a0202a60659 
 │                       │     │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/02/13/2 
 │                       │     ├ PublishedDate   : 2025-02-14T04:15:09.05Z 
-│                       │     ╰ LastModifiedDate: 2025-02-14T17:15:23.09Z 
+│                       │     ╰ LastModifiedDate: 2025-12-10T20:03:59.273Z 
 │                       ├ [5] ╭ VulnerabilityID : CVE-2025-26519 
 │                       │     ├ PkgID           : musl-utils@1.2.5-r9 
 │                       │     ├ PkgName         : musl-utils 
@@ -1267,6 +1271,7 @@
 │                       │     │                  │         f04f8f4bba1427467aa 
 │                       │     │                  ╰ DiffID: sha256:6c0f518dab136068fbc0187357291b8731c9271c68224
 │                       │     │                            5f5e7739f6033238d48 
+│                       │     ├ SeveritySource  : nvd 
 │                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-26519 
 │                       │     ├ DataSource       ╭ ID  : alpine 
 │                       │     │                  ├ Name: Alpine Secdb 
@@ -1278,8 +1283,11 @@
 │                       │     ├ Description     : musl libc 0.9.13 through 1.2.5 before 1.2.6 has an
 │                       │     │                   out-of-bounds write vulnerability when an attacker can
 │                       │     │                   trigger iconv conversion of untrusted EUC-KR text to UTF-8. 
-│                       │     ├ Severity        : UNKNOWN 
+│                       │     ├ Severity        : HIGH 
 │                       │     ├ CweIDs           ─ [0]: CWE-787 
+│                       │     ├ VendorSeverity   ─ nvd: 3 
+│                       │     ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H 
+│                       │     │                        ╰ V3Score : 7 
 │                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/02/13/2 
 │                       │     │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/02/13/3 
 │                       │     │                  ├ [2]: http://www.openwall.com/lists/oss-security/2025/02/13/4 
@@ -1292,7 +1300,7 @@
 │                       │     │                  │      b5196e29991b524237381a0202a60659 
 │                       │     │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/02/13/2 
 │                       │     ├ PublishedDate   : 2025-02-14T04:15:09.05Z 
-│                       │     ╰ LastModifiedDate: 2025-02-14T17:15:23.09Z 
+│                       │     ╰ LastModifiedDate: 2025-12-10T20:03:59.273Z 
 │                       ├ [6] ╭ VulnerabilityID : CVE-2024-58251 
 │                       │     ├ PkgID           : ssl_client@1.37.0-r10 
 │                       │     ├ PkgName         : ssl_client 
