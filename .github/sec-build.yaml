@@ -2439,3 +2439,40 @@
       Digest: sha256:a9a59e2f7715d4162925be016c5b779a002a56ed39531bf34160fdc29a3a5cc3
       DiffID: sha256:63bb8866d4986b84c062016378594cc73327bd13cd23e28c6def0eb6b741b7a7
     FilePath: openaf/Kube/snakeyaml-2.4.jar
+  Vulnerabilities:
+  - VulnerabilityID: CVE-2025-67735
+    PkgName: io.netty:netty-codec-http
+    PkgPath: openaf/Kube/netty-codec-http-4.2.7.Final.jar
+    PkgIdentifier:
+      PURL: pkg:maven/io.netty/netty-codec-http@4.2.7.Final
+      UID: d35d217fd14d658b
+    InstalledVersion: 4.2.7.Final
+    FixedVersion: 4.2.8.Final, 4.1.129.Final
+    Status: fixed
+    Layer:
+      Digest: sha256:a9a59e2f7715d4162925be016c5b779a002a56ed39531bf34160fdc29a3a5cc3
+      DiffID: sha256:63bb8866d4986b84c062016378594cc73327bd13cd23e28c6def0eb6b741b7a7
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-67735
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Maven
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
+    Fingerprint: sha256:492dbe12ace439ebda395469a023e68dd9600ac49435cbdf09b62ae1d6db6f8c
+    Title: Netty has a CRLF Injection vulnerability in io.netty.handler.codec.http.HttpRequestEncoder
+    Description: Netty is an asynchronous, event-driven network application framework. In versions prior to 4.1.129.Final and 4.2.8.Final, the `io.netty.handler.codec.http.HttpRequestEncoder` has a CRLF injection with the request URI when constructing a request. This leads to request smuggling when `HttpRequestEncoder` is used without proper sanitization of the URI. Any application / framework using `HttpRequestEncoder` can be subject to be abused to perform request smuggling using CRLF injection. Versions 4.1.129.Final and 4.2.8.Final fix the issue.
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-93
+    VendorSeverity:
+      ghsa: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N
+        V3Score: 6.5
+    References:
+    - https://github.com/netty/netty
+    - https://github.com/netty/netty/commit/77e81f1e5944d98b3acf887d3aa443b252752e94
+    - https://github.com/netty/netty/security/advisories/GHSA-84h7-rjj3-6jx4
+    PublishedDate: '2025-12-16T01:15:52.367Z'
+    LastModifiedDate: '2025-12-16T01:15:52.367Z'
