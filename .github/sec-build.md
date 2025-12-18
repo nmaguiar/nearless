@@ -2587,8 +2587,8 @@
                               │                          osystem%3Amaven 
                               ├ Fingerprint     : sha256:492dbe12ace439ebda395469a023e68dd9600ac49435cbdf09b62a
                               │                   e1d6db6f8c 
-                              ├ Title           : Netty has a CRLF Injection vulnerability in
-                              │                   io.netty.handler.codec.http.HttpRequestEncoder 
+                              ├ Title           : Netty is an asynchronous, event-driven network application
+                              │                   framework.  ... 
                               ├ Description     : Netty is an asynchronous, event-driven network application
                               │                   framework. In versions prior to 4.1.129.Final and
                               │                   4.2.8.Final, the
@@ -2610,5 +2610,5 @@
                               │                  ╰ [2]: https://github.com/netty/netty/security/advisories/GHSA
                               │                         -84h7-rjj3-6jx4 
                               ├ PublishedDate   : 2025-12-16T01:15:52.367Z 
-                              ╰ LastModifiedDate: 2025-12-16T01:15:52.367Z 
+                              ╰ LastModifiedDate: 2025-12-16T14:10:11.3Z 
 ````
