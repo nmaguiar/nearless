@@ -2587,8 +2587,8 @@
                               │                          osystem%3Amaven 
                               ├ Fingerprint     : sha256:492dbe12ace439ebda395469a023e68dd9600ac49435cbdf09b62a
                               │                   e1d6db6f8c 
-                              ├ Title           : Netty is an asynchronous, event-driven network application
-                              │                   framework.  ... 
+                              ├ Title           : netty-codec-http: Netty (netty-codec-http): Request Smuggling
+                              │                    via CRLF Injection 
                               ├ Description     : Netty is an asynchronous, event-driven network application
                               │                   framework. In versions prior to 4.1.129.Final and
                               │                   4.2.8.Final, the
@@ -2601,14 +2601,22 @@
                               │                   Versions 4.1.129.Final and 4.2.8.Final fix the issue. 
                               ├ Severity        : MEDIUM 
                               ├ CweIDs           ─ [0]: CWE-93 
-                              ├ VendorSeverity   ─ ghsa: 2 
-                              ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N 
-                              │                         ╰ V3Score : 6.5 
-                              ├ References       ╭ [0]: https://github.com/netty/netty 
-                              │                  ├ [1]: https://github.com/netty/netty/commit/77e81f1e5944d98b3
+                              ├ VendorSeverity   ╭ ghsa  : 2 
+                              │                  ╰ redhat: 2 
+                              ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/
+                              │                  │        │           A:N 
+                              │                  │        ╰ V3Score : 6.5 
+                              │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/
+                              │                           │           A:N 
+                              │                           ╰ V3Score : 6.5 
+                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-67735 
+                              │                  ├ [1]: https://github.com/netty/netty 
+                              │                  ├ [2]: https://github.com/netty/netty/commit/77e81f1e5944d98b3
                               │                  │      acf887d3aa443b252752e94 
-                              │                  ╰ [2]: https://github.com/netty/netty/security/advisories/GHSA
-                              │                         -84h7-rjj3-6jx4 
+                              │                  ├ [3]: https://github.com/netty/netty/security/advisories/GHSA
+                              │                  │      -84h7-rjj3-6jx4 
+                              │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-67735 
+                              │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2025-67735 
                               ├ PublishedDate   : 2025-12-16T01:15:52.367Z 
                               ╰ LastModifiedDate: 2025-12-16T14:10:11.3Z 
 ````
