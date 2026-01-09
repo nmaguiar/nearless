@@ -978,6 +978,213 @@
     InstalledFiles:
     - usr/lib/libzstd.so.1
     - usr/lib/libzstd.so.1.5.7
+  Vulnerabilities:
+  - VulnerabilityID: CVE-2025-14524
+    PkgID: curl@8.17.0-r1
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/curl@8.17.0-r1?arch=x86_64&distro=3.24.0_alpha20251224
+      UID: 88ffdbbc87036140
+    InstalledVersion: 8.17.0-r1
+    FixedVersion: 8.18.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d05862763bd8c8415bd7964f7f8b1dc8811203ffaef44f2ac3744863bd28cafc
+      DiffID: sha256:8b564ff7a18268410bdd7668ac3a0aff456ad1ea59af613705056c412b6ff82f
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-14524
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:84d739d107de272b29fad18a01cffe547cd3599e0b5472d203d3fd1d87bd7fd3
+    Title: '[bearer token leak on cross-protocol redirect]'
+    Description: |-
+      When an OAuth2 bearer token is used for an HTTP(S) transfer, and that transfer
+      performs a cross-protocol redirect to a second URL that uses an IMAP, LDAP,
+      POP3 or SMTP scheme, curl might wrongly pass on the bearer token to the new
+      target host.
+    Severity: LOW
+    VendorSeverity:
+      ubuntu: 1
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/01/07/4
+    - https://curl.se/docs/CVE-2025-14524.html
+    - https://curl.se/docs/CVE-2025-14524.json
+    - https://hackerone.com/reports/3459417
+    - https://www.cve.org/CVERecord?id=CVE-2025-14524
+    PublishedDate: '2026-01-08T10:15:46.607Z'
+    LastModifiedDate: '2026-01-08T11:15:43.017Z'
+  - VulnerabilityID: CVE-2025-14819
+    PkgID: curl@8.17.0-r1
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/curl@8.17.0-r1?arch=x86_64&distro=3.24.0_alpha20251224
+      UID: 88ffdbbc87036140
+    InstalledVersion: 8.17.0-r1
+    FixedVersion: 8.18.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d05862763bd8c8415bd7964f7f8b1dc8811203ffaef44f2ac3744863bd28cafc
+      DiffID: sha256:8b564ff7a18268410bdd7668ac3a0aff456ad1ea59af613705056c412b6ff82f
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-14819
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:9500e4c7c8edd6a5a8638222ff7aaa088d93f76ab6f97ead6872f5ab534a45ef
+    Title: '[OpenSSL partial chain store policy bypass]'
+    Description: |-
+      When doing TLS related transfers with reused easy or multi handles and
+      altering the  `CURLSSLOPT_NO_PARTIALCHAIN` option, libcurl could accidentally
+      reuse a CA store cached in memory for which the partial chain option was
+      reversed. Contrary to the user's wishes and expectations. This could make
+      libcurl find and accept a trust chain that it otherwise would not.
+    Severity: LOW
+    VendorSeverity:
+      ubuntu: 1
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/01/07/5
+    - https://curl.se/docs/CVE-2025-14819.html
+    - https://curl.se/docs/CVE-2025-14819.json
+    - https://www.cve.org/CVERecord?id=CVE-2025-14819
+    PublishedDate: '2026-01-08T10:15:46.73Z'
+    LastModifiedDate: '2026-01-08T11:15:43.14Z'
+  - VulnerabilityID: CVE-2025-14017
+    PkgID: curl@8.17.0-r1
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/curl@8.17.0-r1?arch=x86_64&distro=3.24.0_alpha20251224
+      UID: 88ffdbbc87036140
+    InstalledVersion: 8.17.0-r1
+    FixedVersion: 8.18.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d05862763bd8c8415bd7964f7f8b1dc8811203ffaef44f2ac3744863bd28cafc
+      DiffID: sha256:8b564ff7a18268410bdd7668ac3a0aff456ad1ea59af613705056c412b6ff82f
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-14017
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:71d9cfa8444970407b7efca1582258791bcfda27469d12d86ab2d540b616405a
+    Title: '[broken TLS options for threaded LDAPS]'
+    Description: |-
+      When doing multi-threaded LDAPS transfers (LDAP over TLS) with libcurl,
+      changing TLS options in one thread would inadvertently change them globally
+      and therefore possibly also affect other concurrently setup transfers.
+
+      Disabling certificate verification for a specific transfer could
+      unintentionally disable the feature for other threads as well.
+    Severity: UNKNOWN
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/01/07/3
+    - https://curl.se/docs/CVE-2025-14017.html
+    - https://curl.se/docs/CVE-2025-14017.json
+    PublishedDate: '2026-01-08T10:15:45.667Z'
+    LastModifiedDate: '2026-01-08T11:15:41.997Z'
+  - VulnerabilityID: CVE-2025-14524
+    PkgID: libcurl@8.17.0-r1
+    PkgName: libcurl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcurl@8.17.0-r1?arch=x86_64&distro=3.24.0_alpha20251224
+      UID: 5f058cd923236541
+    InstalledVersion: 8.17.0-r1
+    FixedVersion: 8.18.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d05862763bd8c8415bd7964f7f8b1dc8811203ffaef44f2ac3744863bd28cafc
+      DiffID: sha256:8b564ff7a18268410bdd7668ac3a0aff456ad1ea59af613705056c412b6ff82f
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-14524
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:d9cedb30f1989bb151cd11032df9c989d2f032ba54c48617aeea77ec6821eb09
+    Title: '[bearer token leak on cross-protocol redirect]'
+    Description: |-
+      When an OAuth2 bearer token is used for an HTTP(S) transfer, and that transfer
+      performs a cross-protocol redirect to a second URL that uses an IMAP, LDAP,
+      POP3 or SMTP scheme, curl might wrongly pass on the bearer token to the new
+      target host.
+    Severity: LOW
+    VendorSeverity:
+      ubuntu: 1
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/01/07/4
+    - https://curl.se/docs/CVE-2025-14524.html
+    - https://curl.se/docs/CVE-2025-14524.json
+    - https://hackerone.com/reports/3459417
+    - https://www.cve.org/CVERecord?id=CVE-2025-14524
+    PublishedDate: '2026-01-08T10:15:46.607Z'
+    LastModifiedDate: '2026-01-08T11:15:43.017Z'
+  - VulnerabilityID: CVE-2025-14819
+    PkgID: libcurl@8.17.0-r1
+    PkgName: libcurl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcurl@8.17.0-r1?arch=x86_64&distro=3.24.0_alpha20251224
+      UID: 5f058cd923236541
+    InstalledVersion: 8.17.0-r1
+    FixedVersion: 8.18.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d05862763bd8c8415bd7964f7f8b1dc8811203ffaef44f2ac3744863bd28cafc
+      DiffID: sha256:8b564ff7a18268410bdd7668ac3a0aff456ad1ea59af613705056c412b6ff82f
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-14819
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:d15dd3c6d59c0b05d9ac9eabf778cbe8f04bc1cd5280e50a21579b4f42ea9101
+    Title: '[OpenSSL partial chain store policy bypass]'
+    Description: |-
+      When doing TLS related transfers with reused easy or multi handles and
+      altering the  `CURLSSLOPT_NO_PARTIALCHAIN` option, libcurl could accidentally
+      reuse a CA store cached in memory for which the partial chain option was
+      reversed. Contrary to the user's wishes and expectations. This could make
+      libcurl find and accept a trust chain that it otherwise would not.
+    Severity: LOW
+    VendorSeverity:
+      ubuntu: 1
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/01/07/5
+    - https://curl.se/docs/CVE-2025-14819.html
+    - https://curl.se/docs/CVE-2025-14819.json
+    - https://www.cve.org/CVERecord?id=CVE-2025-14819
+    PublishedDate: '2026-01-08T10:15:46.73Z'
+    LastModifiedDate: '2026-01-08T11:15:43.14Z'
+  - VulnerabilityID: CVE-2025-14017
+    PkgID: libcurl@8.17.0-r1
+    PkgName: libcurl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcurl@8.17.0-r1?arch=x86_64&distro=3.24.0_alpha20251224
+      UID: 5f058cd923236541
+    InstalledVersion: 8.17.0-r1
+    FixedVersion: 8.18.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d05862763bd8c8415bd7964f7f8b1dc8811203ffaef44f2ac3744863bd28cafc
+      DiffID: sha256:8b564ff7a18268410bdd7668ac3a0aff456ad1ea59af613705056c412b6ff82f
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-14017
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:239cd1f6549289f0906ebb804287941cf6cd42261e4c6d2a55a6f55416bdd0a3
+    Title: '[broken TLS options for threaded LDAPS]'
+    Description: |-
+      When doing multi-threaded LDAPS transfers (LDAP over TLS) with libcurl,
+      changing TLS options in one thread would inadvertently change them globally
+      and therefore possibly also affect other concurrently setup transfers.
+
+      Disabling certificate verification for a specific transfer could
+      unintentionally disable the feature for other threads as well.
+    Severity: UNKNOWN
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/01/07/3
+    - https://curl.se/docs/CVE-2025-14017.html
+    - https://curl.se/docs/CVE-2025-14017.json
+    PublishedDate: '2026-01-08T10:15:45.667Z'
+    LastModifiedDate: '2026-01-08T11:15:41.997Z'
 - Target: Java
   Class: lang-pkgs
   Type: jar
