@@ -2213,7 +2213,7 @@
                               ├ PkgIdentifier    ╭ PURL: pkg:maven/io.vertx/vertx-core@4.5.21 
                               │                  ╰ UID : 4ce357b0658ba27d 
                               ├ InstalledVersion: 4.5.21 
-                              ├ FixedVersion    : 4.5.24 
+                              ├ FixedVersion    : 4.5.24, 5.0.7 
                               ├ Status          : fixed 
                               ├ Layer            ╭ Digest: sha256:5bb10d0edcb3f6a675c6bae244984887b40f9b74e1787
                               │                  │         8840ca60516f24e0cb2 
@@ -2227,8 +2227,8 @@
                               │                          osystem%3Amaven 
                               ├ Fingerprint     : sha256:8d02bc75988997f20a71553fdaf45e416d7ac3a0378d5a5c93bbad
                               │                   ed09ac2d00 
-                              ├ Title           : Vert.x Web static handler component cache can be manipulated
-                              │                   to deny the access to static files 
+                              ├ Title           : io.vertx/vertx-core: static handler component cache can be
+                              │                   manipulated to deny the access to static files 
                               ├ Description     : The Vert.x Web static handler component cache can be
                               │                   manipulated to deny the access to static files served by the
                               │                   handler using specifically crafted request URI.
@@ -2249,13 +2249,22 @@
                               │                   StaticHandler.create().setCachingEnabled(false); 
                               ├ Severity        : MEDIUM 
                               ├ CweIDs           ─ [0]: CWE-444 
-                              ├ VendorSeverity   ─ ghsa: 2 
-                              ├ References       ╭ [0]: https://github.com/eclipse-vertx/vert.x 
-                              │                  ├ [1]: https://github.com/eclipse-vertx/vert.x/commit/d007e7b4
+                              ├ VendorSeverity   ╭ ghsa  : 2 
+                              │                  ╰ redhat: 2 
+                              ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+                              │                           │           A:L 
+                              │                           ╰ V3Score : 5.3 
+                              ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-1002 
+                              │                  ├ [1]: https://github.com/eclipse-vertx/vert.x 
+                              │                  ├ [2]: https://github.com/eclipse-vertx/vert.x/commit/5b67f5d1
+                              │                  │      7788b2483d277c760f3f8154f9b2fed0 
+                              │                  ├ [3]: https://github.com/eclipse-vertx/vert.x/commit/d007e7b4
                               │                  │      18543eb1567fe95cf20f5450a5c2d047 
-                              │                  ├ [2]: https://github.com/eclipse-vertx/vert.x/pull/5895 
-                              │                  ├ [3]: https://github.com/vert-x3/vertx-web/issues/2836 
-                              │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-1002 
+                              │                  ├ [4]: https://github.com/eclipse-vertx/vert.x/pull/5894 
+                              │                  ├ [5]: https://github.com/eclipse-vertx/vert.x/pull/5895 
+                              │                  ├ [6]: https://github.com/vert-x3/vertx-web/issues/2836 
+                              │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2026-1002 
+                              │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-1002 
                               ├ PublishedDate   : 2026-01-15T21:16:05.64Z 
-                              ╰ LastModifiedDate: 2026-01-15T22:16:12.593Z 
+                              ╰ LastModifiedDate: 2026-01-16T15:55:12.257Z 
 ````
