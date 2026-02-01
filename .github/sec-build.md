@@ -2411,8 +2411,12 @@
                               ├ Severity        : MEDIUM 
                               ├ CweIDs           ─ [0]: CWE-444 
                               ├ VendorSeverity   ╭ ghsa  : 2 
+                              │                  ├ nvd   : 3 
                               │                  ╰ redhat: 2 
-                              ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+                              ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+                              │                  │        │           A:H 
+                              │                  │        ╰ V3Score : 7.5 
+                              │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
                               │                           │           A:L 
                               │                           ╰ V3Score : 5.3 
                               ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-1002 
@@ -2427,5 +2431,5 @@
                               │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2026-1002 
                               │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-1002 
                               ├ PublishedDate   : 2026-01-15T21:16:05.64Z 
-                              ╰ LastModifiedDate: 2026-01-16T15:55:12.257Z 
+                              ╰ LastModifiedDate: 2026-01-30T19:41:43.687Z 
 ````
