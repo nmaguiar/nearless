@@ -1009,6 +1009,101 @@
     - usr/lib/libzstd.so.1
     - usr/lib/libzstd.so.1.5.7
     AnalyzedBy: apk
+  Vulnerabilities:
+  - VulnerabilityID: CVE-2026-1642
+    PkgID: nginx@1.28.0-r9
+    PkgName: nginx
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/nginx@1.28.0-r9?arch=x86_64&distro=3.24.0_alpha20260127
+      UID: 180b47584d7c59
+    InstalledVersion: 1.28.0-r9
+    FixedVersion: 1.28.2-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:4c4e609e539f71fa5795b4da6eb525d44e8b588b32240fa8a77ed9604271758c
+      DiffID: sha256:b3e1f759814e0cc6bb3aee7ab31801c676a84b254ef4690c87bfdc7e9015106f
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-1642
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:a812c8158ec83a5f4262dc1a5b6c99ef2c49e70095eb1e7190758d174743bef1
+    Title: 'nginx: NGINX: Data injection via man-in-the-middle attack on TLS proxied connections'
+    Description: "A vulnerability exists in NGINX OSS and NGINX Plus when configured to proxy to upstream Transport Layer Security (TLS) servers. An attacker with a man-in-the-middle (MITM) position on the upstream server side—along with conditions beyond the attacker's control—may be able to inject plain text data into the response from an upstream proxied server.\_\_Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-349
+    - CWE-345
+    VendorSeverity:
+      azure: 3
+      bitnami: 3
+      redhat: 2
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N
+        V3Score: 5.9
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/02/05/1
+    - https://access.redhat.com/security/cve/CVE-2026-1642
+    - https://my.f5.com/manage/s/article/K000159824
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-1642
+    - https://ubuntu.com/security/notices/USN-8038-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-1642
+    - https://www.openwall.com/lists/oss-security/2026/02/05/1
+    PublishedDate: '2026-02-04T15:16:14.19Z'
+    LastModifiedDate: '2026-02-13T21:35:01.73Z'
+  - VulnerabilityID: CVE-2025-53859
+    PkgID: nginx@1.28.0-r9
+    PkgName: nginx
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/nginx@1.28.0-r9?arch=x86_64&distro=3.24.0_alpha20260127
+      UID: 180b47584d7c59
+    InstalledVersion: 1.28.0-r9
+    FixedVersion: 1.28.2-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:4c4e609e539f71fa5795b4da6eb525d44e8b588b32240fa8a77ed9604271758c
+      DiffID: sha256:b3e1f759814e0cc6bb3aee7ab31801c676a84b254ef4690c87bfdc7e9015106f
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-53859
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:1375b7bc5290e32650de114b3e72f801b1057693e8edddc430144450ea2c2aa0
+    Title: 'nginx: NGINX ngx_mail_smtp_module vulnerability'
+    Description: |-
+      NGINX Open Source and NGINX Plus have a vulnerability in the ngx_mail_smtp_module that might allow an unauthenticated attacker to over-read NGINX SMTP authentication process memory; as a result, the server side may leak arbitrary bytes sent in a request to the authentication server. This issue happens during the NGINX SMTP authentication process and requires the attacker to make preparations against the target system to extract the leaked data. The issue affects NGINX only if (1) it is built with the ngx_mail_smtp_module, (2) the smtp_auth directive is configured with method "none," and (3) the authentication server returns the "Auth-Wait" response header.
+
+
+
+
+      Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.
+    Severity: LOW
+    CweIDs:
+    - CWE-125
+    VendorSeverity:
+      amazon: 1
+      azure: 2
+      cbl-mariner: 2
+      photon: 1
+      redhat: 1
+      ubuntu: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N
+        V3Score: 3.7
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/08/13/5
+    - https://access.redhat.com/security/cve/CVE-2025-53859
+    - https://my.f5.com/manage/s/article/K000152786
+    - https://nginx.org/download/patch.2025.smtp.txt
+    - https://nvd.nist.gov/vuln/detail/CVE-2025-53859
+    - https://ubuntu.com/security/notices/USN-7715-1
+    - https://www.cve.org/CVERecord?id=CVE-2025-53859
+    - https://www.openwall.com/lists/oss-security/2025/08/13/5
+    PublishedDate: '2025-08-13T15:15:37.657Z'
+    LastModifiedDate: '2025-11-04T22:16:27.033Z'
 - Target: Java
   Class: lang-pkgs
   Type: jar
