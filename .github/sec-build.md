@@ -1136,13 +1136,17 @@
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ╭ [0]: CWE-349 
 │                       │     │                  ╰ [1]: CWE-345 
-│                       │     ├ VendorSeverity   ╭ azure  : 3 
+│                       │     ├ VendorSeverity   ╭ amazon : 2 
+│                       │     │                  ├ azure  : 3 
 │                       │     │                  ├ bitnami: 3 
 │                       │     │                  ├ redhat : 2 
 │                       │     │                  ╰ ubuntu : 2 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/
-│                       │     │                           │           A:N 
-│                       │     │                           ╰ V3Score : 5.9 
+│                       │     ├ CVSS             ╭ bitnami ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/
+│                       │     │                  │         │            VI:H/VA:N/SC:N/SI:N/SA:N 
+│                       │     │                  │         ╰ V40Score : 8.2 
+│                       │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H
+│                       │     │                            │           /A:N 
+│                       │     │                            ╰ V3Score : 5.9 
 │                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/02/05/1 
 │                       │     │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-1642 
 │                       │     │                  ├ [2]: https://my.f5.com/manage/s/article/K000159824 
@@ -1191,13 +1195,17 @@
 │                             ├ CweIDs           ─ [0]: CWE-125 
 │                             ├ VendorSeverity   ╭ amazon     : 1 
 │                             │                  ├ azure      : 2 
+│                             │                  ├ bitnami    : 2 
 │                             │                  ├ cbl-mariner: 2 
 │                             │                  ├ photon     : 1 
 │                             │                  ├ redhat     : 1 
 │                             │                  ╰ ubuntu     : 2 
-│                             ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/
-│                             │                           │           A:N 
-│                             │                           ╰ V3Score : 3.7 
+│                             ├ CVSS             ╭ bitnami ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/
+│                             │                  │         │            VI:N/VA:N/SC:N/SI:N/SA:N 
+│                             │                  │         ╰ V40Score : 6.3 
+│                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N
+│                             │                            │           /A:N 
+│                             │                            ╰ V3Score : 3.7 
 │                             ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/08/13/5 
 │                             │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-53859 
 │                             │                  ├ [2]: https://my.f5.com/manage/s/article/K000152786 
