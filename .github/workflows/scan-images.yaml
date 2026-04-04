@@ -13,11 +13,11 @@ jobs:
       pull-requests: write
     name       : Scan images
     steps      :
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v6
       name: Checkoout
 
     - name: Cache OpenAF runtime
-      uses: actions/cache@v3
+      uses: actions/cache@v5
       with:
         key : oaf-nightly
         path: /tmp/oaf
@@ -32,21 +32,21 @@ jobs:
         wget https://openaf.io/trivy-db.tgz
         docker run --rm -v trivy-db:/volume -v $(pwd):/backup busybox tar xzf /backup/trivy-db.tgz -C /volume
 
-    - uses: openaf/ojob-action@v4
+    - uses: openaf/ojob-action@v7
       name: Check build
       with:
         ojob: 'ojob.io/sec/genSecBadge'
         args: 'image=nmaguiar/nearless:build file=.github/sec-build.svg reportFile=.github/sec-build.yaml'
         dist: 'nightly'
 
-    - uses: openaf/ojob-action@v4
+    - uses: openaf/ojob-action@v7
       name: Generate sec-build.md
       with:
         ojob: 'ojob.io/util/toMDTree'
         args: 'inputFile=.github/sec-build.yaml file=.github/sec-build.md'
         dist: 'nightly'
 
-    - uses: openaf/ojob-action@v4
+    - uses: openaf/ojob-action@v7
       name: Update badges
       env :
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
