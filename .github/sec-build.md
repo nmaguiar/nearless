@@ -1121,6 +1121,7 @@
 │                       │     ├ CweIDs           ─ [0]: CWE-617 
 │                       │     ├ VendorSeverity   ╭ azure      : 3 
 │                       │     │                  ├ cbl-mariner: 3 
+│                       │     │                  ├ photon     : 3 
 │                       │     │                  ╰ redhat     : 3 
 │                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
 │                       │     │                           │           A:H 
@@ -1135,7 +1136,58 @@
 │                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-27135 
 │                       │     ├ PublishedDate   : 2026-03-18T18:16:26.723Z 
 │                       │     ╰ LastModifiedDate: 2026-03-23T17:51:17.017Z 
-│                       ╰ [1] ╭ VulnerabilityID : CVE-2026-27171 
+│                       ├ [1] ╭ VulnerabilityID : CVE-2026-22184 
+│                       │     ├ PkgID           : zlib@1.3.1-r2 
+│                       │     ├ PkgName         : zlib 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.24.0
+│                       │     │                  │       _alpha20260127 
+│                       │     │                  ╰ UID : c6f558cca1be2488 
+│                       │     ├ InstalledVersion: 1.3.1-r2 
+│                       │     ├ FixedVersion    : 1.3.2-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e
+│                       │     │                  │         17b3c57a50597013001 
+│                       │     │                  ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06
+│                       │     │                            ff6c3d2618c0f6b0a87 
+│                       │     ├ SeveritySource  : nvd 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-22184 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Fingerprint     : sha256:77a3bfa02684da801494003d5da8a76d9ffe14d9d6cbf3f17ce594
+│                       │     │                   a0ffbd9e2c 
+│                       │     ├ Title           : zlib: zlib: Arbitrary code execution via buffer overflow in
+│                       │     │                   untgz utility 
+│                       │     ├ Description     : zlib versions up to and including 1.3.1.2 include a global
+│                       │     │                   buffer overflow in the untgz utility located under
+│                       │     │                   contrib/untgz. The vulnerability is limited to the standalone
+│                       │     │                    demonstration utility and does not affect the core zlib
+│                       │     │                   compression library. The flaw occurs when a user executes the
+│                       │     │                    untgz command with an excessively long archive name supplied
+│                       │     │                    via the command line, leading to an out-of-bounds write in a
+│                       │     │                    fixed-size global buffer. 
+│                       │     ├ Severity        : HIGH 
+│                       │     ├ CweIDs           ─ [0]: CWE-787 
+│                       │     ├ VendorSeverity   ╭ nvd   : 3 
+│                       │     │                  ╰ redhat: 3 
+│                       │     ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/
+│                       │     │                  │        │           A:H 
+│                       │     │                  │        ╰ V3Score : 7.8 
+│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/
+│                       │     │                           │           A:H 
+│                       │     │                           ╰ V3Score : 8.6 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-22184 
+│                       │     │                  ├ [1]: https://github.com/madler/zlib 
+│                       │     │                  ├ [2]: https://github.com/madler/zlib/issues/1142 
+│                       │     │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-22184 
+│                       │     │                  ├ [4]: https://seclists.org/fulldisclosure/2026/Jan/3 
+│                       │     │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2026-22184 
+│                       │     │                  ├ [6]: https://www.vulncheck.com/advisories/zlib-untgz-global-
+│                       │     │                  │      buffer-overflow-in-tgzfname 
+│                       │     │                  ╰ [7]: https://zlib.net/ 
+│                       │     ├ PublishedDate   : 2026-01-07T21:16:01.563Z 
+│                       │     ╰ LastModifiedDate: 2026-03-18T16:26:31.14Z 
+│                       ╰ [2] ╭ VulnerabilityID : CVE-2026-27171 
 │                             ├ PkgID           : zlib@1.3.1-r2 
 │                             ├ PkgName         : zlib 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.24.0
