@@ -15,10 +15,10 @@
 │     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
 │     │                 │      ├ DependsOn      ╭ [0]: alpine-baselayout-data@3.7.1-r10 
 │     │                 │      │                ╰ [1]: busybox-binsh@1.37.0-r31 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:2255799ccba3b867b6c849a8ebe096aed61381ed 
 │     │                 │      ├ InstalledFiles ╭ [0] : etc/motd 
 │     │                 │      │                ├ [1] : etc/crontabs/root 
@@ -45,10 +45,10 @@
 │     │                 │      ├ SrcVersion    : 3.7.1-r10 
 │     │                 │      ├ Licenses       ─ [0]: GPL-2.0-only 
 │     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:bb63013361946fa69da63fe1be4c21bcc67c337b 
 │     │                 │      ├ InstalledFiles ╭ [0] : etc/fstab 
 │     │                 │      │                ├ [1] : etc/group 
@@ -77,10 +77,10 @@
 │     │                 │      ├ SrcVersion    : 2.6-r0 
 │     │                 │      ├ Licenses       ─ [0]: MIT 
 │     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:e2b0ee196494dc3874f853370dff9451e3bd91d7 
 │     │                 │      ├ InstalledFiles ╭ [0] : etc/apk/keys/alpine-devel@lists.alpinelinux.org-4a6a084
 │     │                 │      │                │       0.rsa.pub 
@@ -177,10 +177,10 @@
 │     │                 │      ├ Licenses       ─ [0]: MIT 
 │     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
 │     │                 │      ├ DependsOn      ─ [0]: alpine-keys@2.6-r0 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:76e6b86cdaf5b233b35bd94ba4ac0bc9bbeafd3e 
 │     │                 │      ├ InstalledFiles ╭ [0]: etc/alpine-release 
 │     │                 │      │                ├ [1]: etc/issue 
@@ -192,7 +192,7 @@
 │     │                 │      ├ Name          : apk-tools 
 │     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/apk-tools@3.0.3-r2?arch=x86_64&distro=3.
 │     │                 │      │                │       24.0_alpha20260127 
-│     │                 │      │                ╰ UID : 5fe0d7d54748bdf6 
+│     │                 │      │                ╰ UID : e592157897973185 
 │     │                 │      ├ Version       : 3.0.3-r2 
 │     │                 │      ├ Arch          : x86_64 
 │     │                 │      ├ SrcName       : apk-tools 
@@ -201,13 +201,13 @@
 │     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
 │     │                 │      ├ DependsOn      ╭ [0]: ca-certificates-bundle@20251003-r0 
 │     │                 │      │                ├ [1]: libapk@3.0.3-r2 
-│     │                 │      │                ├ [2]: libcrypto3@3.5.5-r1 
+│     │                 │      │                ├ [2]: libcrypto3@3.5.6-r0 
 │     │                 │      │                ├ [3]: musl@1.2.5-r21 
 │     │                 │      │                ╰ [4]: zlib@1.3.1-r2 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:494bab63c552298ccc34f45c7ef05d1687e90e54 
 │     │                 │      ├ InstalledFiles ─ [0]: sbin/apk 
 │     │                 │      ╰ AnalyzedBy    : apk 
@@ -223,10 +223,10 @@
 │     │                 │      ├ Licenses       ─ [0]: MIT 
 │     │                 │      ├ Maintainer    : prspkt <prspkt@protonmail.com> 
 │     │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:19b3f6177ec81889b912c350c5fea4a2a666d805 
 │     │                 │      ├ InstalledFiles ╭ [0]: usr/lib/libbrotlicommon.so.1 
 │     │                 │      │                ├ [1]: usr/lib/libbrotlicommon.so.1.2.0 
@@ -247,10 +247,10 @@
 │     │                 │      ├ Licenses       ─ [0]: GPL-2.0-only 
 │     │                 │      ├ Maintainer    : Sören Tempel <soeren+alpine@soeren-tempel.net> 
 │     │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:da5feffd3d293cadda41a516988f5d8e22e917e8 
 │     │                 │      ├ InstalledFiles ╭ [0]: bin/busybox 
 │     │                 │      │                ├ [1]: etc/securetty 
@@ -272,10 +272,10 @@
 │     │                 │      ├ Licenses       ─ [0]: GPL-2.0-only 
 │     │                 │      ├ Maintainer    : Sören Tempel <soeren+alpine@soeren-tempel.net> 
 │     │                 │      ├ DependsOn      ─ [0]: busybox@1.37.0-r31 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:4c3e2c012d65f1ac56e905b0d03d6af90bbf692b 
 │     │                 │      ├ InstalledFiles ─ [0]: bin/sh 
 │     │                 │      ╰ AnalyzedBy    : apk 
@@ -291,10 +291,10 @@
 │     │                 │      ├ Licenses       ─ [0]: MIT 
 │     │                 │      ├ Maintainer    : Carlo Landmeter <clandmeter@alpinelinux.org> 
 │     │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:67d1948d07b29383e0ce2997bfdfa400f9804a3d 
 │     │                 │      ├ InstalledFiles ╭ [0]: usr/lib/libcares.so.2 
 │     │                 │      │                ╰ [1]: usr/lib/libcares.so.2.19.5 
@@ -303,7 +303,7 @@
 │     │                 │      ├ Name          : ca-certificates 
 │     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/ca-certificates@20251003-r0?arch=x86_64&
 │     │                 │      │                │       distro=3.24.0_alpha20260127 
-│     │                 │      │                ╰ UID : e444f6b92fd718b9 
+│     │                 │      │                ╰ UID : a158cca320a56fa5 
 │     │                 │      ├ Version       : 20251003-r0 
 │     │                 │      ├ Arch          : x86_64 
 │     │                 │      ├ SrcName       : ca-certificates 
@@ -312,12 +312,12 @@
 │     │                 │      │                ╰ [1]: MIT 
 │     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
 │     │                 │      ├ DependsOn      ╭ [0]: busybox-binsh@1.37.0-r31 
-│     │                 │      │                ├ [1]: libcrypto3@3.5.5-r1 
+│     │                 │      │                ├ [1]: libcrypto3@3.5.6-r0 
 │     │                 │      │                ╰ [2]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:3b10fd335b2af819c4fd3562900e76fd6ea304c5 
 │     │                 │      ├ InstalledFiles ╭ [0]  : etc/ca-certificates.conf 
 │     │                 │      │                ├ [1]  : etc/apk/protected_paths.d/ca-certificates.list 
@@ -599,10 +599,10 @@
 │     │                 │      ├ Licenses       ╭ [0]: MPL-2.0 
 │     │                 │      │                ╰ [1]: MIT 
 │     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:63ebe72ba79f548b6cdc8a9894e16a90d80f42b0 
 │     │                 │      ├ InstalledFiles ╭ [0]: etc/ssl/cert.pem 
 │     │                 │      │                ├ [1]: etc/ssl/certs/ca-certificates.crt 
@@ -623,10 +623,10 @@
 │     │                 │      ├ DependsOn      ╭ [0]: libcurl@8.19.0-r0 
 │     │                 │      │                ├ [1]: musl@1.2.5-r21 
 │     │                 │      │                ╰ [2]: zlib@1.3.1-r2 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:e4795e9045edf5808336824dff040d9178a80495 
 │     │                 │      ├ InstalledFiles ╭ [0]: usr/bin/curl 
 │     │                 │      │                ╰ [1]: usr/bin/wcurl 
@@ -635,41 +635,41 @@
 │     │                 │      ├ Name          : libapk 
 │     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/libapk@3.0.3-r2?arch=x86_64&distro=3.24.
 │     │                 │      │                │       0_alpha20260127 
-│     │                 │      │                ╰ UID : 9b3e7a579a1cacfe 
+│     │                 │      │                ╰ UID : b89dd03434499eb0 
 │     │                 │      ├ Version       : 3.0.3-r2 
 │     │                 │      ├ Arch          : x86_64 
 │     │                 │      ├ SrcName       : apk-tools 
 │     │                 │      ├ SrcVersion    : 3.0.3-r2 
 │     │                 │      ├ Licenses       ─ [0]: GPL-2.0-only 
 │     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                 │      ├ DependsOn      ╭ [0]: libcrypto3@3.5.5-r1 
-│     │                 │      │                ├ [1]: libssl3@3.5.5-r1 
+│     │                 │      ├ DependsOn      ╭ [0]: libcrypto3@3.5.6-r0 
+│     │                 │      │                ├ [1]: libssl3@3.5.6-r0 
 │     │                 │      │                ├ [2]: musl@1.2.5-r21 
 │     │                 │      │                ╰ [3]: zlib@1.3.1-r2 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:2f13cdf8074b5e0727e0c9a86991cacdf7f1c02f 
 │     │                 │      ├ InstalledFiles ─ [0]: usr/lib/libapk.so.3.0.0 
 │     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [13] ╭ ID            : libcrypto3@3.5.5-r1 
+│     │                 ├ [13] ╭ ID            : libcrypto3@3.5.6-r0 
 │     │                 │      ├ Name          : libcrypto3 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.5-r1?arch=x86_64&distro=3
+│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.6-r0?arch=x86_64&distro=3
 │     │                 │      │                │       .24.0_alpha20260127 
-│     │                 │      │                ╰ UID : b0bc5b1d2371abc0 
-│     │                 │      ├ Version       : 3.5.5-r1 
+│     │                 │      │                ╰ UID : 707cad20ed789797 
+│     │                 │      ├ Version       : 3.5.6-r0 
 │     │                 │      ├ Arch          : x86_64 
 │     │                 │      ├ SrcName       : openssl 
-│     │                 │      ├ SrcVersion    : 3.5.5-r1 
+│     │                 │      ├ SrcVersion    : 3.5.6-r0 
 │     │                 │      ├ Licenses       ─ [0]: Apache-2.0 
 │     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
 │     │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
-│     │                 │      ├ Digest        : sha1:f588e3a8af782e01261871b7a09cb0d6f6a3a726 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
+│     │                 │      ├ Digest        : sha1:dd0379d1ccba9bd4fda563425483a906105b9371 
 │     │                 │      ├ InstalledFiles ╭ [0]: etc/ssl/ct_log_list.cnf 
 │     │                 │      │                ├ [1]: etc/ssl/ct_log_list.cnf.dist 
 │     │                 │      │                ├ [2]: etc/ssl/openssl.cnf 
@@ -685,7 +685,7 @@
 │     │                 │      ├ Name          : libcurl 
 │     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/libcurl@8.19.0-r0?arch=x86_64&distro=3.2
 │     │                 │      │                │       4.0_alpha20260127 
-│     │                 │      │                ╰ UID : 1e21380f137bcfe2 
+│     │                 │      │                ╰ UID : d5ea60ed6abc1415 
 │     │                 │      ├ Version       : 8.19.0-r0 
 │     │                 │      ├ Arch          : x86_64 
 │     │                 │      ├ SrcName       : curl 
@@ -695,18 +695,18 @@
 │     │                 │      ├ DependsOn      ╭ [0] : brotli-libs@1.2.0-r1 
 │     │                 │      │                ├ [1] : c-ares@1.34.6-r0 
 │     │                 │      │                ├ [2] : ca-certificates-bundle@20251003-r0 
-│     │                 │      │                ├ [3] : libcrypto3@3.5.5-r1 
+│     │                 │      │                ├ [3] : libcrypto3@3.5.6-r0 
 │     │                 │      │                ├ [4] : libidn2@2.3.8-r0 
 │     │                 │      │                ├ [5] : libpsl@0.21.5-r3 
-│     │                 │      │                ├ [6] : libssl3@3.5.5-r1 
+│     │                 │      │                ├ [6] : libssl3@3.5.6-r0 
 │     │                 │      │                ├ [7] : musl@1.2.5-r21 
-│     │                 │      │                ├ [8] : nghttp2-libs@1.68.0-r0 
+│     │                 │      │                ├ [8] : nghttp2-libs@1.68.1-r0 
 │     │                 │      │                ├ [9] : zlib@1.3.1-r2 
 │     │                 │      │                ╰ [10]: zstd-libs@1.5.7-r2 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:26b840069e0922362814eb2f62c58ff4aca77cc9 
 │     │                 │      ├ InstalledFiles ╭ [0]: usr/lib/libcurl.so.4 
 │     │                 │      │                ╰ [1]: usr/lib/libcurl.so.4.8.0 
@@ -725,10 +725,10 @@
 │     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
 │     │                 │      ├ DependsOn      ╭ [0]: libunistring@1.4.1-r0 
 │     │                 │      │                ╰ [1]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:ae187b51fa0223e13d8a4df74b8e90912f2144d8 
 │     │                 │      ├ InstalledFiles ╭ [0]: usr/lib/libidn2.so.0 
 │     │                 │      │                ╰ [1]: usr/lib/libidn2.so.0.4.0 
@@ -747,32 +747,32 @@
 │     │                 │      ├ DependsOn      ╭ [0]: libidn2@2.3.8-r0 
 │     │                 │      │                ├ [1]: libunistring@1.4.1-r0 
 │     │                 │      │                ╰ [2]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:9103905efb1892668c2ffcd27a887ea432feb5ca 
 │     │                 │      ├ InstalledFiles ╭ [0]: usr/lib/libpsl.so.5 
 │     │                 │      │                ╰ [1]: usr/lib/libpsl.so.5.3.5 
 │     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [17] ╭ ID            : libssl3@3.5.5-r1 
+│     │                 ├ [17] ╭ ID            : libssl3@3.5.6-r0 
 │     │                 │      ├ Name          : libssl3 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/libssl3@3.5.5-r1?arch=x86_64&distro=3.24
+│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/libssl3@3.5.6-r0?arch=x86_64&distro=3.24
 │     │                 │      │                │       .0_alpha20260127 
-│     │                 │      │                ╰ UID : 2ce8b84cb1686b94 
-│     │                 │      ├ Version       : 3.5.5-r1 
+│     │                 │      │                ╰ UID : 422e39507fffb47e 
+│     │                 │      ├ Version       : 3.5.6-r0 
 │     │                 │      ├ Arch          : x86_64 
 │     │                 │      ├ SrcName       : openssl 
-│     │                 │      ├ SrcVersion    : 3.5.5-r1 
+│     │                 │      ├ SrcVersion    : 3.5.6-r0 
 │     │                 │      ├ Licenses       ─ [0]: Apache-2.0 
 │     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                 │      ├ DependsOn      ╭ [0]: libcrypto3@3.5.5-r1 
+│     │                 │      ├ DependsOn      ╭ [0]: libcrypto3@3.5.6-r0 
 │     │                 │      │                ╰ [1]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
-│     │                 │      ├ Digest        : sha1:3961ed08b49eaff15537a73c9f4f13f48bd748ed 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
+│     │                 │      ├ Digest        : sha1:b593e93024b096c1ed37459e8326b952b6491fec 
 │     │                 │      ├ InstalledFiles ─ [0]: usr/lib/libssl.so.3 
 │     │                 │      ╰ AnalyzedBy    : apk 
 │     │                 ├ [18] ╭ ID            : libunistring@1.4.1-r0 
@@ -788,10 +788,10 @@
 │     │                 │      │                ╰ [1]: LGPL-3.0-or-later 
 │     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
 │     │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:6e56562bde456bee5971787d3d95c34e84ced797 
 │     │                 │      ├ InstalledFiles ╭ [0]: usr/lib/libunistring.so.5 
 │     │                 │      │                ╰ [1]: usr/lib/libunistring.so.5.2.1 
@@ -808,10 +808,10 @@
 │     │                 │      ├ Licenses       ─ [0]: MIT 
 │     │                 │      ├ Maintainer    : Jakub Jirutka <jakub@jirutka.cz> 
 │     │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:5c7f1b16b4cddf1bb6f6547cd8682ee89a52426d 
 │     │                 │      ├ InstalledFiles ╭ [0]: usr/lib/libmimalloc-secure.so.2 
 │     │                 │      │                ├ [1]: usr/lib/libmimalloc-secure.so.2.2 
@@ -829,10 +829,10 @@
 │     │                 │      ├ SrcVersion    : 1.2.5-r21 
 │     │                 │      ├ Licenses       ─ [0]: MIT 
 │     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:4dcd8f28bb875b9a45d3c7afbafcb7c063ddcc4c 
 │     │                 │      ├ InstalledFiles ╭ [0]: lib/ld-musl-x86_64.so.1 
 │     │                 │      │                ╰ [1]: lib/libc.musl-x86_64.so.1 
@@ -852,10 +852,10 @@
 │     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
 │     │                 │      ├ DependsOn      ╭ [0]: musl@1.2.5-r21 
 │     │                 │      │                ╰ [1]: scanelf@1.3.9-r0 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:793ce8115cfc734d044044e5a6b93cbce69bbb42 
 │     │                 │      ├ InstalledFiles ╭ [0]: sbin/ldconfig 
 │     │                 │      │                ├ [1]: usr/bin/getconf 
@@ -863,31 +863,31 @@
 │     │                 │      │                ├ [3]: usr/bin/iconv 
 │     │                 │      │                ╰ [4]: usr/bin/ldd 
 │     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [22] ╭ ID            : nghttp2-libs@1.68.0-r0 
+│     │                 ├ [22] ╭ ID            : nghttp2-libs@1.68.1-r0 
 │     │                 │      ├ Name          : nghttp2-libs 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/nghttp2-libs@1.68.0-r0?arch=x86_64&distr
+│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/nghttp2-libs@1.68.1-r0?arch=x86_64&distr
 │     │                 │      │                │       o=3.24.0_alpha20260127 
-│     │                 │      │                ╰ UID : 802c936f9e7891b2 
-│     │                 │      ├ Version       : 1.68.0-r0 
+│     │                 │      │                ╰ UID : 976036af7587c050 
+│     │                 │      ├ Version       : 1.68.1-r0 
 │     │                 │      ├ Arch          : x86_64 
 │     │                 │      ├ SrcName       : nghttp2 
-│     │                 │      ├ SrcVersion    : 1.68.0-r0 
+│     │                 │      ├ SrcVersion    : 1.68.1-r0 
 │     │                 │      ├ Licenses       ─ [0]: MIT 
 │     │                 │      ├ Maintainer    : Francesco Colista <fcolista@alpinelinux.org> 
 │     │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
-│     │                 │      ├ Digest        : sha1:584b6a1b0aed58a3f543bfd77729b0d8a8b1745b 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
+│     │                 │      ├ Digest        : sha1:0d8df0d609826f6eff58092aefc74645110f9035 
 │     │                 │      ├ InstalledFiles ╭ [0]: usr/lib/libnghttp2.so.14 
-│     │                 │      │                ╰ [1]: usr/lib/libnghttp2.so.14.29.2 
+│     │                 │      │                ╰ [1]: usr/lib/libnghttp2.so.14.29.3 
 │     │                 │      ╰ AnalyzedBy    : apk 
 │     │                 ├ [23] ╭ ID            : nginx@1.28.3-r0 
 │     │                 │      ├ Name          : nginx 
 │     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/nginx@1.28.3-r0?arch=x86_64&distro=3.24.
 │     │                 │      │                │       0_alpha20260127 
-│     │                 │      │                ╰ UID : afc882f6a9e490aa 
+│     │                 │      │                ╰ UID : 685bb480b32031a7 
 │     │                 │      ├ Version       : 1.28.3-r0 
 │     │                 │      ├ Arch          : x86_64 
 │     │                 │      ├ SrcName       : nginx 
@@ -895,15 +895,15 @@
 │     │                 │      ├ Licenses       ─ [0]: BSD-2-Clause 
 │     │                 │      ├ Maintainer    : Jakub Jirutka <jakub@jirutka.cz> 
 │     │                 │      ├ DependsOn      ╭ [0]: busybox-binsh@1.37.0-r31 
-│     │                 │      │                ├ [1]: libcrypto3@3.5.5-r1 
-│     │                 │      │                ├ [2]: libssl3@3.5.5-r1 
+│     │                 │      │                ├ [1]: libcrypto3@3.5.6-r0 
+│     │                 │      │                ├ [2]: libssl3@3.5.6-r0 
 │     │                 │      │                ├ [3]: musl@1.2.5-r21 
 │     │                 │      │                ├ [4]: pcre2@10.47-r0 
 │     │                 │      │                ╰ [5]: zlib@1.3.1-r2 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:81d1332d67c72d595e5628f2b696e22241e7178e 
 │     │                 │      ├ InstalledFiles ╭ [0] : etc/logrotate.d/nginx 
 │     │                 │      │                ├ [1] : etc/nginx/fastcgi.conf 
@@ -920,25 +920,25 @@
 │     │                 │      │                ├ [12]: var/lib/nginx/html/50x.html 
 │     │                 │      │                ╰ [13]: var/lib/nginx/html/index.html 
 │     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [24] ╭ ID            : openssl@3.5.5-r1 
+│     │                 ├ [24] ╭ ID            : openssl@3.5.6-r0 
 │     │                 │      ├ Name          : openssl 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/openssl@3.5.5-r1?arch=x86_64&distro=3.24
+│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/openssl@3.5.6-r0?arch=x86_64&distro=3.24
 │     │                 │      │                │       .0_alpha20260127 
-│     │                 │      │                ╰ UID : 35640405b1844873 
-│     │                 │      ├ Version       : 3.5.5-r1 
+│     │                 │      │                ╰ UID : baf9e061f1774138 
+│     │                 │      ├ Version       : 3.5.6-r0 
 │     │                 │      ├ Arch          : x86_64 
 │     │                 │      ├ SrcName       : openssl 
-│     │                 │      ├ SrcVersion    : 3.5.5-r1 
+│     │                 │      ├ SrcVersion    : 3.5.6-r0 
 │     │                 │      ├ Licenses       ─ [0]: Apache-2.0 
 │     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                 │      ├ DependsOn      ╭ [0]: libcrypto3@3.5.5-r1 
-│     │                 │      │                ├ [1]: libssl3@3.5.5-r1 
+│     │                 │      ├ DependsOn      ╭ [0]: libcrypto3@3.5.6-r0 
+│     │                 │      │                ├ [1]: libssl3@3.5.6-r0 
 │     │                 │      │                ╰ [2]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
-│     │                 │      ├ Digest        : sha1:e66ab4e639280451cefc291b1deef726be63d870 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
+│     │                 │      ├ Digest        : sha1:9d9f5cdc53ba51ffd69d57d5fbfe45e123d643e1 
 │     │                 │      ├ InstalledFiles ─ [0]: usr/bin/openssl 
 │     │                 │      ╰ AnalyzedBy    : apk 
 │     │                 ├ [25] ╭ ID            : pcre2@10.47-r0 
@@ -953,10 +953,10 @@
 │     │                 │      ├ Licenses       ─ [0]: BSD-3-Clause 
 │     │                 │      ├ Maintainer    : Jakub Jirutka <jakub@jirutka.cz> 
 │     │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:549059958151627bb0f5469bded945988b1bc24b 
 │     │                 │      ├ InstalledFiles ╭ [0]: usr/lib/libpcre2-8.so.0 
 │     │                 │      │                ├ [1]: usr/lib/libpcre2-8.so.0.15.0 
@@ -975,10 +975,10 @@
 │     │                 │      ├ Licenses       ─ [0]: GPL-2.0-only 
 │     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
 │     │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:f91d557640d9e829bb650f8056edea0fc1e099cf 
 │     │                 │      ├ InstalledFiles ─ [0]: usr/bin/scanelf 
 │     │                 │      ╰ AnalyzedBy    : apk 
@@ -986,20 +986,20 @@
 │     │                 │      ├ Name          : ssl_client 
 │     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/ssl_client@1.37.0-r31?arch=x86_64&distro
 │     │                 │      │                │       =3.24.0_alpha20260127 
-│     │                 │      │                ╰ UID : b474e3cbd193f0bd 
+│     │                 │      │                ╰ UID : cda3227e33b46c14 
 │     │                 │      ├ Version       : 1.37.0-r31 
 │     │                 │      ├ Arch          : x86_64 
 │     │                 │      ├ SrcName       : busybox 
 │     │                 │      ├ SrcVersion    : 1.37.0-r31 
 │     │                 │      ├ Licenses       ─ [0]: GPL-2.0-only 
 │     │                 │      ├ Maintainer    : Sören Tempel <soeren+alpine@soeren-tempel.net> 
-│     │                 │      ├ DependsOn      ╭ [0]: libcrypto3@3.5.5-r1 
-│     │                 │      │                ├ [1]: libssl3@3.5.5-r1 
+│     │                 │      ├ DependsOn      ╭ [0]: libcrypto3@3.5.6-r0 
+│     │                 │      │                ├ [1]: libssl3@3.5.6-r0 
 │     │                 │      │                ╰ [2]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:6e8aec54788a34a67e76ecf2079e4b8e05704a05 
 │     │                 │      ├ InstalledFiles ─ [0]: usr/bin/ssl_client 
 │     │                 │      ╰ AnalyzedBy    : apk 
@@ -1017,10 +1017,10 @@
 │     │                 │      ├ Maintainer    : qaqland <qaq@qaq.land> 
 │     │                 │      ├ DependsOn      ╭ [0]: musl@1.2.5-r21 
 │     │                 │      │                ╰ [1]: zlib@1.3.1-r2 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:237f40feff9ef853ce96d2247d1875522d5d1296 
 │     │                 │      ├ InstalledFiles ╭ [0] : etc/sudo.conf 
 │     │                 │      │                ├ [1] : etc/sudo_logsrvd.conf 
@@ -1054,10 +1054,10 @@
 │     │                 │      ├ Licenses       ─ [0]: Zlib 
 │     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
 │     │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                 │      │                │         7b3c57a50597013001 
-│     │                 │      │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                 │      │                          f6c3d2618c0f6b0a87 
+│     │                 │      ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                 │      │                │         0aad92e20836ab8421 
+│     │                 │      │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                 │      │                          cc0858ef87460cc830 
 │     │                 │      ├ Digest        : sha1:7f6d1b44c82e08e09edc330137f50a408f87b6d6 
 │     │                 │      ├ InstalledFiles ╭ [0]: usr/lib/libz.so.1 
 │     │                 │      │                ╰ [1]: usr/lib/libz.so.1.3.1 
@@ -1075,1808 +1075,133 @@
 │     │                        │                ╰ [1]: GPL-2.0-or-later 
 │     │                        ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
 │     │                        ├ DependsOn      ─ [0]: musl@1.2.5-r21 
-│     │                        ├ Layer          ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e1
-│     │                        │                │         7b3c57a50597013001 
-│     │                        │                ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06f
-│     │                        │                          f6c3d2618c0f6b0a87 
+│     │                        ├ Layer          ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd9
+│     │                        │                │         0aad92e20836ab8421 
+│     │                        │                ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8b
+│     │                        │                          cc0858ef87460cc830 
 │     │                        ├ Digest        : sha1:43ac44ea9c46b340ba31d8f7fe10469f2d4223f4 
 │     │                        ├ InstalledFiles ╭ [0]: usr/lib/libzstd.so.1 
 │     │                        │                ╰ [1]: usr/lib/libzstd.so.1.5.7 
 │     │                        ╰ AnalyzedBy    : apk 
-│     ╰ Vulnerabilities ╭ [0]  ╭ VulnerabilityID : CVE-2026-28390 
-│                       │      ├ PkgID           : libcrypto3@3.5.5-r1 
-│                       │      ├ PkgName         : libcrypto3 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.5-r1?arch=x86_64&distro
-│                       │      │                  │       =3.24.0_alpha20260127 
-│                       │      │                  ╰ UID : b0bc5b1d2371abc0 
-│                       │      ├ InstalledVersion: 3.5.5-r1 
-│                       │      ├ FixedVersion    : 3.5.6-r0 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7
-│                       │      │                  │         e17b3c57a50597013001 
-│                       │      │                  ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c0
-│                       │      │                            6ff6c3d2618c0f6b0a87 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-28390 
-│                       │      ├ DataSource       ╭ ID  : alpine 
-│                       │      │                  ├ Name: Alpine Secdb 
-│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Fingerprint     : sha256:664c1eaee0b0b5fb1bfd07ef03a16a558286e0d1705ea49a2ec1f
-│                       │      │                   15fce58557a 
-│                       │      ├ Title           : openssl: OpenSSL: Denial of Service due to NULL pointer
-│                       │      │                   dereference in CMS EnvelopedData processing 
-│                       │      ├ Description     : Issue summary: During processing of a crafted CMS
-│                       │      │                   EnvelopedData message
-│                       │      │                   with KeyTransportRecipientInfo a NULL pointer dereference
-│                       │      │                   can happen.
-│                       │      │                   
-│                       │      │                   Impact summary: Applications that process
-│                       │      │                   attacker-controlled CMS data may
-│                       │      │                   crash before authentication or cryptographic operations
-│                       │      │                   occur resulting in
-│                       │      │                   Denial of Service.
-│                       │      │                   When a CMS EnvelopedData message that uses
-│                       │      │                   KeyTransportRecipientInfo with
-│                       │      │                   RSA-OAEP encryption is processed, the optional parameters
-│                       │      │                   field of
-│                       │      │                   RSA-OAEP SourceFunc algorithm identifier is examined without
-│                       │      │                    checking
-│                       │      │                   for its presence. This results in a NULL pointer dereference
-│                       │      │                    if the field
-│                       │      │                   is missing.
-│                       │      │                   Applications and services that call CMS_decrypt() on
-│                       │      │                   untrusted input
-│                       │      │                   (e.g., S/MIME processing or CMS-based protocols) are
-│                       │      │                   vulnerable.
-│                       │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not
-│                       │      │                   affected by this
-│                       │      │                   issue, as the affected code is outside the OpenSSL FIPS
-│                       │      │                   module boundary. 
-│                       │      ├ Severity        : HIGH 
-│                       │      ├ CweIDs           ─ [0]: CWE-476 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
-│                       │      │                  ╰ ubuntu: 1 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
-│                       │      │                           │           /A:H 
-│                       │      │                           ╰ V3Score : 7.5 
-│                       │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-28390 
-│                       │      │                  ├ [1] : https://github.com/openssl/openssl/commit/01194a8f194
-│                       │      │                  │       1115cd0383bfa91c736dd3993c8bc 
-│                       │      │                  ├ [2] : https://github.com/openssl/openssl/commit/2e39b7a6993
-│                       │      │                  │       be445fddb9fbce316fa756e0397b6 
-│                       │      │                  ├ [3] : https://github.com/openssl/openssl/commit/af2a5fecd3e
-│                       │      │                  │       71a29e7568f9c1453dec5cebbaff4 
-│                       │      │                  ├ [4] : https://github.com/openssl/openssl/commit/ea7b4ea4f9f
-│                       │      │                  │       853521ba34830cbcadc970d2e0788 
-│                       │      │                  ├ [5] : https://github.com/openssl/openssl/commit/fd2f1a6cf53
-│                       │      │                  │       b9ceeca723a001aa4b825d7c7ee75 
-│                       │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2026-28390 
-│                       │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260407.txt 
-│                       │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-8155-1 
-│                       │      │                  ├ [9] : https://www.cve.org/CVERecord?id=CVE-2026-28390 
-│                       │      │                  ╰ [10]: https://www.openwall.com/lists/oss-security/2026/04/0
-│                       │      │                          7/11 
-│                       │      ├ PublishedDate   : 2026-04-07T22:16:21.19Z 
-│                       │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-│                       ├ [1]  ╭ VulnerabilityID : CVE-2026-31790 
-│                       │      ├ PkgID           : libcrypto3@3.5.5-r1 
-│                       │      ├ PkgName         : libcrypto3 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.5-r1?arch=x86_64&distro
-│                       │      │                  │       =3.24.0_alpha20260127 
-│                       │      │                  ╰ UID : b0bc5b1d2371abc0 
-│                       │      ├ InstalledVersion: 3.5.5-r1 
-│                       │      ├ FixedVersion    : 3.5.6-r0 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7
-│                       │      │                  │         e17b3c57a50597013001 
-│                       │      │                  ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c0
-│                       │      │                            6ff6c3d2618c0f6b0a87 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-31790 
-│                       │      ├ DataSource       ╭ ID  : alpine 
-│                       │      │                  ├ Name: Alpine Secdb 
-│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Fingerprint     : sha256:9d1ab79c933d9999284a2c5730c66a129fd0a32316d7ad889194d
-│                       │      │                   0a5b533955a 
-│                       │      ├ Title           : openssl: openssl: Information Disclosure from Uninitialized
-│                       │      │                   Memory via Invalid RSA Public Key 
-│                       │      ├ Description     : Issue summary: Applications using RSASVE key encapsulation
-│                       │      │                   to establish
-│                       │      │                   a secret encryption key can send contents of an
-│                       │      │                   uninitialized memory buffer to
-│                       │      │                   a malicious peer.
-│                       │      │                   
-│                       │      │                   Impact summary: The uninitialized buffer might contain
-│                       │      │                   sensitive data from the
-│                       │      │                   previous execution of the application process which leads to
-│                       │      │                    sensitive data
-│                       │      │                   leakage to an attacker.
-│                       │      │                   RSA_public_encrypt() returns the number of bytes written on
-│                       │      │                   success and -1
-│                       │      │                   on error. The affected code tests only whether the return
-│                       │      │                   value is non-zero.
-│                       │      │                   As a result, if RSA encryption fails, encapsulation can
-│                       │      │                   still return success to
-│                       │      │                   the caller, set the output lengths, and leave the caller to
-│                       │      │                   use the contents of
-│                       │      │                   the ciphertext buffer as if a valid KEM ciphertext had been
-│                       │      │                   produced.
-│                       │      │                   If applications use EVP_PKEY_encapsulate() with RSA/RSASVE
-│                       │      │                   on an
-│                       │      │                   attacker-supplied invalid RSA public key without first
-│                       │      │                   validating that key,
-│                       │      │                   then this may cause stale or uninitialized contents of the
-│                       │      │                   caller-provided
-│                       │      │                   ciphertext buffer to be disclosed to the attacker in place
-│                       │      │                   of the KEM
-│                       │      │                   ciphertext.
-│                       │      │                   As a workaround calling EVP_PKEY_public_check() or
-│                       │      │                   EVP_PKEY_public_check_quick() before EVP_PKEY_encapsulate()
-│                       │      │                   will mitigate
-│                       │      │                   the issue.
-│                       │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3, 3.1 and 3.0 are
-│                       │      │                   affected by this issue. 
-│                       │      ├ Severity        : MEDIUM 
-│                       │      ├ CweIDs           ─ [0]: CWE-754 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
-│                       │      │                  ╰ ubuntu: 2 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N
-│                       │      │                           │           /A:N 
-│                       │      │                           ╰ V3Score : 5.9 
-│                       │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-31790 
-│                       │      │                  ├ [1] : https://github.com/openssl/openssl/commit/001e01db3e9
-│                       │      │                  │       96e13ffc72386fe79d03a6683b5ac 
-│                       │      │                  ├ [2] : https://github.com/openssl/openssl/commit/abd8b2eec7e
-│                       │      │                  │       3f3fda60ecfb68498b246b52af482 
-│                       │      │                  ├ [3] : https://github.com/openssl/openssl/commit/b922e24e5b2
-│                       │      │                  │       3ffb9cb9e14cadff23d91e9f7e406 
-│                       │      │                  ├ [4] : https://github.com/openssl/openssl/commit/d5f8e71cd0a
-│                       │      │                  │       54e961d0c3b174348f8308486f790 
-│                       │      │                  ├ [5] : https://github.com/openssl/openssl/commit/eed200f58cd
-│                       │      │                  │       8645ed77e46b7e9f764e284df379e 
-│                       │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2026-31790 
-│                       │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260407.txt 
-│                       │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-8155-1 
-│                       │      │                  ├ [9] : https://www.cve.org/CVERecord?id=CVE-2026-31790 
-│                       │      │                  ╰ [10]: https://www.openwall.com/lists/oss-security/2026/04/0
-│                       │      │                          7/11 
-│                       │      ├ PublishedDate   : 2026-04-07T22:16:21.77Z 
-│                       │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-│                       ├ [2]  ╭ VulnerabilityID : CVE-2026-2673 
-│                       │      ├ PkgID           : libcrypto3@3.5.5-r1 
-│                       │      ├ PkgName         : libcrypto3 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.5-r1?arch=x86_64&distro
-│                       │      │                  │       =3.24.0_alpha20260127 
-│                       │      │                  ╰ UID : b0bc5b1d2371abc0 
-│                       │      ├ InstalledVersion: 3.5.5-r1 
-│                       │      ├ FixedVersion    : 3.5.6-r0 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7
-│                       │      │                  │         e17b3c57a50597013001 
-│                       │      │                  ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c0
-│                       │      │                            6ff6c3d2618c0f6b0a87 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-2673 
-│                       │      ├ DataSource       ╭ ID  : alpine 
-│                       │      │                  ├ Name: Alpine Secdb 
-│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Fingerprint     : sha256:56f507ad270b82fbc5a133ebff040bd0ae13c64bcf85f6f693fe0
-│                       │      │                   eb47531c3d7 
-│                       │      ├ Title           : openssl: OpenSSL TLS 1.3 server may choose unexpected key
-│                       │      │                   agreement group 
-│                       │      ├ Description     : Issue summary: An OpenSSL TLS 1.3 server may fail to
-│                       │      │                   negotiate the expected
-│                       │      │                   preferred key exchange group when its key exchange group
-│                       │      │                   configuration includes
-│                       │      │                   the default by using the 'DEFAULT' keyword.
-│                       │      │                   
-│                       │      │                   Impact summary: A less preferred key exchange may be used
-│                       │      │                   even when a more
-│                       │      │                   preferred group is supported by both client and server, if
-│                       │      │                   the group
-│                       │      │                   was not included among the client's initial predicated
-│                       │      │                   keyshares.
-│                       │      │                   This will sometimes be the case with the new hybrid
-│                       │      │                   post-quantum groups,
-│                       │      │                   if the client chooses to defer their use until specifically
-│                       │      │                   requested by
-│                       │      │                   the server.
-│                       │      │                   If an OpenSSL TLS 1.3 server's configuration uses the
-│                       │      │                   'DEFAULT' keyword to
-│                       │      │                   interpolate the built-in default group list into its own
-│                       │      │                   configuration, perhaps
-│                       │      │                   adding or removing specific elements, then an implementation
-│                       │      │                    defect causes the
-│                       │      │                   'DEFAULT' list to lose its 'tuple' structure, and all
-│                       │      │                   server-supported groups
-│                       │      │                   were treated as a single sufficiently secure 'tuple', with
-│                       │      │                   the server not
-│                       │      │                   sending a Hello Retry Request (HRR) even when a group in a
-│                       │      │                   more preferred tuple
-│                       │      │                   was mutually supported.
-│                       │      │                   As a result, the client and server might fail to negotiate a
-│                       │      │                    mutually supported
-│                       │      │                   post-quantum key agreement group, such as 'X25519MLKEM768',
-│                       │      │                   if the client's
-│                       │      │                   configuration results in only 'classical' groups (such as
-│                       │      │                   'X25519' being the
-│                       │      │                   only ones in the client's initial keyshare prediction).
-│                       │      │                   OpenSSL 3.5 and later support a new syntax for selecting the
-│                       │      │                    most preferred TLS
-│                       │      │                   1.3 key agreement group on TLS servers.  The old syntax had
-│                       │      │                   a single 'flat'
-│                       │      │                   list of groups, and treated all the supported groups as
-│                       │      │                   sufficiently secure.
-│                       │      │                   If any of the keyshares predicted by the client were
-│                       │      │                   supported by the server
-│                       │      │                   the most preferred among these was selected, even if other
-│                       │      │                   groups supported by
-│                       │      │                   the client, but not included in the list of predicted
-│                       │      │                   keyshares would have been
-│                       │      │                   more preferred, if included.
-│                       │      │                   The new syntax partitions the groups into distinct 'tuples'
-│                       │      │                   of roughly
-│                       │      │                   equivalent security.  Within each tuple the most preferred
-│                       │      │                   group included among
-│                       │      │                   the client's predicted keyshares is chosen, but if the
-│                       │      │                   client supports a group
-│                       │      │                   from a more preferred tuple, but did not predict any
-│                       │      │                   corresponding keyshares,
-│                       │      │                   the server will ask the client to retry the ClientHello (by
-│                       │      │                   issuing a Hello
-│                       │      │                   Retry Request or HRR) with the most preferred mutually
-│                       │      │                   supported group.
-│                       │      │                   The above works as expected when the server's configuration
-│                       │      │                   uses the built-in
-│                       │      │                   default group list, or explicitly defines its own list by
-│                       │      │                   directly defining the
-│                       │      │                   various desired groups and group 'tuples'.
-│                       │      │                   No OpenSSL FIPS modules are affected by this issue, the code
-│                       │      │                    in question lies
-│                       │      │                   outside the FIPS boundary.
-│                       │      │                   OpenSSL 3.6 and 3.5 are vulnerable to this issue.
-│                       │      │                   OpenSSL 3.6 users should upgrade to OpenSSL 3.6.2 once it is
-│                       │      │                    released.
-│                       │      │                   OpenSSL 3.5 users should upgrade to OpenSSL 3.5.6 once it is
-│                       │      │                   OpenSSL 3.4, 3.3, 3.0, 1.0.2 and 1.1.1 are not affected by
-│                       │      │                   this issue. 
-│                       │      ├ Severity        : LOW 
-│                       │      ├ CweIDs           ─ [0]: CWE-757 
-│                       │      ├ VendorSeverity   ╭ amazon: 1 
-│                       │      │                  ├ redhat: 1 
-│                       │      │                  ╰ ubuntu: 1 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L
-│                       │      │                           │           /A:N 
-│                       │      │                           ╰ V3Score : 3.1 
-│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/03/13/3 
-│                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-2673 
-│                       │      │                  ├ [2]: https://github.com/openssl/openssl/commit/2157c9d81f7b
-│                       │      │                  │      0bd7dfa25b960e928ec28e8dd63f 
-│                       │      │                  ├ [3]: https://github.com/openssl/openssl/commit/85977e013f32
-│                       │      │                  │      ceb96aa034c0e741adddc1a05e34 
-│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-2673 
-│                       │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260313.txt 
-│                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8155-1 
-│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-2673 
-│                       │      ├ PublishedDate   : 2026-03-13T19:54:34.033Z 
-│                       │      ╰ LastModifiedDate: 2026-03-17T18:16:15.6Z 
-│                       ├ [3]  ╭ VulnerabilityID : CVE-2026-28387 
-│                       │      ├ PkgID           : libcrypto3@3.5.5-r1 
-│                       │      ├ PkgName         : libcrypto3 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.5-r1?arch=x86_64&distro
-│                       │      │                  │       =3.24.0_alpha20260127 
-│                       │      │                  ╰ UID : b0bc5b1d2371abc0 
-│                       │      ├ InstalledVersion: 3.5.5-r1 
-│                       │      ├ FixedVersion    : 3.5.6-r0 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7
-│                       │      │                  │         e17b3c57a50597013001 
-│                       │      │                  ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c0
-│                       │      │                            6ff6c3d2618c0f6b0a87 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-28387 
-│                       │      ├ DataSource       ╭ ID  : alpine 
-│                       │      │                  ├ Name: Alpine Secdb 
-│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Fingerprint     : sha256:96e7ae6512141712949d7b0429ac8e76b0b708715466f01bb85a1
-│                       │      │                   b134b76bc1e 
-│                       │      ├ Title           : Issue summary: An uncommon configuration of clients
-│                       │      │                   performing DANE TL ... 
-│                       │      ├ Description     : Issue summary: An uncommon configuration of clients
-│                       │      │                   performing DANE TLSA-based
-│                       │      │                   server authentication, when paired with uncommon server DANE
-│                       │      │                    TLSA records, may
-│                       │      │                   result in a use-after-free and/or double-free on the client
-│                       │      │                   side.
-│                       │      │                   
-│                       │      │                   Impact summary: A use after free can have a range of
-│                       │      │                   potential consequences
-│                       │      │                   such as the corruption of valid data, crashes or execution
-│                       │      │                   of arbitrary code.
-│                       │      │                   However, the issue only affects clients that make use of
-│                       │      │                   TLSA records with both
-│                       │      │                   the PKIX-TA(0/PKIX-EE(1) certificate usages and the
-│                       │      │                   DANE-TA(2) certificate
-│                       │      │                   usage.
-│                       │      │                   By far the most common deployment of DANE is in SMTP MTAs
-│                       │      │                   for which RFC7672
-│                       │      │                   recommends that clients treat as 'unusable' any TLSA records
-│                       │      │                    that have the PKIX
-│                       │      │                   certificate usages.  These SMTP (or other similar) clients
-│                       │      │                   are not vulnerable
-│                       │      │                   to this issue.  Conversely, any clients that support only
-│                       │      │                   the PKIX usages, and
-│                       │      │                   ignore the DANE-TA(2) usage are also not vulnerable.
-│                       │      │                   The client would also need to be communicating with a server
-│                       │      │                    that publishes a
-│                       │      │                   TLSA RRset with both types of TLSA records.
-│                       │      │                   No FIPS modules are affected by this issue, the problem code
-│                       │      │                    is outside the
-│                       │      │                   FIPS module boundary. 
-│                       │      ├ Severity        : LOW 
-│                       │      ├ CweIDs           ─ [0]: CWE-416 
-│                       │      ├ VendorSeverity   ─ ubuntu: 1 
-│                       │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/07e727d30474
-│                       │      │                  │      6edb49a98ee8f6ab00256e1f012b 
-│                       │      │                  ├ [1]: https://github.com/openssl/openssl/commit/258a8f63b269
-│                       │      │                  │      95ba357f4326da00e19e29c6acbe 
-│                       │      │                  ├ [2]: https://github.com/openssl/openssl/commit/444958deaf45
-│                       │      │                  │      0aea819171f97ae69eaedede42c3 
-│                       │      │                  ├ [3]: https://github.com/openssl/openssl/commit/7a4e08cee62a
-│                       │      │                  │      728d32e60b0de89e6764339df0a7 
-│                       │      │                  ├ [4]: https://github.com/openssl/openssl/commit/ec03fa050b33
-│                       │      │                  │      46997ed9c5fef3d0e16ad7db8177 
-│                       │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260407.txt 
-│                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8155-1 
-│                       │      │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28387 
-│                       │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/07
-│                       │      │                         /11 
-│                       │      ├ PublishedDate   : 2026-04-07T22:16:20.7Z 
-│                       │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-│                       ├ [4]  ╭ VulnerabilityID : CVE-2026-28388 
-│                       │      ├ PkgID           : libcrypto3@3.5.5-r1 
-│                       │      ├ PkgName         : libcrypto3 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.5-r1?arch=x86_64&distro
-│                       │      │                  │       =3.24.0_alpha20260127 
-│                       │      │                  ╰ UID : b0bc5b1d2371abc0 
-│                       │      ├ InstalledVersion: 3.5.5-r1 
-│                       │      ├ FixedVersion    : 3.5.6-r0 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7
-│                       │      │                  │         e17b3c57a50597013001 
-│                       │      │                  ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c0
-│                       │      │                            6ff6c3d2618c0f6b0a87 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-28388 
-│                       │      ├ DataSource       ╭ ID  : alpine 
-│                       │      │                  ├ Name: Alpine Secdb 
-│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Fingerprint     : sha256:66dd3fdbb94c23f79813146262770d0d65f65d49804f07738fe95
-│                       │      │                   0a16c33f00a 
-│                       │      ├ Title           : Issue summary: When a delta CRL that contains a Delta CRL
-│                       │      │                   Indicator ex ... 
-│                       │      ├ Description     : Issue summary: When a delta CRL that contains a Delta CRL
-│                       │      │                   Indicator extension
-│                       │      │                   is processed a NULL pointer dereference might happen if the
-│                       │      │                   required CRL
-│                       │      │                   Number extension is missing.
-│                       │      │                   
-│                       │      │                   Impact summary: A NULL pointer dereference can trigger a
-│                       │      │                   crash which
-│                       │      │                   leads to a Denial of Service for an application.
-│                       │      │                   When CRL processing and delta CRL processing is enabled
-│                       │      │                   during X.509
-│                       │      │                   certificate verification, the delta CRL processing does not
-│                       │      │                   check
-│                       │      │                   whether the CRL Number extension is NULL before
-│                       │      │                   dereferencing it.
-│                       │      │                   When a malformed delta CRL file is being processed, this
-│                       │      │                   parameter
-│                       │      │                   can be NULL, causing a NULL pointer dereference.
-│                       │      │                   Exploiting this issue requires the X509_V_FLAG_USE_DELTAS
-│                       │      │                   flag to be enabled in
-│                       │      │                   the verification context, the certificate being verified to
-│                       │      │                   contain a
-│                       │      │                   freshestCRL extension or the base CRL to have the
-│                       │      │                   EXFLAG_FRESHEST flag set, and
-│                       │      │                   an attacker to provide a malformed CRL to an application
-│                       │      │                   that processes it.
-│                       │      │                   The vulnerability is limited to Denial of Service and cannot
-│                       │      │                    be escalated to
-│                       │      │                   achieve code execution or memory disclosure. For that reason
-│                       │      │                    the issue was
-│                       │      │                   assessed as Low severity according to our Security Policy.
-│                       │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not
-│                       │      │                   affected by this issue,
-│                       │      │                   as the affected code is outside the OpenSSL FIPS module
-│                       │      │                   boundary. 
-│                       │      ├ Severity        : LOW 
-│                       │      ├ CweIDs           ─ [0]: CWE-476 
-│                       │      ├ VendorSeverity   ─ ubuntu: 1 
-│                       │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/59c3b3158553
-│                       │      │                  │      ab53275bbbccca5cb305d591cf2e 
-│                       │      │                  ├ [1]: https://github.com/openssl/openssl/commit/5a0b4930779c
-│                       │      │                  │      d2408880979db765db919da55139 
-│                       │      │                  ├ [2]: https://github.com/openssl/openssl/commit/602542f2c0c2
-│                       │      │                  │      d5edb47128f93eac10b62aeeefb3 
-│                       │      │                  ├ [3]: https://github.com/openssl/openssl/commit/a9d187dd1000
-│                       │      │                  │      130100fa7ab915f8513532cb3bb8 
-│                       │      │                  ├ [4]: https://github.com/openssl/openssl/commit/d3a901e8d9f0
-│                       │      │                  │      21f3e67d6cfbc12e768129862726 
-│                       │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260407.txt 
-│                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8155-1 
-│                       │      │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28388 
-│                       │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/07
-│                       │      │                         /11 
-│                       │      ├ PublishedDate   : 2026-04-07T22:16:20.863Z 
-│                       │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-│                       ├ [5]  ╭ VulnerabilityID : CVE-2026-28389 
-│                       │      ├ PkgID           : libcrypto3@3.5.5-r1 
-│                       │      ├ PkgName         : libcrypto3 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.5-r1?arch=x86_64&distro
-│                       │      │                  │       =3.24.0_alpha20260127 
-│                       │      │                  ╰ UID : b0bc5b1d2371abc0 
-│                       │      ├ InstalledVersion: 3.5.5-r1 
-│                       │      ├ FixedVersion    : 3.5.6-r0 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7
-│                       │      │                  │         e17b3c57a50597013001 
-│                       │      │                  ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c0
-│                       │      │                            6ff6c3d2618c0f6b0a87 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-28389 
-│                       │      ├ DataSource       ╭ ID  : alpine 
-│                       │      │                  ├ Name: Alpine Secdb 
-│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Fingerprint     : sha256:c87b3569f09e333ce2f926b8f045ee33f84121ce19465aa066453
-│                       │      │                   e33938493fa 
-│                       │      ├ Title           : Issue summary: During processing of a crafted CMS
-│                       │      │                   EnvelopedData messag ... 
-│                       │      ├ Description     : Issue summary: During processing of a crafted CMS
-│                       │      │                   EnvelopedData message
-│                       │      │                   with KeyAgreeRecipientInfo a NULL pointer dereference can
-│                       │      │                   happen.
-│                       │      │                   
-│                       │      │                   Impact summary: Applications that process
-│                       │      │                   attacker-controlled CMS data may
-│                       │      │                   crash before authentication or cryptographic operations
-│                       │      │                   occur resulting in
-│                       │      │                   Denial of Service.
-│                       │      │                   When a CMS EnvelopedData message that uses
-│                       │      │                   KeyAgreeRecipientInfo is
-│                       │      │                   processed, the optional parameters field of
-│                       │      │                   KeyEncryptionAlgorithmIdentifier
-│                       │      │                   is examined without checking for its presence. This results
-│                       │      │                   in a NULL
-│                       │      │                   pointer dereference if the field is missing.
-│                       │      │                   Applications and services that call CMS_decrypt() on
-│                       │      │                   untrusted input
-│                       │      │                   (e.g., S/MIME processing or CMS-based protocols) are
-│                       │      │                   vulnerable.
-│                       │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not
-│                       │      │                   affected by this
-│                       │      │                   issue, as the affected code is outside the OpenSSL FIPS
-│                       │      │                   module boundary. 
-│                       │      ├ Severity        : LOW 
-│                       │      ├ CweIDs           ─ [0]: CWE-476 
-│                       │      ├ VendorSeverity   ─ ubuntu: 1 
-│                       │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/16cea4188e0e
-│                       │      │                  │      a567deb4f93f85902247e67384f5 
-│                       │      │                  ├ [1]: https://github.com/openssl/openssl/commit/785cbf7ea3b5
-│                       │      │                  │      a6f5adf0c1ccb92b79d89c35c616 
-│                       │      │                  ├ [2]: https://github.com/openssl/openssl/commit/7b5274e81240
-│                       │      │                  │      0cacb6f3be4c2df5340923fa807f 
-│                       │      │                  ├ [3]: https://github.com/openssl/openssl/commit/c6725634e089
-│                       │      │                  │      eb2b634b10ede33944be7248172a 
-│                       │      │                  ├ [4]: https://github.com/openssl/openssl/commit/f80f83bc5fd0
-│                       │      │                  │      36bc47d773e8b15a001e2b4ce686 
-│                       │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260407.txt 
-│                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8155-1 
-│                       │      │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28389 
-│                       │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/07
-│                       │      │                         /11 
-│                       │      ├ PublishedDate   : 2026-04-07T22:16:21.03Z 
-│                       │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-│                       ├ [6]  ╭ VulnerabilityID : CVE-2026-31789 
-│                       │      ├ PkgID           : libcrypto3@3.5.5-r1 
-│                       │      ├ PkgName         : libcrypto3 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.5-r1?arch=x86_64&distro
-│                       │      │                  │       =3.24.0_alpha20260127 
-│                       │      │                  ╰ UID : b0bc5b1d2371abc0 
-│                       │      ├ InstalledVersion: 3.5.5-r1 
-│                       │      ├ FixedVersion    : 3.5.6-r0 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7
-│                       │      │                  │         e17b3c57a50597013001 
-│                       │      │                  ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c0
-│                       │      │                            6ff6c3d2618c0f6b0a87 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-31789 
-│                       │      ├ DataSource       ╭ ID  : alpine 
-│                       │      │                  ├ Name: Alpine Secdb 
-│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Fingerprint     : sha256:d50443f9d24622efb3d76030a1e999a3c61a102d4afef7d08339f
-│                       │      │                   0eb8e221810 
-│                       │      ├ Title           : Issue summary: Converting an excessively large OCTET STRING
-│                       │      │                   value to a ... 
-│                       │      ├ Description     : Issue summary: Converting an excessively large OCTET STRING
-│                       │      │                   value to
-│                       │      │                   a hexadecimal string leads to a heap buffer overflow on 32
-│                       │      │                   bit platforms.
-│                       │      │                   
-│                       │      │                   Impact summary: A heap buffer overflow may lead to a crash
-│                       │      │                   or possibly
-│                       │      │                   an attacker controlled code execution or other undefined
-│                       │      │                   behavior.
-│                       │      │                   If an attacker can supply a crafted X.509 certificate with
-│                       │      │                   an excessively
-│                       │      │                   large OCTET STRING value in extensions such as the Subject
-│                       │      │                   Key Identifier
-│                       │      │                   (SKID) or Authority Key Identifier (AKID) which are being
-│                       │      │                   converted to hex,
-│                       │      │                   the size of the buffer needed for the result is calculated
-│                       │      │                   as multiplication
-│                       │      │                   of the input length by 3. On 32 bit platforms, this
-│                       │      │                   multiplication may overflow
-│                       │      │                   resulting in the allocation of a smaller buffer and a heap
-│                       │      │                   buffer overflow.
-│                       │      │                   Applications and services that print or log contents of
-│                       │      │                   untrusted X.509
-│                       │      │                   certificates are vulnerable to this issue. As the
-│                       │      │                   certificates would have
-│                       │      │                   to have sizes of over 1 Gigabyte, printing or logging such
-│                       │      │                   certificates
-│                       │      │                   is a fairly unlikely operation and only 32 bit platforms are
-│                       │      │                    affected,
-│                       │      │                   this issue was assigned Low severity.
-│                       │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not
-│                       │      │                   affected by this
-│                       │      │                   issue, as the affected code is outside the OpenSSL FIPS
-│                       │      │                   module boundary. 
-│                       │      ├ Severity        : LOW 
-│                       │      ├ CweIDs           ─ [0]: CWE-787 
-│                       │      ├ VendorSeverity   ─ ubuntu: 1 
-│                       │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/364f095b8060
-│                       │      │                  │      1db632b0def6a33316967f863bde 
-│                       │      │                  ├ [1]: https://github.com/openssl/openssl/commit/7a9087efd769
-│                       │      │                  │      f362ad9c0e30c7baaa6bbfa65ecf 
-│                       │      │                  ├ [2]: https://github.com/openssl/openssl/commit/945b935ac66c
-│                       │      │                  │      c7f1a41f1b849c7c25adb5351f49 
-│                       │      │                  ├ [3]: https://github.com/openssl/openssl/commit/a24216018e1e
-│                       │      │                  │      de8ff01a4ff5afff7dfbd443e2f9 
-│                       │      │                  ├ [4]: https://github.com/openssl/openssl/commit/a91e537d16d7
-│                       │      │                  │      4050dbde50bb0dfb1fe9930f0521 
-│                       │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260407.txt 
-│                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8155-1 
-│                       │      │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2026-31789 
-│                       │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/07
-│                       │      │                         /11 
-│                       │      ├ PublishedDate   : 2026-04-07T22:16:21.617Z 
-│                       │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-│                       ├ [7]  ╭ VulnerabilityID : CVE-2026-28390 
-│                       │      ├ PkgID           : libssl3@3.5.5-r1 
-│                       │      ├ PkgName         : libssl3 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.5-r1?arch=x86_64&distro=3.
-│                       │      │                  │       24.0_alpha20260127 
-│                       │      │                  ╰ UID : 2ce8b84cb1686b94 
-│                       │      ├ InstalledVersion: 3.5.5-r1 
-│                       │      ├ FixedVersion    : 3.5.6-r0 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7
-│                       │      │                  │         e17b3c57a50597013001 
-│                       │      │                  ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c0
-│                       │      │                            6ff6c3d2618c0f6b0a87 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-28390 
-│                       │      ├ DataSource       ╭ ID  : alpine 
-│                       │      │                  ├ Name: Alpine Secdb 
-│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Fingerprint     : sha256:35a0f6e2350418570a25c44e59e4ca39bf4cf7291fc3524470fe8
-│                       │      │                   8fc3f667d4a 
-│                       │      ├ Title           : openssl: OpenSSL: Denial of Service due to NULL pointer
-│                       │      │                   dereference in CMS EnvelopedData processing 
-│                       │      ├ Description     : Issue summary: During processing of a crafted CMS
-│                       │      │                   EnvelopedData message
-│                       │      │                   with KeyTransportRecipientInfo a NULL pointer dereference
-│                       │      │                   can happen.
-│                       │      │                   
-│                       │      │                   Impact summary: Applications that process
-│                       │      │                   attacker-controlled CMS data may
-│                       │      │                   crash before authentication or cryptographic operations
-│                       │      │                   occur resulting in
-│                       │      │                   Denial of Service.
-│                       │      │                   When a CMS EnvelopedData message that uses
-│                       │      │                   KeyTransportRecipientInfo with
-│                       │      │                   RSA-OAEP encryption is processed, the optional parameters
-│                       │      │                   field of
-│                       │      │                   RSA-OAEP SourceFunc algorithm identifier is examined without
-│                       │      │                    checking
-│                       │      │                   for its presence. This results in a NULL pointer dereference
-│                       │      │                    if the field
-│                       │      │                   is missing.
-│                       │      │                   Applications and services that call CMS_decrypt() on
-│                       │      │                   untrusted input
-│                       │      │                   (e.g., S/MIME processing or CMS-based protocols) are
-│                       │      │                   vulnerable.
-│                       │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not
-│                       │      │                   affected by this
-│                       │      │                   issue, as the affected code is outside the OpenSSL FIPS
-│                       │      │                   module boundary. 
-│                       │      ├ Severity        : HIGH 
-│                       │      ├ CweIDs           ─ [0]: CWE-476 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
-│                       │      │                  ╰ ubuntu: 1 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
-│                       │      │                           │           /A:H 
-│                       │      │                           ╰ V3Score : 7.5 
-│                       │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-28390 
-│                       │      │                  ├ [1] : https://github.com/openssl/openssl/commit/01194a8f194
-│                       │      │                  │       1115cd0383bfa91c736dd3993c8bc 
-│                       │      │                  ├ [2] : https://github.com/openssl/openssl/commit/2e39b7a6993
-│                       │      │                  │       be445fddb9fbce316fa756e0397b6 
-│                       │      │                  ├ [3] : https://github.com/openssl/openssl/commit/af2a5fecd3e
-│                       │      │                  │       71a29e7568f9c1453dec5cebbaff4 
-│                       │      │                  ├ [4] : https://github.com/openssl/openssl/commit/ea7b4ea4f9f
-│                       │      │                  │       853521ba34830cbcadc970d2e0788 
-│                       │      │                  ├ [5] : https://github.com/openssl/openssl/commit/fd2f1a6cf53
-│                       │      │                  │       b9ceeca723a001aa4b825d7c7ee75 
-│                       │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2026-28390 
-│                       │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260407.txt 
-│                       │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-8155-1 
-│                       │      │                  ├ [9] : https://www.cve.org/CVERecord?id=CVE-2026-28390 
-│                       │      │                  ╰ [10]: https://www.openwall.com/lists/oss-security/2026/04/0
-│                       │      │                          7/11 
-│                       │      ├ PublishedDate   : 2026-04-07T22:16:21.19Z 
-│                       │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-│                       ├ [8]  ╭ VulnerabilityID : CVE-2026-31790 
-│                       │      ├ PkgID           : libssl3@3.5.5-r1 
-│                       │      ├ PkgName         : libssl3 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.5-r1?arch=x86_64&distro=3.
-│                       │      │                  │       24.0_alpha20260127 
-│                       │      │                  ╰ UID : 2ce8b84cb1686b94 
-│                       │      ├ InstalledVersion: 3.5.5-r1 
-│                       │      ├ FixedVersion    : 3.5.6-r0 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7
-│                       │      │                  │         e17b3c57a50597013001 
-│                       │      │                  ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c0
-│                       │      │                            6ff6c3d2618c0f6b0a87 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-31790 
-│                       │      ├ DataSource       ╭ ID  : alpine 
-│                       │      │                  ├ Name: Alpine Secdb 
-│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Fingerprint     : sha256:1addb288ef3cca8d276626f670e8b76a5046ce7cb3370be46e21a
-│                       │      │                   5b6f173c545 
-│                       │      ├ Title           : openssl: openssl: Information Disclosure from Uninitialized
-│                       │      │                   Memory via Invalid RSA Public Key 
-│                       │      ├ Description     : Issue summary: Applications using RSASVE key encapsulation
-│                       │      │                   to establish
-│                       │      │                   a secret encryption key can send contents of an
-│                       │      │                   uninitialized memory buffer to
-│                       │      │                   a malicious peer.
-│                       │      │                   
-│                       │      │                   Impact summary: The uninitialized buffer might contain
-│                       │      │                   sensitive data from the
-│                       │      │                   previous execution of the application process which leads to
-│                       │      │                    sensitive data
-│                       │      │                   leakage to an attacker.
-│                       │      │                   RSA_public_encrypt() returns the number of bytes written on
-│                       │      │                   success and -1
-│                       │      │                   on error. The affected code tests only whether the return
-│                       │      │                   value is non-zero.
-│                       │      │                   As a result, if RSA encryption fails, encapsulation can
-│                       │      │                   still return success to
-│                       │      │                   the caller, set the output lengths, and leave the caller to
-│                       │      │                   use the contents of
-│                       │      │                   the ciphertext buffer as if a valid KEM ciphertext had been
-│                       │      │                   produced.
-│                       │      │                   If applications use EVP_PKEY_encapsulate() with RSA/RSASVE
-│                       │      │                   on an
-│                       │      │                   attacker-supplied invalid RSA public key without first
-│                       │      │                   validating that key,
-│                       │      │                   then this may cause stale or uninitialized contents of the
-│                       │      │                   caller-provided
-│                       │      │                   ciphertext buffer to be disclosed to the attacker in place
-│                       │      │                   of the KEM
-│                       │      │                   ciphertext.
-│                       │      │                   As a workaround calling EVP_PKEY_public_check() or
-│                       │      │                   EVP_PKEY_public_check_quick() before EVP_PKEY_encapsulate()
-│                       │      │                   will mitigate
-│                       │      │                   the issue.
-│                       │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3, 3.1 and 3.0 are
-│                       │      │                   affected by this issue. 
-│                       │      ├ Severity        : MEDIUM 
-│                       │      ├ CweIDs           ─ [0]: CWE-754 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
-│                       │      │                  ╰ ubuntu: 2 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N
-│                       │      │                           │           /A:N 
-│                       │      │                           ╰ V3Score : 5.9 
-│                       │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-31790 
-│                       │      │                  ├ [1] : https://github.com/openssl/openssl/commit/001e01db3e9
-│                       │      │                  │       96e13ffc72386fe79d03a6683b5ac 
-│                       │      │                  ├ [2] : https://github.com/openssl/openssl/commit/abd8b2eec7e
-│                       │      │                  │       3f3fda60ecfb68498b246b52af482 
-│                       │      │                  ├ [3] : https://github.com/openssl/openssl/commit/b922e24e5b2
-│                       │      │                  │       3ffb9cb9e14cadff23d91e9f7e406 
-│                       │      │                  ├ [4] : https://github.com/openssl/openssl/commit/d5f8e71cd0a
-│                       │      │                  │       54e961d0c3b174348f8308486f790 
-│                       │      │                  ├ [5] : https://github.com/openssl/openssl/commit/eed200f58cd
-│                       │      │                  │       8645ed77e46b7e9f764e284df379e 
-│                       │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2026-31790 
-│                       │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260407.txt 
-│                       │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-8155-1 
-│                       │      │                  ├ [9] : https://www.cve.org/CVERecord?id=CVE-2026-31790 
-│                       │      │                  ╰ [10]: https://www.openwall.com/lists/oss-security/2026/04/0
-│                       │      │                          7/11 
-│                       │      ├ PublishedDate   : 2026-04-07T22:16:21.77Z 
-│                       │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-│                       ├ [9]  ╭ VulnerabilityID : CVE-2026-2673 
-│                       │      ├ PkgID           : libssl3@3.5.5-r1 
-│                       │      ├ PkgName         : libssl3 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.5-r1?arch=x86_64&distro=3.
-│                       │      │                  │       24.0_alpha20260127 
-│                       │      │                  ╰ UID : 2ce8b84cb1686b94 
-│                       │      ├ InstalledVersion: 3.5.5-r1 
-│                       │      ├ FixedVersion    : 3.5.6-r0 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7
-│                       │      │                  │         e17b3c57a50597013001 
-│                       │      │                  ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c0
-│                       │      │                            6ff6c3d2618c0f6b0a87 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-2673 
-│                       │      ├ DataSource       ╭ ID  : alpine 
-│                       │      │                  ├ Name: Alpine Secdb 
-│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Fingerprint     : sha256:c7684887c8c20b065f72a56966f4fd3d0ad70f1fd5eb11f69ca01
-│                       │      │                   41d84983665 
-│                       │      ├ Title           : openssl: OpenSSL TLS 1.3 server may choose unexpected key
-│                       │      │                   agreement group 
-│                       │      ├ Description     : Issue summary: An OpenSSL TLS 1.3 server may fail to
-│                       │      │                   negotiate the expected
-│                       │      │                   preferred key exchange group when its key exchange group
-│                       │      │                   configuration includes
-│                       │      │                   the default by using the 'DEFAULT' keyword.
-│                       │      │                   
-│                       │      │                   Impact summary: A less preferred key exchange may be used
-│                       │      │                   even when a more
-│                       │      │                   preferred group is supported by both client and server, if
-│                       │      │                   the group
-│                       │      │                   was not included among the client's initial predicated
-│                       │      │                   keyshares.
-│                       │      │                   This will sometimes be the case with the new hybrid
-│                       │      │                   post-quantum groups,
-│                       │      │                   if the client chooses to defer their use until specifically
-│                       │      │                   requested by
-│                       │      │                   the server.
-│                       │      │                   If an OpenSSL TLS 1.3 server's configuration uses the
-│                       │      │                   'DEFAULT' keyword to
-│                       │      │                   interpolate the built-in default group list into its own
-│                       │      │                   configuration, perhaps
-│                       │      │                   adding or removing specific elements, then an implementation
-│                       │      │                    defect causes the
-│                       │      │                   'DEFAULT' list to lose its 'tuple' structure, and all
-│                       │      │                   server-supported groups
-│                       │      │                   were treated as a single sufficiently secure 'tuple', with
-│                       │      │                   the server not
-│                       │      │                   sending a Hello Retry Request (HRR) even when a group in a
-│                       │      │                   more preferred tuple
-│                       │      │                   was mutually supported.
-│                       │      │                   As a result, the client and server might fail to negotiate a
-│                       │      │                    mutually supported
-│                       │      │                   post-quantum key agreement group, such as 'X25519MLKEM768',
-│                       │      │                   if the client's
-│                       │      │                   configuration results in only 'classical' groups (such as
-│                       │      │                   'X25519' being the
-│                       │      │                   only ones in the client's initial keyshare prediction).
-│                       │      │                   OpenSSL 3.5 and later support a new syntax for selecting the
-│                       │      │                    most preferred TLS
-│                       │      │                   1.3 key agreement group on TLS servers.  The old syntax had
-│                       │      │                   a single 'flat'
-│                       │      │                   list of groups, and treated all the supported groups as
-│                       │      │                   sufficiently secure.
-│                       │      │                   If any of the keyshares predicted by the client were
-│                       │      │                   supported by the server
-│                       │      │                   the most preferred among these was selected, even if other
-│                       │      │                   groups supported by
-│                       │      │                   the client, but not included in the list of predicted
-│                       │      │                   keyshares would have been
-│                       │      │                   more preferred, if included.
-│                       │      │                   The new syntax partitions the groups into distinct 'tuples'
-│                       │      │                   of roughly
-│                       │      │                   equivalent security.  Within each tuple the most preferred
-│                       │      │                   group included among
-│                       │      │                   the client's predicted keyshares is chosen, but if the
-│                       │      │                   client supports a group
-│                       │      │                   from a more preferred tuple, but did not predict any
-│                       │      │                   corresponding keyshares,
-│                       │      │                   the server will ask the client to retry the ClientHello (by
-│                       │      │                   issuing a Hello
-│                       │      │                   Retry Request or HRR) with the most preferred mutually
-│                       │      │                   supported group.
-│                       │      │                   The above works as expected when the server's configuration
-│                       │      │                   uses the built-in
-│                       │      │                   default group list, or explicitly defines its own list by
-│                       │      │                   directly defining the
-│                       │      │                   various desired groups and group 'tuples'.
-│                       │      │                   No OpenSSL FIPS modules are affected by this issue, the code
-│                       │      │                    in question lies
-│                       │      │                   outside the FIPS boundary.
-│                       │      │                   OpenSSL 3.6 and 3.5 are vulnerable to this issue.
-│                       │      │                   OpenSSL 3.6 users should upgrade to OpenSSL 3.6.2 once it is
-│                       │      │                    released.
-│                       │      │                   OpenSSL 3.5 users should upgrade to OpenSSL 3.5.6 once it is
-│                       │      │                   OpenSSL 3.4, 3.3, 3.0, 1.0.2 and 1.1.1 are not affected by
-│                       │      │                   this issue. 
-│                       │      ├ Severity        : LOW 
-│                       │      ├ CweIDs           ─ [0]: CWE-757 
-│                       │      ├ VendorSeverity   ╭ amazon: 1 
-│                       │      │                  ├ redhat: 1 
-│                       │      │                  ╰ ubuntu: 1 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L
-│                       │      │                           │           /A:N 
-│                       │      │                           ╰ V3Score : 3.1 
-│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/03/13/3 
-│                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-2673 
-│                       │      │                  ├ [2]: https://github.com/openssl/openssl/commit/2157c9d81f7b
-│                       │      │                  │      0bd7dfa25b960e928ec28e8dd63f 
-│                       │      │                  ├ [3]: https://github.com/openssl/openssl/commit/85977e013f32
-│                       │      │                  │      ceb96aa034c0e741adddc1a05e34 
-│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-2673 
-│                       │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260313.txt 
-│                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8155-1 
-│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-2673 
-│                       │      ├ PublishedDate   : 2026-03-13T19:54:34.033Z 
-│                       │      ╰ LastModifiedDate: 2026-03-17T18:16:15.6Z 
-│                       ├ [10] ╭ VulnerabilityID : CVE-2026-28387 
-│                       │      ├ PkgID           : libssl3@3.5.5-r1 
-│                       │      ├ PkgName         : libssl3 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.5-r1?arch=x86_64&distro=3.
-│                       │      │                  │       24.0_alpha20260127 
-│                       │      │                  ╰ UID : 2ce8b84cb1686b94 
-│                       │      ├ InstalledVersion: 3.5.5-r1 
-│                       │      ├ FixedVersion    : 3.5.6-r0 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7
-│                       │      │                  │         e17b3c57a50597013001 
-│                       │      │                  ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c0
-│                       │      │                            6ff6c3d2618c0f6b0a87 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-28387 
-│                       │      ├ DataSource       ╭ ID  : alpine 
-│                       │      │                  ├ Name: Alpine Secdb 
-│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Fingerprint     : sha256:43542be1f830528434476ceeb324f33e3d8614074e3074fa5e79d
-│                       │      │                   4e076ae665c 
-│                       │      ├ Title           : Issue summary: An uncommon configuration of clients
-│                       │      │                   performing DANE TL ... 
-│                       │      ├ Description     : Issue summary: An uncommon configuration of clients
-│                       │      │                   performing DANE TLSA-based
-│                       │      │                   server authentication, when paired with uncommon server DANE
-│                       │      │                    TLSA records, may
-│                       │      │                   result in a use-after-free and/or double-free on the client
-│                       │      │                   side.
-│                       │      │                   
-│                       │      │                   Impact summary: A use after free can have a range of
-│                       │      │                   potential consequences
-│                       │      │                   such as the corruption of valid data, crashes or execution
-│                       │      │                   of arbitrary code.
-│                       │      │                   However, the issue only affects clients that make use of
-│                       │      │                   TLSA records with both
-│                       │      │                   the PKIX-TA(0/PKIX-EE(1) certificate usages and the
-│                       │      │                   DANE-TA(2) certificate
-│                       │      │                   usage.
-│                       │      │                   By far the most common deployment of DANE is in SMTP MTAs
-│                       │      │                   for which RFC7672
-│                       │      │                   recommends that clients treat as 'unusable' any TLSA records
-│                       │      │                    that have the PKIX
-│                       │      │                   certificate usages.  These SMTP (or other similar) clients
-│                       │      │                   are not vulnerable
-│                       │      │                   to this issue.  Conversely, any clients that support only
-│                       │      │                   the PKIX usages, and
-│                       │      │                   ignore the DANE-TA(2) usage are also not vulnerable.
-│                       │      │                   The client would also need to be communicating with a server
-│                       │      │                    that publishes a
-│                       │      │                   TLSA RRset with both types of TLSA records.
-│                       │      │                   No FIPS modules are affected by this issue, the problem code
-│                       │      │                    is outside the
-│                       │      │                   FIPS module boundary. 
-│                       │      ├ Severity        : LOW 
-│                       │      ├ CweIDs           ─ [0]: CWE-416 
-│                       │      ├ VendorSeverity   ─ ubuntu: 1 
-│                       │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/07e727d30474
-│                       │      │                  │      6edb49a98ee8f6ab00256e1f012b 
-│                       │      │                  ├ [1]: https://github.com/openssl/openssl/commit/258a8f63b269
-│                       │      │                  │      95ba357f4326da00e19e29c6acbe 
-│                       │      │                  ├ [2]: https://github.com/openssl/openssl/commit/444958deaf45
-│                       │      │                  │      0aea819171f97ae69eaedede42c3 
-│                       │      │                  ├ [3]: https://github.com/openssl/openssl/commit/7a4e08cee62a
-│                       │      │                  │      728d32e60b0de89e6764339df0a7 
-│                       │      │                  ├ [4]: https://github.com/openssl/openssl/commit/ec03fa050b33
-│                       │      │                  │      46997ed9c5fef3d0e16ad7db8177 
-│                       │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260407.txt 
-│                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8155-1 
-│                       │      │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28387 
-│                       │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/07
-│                       │      │                         /11 
-│                       │      ├ PublishedDate   : 2026-04-07T22:16:20.7Z 
-│                       │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-│                       ├ [11] ╭ VulnerabilityID : CVE-2026-28388 
-│                       │      ├ PkgID           : libssl3@3.5.5-r1 
-│                       │      ├ PkgName         : libssl3 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.5-r1?arch=x86_64&distro=3.
-│                       │      │                  │       24.0_alpha20260127 
-│                       │      │                  ╰ UID : 2ce8b84cb1686b94 
-│                       │      ├ InstalledVersion: 3.5.5-r1 
-│                       │      ├ FixedVersion    : 3.5.6-r0 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7
-│                       │      │                  │         e17b3c57a50597013001 
-│                       │      │                  ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c0
-│                       │      │                            6ff6c3d2618c0f6b0a87 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-28388 
-│                       │      ├ DataSource       ╭ ID  : alpine 
-│                       │      │                  ├ Name: Alpine Secdb 
-│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Fingerprint     : sha256:f970c7c5a19cb2276c46a6259597f356b282a075d6980bcd1257c
-│                       │      │                   b1fca9dace7 
-│                       │      ├ Title           : Issue summary: When a delta CRL that contains a Delta CRL
-│                       │      │                   Indicator ex ... 
-│                       │      ├ Description     : Issue summary: When a delta CRL that contains a Delta CRL
-│                       │      │                   Indicator extension
-│                       │      │                   is processed a NULL pointer dereference might happen if the
-│                       │      │                   required CRL
-│                       │      │                   Number extension is missing.
-│                       │      │                   
-│                       │      │                   Impact summary: A NULL pointer dereference can trigger a
-│                       │      │                   crash which
-│                       │      │                   leads to a Denial of Service for an application.
-│                       │      │                   When CRL processing and delta CRL processing is enabled
-│                       │      │                   during X.509
-│                       │      │                   certificate verification, the delta CRL processing does not
-│                       │      │                   check
-│                       │      │                   whether the CRL Number extension is NULL before
-│                       │      │                   dereferencing it.
-│                       │      │                   When a malformed delta CRL file is being processed, this
-│                       │      │                   parameter
-│                       │      │                   can be NULL, causing a NULL pointer dereference.
-│                       │      │                   Exploiting this issue requires the X509_V_FLAG_USE_DELTAS
-│                       │      │                   flag to be enabled in
-│                       │      │                   the verification context, the certificate being verified to
-│                       │      │                   contain a
-│                       │      │                   freshestCRL extension or the base CRL to have the
-│                       │      │                   EXFLAG_FRESHEST flag set, and
-│                       │      │                   an attacker to provide a malformed CRL to an application
-│                       │      │                   that processes it.
-│                       │      │                   The vulnerability is limited to Denial of Service and cannot
-│                       │      │                    be escalated to
-│                       │      │                   achieve code execution or memory disclosure. For that reason
-│                       │      │                    the issue was
-│                       │      │                   assessed as Low severity according to our Security Policy.
-│                       │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not
-│                       │      │                   affected by this issue,
-│                       │      │                   as the affected code is outside the OpenSSL FIPS module
-│                       │      │                   boundary. 
-│                       │      ├ Severity        : LOW 
-│                       │      ├ CweIDs           ─ [0]: CWE-476 
-│                       │      ├ VendorSeverity   ─ ubuntu: 1 
-│                       │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/59c3b3158553
-│                       │      │                  │      ab53275bbbccca5cb305d591cf2e 
-│                       │      │                  ├ [1]: https://github.com/openssl/openssl/commit/5a0b4930779c
-│                       │      │                  │      d2408880979db765db919da55139 
-│                       │      │                  ├ [2]: https://github.com/openssl/openssl/commit/602542f2c0c2
-│                       │      │                  │      d5edb47128f93eac10b62aeeefb3 
-│                       │      │                  ├ [3]: https://github.com/openssl/openssl/commit/a9d187dd1000
-│                       │      │                  │      130100fa7ab915f8513532cb3bb8 
-│                       │      │                  ├ [4]: https://github.com/openssl/openssl/commit/d3a901e8d9f0
-│                       │      │                  │      21f3e67d6cfbc12e768129862726 
-│                       │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260407.txt 
-│                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8155-1 
-│                       │      │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28388 
-│                       │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/07
-│                       │      │                         /11 
-│                       │      ├ PublishedDate   : 2026-04-07T22:16:20.863Z 
-│                       │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-│                       ├ [12] ╭ VulnerabilityID : CVE-2026-28389 
-│                       │      ├ PkgID           : libssl3@3.5.5-r1 
-│                       │      ├ PkgName         : libssl3 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.5-r1?arch=x86_64&distro=3.
-│                       │      │                  │       24.0_alpha20260127 
-│                       │      │                  ╰ UID : 2ce8b84cb1686b94 
-│                       │      ├ InstalledVersion: 3.5.5-r1 
-│                       │      ├ FixedVersion    : 3.5.6-r0 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7
-│                       │      │                  │         e17b3c57a50597013001 
-│                       │      │                  ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c0
-│                       │      │                            6ff6c3d2618c0f6b0a87 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-28389 
-│                       │      ├ DataSource       ╭ ID  : alpine 
-│                       │      │                  ├ Name: Alpine Secdb 
-│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Fingerprint     : sha256:1bb6ac3eccdbff9fc85bb45146a985bb7faa8c405a05b0bc957ba
-│                       │      │                   ecde71200ed 
-│                       │      ├ Title           : Issue summary: During processing of a crafted CMS
-│                       │      │                   EnvelopedData messag ... 
-│                       │      ├ Description     : Issue summary: During processing of a crafted CMS
-│                       │      │                   EnvelopedData message
-│                       │      │                   with KeyAgreeRecipientInfo a NULL pointer dereference can
-│                       │      │                   happen.
-│                       │      │                   
-│                       │      │                   Impact summary: Applications that process
-│                       │      │                   attacker-controlled CMS data may
-│                       │      │                   crash before authentication or cryptographic operations
-│                       │      │                   occur resulting in
-│                       │      │                   Denial of Service.
-│                       │      │                   When a CMS EnvelopedData message that uses
-│                       │      │                   KeyAgreeRecipientInfo is
-│                       │      │                   processed, the optional parameters field of
-│                       │      │                   KeyEncryptionAlgorithmIdentifier
-│                       │      │                   is examined without checking for its presence. This results
-│                       │      │                   in a NULL
-│                       │      │                   pointer dereference if the field is missing.
-│                       │      │                   Applications and services that call CMS_decrypt() on
-│                       │      │                   untrusted input
-│                       │      │                   (e.g., S/MIME processing or CMS-based protocols) are
-│                       │      │                   vulnerable.
-│                       │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not
-│                       │      │                   affected by this
-│                       │      │                   issue, as the affected code is outside the OpenSSL FIPS
-│                       │      │                   module boundary. 
-│                       │      ├ Severity        : LOW 
-│                       │      ├ CweIDs           ─ [0]: CWE-476 
-│                       │      ├ VendorSeverity   ─ ubuntu: 1 
-│                       │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/16cea4188e0e
-│                       │      │                  │      a567deb4f93f85902247e67384f5 
-│                       │      │                  ├ [1]: https://github.com/openssl/openssl/commit/785cbf7ea3b5
-│                       │      │                  │      a6f5adf0c1ccb92b79d89c35c616 
-│                       │      │                  ├ [2]: https://github.com/openssl/openssl/commit/7b5274e81240
-│                       │      │                  │      0cacb6f3be4c2df5340923fa807f 
-│                       │      │                  ├ [3]: https://github.com/openssl/openssl/commit/c6725634e089
-│                       │      │                  │      eb2b634b10ede33944be7248172a 
-│                       │      │                  ├ [4]: https://github.com/openssl/openssl/commit/f80f83bc5fd0
-│                       │      │                  │      36bc47d773e8b15a001e2b4ce686 
-│                       │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260407.txt 
-│                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8155-1 
-│                       │      │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28389 
-│                       │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/07
-│                       │      │                         /11 
-│                       │      ├ PublishedDate   : 2026-04-07T22:16:21.03Z 
-│                       │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-│                       ├ [13] ╭ VulnerabilityID : CVE-2026-31789 
-│                       │      ├ PkgID           : libssl3@3.5.5-r1 
-│                       │      ├ PkgName         : libssl3 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.5-r1?arch=x86_64&distro=3.
-│                       │      │                  │       24.0_alpha20260127 
-│                       │      │                  ╰ UID : 2ce8b84cb1686b94 
-│                       │      ├ InstalledVersion: 3.5.5-r1 
-│                       │      ├ FixedVersion    : 3.5.6-r0 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7
-│                       │      │                  │         e17b3c57a50597013001 
-│                       │      │                  ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c0
-│                       │      │                            6ff6c3d2618c0f6b0a87 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-31789 
-│                       │      ├ DataSource       ╭ ID  : alpine 
-│                       │      │                  ├ Name: Alpine Secdb 
-│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Fingerprint     : sha256:fbce648d7f30917fe3e79b3c84c5d2165a3842cbdba218b685e24
-│                       │      │                   3e0b6eef6c5 
-│                       │      ├ Title           : Issue summary: Converting an excessively large OCTET STRING
-│                       │      │                   value to a ... 
-│                       │      ├ Description     : Issue summary: Converting an excessively large OCTET STRING
-│                       │      │                   value to
-│                       │      │                   a hexadecimal string leads to a heap buffer overflow on 32
-│                       │      │                   bit platforms.
-│                       │      │                   
-│                       │      │                   Impact summary: A heap buffer overflow may lead to a crash
-│                       │      │                   or possibly
-│                       │      │                   an attacker controlled code execution or other undefined
-│                       │      │                   behavior.
-│                       │      │                   If an attacker can supply a crafted X.509 certificate with
-│                       │      │                   an excessively
-│                       │      │                   large OCTET STRING value in extensions such as the Subject
-│                       │      │                   Key Identifier
-│                       │      │                   (SKID) or Authority Key Identifier (AKID) which are being
-│                       │      │                   converted to hex,
-│                       │      │                   the size of the buffer needed for the result is calculated
-│                       │      │                   as multiplication
-│                       │      │                   of the input length by 3. On 32 bit platforms, this
-│                       │      │                   multiplication may overflow
-│                       │      │                   resulting in the allocation of a smaller buffer and a heap
-│                       │      │                   buffer overflow.
-│                       │      │                   Applications and services that print or log contents of
-│                       │      │                   untrusted X.509
-│                       │      │                   certificates are vulnerable to this issue. As the
-│                       │      │                   certificates would have
-│                       │      │                   to have sizes of over 1 Gigabyte, printing or logging such
-│                       │      │                   certificates
-│                       │      │                   is a fairly unlikely operation and only 32 bit platforms are
-│                       │      │                    affected,
-│                       │      │                   this issue was assigned Low severity.
-│                       │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not
-│                       │      │                   affected by this
-│                       │      │                   issue, as the affected code is outside the OpenSSL FIPS
-│                       │      │                   module boundary. 
-│                       │      ├ Severity        : LOW 
-│                       │      ├ CweIDs           ─ [0]: CWE-787 
-│                       │      ├ VendorSeverity   ─ ubuntu: 1 
-│                       │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/364f095b8060
-│                       │      │                  │      1db632b0def6a33316967f863bde 
-│                       │      │                  ├ [1]: https://github.com/openssl/openssl/commit/7a9087efd769
-│                       │      │                  │      f362ad9c0e30c7baaa6bbfa65ecf 
-│                       │      │                  ├ [2]: https://github.com/openssl/openssl/commit/945b935ac66c
-│                       │      │                  │      c7f1a41f1b849c7c25adb5351f49 
-│                       │      │                  ├ [3]: https://github.com/openssl/openssl/commit/a24216018e1e
-│                       │      │                  │      de8ff01a4ff5afff7dfbd443e2f9 
-│                       │      │                  ├ [4]: https://github.com/openssl/openssl/commit/a91e537d16d7
-│                       │      │                  │      4050dbde50bb0dfb1fe9930f0521 
-│                       │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260407.txt 
-│                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8155-1 
-│                       │      │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2026-31789 
-│                       │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/07
-│                       │      │                         /11 
-│                       │      ├ PublishedDate   : 2026-04-07T22:16:21.617Z 
-│                       │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-│                       ├ [14] ╭ VulnerabilityID : CVE-2026-27135 
-│                       │      ├ PkgID           : nghttp2-libs@1.68.0-r0 
-│                       │      ├ PkgName         : nghttp2-libs 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/nghttp2-libs@1.68.0-r0?arch=x86_64&dis
-│                       │      │                  │       tro=3.24.0_alpha20260127 
-│                       │      │                  ╰ UID : 802c936f9e7891b2 
-│                       │      ├ InstalledVersion: 1.68.0-r0 
-│                       │      ├ FixedVersion    : 1.68.1 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7
-│                       │      │                  │         e17b3c57a50597013001 
-│                       │      │                  ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c0
-│                       │      │                            6ff6c3d2618c0f6b0a87 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-27135 
-│                       │      ├ DataSource       ╭ ID  : alpine 
-│                       │      │                  ├ Name: Alpine Secdb 
-│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Fingerprint     : sha256:3f9d6d1d8893e32ae803773e83d75b4f91e8e49f94fe68d02cd44
-│                       │      │                   e0f5d02fa0c 
-│                       │      ├ Title           : nghttp2: nghttp2: Denial of Service via malformed HTTP/2
-│                       │      │                   frames after session termination 
-│                       │      ├ Description     : nghttp2 is an implementation of the Hypertext Transfer
-│                       │      │                   Protocol version 2 in C. Prior to version 1.68.1, the
-│                       │      │                   nghttp2 library stops reading the incoming data when user
-│                       │      │                   facing public API `nghttp2_session_terminate_session` or
-│                       │      │                   `nghttp2_session_terminate_session2` is called by the
-│                       │      │                   application. They might be called internally by the library
-│                       │      │                   when it detects the situation that is subject to connection
-│                       │      │                   error. Due to the missing internal state validation, the
-│                       │      │                   library keeps reading the rest of the data after one of
-│                       │      │                   those APIs is called. Then receiving a malformed frame that
-│                       │      │                   causes FRAME_SIZE_ERROR causes assertion failure. nghttp2
-│                       │      │                   v1.68.1 adds missing state validation to avoid assertion
-│                       │      │                   failure. No known workarounds are available. 
-│                       │      ├ Severity        : HIGH 
-│                       │      ├ CweIDs           ─ [0]: CWE-617 
-│                       │      ├ VendorSeverity   ╭ azure      : 3 
-│                       │      │                  ├ cbl-mariner: 3 
-│                       │      │                  ├ oracle-oval: 3 
-│                       │      │                  ├ photon     : 3 
-│                       │      │                  ╰ redhat     : 3 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
-│                       │      │                           │           /A:H 
-│                       │      │                           ╰ V3Score : 7.5 
-│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/03/20/3 
-│                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-27135 
-│                       │      │                  ├ [2]: https://github.com/nghttp2/nghttp2/commit/5c7df8fa815a
-│                       │      │                  │      c1004d9ecb9d1f7595c4d37f46e1 
-│                       │      │                  ├ [3]: https://github.com/nghttp2/nghttp2/security/advisories
-│                       │      │                  │      /GHSA-6933-cjhr-5qg6 
-│                       │      │                  ├ [4]: https://linux.oracle.com/cve/CVE-2026-27135.html 
-│                       │      │                  ├ [5]: https://linux.oracle.com/errata/ELSA-2026-7080.html 
-│                       │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-27135 
-│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-27135 
-│                       │      ├ PublishedDate   : 2026-03-18T18:16:26.723Z 
-│                       │      ╰ LastModifiedDate: 2026-03-23T17:51:17.017Z 
-│                       ├ [15] ╭ VulnerabilityID : CVE-2026-28390 
-│                       │      ├ PkgID           : openssl@3.5.5-r1 
-│                       │      ├ PkgName         : openssl 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.5-r1?arch=x86_64&distro=3.
-│                       │      │                  │       24.0_alpha20260127 
-│                       │      │                  ╰ UID : 35640405b1844873 
-│                       │      ├ InstalledVersion: 3.5.5-r1 
-│                       │      ├ FixedVersion    : 3.5.6-r0 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7
-│                       │      │                  │         e17b3c57a50597013001 
-│                       │      │                  ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c0
-│                       │      │                            6ff6c3d2618c0f6b0a87 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-28390 
-│                       │      ├ DataSource       ╭ ID  : alpine 
-│                       │      │                  ├ Name: Alpine Secdb 
-│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Fingerprint     : sha256:47f284a0ab1adfad48deea4bf2cad62ba5ec9cbc759b23fd217b6
-│                       │      │                   7b3b02d57a1 
-│                       │      ├ Title           : openssl: OpenSSL: Denial of Service due to NULL pointer
-│                       │      │                   dereference in CMS EnvelopedData processing 
-│                       │      ├ Description     : Issue summary: During processing of a crafted CMS
-│                       │      │                   EnvelopedData message
-│                       │      │                   with KeyTransportRecipientInfo a NULL pointer dereference
-│                       │      │                   can happen.
-│                       │      │                   
-│                       │      │                   Impact summary: Applications that process
-│                       │      │                   attacker-controlled CMS data may
-│                       │      │                   crash before authentication or cryptographic operations
-│                       │      │                   occur resulting in
-│                       │      │                   Denial of Service.
-│                       │      │                   When a CMS EnvelopedData message that uses
-│                       │      │                   KeyTransportRecipientInfo with
-│                       │      │                   RSA-OAEP encryption is processed, the optional parameters
-│                       │      │                   field of
-│                       │      │                   RSA-OAEP SourceFunc algorithm identifier is examined without
-│                       │      │                    checking
-│                       │      │                   for its presence. This results in a NULL pointer dereference
-│                       │      │                    if the field
-│                       │      │                   is missing.
-│                       │      │                   Applications and services that call CMS_decrypt() on
-│                       │      │                   untrusted input
-│                       │      │                   (e.g., S/MIME processing or CMS-based protocols) are
-│                       │      │                   vulnerable.
-│                       │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not
-│                       │      │                   affected by this
-│                       │      │                   issue, as the affected code is outside the OpenSSL FIPS
-│                       │      │                   module boundary. 
-│                       │      ├ Severity        : HIGH 
-│                       │      ├ CweIDs           ─ [0]: CWE-476 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
-│                       │      │                  ╰ ubuntu: 1 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
-│                       │      │                           │           /A:H 
-│                       │      │                           ╰ V3Score : 7.5 
-│                       │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-28390 
-│                       │      │                  ├ [1] : https://github.com/openssl/openssl/commit/01194a8f194
-│                       │      │                  │       1115cd0383bfa91c736dd3993c8bc 
-│                       │      │                  ├ [2] : https://github.com/openssl/openssl/commit/2e39b7a6993
-│                       │      │                  │       be445fddb9fbce316fa756e0397b6 
-│                       │      │                  ├ [3] : https://github.com/openssl/openssl/commit/af2a5fecd3e
-│                       │      │                  │       71a29e7568f9c1453dec5cebbaff4 
-│                       │      │                  ├ [4] : https://github.com/openssl/openssl/commit/ea7b4ea4f9f
-│                       │      │                  │       853521ba34830cbcadc970d2e0788 
-│                       │      │                  ├ [5] : https://github.com/openssl/openssl/commit/fd2f1a6cf53
-│                       │      │                  │       b9ceeca723a001aa4b825d7c7ee75 
-│                       │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2026-28390 
-│                       │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260407.txt 
-│                       │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-8155-1 
-│                       │      │                  ├ [9] : https://www.cve.org/CVERecord?id=CVE-2026-28390 
-│                       │      │                  ╰ [10]: https://www.openwall.com/lists/oss-security/2026/04/0
-│                       │      │                          7/11 
-│                       │      ├ PublishedDate   : 2026-04-07T22:16:21.19Z 
-│                       │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-│                       ├ [16] ╭ VulnerabilityID : CVE-2026-31790 
-│                       │      ├ PkgID           : openssl@3.5.5-r1 
-│                       │      ├ PkgName         : openssl 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.5-r1?arch=x86_64&distro=3.
-│                       │      │                  │       24.0_alpha20260127 
-│                       │      │                  ╰ UID : 35640405b1844873 
-│                       │      ├ InstalledVersion: 3.5.5-r1 
-│                       │      ├ FixedVersion    : 3.5.6-r0 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7
-│                       │      │                  │         e17b3c57a50597013001 
-│                       │      │                  ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c0
-│                       │      │                            6ff6c3d2618c0f6b0a87 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-31790 
-│                       │      ├ DataSource       ╭ ID  : alpine 
-│                       │      │                  ├ Name: Alpine Secdb 
-│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Fingerprint     : sha256:4d9c213b3ae9ccd123613938644c392d349fcf1727e7bb389c1fb
-│                       │      │                   8c172d6d8c2 
-│                       │      ├ Title           : openssl: openssl: Information Disclosure from Uninitialized
-│                       │      │                   Memory via Invalid RSA Public Key 
-│                       │      ├ Description     : Issue summary: Applications using RSASVE key encapsulation
-│                       │      │                   to establish
-│                       │      │                   a secret encryption key can send contents of an
-│                       │      │                   uninitialized memory buffer to
-│                       │      │                   a malicious peer.
-│                       │      │                   
-│                       │      │                   Impact summary: The uninitialized buffer might contain
-│                       │      │                   sensitive data from the
-│                       │      │                   previous execution of the application process which leads to
-│                       │      │                    sensitive data
-│                       │      │                   leakage to an attacker.
-│                       │      │                   RSA_public_encrypt() returns the number of bytes written on
-│                       │      │                   success and -1
-│                       │      │                   on error. The affected code tests only whether the return
-│                       │      │                   value is non-zero.
-│                       │      │                   As a result, if RSA encryption fails, encapsulation can
-│                       │      │                   still return success to
-│                       │      │                   the caller, set the output lengths, and leave the caller to
-│                       │      │                   use the contents of
-│                       │      │                   the ciphertext buffer as if a valid KEM ciphertext had been
-│                       │      │                   produced.
-│                       │      │                   If applications use EVP_PKEY_encapsulate() with RSA/RSASVE
-│                       │      │                   on an
-│                       │      │                   attacker-supplied invalid RSA public key without first
-│                       │      │                   validating that key,
-│                       │      │                   then this may cause stale or uninitialized contents of the
-│                       │      │                   caller-provided
-│                       │      │                   ciphertext buffer to be disclosed to the attacker in place
-│                       │      │                   of the KEM
-│                       │      │                   ciphertext.
-│                       │      │                   As a workaround calling EVP_PKEY_public_check() or
-│                       │      │                   EVP_PKEY_public_check_quick() before EVP_PKEY_encapsulate()
-│                       │      │                   will mitigate
-│                       │      │                   the issue.
-│                       │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3, 3.1 and 3.0 are
-│                       │      │                   affected by this issue. 
-│                       │      ├ Severity        : MEDIUM 
-│                       │      ├ CweIDs           ─ [0]: CWE-754 
-│                       │      ├ VendorSeverity   ╭ redhat: 2 
-│                       │      │                  ╰ ubuntu: 2 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N
-│                       │      │                           │           /A:N 
-│                       │      │                           ╰ V3Score : 5.9 
-│                       │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-31790 
-│                       │      │                  ├ [1] : https://github.com/openssl/openssl/commit/001e01db3e9
-│                       │      │                  │       96e13ffc72386fe79d03a6683b5ac 
-│                       │      │                  ├ [2] : https://github.com/openssl/openssl/commit/abd8b2eec7e
-│                       │      │                  │       3f3fda60ecfb68498b246b52af482 
-│                       │      │                  ├ [3] : https://github.com/openssl/openssl/commit/b922e24e5b2
-│                       │      │                  │       3ffb9cb9e14cadff23d91e9f7e406 
-│                       │      │                  ├ [4] : https://github.com/openssl/openssl/commit/d5f8e71cd0a
-│                       │      │                  │       54e961d0c3b174348f8308486f790 
-│                       │      │                  ├ [5] : https://github.com/openssl/openssl/commit/eed200f58cd
-│                       │      │                  │       8645ed77e46b7e9f764e284df379e 
-│                       │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2026-31790 
-│                       │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260407.txt 
-│                       │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-8155-1 
-│                       │      │                  ├ [9] : https://www.cve.org/CVERecord?id=CVE-2026-31790 
-│                       │      │                  ╰ [10]: https://www.openwall.com/lists/oss-security/2026/04/0
-│                       │      │                          7/11 
-│                       │      ├ PublishedDate   : 2026-04-07T22:16:21.77Z 
-│                       │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-│                       ├ [17] ╭ VulnerabilityID : CVE-2026-2673 
-│                       │      ├ PkgID           : openssl@3.5.5-r1 
-│                       │      ├ PkgName         : openssl 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.5-r1?arch=x86_64&distro=3.
-│                       │      │                  │       24.0_alpha20260127 
-│                       │      │                  ╰ UID : 35640405b1844873 
-│                       │      ├ InstalledVersion: 3.5.5-r1 
-│                       │      ├ FixedVersion    : 3.5.6-r0 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7
-│                       │      │                  │         e17b3c57a50597013001 
-│                       │      │                  ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c0
-│                       │      │                            6ff6c3d2618c0f6b0a87 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-2673 
-│                       │      ├ DataSource       ╭ ID  : alpine 
-│                       │      │                  ├ Name: Alpine Secdb 
-│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Fingerprint     : sha256:8800511db1af41bbef944cc982982eb7d626dde90086c74a23399
-│                       │      │                   03146dc0230 
-│                       │      ├ Title           : openssl: OpenSSL TLS 1.3 server may choose unexpected key
-│                       │      │                   agreement group 
-│                       │      ├ Description     : Issue summary: An OpenSSL TLS 1.3 server may fail to
-│                       │      │                   negotiate the expected
-│                       │      │                   preferred key exchange group when its key exchange group
-│                       │      │                   configuration includes
-│                       │      │                   the default by using the 'DEFAULT' keyword.
-│                       │      │                   
-│                       │      │                   Impact summary: A less preferred key exchange may be used
-│                       │      │                   even when a more
-│                       │      │                   preferred group is supported by both client and server, if
-│                       │      │                   the group
-│                       │      │                   was not included among the client's initial predicated
-│                       │      │                   keyshares.
-│                       │      │                   This will sometimes be the case with the new hybrid
-│                       │      │                   post-quantum groups,
-│                       │      │                   if the client chooses to defer their use until specifically
-│                       │      │                   requested by
-│                       │      │                   the server.
-│                       │      │                   If an OpenSSL TLS 1.3 server's configuration uses the
-│                       │      │                   'DEFAULT' keyword to
-│                       │      │                   interpolate the built-in default group list into its own
-│                       │      │                   configuration, perhaps
-│                       │      │                   adding or removing specific elements, then an implementation
-│                       │      │                    defect causes the
-│                       │      │                   'DEFAULT' list to lose its 'tuple' structure, and all
-│                       │      │                   server-supported groups
-│                       │      │                   were treated as a single sufficiently secure 'tuple', with
-│                       │      │                   the server not
-│                       │      │                   sending a Hello Retry Request (HRR) even when a group in a
-│                       │      │                   more preferred tuple
-│                       │      │                   was mutually supported.
-│                       │      │                   As a result, the client and server might fail to negotiate a
-│                       │      │                    mutually supported
-│                       │      │                   post-quantum key agreement group, such as 'X25519MLKEM768',
-│                       │      │                   if the client's
-│                       │      │                   configuration results in only 'classical' groups (such as
-│                       │      │                   'X25519' being the
-│                       │      │                   only ones in the client's initial keyshare prediction).
-│                       │      │                   OpenSSL 3.5 and later support a new syntax for selecting the
-│                       │      │                    most preferred TLS
-│                       │      │                   1.3 key agreement group on TLS servers.  The old syntax had
-│                       │      │                   a single 'flat'
-│                       │      │                   list of groups, and treated all the supported groups as
-│                       │      │                   sufficiently secure.
-│                       │      │                   If any of the keyshares predicted by the client were
-│                       │      │                   supported by the server
-│                       │      │                   the most preferred among these was selected, even if other
-│                       │      │                   groups supported by
-│                       │      │                   the client, but not included in the list of predicted
-│                       │      │                   keyshares would have been
-│                       │      │                   more preferred, if included.
-│                       │      │                   The new syntax partitions the groups into distinct 'tuples'
-│                       │      │                   of roughly
-│                       │      │                   equivalent security.  Within each tuple the most preferred
-│                       │      │                   group included among
-│                       │      │                   the client's predicted keyshares is chosen, but if the
-│                       │      │                   client supports a group
-│                       │      │                   from a more preferred tuple, but did not predict any
-│                       │      │                   corresponding keyshares,
-│                       │      │                   the server will ask the client to retry the ClientHello (by
-│                       │      │                   issuing a Hello
-│                       │      │                   Retry Request or HRR) with the most preferred mutually
-│                       │      │                   supported group.
-│                       │      │                   The above works as expected when the server's configuration
-│                       │      │                   uses the built-in
-│                       │      │                   default group list, or explicitly defines its own list by
-│                       │      │                   directly defining the
-│                       │      │                   various desired groups and group 'tuples'.
-│                       │      │                   No OpenSSL FIPS modules are affected by this issue, the code
-│                       │      │                    in question lies
-│                       │      │                   outside the FIPS boundary.
-│                       │      │                   OpenSSL 3.6 and 3.5 are vulnerable to this issue.
-│                       │      │                   OpenSSL 3.6 users should upgrade to OpenSSL 3.6.2 once it is
-│                       │      │                    released.
-│                       │      │                   OpenSSL 3.5 users should upgrade to OpenSSL 3.5.6 once it is
-│                       │      │                   OpenSSL 3.4, 3.3, 3.0, 1.0.2 and 1.1.1 are not affected by
-│                       │      │                   this issue. 
-│                       │      ├ Severity        : LOW 
-│                       │      ├ CweIDs           ─ [0]: CWE-757 
-│                       │      ├ VendorSeverity   ╭ amazon: 1 
-│                       │      │                  ├ redhat: 1 
-│                       │      │                  ╰ ubuntu: 1 
-│                       │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L
-│                       │      │                           │           /A:N 
-│                       │      │                           ╰ V3Score : 3.1 
-│                       │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/03/13/3 
-│                       │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-2673 
-│                       │      │                  ├ [2]: https://github.com/openssl/openssl/commit/2157c9d81f7b
-│                       │      │                  │      0bd7dfa25b960e928ec28e8dd63f 
-│                       │      │                  ├ [3]: https://github.com/openssl/openssl/commit/85977e013f32
-│                       │      │                  │      ceb96aa034c0e741adddc1a05e34 
-│                       │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-2673 
-│                       │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260313.txt 
-│                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8155-1 
-│                       │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-2673 
-│                       │      ├ PublishedDate   : 2026-03-13T19:54:34.033Z 
-│                       │      ╰ LastModifiedDate: 2026-03-17T18:16:15.6Z 
-│                       ├ [18] ╭ VulnerabilityID : CVE-2026-28387 
-│                       │      ├ PkgID           : openssl@3.5.5-r1 
-│                       │      ├ PkgName         : openssl 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.5-r1?arch=x86_64&distro=3.
-│                       │      │                  │       24.0_alpha20260127 
-│                       │      │                  ╰ UID : 35640405b1844873 
-│                       │      ├ InstalledVersion: 3.5.5-r1 
-│                       │      ├ FixedVersion    : 3.5.6-r0 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7
-│                       │      │                  │         e17b3c57a50597013001 
-│                       │      │                  ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c0
-│                       │      │                            6ff6c3d2618c0f6b0a87 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-28387 
-│                       │      ├ DataSource       ╭ ID  : alpine 
-│                       │      │                  ├ Name: Alpine Secdb 
-│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Fingerprint     : sha256:52616656ff5fad003e2ac79629c72b488bf3ef872a5f7737fad67
-│                       │      │                   1fe478bb303 
-│                       │      ├ Title           : Issue summary: An uncommon configuration of clients
-│                       │      │                   performing DANE TL ... 
-│                       │      ├ Description     : Issue summary: An uncommon configuration of clients
-│                       │      │                   performing DANE TLSA-based
-│                       │      │                   server authentication, when paired with uncommon server DANE
-│                       │      │                    TLSA records, may
-│                       │      │                   result in a use-after-free and/or double-free on the client
-│                       │      │                   side.
-│                       │      │                   
-│                       │      │                   Impact summary: A use after free can have a range of
-│                       │      │                   potential consequences
-│                       │      │                   such as the corruption of valid data, crashes or execution
-│                       │      │                   of arbitrary code.
-│                       │      │                   However, the issue only affects clients that make use of
-│                       │      │                   TLSA records with both
-│                       │      │                   the PKIX-TA(0/PKIX-EE(1) certificate usages and the
-│                       │      │                   DANE-TA(2) certificate
-│                       │      │                   usage.
-│                       │      │                   By far the most common deployment of DANE is in SMTP MTAs
-│                       │      │                   for which RFC7672
-│                       │      │                   recommends that clients treat as 'unusable' any TLSA records
-│                       │      │                    that have the PKIX
-│                       │      │                   certificate usages.  These SMTP (or other similar) clients
-│                       │      │                   are not vulnerable
-│                       │      │                   to this issue.  Conversely, any clients that support only
-│                       │      │                   the PKIX usages, and
-│                       │      │                   ignore the DANE-TA(2) usage are also not vulnerable.
-│                       │      │                   The client would also need to be communicating with a server
-│                       │      │                    that publishes a
-│                       │      │                   TLSA RRset with both types of TLSA records.
-│                       │      │                   No FIPS modules are affected by this issue, the problem code
-│                       │      │                    is outside the
-│                       │      │                   FIPS module boundary. 
-│                       │      ├ Severity        : LOW 
-│                       │      ├ CweIDs           ─ [0]: CWE-416 
-│                       │      ├ VendorSeverity   ─ ubuntu: 1 
-│                       │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/07e727d30474
-│                       │      │                  │      6edb49a98ee8f6ab00256e1f012b 
-│                       │      │                  ├ [1]: https://github.com/openssl/openssl/commit/258a8f63b269
-│                       │      │                  │      95ba357f4326da00e19e29c6acbe 
-│                       │      │                  ├ [2]: https://github.com/openssl/openssl/commit/444958deaf45
-│                       │      │                  │      0aea819171f97ae69eaedede42c3 
-│                       │      │                  ├ [3]: https://github.com/openssl/openssl/commit/7a4e08cee62a
-│                       │      │                  │      728d32e60b0de89e6764339df0a7 
-│                       │      │                  ├ [4]: https://github.com/openssl/openssl/commit/ec03fa050b33
-│                       │      │                  │      46997ed9c5fef3d0e16ad7db8177 
-│                       │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260407.txt 
-│                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8155-1 
-│                       │      │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28387 
-│                       │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/07
-│                       │      │                         /11 
-│                       │      ├ PublishedDate   : 2026-04-07T22:16:20.7Z 
-│                       │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-│                       ├ [19] ╭ VulnerabilityID : CVE-2026-28388 
-│                       │      ├ PkgID           : openssl@3.5.5-r1 
-│                       │      ├ PkgName         : openssl 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.5-r1?arch=x86_64&distro=3.
-│                       │      │                  │       24.0_alpha20260127 
-│                       │      │                  ╰ UID : 35640405b1844873 
-│                       │      ├ InstalledVersion: 3.5.5-r1 
-│                       │      ├ FixedVersion    : 3.5.6-r0 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7
-│                       │      │                  │         e17b3c57a50597013001 
-│                       │      │                  ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c0
-│                       │      │                            6ff6c3d2618c0f6b0a87 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-28388 
-│                       │      ├ DataSource       ╭ ID  : alpine 
-│                       │      │                  ├ Name: Alpine Secdb 
-│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Fingerprint     : sha256:1b44f3915c91aed83aa8cdc0f8b123c5677c872cdfd49f92842a1
-│                       │      │                   ffa28477536 
-│                       │      ├ Title           : Issue summary: When a delta CRL that contains a Delta CRL
-│                       │      │                   Indicator ex ... 
-│                       │      ├ Description     : Issue summary: When a delta CRL that contains a Delta CRL
-│                       │      │                   Indicator extension
-│                       │      │                   is processed a NULL pointer dereference might happen if the
-│                       │      │                   required CRL
-│                       │      │                   Number extension is missing.
-│                       │      │                   
-│                       │      │                   Impact summary: A NULL pointer dereference can trigger a
-│                       │      │                   crash which
-│                       │      │                   leads to a Denial of Service for an application.
-│                       │      │                   When CRL processing and delta CRL processing is enabled
-│                       │      │                   during X.509
-│                       │      │                   certificate verification, the delta CRL processing does not
-│                       │      │                   check
-│                       │      │                   whether the CRL Number extension is NULL before
-│                       │      │                   dereferencing it.
-│                       │      │                   When a malformed delta CRL file is being processed, this
-│                       │      │                   parameter
-│                       │      │                   can be NULL, causing a NULL pointer dereference.
-│                       │      │                   Exploiting this issue requires the X509_V_FLAG_USE_DELTAS
-│                       │      │                   flag to be enabled in
-│                       │      │                   the verification context, the certificate being verified to
-│                       │      │                   contain a
-│                       │      │                   freshestCRL extension or the base CRL to have the
-│                       │      │                   EXFLAG_FRESHEST flag set, and
-│                       │      │                   an attacker to provide a malformed CRL to an application
-│                       │      │                   that processes it.
-│                       │      │                   The vulnerability is limited to Denial of Service and cannot
-│                       │      │                    be escalated to
-│                       │      │                   achieve code execution or memory disclosure. For that reason
-│                       │      │                    the issue was
-│                       │      │                   assessed as Low severity according to our Security Policy.
-│                       │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not
-│                       │      │                   affected by this issue,
-│                       │      │                   as the affected code is outside the OpenSSL FIPS module
-│                       │      │                   boundary. 
-│                       │      ├ Severity        : LOW 
-│                       │      ├ CweIDs           ─ [0]: CWE-476 
-│                       │      ├ VendorSeverity   ─ ubuntu: 1 
-│                       │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/59c3b3158553
-│                       │      │                  │      ab53275bbbccca5cb305d591cf2e 
-│                       │      │                  ├ [1]: https://github.com/openssl/openssl/commit/5a0b4930779c
-│                       │      │                  │      d2408880979db765db919da55139 
-│                       │      │                  ├ [2]: https://github.com/openssl/openssl/commit/602542f2c0c2
-│                       │      │                  │      d5edb47128f93eac10b62aeeefb3 
-│                       │      │                  ├ [3]: https://github.com/openssl/openssl/commit/a9d187dd1000
-│                       │      │                  │      130100fa7ab915f8513532cb3bb8 
-│                       │      │                  ├ [4]: https://github.com/openssl/openssl/commit/d3a901e8d9f0
-│                       │      │                  │      21f3e67d6cfbc12e768129862726 
-│                       │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260407.txt 
-│                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8155-1 
-│                       │      │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28388 
-│                       │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/07
-│                       │      │                         /11 
-│                       │      ├ PublishedDate   : 2026-04-07T22:16:20.863Z 
-│                       │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-│                       ├ [20] ╭ VulnerabilityID : CVE-2026-28389 
-│                       │      ├ PkgID           : openssl@3.5.5-r1 
-│                       │      ├ PkgName         : openssl 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.5-r1?arch=x86_64&distro=3.
-│                       │      │                  │       24.0_alpha20260127 
-│                       │      │                  ╰ UID : 35640405b1844873 
-│                       │      ├ InstalledVersion: 3.5.5-r1 
-│                       │      ├ FixedVersion    : 3.5.6-r0 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7
-│                       │      │                  │         e17b3c57a50597013001 
-│                       │      │                  ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c0
-│                       │      │                            6ff6c3d2618c0f6b0a87 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-28389 
-│                       │      ├ DataSource       ╭ ID  : alpine 
-│                       │      │                  ├ Name: Alpine Secdb 
-│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Fingerprint     : sha256:fd5112b96c4119347589bab6872345a90bf420672812b82f9b4f5
-│                       │      │                   e7066e14227 
-│                       │      ├ Title           : Issue summary: During processing of a crafted CMS
-│                       │      │                   EnvelopedData messag ... 
-│                       │      ├ Description     : Issue summary: During processing of a crafted CMS
-│                       │      │                   EnvelopedData message
-│                       │      │                   with KeyAgreeRecipientInfo a NULL pointer dereference can
-│                       │      │                   happen.
-│                       │      │                   
-│                       │      │                   Impact summary: Applications that process
-│                       │      │                   attacker-controlled CMS data may
-│                       │      │                   crash before authentication or cryptographic operations
-│                       │      │                   occur resulting in
-│                       │      │                   Denial of Service.
-│                       │      │                   When a CMS EnvelopedData message that uses
-│                       │      │                   KeyAgreeRecipientInfo is
-│                       │      │                   processed, the optional parameters field of
-│                       │      │                   KeyEncryptionAlgorithmIdentifier
-│                       │      │                   is examined without checking for its presence. This results
-│                       │      │                   in a NULL
-│                       │      │                   pointer dereference if the field is missing.
-│                       │      │                   Applications and services that call CMS_decrypt() on
-│                       │      │                   untrusted input
-│                       │      │                   (e.g., S/MIME processing or CMS-based protocols) are
-│                       │      │                   vulnerable.
-│                       │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not
-│                       │      │                   affected by this
-│                       │      │                   issue, as the affected code is outside the OpenSSL FIPS
-│                       │      │                   module boundary. 
-│                       │      ├ Severity        : LOW 
-│                       │      ├ CweIDs           ─ [0]: CWE-476 
-│                       │      ├ VendorSeverity   ─ ubuntu: 1 
-│                       │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/16cea4188e0e
-│                       │      │                  │      a567deb4f93f85902247e67384f5 
-│                       │      │                  ├ [1]: https://github.com/openssl/openssl/commit/785cbf7ea3b5
-│                       │      │                  │      a6f5adf0c1ccb92b79d89c35c616 
-│                       │      │                  ├ [2]: https://github.com/openssl/openssl/commit/7b5274e81240
-│                       │      │                  │      0cacb6f3be4c2df5340923fa807f 
-│                       │      │                  ├ [3]: https://github.com/openssl/openssl/commit/c6725634e089
-│                       │      │                  │      eb2b634b10ede33944be7248172a 
-│                       │      │                  ├ [4]: https://github.com/openssl/openssl/commit/f80f83bc5fd0
-│                       │      │                  │      36bc47d773e8b15a001e2b4ce686 
-│                       │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260407.txt 
-│                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8155-1 
-│                       │      │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28389 
-│                       │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/07
-│                       │      │                         /11 
-│                       │      ├ PublishedDate   : 2026-04-07T22:16:21.03Z 
-│                       │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-│                       ├ [21] ╭ VulnerabilityID : CVE-2026-31789 
-│                       │      ├ PkgID           : openssl@3.5.5-r1 
-│                       │      ├ PkgName         : openssl 
-│                       │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.5-r1?arch=x86_64&distro=3.
-│                       │      │                  │       24.0_alpha20260127 
-│                       │      │                  ╰ UID : 35640405b1844873 
-│                       │      ├ InstalledVersion: 3.5.5-r1 
-│                       │      ├ FixedVersion    : 3.5.6-r0 
-│                       │      ├ Status          : fixed 
-│                       │      ├ Layer            ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7
-│                       │      │                  │         e17b3c57a50597013001 
-│                       │      │                  ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c0
-│                       │      │                            6ff6c3d2618c0f6b0a87 
-│                       │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-31789 
-│                       │      ├ DataSource       ╭ ID  : alpine 
-│                       │      │                  ├ Name: Alpine Secdb 
-│                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │      ├ Fingerprint     : sha256:ff0a57575e924fd599557b282a834387d3ac2150eac9ba291eba4
-│                       │      │                   f56b5c9feda 
-│                       │      ├ Title           : Issue summary: Converting an excessively large OCTET STRING
-│                       │      │                   value to a ... 
-│                       │      ├ Description     : Issue summary: Converting an excessively large OCTET STRING
-│                       │      │                   value to
-│                       │      │                   a hexadecimal string leads to a heap buffer overflow on 32
-│                       │      │                   bit platforms.
-│                       │      │                   
-│                       │      │                   Impact summary: A heap buffer overflow may lead to a crash
-│                       │      │                   or possibly
-│                       │      │                   an attacker controlled code execution or other undefined
-│                       │      │                   behavior.
-│                       │      │                   If an attacker can supply a crafted X.509 certificate with
-│                       │      │                   an excessively
-│                       │      │                   large OCTET STRING value in extensions such as the Subject
-│                       │      │                   Key Identifier
-│                       │      │                   (SKID) or Authority Key Identifier (AKID) which are being
-│                       │      │                   converted to hex,
-│                       │      │                   the size of the buffer needed for the result is calculated
-│                       │      │                   as multiplication
-│                       │      │                   of the input length by 3. On 32 bit platforms, this
-│                       │      │                   multiplication may overflow
-│                       │      │                   resulting in the allocation of a smaller buffer and a heap
-│                       │      │                   buffer overflow.
-│                       │      │                   Applications and services that print or log contents of
-│                       │      │                   untrusted X.509
-│                       │      │                   certificates are vulnerable to this issue. As the
-│                       │      │                   certificates would have
-│                       │      │                   to have sizes of over 1 Gigabyte, printing or logging such
-│                       │      │                   certificates
-│                       │      │                   is a fairly unlikely operation and only 32 bit platforms are
-│                       │      │                    affected,
-│                       │      │                   this issue was assigned Low severity.
-│                       │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not
-│                       │      │                   affected by this
-│                       │      │                   issue, as the affected code is outside the OpenSSL FIPS
-│                       │      │                   module boundary. 
-│                       │      ├ Severity        : LOW 
-│                       │      ├ CweIDs           ─ [0]: CWE-787 
-│                       │      ├ VendorSeverity   ─ ubuntu: 1 
-│                       │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/364f095b8060
-│                       │      │                  │      1db632b0def6a33316967f863bde 
-│                       │      │                  ├ [1]: https://github.com/openssl/openssl/commit/7a9087efd769
-│                       │      │                  │      f362ad9c0e30c7baaa6bbfa65ecf 
-│                       │      │                  ├ [2]: https://github.com/openssl/openssl/commit/945b935ac66c
-│                       │      │                  │      c7f1a41f1b849c7c25adb5351f49 
-│                       │      │                  ├ [3]: https://github.com/openssl/openssl/commit/a24216018e1e
-│                       │      │                  │      de8ff01a4ff5afff7dfbd443e2f9 
-│                       │      │                  ├ [4]: https://github.com/openssl/openssl/commit/a91e537d16d7
-│                       │      │                  │      4050dbde50bb0dfb1fe9930f0521 
-│                       │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260407.txt 
-│                       │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8155-1 
-│                       │      │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2026-31789 
-│                       │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/07
-│                       │      │                         /11 
-│                       │      ├ PublishedDate   : 2026-04-07T22:16:21.617Z 
-│                       │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-│                       ╰ [22] ╭ VulnerabilityID : CVE-2026-27171 
-│                              ├ PkgID           : zlib@1.3.1-r2 
-│                              ├ PkgName         : zlib 
-│                              ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.24.
-│                              │                  │       0_alpha20260127 
-│                              │                  ╰ UID : c6f558cca1be2488 
-│                              ├ InstalledVersion: 1.3.1-r2 
-│                              ├ FixedVersion    : 1.3.2-r0 
-│                              ├ Status          : fixed 
-│                              ├ Layer            ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7
-│                              │                  │         e17b3c57a50597013001 
-│                              │                  ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c0
-│                              │                            6ff6c3d2618c0f6b0a87 
-│                              ├ SeveritySource  : nvd 
-│                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-27171 
-│                              ├ DataSource       ╭ ID  : alpine 
-│                              │                  ├ Name: Alpine Secdb 
-│                              │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                              ├ Fingerprint     : sha256:41d289c17aa6a86d93dee178d13ea7ca41c1a47178a76ccb71899
-│                              │                   27cefdeb9e1 
-│                              ├ Title           : zlib: zlib: Denial of Service via infinite loop in CRC32
-│                              │                   combine functions 
-│                              ├ Description     : zlib before 1.3.2 allows CPU consumption via crc32_combine64
-│                              │                    and crc32_combine_gen64 because x2nmodp can do right shifts
-│                              │                    within a loop that has no termination condition. 
-│                              ├ Severity        : MEDIUM 
-│                              ├ CweIDs           ─ [0]: CWE-1284 
-│                              ├ VendorSeverity   ╭ azure : 1 
-│                              │                  ├ nvd   : 2 
-│                              │                  ├ redhat: 1 
-│                              │                  ╰ ubuntu: 1 
-│                              ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N
-│                              │                  │        │           /A:H 
-│                              │                  │        ╰ V3Score : 5.5 
-│                              │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N
-│                              │                           │           /A:L 
-│                              │                           ╰ V3Score : 3.3 
-│                              ├ References       ╭ [0]: https://7asecurity.com/blog/2026/02/zlib-7asecurity-au
-│                              │                  │      dit/ 
-│                              │                  ├ [1]: https://7asecurity.com/reports/pentest-report-zlib-RC1
-│                              │                  │      .1.pdf 
-│                              │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2026-27171 
-│                              │                  ├ [3]: https://github.com/madler/zlib/issues/904 
-│                              │                  ├ [4]: https://github.com/madler/zlib/releases/tag/v1.3.2 
-│                              │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-27171 
-│                              │                  ├ [6]: https://ostif.org/zlib-audit-complete/ 
-│                              │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-27171 
-│                              ├ PublishedDate   : 2026-02-18T04:16:01.263Z 
-│                              ╰ LastModifiedDate: 2026-03-25T21:27:04.603Z 
+│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2026-40200 
+│                       │     ├ PkgID           : musl@1.2.5-r21 
+│                       │     ├ PkgName         : musl 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl@1.2.5-r21?arch=x86_64&distro=3.24.
+│                       │     │                  │       0_alpha20260127 
+│                       │     │                  ╰ UID : a7bafcf4eaef5646 
+│                       │     ├ InstalledVersion: 1.2.5-r21 
+│                       │     ├ FixedVersion    : 1.2.6-r2 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd
+│                       │     │                  │         90aad92e20836ab8421 
+│                       │     │                  ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8
+│                       │     │                            bcc0858ef87460cc830 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-40200 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Fingerprint     : sha256:8b4e388a3a9442cf7dace2333b5a01e01e6806fb1d38dc86d397b6
+│                       │     │                   4f4a6cc5d6 
+│                       │     ├ Title           : An issue was discovered in musl libc 0.7.10 through 1.2.6.
+│                       │     │                   Stack-based ... 
+│                       │     ├ Description     : An issue was discovered in musl libc 0.7.10 through 1.2.6.
+│                       │     │                   Stack-based memory corruption can occur during qsort of very
+│                       │     │                   large arrays, due to incorrectly implemented double-word
+│                       │     │                   primitives. The number of elements must exceed about seven
+│                       │     │                   million, i.e., the 32nd Leonardo number on 32-bit platforms
+│                       │     │                   (or the 64th Leonardo number on 64-bit platforms, which is
+│                       │     │                   not practical). 
+│                       │     ├ Severity        : UNKNOWN 
+│                       │     ├ CweIDs           ─ [0]: CWE-670 
+│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/10/13 
+│                       │     │                  ├ [1]: https://musl.libc.org/releases.html 
+│                       │     │                  ╰ [2]: https://www.openwall.com/lists/oss-security/2026/04/10/13 
+│                       │     ├ PublishedDate   : 2026-04-10T17:17:14.107Z 
+│                       │     ╰ LastModifiedDate: 2026-04-10T18:16:46.38Z 
+│                       ├ [1] ╭ VulnerabilityID : CVE-2026-40200 
+│                       │     ├ PkgID           : musl-utils@1.2.5-r21 
+│                       │     ├ PkgName         : musl-utils 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl-utils@1.2.5-r21?arch=x86_64&distro
+│                       │     │                  │       =3.24.0_alpha20260127 
+│                       │     │                  ╰ UID : 6f37302d99121f4f 
+│                       │     ├ InstalledVersion: 1.2.5-r21 
+│                       │     ├ FixedVersion    : 1.2.6-r2 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd
+│                       │     │                  │         90aad92e20836ab8421 
+│                       │     │                  ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8
+│                       │     │                            bcc0858ef87460cc830 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-40200 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Fingerprint     : sha256:19c8178e8c7702ae32f3ce2f74a9c8bd404754be6c029fcded807f
+│                       │     │                   50beb92813 
+│                       │     ├ Title           : An issue was discovered in musl libc 0.7.10 through 1.2.6.
+│                       │     │                   Stack-based ... 
+│                       │     ├ Description     : An issue was discovered in musl libc 0.7.10 through 1.2.6.
+│                       │     │                   Stack-based memory corruption can occur during qsort of very
+│                       │     │                   large arrays, due to incorrectly implemented double-word
+│                       │     │                   primitives. The number of elements must exceed about seven
+│                       │     │                   million, i.e., the 32nd Leonardo number on 32-bit platforms
+│                       │     │                   (or the 64th Leonardo number on 64-bit platforms, which is
+│                       │     │                   not practical). 
+│                       │     ├ Severity        : UNKNOWN 
+│                       │     ├ CweIDs           ─ [0]: CWE-670 
+│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/10/13 
+│                       │     │                  ├ [1]: https://musl.libc.org/releases.html 
+│                       │     │                  ╰ [2]: https://www.openwall.com/lists/oss-security/2026/04/10/13 
+│                       │     ├ PublishedDate   : 2026-04-10T17:17:14.107Z 
+│                       │     ╰ LastModifiedDate: 2026-04-10T18:16:46.38Z 
+│                       ╰ [2] ╭ VulnerabilityID : CVE-2026-27171 
+│                             ├ PkgID           : zlib@1.3.1-r2 
+│                             ├ PkgName         : zlib 
+│                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.24.0
+│                             │                  │       _alpha20260127 
+│                             │                  ╰ UID : c6f558cca1be2488 
+│                             ├ InstalledVersion: 1.3.1-r2 
+│                             ├ FixedVersion    : 1.3.2-r0 
+│                             ├ Status          : fixed 
+│                             ├ Layer            ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd
+│                             │                  │         90aad92e20836ab8421 
+│                             │                  ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8
+│                             │                            bcc0858ef87460cc830 
+│                             ├ SeveritySource  : nvd 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-27171 
+│                             ├ DataSource       ╭ ID  : alpine 
+│                             │                  ├ Name: Alpine Secdb 
+│                             │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                             ├ Fingerprint     : sha256:788dd9ee8f0a1cb54824c030bc12d1ef38a344216693e1ef50e613
+│                             │                   76676d040d 
+│                             ├ Title           : zlib: zlib: Denial of Service via infinite loop in CRC32
+│                             │                   combine functions 
+│                             ├ Description     : zlib before 1.3.2 allows CPU consumption via crc32_combine64
+│                             │                   and crc32_combine_gen64 because x2nmodp can do right shifts
+│                             │                   within a loop that has no termination condition. 
+│                             ├ Severity        : MEDIUM 
+│                             ├ CweIDs           ─ [0]: CWE-1284 
+│                             ├ VendorSeverity   ╭ azure : 1 
+│                             │                  ├ nvd   : 2 
+│                             │                  ├ redhat: 1 
+│                             │                  ╰ ubuntu: 1 
+│                             ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/
+│                             │                  │        │           A:H 
+│                             │                  │        ╰ V3Score : 5.5 
+│                             │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/
+│                             │                           │           A:L 
+│                             │                           ╰ V3Score : 3.3 
+│                             ├ References       ╭ [0]: https://7asecurity.com/blog/2026/02/zlib-7asecurity-aud
+│                             │                  │      it/ 
+│                             │                  ├ [1]: https://7asecurity.com/reports/pentest-report-zlib-RC1.
+│                             │                  │      1.pdf 
+│                             │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2026-27171 
+│                             │                  ├ [3]: https://github.com/madler/zlib/issues/904 
+│                             │                  ├ [4]: https://github.com/madler/zlib/releases/tag/v1.3.2 
+│                             │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-27171 
+│                             │                  ├ [6]: https://ostif.org/zlib-audit-complete/ 
+│                             │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-27171 
+│                             ├ PublishedDate   : 2026-02-18T04:16:01.263Z 
+│                             ╰ LastModifiedDate: 2026-03-25T21:27:04.603Z 
 ╰ [1] ╭ Target  : Java 
       ├ Class   : lang-pkgs 
       ├ Type    : jar 
@@ -2884,51 +1209,51 @@
                  │       ├ Identifier ╭ PURL: pkg:maven/com.carrotsearch.thirdparty/simple-xml-safe@2.7.1 
                  │       │            ╰ UID : 13b037b1fd5d66f 
                  │       ├ Version   : 2.7.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/S3/simple-xml-safe-2.7.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [1]   ╭ Name      : com.fasterxml.jackson.core:jackson-annotations 
                  │       ├ Identifier ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.21 
                  │       │            ╰ UID : a68585b707b894c6 
                  │       ├ Version   : 2.21 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [2]   ╭ Name      : com.fasterxml.jackson.core:jackson-core 
                  │       ├ Identifier ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-core@2.21.1 
                  │       │            ╰ UID : a0ae06e5352781bf 
                  │       ├ Version   : 2.21.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [3]   ╭ Name      : com.fasterxml.jackson.core:jackson-databind 
                  │       ├ Identifier ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.21.1 
                  │       │            ╰ UID : f5a07e107dd30f70 
                  │       ├ Version   : 2.21.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [4]   ╭ Name      : com.fasterxml.jackson.dataformat:jackson-dataformat-toml 
                  │       ├ Identifier ╭ PURL: pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-tom
-                 │       │            │       l@2.21.1 
-                 │       │            ╰ UID : 8fa1152567999d3b 
-                 │       ├ Version   : 2.21.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       │            │       l@2.21.2 
+                 │       │            ╰ UID : 207de139b4c562ba 
+                 │       ├ Version   : 2.21.2 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [5]   ╭ Name      : com.fasterxml.jackson.dataformat:jackson-dataformat-yaml 
@@ -2936,10 +1261,10 @@
                  │       │            │       l@2.20.0 
                  │       │            ╰ UID : 16f220ba7aa2c313 
                  │       ├ Version   : 2.20.0 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/jackson-dataformat-yaml-2.20.0.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [6]   ╭ Name      : com.fasterxml.jackson.datatype:jackson-datatype-jsr310 
@@ -2947,70 +1272,70 @@
                  │       │            │       2.20.0 
                  │       │            ╰ UID : d55714c89e63442b 
                  │       ├ Version   : 2.20.0 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/jackson-datatype-jsr310-2.20.0.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [7]   ╭ Name      : com.github.mwiede:jsch 
                  │       ├ Identifier ╭ PURL: pkg:maven/com.github.mwiede/jsch@2.27.9 
                  │       │            ╰ UID : a8c03b28c8243046 
                  │       ├ Version   : 2.27.9 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [8]   ╭ Name      : com.github.vertical-blank:sql-formatter 
                  │       ├ Identifier ╭ PURL: pkg:maven/com.github.vertical-blank/sql-formatter@2.0.5 
                  │       │            ╰ UID : b476ea318a48e65d 
                  │       ├ Version   : 2.0.5 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [9]   ╭ Name      : com.google.code.gson:gson 
                  │       ├ Identifier ╭ PURL: pkg:maven/com.google.code.gson/gson@2.13.2 
                  │       │            ╰ UID : 55058bf256f684f6 
                  │       ├ Version   : 2.13.2 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [10]  ╭ Name      : com.google.errorprone:error_prone_annotations 
                  │       ├ Identifier ╭ PURL: pkg:maven/com.google.errorprone/error_prone_annotations@2.41.0 
                  │       │            ╰ UID : eb9200afd679f03a 
                  │       ├ Version   : 2.41.0 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/S3/error_prone_annotations-2.41.0.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [11]  ╭ Name      : com.google.guava:failureaccess 
                  │       ├ Identifier ╭ PURL: pkg:maven/com.google.guava/failureaccess@1.0.3 
                  │       │            ╰ UID : a4d08553078f3494 
                  │       ├ Version   : 1.0.3 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/S3/failureaccess-1.0.3.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [12]  ╭ Name      : com.google.guava:guava 
                  │       ├ Identifier ╭ PURL: pkg:maven/com.google.guava/guava@33.5.0-jre 
                  │       │            ╰ UID : 1c289ba755aff307 
                  │       ├ Version   : 33.5.0-jre 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/S3/guava-33.5.0-jre.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [13]  ╭ Name      : com.google.guava:listenablefuture 
@@ -3018,800 +1343,800 @@
                  │       │            │       -conflict-with-guava 
                  │       │            ╰ UID : dea9132e00506d46 
                  │       ├ Version   : 9999.0-empty-to-avoid-conflict-with-guava 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/S3/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [14]  ╭ Name      : com.google.j2objc:j2objc-annotations 
                  │       ├ Identifier ╭ PURL: pkg:maven/com.google.j2objc/j2objc-annotations@3.1 
                  │       │            ╰ UID : 33e5dd761cf08520 
                  │       ├ Version   : 3.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/S3/j2objc-annotations-3.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [15]  ╭ Name      : com.googlecode.juniversalchardet:juniversalchardet 
                  │       ├ Identifier ╭ PURL: pkg:maven/com.googlecode.juniversalchardet/juniversalchardet@1.0.3 
                  │       │            ╰ UID : 5447189855b6db87 
                  │       ├ Version   : 1.0.3 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [16]  ╭ Name      : com.jcraft:jsch.agentproxy.connector-factory 
                  │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.connector-factory@0.0.9 
                  │       │            ╰ UID : a99fffa9ec19f7cf 
                  │       ├ Version   : 0.0.9 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [17]  ╭ Name      : com.jcraft:jsch.agentproxy.core 
                  │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.core@0.0.9 
                  │       │            ╰ UID : afb96fc5c6b4a255 
                  │       ├ Version   : 0.0.9 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [18]  ╭ Name      : com.jcraft:jsch.agentproxy.jsch 
                  │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.jsch@0.0.9 
                  │       │            ╰ UID : 8066e61c44eb14ea 
                  │       ├ Version   : 0.0.9 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [19]  ╭ Name      : com.jcraft:jsch.agentproxy.pageant 
                  │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.pageant@0.0.9 
                  │       │            ╰ UID : c0284278b99b17bc 
                  │       ├ Version   : 0.0.9 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [20]  ╭ Name      : com.jcraft:jsch.agentproxy.sshagent 
                  │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.sshagent@0.0.9 
                  │       │            ╰ UID : bd9e5fa40773f9dc 
                  │       ├ Version   : 0.0.9 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [21]  ╭ Name      : com.jcraft:jsch.agentproxy.svnkit-trilead-ssh2 
                  │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.svnkit-trilead-ssh2@0.0.9 
                  │       │            ╰ UID : 4bc35c3b9b6add62 
                  │       ├ Version   : 0.0.9 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [22]  ╭ Name      : com.jcraft:jsch.agentproxy.usocket-jna 
                  │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.usocket-jna@0.0.9 
                  │       │            ╰ UID : c30290a3390d8666 
                  │       ├ Version   : 0.0.9 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [23]  ╭ Name      : com.jcraft:jsch.agentproxy.usocket-nc 
                  │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.usocket-nc@0.0.9 
                  │       │            ╰ UID : 48390e4cf4a3666a 
                  │       ├ Version   : 0.0.9 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [24]  ╭ Name      : com.sun.activation:javax.activation 
                  │       ├ Identifier ╭ PURL: pkg:maven/com.sun.activation/javax.activation@1.2.0 
                  │       │            ╰ UID : 76398eb1d6d13adc 
                  │       ├ Version   : 1.2.0 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [25]  ╭ Name      : com.sun.mail:javax.mail 
                  │       ├ Identifier ╭ PURL: pkg:maven/com.sun.mail/javax.mail@1.6.2 
                  │       │            ╰ UID : 1e7beb37baabc57a 
                  │       ├ Version   : 1.6.2 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [26]  ╭ Name      : com.warrenstrange:googleauth 
                  │       ├ Identifier ╭ PURL: pkg:maven/com.warrenstrange/googleauth@1.5.0 
                  │       │            ╰ UID : 99ee628fb0243c8d 
                  │       ├ Version   : 1.5.0 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [27]  ╭ Name      : commons-cli:commons-cli 
                  │       ├ Identifier ╭ PURL: pkg:maven/commons-cli/commons-cli@1.11.0 
                  │       │            ╰ UID : 3475d2ee4b04dbe0 
                  │       ├ Version   : 1.11.0 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [28]  ╭ Name      : commons-codec:commons-codec 
                  │       ├ Identifier ╭ PURL: pkg:maven/commons-codec/commons-codec@1.21.0 
                  │       │            ╰ UID : 2426b259c63a1b24 
                  │       ├ Version   : 1.21.0 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [29]  ╭ Name      : commons-io:commons-io 
                  │       ├ Identifier ╭ PURL: pkg:maven/commons-io/commons-io@2.21.0 
                  │       │            ╰ UID : 2061cef217097cbb 
                  │       ├ Version   : 2.21.0 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [30]  ╭ Name      : commons-logging:commons-logging 
                  │       ├ Identifier ╭ PURL: pkg:maven/commons-logging/commons-logging@1.3.6 
                  │       │            ╰ UID : 2ad3f2cbc57ed9d5 
                  │       ├ Version   : 1.3.6 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [31]  ╭ Name      : commons-net:commons-net 
                  │       ├ Identifier ╭ PURL: pkg:maven/commons-net/commons-net@3.12.0 
                  │       │            ╰ UID : f30479acbb8d626f 
                  │       ├ Version   : 3.12.0 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [32]  ╭ Name      : de.vandermeer:asciilist-j7 
                  │       ├ Identifier ╭ PURL: pkg:maven/de.vandermeer/asciilist-j7@1.0.0 
                  │       │            ╰ UID : 5d38f221ce7d2a1 
                  │       ├ Version   : 1.0.0 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [33]  ╭ Name      : de.vandermeer:asciitable-j7 
                  │       ├ Identifier ╭ PURL: pkg:maven/de.vandermeer/asciitable-j7@1.0.1 
                  │       │            ╰ UID : 4ec0aaacbd72cc14 
                  │       ├ Version   : 1.0.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [34]  ╭ Name      : dnsjava:dnsjava 
                  │       ├ Identifier ╭ PURL: pkg:maven/dnsjava/dnsjava@3.6.4 
                  │       │            ╰ UID : 7aac8b1c2f9d99a1 
                  │       ├ Version   : 3.6.4 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [35]  ╭ Name      : io.fabric8:kubernetes-client 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-client@7.6.1 
                  │       │            ╰ UID : 7a1af2167e01c22a 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/kubernetes-client-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [36]  ╭ Name      : io.fabric8:kubernetes-client-api 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-client-api@7.6.1 
                  │       │            ╰ UID : 468622c9bc901899 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/kubernetes-client-api-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [37]  ╭ Name      : io.fabric8:kubernetes-httpclient-vertx 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-httpclient-vertx@7.6.1 
                  │       │            ╰ UID : 11eccf3c064d4ac7 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/kubernetes-httpclient-vertx-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [38]  ╭ Name      : io.fabric8:kubernetes-model-admissionregistration 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-admissionregistration@7.6.1 
                  │       │            ╰ UID : 258f11a1ddbbeb52 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/kubernetes-model-admissionregistration-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [39]  ╭ Name      : io.fabric8:kubernetes-model-apiextensions 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-apiextensions@7.6.1 
                  │       │            ╰ UID : d94960c2c0f9ad90 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/kubernetes-model-apiextensions-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [40]  ╭ Name      : io.fabric8:kubernetes-model-apps 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-apps@7.6.1 
                  │       │            ╰ UID : 4a742b22335668fa 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/kubernetes-model-apps-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [41]  ╭ Name      : io.fabric8:kubernetes-model-autoscaling 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-autoscaling@7.6.1 
                  │       │            ╰ UID : 1bcdf924b2ec1259 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/kubernetes-model-autoscaling-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [42]  ╭ Name      : io.fabric8:kubernetes-model-batch 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-batch@7.6.1 
                  │       │            ╰ UID : e2cb3349c5c65795 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/kubernetes-model-batch-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [43]  ╭ Name      : io.fabric8:kubernetes-model-certificates 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-certificates@7.6.1 
                  │       │            ╰ UID : 98ce726d4a3489fe 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/kubernetes-model-certificates-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [44]  ╭ Name      : io.fabric8:kubernetes-model-common 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-common@7.6.1 
                  │       │            ╰ UID : 62c70b9ec22d2053 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/kubernetes-model-common-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [45]  ╭ Name      : io.fabric8:kubernetes-model-coordination 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-coordination@7.6.1 
                  │       │            ╰ UID : ca7b596b77bf081c 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/kubernetes-model-coordination-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [46]  ╭ Name      : io.fabric8:kubernetes-model-core 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-core@7.6.1 
                  │       │            ╰ UID : b5c91f9a79562117 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/kubernetes-model-core-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [47]  ╭ Name      : io.fabric8:kubernetes-model-discovery 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-discovery@7.6.1 
                  │       │            ╰ UID : 20ae8e9fdba15d 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/kubernetes-model-discovery-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [48]  ╭ Name      : io.fabric8:kubernetes-model-events 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-events@7.6.1 
                  │       │            ╰ UID : 6726e1338d377c10 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/kubernetes-model-events-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [49]  ╭ Name      : io.fabric8:kubernetes-model-extensions 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-extensions@7.6.1 
                  │       │            ╰ UID : d66d82d1529da9f7 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/kubernetes-model-extensions-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [50]  ╭ Name      : io.fabric8:kubernetes-model-flowcontrol 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-flowcontrol@7.6.1 
                  │       │            ╰ UID : 245fda9fbe5cf3f2 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/kubernetes-model-flowcontrol-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [51]  ╭ Name      : io.fabric8:kubernetes-model-gatewayapi 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-gatewayapi@7.6.1 
                  │       │            ╰ UID : 58f23eb0eaff6a62 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/kubernetes-model-gatewayapi-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [52]  ╭ Name      : io.fabric8:kubernetes-model-metrics 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-metrics@7.6.1 
                  │       │            ╰ UID : c2e013a80d8973fa 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/kubernetes-model-metrics-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [53]  ╭ Name      : io.fabric8:kubernetes-model-networking 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-networking@7.6.1 
                  │       │            ╰ UID : f01e540bc37ff3b1 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/kubernetes-model-networking-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [54]  ╭ Name      : io.fabric8:kubernetes-model-node 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-node@7.6.1 
                  │       │            ╰ UID : a14267b1835c244b 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/kubernetes-model-node-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [55]  ╭ Name      : io.fabric8:kubernetes-model-policy 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-policy@7.6.1 
                  │       │            ╰ UID : 7960f2ecf5819f36 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/kubernetes-model-policy-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [56]  ╭ Name      : io.fabric8:kubernetes-model-rbac 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-rbac@7.6.1 
                  │       │            ╰ UID : 1205058b35fe8e3e 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/kubernetes-model-rbac-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [57]  ╭ Name      : io.fabric8:kubernetes-model-resource 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-resource@7.6.1 
                  │       │            ╰ UID : a68de97f3676b2cf 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/kubernetes-model-resource-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [58]  ╭ Name      : io.fabric8:kubernetes-model-scheduling 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-scheduling@7.6.1 
                  │       │            ╰ UID : 51d95e478273d968 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/kubernetes-model-scheduling-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [59]  ╭ Name      : io.fabric8:kubernetes-model-storageclass 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-storageclass@7.6.1 
                  │       │            ╰ UID : e5f7f68046af1364 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/kubernetes-model-storageclass-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [60]  ╭ Name      : io.fabric8:zjsonpatch 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/zjsonpatch@7.6.1 
                  │       │            ╰ UID : a63db4e3ccdccb3e 
                  │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/zjsonpatch-7.6.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [61]  ╭ Name      : io.jsonwebtoken:jjwt-api 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.jsonwebtoken/jjwt-api@0.13.0 
                  │       │            ╰ UID : fe506a80a2899a4a 
                  │       ├ Version   : 0.13.0 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [62]  ╭ Name      : io.jsonwebtoken:jjwt-gson 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.jsonwebtoken/jjwt-gson@0.13.0 
                  │       │            ╰ UID : cc7c47a353e36bec 
                  │       ├ Version   : 0.13.0 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [63]  ╭ Name      : io.jsonwebtoken:jjwt-impl 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.jsonwebtoken/jjwt-impl@0.13.0 
                  │       │            ╰ UID : fb75cc968ac3dc0d 
                  │       ├ Version   : 0.13.0 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [64]  ╭ Name      : io.netty:netty-buffer 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-buffer@4.2.12.Final 
                  │       │            ╰ UID : cc0519ac7d6544d3 
                  │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/netty-buffer-4.2.12.Final.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [65]  ╭ Name      : io.netty:netty-codec-base 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-codec-base@4.2.12.Final 
                  │       │            ╰ UID : c913651beadac915 
                  │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/netty-codec-base-4.2.12.Final.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [66]  ╭ Name      : io.netty:netty-codec-compression 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-codec-compression@4.2.12.Final 
                  │       │            ╰ UID : d5a032dd793fa143 
                  │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/netty-codec-compression-4.2.12.Final.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [67]  ╭ Name      : io.netty:netty-codec-dns 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-codec-dns@4.2.12.Final 
                  │       │            ╰ UID : d1018bca82fa2aba 
                  │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/netty-codec-dns-4.2.12.Final.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [68]  ╭ Name      : io.netty:netty-codec-http 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-codec-http@4.2.12.Final 
                  │       │            ╰ UID : 42139b2b89dda2f4 
                  │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [69]  ╭ Name      : io.netty:netty-codec-http2 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-codec-http2@4.2.12.Final 
                  │       │            ╰ UID : c9374114bd085c75 
                  │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/netty-codec-http2-4.2.12.Final.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [70]  ╭ Name      : io.netty:netty-codec-socks 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-codec-socks@4.2.12.Final 
                  │       │            ╰ UID : 6dac766b028678d7 
                  │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/netty-codec-socks-4.2.12.Final.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [71]  ╭ Name      : io.netty:netty-common 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-common@4.2.12.Final 
                  │       │            ╰ UID : 8d08b61b7945b6a0 
                  │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/netty-common-4.2.12.Final.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [72]  ╭ Name      : io.netty:netty-handler 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-handler@4.2.12.Final 
                  │       │            ╰ UID : 9402666d1399aa5 
                  │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/netty-handler-4.2.12.Final.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [73]  ╭ Name      : io.netty:netty-handler-proxy 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-handler-proxy@4.2.12.Final 
                  │       │            ╰ UID : 8344d1e8c7524c10 
                  │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/netty-handler-proxy-4.2.12.Final.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [74]  ╭ Name      : io.netty:netty-resolver 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-resolver@4.2.12.Final 
                  │       │            ╰ UID : d7528834b57654bb 
                  │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/netty-resolver-4.2.12.Final.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [75]  ╭ Name      : io.netty:netty-resolver-dns 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-resolver-dns@4.2.12.Final 
                  │       │            ╰ UID : 3f10c8fba6a3f35a 
                  │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/netty-resolver-dns-4.2.12.Final.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [76]  ╭ Name      : io.netty:netty-transport 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-transport@4.2.12.Final 
                  │       │            ╰ UID : dc0c50a667b2c4b9 
                  │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/netty-transport-4.2.12.Final.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [77]  ╭ Name      : io.netty:netty-transport-native-unix-common 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-transport-native-unix-common@4.2.12.Final 
                  │       │            ╰ UID : cd2b8af680c1bef9 
                  │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/netty-transport-native-unix-common-4.2.12.Final.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [78]  ╭ Name      : io.sigpipe:jbsdiff 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.sigpipe/jbsdiff@1.0 
                  │       │            ╰ UID : e618a95843fba36b 
                  │       ├ Version   : 1.0 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [79]  ╭ Name      : io.vertx:vertx-auth-common 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.vertx/vertx-auth-common@4.5.24 
                  │       │            ╰ UID : 4953632041865418 
                  │       ├ Version   : 4.5.24 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/vertx-auth-common-4.5.24.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [80]  ╭ Name      : io.vertx:vertx-core 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.vertx/vertx-core@4.5.24 
                  │       │            ╰ UID : afaef31c626f9650 
                  │       ├ Version   : 4.5.24 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/vertx-core-4.5.24.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [81]  ╭ Name      : io.vertx:vertx-web-client 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.vertx/vertx-web-client@4.5.24 
                  │       │            ╰ UID : df16d1babd29b056 
                  │       ├ Version   : 4.5.24 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/vertx-web-client-4.5.24.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [82]  ╭ Name      : io.vertx:vertx-web-common 
                  │       ├ Identifier ╭ PURL: pkg:maven/io.vertx/vertx-web-common@4.5.24 
                  │       │            ╰ UID : 95ad12caeb922cc7 
                  │       ├ Version   : 4.5.24 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/vertx-web-common-4.5.24.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [83]  ╭ Name      : jakarta.activation:jakarta.activation-api 
                  │       ├ Identifier ╭ PURL: pkg:maven/jakarta.activation/jakarta.activation-api@1.2.2 
                  │       │            ╰ UID : 5d2ee0e1a121653f 
                  │       ├ Version   : 1.2.2 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [84]  ╭ Name      : javax.xml.bind:jaxb-api 
                  │       ├ Identifier ╭ PURL: pkg:maven/javax.xml.bind/jaxb-api@2.3.1 
                  │       │            ╰ UID : d465243f613cf5b8 
                  │       ├ Version   : 2.3.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [85]  ╭ Name      : jline:jline 
                  │       ├ Identifier ╭ PURL: pkg:maven/jline/jline@2.14.6 
                  │       │            ╰ UID : 509c1c4b5bcd42a1 
                  │       ├ Version   : 2.14.6 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [86]  ╭ Name      : org.apache.commons:commons-collections4 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-collections4@4.5.0 
                  │       │            ╰ UID : 72513cdccf1d063 
                  │       ├ Version   : 4.5.0 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [87]  ╭ Name      : org.apache.commons:commons-compress 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-compress@1.28.0 
                  │       │            ╰ UID : a82eeb62843349ae 
                  │       ├ Version   : 1.28.0 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [88]  ╭ Name      : org.apache.commons:commons-csv 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-csv@1.14.1 
                  │       │            ╰ UID : 250a69832ed56f8d 
                  │       ├ Version   : 1.14.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [89]  ╭ Name      : org.apache.commons:commons-email 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-email@1.6.0 
                  │       │            ╰ UID : 973048c510561123 
                  │       ├ Version   : 1.6.0 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [90]  ╭ Name      : org.apache.commons:commons-lang3 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-lang3@3.20.0 
                  │       │            ╰ UID : 85a4dd2e7bf06fed 
                  │       ├ Version   : 3.20.0 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [91]  ╭ Name      : org.apache.commons:commons-math3 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-math3@3.6.1 
                  │       │            ╰ UID : ce9b8a6c7e85850 
                  │       ├ Version   : 3.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [92]  ╭ Name      : org.bouncycastle:bcprov-jdk18on 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.bouncycastle/bcprov-jdk18on@1.82 
                  │       │            ╰ UID : ba3bda42b1145eb2 
                  │       ├ Version   : 1.82 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/S3/bcprov-jdk18on-1.82.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [93]  ╭ Name      : org.eclipse.jetty.compression:jetty-compression-common 
@@ -3819,10 +2144,10 @@
                  │       │            │       12.1.7 
                  │       │            ╰ UID : a0626719897fe494 
                  │       ├ Version   : 12.1.7 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [94]  ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-core-client 
@@ -3830,10 +2155,10 @@
                  │       │            │       @12.1.7 
                  │       │            ╰ UID : cc581b450a167c29 
                  │       ├ Version   : 12.1.7 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [95]  ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-core-common 
@@ -3841,10 +2166,10 @@
                  │       │            │       @12.1.7 
                  │       │            ╰ UID : daed1d58fbcd63da 
                  │       ├ Version   : 12.1.7 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [96]  ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-jetty-api 
@@ -3852,10 +2177,10 @@
                  │       │            │       2.1.7 
                  │       │            ╰ UID : bc26f0f120e16fd6 
                  │       ├ Version   : 12.1.7 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [97]  ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-jetty-client 
@@ -3863,10 +2188,10 @@
                  │       │            │       t@12.1.7 
                  │       │            ╰ UID : ac51b48ce04fe1fb 
                  │       ├ Version   : 12.1.7 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [98]  ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-jetty-common 
@@ -3874,260 +2199,260 @@
                  │       │            │       n@12.1.7 
                  │       │            ╰ UID : fe9e4f7ecb0fae56 
                  │       ├ Version   : 12.1.7 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [99]  ╭ Name      : org.eclipse.jetty:jetty-client 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty/jetty-client@12.1.7 
                  │       │            ╰ UID : 35d0f51f64058948 
                  │       ├ Version   : 12.1.7 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [100] ╭ Name      : org.eclipse.jetty:jetty-http 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty/jetty-http@12.1.7 
                  │       │            ╰ UID : 3d81d7777215552f 
                  │       ├ Version   : 12.1.7 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [101] ╭ Name      : org.eclipse.jetty:jetty-io 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty/jetty-io@12.1.7 
                  │       │            ╰ UID : ecfd485e808fac08 
                  │       ├ Version   : 12.1.7 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [102] ╭ Name      : org.eclipse.jetty:jetty-util 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty/jetty-util@12.1.7 
                  │       │            ╰ UID : 55174ef89c50ef33 
                  │       ├ Version   : 12.1.7 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [103] ╭ Name      : org.fusesource.hawtjni:hawtjni-runtime 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.hawtjni/hawtjni-runtime@1.17 
                  │       │            ╰ UID : cf88955c9d0ae18b 
                  │       ├ Version   : 1.17 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [104] ╭ Name      : org.fusesource.jansi:jansi 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi@1.18 
                  │       │            ╰ UID : 8ad8d3ab8ae11065 
                  │       ├ Version   : 1.18 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [105] ╭ Name      : org.fusesource.jansi:jansi-freebsd32 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-freebsd32@1.8 
                  │       │            ╰ UID : 87b73bc3f694180c 
                  │       ├ Version   : 1.8 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [106] ╭ Name      : org.fusesource.jansi:jansi-freebsd64 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-freebsd64@1.8 
                  │       │            ╰ UID : 68d99c3788225531 
                  │       ├ Version   : 1.8 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [107] ╭ Name      : org.fusesource.jansi:jansi-linux32 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-linux32@1.8 
                  │       │            ╰ UID : b748a87749ace306 
                  │       ├ Version   : 1.8 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [108] ╭ Name      : org.fusesource.jansi:jansi-linux64 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-linux64@1.8 
                  │       │            ╰ UID : 26eee13eafbc9417 
                  │       ├ Version   : 1.8 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [109] ╭ Name      : org.fusesource.jansi:jansi-native 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-native@1.8 
                  │       │            ╰ UID : 6fdce73a584d6707 
                  │       ├ Version   : 1.8 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [110] ╭ Name      : org.fusesource.jansi:jansi-osx 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-osx@1.8 
                  │       │            ╰ UID : 907023130116e83c 
                  │       ├ Version   : 1.8 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [111] ╭ Name      : org.fusesource.jansi:jansi-windows32 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-windows32@1.8 
                  │       │            ╰ UID : ab926f311d1d4210 
                  │       ├ Version   : 1.8 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [112] ╭ Name      : org.fusesource.jansi:jansi-windows64 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-windows64@1.8 
                  │       │            ╰ UID : edf1cd987a2068b8 
                  │       ├ Version   : 1.8 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [113] ╭ Name      : org.jctools:jctools-core 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.jctools/jctools-core@4.0.5 
                  │       │            ╰ UID : 58fe95ed59ed9509 
                  │       ├ Version   : 4.0.5 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/netty-common-4.2.12.Final.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [114] ╭ Name      : org.jetbrains:annotations 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.jetbrains/annotations@13.0 
                  │       │            ╰ UID : c0161a29fedca08e 
                  │       ├ Version   : 13.0 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/S3/annotations-13.0.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [115] ╭ Name      : org.jspecify:jspecify 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.jspecify/jspecify@1.0.0 
                  │       │            ╰ UID : ed86e540bb7b216a 
                  │       ├ Version   : 1.0.0 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/S3/jspecify-1.0.0.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [116] ╭ Name      : org.semver4j:semver4j 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.semver4j/semver4j@6.0.0 
                  │       │            ╰ UID : 452bf269462d8b69 
                  │       ├ Version   : 6.0.0 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [117] ╭ Name      : org.slf4j:slf4j-api 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.slf4j/slf4j-api@2.0.17 
                  │       │            ╰ UID : e6e431b8b5e0302a 
                  │       ├ Version   : 2.0.17 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [118] ╭ Name      : org.slf4j:slf4j-nop 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.slf4j/slf4j-nop@2.0.17 
                  │       │            ╰ UID : 67713c09148cf9b 
                  │       ├ Version   : 2.0.17 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [119] ╭ Name      : org.snakeyaml:snakeyaml-engine 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.snakeyaml/snakeyaml-engine@3.0.1 
                  │       │            ╰ UID : 37957af2faa98731 
                  │       ├ Version   : 3.0.1 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/Kube/snakeyaml-engine-3.0.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [120] ╭ Name      : org.snmp4j:snmp4j 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.snmp4j/snmp4j@3.9.7 
                  │       │            ╰ UID : 2bdda8a0d94fe3fd 
                  │       ├ Version   : 3.9.7 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [121] ╭ Name      : org.snmp4j:snmp4j-agent 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.snmp4j/snmp4j-agent@3.8.3 
                  │       │            ╰ UID : 7d83d9c8b188faec 
                  │       ├ Version   : 3.8.3 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/openaf.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [122] ╭ Name      : org.xerial.snappy:snappy-java 
                  │       ├ Identifier ╭ PURL: pkg:maven/org.xerial.snappy/snappy-java@1.1.10.8 
                  │       │            ╰ UID : af735d5e5d938188 
                  │       ├ Version   : 1.1.10.8 
-                 │       ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                 │       │            │         97013001 
-                 │       │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                 │       │                      0f6b0a87 
+                 │       ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                 │       │            │         36ab8421 
+                 │       │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                 │       │                      460cc830 
                  │       ├ FilePath  : openaf/S3/snappy-java-1.1.10.8.jar 
                  │       ╰ AnalyzedBy: jar 
                  ╰ [123] ╭ Name      : org.yaml:snakeyaml 
                          ├ Identifier ╭ PURL: pkg:maven/org.yaml/snakeyaml@2.4 
                          │            ╰ UID : 47990f5b3f8915ac 
                          ├ Version   : 2.4 
-                         ├ Layer      ╭ Digest: sha256:691ceca58a1a1756f218e58f7de1a5a30fc0c6e2a9f7e17b3c57a505
-                         │            │         97013001 
-                         │            ╰ DiffID: sha256:59bc190096cfaa1c16c3aa4528431c056882219af7c06ff6c3d2618c
-                         │                      0f6b0a87 
+                         ├ Layer      ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd90aad92e208
+                         │            │         36ab8421 
+                         │            ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8bcc0858ef87
+                         │                      460cc830 
                          ├ FilePath  : openaf/Kube/snakeyaml-2.4.jar 
                          ╰ AnalyzedBy: jar 
 ````
