@@ -1118,7 +1118,46 @@
 │                       │     │                  ╰ [2]: https://www.openwall.com/lists/oss-security/2026/04/10/13 
 │                       │     ├ PublishedDate   : 2026-04-10T17:17:14.107Z 
 │                       │     ╰ LastModifiedDate: 2026-04-10T18:16:46.38Z 
-│                       ├ [1] ╭ VulnerabilityID : CVE-2026-40200 
+│                       ├ [1] ╭ VulnerabilityID : CVE-2026-6042 
+│                       │     ├ PkgID           : musl@1.2.5-r21 
+│                       │     ├ PkgName         : musl 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl@1.2.5-r21?arch=x86_64&distro=3.24.
+│                       │     │                  │       0_alpha20260127 
+│                       │     │                  ╰ UID : a7bafcf4eaef5646 
+│                       │     ├ InstalledVersion: 1.2.5-r21 
+│                       │     ├ FixedVersion    : 1.2.6-r1 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd
+│                       │     │                  │         90aad92e20836ab8421 
+│                       │     │                  ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8
+│                       │     │                            bcc0858ef87460cc830 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-6042 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Fingerprint     : sha256:2b13792571d7e6fc9785791c03a5a13ecd0941992ca1bb8d916148
+│                       │     │                   1a43b1cb54 
+│                       │     ├ Title           : A security flaw has been discovered in musl libc up to 1.2.6.
+│                       │     │                    Affected ... 
+│                       │     ├ Description     : A security flaw has been discovered in musl libc up to 1.2.6.
+│                       │     │                    Affected is the function iconv of the file
+│                       │     │                   src/locale/iconv.c of the component GB18030 4-byte Decoder.
+│                       │     │                   Performing a manipulation results in inefficient algorithmic
+│                       │     │                   complexity. The attack must be initiated from a local
+│                       │     │                   position. To fix this issue, it is recommended to deploy a
+│                       │     │                   patch. 
+│                       │     ├ Severity        : UNKNOWN 
+│                       │     ├ CweIDs           ╭ [0]: CWE-404 
+│                       │     │                  ╰ [1]: CWE-407 
+│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/09/19 
+│                       │     │                  ├ [1]: https://vuldb.com/submit/796352 
+│                       │     │                  ├ [2]: https://vuldb.com/vuln/356620 
+│                       │     │                  ├ [3]: https://vuldb.com/vuln/356620/cti 
+│                       │     │                  ├ [4]: https://www.openwall.com/lists/oss-security/2026/04/02/10 
+│                       │     │                  ╰ [5]: https://www.openwall.com/lists/oss-security/2026/04/03/2 
+│                       │     ├ PublishedDate   : 2026-04-10T09:16:25.45Z 
+│                       │     ╰ LastModifiedDate: 2026-04-10T10:16:04.277Z 
+│                       ├ [2] ╭ VulnerabilityID : CVE-2026-40200 
 │                       │     ├ PkgID           : musl-utils@1.2.5-r21 
 │                       │     ├ PkgName         : musl-utils 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl-utils@1.2.5-r21?arch=x86_64&distro
@@ -1153,7 +1192,46 @@
 │                       │     │                  ╰ [2]: https://www.openwall.com/lists/oss-security/2026/04/10/13 
 │                       │     ├ PublishedDate   : 2026-04-10T17:17:14.107Z 
 │                       │     ╰ LastModifiedDate: 2026-04-10T18:16:46.38Z 
-│                       ╰ [2] ╭ VulnerabilityID : CVE-2026-27171 
+│                       ├ [3] ╭ VulnerabilityID : CVE-2026-6042 
+│                       │     ├ PkgID           : musl-utils@1.2.5-r21 
+│                       │     ├ PkgName         : musl-utils 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl-utils@1.2.5-r21?arch=x86_64&distro
+│                       │     │                  │       =3.24.0_alpha20260127 
+│                       │     │                  ╰ UID : 6f37302d99121f4f 
+│                       │     ├ InstalledVersion: 1.2.5-r21 
+│                       │     ├ FixedVersion    : 1.2.6-r1 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:6f8c6ab8f0f5719a6ba2b406f93f8fb62a10e736a05fd
+│                       │     │                  │         90aad92e20836ab8421 
+│                       │     │                  ╰ DiffID: sha256:eab704df4d4bb60af9775958baacea1de70feefeeb8d8
+│                       │     │                            bcc0858ef87460cc830 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-6042 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Fingerprint     : sha256:9a526bf69568cdd9670bed5df74770e4e80a1ef3173c130c2fcd53
+│                       │     │                   052f8d3654 
+│                       │     ├ Title           : A security flaw has been discovered in musl libc up to 1.2.6.
+│                       │     │                    Affected ... 
+│                       │     ├ Description     : A security flaw has been discovered in musl libc up to 1.2.6.
+│                       │     │                    Affected is the function iconv of the file
+│                       │     │                   src/locale/iconv.c of the component GB18030 4-byte Decoder.
+│                       │     │                   Performing a manipulation results in inefficient algorithmic
+│                       │     │                   complexity. The attack must be initiated from a local
+│                       │     │                   position. To fix this issue, it is recommended to deploy a
+│                       │     │                   patch. 
+│                       │     ├ Severity        : UNKNOWN 
+│                       │     ├ CweIDs           ╭ [0]: CWE-404 
+│                       │     │                  ╰ [1]: CWE-407 
+│                       │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/09/19 
+│                       │     │                  ├ [1]: https://vuldb.com/submit/796352 
+│                       │     │                  ├ [2]: https://vuldb.com/vuln/356620 
+│                       │     │                  ├ [3]: https://vuldb.com/vuln/356620/cti 
+│                       │     │                  ├ [4]: https://www.openwall.com/lists/oss-security/2026/04/02/10 
+│                       │     │                  ╰ [5]: https://www.openwall.com/lists/oss-security/2026/04/03/2 
+│                       │     ├ PublishedDate   : 2026-04-10T09:16:25.45Z 
+│                       │     ╰ LastModifiedDate: 2026-04-10T10:16:04.277Z 
+│                       ╰ [4] ╭ VulnerabilityID : CVE-2026-27171 
 │                             ├ PkgID           : zlib@1.3.1-r2 
 │                             ├ PkgName         : zlib 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.24.0
