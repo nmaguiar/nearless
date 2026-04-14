@@ -1117,7 +1117,7 @@
 │                       │     │                  ├ [1]: https://musl.libc.org/releases.html 
 │                       │     │                  ╰ [2]: https://www.openwall.com/lists/oss-security/2026/04/10/13 
 │                       │     ├ PublishedDate   : 2026-04-10T17:17:14.107Z 
-│                       │     ╰ LastModifiedDate: 2026-04-10T18:16:46.38Z 
+│                       │     ╰ LastModifiedDate: 2026-04-13T15:02:06.187Z 
 │                       ├ [1] ╭ VulnerabilityID : CVE-2026-6042 
 │                       │     ├ PkgID           : musl@1.2.5-r21 
 │                       │     ├ PkgName         : musl 
@@ -1156,7 +1156,7 @@
 │                       │     │                  ├ [4]: https://www.openwall.com/lists/oss-security/2026/04/02/10 
 │                       │     │                  ╰ [5]: https://www.openwall.com/lists/oss-security/2026/04/03/2 
 │                       │     ├ PublishedDate   : 2026-04-10T09:16:25.45Z 
-│                       │     ╰ LastModifiedDate: 2026-04-10T10:16:04.277Z 
+│                       │     ╰ LastModifiedDate: 2026-04-13T15:02:06.187Z 
 │                       ├ [2] ╭ VulnerabilityID : CVE-2026-40200 
 │                       │     ├ PkgID           : musl-utils@1.2.5-r21 
 │                       │     ├ PkgName         : musl-utils 
@@ -1191,7 +1191,7 @@
 │                       │     │                  ├ [1]: https://musl.libc.org/releases.html 
 │                       │     │                  ╰ [2]: https://www.openwall.com/lists/oss-security/2026/04/10/13 
 │                       │     ├ PublishedDate   : 2026-04-10T17:17:14.107Z 
-│                       │     ╰ LastModifiedDate: 2026-04-10T18:16:46.38Z 
+│                       │     ╰ LastModifiedDate: 2026-04-13T15:02:06.187Z 
 │                       ├ [3] ╭ VulnerabilityID : CVE-2026-6042 
 │                       │     ├ PkgID           : musl-utils@1.2.5-r21 
 │                       │     ├ PkgName         : musl-utils 
@@ -1230,7 +1230,7 @@
 │                       │     │                  ├ [4]: https://www.openwall.com/lists/oss-security/2026/04/02/10 
 │                       │     │                  ╰ [5]: https://www.openwall.com/lists/oss-security/2026/04/03/2 
 │                       │     ├ PublishedDate   : 2026-04-10T09:16:25.45Z 
-│                       │     ╰ LastModifiedDate: 2026-04-10T10:16:04.277Z 
+│                       │     ╰ LastModifiedDate: 2026-04-13T15:02:06.187Z 
 │                       ╰ [4] ╭ VulnerabilityID : CVE-2026-27171 
 │                             ├ PkgID           : zlib@1.3.1-r2 
 │                             ├ PkgName         : zlib 
