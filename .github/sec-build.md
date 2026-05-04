@@ -1369,8 +1369,7 @@
                  │       ├ FilePath  : openaf/S3/simple-xml-safe-2.7.1.jar 
                  │       ╰ AnalyzedBy: jar 
                  ├ [1]   ╭ Name      : com.fasterxml.jackson.core:jackson-annotations 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.21 
-                 │       │            ╰ UID : a68585b707b894c6 
+
                  │       ├ Version   : 2.21 
                  │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
                  │       │            │         95f0ceaa 
