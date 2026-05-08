@@ -1334,25 +1334,33 @@
 │                             ├ VendorSeverity   ╭ amazon     : 1 
 │                             │                  ├ azure      : 1 
 │                             │                  ├ cbl-mariner: 1 
+│                             │                  ├ julia      : 1 
 │                             │                  ├ nvd        : 2 
 │                             │                  ├ redhat     : 1 
 │                             │                  ╰ ubuntu     : 1 
-│                             ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/
+│                             ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/
+│                             │                  │        │           A:L 
+│                             │                  │        ╰ V3Score : 2.9 
+│                             │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/
 │                             │                  │        │           A:H 
 │                             │                  │        ╰ V3Score : 5.5 
 │                             │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/
 │                             │                           │           A:L 
 │                             │                           ╰ V3Score : 3.3 
-│                             ├ References       ╭ [0]: https://7asecurity.com/blog/2026/02/zlib-7asecurity-aud
-│                             │                  │      it/ 
-│                             │                  ├ [1]: https://7asecurity.com/reports/pentest-report-zlib-RC1.
-│                             │                  │      1.pdf 
-│                             │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2026-27171 
-│                             │                  ├ [3]: https://github.com/madler/zlib/issues/904 
-│                             │                  ├ [4]: https://github.com/madler/zlib/releases/tag/v1.3.2 
-│                             │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-27171 
-│                             │                  ├ [6]: https://ostif.org/zlib-audit-complete/ 
-│                             │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-27171 
+│                             ├ References       ╭ [0] : https://7asecurity.com/blog/2026/02/zlib-7asecurity-au
+│                             │                  │       dit 
+│                             │                  ├ [1] : https://7asecurity.com/blog/2026/02/zlib-7asecurity-au
+│                             │                  │       dit/ 
+│                             │                  ├ [2] : https://7asecurity.com/reports/pentest-report-zlib-RC1
+│                             │                  │       .1.pdf 
+│                             │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2026-27171 
+│                             │                  ├ [4] : https://github.com/advisories/GHSA-h858-mf2m-8jf4 
+│                             │                  ├ [5] : https://github.com/madler/zlib/issues/904 
+│                             │                  ├ [6] : https://github.com/madler/zlib/releases/tag/v1.3.2 
+│                             │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2026-27171 
+│                             │                  ├ [8] : https://ostif.org/zlib-audit-complete 
+│                             │                  ├ [9] : https://ostif.org/zlib-audit-complete/ 
+│                             │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2026-27171 
 │                             ├ PublishedDate   : 2026-02-18T04:16:01.263Z 
 │                             ╰ LastModifiedDate: 2026-03-25T21:27:04.603Z 
 ╰ [1] ╭ Target         : Java 
@@ -3211,7 +3219,166 @@
                         │     ╰ References       ╭ [0]: https://github.com/netty/netty 
                         │                        ╰ [1]: https://github.com/netty/netty/security/advisories/GHSA
                         │                               -57rv-r2g8-2cj3 
-                        ├ [3] ╭ VulnerabilityID : CVE-2026-41417 
+                        ├ [3] ╭ VulnerabilityID : CVE-2026-42587 
+                        │     ├ VendorIDs        ─ [0]: GHSA-f6hv-jmp6-3vwv 
+                        │     ├ PkgName         : io.netty:netty-codec-http 
+                        │     ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-http@4.2.12.Final 
+                        │     │                  ╰ UID : 42139b2b89dda2f4 
+                        │     ├ InstalledVersion: 4.2.12.Final 
+                        │     ├ FixedVersion    : 4.2.13.Final, 4.1.133.Final 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab
+                        │     │                  │         09293113b8395f0ceaa 
+                        │     │                  ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e
+                        │     │                            54ebf30433b93da5788 
+                        │     ├ SeveritySource  : ghsa 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42587 
+                        │     ├ DataSource       ╭ ID  : ghsa 
+                        │     │                  ├ Name: GitHub Security Advisory Maven 
+                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+                        │     │                          osystem%3Amaven 
+                        │     ├ Fingerprint     : sha256:7c66627bda23a0cdf2a52a25671128dad5698d92e0fedb5f1dc8ed
+                        │     │                   b0a5951a4e 
+                        │     ├ Title           : Netty: HttpContentDecompressor maxAllocation bypass when
+                        │     │                   Content-Encoding set to br/zstd/snappy leads to decompression
+                        │     │                    bomb DoS 
+                        │     ├ Description     : ## Summary
+                        │     │                   
+                        │     │                   `HttpContentDecompressor` accepts a `maxAllocation` parameter
+                        │     │                    to limit decompression buffer size and prevent decompression
+                        │     │                    bomb attacks. This limit is correctly enforced for gzip and
+                        │     │                   deflate encodings via `ZlibDecoder`, but is silently ignored
+                        │     │                   when the content encoding is `br` (Brotli), `zstd`, or
+                        │     │                   `snappy`. An attacker can bypass the configured decompression
+                        │     │                    limit by sending a compressed payload with
+                        │     │                   `Content-Encoding: br` instead of `Content-Encoding: gzip`,
+                        │     │                   causing unbounded memory allocation and out-of-memory denial
+                        │     │                   of service.
+                        │     │                   The same vulnerability exists in
+                        │     │                   `DelegatingDecompressorFrameListener` for HTTP/2
+                        │     │                   connections.
+                        │     │                   ## Details
+                        │     │                   `HttpContentDecompressor` stores the `maxAllocation` value at
+                        │     │                    construction time (`HttpContentDecompressor.java:89`) and
+                        │     │                   uses it in `newContentDecoder()` to create the appropriate
+                        │     │                   decompression handler.
+                        │     │                   For gzip/deflate, `maxAllocation` is forwarded to
+                        │     │                   `ZlibCodecFactory.newZlibDecoder()`:
+                        │     │                   ```java
+                        │     │                   // HttpContentDecompressor.java:101 — maxAllocation IS
+                        │     │                   enforced
+                        │     │                   .handlers(ZlibCodecFactory.newZlibDecoder(ZlibWrapper.GZIP,
+                        │     │                   maxAllocation))
+                        │     │                   ```
+                        │     │                   `ZlibDecoder.prepareDecompressBuffer()` enforces this as a
+                        │     │                   hard cap by setting the buffer's `maxCapacity` and throwing
+                        │     │                   `DecompressionException` when the limit is reached:
+                        │     │                   // ZlibDecoder.java:68 — hard limit on buffer capacity
+                        │     │                   return ctx.alloc().heapBuffer(Math.min(preferredSize,
+                        │     │                   maxAllocation), maxAllocation);
+                        │     │                   // ZlibDecoder.java:80 — throws when exceeded
+                        │     │                   throw new DecompressionException("Decompression buffer has
+                        │     │                   reached maximum size: " + buffer.maxCapacity());
+                        │     │                   For brotli, zstd, and snappy, the decoders are created
+                        │     │                   without any size limit:
+                        │     │                   // HttpContentDecompressor.java:120 — maxAllocation IGNORED
+                        │     │                   .handlers(new BrotliDecoder())
+                        │     │                   // HttpContentDecompressor.java:129 — maxAllocation IGNORED
+                        │     │                   .handlers(new SnappyFrameDecoder())
+                        │     │                   // HttpContentDecompressor.java:138 — maxAllocation IGNORED
+                        │     │                   .handlers(new ZstdDecoder())
+                        │     │                   `BrotliDecoder` has no `maxAllocation` parameter at all —
+                        │     │                   there is no way to constrain its output. It streams
+                        │     │                   decompressed data in chunks via `fireChannelRead` with no
+                        │     │                   total limit.
+                        │     │                   `ZstdDecoder()` defaults to a 4MB `maximumAllocationSize`,
+                        │     │                   but this only constrains individual buffer allocations, not
+                        │     │                   total output. The decode loop (`ZstdDecoder.java:100-114`)
+                        │     │                   creates new buffers and fires `channelRead` repeatedly, so
+                        │     │                   total decompressed output is unbounded.
+                        │     │                   The identical pattern exists in
+                        │     │                   `DelegatingDecompressorFrameListener.newContentDecompressor()
+                        │     │                   ` at lines 188-210 for HTTP/2.
+                        │     │                   ## PoC
+                        │     │                   1. Configure a Netty HTTP server with decompression bomb
+                        │     │                   protection:
+                        │     │                   pipeline.addLast(new HttpContentDecompressor(1048576)); //
+                        │     │                   1MB max
+                        │     │                   pipeline.addLast(new HttpObjectAggregator(1048576));     //
+                        │     │                   2. Generate a brotli-compressed bomb (~1KB compressed → 1GB
+                        │     │                   decompressed):
+                        │     │                   ```python
+                        │     │                   import brotli
+                        │     │                   bomb = b'\x00' * (1024 * 1024 * 1024)  # 1GB of zeros
+                        │     │                   compressed = brotli.compress(bomb, quality=11)
+                        │     │                   with open('bomb.br', 'wb') as f:
+                        │     │                       f.write(compressed)
+                        │     │                   # compressed size: ~1KB
+                        │     │                   3. Send the bomb with gzip encoding (BLOCKED by
+                        │     │                   maxAllocation):
+                        │     │                   ```bash
+                        │     │                   # This is caught — ZlibDecoder enforces the 1MB limit
+                        │     │                   curl -X POST http://target:8080/api \
+                        │     │                     -H 'Content-Encoding: gzip' \
+                        │     │                     --data-binary @bomb.gz
+                        │     │                   # Result: DecompressionException thrown at 1MB
+                        │     │                   4. Send the same bomb with brotli encoding (BYPASSES
+                        │     │                   # This bypasses the limit — BrotliDecoder has no
+                        │     │                   maxAllocation
+                        │     │                     -H 'Content-Encoding: br' \
+                        │     │                     --data-binary @bomb.br
+                        │     │                   # Result: Full 1GB decompressed into memory → OOM
+                        │     │                   5. The same bypass works with `Content-Encoding: zstd` and
+                        │     │                   `Content-Encoding: snappy`.
+                        │     │                   ## Impact
+                        │     │                   - **Denial of Service**: An attacker can cause out-of-memory
+                        │     │                   conditions on any Netty server that relies on `maxAllocation`
+                        │     │                    for decompression bomb protection, by simply using a
+                        │     │                   non-gzip content encoding.
+                        │     │                   - **False sense of security**: Developers who explicitly
+                        │     │                   configure `maxAllocation` to protect against decompression
+                        │     │                   bombs are not actually protected for brotli, zstd, or snappy
+                        │     │                   encodings. The API documentation implies all encodings are
+                        │     │                   covered.
+                        │     │                   - **Trivial bypass**: The attacker only needs to change one
+                        │     │                   HTTP header (`Content-Encoding: br` instead of
+                        │     │                   `Content-Encoding: gzip`) to circumvent the protection
+                        │     │                   entirely.
+                        │     │                   - **Both HTTP/1.1 and HTTP/2**: The vulnerability exists in
+                        │     │                   both `HttpContentDecompressor` (HTTP/1.1) and
+                        │     │                   `DelegatingDecompressorFrameListener` (HTTP/2).
+                        │     │                   ## Recommended Fix
+                        │     │                   Pass `maxAllocation` to all decoder constructors. For
+                        │     │                   `BrotliDecoder`, which currently has no `maxAllocation`
+                        │     │                   support, add the parameter:
+                        │     │                   **HttpContentDecompressor.java** — pass maxAllocation to all
+                        │     │                   decoders:
+                        │     │                   // Line 120: BrotliDecoder — add maxAllocation support
+                        │     │                   .handlers(new BrotliDecoder(maxAllocation))
+                        │     │                   // Line 129: SnappyFrameDecoder — add maxAllocation support
+                        │     │                   .handlers(new SnappyFrameDecoder(maxAllocation))
+                        │     │                   // Line 138: ZstdDecoder — forward the configured
+                        │     │                   .handlers(new ZstdDecoder(maxAllocation))
+                        │     │                   **DelegatingDecompressorFrameListener.java** — same fix at
+                        │     │                   lines 188-210.
+                        │     │                   **BrotliDecoder** — add `maxAllocation` parameter with the
+                        │     │                   same semantics as `ZlibDecoder.prepareDecompressBuffer()`:
+                        │     │                   set buffer maxCapacity and throw `DecompressionException`
+                        │     │                   when the total decompressed output exceeds the limit.
+                        │     │                   **SnappyFrameDecoder** — add `maxAllocation` parameter with
+                        │     │                   equivalent enforcement.
+                        │     │                   **ZstdDecoder** — ensure that when `maxAllocation` is set,
+                        │     │                   total output across all buffers is bounded (not just
+                        │     │                   per-buffer allocation size). 
+                        │     ├ Severity        : HIGH 
+                        │     ├ VendorSeverity   ─ ghsa: 3 
+                        │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
+                        │     │                         ╰ V3Score : 7.5 
+                        │     ╰ References       ╭ [0]: https://github.com/netty/netty 
+                        │                        ╰ [1]: https://github.com/netty/netty/security/advisories/GHSA
+                        │                               -f6hv-jmp6-3vwv 
+                        ├ [4] ╭ VulnerabilityID : CVE-2026-41417 
                         │     ├ VendorIDs        ─ [0]: GHSA-v8h7-rr48-vmmv 
                         │     ├ PkgName         : io.netty:netty-codec-http 
                         │     ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
@@ -3232,193 +3399,33 @@
                         │     │                          osystem%3Amaven 
                         │     ├ Fingerprint     : sha256:29de78fc2a2d319e7a52919b3deda180a0999daef098bbf6b3a098
                         │     │                   38d3ffde14 
-                        │     ├ Title           : Netty: Start-Line Injection in DefaultHttpRequest.setUri()
-                        │     │                   Allows HTTP Request Smuggling and RTSP Request Injection 
-                        │     ├ Description     : ### Summary
-                        │     │                   Netty allows request-line validation to be bypassed when a
+                        │     ├ Title           : Netty allows request-line validation to be bypassed when a
+                        │     │                   `DefaultHtt ... 
+                        │     ├ Description     : Netty allows request-line validation to be bypassed when a
                         │     │                   `DefaultHttpRequest` or `DefaultFullHttpRequest` is created
-                        │     │                   first and its URI is later changed via `setUri()`.
-                        │     │                   
-                        │     │                   The constructors reject CRLF and whitespace characters that
-                        │     │                   would break the start-line, but `setUri()` does not apply the
-                        │     │                    same validation. `HttpRequestEncoder` and `RtspEncoder` then
-                        │     │                    write the URI into the request line verbatim. If
+                        │     │                   first and its URI is later changed via `setUri()`. The
+                        │     │                   constructors reject CRLF and whitespace characters that would
+                        │     │                    break the start-line, but `setUri()` does not apply the same
+                        │     │                    validation. `HttpRequestEncoder` and `RtspEncoder` then
+                        │     │                   write the URI into the request line verbatim. If
                         │     │                   attacker-controlled input reaches `setUri()`, this enables
                         │     │                   CRLF injection and insertion of additional HTTP or RTSP
-                        │     │                   requests.
-                        │     │                   In practice, this leads to HTTP request smuggling /
+                        │     │                   requests, leading to HTTP request smuggling or
                         │     │                   desynchronization on the HTTP side and request injection on
-                        │     │                   the RTSP side.
-                        │     │                   ### Details
-                        │     │                   The root issue is that URI validation exists only on the
-                        │     │                   constructor path, but not on the public setter path.
-                        │     │                   - `io.netty.handler.codec.http.DefaultHttpRequest`
-                        │     │                     - The constructor calls
-                        │     │                   `HttpUtil.validateRequestLineTokens(method, uri)`
-                        │     │                     - `setUri(String uri)` only performs `checkNotNull` and
-                        │     │                   does not validate
-                        │     │                   - `io.netty.handler.codec.http.DefaultFullHttpRequest`
-                        │     │                     - `setUri(String uri)` delegates to the parent
-                        │     │                   implementation
-                        │     │                   - `io.netty.handler.codec.http.HttpRequestEncoder`
-                        │     │                     - Writes `request.uri()` directly into the request line
-                        │     │                   - `io.netty.handler.codec.rtsp.RtspEncoder`
-                        │     │                   This creates the following bypass:
-                        │     │                   1. An application creates a `DefaultHttpRequest` or
-                        │     │                   `DefaultFullHttpRequest` with a safe URI
-                        │     │                   2. Later, attacker-influenced input is passed into
-                        │     │                   `setUri()`
-                        │     │                   3. `HttpRequestEncoder` or `RtspEncoder` encodes that value
-                        │     │                   verbatim
-                        │     │                   4. The downstream server, proxy, or RTSP peer interprets the
-                        │     │                   injected bytes after CRLF as separate requests
-                        │     │                   This appears to be an incomplete fix pattern where start-line
-                        │     │                    validation exists, but can still be bypassed through a
-                        │     │                   mutable public API.
-                        │     │                   ### PoC (HTTP)
-                        │     │                   The following code first creates a normal request object and
-                        │     │                   then injects a malicious request line using `setUri()`.
-                        │     │                   ```java
-                        │     │                   import io.netty.buffer.ByteBuf;
-                        │     │                   import io.netty.channel.embedded.EmbeddedChannel;
-                        │     │                   import io.netty.handler.codec.http.DefaultHttpRequest;
-                        │     │                   import io.netty.handler.codec.http.HttpMethod;
-                        │     │                   import io.netty.handler.codec.http.HttpRequestEncoder;
-                        │     │                   import io.netty.handler.codec.http.HttpServerCodec;
-                        │     │                   import io.netty.handler.codec.http.HttpVersion;
-                        │     │                   import io.netty.util.CharsetUtil;
-                        │     │                   public final class HttpSetUriSmugglePoc {
-                        │     │                       public static void main(String[] args) {
-                        │     │                           EmbeddedChannel client = new EmbeddedChannel(new
-                        │     │                   HttpRequestEncoder());
-                        │     │                           EmbeddedChannel server = new EmbeddedChannel(new
-                        │     │                   HttpServerCodec());
-                        │     │                           DefaultHttpRequest request = new DefaultHttpRequest(
-                        │     │                                   HttpVersion.HTTP_1_1, HttpMethod.GET,
-                        │     │                   "/safe");
-                        │     │                           request.setUri("/s1 HTTP/1.1\r\n" +
-                        │     │                                   "\r\n" +
-                        │     │                                   "POST /s2 HTTP/1.1\r\n" +
-                        │     │                                   "content-length: 11\r\n\r\n" +
-                        │     │                                   "Hello World" +
-                        │     │                                   "GET /s1");
-                        │     │                           client.writeOutbound(request);
-                        │     │                           ByteBuf outbound = client.readOutbound();
-                        │     │                           System.out.println("=== Raw encoded request ===");
-                        │     │                          
-                        │     │                   System.out.println(outbound.toString(CharsetUtil.US_ASCII));
-                        │     │                           System.out.println("=== Decoded by HttpServerCodec
-                        │     │                   ===");
-                        │     │                           server.writeInbound(outbound.retainedDuplicate());
-                        │     │                           Object msg;
-                        │     │                           while ((msg = server.readInbound()) != null) {
-                        │     │                               System.out.println(msg);
-                        │     │                           }
-                        │     │                           outbound.release();
-                        │     │                           client.finishAndReleaseAll();
-                        │     │                           server.finishAndReleaseAll();
-                        │     │                       }
-                        │     │                   }
-                        │     │                   ```
-                        │     │                   When reproduced, the raw encoded request looks like this:
-                        │     │                   ```http
-                        │     │                   GET /s1 HTTP/1.1
-                        │     │                   POST /s2 HTTP/1.1
-                        │     │                   content-length: 11
-                        │     │                   Hello WorldGET /s1 HTTP/1.1
-                        │     │                   `HttpServerCodec` then parses this as multiple HTTP messages
-                        │     │                   rather than a single request:
-                        │     │                   - `GET /s1`
-                        │     │                   - `POST /s2` with body `Hello World`
-                        │     │                   - trailing `GET /s1`
-                        │     │                   This confirms that the value supplied through `setUri()` is
-                        │     │                   interpreted on the wire as additional requests.
-                        │     │                   ### PoC (RTSP)
-                        │     │                   The same root cause also affects `RtspEncoder`. A minimal
-                        │     │                   reproduction is shown below.
-                        │     │                   import io.netty.handler.codec.rtsp.RtspDecoder;
-                        │     │                   import io.netty.handler.codec.rtsp.RtspEncoder;
-                        │     │                   import io.netty.handler.codec.rtsp.RtspMethods;
-                        │     │                   import io.netty.handler.codec.rtsp.RtspVersions;
-                        │     │                   public final class RtspSetUriSmugglePoc {
-                        │     │                   RtspEncoder());
-                        │     │                   RtspDecoder());
-                        │     │                                   RtspVersions.RTSP_1_0, RtspMethods.OPTIONS,
-                        │     │                   "rtsp://safe/media");
-                        │     │                           request.setUri("rtsp://cam/stream RTSP/1.0\r\n" +
-                        │     │                                   "CSeq: 1\r\n\r\n" +
-                        │     │                                   "DESCRIBE rtsp://cam/secret RTSP/1.0\r\n" +
-                        │     │                                   "CSeq: 2\r\n\r\n" +
-                        │     │                                   "OPTIONS rtsp://cam/final");
-                        │     │                           System.out.println("=== Raw encoded RTSP request
-                        │     │                           System.out.println("=== Decoded by RtspDecoder
-                        │     │                   When reproduced, `RtspEncoder` generates consecutive RTSP
-                        │     │                   requests in a single encoded payload:
-                        │     │                   ```text
-                        │     │                   OPTIONS rtsp://cam/stream RTSP/1.0
-                        │     │                   CSeq: 1
-                        │     │                   DESCRIBE rtsp://cam/secret RTSP/1.0
-                        │     │                   CSeq: 2
-                        │     │                   OPTIONS rtsp://cam/final RTSP/1.0
-                        │     │                   `RtspDecoder` then parses this as three separate RTSP
-                        │     │                   requests:
-                        │     │                   - `OPTIONS rtsp://cam/stream`
-                        │     │                   - `DESCRIBE rtsp://cam/secret`
-                        │     │                   - `OPTIONS rtsp://cam/final`
-                        │     │                   This confirms that the same setter bypass is exploitable for
-                        │     │                   RTSP request injection as well.
-                        │     │                   ### Impact
-                        │     │                   The vulnerable conditions are:
-                        │     │                   - The application uses `DefaultHttpRequest` or
-                        │     │                   `DefaultFullHttpRequest`
-                        │     │                   - The request object is created first and later modified
-                        │     │                   through `setUri()`
-                        │     │                   - The value passed into `setUri()` is attacker-controlled or
-                        │     │                   attacker-influenced
-                        │     │                   - The object is eventually serialized by `HttpRequestEncoder`
-                        │     │                    or `RtspEncoder`
-                        │     │                   Under those conditions, an attacker may be able to:
-                        │     │                   - perform HTTP request smuggling
-                        │     │                   - trigger proxy/backend desynchronization
-                        │     │                   - inject additional requests toward internal APIs
-                        │     │                   - confuse request boundaries and bypass assumptions around
-                        │     │                   authentication or routing
-                        │     │                   - inject RTSP requests
-                        │     │                   The exact impact depends on how the application constructs
-                        │     │                   URIs and how the upstream/downstream HTTP or RTSP components
-                        │     │                   parse request boundaries, but the security impact is real and
-                        │     │                    reproducible.
-                        │     │                   ### Root Cause
-                        │     │                   Validation is enforced only at object construction time, but
-                        │     │                   not on the public mutation API that can break the same
-                        │     │                   security invariant.
-                        │     │                   As a result, the constructors are safe while the public
-                        │     │                   `setUri()` path is not, and the encoders trust and serialize
-                        │     │                   the mutated value without revalidation.
-                        │     │                   ### Suggested Fix Direction
-                        │     │                   `DefaultHttpRequest.setUri()` and all delegating/inheriting
-                        │     │                   paths should apply the same request-line token validation as
-                        │     │                   the constructors.
-                        │     │                   Recommended regression coverage:
-                        │     │                   - verify that `setUri()` rejects CRLF-containing input after
-                        │     │                   object construction
-                        │     │                   - verify that `DefaultFullHttpRequest.setUri()` is blocked as
-                        │     │                    well
-                        │     │                   - verify that spaces, `\r`, `\n`, and request-smuggling
-                        │     │                   payloads are rejected
-                        │     │                   - verify that both `HttpRequestEncoder` and `RtspEncoder` are
-                        │     │                    protected from setter-based bypasses
-                        │     │                   ### Affected Area
-                        │     │                   - `netty-codec-http`
-                        │     │                   - `io.netty.handler.codec.rtsp.RtspEncoder` 
+                        │     │                   the RTSP side. This issue is fixed in versions 4.2.13.Final
+                        │     │                   and 4.1.133.Final. 
                         │     ├ Severity        : MEDIUM 
+                        │     ├ CweIDs           ╭ [0]: CWE-93 
+                        │     │                  ╰ [1]: CWE-444 
                         │     ├ VendorSeverity   ─ ghsa: 2 
                         │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N 
                         │     │                         ╰ V3Score : 5.3 
-                        │     ╰ References       ╭ [0]: https://github.com/netty/netty 
-                        │                        ╰ [1]: https://github.com/netty/netty/security/advisories/GHSA
-                        │                               -v8h7-rr48-vmmv 
-                        ├ [4] ╭ VulnerabilityID : CVE-2026-42580 
+                        │     ├ References       ╭ [0]: https://github.com/netty/netty 
+                        │     │                  ╰ [1]: https://github.com/netty/netty/security/advisories/GHSA
+                        │     │                         -v8h7-rr48-vmmv 
+                        │     ├ PublishedDate   : 2026-05-06T22:16:25.78Z 
+                        │     ╰ LastModifiedDate: 2026-05-07T15:16:06.703Z 
+                        ├ [5] ╭ VulnerabilityID : CVE-2026-42580 
                         │     ├ VendorIDs        ─ [0]: GHSA-m4cv-j2px-7723 
                         │     ├ PkgName         : io.netty:netty-codec-http 
                         │     ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
@@ -3502,7 +3509,7 @@
                         │     ╰ References       ╭ [0]: https://github.com/netty/netty 
                         │                        ╰ [1]: https://github.com/netty/netty/security/advisories/GHSA
                         │                               -m4cv-j2px-7723 
-                        ├ [5] ╭ VulnerabilityID : CVE-2026-42581 
+                        ├ [6] ╭ VulnerabilityID : CVE-2026-42581 
                         │     ├ VendorIDs        ─ [0]: GHSA-xxqh-mfjm-7mv9 
                         │     ├ PkgName         : io.netty:netty-codec-http 
                         │     ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
@@ -3653,7 +3660,7 @@
                         │     ╰ References       ╭ [0]: https://github.com/netty/netty 
                         │                        ╰ [1]: https://github.com/netty/netty/security/advisories/GHSA
                         │                               -xxqh-mfjm-7mv9 
-                        ├ [6] ╭ VulnerabilityID : CVE-2026-42585 
+                        ├ [7] ╭ VulnerabilityID : CVE-2026-42585 
                         │     ├ VendorIDs        ─ [0]: GHSA-38f8-5428-x5cv 
                         │     ├ PkgName         : io.netty:netty-codec-http 
                         │     ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
@@ -3741,7 +3748,166 @@
                         │                        ├ [1]: https://github.com/netty/netty 
                         │                        ╰ [2]: https://github.com/netty/netty/security/advisories/GHSA
                         │                               -38f8-5428-x5cv 
-                        ╰ [7] ╭ VulnerabilityID : CVE-2026-42578 
+                        ├ [8] ╭ VulnerabilityID : CVE-2026-42587 
+                        │     ├ VendorIDs        ─ [0]: GHSA-f6hv-jmp6-3vwv 
+                        │     ├ PkgName         : io.netty:netty-codec-http2 
+                        │     ├ PkgPath         : openaf/Kube/netty-codec-http2-4.2.12.Final.jar 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-http2@4.2.12.Final 
+                        │     │                  ╰ UID : c9374114bd085c75 
+                        │     ├ InstalledVersion: 4.2.12.Final 
+                        │     ├ FixedVersion    : 4.2.13.Final, 4.1.133.Final 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:aa00abdff6ef097af329b677bba45f31977d98b1ceaab
+                        │     │                  │         09293113b8395f0ceaa 
+                        │     │                  ╰ DiffID: sha256:05d72f1999a7023c8b60648816bbb360d1fd5480dda4e
+                        │     │                            54ebf30433b93da5788 
+                        │     ├ SeveritySource  : ghsa 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42587 
+                        │     ├ DataSource       ╭ ID  : ghsa 
+                        │     │                  ├ Name: GitHub Security Advisory Maven 
+                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
+                        │     │                          osystem%3Amaven 
+                        │     ├ Fingerprint     : sha256:7c66627bda23a0cdf2a52a25671128dad5698d92e0fedb5f1dc8ed
+                        │     │                   b0a5951a4e 
+                        │     ├ Title           : Netty: HttpContentDecompressor maxAllocation bypass when
+                        │     │                   Content-Encoding set to br/zstd/snappy leads to decompression
+                        │     │                    bomb DoS 
+                        │     ├ Description     : ## Summary
+                        │     │                   
+                        │     │                   `HttpContentDecompressor` accepts a `maxAllocation` parameter
+                        │     │                    to limit decompression buffer size and prevent decompression
+                        │     │                    bomb attacks. This limit is correctly enforced for gzip and
+                        │     │                   deflate encodings via `ZlibDecoder`, but is silently ignored
+                        │     │                   when the content encoding is `br` (Brotli), `zstd`, or
+                        │     │                   `snappy`. An attacker can bypass the configured decompression
+                        │     │                    limit by sending a compressed payload with
+                        │     │                   `Content-Encoding: br` instead of `Content-Encoding: gzip`,
+                        │     │                   causing unbounded memory allocation and out-of-memory denial
+                        │     │                   of service.
+                        │     │                   The same vulnerability exists in
+                        │     │                   `DelegatingDecompressorFrameListener` for HTTP/2
+                        │     │                   connections.
+                        │     │                   ## Details
+                        │     │                   `HttpContentDecompressor` stores the `maxAllocation` value at
+                        │     │                    construction time (`HttpContentDecompressor.java:89`) and
+                        │     │                   uses it in `newContentDecoder()` to create the appropriate
+                        │     │                   decompression handler.
+                        │     │                   For gzip/deflate, `maxAllocation` is forwarded to
+                        │     │                   `ZlibCodecFactory.newZlibDecoder()`:
+                        │     │                   ```java
+                        │     │                   // HttpContentDecompressor.java:101 — maxAllocation IS
+                        │     │                   enforced
+                        │     │                   .handlers(ZlibCodecFactory.newZlibDecoder(ZlibWrapper.GZIP,
+                        │     │                   maxAllocation))
+                        │     │                   ```
+                        │     │                   `ZlibDecoder.prepareDecompressBuffer()` enforces this as a
+                        │     │                   hard cap by setting the buffer's `maxCapacity` and throwing
+                        │     │                   `DecompressionException` when the limit is reached:
+                        │     │                   // ZlibDecoder.java:68 — hard limit on buffer capacity
+                        │     │                   return ctx.alloc().heapBuffer(Math.min(preferredSize,
+                        │     │                   maxAllocation), maxAllocation);
+                        │     │                   // ZlibDecoder.java:80 — throws when exceeded
+                        │     │                   throw new DecompressionException("Decompression buffer has
+                        │     │                   reached maximum size: " + buffer.maxCapacity());
+                        │     │                   For brotli, zstd, and snappy, the decoders are created
+                        │     │                   without any size limit:
+                        │     │                   // HttpContentDecompressor.java:120 — maxAllocation IGNORED
+                        │     │                   .handlers(new BrotliDecoder())
+                        │     │                   // HttpContentDecompressor.java:129 — maxAllocation IGNORED
+                        │     │                   .handlers(new SnappyFrameDecoder())
+                        │     │                   // HttpContentDecompressor.java:138 — maxAllocation IGNORED
+                        │     │                   .handlers(new ZstdDecoder())
+                        │     │                   `BrotliDecoder` has no `maxAllocation` parameter at all —
+                        │     │                   there is no way to constrain its output. It streams
+                        │     │                   decompressed data in chunks via `fireChannelRead` with no
+                        │     │                   total limit.
+                        │     │                   `ZstdDecoder()` defaults to a 4MB `maximumAllocationSize`,
+                        │     │                   but this only constrains individual buffer allocations, not
+                        │     │                   total output. The decode loop (`ZstdDecoder.java:100-114`)
+                        │     │                   creates new buffers and fires `channelRead` repeatedly, so
+                        │     │                   total decompressed output is unbounded.
+                        │     │                   The identical pattern exists in
+                        │     │                   `DelegatingDecompressorFrameListener.newContentDecompressor()
+                        │     │                   ` at lines 188-210 for HTTP/2.
+                        │     │                   ## PoC
+                        │     │                   1. Configure a Netty HTTP server with decompression bomb
+                        │     │                   protection:
+                        │     │                   pipeline.addLast(new HttpContentDecompressor(1048576)); //
+                        │     │                   1MB max
+                        │     │                   pipeline.addLast(new HttpObjectAggregator(1048576));     //
+                        │     │                   2. Generate a brotli-compressed bomb (~1KB compressed → 1GB
+                        │     │                   decompressed):
+                        │     │                   ```python
+                        │     │                   import brotli
+                        │     │                   bomb = b'\x00' * (1024 * 1024 * 1024)  # 1GB of zeros
+                        │     │                   compressed = brotli.compress(bomb, quality=11)
+                        │     │                   with open('bomb.br', 'wb') as f:
+                        │     │                       f.write(compressed)
+                        │     │                   # compressed size: ~1KB
+                        │     │                   3. Send the bomb with gzip encoding (BLOCKED by
+                        │     │                   maxAllocation):
+                        │     │                   ```bash
+                        │     │                   # This is caught — ZlibDecoder enforces the 1MB limit
+                        │     │                   curl -X POST http://target:8080/api \
+                        │     │                     -H 'Content-Encoding: gzip' \
+                        │     │                     --data-binary @bomb.gz
+                        │     │                   # Result: DecompressionException thrown at 1MB
+                        │     │                   4. Send the same bomb with brotli encoding (BYPASSES
+                        │     │                   # This bypasses the limit — BrotliDecoder has no
+                        │     │                   maxAllocation
+                        │     │                     -H 'Content-Encoding: br' \
+                        │     │                     --data-binary @bomb.br
+                        │     │                   # Result: Full 1GB decompressed into memory → OOM
+                        │     │                   5. The same bypass works with `Content-Encoding: zstd` and
+                        │     │                   `Content-Encoding: snappy`.
+                        │     │                   ## Impact
+                        │     │                   - **Denial of Service**: An attacker can cause out-of-memory
+                        │     │                   conditions on any Netty server that relies on `maxAllocation`
+                        │     │                    for decompression bomb protection, by simply using a
+                        │     │                   non-gzip content encoding.
+                        │     │                   - **False sense of security**: Developers who explicitly
+                        │     │                   configure `maxAllocation` to protect against decompression
+                        │     │                   bombs are not actually protected for brotli, zstd, or snappy
+                        │     │                   encodings. The API documentation implies all encodings are
+                        │     │                   covered.
+                        │     │                   - **Trivial bypass**: The attacker only needs to change one
+                        │     │                   HTTP header (`Content-Encoding: br` instead of
+                        │     │                   `Content-Encoding: gzip`) to circumvent the protection
+                        │     │                   entirely.
+                        │     │                   - **Both HTTP/1.1 and HTTP/2**: The vulnerability exists in
+                        │     │                   both `HttpContentDecompressor` (HTTP/1.1) and
+                        │     │                   `DelegatingDecompressorFrameListener` (HTTP/2).
+                        │     │                   ## Recommended Fix
+                        │     │                   Pass `maxAllocation` to all decoder constructors. For
+                        │     │                   `BrotliDecoder`, which currently has no `maxAllocation`
+                        │     │                   support, add the parameter:
+                        │     │                   **HttpContentDecompressor.java** — pass maxAllocation to all
+                        │     │                   decoders:
+                        │     │                   // Line 120: BrotliDecoder — add maxAllocation support
+                        │     │                   .handlers(new BrotliDecoder(maxAllocation))
+                        │     │                   // Line 129: SnappyFrameDecoder — add maxAllocation support
+                        │     │                   .handlers(new SnappyFrameDecoder(maxAllocation))
+                        │     │                   // Line 138: ZstdDecoder — forward the configured
+                        │     │                   .handlers(new ZstdDecoder(maxAllocation))
+                        │     │                   **DelegatingDecompressorFrameListener.java** — same fix at
+                        │     │                   lines 188-210.
+                        │     │                   **BrotliDecoder** — add `maxAllocation` parameter with the
+                        │     │                   same semantics as `ZlibDecoder.prepareDecompressBuffer()`:
+                        │     │                   set buffer maxCapacity and throw `DecompressionException`
+                        │     │                   when the total decompressed output exceeds the limit.
+                        │     │                   **SnappyFrameDecoder** — add `maxAllocation` parameter with
+                        │     │                   equivalent enforcement.
+                        │     │                   **ZstdDecoder** — ensure that when `maxAllocation` is set,
+                        │     │                   total output across all buffers is bounded (not just
+                        │     │                   per-buffer allocation size). 
+                        │     ├ Severity        : HIGH 
+                        │     ├ VendorSeverity   ─ ghsa: 3 
+                        │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
+                        │     │                         ╰ V3Score : 7.5 
+                        │     ╰ References       ╭ [0]: https://github.com/netty/netty 
+                        │                        ╰ [1]: https://github.com/netty/netty/security/advisories/GHSA
+                        │                               -f6hv-jmp6-3vwv 
+                        ╰ [9] ╭ VulnerabilityID : CVE-2026-42578 
                               ├ VendorIDs        ─ [0]: GHSA-45q3-82m4-75jr 
                               ├ PkgName         : io.netty:netty-handler-proxy 
                               ├ PkgPath         : openaf/Kube/netty-handler-proxy-4.2.12.Final.jar 
