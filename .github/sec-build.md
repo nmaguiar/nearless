@@ -179,58 +179,166 @@
 │                       │     │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/03/2 
 │                       │     ├ PublishedDate   : 2026-04-10T09:16:25.45Z 
 │                       │     ╰ LastModifiedDate: 2026-04-24T18:01:13.913Z 
-│                       ├ [4] ╭ VulnerabilityID : CVE-2026-22184 
-│                       │     ├ PkgID           : zlib@1.3.1-r2 
-│                       │     ├ PkgName         : zlib 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.24.0
-│                       │     │                  │       _alpha20260127 
-│                       │     │                  ╰ UID : c6f558cca1be2488 
-│                       │     ├ InstalledVersion: 1.3.1-r2 
-│                       │     ├ FixedVersion    : 1.3.2-r0 
+│                       ├ [4] ╭ VulnerabilityID : CVE-2026-42945 
+│                       │     ├ PkgID           : nginx@1.28.3-r0 
+│                       │     ├ PkgName         : nginx 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/nginx@1.28.3-r0?arch=x86_64&distro=3.24
+│                       │     │                  │       .0_alpha20260127 
+│                       │     │                  ╰ UID : 9293d8a31988fdb3 
+│                       │     ├ InstalledVersion: 1.28.3-r0 
+│                       │     ├ FixedVersion    : 1.30.1-r0 
 │                       │     ├ Status          : fixed 
 │                       │     ├ Layer            ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e9
 │                       │     │                  │         4edd8ebe468fc57d07e 
 │                       │     │                  ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae
 │                       │     │                            0961a5292bd158a4dcf 
-│                       │     ├ SeveritySource  : nvd 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-22184 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42945 
 │                       │     ├ DataSource       ╭ ID  : alpine 
 │                       │     │                  ├ Name: Alpine Secdb 
 │                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Fingerprint     : sha256:25c689b2892583b8e6ecdd227ec2287c6e124233effff4831ad1c0
-│                       │     │                   45e7206502 
-│                       │     ├ Title           : zlib: zlib: Arbitrary code execution via buffer overflow in
-│                       │     │                   untgz utility 
-│                       │     ├ Description     : zlib versions up to and including 1.3.1.2 include a global
-│                       │     │                   buffer overflow in the untgz utility located under
-│                       │     │                   contrib/untgz. The vulnerability is limited to the standalone
-│                       │     │                    demonstration utility and does not affect the core zlib
-│                       │     │                   compression library. The flaw occurs when a user executes the
-│                       │     │                    untgz command with an excessively long archive name supplied
-│                       │     │                    via the command line, leading to an out-of-bounds write in a
-│                       │     │                    fixed-size global buffer. 
+│                       │     ├ Fingerprint     : sha256:517d2e2da71f8e17f83904c81bb9d0f81d7b311355f58f74c08b18
+│                       │     │                   4dbb93fd09 
+│                       │     ├ Title           : nginx: NGINX: Arbitrary Code Execution Vulnerability 
+│                       │     ├ Description     : NGINX Plus and NGINX Open Source have a vulnerability in the
+│                       │     │                   ngx_http_rewrite_module module. This vulnerability exists
+│                       │     │                   when the rewrite directive is followed by a rewrite, if, or
+│                       │     │                   set directive and an unnamed Perl-Compatible Regular
+│                       │     │                   Expression (PCRE) capture (for example, $1, $2) with a
+│                       │     │                   replacement string that includes a question mark (?). An
+│                       │     │                   unauthenticated attacker along with conditions beyond its
+│                       │     │                   control can exploit this vulnerability by sending crafted
+│                       │     │                   HTTP requests. This may cause a heap buffer overflow in the
+│                       │     │                   NGINX worker process leading to a restart. Additionally, for
+│                       │     │                   systems with Address Space Layout Randomization (ASLR )
+│                       │     │                   disabled, code execution is possible.  Note: Software
+│                       │     │                   versions which have reached End of Technical Support (EoTS)
+│                       │     │                   are not evaluated. 
 │                       │     ├ Severity        : HIGH 
-│                       │     ├ CweIDs           ─ [0]: CWE-787 
-│                       │     ├ VendorSeverity   ╭ nvd   : 3 
-│                       │     │                  ╰ redhat: 3 
-│                       │     ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/
-│                       │     │                  │        │           A:H 
-│                       │     │                  │        ╰ V3Score : 7.8 
-│                       │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/
+│                       │     ├ CweIDs           ─ [0]: CWE-122 
+│                       │     ├ VendorSeverity   ╭ redhat: 4 
+│                       │     │                  ╰ ubuntu: 3 
+│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/
 │                       │     │                           │           A:H 
-│                       │     │                           ╰ V3Score : 8.6 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-22184 
-│                       │     │                  ├ [1]: https://github.com/madler/zlib 
-│                       │     │                  ├ [2]: https://github.com/madler/zlib/issues/1142 
-│                       │     │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-22184 
-│                       │     │                  ├ [4]: https://seclists.org/fulldisclosure/2026/Jan/3 
-│                       │     │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2026-22184 
-│                       │     │                  ├ [6]: https://www.vulncheck.com/advisories/zlib-untgz-global-
-│                       │     │                  │      buffer-overflow-in-tgzfname 
-│                       │     │                  ╰ [7]: https://zlib.net/ 
-│                       │     ├ PublishedDate   : 2026-01-07T21:16:01.563Z 
-│                       │     ╰ LastModifiedDate: 2026-03-18T16:26:31.14Z 
-│                       ╰ [5] ╭ VulnerabilityID : CVE-2026-27171 
+│                       │     │                           ╰ V3Score : 8.1 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-42945 
+│                       │     │                  ├ [1]: https://depthfirst.com/nginx-rift 
+│                       │     │                  ├ [2]: https://depthfirst.com/research/nginx-rift-achieving-ng
+│                       │     │                  │      inx-rce-via-an-18-year-old-vulnerability 
+│                       │     │                  ├ [3]: https://github.com/DepthFirstDisclosures/Nginx-Rift 
+│                       │     │                  ├ [4]: https://my.f5.com/manage/s/article/K000161019 
+│                       │     │                  ├ [5]: https://nginx.org/en/security_advisories.html 
+│                       │     │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-42945 
+│                       │     │                  ├ [7]: https://ubuntu.com/security/notices/USN-8271-1 
+│                       │     │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2026-42945 
+│                       │     │                  ╰ [9]: https://www.openwall.com/lists/oss-security/2026/05/13/7 
+│                       │     ├ PublishedDate   : 2026-05-13T16:16:50.19Z 
+│                       │     ╰ LastModifiedDate: 2026-05-14T20:17:05.413Z 
+│                       ├ [5] ╭ VulnerabilityID : CVE-2026-40460 
+│                       │     ├ PkgID           : nginx@1.28.3-r0 
+│                       │     ├ PkgName         : nginx 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/nginx@1.28.3-r0?arch=x86_64&distro=3.24
+│                       │     │                  │       .0_alpha20260127 
+│                       │     │                  ╰ UID : 9293d8a31988fdb3 
+│                       │     ├ InstalledVersion: 1.28.3-r0 
+│                       │     ├ FixedVersion    : 1.30.1-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e9
+│                       │     │                  │         4edd8ebe468fc57d07e 
+│                       │     │                  ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae
+│                       │     │                            0961a5292bd158a4dcf 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-40460 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Fingerprint     : sha256:5c911c3453c3a2040f72f07c6005c6f10bec2ab3e09b10f2fe609b
+│                       │     │                   559f56ca47 
+│                       │     ├ Title           : When NGINX Plus or NGINX Open Source are configured to use
+│                       │     │                   the HTTP/3  ... 
+│                       │     ├ Description     : When NGINX Plus or NGINX Open Source are configured to use
+│                       │     │                   the HTTP/3 QUIC module, an attacker may be able to spoof
+│                       │     │                   their source IP address allowing for bypass of authorization
+│                       │     │                   or bypass of rate limiting.  Note: Software versions which
+│                       │     │                   have reached End of Technical Support (EoTS) are not
+│                       │     │                   evaluated. 
+│                       │     ├ Severity        : UNKNOWN 
+│                       │     ├ CweIDs           ─ [0]: CWE-290 
+│                       │     ├ References       ─ [0]: https://my.f5.com/manage/s/article/K000161068 
+│                       │     ├ PublishedDate   : 2026-05-13T16:16:42.823Z 
+│                       │     ╰ LastModifiedDate: 2026-05-13T16:27:11.127Z 
+│                       ├ [6] ╭ VulnerabilityID : CVE-2026-42934 
+│                       │     ├ PkgID           : nginx@1.28.3-r0 
+│                       │     ├ PkgName         : nginx 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/nginx@1.28.3-r0?arch=x86_64&distro=3.24
+│                       │     │                  │       .0_alpha20260127 
+│                       │     │                  ╰ UID : 9293d8a31988fdb3 
+│                       │     ├ InstalledVersion: 1.28.3-r0 
+│                       │     ├ FixedVersion    : 1.30.1-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e9
+│                       │     │                  │         4edd8ebe468fc57d07e 
+│                       │     │                  ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae
+│                       │     │                            0961a5292bd158a4dcf 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42934 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Fingerprint     : sha256:cd0c2649f8e75171003077121e3ee905a77e5549eaca18f59adc15
+│                       │     │                   d99153dd26 
+│                       │     ├ Title           : NGINX Plus and NGINX Open Source have a vulnerability in the
+│                       │     │                   ngx_http_ ... 
+│                       │     ├ Description     : NGINX Plus and NGINX Open Source have a vulnerability in the
+│                       │     │                   ngx_http_charset_module module. When charset, source_charset,
+│                       │     │                    and charset_map and proxy_pass with disabled buffering
+│                       │     │                   ("off") directives are configured, unauthenticated attackers
+│                       │     │                   can send requests that with conditions beyond the attackers'
+│                       │     │                   control to cause a heap buffer over-read in the NGINX worker
+│                       │     │                   process, leading to limited disclosure of memory or a
+│                       │     │                   restart.
+│                       │     │                   
+│                       │     │                    Note: Software versions which have reached End of Technical
+│                       │     │                   Support (EoTS) are not evaluated. 
+│                       │     ├ Severity        : UNKNOWN 
+│                       │     ├ CweIDs           ─ [0]: CWE-125 
+│                       │     ├ References       ─ [0]: https://my.f5.com/manage/s/article/K000161028 
+│                       │     ├ PublishedDate   : 2026-05-13T16:16:49.91Z 
+│                       │     ╰ LastModifiedDate: 2026-05-13T16:27:11.127Z 
+│                       ├ [7] ╭ VulnerabilityID : CVE-2026-42946 
+│                       │     ├ PkgID           : nginx@1.28.3-r0 
+│                       │     ├ PkgName         : nginx 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/nginx@1.28.3-r0?arch=x86_64&distro=3.24
+│                       │     │                  │       .0_alpha20260127 
+│                       │     │                  ╰ UID : 9293d8a31988fdb3 
+│                       │     ├ InstalledVersion: 1.28.3-r0 
+│                       │     ├ FixedVersion    : 1.30.1-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e9
+│                       │     │                  │         4edd8ebe468fc57d07e 
+│                       │     │                  ╰ DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae
+│                       │     │                            0961a5292bd158a4dcf 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42946 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Fingerprint     : sha256:e81e2c8866b9f8c8f7e448fceb27554fc506958fbcbd5d27be07ce
+│                       │     │                   1f8e9492b1 
+│                       │     ├ Title           : A vulnerability exists in the ngx_http_scgi_moduleand
+│                       │     │                   ngx_http_uwsgi_m ... 
+│                       │     ├ Description     : A vulnerability exists in the ngx_http_scgi_module and
+│                       │     │                   ngx_http_uwsgi_module modules that may result in excessive
+│                       │     │                   memory allocation or an over-read of data. When scgi_pass or
+│                       │     │                   uwsgi_pass is configured, an unauthenticated attacker with
+│                       │     │                   man-in-the-middle (MITM) ability to control responses from an
+│                       │     │                    upstream server may be able to read the memory of the NGINX
+│                       │     │                   worker process or restart it.  Note: Software versions which
+│                       │     │                   have reached End of Technical Support (EoTS) are not
+│                       │     │                   evaluated. 
+│                       │     ├ Severity        : UNKNOWN 
+│                       │     ├ CweIDs           ╭ [0]: CWE-789 
+│                       │     │                  ╰ [1]: CWE-823 
+│                       │     ├ References       ─ [0]: https://my.f5.com/manage/s/article/K000161027 
+│                       │     ├ PublishedDate   : 2026-05-13T16:16:50.34Z 
+│                       │     ╰ LastModifiedDate: 2026-05-13T16:27:11.127Z 
+│                       ╰ [8] ╭ VulnerabilityID : CVE-2026-27171 
 │                             ├ PkgID           : zlib@1.3.1-r2 
 │                             ├ PkgName         : zlib 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.24.0
@@ -314,7 +422,8 @@
                         │      │                          cosystem%3Amaven 
                         │      ├ Fingerprint     : sha256:fb9f5bb3dfe4fea3cc45c30725e8119bb9fbec87a5322eb4f87dd
                         │      │                   58dc7c75cf7 
-                        │      ├ Title           : Netty Lz4FrameDecoder is vulnerable to resource exhaustion  
+                        │      ├ Title           : Netty is an asynchronous, event-driven network application
+                        │      │                   framework.  ... 
                         │      ├ Description     : Netty is an asynchronous, event-driven network application
                         │      │                   framework. Prior to 4.2.13.Final and 4.1.133.Final,
                         │      │                   Lz4FrameDecoder allocates a ByteBuf of size
@@ -330,10 +439,11 @@
                         │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
                         │      │                         ╰ V3Score : 7.5 
                         │      ├ References       ╭ [0]: https://github.com/netty/netty 
-                        │      │                  ╰ [1]: https://github.com/netty/netty/security/advisories/GHS
-                        │      │                         A-mj4r-2hfc-f8p6 
+                        │      │                  ├ [1]: https://github.com/netty/netty/security/advisories/GHS
+                        │      │                  │      A-mj4r-2hfc-f8p6 
+                        │      │                  ╰ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-42583 
                         │      ├ PublishedDate   : 2026-05-13T19:17:23.903Z 
-                        │      ╰ LastModifiedDate: 2026-05-13T19:17:23.903Z 
+                        │      ╰ LastModifiedDate: 2026-05-14T16:26:50.047Z 
                         ├ [1]  ╭ VulnerabilityID : CVE-2026-42579 
                         │      ├ VendorIDs        ─ [0]: GHSA-cm33-6792-r9fm 
                         │      ├ PkgName         : io.netty:netty-codec-dns 
@@ -355,8 +465,8 @@
                         │      │                          cosystem%3Amaven 
                         │      ├ Fingerprint     : sha256:a7af8a9bdc0094fe18e741cbcedf4f86ec31b8beb0fc87b167f60
                         │      │                   8033804980d 
-                        │      ├ Title           : Netty has a DNS Codec Input Validation Bypass (Encoder +
-                        │      │                   Decoder) 
+                        │      ├ Title           : Netty is an asynchronous, event-driven network application
+                        │      │                   framework.  ... 
                         │      ├ Description     : Netty is an asynchronous, event-driven network application
                         │      │                   framework. Prior to 4.2.13.Final and 4.1.133.Final, Netty's
                         │      │                   DNS codec does not enforce RFC 1035 domain name constraints
@@ -375,10 +485,11 @@
                         │      ├ References       ╭ [0]: https://github.com/netty/netty 
                         │      │                  ├ [1]: https://github.com/netty/netty/security/advisories/GHS
                         │      │                  │      A-cm33-6792-r9fm 
-                        │      │                  ├ [2]: https://tools.ietf.org/html/rfc1035#section-2.3.4 
-                        │      │                  ╰ [3]: https://tools.ietf.org/html/rfc1035#section-4.1.4 
+                        │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-42579 
+                        │      │                  ├ [3]: https://tools.ietf.org/html/rfc1035#section-2.3.4 
+                        │      │                  ╰ [4]: https://tools.ietf.org/html/rfc1035#section-4.1.4 
                         │      ├ PublishedDate   : 2026-05-13T19:17:23.353Z 
-                        │      ╰ LastModifiedDate: 2026-05-13T19:17:23.353Z 
+                        │      ╰ LastModifiedDate: 2026-05-14T16:26:50.047Z 
                         ├ [2]  ╭ VulnerabilityID : CVE-2026-42584 
                         │      ├ VendorIDs        ─ [0]: GHSA-57rv-r2g8-2cj3 
                         │      ├ PkgName         : io.netty:netty-codec-http 
@@ -400,7 +511,8 @@
                         │      │                          cosystem%3Amaven 
                         │      ├ Fingerprint     : sha256:138c25aeebd79616619b94270d69dfd09bb9ef5e576cded2f5f9d
                         │      │                   83c459589cc 
-                        │      ├ Title           : Netty has HttpClientCodec response desynchronization 
+                        │      ├ Title           : Netty is an asynchronous, event-driven network application
+                        │      │                   framework.  ... 
                         │      ├ Description     : Netty is an asynchronous, event-driven network application
                         │      │                   framework. Prior to 4.2.13.Final and 4.1.133.Final,
                         │      │                   HttpClientCodec pairs each inbound response with an outbound
@@ -418,10 +530,11 @@
                         │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L 
                         │      │                         ╰ V3Score : 7.3 
                         │      ├ References       ╭ [0]: https://github.com/netty/netty 
-                        │      │                  ╰ [1]: https://github.com/netty/netty/security/advisories/GHS
-                        │      │                         A-57rv-r2g8-2cj3 
+                        │      │                  ├ [1]: https://github.com/netty/netty/security/advisories/GHS
+                        │      │                  │      A-57rv-r2g8-2cj3 
+                        │      │                  ╰ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-42584 
                         │      ├ PublishedDate   : 2026-05-13T19:17:24.043Z 
-                        │      ╰ LastModifiedDate: 2026-05-13T19:17:24.043Z 
+                        │      ╰ LastModifiedDate: 2026-05-14T16:26:50.047Z 
                         ├ [3]  ╭ VulnerabilityID : CVE-2026-42587 
                         │      ├ VendorIDs        ─ [0]: GHSA-f6hv-jmp6-3vwv 
                         │      ├ PkgName         : io.netty:netty-codec-http 
@@ -443,9 +556,8 @@
                         │      │                          cosystem%3Amaven 
                         │      ├ Fingerprint     : sha256:ef9815ae7a94903bd25f8c10fe8311c41be84c2034ee55de81513
                         │      │                   911ed991da4 
-                        │      ├ Title           : Netty: HttpContentDecompressor maxAllocation bypass when
-                        │      │                   Content-Encoding set to br/zstd/snappy leads to
-                        │      │                   decompression bomb DoS 
+                        │      ├ Title           : Netty is an asynchronous, event-driven network application
+                        │      │                   framework.  ... 
                         │      ├ Description     : Netty is an asynchronous, event-driven network application
                         │      │                   framework. Prior to 4.2.13.Final and 4.1.133.Final,
                         │      │                   HttpContentDecompressor accepts a maxAllocation parameter to
@@ -466,10 +578,11 @@
                         │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
                         │      │                         ╰ V3Score : 7.5 
                         │      ├ References       ╭ [0]: https://github.com/netty/netty 
-                        │      │                  ╰ [1]: https://github.com/netty/netty/security/advisories/GHS
-                        │      │                         A-f6hv-jmp6-3vwv 
+                        │      │                  ├ [1]: https://github.com/netty/netty/security/advisories/GHS
+                        │      │                  │      A-f6hv-jmp6-3vwv 
+                        │      │                  ╰ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-42587 
                         │      ├ PublishedDate   : 2026-05-13T19:17:24.46Z 
-                        │      ╰ LastModifiedDate: 2026-05-13T19:17:24.46Z 
+                        │      ╰ LastModifiedDate: 2026-05-14T16:21:02.93Z 
                         ├ [4]  ╭ VulnerabilityID : CVE-2026-41417 
                         │      ├ VendorIDs        ─ [0]: GHSA-v8h7-rr48-vmmv 
                         │      ├ PkgName         : io.netty:netty-codec-http 
@@ -539,8 +652,8 @@
                         │      │                          cosystem%3Amaven 
                         │      ├ Fingerprint     : sha256:4a1f7648faaae5f2fe2b199fcefea9c71ca19cbe14ae6a3cff79b
                         │      │                   56226947af6 
-                        │      ├ Title           : Netty vulnerable to HTTP Request Smuggling due to incorrect
-                        │      │                   chunk size parsing 
+                        │      ├ Title           : Netty is an asynchronous, event-driven network application
+                        │      │                   framework.  ... 
                         │      ├ Description     : Netty is an asynchronous, event-driven network application
                         │      │                   framework. Prior to 4.2.13.Final and 4.1.133.Final, Netty's
                         │      │                   chunk size parser silently overflows int, enabling request
@@ -553,10 +666,11 @@
                         │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L 
                         │      │                         ╰ V3Score : 6.5 
                         │      ├ References       ╭ [0]: https://github.com/netty/netty 
-                        │      │                  ╰ [1]: https://github.com/netty/netty/security/advisories/GHS
-                        │      │                         A-m4cv-j2px-7723 
+                        │      │                  ├ [1]: https://github.com/netty/netty/security/advisories/GHS
+                        │      │                  │      A-m4cv-j2px-7723 
+                        │      │                  ╰ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-42580 
                         │      ├ PublishedDate   : 2026-05-13T19:17:23.49Z 
-                        │      ╰ LastModifiedDate: 2026-05-13T19:17:23.49Z 
+                        │      ╰ LastModifiedDate: 2026-05-14T19:16:35.967Z 
                         ├ [6]  ╭ VulnerabilityID : CVE-2026-42581 
                         │      ├ VendorIDs        ─ [0]: GHSA-xxqh-mfjm-7mv9 
                         │      ├ PkgName         : io.netty:netty-codec-http 
@@ -578,8 +692,8 @@
                         │      │                          cosystem%3Amaven 
                         │      ├ Fingerprint     : sha256:e06e8aca9203849f5db02e2419dd256a6f1f2ce2ba486922754db
                         │      │                   f2c20029b19 
-                        │      ├ Title           : Netty HTTP/1.0 TE+CL Coexistence Bypasses Smuggling
-                        │      │                   Sanitization 
+                        │      ├ Title           : Netty is an asynchronous, event-driven network application
+                        │      │                   framework.  ... 
                         │      ├ Description     : Netty is an asynchronous, event-driven network application
                         │      │                   framework. Prior to 4.2.13.Final and 4.1.133.Final,
                         │      │                   HttpObjectDecoder strips a conflicting Content-Length header
@@ -598,10 +712,11 @@
                         │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:L/A:N 
                         │      │                         ╰ V3Score : 5.8 
                         │      ├ References       ╭ [0]: https://github.com/netty/netty 
-                        │      │                  ╰ [1]: https://github.com/netty/netty/security/advisories/GHS
-                        │      │                         A-xxqh-mfjm-7mv9 
+                        │      │                  ├ [1]: https://github.com/netty/netty/security/advisories/GHS
+                        │      │                  │      A-xxqh-mfjm-7mv9 
+                        │      │                  ╰ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-42581 
                         │      ├ PublishedDate   : 2026-05-13T19:17:23.627Z 
-                        │      ╰ LastModifiedDate: 2026-05-13T19:17:23.627Z 
+                        │      ╰ LastModifiedDate: 2026-05-14T16:26:50.047Z 
                         ├ [7]  ╭ VulnerabilityID : CVE-2026-42585 
                         │      ├ VendorIDs        ─ [0]: GHSA-38f8-5428-x5cv 
                         │      ├ PkgName         : io.netty:netty-codec-http 
@@ -623,8 +738,8 @@
                         │      │                          cosystem%3Amaven 
                         │      ├ Fingerprint     : sha256:7419c9f0809b4d7e52fd6bbce26d4f255f44b83b5136f21b64c63
                         │      │                   ef1e5207783 
-                        │      ├ Title           : Netty vulnerable to HTTP Request Smuggling due to malformed
-                        │      │                   Transfer-Encoding 
+                        │      ├ Title           : Netty is an asynchronous, event-driven network application
+                        │      │                   framework.  ... 
                         │      ├ Description     : Netty is an asynchronous, event-driven network application
                         │      │                   framework. Prior to 4.2.13.Final and 4.1.133.Final, Netty
                         │      │                   incorrectly parses malformed Transfer-Encoding, enabling
@@ -638,10 +753,11 @@
                         │      ├ References       ╭ [0]: https://datatracker.ietf.org/doc/html/rfc9112#name-mes
                         │      │                  │      sage-body-length 
                         │      │                  ├ [1]: https://github.com/netty/netty 
-                        │      │                  ╰ [2]: https://github.com/netty/netty/security/advisories/GHS
-                        │      │                         A-38f8-5428-x5cv 
+                        │      │                  ├ [2]: https://github.com/netty/netty/security/advisories/GHS
+                        │      │                  │      A-38f8-5428-x5cv 
+                        │      │                  ╰ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-42585 
                         │      ├ PublishedDate   : 2026-05-13T19:17:24.187Z 
-                        │      ╰ LastModifiedDate: 2026-05-13T19:17:24.187Z 
+                        │      ╰ LastModifiedDate: 2026-05-14T16:26:50.047Z 
                         ├ [8]  ╭ VulnerabilityID : CVE-2026-42587 
                         │      ├ VendorIDs        ─ [0]: GHSA-f6hv-jmp6-3vwv 
                         │      ├ PkgName         : io.netty:netty-codec-http2 
@@ -663,9 +779,8 @@
                         │      │                          cosystem%3Amaven 
                         │      ├ Fingerprint     : sha256:ef9815ae7a94903bd25f8c10fe8311c41be84c2034ee55de81513
                         │      │                   911ed991da4 
-                        │      ├ Title           : Netty: HttpContentDecompressor maxAllocation bypass when
-                        │      │                   Content-Encoding set to br/zstd/snappy leads to
-                        │      │                   decompression bomb DoS 
+                        │      ├ Title           : Netty is an asynchronous, event-driven network application
+                        │      │                   framework.  ... 
                         │      ├ Description     : Netty is an asynchronous, event-driven network application
                         │      │                   framework. Prior to 4.2.13.Final and 4.1.133.Final,
                         │      │                   HttpContentDecompressor accepts a maxAllocation parameter to
@@ -686,10 +801,11 @@
                         │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
                         │      │                         ╰ V3Score : 7.5 
                         │      ├ References       ╭ [0]: https://github.com/netty/netty 
-                        │      │                  ╰ [1]: https://github.com/netty/netty/security/advisories/GHS
-                        │      │                         A-f6hv-jmp6-3vwv 
+                        │      │                  ├ [1]: https://github.com/netty/netty/security/advisories/GHS
+                        │      │                  │      A-f6hv-jmp6-3vwv 
+                        │      │                  ╰ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-42587 
                         │      ├ PublishedDate   : 2026-05-13T19:17:24.46Z 
-                        │      ╰ LastModifiedDate: 2026-05-13T19:17:24.46Z 
+                        │      ╰ LastModifiedDate: 2026-05-14T16:21:02.93Z 
                         ├ [9]  ╭ VulnerabilityID : CVE-2026-42578 
                         │      ├ VendorIDs        ─ [0]: GHSA-45q3-82m4-75jr 
                         │      ├ PkgName         : io.netty:netty-handler-proxy 
@@ -711,8 +827,8 @@
                         │      │                          cosystem%3Amaven 
                         │      ├ Fingerprint     : sha256:abd51ae1d37b71a2b0d1e0382a01595512c746d45ef85bfe84b3a
                         │      │                   488cbcb55da 
-                        │      ├ Title           : Netty has HTTP Header Injection via HttpProxyHandler
-                        │      │                   Disabled Validation (Incomplete Fix CVE-2025-67735) 
+                        │      ├ Title           : Netty is an asynchronous, event-driven network application
+                        │      │                   framework.  ... 
                         │      ├ Description     : Netty is an asynchronous, event-driven network application
                         │      │                   framework. Prior to 4.2.13.Final and 4.1.133.Final, Netty's
                         │      │                   HttpProxyHandler constructs HTTP CONNECT requests with
@@ -727,12 +843,16 @@
                         │      ├ Severity        : LOW 
                         │      ├ CweIDs           ─ [0]: CWE-113 
                         │      ├ VendorSeverity   ─ ghsa: 1 
+                        │      ├ CVSS             ─ ghsa ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI
+                        │      │                         │            :L/VA:N/SC:N/SI:N/SA:N/E:P 
+                        │      │                         ╰ V40Score : 2.9 
                         │      ├ References       ╭ [0]: https://github.com/advisories/GHSA-84h7-rjj3-6jx4 
                         │      │                  ├ [1]: https://github.com/netty/netty 
-                        │      │                  ╰ [2]: https://github.com/netty/netty/security/advisories/GHS
-                        │      │                         A-45q3-82m4-75jr 
+                        │      │                  ├ [2]: https://github.com/netty/netty/security/advisories/GHS
+                        │      │                  │      A-45q3-82m4-75jr 
+                        │      │                  ╰ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-42578 
                         │      ├ PublishedDate   : 2026-05-13T19:17:23.21Z 
-                        │      ╰ LastModifiedDate: 2026-05-13T19:17:23.21Z 
+                        │      ╰ LastModifiedDate: 2026-05-14T16:26:50.047Z 
                         ╰ [10] ╭ VulnerabilityID : CVE-2026-6860 
                                ├ VendorIDs        ─ [0]: GHSA-3g76-f9xq-8vp6 
                                ├ PkgName         : io.vertx:vertx-core 
