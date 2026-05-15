@@ -163,51 +163,131 @@
     - https://www.openwall.com/lists/oss-security/2026/04/03/2
     PublishedDate: '2026-04-10T09:16:25.45Z'
     LastModifiedDate: '2026-04-24T18:01:13.913Z'
-  - VulnerabilityID: CVE-2026-22184
-    PkgID: zlib@1.3.1-r2
-    PkgName: zlib
+  - VulnerabilityID: CVE-2026-42945
+    PkgID: nginx@1.28.3-r0
+    PkgName: nginx
     PkgIdentifier:
-      PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.24.0_alpha20260127
-      UID: c6f558cca1be2488
-    InstalledVersion: 1.3.1-r2
-    FixedVersion: 1.3.2-r0
+      PURL: pkg:apk/alpine/nginx@1.28.3-r0?arch=x86_64&distro=3.24.0_alpha20260127
+      UID: 9293d8a31988fdb3
+    InstalledVersion: 1.28.3-r0
+    FixedVersion: 1.30.1-r0
     Status: fixed
     Layer:
       Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd8ebe468fc57d07e
       DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961a5292bd158a4dcf
-    SeveritySource: nvd
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-22184
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-42945
     DataSource:
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:25c689b2892583b8e6ecdd227ec2287c6e124233effff4831ad1c045e7206502
-    Title: 'zlib: zlib: Arbitrary code execution via buffer overflow in untgz utility'
-    Description: zlib versions up to and including 1.3.1.2 include a global buffer overflow in the untgz utility located under contrib/untgz. The vulnerability is limited to the standalone demonstration utility and does not affect the core zlib compression library. The flaw occurs when a user executes the untgz command with an excessively long archive name supplied via the command line, leading to an out-of-bounds write in a fixed-size global buffer.
+    Fingerprint: sha256:517d2e2da71f8e17f83904c81bb9d0f81d7b311355f58f74c08b184dbb93fd09
+    Title: 'nginx: NGINX: Arbitrary Code Execution Vulnerability'
+    Description: "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_rewrite_module\_module. This vulnerability exists when the rewrite\_directive is followed by a rewrite, if, or set\_directive and an unnamed Perl-Compatible Regular Expression (PCRE) capture (for example, $1, $2) with a replacement string that includes a question mark (?). An unauthenticated attacker along with conditions beyond its control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, for systems with Address Space Layout Randomization (ASLR ) disabled, code execution is possible.\_ Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
     Severity: HIGH
     CweIDs:
-    - CWE-787
+    - CWE-122
     VendorSeverity:
-      nvd: 3
-      redhat: 3
+      redhat: 4
+      ubuntu: 3
     CVSS:
-      nvd:
-        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
-        V3Score: 7.8
       redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H
-        V3Score: 8.6
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 8.1
     References:
-    - https://access.redhat.com/security/cve/CVE-2026-22184
-    - https://github.com/madler/zlib
-    - https://github.com/madler/zlib/issues/1142
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-22184
-    - https://seclists.org/fulldisclosure/2026/Jan/3
-    - https://www.cve.org/CVERecord?id=CVE-2026-22184
-    - https://www.vulncheck.com/advisories/zlib-untgz-global-buffer-overflow-in-tgzfname
-    - https://zlib.net/
-    PublishedDate: '2026-01-07T21:16:01.563Z'
-    LastModifiedDate: '2026-03-18T16:26:31.14Z'
+    - https://access.redhat.com/security/cve/CVE-2026-42945
+    - https://depthfirst.com/nginx-rift
+    - https://depthfirst.com/research/nginx-rift-achieving-nginx-rce-via-an-18-year-old-vulnerability
+    - https://github.com/DepthFirstDisclosures/Nginx-Rift
+    - https://my.f5.com/manage/s/article/K000161019
+    - https://nginx.org/en/security_advisories.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42945
+    - https://ubuntu.com/security/notices/USN-8271-1
+    - https://www.cve.org/CVERecord?id=CVE-2026-42945
+    - https://www.openwall.com/lists/oss-security/2026/05/13/7
+    PublishedDate: '2026-05-13T16:16:50.19Z'
+    LastModifiedDate: '2026-05-14T20:17:05.413Z'
+  - VulnerabilityID: CVE-2026-40460
+    PkgID: nginx@1.28.3-r0
+    PkgName: nginx
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/nginx@1.28.3-r0?arch=x86_64&distro=3.24.0_alpha20260127
+      UID: 9293d8a31988fdb3
+    InstalledVersion: 1.28.3-r0
+    FixedVersion: 1.30.1-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd8ebe468fc57d07e
+      DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961a5292bd158a4dcf
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-40460
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:5c911c3453c3a2040f72f07c6005c6f10bec2ab3e09b10f2fe609b559f56ca47
+    Title: When NGINX Plus or NGINX Open Source are configured to use the HTTP/3  ...
+    Description: "When NGINX Plus or NGINX Open Source are configured to use the HTTP/3 QUIC\_module, an attacker may be able to spoof their source IP address allowing for bypass of authorization or bypass of rate limiting.\_\_Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    Severity: UNKNOWN
+    CweIDs:
+    - CWE-290
+    References:
+    - https://my.f5.com/manage/s/article/K000161068
+    PublishedDate: '2026-05-13T16:16:42.823Z'
+    LastModifiedDate: '2026-05-13T16:27:11.127Z'
+  - VulnerabilityID: CVE-2026-42934
+    PkgID: nginx@1.28.3-r0
+    PkgName: nginx
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/nginx@1.28.3-r0?arch=x86_64&distro=3.24.0_alpha20260127
+      UID: 9293d8a31988fdb3
+    InstalledVersion: 1.28.3-r0
+    FixedVersion: 1.30.1-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd8ebe468fc57d07e
+      DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961a5292bd158a4dcf
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-42934
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:cd0c2649f8e75171003077121e3ee905a77e5549eaca18f59adc15d99153dd26
+    Title: NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_ ...
+    Description: "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_charset_module module. When charset, source_charset, and charset_map\_and proxy_pass\_with disabled buffering (\"off\") directives are configured, unauthenticated attackers can send requests that with conditions beyond the attackers' control to cause a heap buffer over-read in the NGINX worker process, leading to limited disclosure of memory or a restart.\n\n\n\n\_Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    Severity: UNKNOWN
+    CweIDs:
+    - CWE-125
+    References:
+    - https://my.f5.com/manage/s/article/K000161028
+    PublishedDate: '2026-05-13T16:16:49.91Z'
+    LastModifiedDate: '2026-05-13T16:27:11.127Z'
+  - VulnerabilityID: CVE-2026-42946
+    PkgID: nginx@1.28.3-r0
+    PkgName: nginx
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/nginx@1.28.3-r0?arch=x86_64&distro=3.24.0_alpha20260127
+      UID: 9293d8a31988fdb3
+    InstalledVersion: 1.28.3-r0
+    FixedVersion: 1.30.1-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:09eee20797c3531a147e8b2a45e5c61c3e133a853a7e94edd8ebe468fc57d07e
+      DiffID: sha256:7fc40f8e5dd6a10ab0b80575a425ca401ef012582a2ae0961a5292bd158a4dcf
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-42946
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:e81e2c8866b9f8c8f7e448fceb27554fc506958fbcbd5d27be07ce1f8e9492b1
+    Title: A vulnerability exists in the ngx_http_scgi_moduleand ngx_http_uwsgi_m ...
+    Description: "A vulnerability exists in the ngx_http_scgi_module\_and ngx_http_uwsgi_module\_modules that may result in excessive memory allocation or an over-read of data. When scgi_pass\_or uwsgi_pass\_is configured, an unauthenticated attacker with man-in-the-middle (MITM) ability to control responses from an upstream server may be able to read the memory of the NGINX worker process or restart it.\_ Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    Severity: UNKNOWN
+    CweIDs:
+    - CWE-789
+    - CWE-823
+    References:
+    - https://my.f5.com/manage/s/article/K000161027
+    PublishedDate: '2026-05-13T16:16:50.34Z'
+    LastModifiedDate: '2026-05-13T16:27:11.127Z'
   - VulnerabilityID: CVE-2026-27171
     PkgID: zlib@1.3.1-r2
     PkgName: zlib
@@ -290,7 +370,7 @@
       Name: GitHub Security Advisory Maven
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
     Fingerprint: sha256:fb9f5bb3dfe4fea3cc45c30725e8119bb9fbec87a5322eb4f87dd58dc7c75cf7
-    Title: 'Netty Lz4FrameDecoder is vulnerable to resource exhaustion '
+    Title: Netty is an asynchronous, event-driven network application framework.  ...
     Description: Netty is an asynchronous, event-driven network application framework. Prior to 4.2.13.Final and 4.1.133.Final, Lz4FrameDecoder allocates a ByteBuf of size decompressedLength (up to 32 MB per block) before LZ4 runs. A peer only needs a 21-byte header plus compressedLength payload bytes - 22 bytes if compressedLength == 1 - to force that allocation. This vulnerability is fixed in 4.2.13.Final and 4.1.133.Final.
     Severity: HIGH
     CweIDs:
@@ -305,8 +385,9 @@
     References:
     - https://github.com/netty/netty
     - https://github.com/netty/netty/security/advisories/GHSA-mj4r-2hfc-f8p6
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42583
     PublishedDate: '2026-05-13T19:17:23.903Z'
-    LastModifiedDate: '2026-05-13T19:17:23.903Z'
+    LastModifiedDate: '2026-05-14T16:26:50.047Z'
   - VulnerabilityID: CVE-2026-42579
     VendorIDs:
     - GHSA-cm33-6792-r9fm
@@ -328,7 +409,7 @@
       Name: GitHub Security Advisory Maven
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
     Fingerprint: sha256:a7af8a9bdc0094fe18e741cbcedf4f86ec31b8beb0fc87b167f608033804980d
-    Title: Netty has a DNS Codec Input Validation Bypass (Encoder + Decoder)
+    Title: Netty is an asynchronous, event-driven network application framework.  ...
     Description: 'Netty is an asynchronous, event-driven network application framework. Prior to 4.2.13.Final and 4.1.133.Final, Netty''s DNS codec does not enforce RFC 1035 domain name constraints during either encoding or decoding. This creates a bidirectional attack surface: malicious DNS responses can exploit the decoder, and user-influenced hostnames can exploit the encoder. This vulnerability is fixed in 4.2.13.Final and 4.1.133.Final.'
     Severity: HIGH
     CweIDs:
@@ -344,10 +425,11 @@
     References:
     - https://github.com/netty/netty
     - https://github.com/netty/netty/security/advisories/GHSA-cm33-6792-r9fm
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42579
     - https://tools.ietf.org/html/rfc1035#section-2.3.4
     - https://tools.ietf.org/html/rfc1035#section-4.1.4
     PublishedDate: '2026-05-13T19:17:23.353Z'
-    LastModifiedDate: '2026-05-13T19:17:23.353Z'
+    LastModifiedDate: '2026-05-14T16:26:50.047Z'
   - VulnerabilityID: CVE-2026-42584
     VendorIDs:
     - GHSA-57rv-r2g8-2cj3
@@ -369,7 +451,7 @@
       Name: GitHub Security Advisory Maven
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
     Fingerprint: sha256:138c25aeebd79616619b94270d69dfd09bb9ef5e576cded2f5f9d83c459589cc
-    Title: Netty has HttpClientCodec response desynchronization
+    Title: Netty is an asynchronous, event-driven network application framework.  ...
     Description: Netty is an asynchronous, event-driven network application framework. Prior to 4.2.13.Final and 4.1.133.Final, HttpClientCodec pairs each inbound response with an outbound request by queue.poll() once per response, including for 1xx. If the client pipelines GET then HEAD and the server sends 103, then 200 with GET body, then 200 for HEAD, the queue pairs HEAD with the first 200. The HEAD rule then skips reading that message’s body, so the GET entity bytes stay on the stream and the following 200 is parsed from the wrong offset. This vulnerability is fixed in 4.2.13.Final and 4.1.133.Final.
     Severity: HIGH
     CweIDs:
@@ -383,8 +465,9 @@
     References:
     - https://github.com/netty/netty
     - https://github.com/netty/netty/security/advisories/GHSA-57rv-r2g8-2cj3
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42584
     PublishedDate: '2026-05-13T19:17:24.043Z'
-    LastModifiedDate: '2026-05-13T19:17:24.043Z'
+    LastModifiedDate: '2026-05-14T16:26:50.047Z'
   - VulnerabilityID: CVE-2026-42587
     VendorIDs:
     - GHSA-f6hv-jmp6-3vwv
@@ -406,7 +489,7 @@
       Name: GitHub Security Advisory Maven
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
     Fingerprint: sha256:ef9815ae7a94903bd25f8c10fe8311c41be84c2034ee55de81513911ed991da4
-    Title: 'Netty: HttpContentDecompressor maxAllocation bypass when Content-Encoding set to br/zstd/snappy leads to decompression bomb DoS'
+    Title: Netty is an asynchronous, event-driven network application framework.  ...
     Description: 'Netty is an asynchronous, event-driven network application framework. Prior to 4.2.13.Final and 4.1.133.Final, HttpContentDecompressor accepts a maxAllocation parameter to limit decompression buffer size and prevent decompression bomb attacks. This limit is correctly enforced for gzip and deflate encodings via ZlibDecoder, but is silently ignored when the content encoding is br (Brotli), zstd, or snappy. An attacker can bypass the configured decompression limit by sending a compressed payload with Content-Encoding: br instead of Content-Encoding: gzip, causing unbounded memory allocation and out-of-memory denial of service. The same vulnerability exists in DelegatingDecompressorFrameListener for HTTP/2 connections. This vulnerability is fixed in 4.2.13.Final and 4.1.133.Final.'
     Severity: HIGH
     CweIDs:
@@ -420,8 +503,9 @@
     References:
     - https://github.com/netty/netty
     - https://github.com/netty/netty/security/advisories/GHSA-f6hv-jmp6-3vwv
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42587
     PublishedDate: '2026-05-13T19:17:24.46Z'
-    LastModifiedDate: '2026-05-13T19:17:24.46Z'
+    LastModifiedDate: '2026-05-14T16:21:02.93Z'
   - VulnerabilityID: CVE-2026-41417
     VendorIDs:
     - GHSA-v8h7-rr48-vmmv
@@ -482,7 +566,7 @@
       Name: GitHub Security Advisory Maven
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
     Fingerprint: sha256:4a1f7648faaae5f2fe2b199fcefea9c71ca19cbe14ae6a3cff79b56226947af6
-    Title: Netty vulnerable to HTTP Request Smuggling due to incorrect chunk size parsing
+    Title: Netty is an asynchronous, event-driven network application framework.  ...
     Description: Netty is an asynchronous, event-driven network application framework. Prior to 4.2.13.Final and 4.1.133.Final, Netty's chunk size parser silently overflows int, enabling request smuggling attacks. This vulnerability is fixed in 4.2.13.Final and 4.1.133.Final.
     Severity: MEDIUM
     CweIDs:
@@ -497,8 +581,9 @@
     References:
     - https://github.com/netty/netty
     - https://github.com/netty/netty/security/advisories/GHSA-m4cv-j2px-7723
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42580
     PublishedDate: '2026-05-13T19:17:23.49Z'
-    LastModifiedDate: '2026-05-13T19:17:23.49Z'
+    LastModifiedDate: '2026-05-14T19:16:35.967Z'
   - VulnerabilityID: CVE-2026-42581
     VendorIDs:
     - GHSA-xxqh-mfjm-7mv9
@@ -520,7 +605,7 @@
       Name: GitHub Security Advisory Maven
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
     Fingerprint: sha256:e06e8aca9203849f5db02e2419dd256a6f1f2ce2ba486922754dbf2c20029b19
-    Title: Netty HTTP/1.0 TE+CL Coexistence Bypasses Smuggling Sanitization
+    Title: Netty is an asynchronous, event-driven network application framework.  ...
     Description: 'Netty is an asynchronous, event-driven network application framework. Prior to 4.2.13.Final and 4.1.133.Final, HttpObjectDecoder strips a conflicting Content-Length header when a request carries both Transfer-Encoding: chunked and Content-Length, but only for HTTP/1.1 messages. The guard is absent for HTTP/1.0. An attacker that sends an HTTP/1.0 request with both headers causes Netty to decode the body as chunked while leaving Content-Length intact in the forwarded HttpMessage. Any downstream proxy or handler that trusts Content-Length over Transfer-Encoding will disagree on message boundaries, enabling request smuggling. This vulnerability is fixed in 4.2.13.Final and 4.1.133.Final.'
     Severity: MEDIUM
     CweIDs:
@@ -534,8 +619,9 @@
     References:
     - https://github.com/netty/netty
     - https://github.com/netty/netty/security/advisories/GHSA-xxqh-mfjm-7mv9
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42581
     PublishedDate: '2026-05-13T19:17:23.627Z'
-    LastModifiedDate: '2026-05-13T19:17:23.627Z'
+    LastModifiedDate: '2026-05-14T16:26:50.047Z'
   - VulnerabilityID: CVE-2026-42585
     VendorIDs:
     - GHSA-38f8-5428-x5cv
@@ -557,7 +643,7 @@
       Name: GitHub Security Advisory Maven
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
     Fingerprint: sha256:7419c9f0809b4d7e52fd6bbce26d4f255f44b83b5136f21b64c63ef1e5207783
-    Title: Netty vulnerable to HTTP Request Smuggling due to malformed Transfer-Encoding
+    Title: Netty is an asynchronous, event-driven network application framework.  ...
     Description: Netty is an asynchronous, event-driven network application framework. Prior to 4.2.13.Final and 4.1.133.Final, Netty incorrectly parses malformed Transfer-Encoding, enabling request smuggling attacks. This vulnerability is fixed in 4.2.13.Final and 4.1.133.Final.
     Severity: MEDIUM
     CweIDs:
@@ -572,8 +658,9 @@
     - https://datatracker.ietf.org/doc/html/rfc9112#name-message-body-length
     - https://github.com/netty/netty
     - https://github.com/netty/netty/security/advisories/GHSA-38f8-5428-x5cv
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42585
     PublishedDate: '2026-05-13T19:17:24.187Z'
-    LastModifiedDate: '2026-05-13T19:17:24.187Z'
+    LastModifiedDate: '2026-05-14T16:26:50.047Z'
   - VulnerabilityID: CVE-2026-42587
     VendorIDs:
     - GHSA-f6hv-jmp6-3vwv
@@ -595,7 +682,7 @@
       Name: GitHub Security Advisory Maven
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
     Fingerprint: sha256:ef9815ae7a94903bd25f8c10fe8311c41be84c2034ee55de81513911ed991da4
-    Title: 'Netty: HttpContentDecompressor maxAllocation bypass when Content-Encoding set to br/zstd/snappy leads to decompression bomb DoS'
+    Title: Netty is an asynchronous, event-driven network application framework.  ...
     Description: 'Netty is an asynchronous, event-driven network application framework. Prior to 4.2.13.Final and 4.1.133.Final, HttpContentDecompressor accepts a maxAllocation parameter to limit decompression buffer size and prevent decompression bomb attacks. This limit is correctly enforced for gzip and deflate encodings via ZlibDecoder, but is silently ignored when the content encoding is br (Brotli), zstd, or snappy. An attacker can bypass the configured decompression limit by sending a compressed payload with Content-Encoding: br instead of Content-Encoding: gzip, causing unbounded memory allocation and out-of-memory denial of service. The same vulnerability exists in DelegatingDecompressorFrameListener for HTTP/2 connections. This vulnerability is fixed in 4.2.13.Final and 4.1.133.Final.'
     Severity: HIGH
     CweIDs:
@@ -609,8 +696,9 @@
     References:
     - https://github.com/netty/netty
     - https://github.com/netty/netty/security/advisories/GHSA-f6hv-jmp6-3vwv
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42587
     PublishedDate: '2026-05-13T19:17:24.46Z'
-    LastModifiedDate: '2026-05-13T19:17:24.46Z'
+    LastModifiedDate: '2026-05-14T16:21:02.93Z'
   - VulnerabilityID: CVE-2026-42578
     VendorIDs:
     - GHSA-45q3-82m4-75jr
@@ -632,19 +720,24 @@
       Name: GitHub Security Advisory Maven
       URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
     Fingerprint: sha256:abd51ae1d37b71a2b0d1e0382a01595512c746d45ef85bfe84b3a488cbcb55da
-    Title: Netty has HTTP Header Injection via HttpProxyHandler Disabled Validation (Incomplete Fix CVE-2025-67735)
+    Title: Netty is an asynchronous, event-driven network application framework.  ...
     Description: Netty is an asynchronous, event-driven network application framework. Prior to 4.2.13.Final and 4.1.133.Final, Netty's HttpProxyHandler constructs HTTP CONNECT requests with header validation explicitly disabled. The newInitialMessage() method creates headers using DefaultHttpHeadersFactory.headersFactory().withValidation(false), then adds user-provided outboundHeaders without any CRLF validation. This allows an attacker who can influence the outbound headers to inject arbitrary HTTP headers into the CONNECT request sent to the proxy server. This vulnerability is fixed in 4.2.13.Final and 4.1.133.Final.
     Severity: LOW
     CweIDs:
     - CWE-113
     VendorSeverity:
       ghsa: 1
+    CVSS:
+      ghsa:
+        V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:P
+        V40Score: 2.9
     References:
     - https://github.com/advisories/GHSA-84h7-rjj3-6jx4
     - https://github.com/netty/netty
     - https://github.com/netty/netty/security/advisories/GHSA-45q3-82m4-75jr
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-42578
     PublishedDate: '2026-05-13T19:17:23.21Z'
-    LastModifiedDate: '2026-05-13T19:17:23.21Z'
+    LastModifiedDate: '2026-05-14T16:26:50.047Z'
   - VulnerabilityID: CVE-2026-6860
     VendorIDs:
     - GHSA-3g76-f9xq-8vp6
