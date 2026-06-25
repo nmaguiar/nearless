@@ -70,8 +70,8 @@
 │                             │                  ╰ URL : https://secdb.alpinelinux.org/ 
 │                             ├ Fingerprint     : sha256:b4598efa609d1f31377722e853d227ac6b34daad5b6169ecb7f5f9
 │                             │                   e62ad0b19b 
-│                             ├ Title           : NGINX Plus and NGINX Open Source have a vulnerability in the
-│                             │                   ngx_http_ ... 
+│                             ├ Title           : nginx: NGINX: Memory disclosure or denial of service via
+│                             │                   ngx_http_charset_module heap buffer over-read 
 │                             ├ Description     : NGINX Plus and NGINX Open Source have a vulnerability in the
 │                             │                   ngx_http_charset_module module. When content is served or
 │                             │                   proxied through a location block with both source_charset
@@ -87,14 +87,19 @@
 │                             ├ Severity        : MEDIUM 
 │                             ├ CweIDs           ─ [0]: CWE-125 
 │                             ├ VendorSeverity   ╭ bitnami: 2 
+│                             │                  ├ redhat : 2 
 │                             │                  ╰ ubuntu : 2 
-│                             ├ CVSS             ─ bitnami ╭ V40Vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/
-│                             │                            │            VI:N/VA:L/SC:N/SI:N/SA:N 
-│                             │                            ╰ V40Score : 6.3 
-│                             ├ References       ╭ [0]: https://my.f5.com/manage/s/article/K000161585 
-│                             │                  ├ [1]: https://nvd.nist.gov/vuln/detail/CVE-2026-48142 
-│                             │                  ├ [2]: https://ubuntu.com/security/notices/USN-8458-1 
-│                             │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-48142 
+│                             ├ CVSS             ╭ bitnami ╭ V40Vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/
+│                             │                  │         │            VI:N/VA:L/SC:N/SI:N/SA:N 
+│                             │                  │         ╰ V40Score : 6.3 
+│                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N
+│                             │                            │           /A:L 
+│                             │                            ╰ V3Score : 4.8 
+│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-48142 
+│                             │                  ├ [1]: https://my.f5.com/manage/s/article/K000161585 
+│                             │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-48142 
+│                             │                  ├ [3]: https://ubuntu.com/security/notices/USN-8458-1 
+│                             │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-48142 
 │                             ├ PublishedDate   : 2026-06-17T15:16:59.04Z 
 │                             ╰ LastModifiedDate: 2026-06-22T16:50:00.903Z 
 ╰ [1] ╭ Target         : Java 
@@ -123,9 +128,8 @@
                         │     │                          osystem%3Amaven 
                         │     ├ Fingerprint     : sha256:741c209924a573f8e078a07ba4d9e2507fae9f719c6665392b293e
                         │     │                   8e1f374089 
-                        │     ├ Title           : jackson-databind has a PolymorphicTypeValidator bypass via
-                        │     │                   generic type parameters that allows arbitrary class
-                        │     │                   instantiation 
+                        │     ├ Title           : jackson-databind contains the general-purpose data-binding
+                        │     │                   functionali ... 
                         │     ├ Description     : jackson-databind contains the general-purpose data-binding
                         │     │                   functionality and tree-model for Jackson Data Processor. From
                         │     │                    2.10.0 until 2.18.8, 2.21.4, and 3.1.4, jackson-databind's
@@ -164,7 +168,7 @@
                         │     │                  ╰ [3]: https://github.com/FasterXML/jackson-databind/security/
                         │     │                         advisories/GHSA-j3rv-43j4-c7qm 
                         │     ├ PublishedDate   : 2026-06-23T21:17:02.203Z 
-                        │     ╰ LastModifiedDate: 2026-06-23T21:17:02.203Z 
+                        │     ╰ LastModifiedDate: 2026-06-24T16:16:32.5Z 
                         ├ [1] ╭ VulnerabilityID : CVE-2026-54513 
                         │     ├ VendorIDs        ─ [0]: GHSA-rmj7-2vxq-3g9f 
                         │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
@@ -187,8 +191,8 @@
                         │     │                          osystem%3Amaven 
                         │     ├ Fingerprint     : sha256:e34633295de0203b1e9e617cf1d0a98d4714e0538808cb1b18ede2
                         │     │                   08d5e80637 
-                        │     ├ Title           : jackson-databind has an array subtype allowlist bypass in
-                        │     │                   BasicPolymorphicTypeValidator (allowIfSubTypeIsArray) 
+                        │     ├ Title           : jackson-databind contains the general-purpose data-binding
+                        │     │                   functionali ... 
                         │     ├ Description     : jackson-databind contains the general-purpose data-binding
                         │     │                   functionality and tree-model for Jackson Data Processor. From
                         │     │                    2.10.0 until 2.18.8, 2.21.4, and 3.1.4,
@@ -219,7 +223,7 @@
                         │     │                  ╰ [6]: https://github.com/FasterXML/jackson-databind/security/
                         │     │                         advisories/GHSA-rmj7-2vxq-3g9f 
                         │     ├ PublishedDate   : 2026-06-23T21:17:02.333Z 
-                        │     ╰ LastModifiedDate: 2026-06-23T21:17:02.333Z 
+                        │     ╰ LastModifiedDate: 2026-06-24T16:16:32.6Z 
                         ├ [2] ╭ VulnerabilityID : CVE-2026-54514 
                         │     ├ VendorIDs        ─ [0]: GHSA-hgj6-7826-r7m5 
                         │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
@@ -242,8 +246,8 @@
                         │     │                          osystem%3Amaven 
                         │     ├ Fingerprint     : sha256:007037da921414c1be860203199d2093eb6f19c3ec0acd749fb42d
                         │     │                   f34df678c7 
-                        │     ├ Title           : jackson-databind: InetSocketAddress deserialization triggers
-                        │     │                   eager DNS resolution (SSRF) 
+                        │     ├ Title           : jackson-databind contains the general-purpose data-binding
+                        │     │                   functionali ... 
                         │     ├ Description     : jackson-databind contains the general-purpose data-binding
                         │     │                   functionality and tree-model for Jackson Data Processor. From
                         │     │                    2.0.0 until 2.18.8, 2.21.4, and 3.1.4,
@@ -292,8 +296,8 @@
                         │     │                          osystem%3Amaven 
                         │     ├ Fingerprint     : sha256:4266799d50aacb1e7f6c12863b218a5bf28c9a1921a3273ad8009f
                         │     │                   f1b8280a72 
-                        │     ├ Title           : jackson-databind has case-insensitive deserialization
-                        │     │                   bypasses per-property @JsonIgnoreProperties 
+                        │     ├ Title           : jackson-databind contains the general-purpose data-binding
+                        │     │                   functionali ... 
                         │     ├ Description     : jackson-databind contains the general-purpose data-binding
                         │     │                   functionality and tree-model for Jackson Data Processor. From
                         │     │                    2.8.0 until 2.18.9, 2.21.5, and 3.1.4, in
@@ -323,7 +327,7 @@
                         │     │                  ╰ [4]: https://github.com/FasterXML/jackson-databind/security/
                         │     │                         advisories/GHSA-5jmj-h7xm-6q6v 
                         │     ├ PublishedDate   : 2026-06-23T21:17:02.597Z 
-                        │     ╰ LastModifiedDate: 2026-06-23T21:17:02.597Z 
+                        │     ╰ LastModifiedDate: 2026-06-24T13:16:32.653Z 
                         ├ [4] ╭ VulnerabilityID : CVE-2026-54516 
                         │     ├ VendorIDs        ─ [0]: GHSA-9fxm-vc8v-hj55 
                         │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
@@ -346,8 +350,8 @@
                         │     │                          osystem%3Amaven 
                         │     ├ Fingerprint     : sha256:3033b13203830048dcbaeaa5711f5c0a18ada22500d2d0ca972d2e
                         │     │                   d1fde62b6e 
-                        │     ├ Title           : jackson-databind's renamed @JsonIgnore'd setters can
-                        │     │                   deserialize via private fields 
+                        │     ├ Title           : jackson-databind contains the general-purpose data-binding
+                        │     │                   functionali ... 
                         │     ├ Description     : jackson-databind contains the general-purpose data-binding
                         │     │                   functionality and tree-model for Jackson Data Processor. From
                         │     │                    2.21.0 until 2.21.4 and 3.1.4,
@@ -376,7 +380,7 @@
                         │     │                  ╰ [5]: https://github.com/FasterXML/jackson-databind/security/
                         │     │                         advisories/GHSA-9fxm-vc8v-hj55 
                         │     ├ PublishedDate   : 2026-06-23T21:17:02.723Z 
-                        │     ╰ LastModifiedDate: 2026-06-23T21:17:02.723Z 
+                        │     ╰ LastModifiedDate: 2026-06-24T14:17:33.547Z 
                         ├ [5] ╭ VulnerabilityID : CVE-2026-54517 
                         │     ├ VendorIDs        ─ [0]: GHSA-5hh8-q8hv-fr38 
                         │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
@@ -399,8 +403,8 @@
                         │     │                          osystem%3Amaven 
                         │     ├ Fingerprint     : sha256:f2a7e1c81d006206d33874139679c2c80e69de8ca08d35c53b4a47
                         │     │                   7109d6a2e4 
-                        │     ├ Title           : jackson-databind has @JsonView bypass for setterless creator
-                        │     │                   properties 
+                        │     ├ Title           : jackson-databind contains the general-purpose data-binding
+                        │     │                   functionali ... 
                         │     ├ Description     : jackson-databind contains the general-purpose data-binding
                         │     │                   functionality and tree-model for Jackson Data Processor. From
                         │     │                    2.21.0 until 2.21.4 and 3.1.4, in
@@ -429,7 +433,7 @@
                         │     │                  ╰ [5]: https://github.com/FasterXML/jackson-databind/security/
                         │     │                         advisories/GHSA-5hh8-q8hv-fr38 
                         │     ├ PublishedDate   : 2026-06-23T21:17:02.853Z 
-                        │     ╰ LastModifiedDate: 2026-06-23T21:17:02.853Z 
+                        │     ╰ LastModifiedDate: 2026-06-24T20:16:33Z 
                         ╰ [6] ╭ VulnerabilityID : CVE-2026-54518 
                               ├ VendorIDs        ─ [0]: GHSA-rcqc-6cw3-h962 
                               ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
@@ -452,8 +456,8 @@
                               │                          osystem%3Amaven 
                               ├ Fingerprint     : sha256:b155cb5efe700eab04288ff8ede9f8e627e5491b3bda511cf513a5
                               │                   913e360cd0 
-                              ├ Title           : jackson-databind has a @JsonView bypass for unwrapped creator
-                              │                    parameters 
+                              ├ Title           : jackson-databind contains the general-purpose data-binding
+                              │                   functionali ... 
                               ├ Description     : jackson-databind contains the general-purpose data-binding
                               │                   functionality and tree-model for Jackson Data Processor. From
                               │                    2.21.0 until 2.21.4 and 3.1.4,
@@ -481,5 +485,5 @@
                               │                  ╰ [5]: https://github.com/FasterXML/jackson-databind/security/
                               │                         advisories/GHSA-rcqc-6cw3-h962 
                               ├ PublishedDate   : 2026-06-23T22:16:32.073Z 
-                              ╰ LastModifiedDate: 2026-06-23T22:16:32.073Z 
+                              ╰ LastModifiedDate: 2026-06-24T17:17:29.163Z 
 ```
