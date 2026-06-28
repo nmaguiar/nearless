@@ -1,107 +1,8 @@
 ```yaml
-╭ [0] ╭ Target         : nmaguiar/nearless:build (alpine 3.24.1) 
-│     ├ Class          : os-pkgs 
-│     ├ Type           : alpine 
-│     ├ Packages        
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2026-42055 
-│                       │     ├ PkgID           : nginx@1.30.2-r1 
-│                       │     ├ PkgName         : nginx 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/nginx@1.30.2-r1?arch=x86_64&distro=3.24.1 
-│                       │     │                  ╰ UID : eefdf4807b50c6ba 
-│                       │     ├ InstalledVersion: 1.30.2-r1 
-│                       │     ├ FixedVersion    : 1.30.3-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:af7c8ed0a620e023b074c03ef7e7aa80c118b139e75b4
-│                       │     │                  │         3cf99d5e467e6496c32 
-│                       │     │                  ╰ DiffID: sha256:802838aca80cfff7c93d176e4e441b706f2ca2a11e80d
-│                       │     │                            6adef3cff426f07a7f6 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42055 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Fingerprint     : sha256:344a190b268df4001b7e8af01e00c235e3529505255ad866420719
-│                       │     │                   562e426d16 
-│                       │     ├ Title           : NGINX Plus and NGINX Open Source have a vulnerability in the
-│                       │     │                   ngx_http_ ... 
-│                       │     ├ Description     : NGINX Plus and NGINX Open Source have a vulnerability in the
-│                       │     │                   ngx_http_proxy_v2_module and ngx_http_grpc_module modules.
-│                       │     │                   This vulnerability exists when the proxy_http_version to 2 or
-│                       │     │                    grpc_pass directives are used to proxy HTTP/2 traffic, the
-│                       │     │                   ignore_invalid_headers directive is set to off, and the
-│                       │     │                   large_client_header_buffers directive size is larger than 2
-│                       │     │                   megabytes. A remote, unauthenticated attacker, along with
-│                       │     │                   conditions beyond their control, could send large headers
-│                       │     │                   while creating an upstream request. This may cause a
-│                       │     │                   heap-based buffer overflow in the NGINX worker process
-│                       │     │                   leading to a restart. Additionally, attackers can execute
-│                       │     │                   code on systems with Address Space Layout Randomization
-│                       │     │                   (ASLR) disabled or when the attacker can bypass ASLR. 
-│                       │     │                   
-│                       │     │                   Note: Software versions which have reached End of Technical
-│                       │     │                   Support (EoTS) are not evaluated. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ CweIDs           ─ [0]: CWE-122 
-│                       │     ├ VendorSeverity   ╭ bitnami: 4 
-│                       │     │                  ╰ ubuntu : 2 
-│                       │     ├ CVSS             ─ bitnami ╭ V40Vector: CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/
-│                       │     │                            │            VI:H/VA:H/SC:N/SI:N/SA:N 
-│                       │     │                            ╰ V40Score : 9.2 
-│                       │     ├ References       ╭ [0]: https://my.f5.com/manage/s/article/K000161584 
-│                       │     │                  ├ [1]: https://nvd.nist.gov/vuln/detail/CVE-2026-42055 
-│                       │     │                  ├ [2]: https://ubuntu.com/security/notices/USN-8458-1 
-│                       │     │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-42055 
-│                       │     ├ PublishedDate   : 2026-06-17T15:16:50.353Z 
-│                       │     ╰ LastModifiedDate: 2026-06-18T04:16:48.367Z 
-│                       ╰ [1] ╭ VulnerabilityID : CVE-2026-48142 
-│                             ├ PkgID           : nginx@1.30.2-r1 
-│                             ├ PkgName         : nginx 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/nginx@1.30.2-r1?arch=x86_64&distro=3.24.1 
-│                             │                  ╰ UID : eefdf4807b50c6ba 
-│                             ├ InstalledVersion: 1.30.2-r1 
-│                             ├ FixedVersion    : 1.30.3-r0 
-│                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:af7c8ed0a620e023b074c03ef7e7aa80c118b139e75b4
-│                             │                  │         3cf99d5e467e6496c32 
-│                             │                  ╰ DiffID: sha256:802838aca80cfff7c93d176e4e441b706f2ca2a11e80d
-│                             │                            6adef3cff426f07a7f6 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-48142 
-│                             ├ DataSource       ╭ ID  : alpine 
-│                             │                  ├ Name: Alpine Secdb 
-│                             │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                             ├ Fingerprint     : sha256:b4598efa609d1f31377722e853d227ac6b34daad5b6169ecb7f5f9
-│                             │                   e62ad0b19b 
-│                             ├ Title           : nginx: NGINX: Memory disclosure or denial of service via
-│                             │                   ngx_http_charset_module heap buffer over-read 
-│                             ├ Description     : NGINX Plus and NGINX Open Source have a vulnerability in the
-│                             │                   ngx_http_charset_module module. When content is served or
-│                             │                   proxied through a location block with both source_charset
-│                             │                   utf-8; and a charset directive (for example, charset koi8-r;)
-│                             │                    configured, remote, unauthenticated attackers can send
-│                             │                   requests (in conjunction with conditions beyond their
-│                             │                   control) to cause a heap buffer over-read in the NGINX worker
-│                             │                    process, leading to limited disclosure of memory or a
-│                             │                   restart. 
-│                             │                   
-│                             │                   Note: Software versions which have reached End of Technical
-│                             │                   Support (EoTS) are not evaluated. 
-│                             ├ Severity        : MEDIUM 
-│                             ├ CweIDs           ─ [0]: CWE-125 
-│                             ├ VendorSeverity   ╭ bitnami: 2 
-│                             │                  ├ redhat : 2 
-│                             │                  ╰ ubuntu : 2 
-│                             ├ CVSS             ╭ bitnami ╭ V40Vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/
-│                             │                  │         │            VI:N/VA:L/SC:N/SI:N/SA:N 
-│                             │                  │         ╰ V40Score : 6.3 
-│                             │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N
-│                             │                            │           /A:L 
-│                             │                            ╰ V3Score : 4.8 
-│                             ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-48142 
-│                             │                  ├ [1]: https://my.f5.com/manage/s/article/K000161585 
-│                             │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-48142 
-│                             │                  ├ [3]: https://ubuntu.com/security/notices/USN-8458-1 
-│                             │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-48142 
-│                             ├ PublishedDate   : 2026-06-17T15:16:59.04Z 
-│                             ╰ LastModifiedDate: 2026-06-22T16:50:00.903Z 
+╭ [0] ╭ Target  : nmaguiar/nearless:build (alpine 3.24.1) 
+│     ├ Class   : os-pkgs 
+│     ├ Type    : alpine 
+│     ╰ Packages 
 ╰ [1] ╭ Target         : Java 
       ├ Class          : lang-pkgs 
       ├ Type           : jar 
@@ -116,18 +17,18 @@
                         │     ├ InstalledVersion: 2.21.3 
                         │     ├ FixedVersion    : 2.18.8, 3.1.4, 2.21.4 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:af7c8ed0a620e023b074c03ef7e7aa80c118b139e75b4
-                        │     │                  │         3cf99d5e467e6496c32 
-                        │     │                  ╰ DiffID: sha256:802838aca80cfff7c93d176e4e441b706f2ca2a11e80d
-                        │     │                            6adef3cff426f07a7f6 
+                        │     ├ Layer            ╭ Digest: sha256:43a7564e9b318ea8981226b44b1c0447191348b7e86d1
+                        │     │                  │         c8a15bbc6312bbee9b9 
+                        │     │                  ╰ DiffID: sha256:03630284be62d54426a55bebe307e84eaacd1641ea8e4
+                        │     │                            2a5521e523e00f928b4 
                         │     ├ SeveritySource  : ghsa 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-54512 
                         │     ├ DataSource       ╭ ID  : ghsa 
                         │     │                  ├ Name: GitHub Security Advisory Maven 
                         │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
                         │     │                          osystem%3Amaven 
-                        │     ├ Fingerprint     : sha256:741c209924a573f8e078a07ba4d9e2507fae9f719c6665392b293e
-                        │     │                   8e1f374089 
+                        │     ├ Fingerprint     : sha256:818dbc2834775cd48661ff304d3d0cc7e51ce48da95b417be987fe
+                        │     │                   c064af323c 
                         │     ├ Title           : jackson-databind contains the general-purpose data-binding
                         │     │                   functionali ... 
                         │     ├ Description     : jackson-databind contains the general-purpose data-binding
@@ -168,7 +69,7 @@
                         │     │                  ╰ [3]: https://github.com/FasterXML/jackson-databind/security/
                         │     │                         advisories/GHSA-j3rv-43j4-c7qm 
                         │     ├ PublishedDate   : 2026-06-23T21:17:02.203Z 
-                        │     ╰ LastModifiedDate: 2026-06-25T16:14:14.483Z 
+                        │     ╰ LastModifiedDate: 2026-06-27T21:01:36.47Z 
                         ├ [1] ╭ VulnerabilityID : CVE-2026-54513 
                         │     ├ VendorIDs        ─ [0]: GHSA-rmj7-2vxq-3g9f 
                         │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
@@ -179,18 +80,18 @@
                         │     ├ InstalledVersion: 2.21.3 
                         │     ├ FixedVersion    : 2.18.8, 2.21.4, 3.1.4 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:af7c8ed0a620e023b074c03ef7e7aa80c118b139e75b4
-                        │     │                  │         3cf99d5e467e6496c32 
-                        │     │                  ╰ DiffID: sha256:802838aca80cfff7c93d176e4e441b706f2ca2a11e80d
-                        │     │                            6adef3cff426f07a7f6 
+                        │     ├ Layer            ╭ Digest: sha256:43a7564e9b318ea8981226b44b1c0447191348b7e86d1
+                        │     │                  │         c8a15bbc6312bbee9b9 
+                        │     │                  ╰ DiffID: sha256:03630284be62d54426a55bebe307e84eaacd1641ea8e4
+                        │     │                            2a5521e523e00f928b4 
                         │     ├ SeveritySource  : ghsa 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-54513 
                         │     ├ DataSource       ╭ ID  : ghsa 
                         │     │                  ├ Name: GitHub Security Advisory Maven 
                         │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
                         │     │                          osystem%3Amaven 
-                        │     ├ Fingerprint     : sha256:e34633295de0203b1e9e617cf1d0a98d4714e0538808cb1b18ede2
-                        │     │                   08d5e80637 
+                        │     ├ Fingerprint     : sha256:24830b3ee495ae268c317350b8c27ef89eeef35f2338207c0edf11
+                        │     │                   1228fdccd5 
                         │     ├ Title           : jackson-databind: Jackson-databind: Security bypass allows
                         │     │                   arbitrary code execution 
                         │     ├ Description     : jackson-databind contains the general-purpose data-binding
@@ -231,7 +132,7 @@
                         │     │                  ├ [8]: https://nvd.nist.gov/vuln/detail/CVE-2026-54513 
                         │     │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2026-54513 
                         │     ├ PublishedDate   : 2026-06-23T21:17:02.333Z 
-                        │     ╰ LastModifiedDate: 2026-06-25T16:14:14.483Z 
+                        │     ╰ LastModifiedDate: 2026-06-27T21:00:19.3Z 
                         ├ [2] ╭ VulnerabilityID : CVE-2026-54514 
                         │     ├ VendorIDs        ─ [0]: GHSA-hgj6-7826-r7m5 
                         │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
@@ -242,18 +143,18 @@
                         │     ├ InstalledVersion: 2.21.3 
                         │     ├ FixedVersion    : 2.18.8, 2.21.4, 3.1.4 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:af7c8ed0a620e023b074c03ef7e7aa80c118b139e75b4
-                        │     │                  │         3cf99d5e467e6496c32 
-                        │     │                  ╰ DiffID: sha256:802838aca80cfff7c93d176e4e441b706f2ca2a11e80d
-                        │     │                            6adef3cff426f07a7f6 
+                        │     ├ Layer            ╭ Digest: sha256:43a7564e9b318ea8981226b44b1c0447191348b7e86d1
+                        │     │                  │         c8a15bbc6312bbee9b9 
+                        │     │                  ╰ DiffID: sha256:03630284be62d54426a55bebe307e84eaacd1641ea8e4
+                        │     │                            2a5521e523e00f928b4 
                         │     ├ SeveritySource  : ghsa 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-54514 
                         │     ├ DataSource       ╭ ID  : ghsa 
                         │     │                  ├ Name: GitHub Security Advisory Maven 
                         │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
                         │     │                          osystem%3Amaven 
-                        │     ├ Fingerprint     : sha256:007037da921414c1be860203199d2093eb6f19c3ec0acd749fb42d
-                        │     │                   f34df678c7 
+                        │     ├ Fingerprint     : sha256:65d4b5330f2c4ccddcef45fda8ab530d82eaa357597f1645600cb5
+                        │     │                   3aa8d1686b 
                         │     ├ Title           : jackson-databind contains the general-purpose data-binding
                         │     │                   functionali ... 
                         │     ├ Description     : jackson-databind contains the general-purpose data-binding
@@ -281,7 +182,7 @@
                         │     │                  ╰ [3]: https://github.com/FasterXML/jackson-databind/security/
                         │     │                         advisories/GHSA-hgj6-7826-r7m5 
                         │     ├ PublishedDate   : 2026-06-23T21:17:02.467Z 
-                        │     ╰ LastModifiedDate: 2026-06-25T16:14:14.483Z 
+                        │     ╰ LastModifiedDate: 2026-06-27T20:55:09.61Z 
                         ├ [3] ╭ VulnerabilityID : CVE-2026-54515 
                         │     ├ VendorIDs        ─ [0]: GHSA-5jmj-h7xm-6q6v 
                         │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
@@ -292,18 +193,18 @@
                         │     ├ InstalledVersion: 2.21.3 
                         │     ├ FixedVersion    : 3.1.4, 2.18.9, 2.21.5 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:af7c8ed0a620e023b074c03ef7e7aa80c118b139e75b4
-                        │     │                  │         3cf99d5e467e6496c32 
-                        │     │                  ╰ DiffID: sha256:802838aca80cfff7c93d176e4e441b706f2ca2a11e80d
-                        │     │                            6adef3cff426f07a7f6 
+                        │     ├ Layer            ╭ Digest: sha256:43a7564e9b318ea8981226b44b1c0447191348b7e86d1
+                        │     │                  │         c8a15bbc6312bbee9b9 
+                        │     │                  ╰ DiffID: sha256:03630284be62d54426a55bebe307e84eaacd1641ea8e4
+                        │     │                            2a5521e523e00f928b4 
                         │     ├ SeveritySource  : ghsa 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-54515 
                         │     ├ DataSource       ╭ ID  : ghsa 
                         │     │                  ├ Name: GitHub Security Advisory Maven 
                         │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
                         │     │                          osystem%3Amaven 
-                        │     ├ Fingerprint     : sha256:4266799d50aacb1e7f6c12863b218a5bf28c9a1921a3273ad8009f
-                        │     │                   f1b8280a72 
+                        │     ├ Fingerprint     : sha256:29c17f79fa7348c278e7f596291ee6566697b3ab72f0f3c1e76577
+                        │     │                   b0cb592358 
                         │     ├ Title           : jackson-databind contains the general-purpose data-binding
                         │     │                   functionali ... 
                         │     ├ Description     : jackson-databind contains the general-purpose data-binding
@@ -346,18 +247,18 @@
                         │     ├ InstalledVersion: 2.21.3 
                         │     ├ FixedVersion    : 2.21.4, 3.1.4 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:af7c8ed0a620e023b074c03ef7e7aa80c118b139e75b4
-                        │     │                  │         3cf99d5e467e6496c32 
-                        │     │                  ╰ DiffID: sha256:802838aca80cfff7c93d176e4e441b706f2ca2a11e80d
-                        │     │                            6adef3cff426f07a7f6 
+                        │     ├ Layer            ╭ Digest: sha256:43a7564e9b318ea8981226b44b1c0447191348b7e86d1
+                        │     │                  │         c8a15bbc6312bbee9b9 
+                        │     │                  ╰ DiffID: sha256:03630284be62d54426a55bebe307e84eaacd1641ea8e4
+                        │     │                            2a5521e523e00f928b4 
                         │     ├ SeveritySource  : ghsa 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-54516 
                         │     ├ DataSource       ╭ ID  : ghsa 
                         │     │                  ├ Name: GitHub Security Advisory Maven 
                         │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
                         │     │                          osystem%3Amaven 
-                        │     ├ Fingerprint     : sha256:3033b13203830048dcbaeaa5711f5c0a18ada22500d2d0ca972d2e
-                        │     │                   d1fde62b6e 
+                        │     ├ Fingerprint     : sha256:0260333ed05fe6be752fdb613309772e0d54d660ed92c4434e95c8
+                        │     │                   31ca0cf1a0 
                         │     ├ Title           : jackson-databind contains the general-purpose data-binding
                         │     │                   functionali ... 
                         │     ├ Description     : jackson-databind contains the general-purpose data-binding
@@ -388,7 +289,7 @@
                         │     │                  ╰ [5]: https://github.com/FasterXML/jackson-databind/security/
                         │     │                         advisories/GHSA-9fxm-vc8v-hj55 
                         │     ├ PublishedDate   : 2026-06-23T21:17:02.723Z 
-                        │     ╰ LastModifiedDate: 2026-06-25T16:14:14.483Z 
+                        │     ╰ LastModifiedDate: 2026-06-27T20:52:12.103Z 
                         ├ [5] ╭ VulnerabilityID : CVE-2026-54517 
                         │     ├ VendorIDs        ─ [0]: GHSA-5hh8-q8hv-fr38 
                         │     ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
@@ -399,18 +300,18 @@
                         │     ├ InstalledVersion: 2.21.3 
                         │     ├ FixedVersion    : 2.21.4, 3.1.4 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:af7c8ed0a620e023b074c03ef7e7aa80c118b139e75b4
-                        │     │                  │         3cf99d5e467e6496c32 
-                        │     │                  ╰ DiffID: sha256:802838aca80cfff7c93d176e4e441b706f2ca2a11e80d
-                        │     │                            6adef3cff426f07a7f6 
+                        │     ├ Layer            ╭ Digest: sha256:43a7564e9b318ea8981226b44b1c0447191348b7e86d1
+                        │     │                  │         c8a15bbc6312bbee9b9 
+                        │     │                  ╰ DiffID: sha256:03630284be62d54426a55bebe307e84eaacd1641ea8e4
+                        │     │                            2a5521e523e00f928b4 
                         │     ├ SeveritySource  : ghsa 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-54517 
                         │     ├ DataSource       ╭ ID  : ghsa 
                         │     │                  ├ Name: GitHub Security Advisory Maven 
                         │     │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
                         │     │                          osystem%3Amaven 
-                        │     ├ Fingerprint     : sha256:f2a7e1c81d006206d33874139679c2c80e69de8ca08d35c53b4a47
-                        │     │                   7109d6a2e4 
+                        │     ├ Fingerprint     : sha256:05cc5924bdd9ca5e8cd2a2c44a48731dc54cf746c86c7940e2aa08
+                        │     │                   203ccf1a7c 
                         │     ├ Title           : jackson-databind contains the general-purpose data-binding
                         │     │                   functionali ... 
                         │     ├ Description     : jackson-databind contains the general-purpose data-binding
@@ -441,7 +342,7 @@
                         │     │                  ╰ [5]: https://github.com/FasterXML/jackson-databind/security/
                         │     │                         advisories/GHSA-5hh8-q8hv-fr38 
                         │     ├ PublishedDate   : 2026-06-23T21:17:02.853Z 
-                        │     ╰ LastModifiedDate: 2026-06-25T16:14:14.483Z 
+                        │     ╰ LastModifiedDate: 2026-06-27T20:51:09.987Z 
                         ╰ [6] ╭ VulnerabilityID : CVE-2026-54518 
                               ├ VendorIDs        ─ [0]: GHSA-rcqc-6cw3-h962 
                               ├ PkgName         : com.fasterxml.jackson.core:jackson-databind 
@@ -452,18 +353,18 @@
                               ├ InstalledVersion: 2.21.3 
                               ├ FixedVersion    : 2.21.4 
                               ├ Status          : fixed 
-                              ├ Layer            ╭ Digest: sha256:af7c8ed0a620e023b074c03ef7e7aa80c118b139e75b4
-                              │                  │         3cf99d5e467e6496c32 
-                              │                  ╰ DiffID: sha256:802838aca80cfff7c93d176e4e441b706f2ca2a11e80d
-                              │                            6adef3cff426f07a7f6 
+                              ├ Layer            ╭ Digest: sha256:43a7564e9b318ea8981226b44b1c0447191348b7e86d1
+                              │                  │         c8a15bbc6312bbee9b9 
+                              │                  ╰ DiffID: sha256:03630284be62d54426a55bebe307e84eaacd1641ea8e4
+                              │                            2a5521e523e00f928b4 
                               ├ SeveritySource  : ghsa 
                               ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-54518 
                               ├ DataSource       ╭ ID  : ghsa 
                               │                  ├ Name: GitHub Security Advisory Maven 
                               │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+ec
                               │                          osystem%3Amaven 
-                              ├ Fingerprint     : sha256:b155cb5efe700eab04288ff8ede9f8e627e5491b3bda511cf513a5
-                              │                   913e360cd0 
+                              ├ Fingerprint     : sha256:b80b983fb8748d6eee8b32b8578d6469c5a217b0d1a020edff2a59
+                              │                   7f78c87702 
                               ├ Title           : jackson-databind contains the general-purpose data-binding
                               │                   functionali ... 
                               ├ Description     : jackson-databind contains the general-purpose data-binding
@@ -493,5 +394,5 @@
                               │                  ╰ [5]: https://github.com/FasterXML/jackson-databind/security/
                               │                         advisories/GHSA-rcqc-6cw3-h962 
                               ├ PublishedDate   : 2026-06-23T22:16:32.073Z 
-                              ╰ LastModifiedDate: 2026-06-25T16:14:14.483Z 
+                              ╰ LastModifiedDate: 2026-06-27T20:49:30.977Z 
 ```
