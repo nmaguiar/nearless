@@ -1,8 +1,169 @@
 ```yaml
-╭ [0] ╭ Target  : nmaguiar/nearless:build (alpine 3.24.1) 
-│     ├ Class   : os-pkgs 
-│     ├ Type    : alpine 
-│     ╰ Packages 
+╭ [0] ╭ Target         : nmaguiar/nearless:build (alpine 3.24.1) 
+│     ├ Class          : os-pkgs 
+│     ├ Type           : alpine 
+│     ├ Packages        
+│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2026-42533 
+│                       │     ├ PkgID           : nginx@1.30.3-r0 
+│                       │     ├ PkgName         : nginx 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/nginx@1.30.3-r0?arch=x86_64&distro=3.24.1 
+│                       │     │                  ╰ UID : c41000ea00099d15 
+│                       │     ├ InstalledVersion: 1.30.3-r0 
+│                       │     ├ FixedVersion    : 1.30.4-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:3f40a027dde1d3be420bf78167d8778929cf9021943d3
+│                       │     │                  │         84ed4f1eee4bd11e128 
+│                       │     │                  ╰ DiffID: sha256:7c3540a7fa06352170fc4be5b43ac295d368f87695f9d
+│                       │     │                            54f09aafb3326ca458a 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42533 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Fingerprint     : sha256:7b5d1406e2b2795551d11d2709123b32a7316d4fab5a0c7ab21b79
+│                       │     │                   937cf2fd7c 
+│                       │     ├ Title           : nginx: NGINX: Arbitrary code execution via crafted HTTP
+│                       │     │                   requests 
+│                       │     ├ Description     : A vulnerability exists in NGINX Plus and NGINX Open Source
+│                       │     │                   when a map directive uses regex matching and a string
+│                       │     │                   expression references the map's regex capture variables
+│                       │     │                   before referencing the map output variable. Alternatively,
+│                       │     │                   the same result could be achieved by using a non-cacheable
+│                       │     │                   variable in a string expression under certain conditions. An
+│                       │     │                   unauthenticated attacker along with conditions beyond their
+│                       │     │                   control can exploit this vulnerability by sending crafted
+│                       │     │                   HTTP requests. This may cause a heap buffer overflow in the
+│                       │     │                   NGINX worker process leading to a restart. Additionally,
+│                       │     │                   attackers can execute code on systems with Address Space
+│                       │     │                   Layout Randomization (ASLR) disabled or when the attacker can
+│                       │     │                    bypass ASLR.
+│                       │     │                   
+│                       │     │                   Impact:
+│                       │     │                   This vulnerability may allow remote attackers to cause a
+│                       │     │                   denial-of-service (DoS) on the NGINX system or to possibly
+│                       │     │                   trigger a code execution. There is no control plane exposure;
+│                       │     │                    this is a data plane issue only.
+│                       │     │                    Note: Software versions which have reached End of Technical
+│                       │     │                   Support (EoTS) are not evaluated. 
+│                       │     ├ Severity        : HIGH 
+│                       │     ├ CweIDs           ─ [0]: CWE-122 
+│                       │     ├ VendorSeverity   ╭ bitnami: 4 
+│                       │     │                  ├ redhat : 3 
+│                       │     │                  ╰ ubuntu : 2 
+│                       │     ├ CVSS             ╭ bitnami ╭ V40Vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/
+│                       │     │                  │         │            VI:H/VA:H/SC:N/SI:N/SA:N 
+│                       │     │                  │         ╰ V40Score : 9.2 
+│                       │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L
+│                       │     │                            │           /A:H 
+│                       │     │                            ╰ V3Score : 7 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-42533 
+│                       │     │                  ├ [1]: https://my.f5.com/manage/s/article/K000162097 
+│                       │     │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-42533 
+│                       │     │                  ├ [3]: https://ubuntu.com/security/notices/USN-8563-1 
+│                       │     │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2026-42533 
+│                       │     ├ PublishedDate   : 2026-07-15T15:16:33.48Z 
+│                       │     ╰ LastModifiedDate: 2026-07-16T05:16:19.247Z 
+│                       ├ [1] ╭ VulnerabilityID : CVE-2026-56434 
+│                       │     ├ PkgID           : nginx@1.30.3-r0 
+│                       │     ├ PkgName         : nginx 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/nginx@1.30.3-r0?arch=x86_64&distro=3.24.1 
+│                       │     │                  ╰ UID : c41000ea00099d15 
+│                       │     ├ InstalledVersion: 1.30.3-r0 
+│                       │     ├ FixedVersion    : 1.30.4-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:3f40a027dde1d3be420bf78167d8778929cf9021943d3
+│                       │     │                  │         84ed4f1eee4bd11e128 
+│                       │     │                  ╰ DiffID: sha256:7c3540a7fa06352170fc4be5b43ac295d368f87695f9d
+│                       │     │                            54f09aafb3326ca458a 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-56434 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Fingerprint     : sha256:657fa12e6e5ef6cb2bceff1e5df2d3ff537b7f219056ceee32ac96
+│                       │     │                   ae2047f66f 
+│                       │     ├ Title           : NGINX Plus and NGINX Open Source have a vulnerability in the
+│                       │     │                   ngx_http_ ... 
+│                       │     ├ Description     : NGINX Plus and NGINX Open Source have a vulnerability in the
+│                       │     │                   ngx_http_ssi_module module. This vulnerability may exist when
+│                       │     │                    the Server-Side Includes (SSI), proxy_pass, and
+│                       │     │                   proxy_buffering off directives are configured. With this
+│                       │     │                   configuration, an unauthenticated attacker with
+│                       │     │                   man-in-the-middle (MITM) ability to control responses from an
+│                       │     │                    upstream server may be able to cause a use-after-free in the
+│                       │     │                    NGINX worker process. This issue may lead to limited
+│                       │     │                   modification of memory or a restart of the NGINX worker
+│                       │     │                   process.
+│                       │     │                   
+│                       │     │                   Impact:
+│                       │     │                   This vulnerability may allow remote attackers to have limited
+│                       │     │                    control to modify memory contents or restart the NGINX
+│                       │     │                   worker process. There is no control plane exposure; this is a
+│                       │     │                    data plane issue only.
+│                       │     │                   Note: Software versions which have reached End of Technical
+│                       │     │                   Support (EoTS) are not evaluated. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ CweIDs           ─ [0]: CWE-416 
+│                       │     ├ VendorSeverity   ╭ bitnami: 3 
+│                       │     │                  ╰ ubuntu : 2 
+│                       │     ├ CVSS             ─ bitnami ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/
+│                       │     │                            │            VI:L/VA:H/SC:N/SI:N/SA:N 
+│                       │     │                            ╰ V40Score : 8.3 
+│                       │     ├ References       ╭ [0]: https://my.f5.com/manage/s/article/K000162098 
+│                       │     │                  ├ [1]: https://nvd.nist.gov/vuln/detail/CVE-2026-56434 
+│                       │     │                  ├ [2]: https://ubuntu.com/security/notices/USN-8563-1 
+│                       │     │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-56434 
+│                       │     ├ PublishedDate   : 2026-07-15T15:16:45.7Z 
+│                       │     ╰ LastModifiedDate: 2026-07-15T19:18:04.89Z 
+│                       ╰ [2] ╭ VulnerabilityID : CVE-2026-60005 
+│                             ├ PkgID           : nginx@1.30.3-r0 
+│                             ├ PkgName         : nginx 
+│                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/nginx@1.30.3-r0?arch=x86_64&distro=3.24.1 
+│                             │                  ╰ UID : c41000ea00099d15 
+│                             ├ InstalledVersion: 1.30.3-r0 
+│                             ├ FixedVersion    : 1.30.4-r0 
+│                             ├ Status          : fixed 
+│                             ├ Layer            ╭ Digest: sha256:3f40a027dde1d3be420bf78167d8778929cf9021943d3
+│                             │                  │         84ed4f1eee4bd11e128 
+│                             │                  ╰ DiffID: sha256:7c3540a7fa06352170fc4be5b43ac295d368f87695f9d
+│                             │                            54f09aafb3326ca458a 
+│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-60005 
+│                             ├ DataSource       ╭ ID  : alpine 
+│                             │                  ├ Name: Alpine Secdb 
+│                             │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                             ├ Fingerprint     : sha256:211827b917c8442e0aa32667140b632051e1f0453711902d9d3401
+│                             │                   e85c97730f 
+│                             ├ Title           : NGINX Plus and NGINX Open Source have a vulnerability in the
+│                             │                   ngx_http_ ... 
+│                             ├ Description     : NGINX Plus and NGINX Open Source have a vulnerability in the
+│                             │                   ngx_http_slice_module module. When the slice directive and
+│                             │                   unnamed regex captures are configured or when a background
+│                             │                   cache update happens, unauthenticated attackers can send
+│                             │                   requests that may cause uninitialized memory access in the
+│                             │                   NGINX worker process, leading to limited disclosure of memory
+│                             │                    or a restart.
+│                             │                   
+│                             │                   Impact:
+│                             │                   This vulnerability may allow remote, unauthenticated
+│                             │                   attackers to have limited control to disclose memory contents
+│                             │                    or restart the NGINX worker process. There is no control
+│                             │                   plane exposure; this is a data plane issue only.
+│                             │                   Note: The ngx_http_slice_module module is not enabled by
+│                             │                   default; it's enabled with the --with-http_slice_module
+│                             │                   configuration parameter.
+│                             │                   Note: Software versions which have reached End of Technical
+│                             │                   Support (EoTS) are not evaluated. 
+│                             ├ Severity        : MEDIUM 
+│                             ├ CweIDs           ─ [0]: CWE-908 
+│                             ├ VendorSeverity   ╭ bitnami: 3 
+│                             │                  ╰ ubuntu : 2 
+│                             ├ CVSS             ─ bitnami ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/
+│                             │                            │            VI:N/VA:H/SC:N/SI:N/SA:N 
+│                             │                            ╰ V40Score : 8.8 
+│                             ├ References       ╭ [0]: https://my.f5.com/manage/s/article/K000162100 
+│                             │                  ├ [1]: https://nvd.nist.gov/vuln/detail/CVE-2026-60005 
+│                             │                  ├ [2]: https://ubuntu.com/security/notices/USN-8563-1 
+│                             │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-60005 
+│                             ├ PublishedDate   : 2026-07-15T16:16:49.82Z 
+│                             ╰ LastModifiedDate: 2026-07-15T16:23:03.437Z 
 ╰ [1] ╭ Target         : Java 
       ├ Class          : lang-pkgs 
       ├ Type           : jar 
@@ -49,7 +210,8 @@
                               │                   2.18.9, 2.21.5, and 3.1.4. 
                               ├ Severity        : MEDIUM 
                               ├ CweIDs           ─ [0]: CWE-915 
-                              ├ VendorSeverity   ╭ ghsa  : 2 
+                              ├ VendorSeverity   ╭ amazon: 3 
+                              │                  ├ ghsa  : 2 
                               │                  ╰ redhat: 2 
                               ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/
                               │                  │        │           A:N 
