@@ -46,7 +46,8 @@
 │                       │     │                   Support (EoTS) are not evaluated. 
 │                       │     ├ Severity        : HIGH 
 │                       │     ├ CweIDs           ─ [0]: CWE-122 
-│                       │     ├ VendorSeverity   ╭ bitnami: 4 
+│                       │     ├ VendorSeverity   ╭ azure  : 4 
+│                       │     │                  ├ bitnami: 4 
 │                       │     │                  ├ redhat : 3 
 │                       │     │                  ╰ ubuntu : 2 
 │                       │     ├ CVSS             ╭ bitnami ╭ V40Vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/
@@ -103,7 +104,8 @@
 │                       │     │                   Support (EoTS) are not evaluated. 
 │                       │     ├ Severity        : MEDIUM 
 │                       │     ├ CweIDs           ─ [0]: CWE-416 
-│                       │     ├ VendorSeverity   ╭ bitnami: 3 
+│                       │     ├ VendorSeverity   ╭ azure  : 3 
+│                       │     │                  ├ bitnami: 3 
 │                       │     │                  ╰ ubuntu : 2 
 │                       │     ├ CVSS             ─ bitnami ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/
 │                       │     │                            │            VI:L/VA:H/SC:N/SI:N/SA:N 
@@ -764,7 +766,7 @@
                         │      │                  │      A-6jqx-86gh-f27w 
                         │      │                  ╰ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-55831 
                         │      ├ PublishedDate   : 2026-07-21T00:17:35.383Z 
-                        │      ╰ LastModifiedDate: 2026-07-22T19:37:49.57Z 
+                        │      ╰ LastModifiedDate: 2026-07-23T15:17:16.78Z 
                         ├ [5]  ╭ VulnerabilityID : CVE-2026-55833 
                         │      ├ VendorIDs        ─ [0]: GHSA-mvh2-crg5-v77c 
                         │      ├ PkgName         : io.netty:netty-codec-http 
@@ -816,7 +818,7 @@
                         │      │                  │      A-mvh2-crg5-v77c 
                         │      │                  ╰ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-55833 
                         │      ├ PublishedDate   : 2026-07-21T00:17:35.537Z 
-                        │      ╰ LastModifiedDate: 2026-07-22T19:38:08.847Z 
+                        │      ╰ LastModifiedDate: 2026-07-23T13:34:45.383Z 
                         ├ [6]  ╭ VulnerabilityID : CVE-2026-56745 
                         │      ├ VendorIDs        ─ [0]: GHSA-jppx-w49h-x2qq 
                         │      ├ PkgName         : io.netty:netty-codec-http 
@@ -838,8 +840,8 @@
                         │      │                          cosystem%3Amaven 
                         │      ├ Fingerprint     : sha256:aeb6678dc3440f3f3d3e3a8e4fe667873c884e65df4e40713d6ff
                         │      │                   bc5efffb680 
-                        │      ├ Title           : Netty: [SpdyHttpDecoder] ByteBuf Reference Leak on
-                        │      │                   RST_STREAM Leads to Native Memory Exhaustion 
+                        │      ├ Title           : Netty is a network application framework for development of
+                        │      │                   protocol s ... 
                         │      ├ Description     : Netty is a network application framework for development of
                         │      │                   protocol servers and clients. In versions 4.2.0.Final
                         │      │                   through 4.2.15.Final and 4.1.0.Final through 4.1.135.Final,
@@ -894,7 +896,8 @@
                         │      │                          cosystem%3Amaven 
                         │      ├ Fingerprint     : sha256:00e79fca441821fc57c5bc90d991f0bfab9e87ac6c56c6c60ad4e
                         │      │                   5f969dc2bcc 
-                        │      ├ Title           : Netty: Security Control Bypass via CORS Short-Circuit Failure 
+                        │      ├ Title           : Netty is a network application framework for development of
+                        │      │                   protocol s ... 
                         │      ├ Description     : Netty is a network application framework for development of
                         │      │                   protocol servers and clients. Versions 4.2.0.Final through
                         │      │                   4.2.15.Final and 4.1.0.Final through 4.1.135.Final, are
