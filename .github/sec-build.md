@@ -1,172 +1,8 @@
 ```yaml
-╭ [0] ╭ Target         : nmaguiar/nearless:build (alpine 3.24.1) 
-│     ├ Class          : os-pkgs 
-│     ├ Type           : alpine 
-│     ├ Packages        
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2026-42533 
-│                       │     ├ PkgID           : nginx@1.30.3-r0 
-│                       │     ├ PkgName         : nginx 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/nginx@1.30.3-r0?arch=x86_64&distro=3.24.1 
-│                       │     │                  ╰ UID : c41000ea00099d15 
-│                       │     ├ InstalledVersion: 1.30.3-r0 
-│                       │     ├ FixedVersion    : 1.30.4-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:3f40a027dde1d3be420bf78167d8778929cf9021943d3
-│                       │     │                  │         84ed4f1eee4bd11e128 
-│                       │     │                  ╰ DiffID: sha256:7c3540a7fa06352170fc4be5b43ac295d368f87695f9d
-│                       │     │                            54f09aafb3326ca458a 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42533 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Fingerprint     : sha256:7b5d1406e2b2795551d11d2709123b32a7316d4fab5a0c7ab21b79
-│                       │     │                   937cf2fd7c 
-│                       │     ├ Title           : nginx: NGINX: Arbitrary code execution via crafted HTTP
-│                       │     │                   requests 
-│                       │     ├ Description     : A vulnerability exists in NGINX Plus and NGINX Open Source
-│                       │     │                   when a map directive uses regex matching and a string
-│                       │     │                   expression references the map's regex capture variables
-│                       │     │                   before referencing the map output variable. Alternatively,
-│                       │     │                   the same result could be achieved by using a non-cacheable
-│                       │     │                   variable in a string expression under certain conditions. An
-│                       │     │                   unauthenticated attacker along with conditions beyond their
-│                       │     │                   control can exploit this vulnerability by sending crafted
-│                       │     │                   HTTP requests. This may cause a heap buffer overflow in the
-│                       │     │                   NGINX worker process leading to a restart. Additionally,
-│                       │     │                   attackers can execute code on systems with Address Space
-│                       │     │                   Layout Randomization (ASLR) disabled or when the attacker can
-│                       │     │                    bypass ASLR.
-│                       │     │                   
-│                       │     │                   Impact:
-│                       │     │                   This vulnerability may allow remote attackers to cause a
-│                       │     │                   denial-of-service (DoS) on the NGINX system or to possibly
-│                       │     │                   trigger a code execution. There is no control plane exposure;
-│                       │     │                    this is a data plane issue only.
-│                       │     │                    Note: Software versions which have reached End of Technical
-│                       │     │                   Support (EoTS) are not evaluated. 
-│                       │     ├ Severity        : HIGH 
-│                       │     ├ CweIDs           ─ [0]: CWE-122 
-│                       │     ├ VendorSeverity   ╭ azure  : 4 
-│                       │     │                  ├ bitnami: 4 
-│                       │     │                  ├ redhat : 3 
-│                       │     │                  ╰ ubuntu : 2 
-│                       │     ├ CVSS             ╭ bitnami ╭ V40Vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/
-│                       │     │                  │         │            VI:H/VA:H/SC:N/SI:N/SA:N 
-│                       │     │                  │         ╰ V40Score : 9.2 
-│                       │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L
-│                       │     │                            │           /A:H 
-│                       │     │                            ╰ V3Score : 7 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-42533 
-│                       │     │                  ├ [1]: https://my.f5.com/manage/s/article/K000162097 
-│                       │     │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-42533 
-│                       │     │                  ├ [3]: https://ubuntu.com/security/notices/USN-8563-1 
-│                       │     │                  ├ [4]: https://ubuntu.com/security/notices/USN-8563-2 
-│                       │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-42533 
-│                       │     ├ PublishedDate   : 2026-07-15T15:16:33.48Z 
-│                       │     ╰ LastModifiedDate: 2026-07-16T05:16:19.247Z 
-│                       ├ [1] ╭ VulnerabilityID : CVE-2026-56434 
-│                       │     ├ PkgID           : nginx@1.30.3-r0 
-│                       │     ├ PkgName         : nginx 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/nginx@1.30.3-r0?arch=x86_64&distro=3.24.1 
-│                       │     │                  ╰ UID : c41000ea00099d15 
-│                       │     ├ InstalledVersion: 1.30.3-r0 
-│                       │     ├ FixedVersion    : 1.30.4-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:3f40a027dde1d3be420bf78167d8778929cf9021943d3
-│                       │     │                  │         84ed4f1eee4bd11e128 
-│                       │     │                  ╰ DiffID: sha256:7c3540a7fa06352170fc4be5b43ac295d368f87695f9d
-│                       │     │                            54f09aafb3326ca458a 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-56434 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Fingerprint     : sha256:657fa12e6e5ef6cb2bceff1e5df2d3ff537b7f219056ceee32ac96
-│                       │     │                   ae2047f66f 
-│                       │     ├ Title           : NGINX Plus and NGINX Open Source have a vulnerability in the
-│                       │     │                   ngx_http_ ... 
-│                       │     ├ Description     : NGINX Plus and NGINX Open Source have a vulnerability in the
-│                       │     │                   ngx_http_ssi_module module. This vulnerability may exist when
-│                       │     │                    the Server-Side Includes (SSI), proxy_pass, and
-│                       │     │                   proxy_buffering off directives are configured. With this
-│                       │     │                   configuration, an unauthenticated attacker with
-│                       │     │                   man-in-the-middle (MITM) ability to control responses from an
-│                       │     │                    upstream server may be able to cause a use-after-free in the
-│                       │     │                    NGINX worker process. This issue may lead to limited
-│                       │     │                   modification of memory or a restart of the NGINX worker
-│                       │     │                   process.
-│                       │     │                   
-│                       │     │                   Impact:
-│                       │     │                   This vulnerability may allow remote attackers to have limited
-│                       │     │                    control to modify memory contents or restart the NGINX
-│                       │     │                   worker process. There is no control plane exposure; this is a
-│                       │     │                    data plane issue only.
-│                       │     │                   Note: Software versions which have reached End of Technical
-│                       │     │                   Support (EoTS) are not evaluated. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ CweIDs           ─ [0]: CWE-416 
-│                       │     ├ VendorSeverity   ╭ azure  : 3 
-│                       │     │                  ├ bitnami: 3 
-│                       │     │                  ╰ ubuntu : 2 
-│                       │     ├ CVSS             ─ bitnami ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/
-│                       │     │                            │            VI:L/VA:H/SC:N/SI:N/SA:N 
-│                       │     │                            ╰ V40Score : 8.3 
-│                       │     ├ References       ╭ [0]: https://my.f5.com/manage/s/article/K000162098 
-│                       │     │                  ├ [1]: https://nvd.nist.gov/vuln/detail/CVE-2026-56434 
-│                       │     │                  ├ [2]: https://ubuntu.com/security/notices/USN-8563-1 
-│                       │     │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-56434 
-│                       │     ├ PublishedDate   : 2026-07-15T15:16:45.7Z 
-│                       │     ╰ LastModifiedDate: 2026-07-15T19:18:04.89Z 
-│                       ╰ [2] ╭ VulnerabilityID : CVE-2026-60005 
-│                             ├ PkgID           : nginx@1.30.3-r0 
-│                             ├ PkgName         : nginx 
-│                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/nginx@1.30.3-r0?arch=x86_64&distro=3.24.1 
-│                             │                  ╰ UID : c41000ea00099d15 
-│                             ├ InstalledVersion: 1.30.3-r0 
-│                             ├ FixedVersion    : 1.30.4-r0 
-│                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:3f40a027dde1d3be420bf78167d8778929cf9021943d3
-│                             │                  │         84ed4f1eee4bd11e128 
-│                             │                  ╰ DiffID: sha256:7c3540a7fa06352170fc4be5b43ac295d368f87695f9d
-│                             │                            54f09aafb3326ca458a 
-│                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-60005 
-│                             ├ DataSource       ╭ ID  : alpine 
-│                             │                  ├ Name: Alpine Secdb 
-│                             │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                             ├ Fingerprint     : sha256:211827b917c8442e0aa32667140b632051e1f0453711902d9d3401
-│                             │                   e85c97730f 
-│                             ├ Title           : NGINX Plus and NGINX Open Source have a vulnerability in the
-│                             │                   ngx_http_ ... 
-│                             ├ Description     : NGINX Plus and NGINX Open Source have a vulnerability in the
-│                             │                   ngx_http_slice_module module. When the slice directive and
-│                             │                   unnamed regex captures are configured or when a background
-│                             │                   cache update happens, unauthenticated attackers can send
-│                             │                   requests that may cause uninitialized memory access in the
-│                             │                   NGINX worker process, leading to limited disclosure of memory
-│                             │                    or a restart.
-│                             │                   
-│                             │                   Impact:
-│                             │                   This vulnerability may allow remote, unauthenticated
-│                             │                   attackers to have limited control to disclose memory contents
-│                             │                    or restart the NGINX worker process. There is no control
-│                             │                   plane exposure; this is a data plane issue only.
-│                             │                   Note: The ngx_http_slice_module module is not enabled by
-│                             │                   default; it's enabled with the --with-http_slice_module
-│                             │                   configuration parameter.
-│                             │                   Note: Software versions which have reached End of Technical
-│                             │                   Support (EoTS) are not evaluated. 
-│                             ├ Severity        : MEDIUM 
-│                             ├ CweIDs           ─ [0]: CWE-908 
-│                             ├ VendorSeverity   ╭ bitnami: 3 
-│                             │                  ╰ ubuntu : 2 
-│                             ├ CVSS             ─ bitnami ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/
-│                             │                            │            VI:N/VA:H/SC:N/SI:N/SA:N 
-│                             │                            ╰ V40Score : 8.8 
-│                             ├ References       ╭ [0]: https://my.f5.com/manage/s/article/K000162100 
-│                             │                  ├ [1]: https://nvd.nist.gov/vuln/detail/CVE-2026-60005 
-│                             │                  ├ [2]: https://ubuntu.com/security/notices/USN-8563-1 
-│                             │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-60005 
-│                             ├ PublishedDate   : 2026-07-15T16:16:49.82Z 
-│                             ╰ LastModifiedDate: 2026-07-15T16:23:03.437Z 
+╭ [0] ╭ Target  : nmaguiar/nearless:build (alpine 3.24.1) 
+│     ├ Class   : os-pkgs 
+│     ├ Type    : alpine 
+│     ╰ Packages 
 ╰ [1] ╭ Target         : Java 
       ├ Class          : lang-pkgs 
       ├ Type           : jar 
@@ -180,18 +16,18 @@
                         │      ├ InstalledVersion: 2.22.0 
                         │      ├ FixedVersion    : 2.18.8, 2.21.4, 2.22.1 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:3f40a027dde1d3be420bf78167d8778929cf9021943d
-                        │      │                  │         384ed4f1eee4bd11e128 
-                        │      │                  ╰ DiffID: sha256:7c3540a7fa06352170fc4be5b43ac295d368f87695f9
-                        │      │                            d54f09aafb3326ca458a 
+                        │      ├ Layer            ╭ Digest: sha256:b56b1740507a3573c47aa19399fc8c140d8af1c78c89
+                        │      │                  │         6fcd143a3c4b92a52b66 
+                        │      │                  ╰ DiffID: sha256:7a79226c6a40e2b31852468e4ec7a9289271678303c2
+                        │      │                            2092636c1395e68b9953 
                         │      ├ SeveritySource  : ghsa 
                         │      ├ PrimaryURL      : https://github.com/advisories/GHSA-r7wm-3cxj-wff9 
                         │      ├ DataSource       ╭ ID  : ghsa 
                         │      │                  ├ Name: GitHub Security Advisory Maven 
                         │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
                         │      │                          cosystem%3Amaven 
-                        │      ├ Fingerprint     : sha256:37fc78def6689cc348b3e3ea3e9c86ba523dc3d061ef9fe3c76e2
-                        │      │                   43dd56f1fe8 
+                        │      ├ Fingerprint     : sha256:fc7e75a0e390d99644f029d5f9ac8e6740f99321794f36ad78130
+                        │      │                   e4a8b86bc44 
                         │      ├ Title           : jackson-core: Async parser maxNumberLength bypass via
                         │      │                   chunked digit accumulation (incomplete fix for
                         │      │                   GHSA-72hv-8253-57qq) 
@@ -566,18 +402,18 @@
                         │      ├ InstalledVersion: 2.22.0 
                         │      ├ FixedVersion    : 3.1.4, 2.18.9, 2.21.5, 2.22.1 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:3f40a027dde1d3be420bf78167d8778929cf9021943d
-                        │      │                  │         384ed4f1eee4bd11e128 
-                        │      │                  ╰ DiffID: sha256:7c3540a7fa06352170fc4be5b43ac295d368f87695f9
-                        │      │                            d54f09aafb3326ca458a 
+                        │      ├ Layer            ╭ Digest: sha256:b56b1740507a3573c47aa19399fc8c140d8af1c78c89
+                        │      │                  │         6fcd143a3c4b92a52b66 
+                        │      │                  ╰ DiffID: sha256:7a79226c6a40e2b31852468e4ec7a9289271678303c2
+                        │      │                            2092636c1395e68b9953 
                         │      ├ SeveritySource  : ghsa 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-54515 
                         │      ├ DataSource       ╭ ID  : ghsa 
                         │      │                  ├ Name: GitHub Security Advisory Maven 
                         │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
                         │      │                          cosystem%3Amaven 
-                        │      ├ Fingerprint     : sha256:b741698fbb4285da68bdb4cc084bf6d221724e1d7c3686ea99a1d
-                        │      │                   5b8cbeb793d 
+                        │      ├ Fingerprint     : sha256:b7f2c4435feb4724b183d713f239cb3996426b66ed390893ee48d
+                        │      │                   9fa5f96af5b 
                         │      ├ Title           : jackson-databind: jackson-databind: Ignored properties can
                         │      │                   be unexpectedly modified 
                         │      ├ Description     : jackson-databind contains the general-purpose data-binding
@@ -631,18 +467,18 @@
                         │      ├ InstalledVersion: 2.22.0 
                         │      ├ FixedVersion    : 2.21.5, 2.18.9, 2.22.1 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:3f40a027dde1d3be420bf78167d8778929cf9021943d
-                        │      │                  │         384ed4f1eee4bd11e128 
-                        │      │                  ╰ DiffID: sha256:7c3540a7fa06352170fc4be5b43ac295d368f87695f9
-                        │      │                            d54f09aafb3326ca458a 
+                        │      ├ Layer            ╭ Digest: sha256:b56b1740507a3573c47aa19399fc8c140d8af1c78c89
+                        │      │                  │         6fcd143a3c4b92a52b66 
+                        │      │                  ╰ DiffID: sha256:7a79226c6a40e2b31852468e4ec7a9289271678303c2
+                        │      │                            2092636c1395e68b9953 
                         │      ├ SeveritySource  : ghsa 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-59889 
                         │      ├ DataSource       ╭ ID  : ghsa 
                         │      │                  ├ Name: GitHub Security Advisory Maven 
                         │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
                         │      │                          cosystem%3Amaven 
-                        │      ├ Fingerprint     : sha256:723cdc7a1a29904ea22093b365ae6753bb17e518dec7e0e0cf41e
-                        │      │                   52e22cb03d6 
+                        │      ├ Fingerprint     : sha256:ecf3aab92fa804d8848f75f1a0803ec4546d3c3adee768fee9afd
+                        │      │                   9c03d011fa9 
                         │      ├ Title           : jackson-databind: @JsonView ypassed for @JsonUnwrapped
                         │      │                   container properties on deserialization 
                         │      ├ Description     : jackson-databind contains the general-purpose data-binding
@@ -681,18 +517,18 @@
                         │      ├ InstalledVersion: 4.2.15.Final 
                         │      ├ FixedVersion    : 4.2.16.Final 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:3f40a027dde1d3be420bf78167d8778929cf9021943d
-                        │      │                  │         384ed4f1eee4bd11e128 
-                        │      │                  ╰ DiffID: sha256:7c3540a7fa06352170fc4be5b43ac295d368f87695f9
-                        │      │                            d54f09aafb3326ca458a 
+                        │      ├ Layer            ╭ Digest: sha256:b56b1740507a3573c47aa19399fc8c140d8af1c78c89
+                        │      │                  │         6fcd143a3c4b92a52b66 
+                        │      │                  ╰ DiffID: sha256:7a79226c6a40e2b31852468e4ec7a9289271678303c2
+                        │      │                            2092636c1395e68b9953 
                         │      ├ SeveritySource  : ghsa 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-59901 
                         │      ├ DataSource       ╭ ID  : ghsa 
                         │      │                  ├ Name: GitHub Security Advisory Maven 
                         │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
                         │      │                          cosystem%3Amaven 
-                        │      ├ Fingerprint     : sha256:b0d3fad2c9c2537af4d522e4010ff539b094c32040746e0578f3e
-                        │      │                   13a3df0ed65 
+                        │      ├ Fingerprint     : sha256:f1bb16a49adf09885b1616e54556f93bf3314f5818afb070cb8c4
+                        │      │                   21f244b1589 
                         │      ├ Title           : Netty: [Bzip2Decoder] Infinite Loop in RLE State Machine
                         │      │                   Leads to Event-Loop Thread Hang 
                         │      ├ Description     : The `Bzip2Decoder` handler in Netty's compression codec
@@ -713,7 +549,83 @@
                         │                         │      16.Final 
                         │                         ╰ [3]: https://github.com/netty/netty/security/advisories/GHS
                         │                                A-558v-64gr-wgg4 
-                        ├ [4]  ╭ VulnerabilityID : CVE-2026-55831 
+                        ├ [4]  ╭ VulnerabilityID : GHSA-mfg7-5gfp-c4w3 
+                        │      ├ PkgName         : io.netty:netty-codec-dns 
+                        │      ├ PkgPath         : openaf/Kube/netty-codec-dns-4.2.15.Final.jar 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:maven/io.netty/netty-codec-dns@4.2.15.Final 
+                        │      │                  ╰ UID : 59966438c02b5bf8 
+                        │      ├ InstalledVersion: 4.2.15.Final 
+                        │      ├ FixedVersion    : 4.2.16.Final, 4.1.136.Final 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:b56b1740507a3573c47aa19399fc8c140d8af1c78c89
+                        │      │                  │         6fcd143a3c4b92a52b66 
+                        │      │                  ╰ DiffID: sha256:7a79226c6a40e2b31852468e4ec7a9289271678303c2
+                        │      │                            2092636c1395e68b9953 
+                        │      ├ SeveritySource  : ghsa 
+                        │      ├ PrimaryURL      : https://github.com/advisories/GHSA-mfg7-5gfp-c4w3 
+                        │      ├ DataSource       ╭ ID  : ghsa 
+                        │      │                  ├ Name: GitHub Security Advisory Maven 
+                        │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
+                        │      │                          cosystem%3Amaven 
+                        │      ├ Fingerprint     : sha256:549200fc15e1262505e9158a4038d039462dd37d27bbd2f573024
+                        │      │                   ede9e444080 
+                        │      ├ Title           : Netty: Memory Leak in DNS Record Decoder via Malformed
+                        │      │                   Domain Names 
+                        │      ├ Description     : ### Summary
+                        │      │                   A memory leak can be caused in Netty's DNS codec by sending
+                        │      │                   malicious DNS packets containing invalid domain names.
+                        │      │                   Because the leak occurs incrementally per packet, sustained
+                        │      │                   malicious requests will cause a gradual Denial of Service.
+                        │      │                   
+                        │      │                   ### Details
+                        │      │                   Inside `io.netty.handler.codec.dns.AbstractDnsRecord`, the
+                        │      │                   parsed domain name string is passed to `IDN.toASCII(name)`.
+                        │      │                   If the domain name contains characters that violate IDNA
+                        │      │                   rules, `IDN.toASCII` throws an `IllegalArgumentException`.
+                        │      │                   Because this exception occurs inside the constructor before
+                        │      │                   the `DnsRecord` instance can assign the buffer to its
+                        │      │                   content field for later release, the ByteBuf whose reference
+                        │      │                    count was incremented (or newly allocated) is never
+                        │      │                   released, resulting in a direct memory leak.
+                        │      │                   There are several places where variants of this leak
+                        │      │                   happen:
+                        │      │                   -
+                        │      │                   `io.netty.handler.codec.dns.DefaultDnsRecordDecoder#decodeRe
+                        │      │                   cord(java.lang.String,
+                        │      │                   io.netty.handler.codec.dns.DnsRecordType, int, long,
+                        │      │                   io.netty.buffer.ByteBuf, int, int)` invokes
+                        │      │                   `in.retainedDuplicate()` or creates a new buffer `out` when
+                        │      │                   constructing `DefaultDnsRawRecord`
+                        │      │                   `io.netty.handler.codec.dns.DnsCodecUtil#decompressDomainNam
+                        │      │                   e` allocates a new `ByteBuf` and passes it to
+                        │      │                   `encodeDomainName()`. If the decompressed domain name
+                        │      │                   contains a null byte (`\0`), `encodeDomainName()` throws an
+                        │      │                   `IllegalArgumentException`, leaking the newly allocated
+                        │      │                   buffer.
+                        │      │                   ### Impact
+                        │      │                   Resource Exhaustion. Any application utilizing Netty's
+                        │      │                   DnsRecordDecoder (such as DnsNameResolver or custom DNS
+                        │      │                   servers) is vulnerable. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ VendorSeverity   ─ ghsa: 2 
+                        │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L 
+                        │      │                         ╰ V3Score : 5.3 
+                        │      ├ References       ╭ [0]: https://github.com/netty/netty 
+                        │      │                  ├ [1]: https://github.com/netty/netty/commit/5b68c61f37aa4a30
+                        │      │                  │      45cba624cbea239655c9003b 
+                        │      │                  ├ [2]: https://github.com/netty/netty/commit/bb2ff68a1fb71cb4
+                        │      │                  │      b0eb9a9e17b66c52aff680c6 
+                        │      │                  ├ [3]: https://github.com/netty/netty/pull/17063 
+                        │      │                  ├ [4]: https://github.com/netty/netty/pull/17065 
+                        │      │                  ├ [5]: https://github.com/netty/netty/releases/tag/netty-4.1.
+                        │      │                  │      136.Final 
+                        │      │                  ├ [6]: https://github.com/netty/netty/releases/tag/netty-4.2.
+                        │      │                  │      16.Final 
+                        │      │                  ╰ [7]: https://github.com/netty/netty/security/advisories/GHS
+                        │      │                         A-mfg7-5gfp-c4w3 
+                        │      ├ PublishedDate   : 2026-07-24T16:52:50Z 
+                        │      ╰ LastModifiedDate: 2026-07-24T16:52:50Z 
+                        ├ [5]  ╭ VulnerabilityID : CVE-2026-55831 
                         │      ├ VendorIDs        ─ [0]: GHSA-6jqx-86gh-f27w 
                         │      ├ PkgName         : io.netty:netty-codec-http 
                         │      ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.15.Final.jar 
@@ -722,18 +634,18 @@
                         │      ├ InstalledVersion: 4.2.15.Final 
                         │      ├ FixedVersion    : 4.2.16.Final, 4.1.136.Final 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:3f40a027dde1d3be420bf78167d8778929cf9021943d
-                        │      │                  │         384ed4f1eee4bd11e128 
-                        │      │                  ╰ DiffID: sha256:7c3540a7fa06352170fc4be5b43ac295d368f87695f9
-                        │      │                            d54f09aafb3326ca458a 
+                        │      ├ Layer            ╭ Digest: sha256:b56b1740507a3573c47aa19399fc8c140d8af1c78c89
+                        │      │                  │         6fcd143a3c4b92a52b66 
+                        │      │                  ╰ DiffID: sha256:7a79226c6a40e2b31852468e4ec7a9289271678303c2
+                        │      │                            2092636c1395e68b9953 
                         │      ├ SeveritySource  : ghsa 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-55831 
                         │      ├ DataSource       ╭ ID  : ghsa 
                         │      │                  ├ Name: GitHub Security Advisory Maven 
                         │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
                         │      │                          cosystem%3Amaven 
-                        │      ├ Fingerprint     : sha256:1e7450be5bf7cd897999700a8f9c0dfee3c5091fc55c3569a8fb2
-                        │      │                   44eb8a9e6a7 
+                        │      ├ Fingerprint     : sha256:1bac789759824acb6ecc6612434137fa4657e769114c434528f8b
+                        │      │                   5ed1d95a321 
                         │      ├ Title           : Netty is a network application framework for development of
                         │      │                   protocol s ... 
                         │      ├ Description     : Netty is a network application framework for development of
@@ -767,7 +679,7 @@
                         │      │                  ╰ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-55831 
                         │      ├ PublishedDate   : 2026-07-21T00:17:35.383Z 
                         │      ╰ LastModifiedDate: 2026-07-23T15:17:16.78Z 
-                        ├ [5]  ╭ VulnerabilityID : CVE-2026-55833 
+                        ├ [6]  ╭ VulnerabilityID : CVE-2026-55833 
                         │      ├ VendorIDs        ─ [0]: GHSA-mvh2-crg5-v77c 
                         │      ├ PkgName         : io.netty:netty-codec-http 
                         │      ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.15.Final.jar 
@@ -776,18 +688,18 @@
                         │      ├ InstalledVersion: 4.2.15.Final 
                         │      ├ FixedVersion    : 4.2.16.Final, 4.1.136.Final 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:3f40a027dde1d3be420bf78167d8778929cf9021943d
-                        │      │                  │         384ed4f1eee4bd11e128 
-                        │      │                  ╰ DiffID: sha256:7c3540a7fa06352170fc4be5b43ac295d368f87695f9
-                        │      │                            d54f09aafb3326ca458a 
+                        │      ├ Layer            ╭ Digest: sha256:b56b1740507a3573c47aa19399fc8c140d8af1c78c89
+                        │      │                  │         6fcd143a3c4b92a52b66 
+                        │      │                  ╰ DiffID: sha256:7a79226c6a40e2b31852468e4ec7a9289271678303c2
+                        │      │                            2092636c1395e68b9953 
                         │      ├ SeveritySource  : ghsa 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-55833 
                         │      ├ DataSource       ╭ ID  : ghsa 
                         │      │                  ├ Name: GitHub Security Advisory Maven 
                         │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
                         │      │                          cosystem%3Amaven 
-                        │      ├ Fingerprint     : sha256:18114a3eaa132429263dc040bea7cb5971b7ef0a9e76021b48963
-                        │      │                   6c17707ec8e 
+                        │      ├ Fingerprint     : sha256:b5832547481f285af4f8b3cc77ece87fcb51fa79bc8aab783eae1
+                        │      │                   cc426a86cec 
                         │      ├ Title           : Netty is a network application framework for development of
                         │      │                   protocol s ... 
                         │      ├ Description     : Netty is a network application framework for development of
@@ -819,7 +731,7 @@
                         │      │                  ╰ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-55833 
                         │      ├ PublishedDate   : 2026-07-21T00:17:35.537Z 
                         │      ╰ LastModifiedDate: 2026-07-23T13:34:45.383Z 
-                        ├ [6]  ╭ VulnerabilityID : CVE-2026-56745 
+                        ├ [7]  ╭ VulnerabilityID : CVE-2026-56745 
                         │      ├ VendorIDs        ─ [0]: GHSA-jppx-w49h-x2qq 
                         │      ├ PkgName         : io.netty:netty-codec-http 
                         │      ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.15.Final.jar 
@@ -828,18 +740,18 @@
                         │      ├ InstalledVersion: 4.2.15.Final 
                         │      ├ FixedVersion    : 4.2.16.Final, 4.1.136.Final 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:3f40a027dde1d3be420bf78167d8778929cf9021943d
-                        │      │                  │         384ed4f1eee4bd11e128 
-                        │      │                  ╰ DiffID: sha256:7c3540a7fa06352170fc4be5b43ac295d368f87695f9
-                        │      │                            d54f09aafb3326ca458a 
+                        │      ├ Layer            ╭ Digest: sha256:b56b1740507a3573c47aa19399fc8c140d8af1c78c89
+                        │      │                  │         6fcd143a3c4b92a52b66 
+                        │      │                  ╰ DiffID: sha256:7a79226c6a40e2b31852468e4ec7a9289271678303c2
+                        │      │                            2092636c1395e68b9953 
                         │      ├ SeveritySource  : ghsa 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-56745 
                         │      ├ DataSource       ╭ ID  : ghsa 
                         │      │                  ├ Name: GitHub Security Advisory Maven 
                         │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
                         │      │                          cosystem%3Amaven 
-                        │      ├ Fingerprint     : sha256:aeb6678dc3440f3f3d3e3a8e4fe667873c884e65df4e40713d6ff
-                        │      │                   bc5efffb680 
+                        │      ├ Fingerprint     : sha256:7cea1da414d1d40da0b2af5f04405ec1d76f9fe91d8ce84ff9b9a
+                        │      │                   ae98c469f04 
                         │      ├ Title           : Netty is a network application framework for development of
                         │      │                   protocol s ... 
                         │      ├ Description     : Netty is a network application framework for development of
@@ -875,7 +787,7 @@
                         │      │                  ╰ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-56745 
                         │      ├ PublishedDate   : 2026-07-21T22:17:14.5Z 
                         │      ╰ LastModifiedDate: 2026-07-22T20:35:40.827Z 
-                        ├ [7]  ╭ VulnerabilityID : CVE-2026-56746 
+                        ├ [8]  ╭ VulnerabilityID : CVE-2026-56746 
                         │      ├ VendorIDs        ─ [0]: GHSA-6cqp-g7gg-8hr5 
                         │      ├ PkgName         : io.netty:netty-codec-http 
                         │      ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.15.Final.jar 
@@ -884,18 +796,18 @@
                         │      ├ InstalledVersion: 4.2.15.Final 
                         │      ├ FixedVersion    : 4.2.16.Final, 4.1.136.Final 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:3f40a027dde1d3be420bf78167d8778929cf9021943d
-                        │      │                  │         384ed4f1eee4bd11e128 
-                        │      │                  ╰ DiffID: sha256:7c3540a7fa06352170fc4be5b43ac295d368f87695f9
-                        │      │                            d54f09aafb3326ca458a 
+                        │      ├ Layer            ╭ Digest: sha256:b56b1740507a3573c47aa19399fc8c140d8af1c78c89
+                        │      │                  │         6fcd143a3c4b92a52b66 
+                        │      │                  ╰ DiffID: sha256:7a79226c6a40e2b31852468e4ec7a9289271678303c2
+                        │      │                            2092636c1395e68b9953 
                         │      ├ SeveritySource  : ghsa 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-56746 
                         │      ├ DataSource       ╭ ID  : ghsa 
                         │      │                  ├ Name: GitHub Security Advisory Maven 
                         │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
                         │      │                          cosystem%3Amaven 
-                        │      ├ Fingerprint     : sha256:00e79fca441821fc57c5bc90d991f0bfab9e87ac6c56c6c60ad4e
-                        │      │                   5f969dc2bcc 
+                        │      ├ Fingerprint     : sha256:c68e7991fced82238b5547241ba7ae2e20d8ac62048fc4f3e58ec
+                        │      │                   abf9fa0ec85 
                         │      ├ Title           : Netty is a network application framework for development of
                         │      │                   protocol s ... 
                         │      ├ Description     : Netty is a network application framework for development of
@@ -928,7 +840,7 @@
                         │      │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-56746 
                         │      ├ PublishedDate   : 2026-07-21T22:17:14.667Z 
                         │      ╰ LastModifiedDate: 2026-07-22T20:35:40.827Z 
-                        ├ [8]  ╭ VulnerabilityID : CVE-2026-59898 
+                        ├ [9]  ╭ VulnerabilityID : CVE-2026-59898 
                         │      ├ VendorIDs        ─ [0]: GHSA-4mp9-239f-g9hg 
                         │      ├ PkgName         : io.netty:netty-codec-http 
                         │      ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.15.Final.jar 
@@ -937,18 +849,18 @@
                         │      ├ InstalledVersion: 4.2.15.Final 
                         │      ├ FixedVersion    : 4.2.16.Final, 4.1.136.Final 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:3f40a027dde1d3be420bf78167d8778929cf9021943d
-                        │      │                  │         384ed4f1eee4bd11e128 
-                        │      │                  ╰ DiffID: sha256:7c3540a7fa06352170fc4be5b43ac295d368f87695f9
-                        │      │                            d54f09aafb3326ca458a 
+                        │      ├ Layer            ╭ Digest: sha256:b56b1740507a3573c47aa19399fc8c140d8af1c78c89
+                        │      │                  │         6fcd143a3c4b92a52b66 
+                        │      │                  ╰ DiffID: sha256:7a79226c6a40e2b31852468e4ec7a9289271678303c2
+                        │      │                            2092636c1395e68b9953 
                         │      ├ SeveritySource  : ghsa 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-59898 
                         │      ├ DataSource       ╭ ID  : ghsa 
                         │      │                  ├ Name: GitHub Security Advisory Maven 
                         │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
                         │      │                          cosystem%3Amaven 
-                        │      ├ Fingerprint     : sha256:4d133c143030b55517c9fec93f50e022f6e46e307857822157597
-                        │      │                   5c61e1034a7 
+                        │      ├ Fingerprint     : sha256:88fe5c7349f60bfa5d221f257e7cb1f249874426c2c1147f16c02
+                        │      │                   78b032ccd93 
                         │      ├ Title           : Netty: WebSockets V07/V08 handshaker missing
                         │      │                   Connection/Upgrade validation 
                         │      ├ Description     : ## Summary
@@ -970,7 +882,7 @@
                         │                         │      16.Final 
                         │                         ╰ [3]: https://github.com/netty/netty/security/advisories/GHS
                         │                                A-4mp9-239f-g9hg 
-                        ├ [9]  ╭ VulnerabilityID : CVE-2026-59899 
+                        ├ [10] ╭ VulnerabilityID : CVE-2026-59899 
                         │      ├ VendorIDs        ─ [0]: GHSA-q4f6-jm68-57ww 
                         │      ├ PkgName         : io.netty:netty-codec-http 
                         │      ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.15.Final.jar 
@@ -979,18 +891,18 @@
                         │      ├ InstalledVersion: 4.2.15.Final 
                         │      ├ FixedVersion    : 4.2.16.Final, 4.1.136.Final 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:3f40a027dde1d3be420bf78167d8778929cf9021943d
-                        │      │                  │         384ed4f1eee4bd11e128 
-                        │      │                  ╰ DiffID: sha256:7c3540a7fa06352170fc4be5b43ac295d368f87695f9
-                        │      │                            d54f09aafb3326ca458a 
+                        │      ├ Layer            ╭ Digest: sha256:b56b1740507a3573c47aa19399fc8c140d8af1c78c89
+                        │      │                  │         6fcd143a3c4b92a52b66 
+                        │      │                  ╰ DiffID: sha256:7a79226c6a40e2b31852468e4ec7a9289271678303c2
+                        │      │                            2092636c1395e68b9953 
                         │      ├ SeveritySource  : ghsa 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-59899 
                         │      ├ DataSource       ╭ ID  : ghsa 
                         │      │                  ├ Name: GitHub Security Advisory Maven 
                         │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
                         │      │                          cosystem%3Amaven 
-                        │      ├ Fingerprint     : sha256:ecf53be6ae317e76f81b84c8c4c119d8800dba6d331e7ec316d52
-                        │      │                   683612a0d20 
+                        │      ├ Fingerprint     : sha256:9aaa5f423de059c1a3db976b4d6bb8094f2292925196bc6a8446f
+                        │      │                   ae769d7b330 
                         │      ├ Title           : Netty: [HttpContentEncoder] Unbounded Per-Connection Queue
                         │      │                   Growth via HTTP/1.1 Pipelining Leads to Denial of Service 
                         │      ├ Description     : ### Impact
@@ -1016,7 +928,7 @@
                         │                         │      16.Final 
                         │                         ╰ [3]: https://github.com/netty/netty/security/advisories/GHS
                         │                                A-q4f6-jm68-57ww 
-                        ├ [10] ╭ VulnerabilityID : CVE-2026-59921 
+                        ├ [11] ╭ VulnerabilityID : CVE-2026-59921 
                         │      ├ VendorIDs        ─ [0]: GHSA-gcjf-9mgh-3p7g 
                         │      ├ PkgName         : io.netty:netty-codec-http 
                         │      ├ PkgPath         : openaf/Kube/netty-codec-http-4.2.15.Final.jar 
@@ -1025,18 +937,18 @@
                         │      ├ InstalledVersion: 4.2.15.Final 
                         │      ├ FixedVersion    : 4.2.16.Final, 4.1.136.Final 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:3f40a027dde1d3be420bf78167d8778929cf9021943d
-                        │      │                  │         384ed4f1eee4bd11e128 
-                        │      │                  ╰ DiffID: sha256:7c3540a7fa06352170fc4be5b43ac295d368f87695f9
-                        │      │                            d54f09aafb3326ca458a 
+                        │      ├ Layer            ╭ Digest: sha256:b56b1740507a3573c47aa19399fc8c140d8af1c78c89
+                        │      │                  │         6fcd143a3c4b92a52b66 
+                        │      │                  ╰ DiffID: sha256:7a79226c6a40e2b31852468e4ec7a9289271678303c2
+                        │      │                            2092636c1395e68b9953 
                         │      ├ SeveritySource  : ghsa 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-59921 
                         │      ├ DataSource       ╭ ID  : ghsa 
                         │      │                  ├ Name: GitHub Security Advisory Maven 
                         │      │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
                         │      │                          cosystem%3Amaven 
-                        │      ├ Fingerprint     : sha256:9040dda19312bcf9de3f3e592122d726a793cf802fd9694de5975
-                        │      │                   1b2fb417495 
+                        │      ├ Fingerprint     : sha256:0972b048d42d83e77c19d9bdcb2503953f550d63f01c876b5c9cd
+                        │      │                   99f29ad18c4 
                         │      ├ Title           : Netty: CRLF Injection via Multipart Filename in Netty
                         │      │                   HttpPostRequestEncoder 
                         │      ├ Description     : # Security Vulnerability Report: CRLF Injection via
@@ -1416,7 +1328,7 @@
                         │                         │      16.Final 
                         │                         ╰ [3]: https://github.com/netty/netty/security/advisories/GHS
                         │                                A-gcjf-9mgh-3p7g 
-                        ╰ [11] ╭ VulnerabilityID : CVE-2026-59900 
+                        ╰ [12] ╭ VulnerabilityID : CVE-2026-59900 
                                ├ VendorIDs        ─ [0]: GHSA-c69g-56f8-xwqj 
                                ├ PkgName         : io.netty:netty-codec-http2 
                                ├ PkgPath         : openaf/Kube/netty-codec-http2-4.2.15.Final.jar 
@@ -1425,18 +1337,18 @@
                                ├ InstalledVersion: 4.2.15.Final 
                                ├ FixedVersion    : 4.2.16.Final, 4.1.136.Final 
                                ├ Status          : fixed 
-                               ├ Layer            ╭ Digest: sha256:3f40a027dde1d3be420bf78167d8778929cf9021943d
-                               │                  │         384ed4f1eee4bd11e128 
-                               │                  ╰ DiffID: sha256:7c3540a7fa06352170fc4be5b43ac295d368f87695f9
-                               │                            d54f09aafb3326ca458a 
+                               ├ Layer            ╭ Digest: sha256:b56b1740507a3573c47aa19399fc8c140d8af1c78c89
+                               │                  │         6fcd143a3c4b92a52b66 
+                               │                  ╰ DiffID: sha256:7a79226c6a40e2b31852468e4ec7a9289271678303c2
+                               │                            2092636c1395e68b9953 
                                ├ SeveritySource  : ghsa 
                                ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-59900 
                                ├ DataSource       ╭ ID  : ghsa 
                                │                  ├ Name: GitHub Security Advisory Maven 
                                │                  ╰ URL : https://github.com/advisories?query=type%3Areviewed+e
                                │                          cosystem%3Amaven 
-                               ├ Fingerprint     : sha256:a1123df2522b02cd29e9f9c3ae45a69eaa655c6635bd740523ca8
-                               │                   ab08ec76dd6 
+                               ├ Fingerprint     : sha256:d648ee30c1656a5d9c5afd93c0afff6ec97f81dfb90bbcc6c7e1e
+                               │                   95ca0c0b8cf 
                                ├ Title           : Netty: [codec-http2] Lack of Host Header Deduplication in
                                │                   HTTP/2→HTTP/1.x Translation Leads to Request Routing
                                │                   Bypass 
