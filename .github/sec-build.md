@@ -531,15 +531,17 @@
                         │      │                   21f244b1589 
                         │      ├ Title           : io.netty/netty-codec-compression: Netty: Infinite loop in
                         │      │                   netty-codec-compression (bzip2) 
-                        │      ├ Description     : A flaw was found in the netty-codec-compression component of
-                        │      │                    Netty. This vulnerability, caused by a logic error in the
-                        │      │                   bzip2 decoder, allows a remote attacker to send specially
-                        │      │                   crafted bzip2-compressed data. Processing this malformed
-                        │      │                   data can trigger an infinite loop, causing the decoder
-                        │      │                   thread to consume excessive CPU resources. This leads to a
-                        │      │                   denial of service (DoS), requiring manual intervention to
-                        │      │                   restore service. 
+                        │      ├ Description     : Netty is an asynchronous, event-driven network application
+                        │      │                   framework. Prior to versions 4.1.136.Final and 4.2.16.Final,
+                        │      │                    the `Bzip2Decoder` handler in Netty's compression codec
+                        │      │                   pipeline is vulnerable to a denial-of-service attack through
+                        │      │                    a malformed bzip2 stream that permanently captures the
+                        │      │                   event-loop thread in an infinite loop. The vulnerability
+                        │      │                   exists in the run-length encoding (RLE) state machine within
+                        │      │                    [`Bzip2BlockDecompressor.read()`]. This issue has been
+                        │      │                   fixed in versions 4.1.136.Final and 4.2.16.Final. 
                         │      ├ Severity        : HIGH 
+                        │      ├ CweIDs           ─ [0]: CWE-835 
                         │      ├ VendorSeverity   ╭ ghsa  : 3 
                         │      │                  ╰ redhat: 3 
                         │      ├ CVSS             ╭ ghsa   ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/
@@ -548,16 +550,18 @@
                         │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 7.5 
-                        │      ╰ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-59901 
-                        │                         ├ [1]: https://github.com/netty/netty 
-                        │                         ├ [2]: https://github.com/netty/netty/releases/tag/netty-4.1.
-                        │                         │      136.Final 
-                        │                         ├ [3]: https://github.com/netty/netty/releases/tag/netty-4.2.
-                        │                         │      16.Final 
-                        │                         ├ [4]: https://github.com/netty/netty/security/advisories/GHS
-                        │                         │      A-558v-64gr-wgg4 
-                        │                         ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-59901 
-                        │                         ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-59901 
+                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-59901 
+                        │      │                  ├ [1]: https://github.com/netty/netty 
+                        │      │                  ├ [2]: https://github.com/netty/netty/releases/tag/netty-4.1.
+                        │      │                  │      136.Final 
+                        │      │                  ├ [3]: https://github.com/netty/netty/releases/tag/netty-4.2.
+                        │      │                  │      16.Final 
+                        │      │                  ├ [4]: https://github.com/netty/netty/security/advisories/GHS
+                        │      │                  │      A-558v-64gr-wgg4 
+                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-59901 
+                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-59901 
+                        │      ├ PublishedDate   : 2026-07-29T18:16:56.467Z 
+                        │      ╰ LastModifiedDate: 2026-07-30T16:33:59.58Z 
                         ├ [4]  ╭ VulnerabilityID : GHSA-mfg7-5gfp-c4w3 
                         │      ├ PkgName         : io.netty:netty-codec-dns 
                         │      ├ PkgPath         : openaf/Kube/netty-codec-dns-4.2.15.Final.jar 
@@ -793,10 +797,14 @@
                         │      ├ Severity        : HIGH 
                         │      ├ CweIDs           ─ [0]: CWE-400 
                         │      ├ VendorSeverity   ╭ ghsa  : 3 
+                        │      │                  ├ nvd   : 3 
                         │      │                  ╰ redhat: 3 
                         │      ├ CVSS             ╭ ghsa   ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/
                         │      │                  │        │            VI:N/VA:H/SC:N/SI:N/SA:N 
                         │      │                  │        ╰ V40Score : 8.7 
+                        │      │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+                        │      │                  │        │           /A:H 
+                        │      │                  │        ╰ V3Score : 7.5 
                         │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 7.5 
@@ -815,7 +823,7 @@
                         │      │                  ├ [7]: https://nvd.nist.gov/vuln/detail/CVE-2026-56745 
                         │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-56745 
                         │      ├ PublishedDate   : 2026-07-21T22:17:14.5Z 
-                        │      ╰ LastModifiedDate: 2026-07-22T20:35:40.827Z 
+                        │      ╰ LastModifiedDate: 2026-07-30T14:46:55.073Z 
                         ├ [8]  ╭ VulnerabilityID : CVE-2026-56746 
                         │      ├ VendorIDs        ─ [0]: GHSA-6cqp-g7gg-8hr5 
                         │      ├ PkgName         : io.netty:netty-codec-http 
@@ -875,7 +883,7 @@
                         │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-56746 
                         │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-56746 
                         │      ├ PublishedDate   : 2026-07-21T22:17:14.667Z 
-                        │      ╰ LastModifiedDate: 2026-07-22T20:35:40.827Z 
+                        │      ╰ LastModifiedDate: 2026-07-30T14:47:53.123Z 
                         ├ [9]  ╭ VulnerabilityID : CVE-2026-59898 
                         │      ├ VendorIDs        ─ [0]: GHSA-4mp9-239f-g9hg 
                         │      ├ PkgName         : io.netty:netty-codec-http 
@@ -899,15 +907,18 @@
                         │      │                   78b032ccd93 
                         │      ├ Title           : io.netty/netty-codec-http: Netty: Protocol version confusion
                         │      │                    in netty-codec-http (WebSocket) 
-                        │      ├ Description     : A flaw was found in netty-codec-http. The WebSocket
-                        │      │                   handshaker in this component fails to properly validate
-                        │      │                   protocol version information during the WebSocket upgrade
-                        │      │                   process. A remote attacker can exploit this vulnerability by
-                        │      │                    manipulating the WebSocket handshake, leading to a bypass
-                        │      │                   of security checks or the negotiation of unexpected protocol
-                        │      │                    versions. This could potentially enable protocol-level
-                        │      │                   attacks. 
+                        │      ├ Description     : Netty is an asynchronous, event-driven network application
+                        │      │                   framework.  Prior to versions 4.1.136.Final and
+                        │      │                   4.2.16.Final, ab attacker can force WebSocket upgrade via
+                        │      │                   the lax V07 (or V08) handshaker by sending
+                        │      │                   `Sec-WebSocket-Version: 7` and omitting `Connection:
+                        │      │                   Upgrade` / `Upgrade: websocket` headers, completing a
+                        │      │                   protocol switch that a proxy would not recognize as an
+                        │      │                   Upgrade request and enabling HTTP request smuggling /
+                        │      │                   protocol-confusion attacks. This issue has been fixed in
+                        │      │                   versions 4.1.136.Final and 4.2.16.Final. 
                         │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ─ [0]: CWE-444 
                         │      ├ VendorSeverity   ╭ ghsa  : 2 
                         │      │                  ╰ redhat: 2 
                         │      ├ CVSS             ╭ ghsa   ╭ V40Vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/
@@ -916,16 +927,18 @@
                         │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
                         │      │                           │           /A:N 
                         │      │                           ╰ V3Score : 5.3 
-                        │      ╰ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-59898 
-                        │                         ├ [1]: https://github.com/netty/netty 
-                        │                         ├ [2]: https://github.com/netty/netty/releases/tag/netty-4.1.
-                        │                         │      136.Final 
-                        │                         ├ [3]: https://github.com/netty/netty/releases/tag/netty-4.2.
-                        │                         │      16.Final 
-                        │                         ├ [4]: https://github.com/netty/netty/security/advisories/GHS
-                        │                         │      A-4mp9-239f-g9hg 
-                        │                         ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-59898 
-                        │                         ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-59898 
+                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-59898 
+                        │      │                  ├ [1]: https://github.com/netty/netty 
+                        │      │                  ├ [2]: https://github.com/netty/netty/releases/tag/netty-4.1.
+                        │      │                  │      136.Final 
+                        │      │                  ├ [3]: https://github.com/netty/netty/releases/tag/netty-4.2.
+                        │      │                  │      16.Final 
+                        │      │                  ├ [4]: https://github.com/netty/netty/security/advisories/GHS
+                        │      │                  │      A-4mp9-239f-g9hg 
+                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-59898 
+                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-59898 
+                        │      ├ PublishedDate   : 2026-07-29T19:16:48.74Z 
+                        │      ╰ LastModifiedDate: 2026-07-30T16:33:59.58Z 
                         ├ [10] ╭ VulnerabilityID : CVE-2026-59899 
                         │      ├ VendorIDs        ─ [0]: GHSA-q4f6-jm68-57ww 
                         │      ├ PkgName         : io.netty:netty-codec-http 
@@ -949,14 +962,21 @@
                         │      │                   ae769d7b330 
                         │      ├ Title           : io.netty/netty-codec-http: Netty: Memory exhaustion in
                         │      │                   netty-codec-http (decompression bomb) 
-                        │      ├ Description     : A flaw was found in the Netty netty-codec-http component. A
-                        │      │                   remote attacker can send HTTP requests containing highly
-                        │      │                   compressed data. The HTTP decoder in netty-codec-http fails
-                        │      │                   to properly limit the decompression of this content, causing
-                        │      │                    the system to consume excessive memory. This can lead to
-                        │      │                   memory exhaustion and a denial of service (DoS), making the
-                        │      │                   service unavailable to legitimate users. 
+                        │      ├ Description     : Netty is an asynchronous, event-driven network application
+                        │      │                   framework. Prior to versions 4.1.136.Final and 4.2.16.Final,
+                        │      │                    `HttpContentEncoder` (the superclass of the production
+                        │      │                   handler `HttpContentCompressor`) maintains a per-channel
+                        │      │                   `ArrayDeque<CharSequence>` named `acceptEncodingQueue` that
+                        │      │                   accumulates attacker-controlled data without any size limit.
+                        │      │                    The queue is filled on the I/O thread for every inbound
+                        │      │                   HTTP request and drained only when the application later
+                        │      │                   writes a non-1xx response. This creates a resource
+                        │      │                   exhaustion vulnerability when an attacker exploits HTTP/1.1
+                        │      │                   pipelining to flood the connection with requests faster than
+                        │      │                    the application produces responses. This issue has been
+                        │      │                   fixed in versions 4.1.136.Final and 4.2.16.Final. 
                         │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ─ [0]: CWE-770 
                         │      ├ VendorSeverity   ╭ ghsa  : 2 
                         │      │                  ╰ redhat: 3 
                         │      ├ CVSS             ╭ ghsa   ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/
@@ -965,17 +985,19 @@
                         │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 7.5 
-                        │      ╰ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-59899 
-                        │                         ├ [1]: https://github.com/netty/netty 
-                        │                         ├ [2]: https://github.com/netty/netty/releases/tag/netty-4.1.
-                        │                         │      136.Final 
-                        │                         ├ [3]: https://github.com/netty/netty/releases/tag/netty-4.2.
-                        │                         │      16.Final 
-                        │                         ├ [4]: https://github.com/netty/netty/security/advisories/GHS
-                        │                         │      A-q4f6-jm68-57ww 
-                        │                         ├ [5]: https://netty.io/news/2026/07/09/4-1-136-Final.html 
-                        │                         ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-59899 
-                        │                         ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-59899 
+                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-59899 
+                        │      │                  ├ [1]: https://github.com/netty/netty 
+                        │      │                  ├ [2]: https://github.com/netty/netty/releases/tag/netty-4.1.
+                        │      │                  │      136.Final 
+                        │      │                  ├ [3]: https://github.com/netty/netty/releases/tag/netty-4.2.
+                        │      │                  │      16.Final 
+                        │      │                  ├ [4]: https://github.com/netty/netty/security/advisories/GHS
+                        │      │                  │      A-q4f6-jm68-57ww 
+                        │      │                  ├ [5]: https://netty.io/news/2026/07/09/4-1-136-Final.html 
+                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-59899 
+                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-59899 
+                        │      ├ PublishedDate   : 2026-07-29T18:16:56.137Z 
+                        │      ╰ LastModifiedDate: 2026-07-30T16:33:59.58Z 
                         ├ [11] ╭ VulnerabilityID : CVE-2026-59921 
                         │      ├ VendorIDs        ─ [0]: GHSA-gcjf-9mgh-3p7g 
                         │      ├ PkgName         : io.netty:netty-codec-http 
@@ -1034,7 +1056,7 @@
                         │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-59921 
                         │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-59921 
                         │      ├ PublishedDate   : 2026-07-28T23:17:09.923Z 
-                        │      ╰ LastModifiedDate: 2026-07-28T23:17:09.923Z 
+                        │      ╰ LastModifiedDate: 2026-07-30T16:33:59.58Z 
                         ╰ [12] ╭ VulnerabilityID : CVE-2026-59900 
                                ├ VendorIDs        ─ [0]: GHSA-c69g-56f8-xwqj 
                                ├ PkgName         : io.netty:netty-codec-http2 
@@ -1058,14 +1080,21 @@
                                │                   95ca0c0b8cf 
                                ├ Title           : io.netty/netty-codec-http2: Netty: Improper header
                                │                   neutralization in netty-codec-http2 
-                               ├ Description     : A flaw was found in Netty's netty-codec-http2 component. The
-                               │                    HTTP/2 encoder does not properly handle special characters
-                               │                   in HTTP headers. This vulnerability allows a remote attacker
-                               │                    to craft specific HTTP/2 requests, leading to HTTP response
-                               │                    splitting and header injection attacks. Such attacks can
-                               │                   enable an attacker to manipulate web content or inject
-                               │                   malicious headers. 
+                               ├ Description     : Netty is an asynchronous, event-driven network application
+                               │                   framework. Prior to versions 4.1.136.Final and 4.2.16.Final,
+                               │                    Netty's HTTP/2-to-HTTP/1.x translation layer
+                               │                   (`Http2StreamFrameToHttpObjectCodec` and
+                               │                   `InboundHttp2ToHttpAdapter`) fails to deduplicate or
+                               │                   validate `Host` headers when an HTTP/2 client supplies both
+                               │                   the `:authority` pseudo-header and a literal `host` header
+                               │                   in a single HEADERS frame. The translator maps `:authority`
+                               │                   to `Host` and separately copies the literal `host` header,
+                               │                   producing an `HttpRequest` object containing two `Host`
+                               │                   headers with attacker-controlled differing values. This
+                               │                   issue has been fixed in versions 4.1.136.Final and
+                               │                   4.2.16.Final. 
                                ├ Severity        : MEDIUM 
+                               ├ CweIDs           ─ [0]: CWE-444 
                                ├ VendorSeverity   ╭ ghsa  : 2 
                                │                  ╰ redhat: 2 
                                ├ CVSS             ╭ ghsa   ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/
@@ -1074,14 +1103,16 @@
                                │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H
                                │                           │           /A:N 
                                │                           ╰ V3Score : 6.5 
-                               ╰ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-59900 
-                                                  ├ [1]: https://github.com/netty/netty 
-                                                  ├ [2]: https://github.com/netty/netty/releases/tag/netty-4.1.
-                                                  │      136.Final 
-                                                  ├ [3]: https://github.com/netty/netty/releases/tag/netty-4.2.
-                                                  │      16.Final 
-                                                  ├ [4]: https://github.com/netty/netty/security/advisories/GHS
-                                                  │      A-c69g-56f8-xwqj 
-                                                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-59900 
-                                                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-59900 
+                               ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-59900 
+                               │                  ├ [1]: https://github.com/netty/netty 
+                               │                  ├ [2]: https://github.com/netty/netty/releases/tag/netty-4.1.
+                               │                  │      136.Final 
+                               │                  ├ [3]: https://github.com/netty/netty/releases/tag/netty-4.2.
+                               │                  │      16.Final 
+                               │                  ├ [4]: https://github.com/netty/netty/security/advisories/GHS
+                               │                  │      A-c69g-56f8-xwqj 
+                               │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-59900 
+                               │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-59900 
+                               ├ PublishedDate   : 2026-07-29T18:16:56.32Z 
+                               ╰ LastModifiedDate: 2026-07-30T16:33:59.58Z 
 ```
