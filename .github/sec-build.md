@@ -42,10 +42,14 @@
                         │      ├ Severity        : HIGH 
                         │      ├ CweIDs           ─ [0]: CWE-835 
                         │      ├ VendorSeverity   ╭ ghsa  : 3 
+                        │      │                  ├ nvd   : 3 
                         │      │                  ╰ redhat: 3 
                         │      ├ CVSS             ╭ ghsa   ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/
                         │      │                  │        │            VI:N/VA:H/SC:N/SI:N/SA:N 
                         │      │                  │        ╰ V40Score : 8.7 
+                        │      │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+                        │      │                  │        │           /A:H 
+                        │      │                  │        ╰ V3Score : 7.5 
                         │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 7.5 
@@ -60,7 +64,7 @@
                         │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-59901 
                         │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-59901 
                         │      ├ PublishedDate   : 2026-07-29T18:16:56.467Z 
-                        │      ╰ LastModifiedDate: 2026-07-30T16:33:59.58Z 
+                        │      ╰ LastModifiedDate: 2026-08-06T20:29:27.587Z 
                         ├ [1]  ╭ VulnerabilityID : GHSA-mfg7-5gfp-c4w3 
                         │      ├ PkgName         : io.netty:netty-codec-dns 
                         │      ├ PkgPath         : openaf/Kube/netty-codec-dns-4.2.15.Final.jar 
@@ -419,10 +423,14 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-444 
                         │      ├ VendorSeverity   ╭ ghsa  : 2 
+                        │      │                  ├ nvd   : 3 
                         │      │                  ╰ redhat: 2 
                         │      ├ CVSS             ╭ ghsa   ╭ V40Vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/
                         │      │                  │        │            VI:N/VA:N/SC:L/SI:L/SA:N 
                         │      │                  │        ╰ V40Score : 6.3 
+                        │      │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H
+                        │      │                  │        │           /A:N 
+                        │      │                  │        ╰ V3Score : 7.5 
                         │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
                         │      │                           │           /A:N 
                         │      │                           ╰ V3Score : 5.3 
@@ -437,7 +445,7 @@
                         │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-59898 
                         │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-59898 
                         │      ├ PublishedDate   : 2026-07-29T19:16:48.74Z 
-                        │      ╰ LastModifiedDate: 2026-07-30T16:33:59.58Z 
+                        │      ╰ LastModifiedDate: 2026-08-06T20:35:23.36Z 
                         ├ [7]  ╭ VulnerabilityID : CVE-2026-59899 
                         │      ├ VendorIDs        ─ [0]: GHSA-q4f6-jm68-57ww 
                         │      ├ PkgName         : io.netty:netty-codec-http 
@@ -477,10 +485,14 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-770 
                         │      ├ VendorSeverity   ╭ ghsa  : 2 
+                        │      │                  ├ nvd   : 3 
                         │      │                  ╰ redhat: 3 
                         │      ├ CVSS             ╭ ghsa   ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/
                         │      │                  │        │            VI:N/VA:L/SC:N/SI:N/SA:N 
                         │      │                  │        ╰ V40Score : 6.9 
+                        │      │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+                        │      │                  │        │           /A:H 
+                        │      │                  │        ╰ V3Score : 7.5 
                         │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 7.5 
@@ -496,7 +508,7 @@
                         │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-59899 
                         │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-59899 
                         │      ├ PublishedDate   : 2026-07-29T18:16:56.137Z 
-                        │      ╰ LastModifiedDate: 2026-07-30T16:33:59.58Z 
+                        │      ╰ LastModifiedDate: 2026-08-06T20:25:31.51Z 
                         ├ [8]  ╭ VulnerabilityID : CVE-2026-59921 
                         │      ├ VendorIDs        ─ [0]: GHSA-gcjf-9mgh-3p7g 
                         │      ├ PkgName         : io.netty:netty-codec-http 
@@ -537,10 +549,14 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-93 
                         │      ├ VendorSeverity   ╭ ghsa  : 2 
+                        │      │                  ├ nvd   : 2 
                         │      │                  ╰ redhat: 2 
                         │      ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:N/I:H
                         │      │                  │        │           /A:N 
                         │      │                  │        ╰ V3Score : 5.7 
+                        │      │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H
+                        │      │                  │        │           /A:N 
+                        │      │                  │        ╰ V3Score : 6.5 
                         │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:N/I:H
                         │      │                           │           /A:N 
                         │      │                           ╰ V3Score : 5.7 
@@ -555,7 +571,7 @@
                         │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-59921 
                         │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-59921 
                         │      ├ PublishedDate   : 2026-07-28T23:17:09.923Z 
-                        │      ╰ LastModifiedDate: 2026-07-30T16:33:59.58Z 
+                        │      ╰ LastModifiedDate: 2026-08-06T19:35:14.32Z 
                         ├ [9]  ╭ VulnerabilityID : CVE-2026-56819 
                         │      ├ VendorIDs        ─ [0]: GHSA-93wv-jw9v-4972 
                         │      ├ PkgName         : io.netty:netty-codec-http2 
@@ -661,10 +677,14 @@
                                ├ Severity        : MEDIUM 
                                ├ CweIDs           ─ [0]: CWE-444 
                                ├ VendorSeverity   ╭ ghsa  : 2 
+                               │                  ├ nvd   : 2 
                                │                  ╰ redhat: 2 
                                ├ CVSS             ╭ ghsa   ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/
                                │                  │        │            VI:N/VA:N/SC:L/SI:L/SA:N 
                                │                  │        ╰ V40Score : 6.9 
+                               │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L
+                               │                  │        │           /A:N 
+                               │                  │        ╰ V3Score : 5.3 
                                │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H
                                │                           │           /A:N 
                                │                           ╰ V3Score : 6.5 
@@ -679,5 +699,5 @@
                                │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-59900 
                                │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-59900 
                                ├ PublishedDate   : 2026-07-29T18:16:56.32Z 
-                               ╰ LastModifiedDate: 2026-07-30T16:33:59.58Z 
+                               ╰ LastModifiedDate: 2026-08-06T20:29:01.66Z 
 ```
