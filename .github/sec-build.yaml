@@ -2,6 +2,421 @@
   Class: os-pkgs
   Type: alpine
   Packages: []
+  Vulnerabilities:
+  - VulnerabilityID: CVE-2026-13608
+    PkgID: curl@8.21.0-r0
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/curl@8.21.0-r0?arch=x86_64&distro=3.24.1
+      UID: eec4901c65f38f5a
+    InstalledVersion: 8.21.0-r0
+    FixedVersion: 8.22.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d7ba491860ed87c4ebfe4686a4cf76887581b85527164c2fa2d72a9e1c407c00
+      DiffID: sha256:e1ed1b0fdf3954e86185278e919b3b508d4bfcc26f15f3bde51b24debce79280
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-13608
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:1b6124b09498b17b7e98b700fc9f2c32ebd53e232e87005137103086b45b6f85
+    Title: OpenLDAP SASL authentication bypass
+    Description: A flaw in the libcurl SASL negotiation for LDAP authentication allows an incomplete handshake sequence to be misinterpreted as a successful cryptographic verification. An attacker executing a Man-in-the-Middle (MITM) attack can inject a premature or shortcut response that bypasses complete peer validation.
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-18924
+    PkgID: curl@8.21.0-r0
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/curl@8.21.0-r0?arch=x86_64&distro=3.24.1
+      UID: eec4901c65f38f5a
+    InstalledVersion: 8.21.0-r0
+    FixedVersion: 8.22.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d7ba491860ed87c4ebfe4686a4cf76887581b85527164c2fa2d72a9e1c407c00
+      DiffID: sha256:e1ed1b0fdf3954e86185278e919b3b508d4bfcc26f15f3bde51b24debce79280
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-18924
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:be5492d929af397cbb784d4813d9c8ee2f350bbd34015cc0e22562dfc77cb8a6
+    Title: HTTP/2 server push UAF
+    Description: A flaw in libcurl's handling of HTTP/2 Server Push streams, when the parent handle is set to share connections with other handles, can lead to use-after-free in the cleanup process.
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-19931
+    PkgID: curl@8.21.0-r0
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/curl@8.21.0-r0?arch=x86_64&distro=3.24.1
+      UID: eec4901c65f38f5a
+    InstalledVersion: 8.21.0-r0
+    FixedVersion: 8.22.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d7ba491860ed87c4ebfe4686a4cf76887581b85527164c2fa2d72a9e1c407c00
+      DiffID: sha256:e1ed1b0fdf3954e86185278e919b3b508d4bfcc26f15f3bde51b24debce79280
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-19931
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:bee15d40313b0bee3d0c106f9d0e6bdb26682ebbbef94c756e49fe0ed00e3582
+    Title: Negotiate ambient user conn reuse
+    Description: A flaw in libcurl makes it wrongly reuse an HTTP connection setup for a given hostname using Negotiate authentication, when the initial request is done using empty credentials. This can make user B's request get sent over user A's previously authenticated connection.
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-80229
+    PkgID: curl@8.21.0-r0
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/curl@8.21.0-r0?arch=x86_64&distro=3.24.1
+      UID: eec4901c65f38f5a
+    InstalledVersion: 8.21.0-r0
+    FixedVersion: 8.22.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d7ba491860ed87c4ebfe4686a4cf76887581b85527164c2fa2d72a9e1c407c00
+      DiffID: sha256:e1ed1b0fdf3954e86185278e919b3b508d4bfcc26f15f3bde51b24debce79280
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-80229
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:b89b456904233cf644d6f64459165a04a57fab6a1713be49aa08ca6261c3b28d
+    Title: OpenSSL provider use-after-free
+    Description: When performing transfers via libcurl’s multi interface, pooled TLS connections can outlive their originating easy handles. In OpenSSL 3 provider configurations, libcurl attaches an allocated library context to the easy handle's state and passes it to OpenSSL without acquiring an ownership reference; destroying the easy handle prematurely frees this context while the active connection retains a dangling pointer, leading to a heap-use-after-free upon subsequent I/O or post-handshake operations.
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-80230
+    PkgID: curl@8.21.0-r0
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/curl@8.21.0-r0?arch=x86_64&distro=3.24.1
+      UID: eec4901c65f38f5a
+    InstalledVersion: 8.21.0-r0
+    FixedVersion: 8.22.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d7ba491860ed87c4ebfe4686a4cf76887581b85527164c2fa2d72a9e1c407c00
+      DiffID: sha256:e1ed1b0fdf3954e86185278e919b3b508d4bfcc26f15f3bde51b24debce79280
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-80230
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:603be43d861a4ba937184801ff8742fffdf1a6922657965c86c17c12460f18db
+    Title: OpenSSL pinning bypass
+    Description: When `CURLOPT_PINNEDPUBLICKEY` is configured alongside options that disable standard peer verification (`CURLOPT_SSL_VERIFYPEER = 0` and `CURLOPT_SSL_VERIFYHOST = 0`), libcurl fails to enforce public key pinning on connections established without a presented server certificate. Bypassing the pinning check under these disabled-verification conditions allows unauthenticated connections to succeed when they should be rejected.
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-80231
+    PkgID: curl@8.21.0-r0
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/curl@8.21.0-r0?arch=x86_64&distro=3.24.1
+      UID: eec4901c65f38f5a
+    InstalledVersion: 8.21.0-r0
+    FixedVersion: 8.22.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d7ba491860ed87c4ebfe4686a4cf76887581b85527164c2fa2d72a9e1c407c00
+      DiffID: sha256:e1ed1b0fdf3954e86185278e919b3b508d4bfcc26f15f3bde51b24debce79280
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-80231
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:4c59ec53cd8ba0288de76c1ddedf485eb172dd9b3bae699f00b9ab2fecd12c13
+    Title: native CA store conn reuse
+    Description: A flaw in libcurl makes it wrongly reuse an existing HTTPS connection setup for a given hostname even when using a different Native CA Store setting (`CURLSSLOPT_NATIVE_CA`) than when the connection was created.
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-80255
+    PkgID: curl@8.21.0-r0
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/curl@8.21.0-r0?arch=x86_64&distro=3.24.1
+      UID: eec4901c65f38f5a
+    InstalledVersion: 8.21.0-r0
+    FixedVersion: 8.22.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d7ba491860ed87c4ebfe4686a4cf76887581b85527164c2fa2d72a9e1c407c00
+      DiffID: sha256:e1ed1b0fdf3954e86185278e919b3b508d4bfcc26f15f3bde51b24debce79280
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-80255
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:b07e2a2752f64fce5021ba9019949bcb1d911076464238870279d55c1b411fd7
+    Title: secure cookie attribute bypass with tab
+    Description: A `Set-Cookie:` header using tab (horizontal tab, ASCII code 9) instead of space (ascii code 32) immediately before the `Secure` attribute causes curl to store the cookie without its Secure flag. The cookie might then wrongfully be sent over plaintext HTTP on subsequent requests to the same host.
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-80256
+    PkgID: curl@8.21.0-r0
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/curl@8.21.0-r0?arch=x86_64&distro=3.24.1
+      UID: eec4901c65f38f5a
+    InstalledVersion: 8.21.0-r0
+    FixedVersion: 8.22.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d7ba491860ed87c4ebfe4686a4cf76887581b85527164c2fa2d72a9e1c407c00
+      DiffID: sha256:e1ed1b0fdf3954e86185278e919b3b508d4bfcc26f15f3bde51b24debce79280
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:6a6f0cd59c0f27cf64e6330d0c9bc127a1811ca8128e5e1bced06d45cfc10cee
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-82208
+    PkgID: curl@8.21.0-r0
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/curl@8.21.0-r0?arch=x86_64&distro=3.24.1
+      UID: eec4901c65f38f5a
+    InstalledVersion: 8.21.0-r0
+    FixedVersion: 8.22.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d7ba491860ed87c4ebfe4686a4cf76887581b85527164c2fa2d72a9e1c407c00
+      DiffID: sha256:e1ed1b0fdf3954e86185278e919b3b508d4bfcc26f15f3bde51b24debce79280
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-82208
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:85d0ee34db5b121b2e9a72aa99439d453c3d838a85b13b3489ecaf4a0e111a6e
+    Title: Title Not Available
+    Description: Description Not Available
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-82209
+    PkgID: curl@8.21.0-r0
+    PkgName: curl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/curl@8.21.0-r0?arch=x86_64&distro=3.24.1
+      UID: eec4901c65f38f5a
+    InstalledVersion: 8.21.0-r0
+    FixedVersion: 8.22.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d7ba491860ed87c4ebfe4686a4cf76887581b85527164c2fa2d72a9e1c407c00
+      DiffID: sha256:e1ed1b0fdf3954e86185278e919b3b508d4bfcc26f15f3bde51b24debce79280
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-82209
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:0efdba8e2750cca58196e237901a6e6ffadd89cccaad233622b1cd1616d2855b
+    Title: domain-scoped PSL domain cookie
+    Description: When libpsl support is enabled, libcurl fails to enforce the Public Suffix List boundary check when processing a `Set-Cookie` header where the `Domain` attribute explicitly matches an origin host that is itself a public suffix (e.g., `Domain=co.uk` set by `co.uk`). Instead of coercing it into a strict host-only cookie, libcurl saves the cookie with wildcard domain scope (`.co.uk`). Consequently, the cookie is inappropriately included in subsequent outbound requests or HTTP redirects to arbitrary sibling subdomains under the same public suffix (e.g., `attacker.co.uk`).
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-13608
+    PkgID: libcurl@8.21.0-r0
+    PkgName: libcurl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcurl@8.21.0-r0?arch=x86_64&distro=3.24.1
+      UID: 5a575d7b60ce866a
+    InstalledVersion: 8.21.0-r0
+    FixedVersion: 8.22.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d7ba491860ed87c4ebfe4686a4cf76887581b85527164c2fa2d72a9e1c407c00
+      DiffID: sha256:e1ed1b0fdf3954e86185278e919b3b508d4bfcc26f15f3bde51b24debce79280
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-13608
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:47317722728d548cf861ce340f6164fe947d15b45ac9c5c329caf6605c3f704a
+    Title: OpenLDAP SASL authentication bypass
+    Description: A flaw in the libcurl SASL negotiation for LDAP authentication allows an incomplete handshake sequence to be misinterpreted as a successful cryptographic verification. An attacker executing a Man-in-the-Middle (MITM) attack can inject a premature or shortcut response that bypasses complete peer validation.
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-18924
+    PkgID: libcurl@8.21.0-r0
+    PkgName: libcurl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcurl@8.21.0-r0?arch=x86_64&distro=3.24.1
+      UID: 5a575d7b60ce866a
+    InstalledVersion: 8.21.0-r0
+    FixedVersion: 8.22.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d7ba491860ed87c4ebfe4686a4cf76887581b85527164c2fa2d72a9e1c407c00
+      DiffID: sha256:e1ed1b0fdf3954e86185278e919b3b508d4bfcc26f15f3bde51b24debce79280
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-18924
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:ac740d88429c2772c455f02931aa8028e1443a33dd47b297fe50f3b17de6e8cd
+    Title: HTTP/2 server push UAF
+    Description: A flaw in libcurl's handling of HTTP/2 Server Push streams, when the parent handle is set to share connections with other handles, can lead to use-after-free in the cleanup process.
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-19931
+    PkgID: libcurl@8.21.0-r0
+    PkgName: libcurl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcurl@8.21.0-r0?arch=x86_64&distro=3.24.1
+      UID: 5a575d7b60ce866a
+    InstalledVersion: 8.21.0-r0
+    FixedVersion: 8.22.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d7ba491860ed87c4ebfe4686a4cf76887581b85527164c2fa2d72a9e1c407c00
+      DiffID: sha256:e1ed1b0fdf3954e86185278e919b3b508d4bfcc26f15f3bde51b24debce79280
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-19931
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:2ec1a59735d30a05aa495640a4e0164858d3733134ee4fcc0e14ab73af86e190
+    Title: Negotiate ambient user conn reuse
+    Description: A flaw in libcurl makes it wrongly reuse an HTTP connection setup for a given hostname using Negotiate authentication, when the initial request is done using empty credentials. This can make user B's request get sent over user A's previously authenticated connection.
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-80229
+    PkgID: libcurl@8.21.0-r0
+    PkgName: libcurl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcurl@8.21.0-r0?arch=x86_64&distro=3.24.1
+      UID: 5a575d7b60ce866a
+    InstalledVersion: 8.21.0-r0
+    FixedVersion: 8.22.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d7ba491860ed87c4ebfe4686a4cf76887581b85527164c2fa2d72a9e1c407c00
+      DiffID: sha256:e1ed1b0fdf3954e86185278e919b3b508d4bfcc26f15f3bde51b24debce79280
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-80229
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:4ba78ed7bd1fde6cd7985a565d3a8a07b599757cadc99b78f7e8b3b189bf76c6
+    Title: OpenSSL provider use-after-free
+    Description: When performing transfers via libcurl’s multi interface, pooled TLS connections can outlive their originating easy handles. In OpenSSL 3 provider configurations, libcurl attaches an allocated library context to the easy handle's state and passes it to OpenSSL without acquiring an ownership reference; destroying the easy handle prematurely frees this context while the active connection retains a dangling pointer, leading to a heap-use-after-free upon subsequent I/O or post-handshake operations.
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-80230
+    PkgID: libcurl@8.21.0-r0
+    PkgName: libcurl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcurl@8.21.0-r0?arch=x86_64&distro=3.24.1
+      UID: 5a575d7b60ce866a
+    InstalledVersion: 8.21.0-r0
+    FixedVersion: 8.22.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d7ba491860ed87c4ebfe4686a4cf76887581b85527164c2fa2d72a9e1c407c00
+      DiffID: sha256:e1ed1b0fdf3954e86185278e919b3b508d4bfcc26f15f3bde51b24debce79280
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-80230
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:7fb9dbe7a9527f1097c288beb112ae1826021b46a4b62678730043571c078fe8
+    Title: OpenSSL pinning bypass
+    Description: When `CURLOPT_PINNEDPUBLICKEY` is configured alongside options that disable standard peer verification (`CURLOPT_SSL_VERIFYPEER = 0` and `CURLOPT_SSL_VERIFYHOST = 0`), libcurl fails to enforce public key pinning on connections established without a presented server certificate. Bypassing the pinning check under these disabled-verification conditions allows unauthenticated connections to succeed when they should be rejected.
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-80231
+    PkgID: libcurl@8.21.0-r0
+    PkgName: libcurl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcurl@8.21.0-r0?arch=x86_64&distro=3.24.1
+      UID: 5a575d7b60ce866a
+    InstalledVersion: 8.21.0-r0
+    FixedVersion: 8.22.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d7ba491860ed87c4ebfe4686a4cf76887581b85527164c2fa2d72a9e1c407c00
+      DiffID: sha256:e1ed1b0fdf3954e86185278e919b3b508d4bfcc26f15f3bde51b24debce79280
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-80231
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:b16aba053cf592660b2e9676214df5013beeff09b44df12f19a28393712e04ef
+    Title: native CA store conn reuse
+    Description: A flaw in libcurl makes it wrongly reuse an existing HTTPS connection setup for a given hostname even when using a different Native CA Store setting (`CURLSSLOPT_NATIVE_CA`) than when the connection was created.
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-80255
+    PkgID: libcurl@8.21.0-r0
+    PkgName: libcurl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcurl@8.21.0-r0?arch=x86_64&distro=3.24.1
+      UID: 5a575d7b60ce866a
+    InstalledVersion: 8.21.0-r0
+    FixedVersion: 8.22.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d7ba491860ed87c4ebfe4686a4cf76887581b85527164c2fa2d72a9e1c407c00
+      DiffID: sha256:e1ed1b0fdf3954e86185278e919b3b508d4bfcc26f15f3bde51b24debce79280
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-80255
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:3fd0bdcb8891bb109fd7305a08352dd48cd14b20897d67fd3bb73a8544e8b0ff
+    Title: secure cookie attribute bypass with tab
+    Description: A `Set-Cookie:` header using tab (horizontal tab, ASCII code 9) instead of space (ascii code 32) immediately before the `Secure` attribute causes curl to store the cookie without its Secure flag. The cookie might then wrongfully be sent over plaintext HTTP on subsequent requests to the same host.
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-80256
+    PkgID: libcurl@8.21.0-r0
+    PkgName: libcurl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcurl@8.21.0-r0?arch=x86_64&distro=3.24.1
+      UID: 5a575d7b60ce866a
+    InstalledVersion: 8.21.0-r0
+    FixedVersion: 8.22.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d7ba491860ed87c4ebfe4686a4cf76887581b85527164c2fa2d72a9e1c407c00
+      DiffID: sha256:e1ed1b0fdf3954e86185278e919b3b508d4bfcc26f15f3bde51b24debce79280
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:8ced4d477e0f0f2916ef0d166c281df5974d7fb96e2096a0a2ae21a7a86bf643
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-82208
+    PkgID: libcurl@8.21.0-r0
+    PkgName: libcurl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcurl@8.21.0-r0?arch=x86_64&distro=3.24.1
+      UID: 5a575d7b60ce866a
+    InstalledVersion: 8.21.0-r0
+    FixedVersion: 8.22.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d7ba491860ed87c4ebfe4686a4cf76887581b85527164c2fa2d72a9e1c407c00
+      DiffID: sha256:e1ed1b0fdf3954e86185278e919b3b508d4bfcc26f15f3bde51b24debce79280
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-82208
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:392f37cf0252e823fdff5f99c31d57b8195998178351bd4c80dc51e27888486b
+    Title: Title Not Available
+    Description: Description Not Available
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-82209
+    PkgID: libcurl@8.21.0-r0
+    PkgName: libcurl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/libcurl@8.21.0-r0?arch=x86_64&distro=3.24.1
+      UID: 5a575d7b60ce866a
+    InstalledVersion: 8.21.0-r0
+    FixedVersion: 8.22.0-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:d7ba491860ed87c4ebfe4686a4cf76887581b85527164c2fa2d72a9e1c407c00
+      DiffID: sha256:e1ed1b0fdf3954e86185278e919b3b508d4bfcc26f15f3bde51b24debce79280
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-82209
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:6db7eb3a02935d1f7f69ed114812dde218592f970bd95d4cc0009d079348e4eb
+    Title: domain-scoped PSL domain cookie
+    Description: When libpsl support is enabled, libcurl fails to enforce the Public Suffix List boundary check when processing a `Set-Cookie` header where the `Domain` attribute explicitly matches an origin host that is itself a public suffix (e.g., `Domain=co.uk` set by `co.uk`). Instead of coercing it into a strict host-only cookie, libcurl saves the cookie with wildcard domain scope (`.co.uk`). Consequently, the cookie is inappropriately included in subsequent outbound requests or HTTP redirects to arbitrary sibling subdomains under the same public suffix (e.g., `attacker.co.uk`).
+    Severity: UNKNOWN
 - Target: Java
   Class: lang-pkgs
   Type: jar
