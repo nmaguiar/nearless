@@ -21,13 +21,8 @@
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
 │                       │      ├ Fingerprint     : sha256:1b6124b09498b17b7e98b700fc9f2c32ebd53e232e87005137103
 │                       │      │                   086b45b6f85 
-│                       │      ├ Title           : OpenLDAP SASL authentication bypass 
-│                       │      ├ Description     : A flaw in the libcurl SASL negotiation for LDAP
-│                       │      │                   authentication allows an incomplete handshake sequence to be
-│                       │      │                    misinterpreted as a successful cryptographic verification.
-│                       │      │                   An attacker executing a Man-in-the-Middle (MITM) attack can
-│                       │      │                   inject a premature or shortcut response that bypasses
-│                       │      │                   complete peer validation. 
+│                       │      ├ Title           : Title Not Available 
+│                       │      ├ Description     : Description Not Available 
 │                       │      ╰ Severity        : UNKNOWN 
 │                       ├ [1]  ╭ VulnerabilityID : CVE-2026-18924 
 │                       │      ├ PkgID           : curl@8.21.0-r0 
@@ -47,11 +42,8 @@
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
 │                       │      ├ Fingerprint     : sha256:be5492d929af397cbb784d4813d9c8ee2f350bbd34015cc0e2256
 │                       │      │                   2dfc77cb8a6 
-│                       │      ├ Title           : HTTP/2 server push UAF 
-│                       │      ├ Description     : A flaw in libcurl's handling of HTTP/2 Server Push streams,
-│                       │      │                   when the parent handle is set to share connections with
-│                       │      │                   other handles, can lead to use-after-free in the cleanup
-│                       │      │                   process. 
+│                       │      ├ Title           : Title Not Available 
+│                       │      ├ Description     : Description Not Available 
 │                       │      ╰ Severity        : UNKNOWN 
 │                       ├ [2]  ╭ VulnerabilityID : CVE-2026-19931 
 │                       │      ├ PkgID           : curl@8.21.0-r0 
@@ -71,12 +63,8 @@
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
 │                       │      ├ Fingerprint     : sha256:bee15d40313b0bee3d0c106f9d0e6bdb26682ebbbef94c756e49f
 │                       │      │                   e0ed00e3582 
-│                       │      ├ Title           : Negotiate ambient user conn reuse 
-│                       │      ├ Description     : A flaw in libcurl makes it wrongly reuse an HTTP connection
-│                       │      │                   setup for a given hostname using Negotiate authentication,
-│                       │      │                   when the initial request is done using empty credentials.
-│                       │      │                   This can make user B's request get sent over user A's
-│                       │      │                   previously authenticated connection. 
+│                       │      ├ Title           : Title Not Available 
+│                       │      ├ Description     : Description Not Available 
 │                       │      ╰ Severity        : UNKNOWN 
 │                       ├ [3]  ╭ VulnerabilityID : CVE-2026-80229 
 │                       │      ├ PkgID           : curl@8.21.0-r0 
@@ -96,16 +84,8 @@
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
 │                       │      ├ Fingerprint     : sha256:b89b456904233cf644d6f64459165a04a57fab6a1713be49aa08c
 │                       │      │                   a6261c3b28d 
-│                       │      ├ Title           : OpenSSL provider use-after-free 
-│                       │      ├ Description     : When performing transfers via libcurl’s multi interface,
-│                       │      │                   pooled TLS connections can outlive their originating easy
-│                       │      │                   handles. In OpenSSL 3 provider configurations, libcurl
-│                       │      │                   attaches an allocated library context to the easy handle's
-│                       │      │                   state and passes it to OpenSSL without acquiring an
-│                       │      │                   ownership reference; destroying the easy handle prematurely
-│                       │      │                   frees this context while the active connection retains a
-│                       │      │                   dangling pointer, leading to a heap-use-after-free upon
-│                       │      │                   subsequent I/O or post-handshake operations. 
+│                       │      ├ Title           : [Unknown description] 
+│                       │      ├ Description     : [Unknown description] 
 │                       │      ╰ Severity        : UNKNOWN 
 │                       ├ [4]  ╭ VulnerabilityID : CVE-2026-80230 
 │                       │      ├ PkgID           : curl@8.21.0-r0 
@@ -125,15 +105,8 @@
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
 │                       │      ├ Fingerprint     : sha256:603be43d861a4ba937184801ff8742fffdf1a6922657965c86c17
 │                       │      │                   c12460f18db 
-│                       │      ├ Title           : OpenSSL pinning bypass 
-│                       │      ├ Description     : When `CURLOPT_PINNEDPUBLICKEY` is configured alongside
-│                       │      │                   options that disable standard peer verification
-│                       │      │                   (`CURLOPT_SSL_VERIFYPEER = 0` and `CURLOPT_SSL_VERIFYHOST =
-│                       │      │                   0`), libcurl fails to enforce public key pinning on
-│                       │      │                   connections established without a presented server
-│                       │      │                   certificate. Bypassing the pinning check under these
-│                       │      │                   disabled-verification conditions allows unauthenticated
-│                       │      │                   connections to succeed when they should be rejected. 
+│                       │      ├ Title           : [Unknown description] 
+│                       │      ├ Description     : [Unknown description] 
 │                       │      ╰ Severity        : UNKNOWN 
 │                       ├ [5]  ╭ VulnerabilityID : CVE-2026-80231 
 │                       │      ├ PkgID           : curl@8.21.0-r0 
@@ -177,13 +150,8 @@
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
 │                       │      ├ Fingerprint     : sha256:b07e2a2752f64fce5021ba9019949bcb1d911076464238870279d
 │                       │      │                   55c1b411fd7 
-│                       │      ├ Title           : secure cookie attribute bypass with tab 
-│                       │      ├ Description     : A `Set-Cookie:` header using tab (horizontal tab, ASCII code
-│                       │      │                    9) instead of space (ascii code 32) immediately before the
-│                       │      │                   `Secure` attribute causes curl to store the cookie without
-│                       │      │                   its Secure flag. The cookie might then wrongfully be sent
-│                       │      │                   over plaintext HTTP on subsequent requests to the same
-│                       │      │                   host. 
+│                       │      ├ Title           : [Unknown description] 
+│                       │      ├ Description     : [Unknown description] 
 │                       │      ╰ Severity        : UNKNOWN 
 │                       ├ [7]  ╭ VulnerabilityID : CVE-2026-80256 
 │                       │      ├ PkgID           : curl@8.21.0-r0 
@@ -221,8 +189,8 @@
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
 │                       │      ├ Fingerprint     : sha256:85d0ee34db5b121b2e9a72aa99439d453c3d838a85b13b3489eca
 │                       │      │                   f4a0e111a6e 
-│                       │      ├ Title           : Title Not Available 
-│                       │      ├ Description     : Description Not Available 
+│                       │      ├ Title           : [Unknown description] 
+│                       │      ├ Description     : [Unknown description] 
 │                       │      ╰ Severity        : UNKNOWN 
 │                       ├ [9]  ╭ VulnerabilityID : CVE-2026-82209 
 │                       │      ├ PkgID           : curl@8.21.0-r0 
@@ -242,17 +210,8 @@
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
 │                       │      ├ Fingerprint     : sha256:0efdba8e2750cca58196e237901a6e6ffadd89cccaad233622b1c
 │                       │      │                   d1616d2855b 
-│                       │      ├ Title           : domain-scoped PSL domain cookie 
-│                       │      ├ Description     : When libpsl support is enabled, libcurl fails to enforce the
-│                       │      │                    Public Suffix List boundary check when processing a
-│                       │      │                   `Set-Cookie` header where the `Domain` attribute explicitly
-│                       │      │                   matches an origin host that is itself a public suffix (e.g.,
-│                       │      │                    `Domain=co.uk` set by `co.uk`). Instead of coercing it into
-│                       │      │                    a strict host-only cookie, libcurl saves the cookie with
-│                       │      │                   wildcard domain scope (`.co.uk`). Consequently, the cookie
-│                       │      │                   is inappropriately included in subsequent outbound requests
-│                       │      │                   or HTTP redirects to arbitrary sibling subdomains under the
-│                       │      │                   same public suffix (e.g., `attacker.co.uk`). 
+│                       │      ├ Title           : Title Not Available 
+│                       │      ├ Description     : Description Not Available 
 │                       │      ╰ Severity        : UNKNOWN 
 │                       ├ [10] ╭ VulnerabilityID : CVE-2026-13608 
 │                       │      ├ PkgID           : libcurl@8.21.0-r0 
@@ -273,13 +232,8 @@
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
 │                       │      ├ Fingerprint     : sha256:47317722728d548cf861ce340f6164fe947d15b45ac9c5c329caf
 │                       │      │                   6605c3f704a 
-│                       │      ├ Title           : OpenLDAP SASL authentication bypass 
-│                       │      ├ Description     : A flaw in the libcurl SASL negotiation for LDAP
-│                       │      │                   authentication allows an incomplete handshake sequence to be
-│                       │      │                    misinterpreted as a successful cryptographic verification.
-│                       │      │                   An attacker executing a Man-in-the-Middle (MITM) attack can
-│                       │      │                   inject a premature or shortcut response that bypasses
-│                       │      │                   complete peer validation. 
+│                       │      ├ Title           : Title Not Available 
+│                       │      ├ Description     : Description Not Available 
 │                       │      ╰ Severity        : UNKNOWN 
 │                       ├ [11] ╭ VulnerabilityID : CVE-2026-18924 
 │                       │      ├ PkgID           : libcurl@8.21.0-r0 
@@ -300,11 +254,8 @@
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
 │                       │      ├ Fingerprint     : sha256:ac740d88429c2772c455f02931aa8028e1443a33dd47b297fe50f
 │                       │      │                   3b17de6e8cd 
-│                       │      ├ Title           : HTTP/2 server push UAF 
-│                       │      ├ Description     : A flaw in libcurl's handling of HTTP/2 Server Push streams,
-│                       │      │                   when the parent handle is set to share connections with
-│                       │      │                   other handles, can lead to use-after-free in the cleanup
-│                       │      │                   process. 
+│                       │      ├ Title           : Title Not Available 
+│                       │      ├ Description     : Description Not Available 
 │                       │      ╰ Severity        : UNKNOWN 
 │                       ├ [12] ╭ VulnerabilityID : CVE-2026-19931 
 │                       │      ├ PkgID           : libcurl@8.21.0-r0 
@@ -325,12 +276,8 @@
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
 │                       │      ├ Fingerprint     : sha256:2ec1a59735d30a05aa495640a4e0164858d3733134ee4fcc0e14a
 │                       │      │                   b73af86e190 
-│                       │      ├ Title           : Negotiate ambient user conn reuse 
-│                       │      ├ Description     : A flaw in libcurl makes it wrongly reuse an HTTP connection
-│                       │      │                   setup for a given hostname using Negotiate authentication,
-│                       │      │                   when the initial request is done using empty credentials.
-│                       │      │                   This can make user B's request get sent over user A's
-│                       │      │                   previously authenticated connection. 
+│                       │      ├ Title           : Title Not Available 
+│                       │      ├ Description     : Description Not Available 
 │                       │      ╰ Severity        : UNKNOWN 
 │                       ├ [13] ╭ VulnerabilityID : CVE-2026-80229 
 │                       │      ├ PkgID           : libcurl@8.21.0-r0 
@@ -351,16 +298,8 @@
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
 │                       │      ├ Fingerprint     : sha256:4ba78ed7bd1fde6cd7985a565d3a8a07b599757cadc99b78f7e8b
 │                       │      │                   3b189bf76c6 
-│                       │      ├ Title           : OpenSSL provider use-after-free 
-│                       │      ├ Description     : When performing transfers via libcurl’s multi interface,
-│                       │      │                   pooled TLS connections can outlive their originating easy
-│                       │      │                   handles. In OpenSSL 3 provider configurations, libcurl
-│                       │      │                   attaches an allocated library context to the easy handle's
-│                       │      │                   state and passes it to OpenSSL without acquiring an
-│                       │      │                   ownership reference; destroying the easy handle prematurely
-│                       │      │                   frees this context while the active connection retains a
-│                       │      │                   dangling pointer, leading to a heap-use-after-free upon
-│                       │      │                   subsequent I/O or post-handshake operations. 
+│                       │      ├ Title           : [Unknown description] 
+│                       │      ├ Description     : [Unknown description] 
 │                       │      ╰ Severity        : UNKNOWN 
 │                       ├ [14] ╭ VulnerabilityID : CVE-2026-80230 
 │                       │      ├ PkgID           : libcurl@8.21.0-r0 
@@ -381,15 +320,8 @@
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
 │                       │      ├ Fingerprint     : sha256:7fb9dbe7a9527f1097c288beb112ae1826021b46a4b6267873004
 │                       │      │                   3571c078fe8 
-│                       │      ├ Title           : OpenSSL pinning bypass 
-│                       │      ├ Description     : When `CURLOPT_PINNEDPUBLICKEY` is configured alongside
-│                       │      │                   options that disable standard peer verification
-│                       │      │                   (`CURLOPT_SSL_VERIFYPEER = 0` and `CURLOPT_SSL_VERIFYHOST =
-│                       │      │                   0`), libcurl fails to enforce public key pinning on
-│                       │      │                   connections established without a presented server
-│                       │      │                   certificate. Bypassing the pinning check under these
-│                       │      │                   disabled-verification conditions allows unauthenticated
-│                       │      │                   connections to succeed when they should be rejected. 
+│                       │      ├ Title           : [Unknown description] 
+│                       │      ├ Description     : [Unknown description] 
 │                       │      ╰ Severity        : UNKNOWN 
 │                       ├ [15] ╭ VulnerabilityID : CVE-2026-80231 
 │                       │      ├ PkgID           : libcurl@8.21.0-r0 
@@ -435,13 +367,8 @@
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
 │                       │      ├ Fingerprint     : sha256:3fd0bdcb8891bb109fd7305a08352dd48cd14b20897d67fd3bb73
 │                       │      │                   a8544e8b0ff 
-│                       │      ├ Title           : secure cookie attribute bypass with tab 
-│                       │      ├ Description     : A `Set-Cookie:` header using tab (horizontal tab, ASCII code
-│                       │      │                    9) instead of space (ascii code 32) immediately before the
-│                       │      │                   `Secure` attribute causes curl to store the cookie without
-│                       │      │                   its Secure flag. The cookie might then wrongfully be sent
-│                       │      │                   over plaintext HTTP on subsequent requests to the same
-│                       │      │                   host. 
+│                       │      ├ Title           : [Unknown description] 
+│                       │      ├ Description     : [Unknown description] 
 │                       │      ╰ Severity        : UNKNOWN 
 │                       ├ [17] ╭ VulnerabilityID : CVE-2026-80256 
 │                       │      ├ PkgID           : libcurl@8.21.0-r0 
@@ -481,8 +408,8 @@
 │                       │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
 │                       │      ├ Fingerprint     : sha256:392f37cf0252e823fdff5f99c31d57b8195998178351bd4c80dc5
 │                       │      │                   1e27888486b 
-│                       │      ├ Title           : Title Not Available 
-│                       │      ├ Description     : Description Not Available 
+│                       │      ├ Title           : [Unknown description] 
+│                       │      ├ Description     : [Unknown description] 
 │                       │      ╰ Severity        : UNKNOWN 
 │                       ╰ [19] ╭ VulnerabilityID : CVE-2026-82209 
 │                              ├ PkgID           : libcurl@8.21.0-r0 
@@ -503,17 +430,8 @@
 │                              │                  ╰ URL : https://secdb.alpinelinux.org/ 
 │                              ├ Fingerprint     : sha256:6db7eb3a02935d1f7f69ed114812dde218592f970bd95d4cc0009
 │                              │                   d079348e4eb 
-│                              ├ Title           : domain-scoped PSL domain cookie 
-│                              ├ Description     : When libpsl support is enabled, libcurl fails to enforce the
-│                              │                    Public Suffix List boundary check when processing a
-│                              │                   `Set-Cookie` header where the `Domain` attribute explicitly
-│                              │                   matches an origin host that is itself a public suffix (e.g.,
-│                              │                    `Domain=co.uk` set by `co.uk`). Instead of coercing it into
-│                              │                    a strict host-only cookie, libcurl saves the cookie with
-│                              │                   wildcard domain scope (`.co.uk`). Consequently, the cookie
-│                              │                   is inappropriately included in subsequent outbound requests
-│                              │                   or HTTP redirects to arbitrary sibling subdomains under the
-│                              │                   same public suffix (e.g., `attacker.co.uk`). 
+│                              ├ Title           : Title Not Available 
+│                              ├ Description     : Description Not Available 
 │                              ╰ Severity        : UNKNOWN 
 ╰ [1] ╭ Target  : Java 
       ├ Class   : lang-pkgs 
