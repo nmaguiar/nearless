@@ -104,7 +104,8 @@
                         │     ├ Severity        : HIGH 
                         │     ├ CweIDs           ╭ [0]: CWE-400 
                         │     │                  ╰ [1]: CWE-1333 
-                        │     ├ VendorSeverity   ╭ ghsa  : 3 
+                        │     ├ VendorSeverity   ╭ amazon: 3 
+                        │     │                  ├ ghsa  : 3 
                         │     │                  ╰ redhat: 2 
                         │     ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
                         │     │                  │        │           A:H 
@@ -180,7 +181,8 @@
                               ├ Severity        : HIGH 
                               ├ CweIDs           ╭ [0]: CWE-400 
                               │                  ╰ [1]: CWE-770 
-                              ├ VendorSeverity   ╭ ghsa  : 3 
+                              ├ VendorSeverity   ╭ amazon: 3 
+                              │                  ├ ghsa  : 3 
                               │                  ╰ redhat: 3 
                               ├ CVSS             ╭ ghsa   ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
                               │                  │        │           A:H 
