@@ -59,7 +59,7 @@
 │                       │     │                  ├ [9] : https://creativecommons.org/licenses/by/4.0/ 
 │                       │     │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
 │                       │     │                  │       6-96512 
-│                       │     │                  ├ [11]: https://errata.almalinux.org/10/ALSA-2026-75579.html 
+│                       │     │                  ├ [11]: https://errata.almalinux.org/9/ALSA-2026-75571.html 
 │                       │     │                  ├ [12]: https://errata.rockylinux.org/RLSA-2026:75571 
 │                       │     │                  ├ [13]: https://github.com/sudo-project/sudo/commit/1820a34968
 │                       │     │                  │       7522f51023d1ae5925125f59679a8c 
