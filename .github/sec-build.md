@@ -53,23 +53,25 @@
 │                       │     │                  ├ [3] : https://access.redhat.com/errata/RHSA-2026:75579 
 │                       │     │                  ├ [4] : https://access.redhat.com/errata/RHSA-2026:75580 
 │                       │     │                  ├ [5] : https://access.redhat.com/errata/RHSA-2026:82939 
-│                       │     │                  ├ [6] : https://access.redhat.com/security/cve/CVE-2026-96512 
-│                       │     │                  ├ [7] : https://bugzilla.redhat.com/2539327 
-│                       │     │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2539327 
-│                       │     │                  ├ [9] : https://creativecommons.org/licenses/by/4.0/ 
-│                       │     │                  ├ [10]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+│                       │     │                  ├ [6] : https://access.redhat.com/errata/RHSA-2026:86634 
+│                       │     │                  ├ [7] : https://access.redhat.com/errata/RHSA-2026:86635 
+│                       │     │                  ├ [8] : https://access.redhat.com/security/cve/CVE-2026-96512 
+│                       │     │                  ├ [9] : https://bugzilla.redhat.com/2539327 
+│                       │     │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2539327 
+│                       │     │                  ├ [11]: https://creativecommons.org/licenses/by/4.0/ 
+│                       │     │                  ├ [12]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
 │                       │     │                  │       6-96512 
-│                       │     │                  ├ [11]: https://errata.almalinux.org/9/ALSA-2026-75571.html 
-│                       │     │                  ├ [12]: https://errata.rockylinux.org/RLSA-2026:75571 
-│                       │     │                  ├ [13]: https://github.com/sudo-project/sudo/commit/1820a34968
+│                       │     │                  ├ [13]: https://errata.almalinux.org/9/ALSA-2026-75571.html 
+│                       │     │                  ├ [14]: https://errata.rockylinux.org/RLSA-2026:75571 
+│                       │     │                  ├ [15]: https://github.com/sudo-project/sudo/commit/1820a34968
 │                       │     │                  │       7522f51023d1ae5925125f59679a8c 
-│                       │     │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-96512.html 
-│                       │     │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2026-75580.html 
-│                       │     │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-96512 
-│                       │     │                  ├ [17]: https://ubuntu.com/security/notices/USN-8895-1 
-│                       │     │                  ╰ [18]: https://www.cve.org/CVERecord?id=CVE-2026-96512 
+│                       │     │                  ├ [16]: https://linux.oracle.com/cve/CVE-2026-96512.html 
+│                       │     │                  ├ [17]: https://linux.oracle.com/errata/ELSA-2026-75580.html 
+│                       │     │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2026-96512 
+│                       │     │                  ├ [19]: https://ubuntu.com/security/notices/USN-8895-1 
+│                       │     │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2026-96512 
 │                       │     ├ PublishedDate   : 2026-09-23T14:17:10.747Z 
-│                       │     ╰ LastModifiedDate: 2026-10-14T19:17:23.22Z 
+│                       │     ╰ LastModifiedDate: 2026-10-21T12:17:24.603Z 
 │                       ╰ [1] ╭ VulnerabilityID : CVE-2026-85091 
 │                             ├ PkgID           : zlib@1.3.2-r0 
 │                             ├ PkgName         : zlib 
