@@ -3,7 +3,365 @@
 │     ├ Class          : os-pkgs 
 │     ├ Type           : alpine 
 │     ├ Packages        
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2026-96512 
+│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2026-107891 
+│                       │     ├ PkgID           : musl@1.2.6-r2 
+│                       │     ├ PkgName         : musl 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl@1.2.6-r2?arch=x86_64&distro=3.24.2 
+│                       │     │                  ╰ UID : 1f8cb44befe503d4 
+│                       │     ├ InstalledVersion: 1.2.6-r2 
+│                       │     ├ FixedVersion    : 1.2.6-r3 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:6f785bbf2895e778740cf9c6cf7c387e2d9607447edec
+│                       │     │                  │         3e997d46c5179120169 
+│                       │     │                  ╰ DiffID: sha256:7c3fcb292499ea10f0d780f09d40cb0516570e2230a1d
+│                       │     │                            a64bee70ffbc422b376 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Fingerprint     : sha256:81d9f5c0bf384c87a05a0f9a7b7138a6b95805006639024b42a396
+│                       │     │                   6bdf8080eb 
+│                       │     ╰ Severity        : UNKNOWN 
+│                       ├ [1] ╭ VulnerabilityID : CVE-2026-107891 
+│                       │     ├ PkgID           : musl-utils@1.2.6-r2 
+│                       │     ├ PkgName         : musl-utils 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl-utils@1.2.6-r2?arch=x86_64&distro=
+│                       │     │                  │       3.24.2 
+│                       │     │                  ╰ UID : 4497482ec1d943e1 
+│                       │     ├ InstalledVersion: 1.2.6-r2 
+│                       │     ├ FixedVersion    : 1.2.6-r3 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:6f785bbf2895e778740cf9c6cf7c387e2d9607447edec
+│                       │     │                  │         3e997d46c5179120169 
+│                       │     │                  ╰ DiffID: sha256:7c3fcb292499ea10f0d780f09d40cb0516570e2230a1d
+│                       │     │                            a64bee70ffbc422b376 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Fingerprint     : sha256:f7db54234d2c17bb1fd04e6512a2e16eb415b2444a614b01fd8cc7
+│                       │     │                   8f87d0bf7f 
+│                       │     ╰ Severity        : UNKNOWN 
+│                       ├ [2] ╭ VulnerabilityID : CVE-2026-15176 
+│                       │     ├ PkgID           : nginx@1.30.4-r1 
+│                       │     ├ PkgName         : nginx 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/nginx@1.30.4-r1?arch=x86_64&distro=3.24.2 
+│                       │     │                  ╰ UID : 4dacee9b589dfd8f 
+│                       │     ├ InstalledVersion: 1.30.4-r1 
+│                       │     ├ FixedVersion    : 1.30.6-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:6f785bbf2895e778740cf9c6cf7c387e2d9607447edec
+│                       │     │                  │         3e997d46c5179120169 
+│                       │     │                  ╰ DiffID: sha256:7c3fcb292499ea10f0d780f09d40cb0516570e2230a1d
+│                       │     │                            a64bee70ffbc422b376 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-15176 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Fingerprint     : sha256:513e029d7d5d7b42dc8c4a63ac5d83b72e9f4cb7179767b2788aa6
+│                       │     │                   2d37f7b5b4 
+│                       │     ├ Title           : nginx: nginx: heap-based buffer overflow in
+│                       │     │                   ngx_http_core_module via alias with rewrite referencing
+│                       │     │                   $request_filename 
+│                       │     ├ Description     : A vulnerability exists in NGINX Plus and NGINX Open Source
+│                       │     │                   when a location is configured that uses the alias directive
+│                       │     │                   together with rewrite and a set or return directive
+│                       │     │                   referencing the $request_filename variable. Alternatively,
+│                       │     │                   the same result could be achieved when the $request_filename
+│                       │     │                   variable is used in an access log format directive. An
+│                       │     │                   unauthenticated attacker along with conditions beyond their
+│                       │     │                   control can exploit this vulnerability by sending crafted
+│                       │     │                   HTTP requests. This may cause a heap buffer overflow in the
+│                       │     │                   NGINX worker process leading to a restart. Additionally,
+│                       │     │                   attackers can execute code on systems with Address Space
+│                       │     │                   Layout Randomization (ASLR) disabled or when the attacker can
+│                       │     │                    bypass ASLR.
+│                       │     │                   
+│                       │     │                   Impact:
+│                       │     │                   This vulnerability may allow remote attackers to cause a
+│                       │     │                   denial-of-service (DoS) on the NGINX system or to possibly
+│                       │     │                   trigger a code execution. There is no control plane exposure;
+│                       │     │                    this is a data plane issue only.
+│                       │     │                   Note: Software versions which have reached End of Technical
+│                       │     │                   Support (EoTS) are not evaluated. 
+│                       │     ├ Severity        : HIGH 
+│                       │     ├ CweIDs           ─ [0]: CWE-122 
+│                       │     ├ VendorSeverity   ╭ bitnami: 4 
+│                       │     │                  ╰ redhat : 3 
+│                       │     ├ CVSS             ╭ bitnami ╭ V40Vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/
+│                       │     │                  │         │            VI:H/VA:H/SC:N/SI:N/SA:N 
+│                       │     │                  │         ╰ V40Score : 9.2 
+│                       │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H
+│                       │     │                            │           /A:H 
+│                       │     │                            ╰ V3Score : 8.1 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-15176 
+│                       │     │                  ├ [1]: https://my.f5.com/manage/s/article/K000162416 
+│                       │     │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-15176 
+│                       │     │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-15176 
+│                       │     ├ PublishedDate   : 2026-10-14T15:17:19.14Z 
+│                       │     ╰ LastModifiedDate: 2026-10-15T11:17:28.11Z 
+│                       ├ [3] ╭ VulnerabilityID : CVE-2026-93479 
+│                       │     ├ PkgID           : nginx@1.30.4-r1 
+│                       │     ├ PkgName         : nginx 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/nginx@1.30.4-r1?arch=x86_64&distro=3.24.2 
+│                       │     │                  ╰ UID : 4dacee9b589dfd8f 
+│                       │     ├ InstalledVersion: 1.30.4-r1 
+│                       │     ├ FixedVersion    : 1.30.6-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:6f785bbf2895e778740cf9c6cf7c387e2d9607447edec
+│                       │     │                  │         3e997d46c5179120169 
+│                       │     │                  ╰ DiffID: sha256:7c3fcb292499ea10f0d780f09d40cb0516570e2230a1d
+│                       │     │                            a64bee70ffbc422b376 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-93479 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Fingerprint     : sha256:39ff15d78b711988e53ddf96ef64b70451b164c904c3cac1acfac6
+│                       │     │                   845af4fa9e 
+│                       │     ├ Title           : nginx: NGINX map directive and regex matching vulnerability 
+│                       │     ├ Description     : A vulnerability exists in NGINX Plus and NGINX Open Source
+│                       │     │                   when a map directive uses regex matching and the root
+│                       │     │                   directive or access log format references the map's regex
+│                       │     │                   capture variables before referencing the map output variable.
+│                       │     │                    Alternatively, the same result could be achieved by using a
+│                       │     │                   non-cacheable variable in a string expression under certain
+│                       │     │                   conditions. An unauthenticated attacker along with conditions
+│                       │     │                    beyond their control can exploit this vulnerability by
+│                       │     │                   sending crafted HTTP requests. This may cause a heap buffer
+│                       │     │                   overflow in the NGINX worker process leading to a restart.
+│                       │     │                   Additionally, attackers can execute code on systems with
+│                       │     │                   Address Space Layout Randomization (ASLR) disabled or when
+│                       │     │                   the attacker can bypass ASLR.
+│                       │     │                   
+│                       │     │                   Impact: 
+│                       │     │                   This vulnerability may allow remote attackers to cause a
+│                       │     │                   denial-of-service (DoS) on the NGINX system or to possibly
+│                       │     │                   trigger a code execution. There is no control plane exposure;
+│                       │     │                    this is a data plane issue only.
+│                       │     │                   Note: Software versions which have reached End of Technical
+│                       │     │                   Support (EoTS) are not evaluated. 
+│                       │     ├ Severity        : HIGH 
+│                       │     ├ CweIDs           ─ [0]: CWE-122 
+│                       │     ├ VendorSeverity   ╭ bitnami: 4 
+│                       │     │                  ╰ redhat : 3 
+│                       │     ├ CVSS             ╭ bitnami ╭ V40Vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/
+│                       │     │                  │         │            VI:H/VA:H/SC:N/SI:N/SA:N 
+│                       │     │                  │         ╰ V40Score : 9.2 
+│                       │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L
+│                       │     │                            │           /A:H 
+│                       │     │                            ╰ V3Score : 7 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-93479 
+│                       │     │                  ├ [1]: https://my.f5.com/manage/s/article/K000162607 
+│                       │     │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-93479 
+│                       │     │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-93479 
+│                       │     ├ PublishedDate   : 2026-10-14T15:17:26.81Z 
+│                       │     ╰ LastModifiedDate: 2026-10-15T11:18:08.093Z 
+│                       ├ [4] ╭ VulnerabilityID : CVE-2026-97205 
+│                       │     ├ PkgID           : nginx@1.30.4-r1 
+│                       │     ├ PkgName         : nginx 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/nginx@1.30.4-r1?arch=x86_64&distro=3.24.2 
+│                       │     │                  ╰ UID : 4dacee9b589dfd8f 
+│                       │     ├ InstalledVersion: 1.30.4-r1 
+│                       │     ├ FixedVersion    : 1.30.6-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:6f785bbf2895e778740cf9c6cf7c387e2d9607447edec
+│                       │     │                  │         3e997d46c5179120169 
+│                       │     │                  ╰ DiffID: sha256:7c3fcb292499ea10f0d780f09d40cb0516570e2230a1d
+│                       │     │                            a64bee70ffbc422b376 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-97205 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Fingerprint     : sha256:778c6993f2ba0b55136cd65bd4fbae76374389c4d3ea81bc39acfe
+│                       │     │                   e6442c6eff 
+│                       │     ├ Title           : nginx: NGINX ngx_http_core_module vulnerability 
+│                       │     ├ Description     : NGINX Plus and NGINX Open Source have a vulnerability in the
+│                       │     │                   ngx_http_core_module module. When asynchronous file I/O (AIO)
+│                       │     │                    is enabled in certain configurations, processing a Server
+│                       │     │                   Side Includes (SSI) page containing “include virtual”
+│                       │     │                   commands may trigger a Use-After-Free (UAF) in the NGINX
+│                       │     │                   worker process. This may cause memory corruption or a worker
+│                       │     │                   process crash. Additionally, attackers can execute code on
+│                       │     │                   systems with Address Space Layout Randomization (ASLR)
+│                       │     │                   disabled or when the attacker can bypass ASLR.
+│                       │     │                   
+│                       │     │                   Impact:
+│                       │     │                   This vulnerability may allow remote attackers to cause a
+│                       │     │                   denial-of-service (DoS) on the NGINX system, corrupt its
+│                       │     │                   memory, or possibly trigger code execution. There is no
+│                       │     │                   control plane exposure; this is a data plane issue only.
+│                       │     │                   Note: Software versions which have reached End of Technical
+│                       │     │                   Support (EoTS) are not evaluated. 
+│                       │     ├ Severity        : HIGH 
+│                       │     ├ CweIDs           ─ [0]: CWE-416 
+│                       │     ├ VendorSeverity   ╭ bitnami: 4 
+│                       │     │                  ╰ redhat : 3 
+│                       │     ├ CVSS             ╭ bitnami ╭ V40Vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/
+│                       │     │                  │         │            VI:H/VA:H/SC:N/SI:N/SA:N 
+│                       │     │                  │         ╰ V40Score : 9.2 
+│                       │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H
+│                       │     │                            │           /A:H 
+│                       │     │                            ╰ V3Score : 8.1 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-97205 
+│                       │     │                  ├ [1]: https://my.f5.com/manage/s/article/K000162608 
+│                       │     │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-97205 
+│                       │     │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-97205 
+│                       │     ├ PublishedDate   : 2026-10-14T15:17:28.2Z 
+│                       │     ╰ LastModifiedDate: 2026-10-15T11:18:08.67Z 
+│                       ├ [5] ╭ VulnerabilityID : CVE-2026-90439 
+│                       │     ├ PkgID           : nginx@1.30.4-r1 
+│                       │     ├ PkgName         : nginx 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/nginx@1.30.4-r1?arch=x86_64&distro=3.24.2 
+│                       │     │                  ╰ UID : 4dacee9b589dfd8f 
+│                       │     ├ InstalledVersion: 1.30.4-r1 
+│                       │     ├ FixedVersion    : 1.30.6-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:6f785bbf2895e778740cf9c6cf7c387e2d9607447edec
+│                       │     │                  │         3e997d46c5179120169 
+│                       │     │                  ╰ DiffID: sha256:7c3fcb292499ea10f0d780f09d40cb0516570e2230a1d
+│                       │     │                            a64bee70ffbc422b376 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-90439 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Fingerprint     : sha256:d89bf58cd601f0b0df94012daf133015e542db792fd836e4716587
+│                       │     │                   5c9d8eb351 
+│                       │     ├ Title           : nginx: NGINX ngx_http_v3_module: Denial of Service via TLS
+│                       │     │                   handshake heap buffer overflow 
+│                       │     ├ Description     : NGINX Plus and NGINX Open Source have a vulnerability in the
+│                       │     │                   ngx_http_v3_module module. When using HTTP/3 with OpenSSL
+│                       │     │                   versions <= OpenSSL 3.5.0 under certain configurations, a
+│                       │     │                   limited heap buffer overflow could happen while processing a
+│                       │     │                   TLS handshake. This can happen in a non-deterministic manner
+│                       │     │                   that is beyond the attacker's control. This may cause a heap
+│                       │     │                   buffer overflow in the NGINX worker process leading to a
+│                       │     │                   restart and/or limited data corruption.
+│                       │     │                   
+│                       │     │                   Impact:
+│                       │     │                   This vulnerability may allow remote attackers to cause a
+│                       │     │                   denial-of-service (DoS) on the NGINX system or limited data
+│                       │     │                   corruption. There is no control plane exposure; this is a
+│                       │     │                   data plane issue only.
+│                       │     │                   Note: Software versions which have reached End of Technical
+│                       │     │                   Support (EoTS) are not evaluated. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ CweIDs           ─ [0]: CWE-122 
+│                       │     ├ VendorSeverity   ╭ bitnami: 2 
+│                       │     │                  ╰ redhat : 2 
+│                       │     ├ CVSS             ╭ bitnami ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/
+│                       │     │                  │         │            VI:L/VA:L/SC:N/SI:N/SA:N 
+│                       │     │                  │         ╰ V40Score : 6.9 
+│                       │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L
+│                       │     │                            │           /A:L 
+│                       │     │                            ╰ V3Score : 6.5 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-90439 
+│                       │     │                  ├ [1]: https://my.f5.com/manage/s/article/K000162604 
+│                       │     │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-90439 
+│                       │     │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-90439 
+│                       │     ├ PublishedDate   : 2026-09-15T15:17:27.023Z 
+│                       │     ╰ LastModifiedDate: 2026-09-18T19:34:36.657Z 
+│                       ├ [6] ╭ VulnerabilityID : CVE-2026-95101 
+│                       │     ├ PkgID           : nginx@1.30.4-r1 
+│                       │     ├ PkgName         : nginx 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/nginx@1.30.4-r1?arch=x86_64&distro=3.24.2 
+│                       │     │                  ╰ UID : 4dacee9b589dfd8f 
+│                       │     ├ InstalledVersion: 1.30.4-r1 
+│                       │     ├ FixedVersion    : 1.30.6-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:6f785bbf2895e778740cf9c6cf7c387e2d9607447edec
+│                       │     │                  │         3e997d46c5179120169 
+│                       │     │                  ╰ DiffID: sha256:7c3fcb292499ea10f0d780f09d40cb0516570e2230a1d
+│                       │     │                            a64bee70ffbc422b376 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-95101 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Fingerprint     : sha256:bac0945be70d0a2238c36493fe675dc0092861c4e1d7a5e74193e3
+│                       │     │                   8a60bb20b6 
+│                       │     ├ Title           : nginx: nginx: Data injection in proxied requests via HTTP/3
+│                       │     │                   request buffering 
+│                       │     ├ Description     : Description
+│                       │     │                   NGINX Plus and NGINX Open Source have a vulnerability in the
+│                       │     │                   ngx_http_v3_module module. When using HTTP/3 with 
+│                       │     │                   
+│                       │     │                   proxy_request_buffering on directive, an unauthenticated
+│                       │     │                   attacker may be able to inject data in the proxied request.
+│                       │     │                   Impact
+│                       │     │                   This vulnerability may allow remote attackers to 
+│                       │     │                   inject data in the proxied request.  There is no control
+│                       │     │                   plane exposure; this is a data plane issue only.
+│                       │     │                   Note: Software versions which have reached End of Technical
+│                       │     │                   Support (EoTS) are not evaluated. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ CweIDs           ─ [0]: CWE-172 
+│                       │     ├ VendorSeverity   ╭ bitnami: 2 
+│                       │     │                  ╰ redhat : 2 
+│                       │     ├ CVSS             ╭ bitnami ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/
+│                       │     │                  │         │            VI:L/VA:N/SC:N/SI:N/SA:N 
+│                       │     │                  │         ╰ V40Score : 6.9 
+│                       │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L
+│                       │     │                            │           /A:N 
+│                       │     │                            ╰ V3Score : 5.3 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-95101 
+│                       │     │                  ├ [1]: https://my.f5.com/manage/s/article/K000162613 
+│                       │     │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-95101 
+│                       │     │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-95101 
+│                       │     ├ PublishedDate   : 2026-10-14T15:17:27.1Z 
+│                       │     ╰ LastModifiedDate: 2026-10-15T17:17:32.607Z 
+│                       ├ [7] ╭ VulnerabilityID : CVE-2026-97629 
+│                       │     ├ PkgID           : nginx@1.30.4-r1 
+│                       │     ├ PkgName         : nginx 
+│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/nginx@1.30.4-r1?arch=x86_64&distro=3.24.2 
+│                       │     │                  ╰ UID : 4dacee9b589dfd8f 
+│                       │     ├ InstalledVersion: 1.30.4-r1 
+│                       │     ├ FixedVersion    : 1.30.6-r0 
+│                       │     ├ Status          : fixed 
+│                       │     ├ Layer            ╭ Digest: sha256:6f785bbf2895e778740cf9c6cf7c387e2d9607447edec
+│                       │     │                  │         3e997d46c5179120169 
+│                       │     │                  ╰ DiffID: sha256:7c3fcb292499ea10f0d780f09d40cb0516570e2230a1d
+│                       │     │                            a64bee70ffbc422b376 
+│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-97629 
+│                       │     ├ DataSource       ╭ ID  : alpine 
+│                       │     │                  ├ Name: Alpine Secdb 
+│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+│                       │     ├ Fingerprint     : sha256:f67b720853fb32904ab35b796517e193b73a4656aba9b6118b21e7
+│                       │     │                   9baf372c4d 
+│                       │     ├ Title           : nginx: nginx: Client certificate verification bypass via
+│                       │     │                   forged SSL sessions 
+│                       │     ├ Description     : Description
+│                       │     │                   When NGINX Plus or NGINX Open Source is configured with
+│                       │     │                   ssl_session_cache 
+│                       │     │                   
+│                       │     │                   shared:name:size
+│                       │     │                   without an explicit ssl_session_ticket_key file directives to
+│                       │     │                    automatically rotate SSL session ticket keys, a remote
+│                       │     │                   unauthenticated attacker is able to forge client SSL sessions
+│                       │     │                    
+│                       │     │                   in a non-deterministic manner that is beyond the attacker's
+│                       │     │                   control. An attacker could leverage this vulnerability to
+│                       │     │                   bypass verification of client certificates.
+│                       │     │                   Impact
+│                       │     │                   This vulnerability can lead to the exposure of resources or
+│                       │     │                   functionality to unintended actors, possibly providing
+│                       │     │                   attackers with access to sensitive information. There is no
+│                       │     │                   control plane exposure; this is a data plane issue only.
+│                       │     │                   Note: Software versions which have reached End of Technical
+│                       │     │                   Support (EoTS) are not evaluated. 
+│                       │     ├ Severity        : MEDIUM 
+│                       │     ├ CweIDs           ─ [0]: CWE-908 
+│                       │     ├ VendorSeverity   ╭ bitnami: 3 
+│                       │     │                  ╰ redhat : 2 
+│                       │     ├ CVSS             ╭ bitnami ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/
+│                       │     │                  │         │            VI:L/VA:N/SC:N/SI:N/SA:N 
+│                       │     │                  │         ╰ V40Score : 8.3 
+│                       │     │                  ╰ redhat  ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L
+│                       │     │                            │           /A:N 
+│                       │     │                            ╰ V3Score : 6.5 
+│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-97629 
+│                       │     │                  ├ [1]: https://my.f5.com/manage/s/article/K000162606 
+│                       │     │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-97629 
+│                       │     │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-97629 
+│                       │     ├ PublishedDate   : 2026-10-14T15:17:28.6Z 
+│                       │     ╰ LastModifiedDate: 2026-10-15T17:17:33.41Z 
+│                       ├ [8] ╭ VulnerabilityID : CVE-2026-96512 
 │                       │     ├ PkgID           : sudo@1.9.17_p2-r1 
 │                       │     ├ PkgName         : sudo 
 │                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/sudo@1.9.17_p2-r1?arch=x86_64&distro=3.
@@ -53,26 +411,28 @@
 │                       │     │                  ├ [3] : https://access.redhat.com/errata/RHSA-2026:75579 
 │                       │     │                  ├ [4] : https://access.redhat.com/errata/RHSA-2026:75580 
 │                       │     │                  ├ [5] : https://access.redhat.com/errata/RHSA-2026:82939 
-│                       │     │                  ├ [6] : https://access.redhat.com/errata/RHSA-2026:86634 
-│                       │     │                  ├ [7] : https://access.redhat.com/errata/RHSA-2026:86635 
-│                       │     │                  ├ [8] : https://access.redhat.com/security/cve/CVE-2026-96512 
-│                       │     │                  ├ [9] : https://bugzilla.redhat.com/2539327 
-│                       │     │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2539327 
-│                       │     │                  ├ [11]: https://creativecommons.org/licenses/by/4.0/ 
-│                       │     │                  ├ [12]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
+│                       │     │                  ├ [6] : https://access.redhat.com/errata/RHSA-2026:86633 
+│                       │     │                  ├ [7] : https://access.redhat.com/errata/RHSA-2026:86634 
+│                       │     │                  ├ [8] : https://access.redhat.com/errata/RHSA-2026:86635 
+│                       │     │                  ├ [9] : https://access.redhat.com/errata/RHSA-2026:87026 
+│                       │     │                  ├ [10]: https://access.redhat.com/security/cve/CVE-2026-96512 
+│                       │     │                  ├ [11]: https://bugzilla.redhat.com/2539327 
+│                       │     │                  ├ [12]: https://bugzilla.redhat.com/show_bug.cgi?id=2539327 
+│                       │     │                  ├ [13]: https://creativecommons.org/licenses/by/4.0/ 
+│                       │     │                  ├ [14]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-202
 │                       │     │                  │       6-96512 
-│                       │     │                  ├ [13]: https://errata.almalinux.org/9/ALSA-2026-75571.html 
-│                       │     │                  ├ [14]: https://errata.rockylinux.org/RLSA-2026:75571 
-│                       │     │                  ├ [15]: https://github.com/sudo-project/sudo/commit/1820a34968
+│                       │     │                  ├ [15]: https://errata.almalinux.org/8/ALSA-2026-75580.html 
+│                       │     │                  ├ [16]: https://errata.rockylinux.org/RLSA-2026:75571 
+│                       │     │                  ├ [17]: https://github.com/sudo-project/sudo/commit/1820a34968
 │                       │     │                  │       7522f51023d1ae5925125f59679a8c 
-│                       │     │                  ├ [16]: https://linux.oracle.com/cve/CVE-2026-96512.html 
-│                       │     │                  ├ [17]: https://linux.oracle.com/errata/ELSA-2026-75580.html 
-│                       │     │                  ├ [18]: https://nvd.nist.gov/vuln/detail/CVE-2026-96512 
-│                       │     │                  ├ [19]: https://ubuntu.com/security/notices/USN-8895-1 
-│                       │     │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2026-96512 
+│                       │     │                  ├ [18]: https://linux.oracle.com/cve/CVE-2026-96512.html 
+│                       │     │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2026-75580.html 
+│                       │     │                  ├ [20]: https://nvd.nist.gov/vuln/detail/CVE-2026-96512 
+│                       │     │                  ├ [21]: https://ubuntu.com/security/notices/USN-8895-1 
+│                       │     │                  ╰ [22]: https://www.cve.org/CVERecord?id=CVE-2026-96512 
 │                       │     ├ PublishedDate   : 2026-09-23T14:17:10.747Z 
-│                       │     ╰ LastModifiedDate: 2026-10-21T12:17:24.603Z 
-│                       ╰ [1] ╭ VulnerabilityID : CVE-2026-85091 
+│                       │     ╰ LastModifiedDate: 2026-10-22T06:17:15.71Z 
+│                       ╰ [9] ╭ VulnerabilityID : CVE-2026-85091 
 │                             ├ PkgID           : zlib@1.3.2-r0 
 │                             ├ PkgName         : zlib 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.2-r0?arch=x86_64&distro=3.24.2 
