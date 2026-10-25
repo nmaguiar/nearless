@@ -1,397 +1,143 @@
-- Target: nmaguiar/nearless:build (alpine 3.24.2)
+- Target: nmaguiar/nearless:build (alpine 3.24.3)
   Class: os-pkgs
   Type: alpine
   Packages: []
-  Vulnerabilities:
-  - VulnerabilityID: CVE-2026-107891
-    PkgID: musl@1.2.6-r2
-    PkgName: musl
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/musl@1.2.6-r2?arch=x86_64&distro=3.24.2
-      UID: 1f8cb44befe503d4
-    InstalledVersion: 1.2.6-r2
-    FixedVersion: 1.2.6-r3
-    Status: fixed
-    Layer:
-      Digest: sha256:6f785bbf2895e778740cf9c6cf7c387e2d9607447edec3e997d46c5179120169
-      DiffID: sha256:7c3fcb292499ea10f0d780f09d40cb0516570e2230a1da64bee70ffbc422b376
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:81d9f5c0bf384c87a05a0f9a7b7138a6b95805006639024b42a3966bdf8080eb
-    Severity: UNKNOWN
-  - VulnerabilityID: CVE-2026-107891
-    PkgID: musl-utils@1.2.6-r2
-    PkgName: musl-utils
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/musl-utils@1.2.6-r2?arch=x86_64&distro=3.24.2
-      UID: 4497482ec1d943e1
-    InstalledVersion: 1.2.6-r2
-    FixedVersion: 1.2.6-r3
-    Status: fixed
-    Layer:
-      Digest: sha256:6f785bbf2895e778740cf9c6cf7c387e2d9607447edec3e997d46c5179120169
-      DiffID: sha256:7c3fcb292499ea10f0d780f09d40cb0516570e2230a1da64bee70ffbc422b376
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:f7db54234d2c17bb1fd04e6512a2e16eb415b2444a614b01fd8cc78f87d0bf7f
-    Severity: UNKNOWN
-  - VulnerabilityID: CVE-2026-15176
-    PkgID: nginx@1.30.4-r1
-    PkgName: nginx
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/nginx@1.30.4-r1?arch=x86_64&distro=3.24.2
-      UID: 4dacee9b589dfd8f
-    InstalledVersion: 1.30.4-r1
-    FixedVersion: 1.30.6-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:6f785bbf2895e778740cf9c6cf7c387e2d9607447edec3e997d46c5179120169
-      DiffID: sha256:7c3fcb292499ea10f0d780f09d40cb0516570e2230a1da64bee70ffbc422b376
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-15176
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:513e029d7d5d7b42dc8c4a63ac5d83b72e9f4cb7179767b2788aa62d37f7b5b4
-    Title: 'nginx: nginx: heap-based buffer overflow in ngx_http_core_module via alias with rewrite referencing $request_filename'
-    Description: |-
-      A vulnerability exists in NGINX Plus and NGINX Open Source when a location is configured that uses the alias directive together with rewrite and a set or return directive referencing the $request_filename variable. Alternatively, the same result could be achieved when the $request_filename variable is used in an access log format directive. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.
-
-      Impact:
-      This vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.
-
-
-
-
-      Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.
-    Severity: HIGH
-    CweIDs:
-    - CWE-122
-    VendorSeverity:
-      bitnami: 4
-      redhat: 3
-    CVSS:
-      bitnami:
-        V40Vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
-        V40Score: 9.2
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H
-        V3Score: 8.1
-    References:
-    - https://access.redhat.com/security/cve/CVE-2026-15176
-    - https://my.f5.com/manage/s/article/K000162416
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-15176
-    - https://www.cve.org/CVERecord?id=CVE-2026-15176
-    PublishedDate: '2026-10-14T15:17:19.14Z'
-    LastModifiedDate: '2026-10-15T11:17:28.11Z'
-  - VulnerabilityID: CVE-2026-93479
-    PkgID: nginx@1.30.4-r1
-    PkgName: nginx
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/nginx@1.30.4-r1?arch=x86_64&distro=3.24.2
-      UID: 4dacee9b589dfd8f
-    InstalledVersion: 1.30.4-r1
-    FixedVersion: 1.30.6-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:6f785bbf2895e778740cf9c6cf7c387e2d9607447edec3e997d46c5179120169
-      DiffID: sha256:7c3fcb292499ea10f0d780f09d40cb0516570e2230a1da64bee70ffbc422b376
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-93479
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:39ff15d78b711988e53ddf96ef64b70451b164c904c3cac1acfac6845af4fa9e
-    Title: 'nginx: NGINX map directive and regex matching vulnerability'
-    Description: "A vulnerability exists in NGINX Plus and NGINX Open Source when a map directive uses regex matching and the root directive or access log format references the map's regex capture variables before referencing the map output variable. Alternatively, the same result could be achieved by using a non-cacheable variable in a string expression under certain conditions. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\_\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
-    Severity: HIGH
-    CweIDs:
-    - CWE-122
-    VendorSeverity:
-      bitnami: 4
-      redhat: 3
-    CVSS:
-      bitnami:
-        V40Vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
-        V40Score: 9.2
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:H
-        V3Score: 7
-    References:
-    - https://access.redhat.com/security/cve/CVE-2026-93479
-    - https://my.f5.com/manage/s/article/K000162607
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-93479
-    - https://www.cve.org/CVERecord?id=CVE-2026-93479
-    PublishedDate: '2026-10-14T15:17:26.81Z'
-    LastModifiedDate: '2026-10-15T11:18:08.093Z'
-  - VulnerabilityID: CVE-2026-97205
-    PkgID: nginx@1.30.4-r1
-    PkgName: nginx
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/nginx@1.30.4-r1?arch=x86_64&distro=3.24.2
-      UID: 4dacee9b589dfd8f
-    InstalledVersion: 1.30.4-r1
-    FixedVersion: 1.30.6-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:6f785bbf2895e778740cf9c6cf7c387e2d9607447edec3e997d46c5179120169
-      DiffID: sha256:7c3fcb292499ea10f0d780f09d40cb0516570e2230a1da64bee70ffbc422b376
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-97205
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:778c6993f2ba0b55136cd65bd4fbae76374389c4d3ea81bc39acfee6442c6eff
-    Title: 'nginx: NGINX ngx_http_core_module vulnerability'
-    Description: |-
-      NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_core_module module. When asynchronous file I/O (AIO) is enabled in certain configurations, processing a Server Side Includes (SSI) page containing “include virtual” commands may trigger a Use-After-Free (UAF) in the NGINX worker process. This may cause memory corruption or a worker process crash. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.
-
-      Impact:
-      This vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system, corrupt its memory, or possibly trigger code execution. There is no control plane exposure; this is a data plane issue only.
-
-
-
-
-      Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.
-    Severity: HIGH
-    CweIDs:
-    - CWE-416
-    VendorSeverity:
-      bitnami: 4
-      redhat: 3
-    CVSS:
-      bitnami:
-        V40Vector: CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
-        V40Score: 9.2
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H
-        V3Score: 8.1
-    References:
-    - https://access.redhat.com/security/cve/CVE-2026-97205
-    - https://my.f5.com/manage/s/article/K000162608
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-97205
-    - https://www.cve.org/CVERecord?id=CVE-2026-97205
-    PublishedDate: '2026-10-14T15:17:28.2Z'
-    LastModifiedDate: '2026-10-15T11:18:08.67Z'
-  - VulnerabilityID: CVE-2026-90439
-    PkgID: nginx@1.30.4-r1
-    PkgName: nginx
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/nginx@1.30.4-r1?arch=x86_64&distro=3.24.2
-      UID: 4dacee9b589dfd8f
-    InstalledVersion: 1.30.4-r1
-    FixedVersion: 1.30.6-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:6f785bbf2895e778740cf9c6cf7c387e2d9607447edec3e997d46c5179120169
-      DiffID: sha256:7c3fcb292499ea10f0d780f09d40cb0516570e2230a1da64bee70ffbc422b376
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-90439
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:d89bf58cd601f0b0df94012daf133015e542db792fd836e47165875c9d8eb351
-    Title: 'nginx: NGINX ngx_http_v3_module: Denial of Service via TLS handshake heap buffer overflow'
-    Description: "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with OpenSSL versions <= OpenSSL 3.5.0 under certain configurations, a limited heap buffer overflow could happen while processing a TLS handshake. This can happen in a non-deterministic manner that is beyond the attacker's control.\_This may cause a heap buffer overflow in the NGINX worker process leading to a restart and/or limited data corruption.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or limited data corruption. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-122
-    VendorSeverity:
-      bitnami: 2
-      redhat: 2
-    CVSS:
-      bitnami:
-        V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N
-        V40Score: 6.9
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L
-        V3Score: 6.5
-    References:
-    - https://access.redhat.com/security/cve/CVE-2026-90439
-    - https://my.f5.com/manage/s/article/K000162604
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-90439
-    - https://www.cve.org/CVERecord?id=CVE-2026-90439
-    PublishedDate: '2026-09-15T15:17:27.023Z'
-    LastModifiedDate: '2026-09-18T19:34:36.657Z'
-  - VulnerabilityID: CVE-2026-95101
-    PkgID: nginx@1.30.4-r1
-    PkgName: nginx
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/nginx@1.30.4-r1?arch=x86_64&distro=3.24.2
-      UID: 4dacee9b589dfd8f
-    InstalledVersion: 1.30.4-r1
-    FixedVersion: 1.30.6-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:6f785bbf2895e778740cf9c6cf7c387e2d9607447edec3e997d46c5179120169
-      DiffID: sha256:7c3fcb292499ea10f0d780f09d40cb0516570e2230a1da64bee70ffbc422b376
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-95101
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:bac0945be70d0a2238c36493fe675dc0092861c4e1d7a5e74193e38a60bb20b6
-    Title: 'nginx: nginx: Data injection in proxied requests via HTTP/3 request buffering'
-    Description: "Description\nNGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with \n\nproxy_request_buffering on\_directive,\_an unauthenticated attacker may be able to inject data in the proxied request.\n\nImpact\n\n\nThis vulnerability may allow remote attackers to \n\ninject data in the proxied request.\_ There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-172
-    VendorSeverity:
-      bitnami: 2
-      redhat: 2
-    CVSS:
-      bitnami:
-        V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N
-        V40Score: 6.9
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N
-        V3Score: 5.3
-    References:
-    - https://access.redhat.com/security/cve/CVE-2026-95101
-    - https://my.f5.com/manage/s/article/K000162613
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-95101
-    - https://www.cve.org/CVERecord?id=CVE-2026-95101
-    PublishedDate: '2026-10-14T15:17:27.1Z'
-    LastModifiedDate: '2026-10-15T17:17:32.607Z'
-  - VulnerabilityID: CVE-2026-97629
-    PkgID: nginx@1.30.4-r1
-    PkgName: nginx
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/nginx@1.30.4-r1?arch=x86_64&distro=3.24.2
-      UID: 4dacee9b589dfd8f
-    InstalledVersion: 1.30.4-r1
-    FixedVersion: 1.30.6-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:6f785bbf2895e778740cf9c6cf7c387e2d9607447edec3e997d46c5179120169
-      DiffID: sha256:7c3fcb292499ea10f0d780f09d40cb0516570e2230a1da64bee70ffbc422b376
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-97629
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:f67b720853fb32904ab35b796517e193b73a4656aba9b6118b21e79baf372c4d
-    Title: 'nginx: nginx: Client certificate verification bypass via forged SSL sessions'
-    Description: "Description\nWhen NGINX Plus or NGINX Open Source is configured with\_ssl_session_cache \n\nshared:name:size\n\nwithout an explicit ssl_session_ticket_key file\_directives to automatically rotate SSL session ticket keys, a remote unauthenticated attacker is able to forge client SSL sessions \n\nin a non-deterministic manner that is beyond the attacker's control. An attacker could leverage this vulnerability to bypass verification of client certificates.\n\nImpact\n\n\nThis vulnerability can lead to the exposure of resources or functionality to unintended actors, possibly providing attackers with access to sensitive information. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-908
-    VendorSeverity:
-      bitnami: 3
-      redhat: 2
-    CVSS:
-      bitnami:
-        V40Vector: CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N
-        V40Score: 8.3
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N
-        V3Score: 6.5
-    References:
-    - https://access.redhat.com/security/cve/CVE-2026-97629
-    - https://my.f5.com/manage/s/article/K000162606
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-97629
-    - https://www.cve.org/CVERecord?id=CVE-2026-97629
-    PublishedDate: '2026-10-14T15:17:28.6Z'
-    LastModifiedDate: '2026-10-15T17:17:33.41Z'
-  - VulnerabilityID: CVE-2026-96512
-    PkgID: sudo@1.9.17_p2-r1
-    PkgName: sudo
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/sudo@1.9.17_p2-r1?arch=x86_64&distro=3.24.2
-      UID: 65e70d20e0b4f9aa
-    InstalledVersion: 1.9.17_p2-r1
-    FixedVersion: 1.9.17_p2-r2
-    Status: fixed
-    Layer:
-      Digest: sha256:6f785bbf2895e778740cf9c6cf7c387e2d9607447edec3e997d46c5179120169
-      DiffID: sha256:7c3fcb292499ea10f0d780f09d40cb0516570e2230a1da64bee70ffbc422b376
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-96512
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:eba15e3bf06b2a4419745ffaeea3c3dcffe579d0152dee5e752435195ade9759
-    Title: 'sudo: sudo: TZ environment variable allows bypass of NOTBEFORE/NOTAFTER time-based authorization'
-    Description: A flaw was found in sudo. When sudoers rules use NOTBEFORE or NOTAFTER time-based access restrictions with timestamps that omit the trailing 'Z' timezone indicator, the time evaluation relies on the TZ environment variable inherited from the calling user. Because sudo is a setuid-root program, an unprivileged local user can set TZ to an extreme timezone offset to shift the authorization window by up to approximately 25 hours, causing expired rules to be treated as valid. This allows the user to execute commands outside the intended time window. Authentication is not bypassed; only the time-based authorization check is affected.
-    Severity: HIGH
-    CweIDs:
-    - CWE-863
-    VendorSeverity:
-      alma: 3
-      amazon: 3
-      azure: 3
-      oracle-oval: 3
-      redhat: 3
-      rocky: 3
-      ubuntu: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
-        V3Score: 7.8
-    References:
-    - http://www.openwall.com/lists/oss-security/2026/09/24/4
-    - https://access.redhat.com/errata/RHSA-2026:71609
-    - https://access.redhat.com/errata/RHSA-2026:75571
-    - https://access.redhat.com/errata/RHSA-2026:75579
-    - https://access.redhat.com/errata/RHSA-2026:75580
-    - https://access.redhat.com/errata/RHSA-2026:82939
-    - https://access.redhat.com/errata/RHSA-2026:86633
-    - https://access.redhat.com/errata/RHSA-2026:86634
-    - https://access.redhat.com/errata/RHSA-2026:86635
-    - https://access.redhat.com/errata/RHSA-2026:87026
-    - https://access.redhat.com/security/cve/CVE-2026-96512
-    - https://bugzilla.redhat.com/2539327
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2539327
-    - https://creativecommons.org/licenses/by/4.0/
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-96512
-    - https://errata.almalinux.org/8/ALSA-2026-75580.html
-    - https://errata.rockylinux.org/RLSA-2026:75571
-    - https://github.com/sudo-project/sudo/commit/1820a349687522f51023d1ae5925125f59679a8c
-    - https://linux.oracle.com/cve/CVE-2026-96512.html
-    - https://linux.oracle.com/errata/ELSA-2026-75580.html
-    - https://nvd.nist.gov/vuln/detail/CVE-2026-96512
-    - https://ubuntu.com/security/notices/USN-8895-1
-    - https://www.cve.org/CVERecord?id=CVE-2026-96512
-    PublishedDate: '2026-09-23T14:17:10.747Z'
-    LastModifiedDate: '2026-10-22T06:17:15.71Z'
-  - VulnerabilityID: CVE-2026-85091
-    PkgID: zlib@1.3.2-r0
-    PkgName: zlib
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/zlib@1.3.2-r0?arch=x86_64&distro=3.24.2
-      UID: e37054a2982d6c16
-    InstalledVersion: 1.3.2-r0
-    FixedVersion: 1.3.2-r1
-    Status: fixed
-    Layer:
-      Digest: sha256:6f785bbf2895e778740cf9c6cf7c387e2d9607447edec3e997d46c5179120169
-      DiffID: sha256:7c3fcb292499ea10f0d780f09d40cb0516570e2230a1da64bee70ffbc422b376
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-85091
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:0883aba8c0c40d174ef6a26f8ca076b514eb1d5ff876d62c18fd22657642b3bd
-    Title: zlib versions 1.3.1.2 through 1.3.2 contain a heap buffer overflow vul ...
-    Description: zlib versions 1.3.1.2 through 1.3.2 contain a heap buffer overflow vulnerability in the gz_vacate() function when processing non-blocking gzwrite() operations with stale external buffer pointers. Attackers can trigger the overflow by calling gzprintf() or gzvprintf() after a write stall, causing an unchecked memmove() to write beyond the internal input buffer boundary.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-787
-    VendorSeverity:
-      ubuntu: 2
-    References:
-    - https://gist.github.com/thesmartshadow/e0b9481792afb7c31e86fee1ff084490
-    - https://github.com/madler/zlib
-    - https://github.com/madler/zlib/blob/v1.3.2/gzwrite.c#L393
-    - https://www.cve.org/CVERecord?id=CVE-2026-85091
-    - https://www.vulncheck.com/advisories/zlib-1.3.1.2-through-1.3.2-heap-buffer-overflow-via-gz-vacate
-    PublishedDate: '2026-09-03T13:06:20.573Z'
-    LastModifiedDate: '2026-09-09T20:41:07.123Z'
 - Target: Java
   Class: lang-pkgs
   Type: jar
   Packages: []
+  Vulnerabilities:
+  - VulnerabilityID: CVE-2026-89407
+    VendorIDs:
+    - GHSA-p6pp-m3f8-5c89
+    PkgName: com.fasterxml.jackson.core:jackson-core
+    PkgPath: openaf/Kube/jackson-core-2.21.6.jar
+    PkgIdentifier:
+      PURL: pkg:maven/com.fasterxml.jackson.core/jackson-core@2.21.6
+      UID: 60f42a455ee4c7c1
+    InstalledVersion: 2.21.6
+    FixedVersion: 2.18.11, 2.21.7, 2.22.3
+    Status: fixed
+    Layer:
+      Digest: sha256:28d8c40cbcec49262375408fc5f6e4444ffc547be208176822c3920ca684a459
+      DiffID: sha256:8698c1c78020cde7c1a0a5bc1a7f37d86b62f81d8706d4de10af96501daba36e
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-89407
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Maven
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
+    Fingerprint: sha256:9a865b442e7ef26f10e9b255b804bc042ff9c315ec9a61cc3c3d4fcfaf89ab71
+    Title: 'com.fasterxml.jackson/jackson-core: tools.jackson.core/jackson-core: Jackson-core: Denial of Service via regular expression backtracking'
+    Description: "NumberInput.looksLikeValidNumber() in FasterXML jackson-core pre-validates \"stringified numbers\" with two regular expressions: PATTERN_FLOAT ([+-]?[0-9]*[\\.]?[0-9]+([eE][+-]?[0-9]+)?), present since 2.17.0, and PATTERN_FLOAT_TRAILING_DOT, added in 2.17.2. PATTERN_FLOAT places adjacent quantifiers over the same character class -- an optional [0-9]* run, an optional dot, then a required [0-9]+ run -- so input that ultimately fails to match forces Java's backtracking engine to retry every possible split point of the digit run.\_\n\n\n\nMatching cost therefore grows with the square of the input length.\_\n\n\n\nAn attacker who can supply JSON that an application deserializes into a numeric target type reaches this method through jackson-databind's default String-to-number coercion (StdDeserializer and NumberDeserializers for BigDecimal, BigInteger, Double and Float).\_\n\n\n\nBecause StreamReadConstraints.maxStringLength defaults to 20,000,000 characters, no constraint bounds the input before it reaches the regex.\_\n\n\n\nTesting by the reporter confirmed O(n^2) growth across five consecutive input-size doublings, with a single 160,000-character string consuming roughly 74 seconds in one call; a small number of concurrent requests of ordinary body size can therefore exhaust a server's request-handling thread pool.\_\n\n\n\nThe affected method does not exist before 2.17.0, so 2.16.x and earlier releases are not affected.\_\n\n\n\nThe fix replaces both regular expressions with a hand-rolled single-pass scan."
+    Severity: HIGH
+    CweIDs:
+    - CWE-400
+    - CWE-1333
+    VendorSeverity:
+      alma: 2
+      amazon: 3
+      ghsa: 3
+      oracle-oval: 2
+      redhat: 2
+      rocky: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.9
+    References:
+    - https://access.redhat.com/errata/RHSA-2026:86706
+    - https://access.redhat.com/security/cve/CVE-2026-89407
+    - https://advisory.echohq.com/cve/CVE-2026-89407
+    - https://bugzilla.redhat.com/2538720
+    - https://bugzilla.redhat.com/2539084
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2538720
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2539084
+    - https://creativecommons.org/licenses/by/4.0/
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-89407
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-89425
+    - https://errata.almalinux.org/9/ALSA-2026-86706.html
+    - https://errata.rockylinux.org/RLSA-2026:86706
+    - https://getsafety.com/vulnerabilities/SFTY-20260922-89449/CVE-2026-89407
+    - https://github.com/FasterXML/jackson-core
+    - https://github.com/FasterXML/jackson-core/commit/731e794f62623aa0d86ced52490166be903fbb1d
+    - https://github.com/FasterXML/jackson-core/commit/e7acd64cc99bd346704423dc2bfea1ab0a08ddff
+    - https://github.com/FasterXML/jackson-core/issues/1649
+    - https://github.com/FasterXML/jackson-core/pull/1650
+    - https://github.com/FasterXML/jackson-core/pull/1701
+    - https://github.com/FasterXML/jackson-core/security/advisories/GHSA-p6pp-m3f8-5c89
+    - https://linux.oracle.com/cve/CVE-2026-89407.html
+    - https://linux.oracle.com/errata/ELSA-2026-86706.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-89407
+    - https://www.cve.org/CVERecord?id=CVE-2026-89407
+    PublishedDate: '2026-09-22T15:17:21.053Z'
+    LastModifiedDate: '2026-09-22T20:00:03.713Z'
+  - VulnerabilityID: CVE-2026-89425
+    VendorIDs:
+    - GHSA-7hhh-6rmp-j9qf
+    PkgName: com.fasterxml.jackson.core:jackson-core
+    PkgPath: openaf/Kube/jackson-core-2.21.6.jar
+    PkgIdentifier:
+      PURL: pkg:maven/com.fasterxml.jackson.core/jackson-core@2.21.6
+      UID: 60f42a455ee4c7c1
+    InstalledVersion: 2.21.6
+    FixedVersion: 2.21.7, 2.22.3, 2.18.11
+    Status: fixed
+    Layer:
+      Digest: sha256:28d8c40cbcec49262375408fc5f6e4444ffc547be208176822c3920ca684a459
+      DiffID: sha256:8698c1c78020cde7c1a0a5bc1a7f37d86b62f81d8706d4de10af96501daba36e
+    SeveritySource: ghsa
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-89425
+    DataSource:
+      ID: ghsa
+      Name: GitHub Security Advisory Maven
+      URL: https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven
+    Fingerprint: sha256:3ff18b63d12d8db41f0f6cbdfbfef195b9717d880379139601eecf4cc8215b5b
+    Title: 'com.fasterxml.jackson.core/jackson-core: Jackson-core: Denial of Service via unbounded StringBuilder growth during malformed token processing'
+    Description: 'UTF8DataInputJsonParser._reportInvalidToken() in FasterXML jackson-core builds the offending-token text for its error message by appending Java identifier characters to a StringBuilder in a loop that has no upper bound. Unlike the three sibling parser implementations, including UTF8StreamJsonParser, it never consults ErrorReportConfiguration.getMaxErrorTokenLength() (default 256). A malformed token supplied to a parser created through JsonFactory.createParser(DataInput) is therefore accumulated in full. No StreamReadConstraints setting mitigates this: maxDocumentLength cannot be applied to DataInput sources at all, and maxStringLength does not cover this path because the accumulation bypasses ReadConstrainedTextBuffer. The reporter measured a 20,000,109-character exception message from a 20-million-character malformed token on the DataInput path, against 367 characters for identical input on the InputStream path. Scaling the payload drives the StringBuilder, which also incurs byte-to-char expansion and internal array doubling, to many times the raw payload size and can trigger OutOfMemoryError for the whole JVM. UTF8DataInputJsonParser was introduced in 2.8.0 together with createParser(DataInput); releases before 2.8.0 do not contain the affected class.'
+    Severity: HIGH
+    CweIDs:
+    - CWE-400
+    - CWE-770
+    VendorSeverity:
+      alma: 2
+      amazon: 3
+      ghsa: 3
+      oracle-oval: 2
+      redhat: 3
+      rocky: 2
+    CVSS:
+      ghsa:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+    References:
+    - https://access.redhat.com/errata/RHSA-2026:86706
+    - https://access.redhat.com/security/cve/CVE-2026-89425
+    - https://advisory.echohq.com/cve/CVE-2026-89425
+    - https://bugzilla.redhat.com/2538720
+    - https://bugzilla.redhat.com/2539084
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2538720
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2539084
+    - https://creativecommons.org/licenses/by/4.0/
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-89407
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-89425
+    - https://errata.almalinux.org/9/ALSA-2026-86706.html
+    - https://errata.rockylinux.org/RLSA-2026:86706
+    - https://github.com/FasterXML/jackson-core
+    - https://github.com/FasterXML/jackson-core/commit/211cf2c5d91abbec38067f37efc1363cd4e88ee3
+    - https://github.com/FasterXML/jackson-core/pull/1698
+    - https://github.com/FasterXML/jackson-core/releases/tag/jackson-core-2.18.11
+    - https://github.com/FasterXML/jackson-core/releases/tag/jackson-core-3.2.3
+    - https://github.com/FasterXML/jackson-core/security/advisories/GHSA-7hhh-6rmp-j9qf
+    - https://linux.oracle.com/cve/CVE-2026-89425.html
+    - https://linux.oracle.com/errata/ELSA-2026-86706.html
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-89425
+    - https://www.cve.org/CVERecord?id=CVE-2026-89425
+    PublishedDate: '2026-09-23T03:17:04.357Z'
+    LastModifiedDate: '2026-09-24T20:43:32.537Z'
