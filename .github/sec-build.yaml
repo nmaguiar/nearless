@@ -3,6 +3,42 @@
   Type: alpine
   Packages: []
   Vulnerabilities:
+  - VulnerabilityID: CVE-2026-132779
+    PkgID: nginx@1.30.7-r0
+    PkgName: nginx
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/nginx@1.30.7-r0?arch=x86_64&distro=3.24.4
+      UID: fc23ea13fad0766a
+    InstalledVersion: 1.30.7-r0
+    FixedVersion: 1.30.8-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:26dae7ac2bd513d319bc5bbf35270c87955bee609777d0366776edc1ad120b42
+      DiffID: sha256:9582096084b3bd7b3eff76deaf688b518265cfb84df4d38d657f068542aa1b09
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-132779
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:82eb234d13b26fba75656630512b7b8a0601da31ab2dc9053156ed8fda86ce9c
+    Title: 'nginx: nginx: Denial of Service via crafted TLS 1.3 early data connection'
+    Description: "When NGINX Plus or NGINX Open Source is configured to use TLS 1.3 early data using the ssl_early_data on directive, an attacker can use a specially crafted TLS 1.3 connection to drive an NGINX worker into a tight loop in which it repeatedly retries the same send without ever making progress. The worker continues accepting new connections and handling existing ones, but one CPU core is pinned at 100%.\n\nImpact:\nSystem performance can degrade until the NGINX worker process is either forced to restart or is manually restarted. This vulnerability may allow an unauthenticated attacker to cause a degradation of service that can lead to a denial-of-service (DoS) on the NGINX system.\_There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated."
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-835
+    VendorSeverity:
+      redhat: 2
+    CVSS:
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 5.3
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-132779
+    - https://my.f5.com/manage/s/article/K000163947
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-132779
+    - https://www.cve.org/CVERecord?id=CVE-2026-132779
+    PublishedDate: '2026-11-23T16:17:28.72Z'
+    LastModifiedDate: '2026-11-24T17:18:15.813Z'
   - VulnerabilityID: CVE-2026-4738
     PkgID: zlib@1.3.2-r1
     PkgName: zlib
