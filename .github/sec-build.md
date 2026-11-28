@@ -3,56 +3,7 @@
 │     ├ Class          : os-pkgs 
 │     ├ Type           : alpine 
 │     ├ Packages        
-│     ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2026-132779 
-│                       │     ├ PkgID           : nginx@1.30.7-r0 
-│                       │     ├ PkgName         : nginx 
-│                       │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/nginx@1.30.7-r0?arch=x86_64&distro=3.24.4 
-│                       │     │                  ╰ UID : fc23ea13fad0766a 
-│                       │     ├ InstalledVersion: 1.30.7-r0 
-│                       │     ├ FixedVersion    : 1.30.8-r0 
-│                       │     ├ Status          : fixed 
-│                       │     ├ Layer            ╭ Digest: sha256:26dae7ac2bd513d319bc5bbf35270c87955bee609777d
-│                       │     │                  │         0366776edc1ad120b42 
-│                       │     │                  ╰ DiffID: sha256:9582096084b3bd7b3eff76deaf688b518265cfb84df4d
-│                       │     │                            38d657f068542aa1b09 
-│                       │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-132779 
-│                       │     ├ DataSource       ╭ ID  : alpine 
-│                       │     │                  ├ Name: Alpine Secdb 
-│                       │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                       │     ├ Fingerprint     : sha256:82eb234d13b26fba75656630512b7b8a0601da31ab2dc9053156ed
-│                       │     │                   8fda86ce9c 
-│                       │     ├ Title           : nginx: nginx: Denial of Service via crafted TLS 1.3 early
-│                       │     │                   data connection 
-│                       │     ├ Description     : When NGINX Plus or NGINX Open Source is configured to use TLS
-│                       │     │                    1.3 early data using the ssl_early_data on directive, an
-│                       │     │                   attacker can use a specially crafted TLS 1.3 connection to
-│                       │     │                   drive an NGINX worker into a tight loop in which it
-│                       │     │                   repeatedly retries the same send without ever making
-│                       │     │                   progress. The worker continues accepting new connections and
-│                       │     │                   handling existing ones, but one CPU core is pinned at 100%.
-│                       │     │                   
-│                       │     │                   Impact:
-│                       │     │                   System performance can degrade until the NGINX worker process
-│                       │     │                    is either forced to restart or is manually restarted. This
-│                       │     │                   vulnerability may allow an unauthenticated attacker to cause
-│                       │     │                   a degradation of service that can lead to a denial-of-service
-│                       │     │                    (DoS) on the NGINX system. There is no control plane
-│                       │     │                   exposure; this is a data plane issue only.
-│                       │     │                   Note: Software versions which have reached End of Technical
-│                       │     │                   Support (EoTS) are not evaluated. 
-│                       │     ├ Severity        : MEDIUM 
-│                       │     ├ CweIDs           ─ [0]: CWE-835 
-│                       │     ├ VendorSeverity   ─ redhat: 2 
-│                       │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/
-│                       │     │                           │           A:L 
-│                       │     │                           ╰ V3Score : 5.3 
-│                       │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-132779 
-│                       │     │                  ├ [1]: https://my.f5.com/manage/s/article/K000163947 
-│                       │     │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-132779 
-│                       │     │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-132779 
-│                       │     ├ PublishedDate   : 2026-11-23T16:17:28.72Z 
-│                       │     ╰ LastModifiedDate: 2026-11-24T17:18:15.813Z 
-│                       ╰ [1] ╭ VulnerabilityID : CVE-2026-4738 
+│     ╰ Vulnerabilities ─ [0] ╭ VulnerabilityID : CVE-2026-4738 
 │                             ├ PkgID           : zlib@1.3.2-r1 
 │                             ├ PkgName         : zlib 
 │                             ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.2-r1?arch=x86_64&distro=3.24.4 
@@ -60,16 +11,16 @@
 │                             ├ InstalledVersion: 1.3.2-r1 
 │                             ├ FixedVersion    : 1.4-r0 
 │                             ├ Status          : fixed 
-│                             ├ Layer            ╭ Digest: sha256:26dae7ac2bd513d319bc5bbf35270c87955bee609777d
-│                             │                  │         0366776edc1ad120b42 
-│                             │                  ╰ DiffID: sha256:9582096084b3bd7b3eff76deaf688b518265cfb84df4d
-│                             │                            38d657f068542aa1b09 
+│                             ├ Layer            ╭ Digest: sha256:e1fbbc10b22c3267e09ca0099734862fc57c5ff11a5be
+│                             │                  │         3487394e233aa2b5823 
+│                             │                  ╰ DiffID: sha256:244e971a360fa3756dfba3310058c8d36237c669c63da
+│                             │                            1e31835ed00750f3fcc 
 │                             ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-4738 
 │                             ├ DataSource       ╭ ID  : alpine 
 │                             │                  ├ Name: Alpine Secdb 
 │                             │                  ╰ URL : https://secdb.alpinelinux.org/ 
-│                             ├ Fingerprint     : sha256:955ee47e8af9942cdd6d34af79c2e85f719bf3f13b0cf445195c6c
-│                             │                   e4376acf34 
+│                             ├ Fingerprint     : sha256:d1386eabb9ad409ba591a6c91aa8dca0250edb0483cc92b7ccdfce
+│                             │                   d95a249fa0 
 │                             ├ Title           : Improper Restriction of Operations within the Bounds of a
 │                             │                   Memory Buffe ... 
 │                             ├ Description     : Improper Restriction of Operations within the Bounds of a
